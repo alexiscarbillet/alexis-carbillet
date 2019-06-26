@@ -1,0 +1,28 @@
+// Styling for the references section
+section#references {
+  background-color: #696969;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#references ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+section#references :-moz-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+section#references ::-moz-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+section#references :-ms-input-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
