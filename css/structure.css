@@ -540,7 +540,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #5e4da5;
   box-shadow: none;
 }
 
@@ -572,7 +572,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #5e4da5;
   box-shadow: none;
 }
 
@@ -634,7 +634,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #5e4da5;
 }
 
 
