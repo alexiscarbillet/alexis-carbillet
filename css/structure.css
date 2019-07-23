@@ -489,33 +489,33 @@ header.masthead .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
-section#references {
+section#resume {
   background-color: #696969;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-section#references ::-webkit-input-placeholder {
+section#resume ::-webkit-input-placeholder {
   font-weight: 700;
   color: #5e4da5;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-section#references :-moz-placeholder {
+section#resume :-moz-placeholder {
   font-weight: 700;
   color: #5e4da5;
   /* Firefox 18- */
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-section#references ::-moz-placeholder {
+section#resume ::-moz-placeholder {
   font-weight: 700;
   color: #5e4da5;
   /* Firefox 19+ */
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-section#references :-ms-input-placeholder {
+section#resume :-ms-input-placeholder {
   font-weight: 700;
   color: #5e4da5;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
