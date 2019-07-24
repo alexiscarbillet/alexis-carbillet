@@ -54,6 +54,9 @@
               <a class="nav-link js-scroll-trigger" href="#travels">Voyages</a>
             </li>
 			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#map">Carte</a>
+            </li>
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#references">Recommandations</a>
             </li>
 			<li class="nav-item">
@@ -117,6 +120,23 @@
 	
 <!-- ======================================================================= -->
 
+<!-- ======================== MAP SECTION ============================ -->
+
+	<section id="map">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Carte</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" align="center">
+			<div id="htmlwidget-cb0f254c20b2ddfa7132" style="width:800px;height:480px;" class="leaflet html-widget"></div>
+			<script type="application/json" data-for="htmlwidget-cb0f254c20b2ddfa7132">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["Août 2014: Technicien de surface pour la mairie de Crolles (4 semaines)","2015 : “Bac Scientifique” mention bien","2015-2017: Classes préparatoires aux grandes écoles PCSI/PSI au “Lycée Naval”","2017-2020 : École d’ingénieurs IMT Mines Ales, intelligence artificielle","Février-Mars 2018: Premier au challenge créativité de la banque «Caisse d’Épargne» dans le\r\ndomaine numérique (6 semaines)","10 and 11 march 2018 : Week-end d’accélération “TechTheFutur”","Mai-Juin 2018: Stage \"création de nouveau produit\" dans la start-up IWANT (5 semaines)","Juillet-Août 2018: Stage dans le groupe Optique Adaptative de l'Observatoire Astrophysique Arcetri\r\navec l'utilisation de Python (5 semaines)","Août 2018 : Professeur de mathématiques au lycée Jean-Baptiste Dumas (10 élèves, 1 semaine)","Novembre-Décembre 2018 : Stage «conseil en organisation» chez CNP PARTNERS en informatique\r\navec l'utilisation de BPMn, ADONIS NP et JIRA (5 semaines)","Janvier-Mai 2019 : Stage «recherche et développement» pour Système U dans les systèmes multiagents\r\net la psychologie avec l'utilisation du langage GAML et d'AutoCAD (16 semaines)","Mai-Août 2019 : Stage «assistant ingénieur» à l'université technique tchèque dans la visualisation de\r\ndonnées avec l'utilisation des langages R et HTML (13 semaines)","Septembre 2019 – Janvier 2020 : Semestre à l’université ITMO, informatique (5 mois)"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-4.525412,30.308288]}},"evals":[],"jsHooks":[]}</script>
+			</div>
+		 </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
 
 <!-- ======================== RECOMMENDATIONS SECTION ============================ -->
 
@@ -281,7 +301,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/structure.min.js"></script>
-
+	
+	<!-- Leaflet part -->
+	<script src="js/leaflet.js"></script>
+	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>
     $(function () {
