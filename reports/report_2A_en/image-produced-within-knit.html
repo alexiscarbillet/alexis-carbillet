@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Image produced within knit | Report of the 3-months internship at Czech Technical University</title>
+  <meta name="description" content="This is a report done by Alexis Carbillet. It described what he did during his 3-months internship at Czech Technical University between the 6th of May to the 2nd of August." />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Image produced within knit | Report of the 3-months internship at Czech Technical University" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a report done by Alexis Carbillet. It described what he did during his 3-months internship at Czech Technical University between the 6th of May to the 2nd of August." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Image produced within knit | Report of the 3-months internship at Czech Technical University" />
+  
+  <meta name="twitter:description" content="This is a report done by Alexis Carbillet. It described what he did during his 3-months internship at Czech Technical University between the 6th of May to the 2nd of August." />
+  
+
+<meta name="author" content="ALEXIS CARBILLET" />
+
+
+<meta name="date" content="2019-07-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="table.html">
+<link rel="next" href="image-imported.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="homescratch-mechanism.html"><a href="homescratch-mechanism.html"><i class="fa fa-check"></i><b>1</b> Home/scratch mechanism</a></li>
+<li class="chapter" data-level="2" data-path="dynamic-report-generation.html"><a href="dynamic-report-generation.html"><i class="fa fa-check"></i><b>2</b> Dynamic report generation</a></li>
+<li class="chapter" data-level="3" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>3</b> Table</a></li>
+<li class="chapter" data-level="4" data-path="image-produced-within-knit.html"><a href="image-produced-within-knit.html"><i class="fa fa-check"></i><b>4</b> Image produced within knit</a><ul>
+<li class="chapter" data-level="4.1" data-path="image-produced-within-knit.html"><a href="image-produced-within-knit.html#first-row"><i class="fa fa-check"></i><b>4.1</b> First row</a></li>
+<li class="chapter" data-level="4.2" data-path="image-produced-within-knit.html"><a href="image-produced-within-knit.html#second-row"><i class="fa fa-check"></i><b>4.2</b> Second row</a></li>
+<li class="chapter" data-level="4.3" data-path="image-produced-within-knit.html"><a href="image-produced-within-knit.html#third-row"><i class="fa fa-check"></i><b>4.3</b> Third row</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="image-imported.html"><a href="image-imported.html"><i class="fa fa-check"></i><b>5</b> Image imported</a></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i>Annexes</a><ul>
+<li class="chapter" data-level="5.1" data-path="annexes.html"><a href="annexes.html#ini_danter.r"><i class="fa fa-check"></i><b>5.1</b> INI_danter.R</a></li>
+<li class="chapter" data-level="5.2" data-path="annexes.html"><a href="annexes.html#tra.str.f.r"><i class="fa fa-check"></i><b>5.2</b> Tra.str.F.R</a></li>
+<li class="chapter" data-level="5.3" data-path="annexes.html"><a href="annexes.html#works-by-this-artist"><i class="fa fa-check"></i><b>5.3</b> Works by this artist</a></li>
+<li class="chapter" data-level="5.4" data-path="annexes.html"><a href="annexes.html#works-with-matching-fruitvariety"><i class="fa fa-check"></i><b>5.4</b> Works with matching fruit/variety</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Report of the 3-months internship at Czech Technical University</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="image-produced-within-knit" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Image produced within knit</h1>
+<p>In order to obtain this type of graph, it was necessary to create two Excel files. A first named circle-packing that let you know which group is nested in which (usually named Edges with two columns that are from and to). The second one named circle-packing-vertices contains the description of each group. I had to trace 12 different circle-packings about the dataset presented below.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># import dataset</span>
+sizes &lt;-<span class="st"> </span>readr<span class="op">::</span><span class="kw">read_csv</span>(<span class="st">&quot;~/boodatcat/dataVenn/ven_tes/alluse_1561618049942.csv&quot;</span>)
+<span class="co"># scale_down allows to print the whole table and hold_position allows to print it where it is created.</span>
+<span class="kw">kable</span>(sizes, <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="dt">caption =</span> <span class="st">&#39;Table for Venn Diagrams&#39;</span>)</code></pre></div>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-13">Table 4.1: </span>Table for Venn Diagrams
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+reg
+</th>
+<th style="text-align:left;">
+tmd
+</th>
+<th style="text-align:right;">
+detuse_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+rescyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+inccyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+inrcyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+inucyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+norcyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+nopcyc_alluse_d00 (SUM)
+</th>
+<th style="text-align:right;">
+ourcyc_alluse_d00 (SUM)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-07-04
+</td>
+<td style="text-align:right;">
+595846
+</td>
+<td style="text-align:right;">
+478935
+</td>
+<td style="text-align:right;">
+401555
+</td>
+<td style="text-align:right;">
+284644
+</td>
+<td style="text-align:right;">
+116911
+</td>
+<td style="text-align:right;">
+85464
+</td>
+<td style="text-align:right;">
+70449
+</td>
+<td style="text-align:right;">
+323022
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-07-04
+</td>
+<td style="text-align:right;">
+641569
+</td>
+<td style="text-align:right;">
+507323
+</td>
+<td style="text-align:right;">
+496487
+</td>
+<td style="text-align:right;">
+362241
+</td>
+<td style="text-align:right;">
+134246
+</td>
+<td style="text-align:right;">
+70138
+</td>
+<td style="text-align:right;">
+63008
+</td>
+<td style="text-align:right;">
+374177
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-08-01
+</td>
+<td style="text-align:right;">
+623262
+</td>
+<td style="text-align:right;">
+520775
+</td>
+<td style="text-align:right;">
+409075
+</td>
+<td style="text-align:right;">
+306588
+</td>
+<td style="text-align:right;">
+102487
+</td>
+<td style="text-align:right;">
+92328
+</td>
+<td style="text-align:right;">
+77181
+</td>
+<td style="text-align:right;">
+351266
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-08-01
+</td>
+<td style="text-align:right;">
+641492
+</td>
+<td style="text-align:right;">
+524217
+</td>
+<td style="text-align:right;">
+486034
+</td>
+<td style="text-align:right;">
+368760
+</td>
+<td style="text-align:right;">
+117275
+</td>
+<td style="text-align:right;">
+74550
+</td>
+<td style="text-align:right;">
+68201
+</td>
+<td style="text-align:right;">
+381466
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-09-05
+</td>
+<td style="text-align:right;">
+615152
+</td>
+<td style="text-align:right;">
+516945
+</td>
+<td style="text-align:right;">
+415656
+</td>
+<td style="text-align:right;">
+317449
+</td>
+<td style="text-align:right;">
+98207
+</td>
+<td style="text-align:right;">
+74539
+</td>
+<td style="text-align:right;">
+64747
+</td>
+<td style="text-align:right;">
+377659
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-09-05
+</td>
+<td style="text-align:right;">
+647348
+</td>
+<td style="text-align:right;">
+526003
+</td>
+<td style="text-align:right;">
+514544
+</td>
+<td style="text-align:right;">
+393198
+</td>
+<td style="text-align:right;">
+121346
+</td>
+<td style="text-align:right;">
+60549
+</td>
+<td style="text-align:right;">
+58766
+</td>
+<td style="text-align:right;">
+406688
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-10-03
+</td>
+<td style="text-align:right;">
+627862
+</td>
+<td style="text-align:right;">
+545354
+</td>
+<td style="text-align:right;">
+413756
+</td>
+<td style="text-align:right;">
+331249
+</td>
+<td style="text-align:right;">
+82507
+</td>
+<td style="text-align:right;">
+80697
+</td>
+<td style="text-align:right;">
+67544
+</td>
+<td style="text-align:right;">
+397113
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-10-03
+</td>
+<td style="text-align:right;">
+678626
+</td>
+<td style="text-align:right;">
+582897
+</td>
+<td style="text-align:right;">
+525132
+</td>
+<td style="text-align:right;">
+429403
+</td>
+<td style="text-align:right;">
+95729
+</td>
+<td style="text-align:right;">
+72374
+</td>
+<td style="text-align:right;">
+64783
+</td>
+<td style="text-align:right;">
+445740
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-11-07
+</td>
+<td style="text-align:right;">
+612476
+</td>
+<td style="text-align:right;">
+531679
+</td>
+<td style="text-align:right;">
+407201
+</td>
+<td style="text-align:right;">
+326404
+</td>
+<td style="text-align:right;">
+80797
+</td>
+<td style="text-align:right;">
+75259
+</td>
+<td style="text-align:right;">
+62872
+</td>
+<td style="text-align:right;">
+393548
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-11-07
+</td>
+<td style="text-align:right;">
+680578
+</td>
+<td style="text-align:right;">
+583170
+</td>
+<td style="text-align:right;">
+531797
+</td>
+<td style="text-align:right;">
+434389
+</td>
+<td style="text-align:right;">
+97408
+</td>
+<td style="text-align:right;">
+70385
+</td>
+<td style="text-align:right;">
+62974
+</td>
+<td style="text-align:right;">
+449810
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33026
+</td>
+<td style="text-align:left;">
+2018-12-05
+</td>
+<td style="text-align:right;">
+615054
+</td>
+<td style="text-align:right;">
+536179
+</td>
+<td style="text-align:right;">
+404645
+</td>
+<td style="text-align:right;">
+325770
+</td>
+<td style="text-align:right;">
+78875
+</td>
+<td style="text-align:right;">
+75692
+</td>
+<td style="text-align:right;">
+65473
+</td>
+<td style="text-align:right;">
+395014
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nu33140
+</td>
+<td style="text-align:left;">
+2018-12-05
+</td>
+<td style="text-align:right;">
+679157
+</td>
+<td style="text-align:right;">
+581054
+</td>
+<td style="text-align:right;">
+523001
+</td>
+<td style="text-align:right;">
+424898
+</td>
+<td style="text-align:right;">
+98103
+</td>
+<td style="text-align:right;">
+74475
+</td>
+<td style="text-align:right;">
+65457
+</td>
+<td style="text-align:right;">
+441122
+</td>
+</tr>
+</tbody>
+</table>
+<div id="first-row" class="section level2">
+<h2><span class="header-section-number">4.1</span> First row</h2>
+<p>Here is presented the code and the result obtained by processing the first line of the dataset :</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(<span class="st">&quot;traceVennDiagramm.R&quot;</span>)
+<span class="co"># import of the edges</span>
+tableau &lt;-<span class="st"> </span><span class="kw">data.frame</span>(readxl<span class="op">::</span><span class="kw">read_excel</span>(<span class="st">&quot;~/boodatcat/circle-packing.xlsx&quot;</span>))
+
+sizes[<span class="dv">11</span>] =<span class="st"> </span>sizes[<span class="dv">3</span>] <span class="op">+</span><span class="st"> </span>sizes[<span class="dv">5</span>]
+<span class="co"># traduction of the column names</span>
+<span class="kw">colnames</span>(sizes)[<span class="dv">3</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;detuse&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">4</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;rescyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">5</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;inccyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">6</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;inrcyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">7</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;inucyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">8</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;norcyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">9</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;nopcyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">10</span>]=<span class="kw">tra.str.F</span>(<span class="st">&#39;ourcyc&#39;</span>,<span class="st">&#39;namwri&#39;</span>)
+<span class="kw">colnames</span>(sizes)[<span class="dv">11</span>]=<span class="st">&#39;Origin&#39;</span>
+
+pic &lt;-<span class="st"> </span><span class="kw">traceVennDiagramm</span>(sizes, <span class="dv">1</span>) <span class="co"># create circle-packing</span>
+
+pic</code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-14"></span>
+<img src="html_files/figure-html/unnamed-chunk-14-1.png" alt="First line processed" width="672" />
+<p class="caption">
+Figure 4.1: First line processed
+</p>
+</div>
+<p>This is the script of traceVennDiagramm :</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">traceVennDiagramm =<span class="st"> </span><span class="cf">function</span>(sizes,ligne){
+x=<span class="kw">seq</span>(<span class="dv">3</span><span class="op">:</span><span class="dv">11</span>)
+<span class="co"># transforme the line into a column</span>
+<span class="cf">for</span>(j <span class="cf">in</span> <span class="kw">seq</span>(<span class="dv">3</span><span class="op">:</span><span class="dv">11</span>)){
+  x[j]=sizes[ligne,j<span class="op">+</span><span class="dv">2</span>]
+}
+<span class="co"># creation of the vertices table</span>
+vertices=<span class="kw">data.frame</span>(<span class="kw">cbind</span>(<span class="kw">cbind</span>(<span class="kw">colnames</span>(sizes)[<span class="dv">3</span><span class="op">:</span><span class="dv">11</span>],x),<span class="kw">colnames</span>(sizes)[<span class="dv">3</span><span class="op">:</span><span class="dv">11</span>]))
+vertices[<span class="dv">9</span>,<span class="dv">3</span>]=<span class="st">&#39; &#39;</span> <span class="co"># we don&#39;t want to see the origin label</span>
+<span class="kw">colnames</span>(vertices)[<span class="dv">3</span>]=<span class="st">&#39;shortName&#39;</span> <span class="co"># rename the third column</span>
+<span class="kw">colnames</span>(vertices)[<span class="dv">2</span>]=<span class="st">&#39;size&#39;</span> <span class="co"># rename the second</span>
+mygraph &lt;-<span class="st"> </span>igraph<span class="op">::</span><span class="kw">graph_from_data_frame</span>(tableau, <span class="dt">vertices=</span>vertices)
+<span class="co"># creation of the graph</span>
+
+<span class="kw">return</span>(ggraph<span class="op">::</span><span class="kw">ggraph</span>(mygraph, <span class="dt">layout =</span> <span class="st">&#39;circlepack&#39;</span>) <span class="op">+</span>
+<span class="st">         </span>ggraph<span class="op">::</span><span class="kw">geom_node_circle</span>(ggplot2<span class="op">::</span><span class="kw">aes</span>(<span class="dt">fill =</span> <span class="kw">as.factor</span>(depth), <span class="dt">color =</span> <span class="kw">as.factor</span>(depth)), <span class="dt">position =</span> <span class="st">&quot;jitter&quot;</span>) <span class="op">+</span>
+<span class="st">         </span>ggraph<span class="op">::</span><span class="kw">geom_node_text</span>(ggplot2<span class="op">::</span><span class="kw">aes</span>(<span class="dt">label=</span>shortName)) <span class="op">+</span>
+<span class="st">         </span><span class="co"># we fill manually the colors</span>
+<span class="st">         </span>ggplot2<span class="op">::</span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;0&quot;</span> =<span class="st"> &quot;white&quot;</span>, <span class="st">&quot;1&quot;</span> =<span class="st"> </span>viridis<span class="op">::</span><span class="kw">viridis</span>(<span class="dv">4</span>)[<span class="dv">1</span>], <span class="st">&quot;2&quot;</span> =<span class="st"> </span>viridis<span class="op">::</span><span class="kw">viridis</span>(<span class="dv">4</span>)[<span class="dv">2</span>], <span class="st">&quot;3&quot;</span> =<span class="st"> </span>viridis<span class="op">::</span><span class="kw">viridis</span>(<span class="dv">4</span>)[<span class="dv">3</span>]))<span class="op">+</span>
+<span class="st">         </span>ggplot2<span class="op">::</span><span class="kw">scale_color_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;0&quot;</span> =<span class="st"> &quot;white&quot;</span>, <span class="st">&quot;1&quot;</span> =<span class="st"> &quot;black&quot;</span>, <span class="st">&quot;2&quot;</span> =<span class="st"> &quot;black&quot;</span>, <span class="st">&quot;3&quot;</span> =<span class="st"> &quot;black&quot;</span>)) <span class="op">+</span>
+<span class="st">         </span>ggplot2<span class="op">::</span><span class="kw">theme_void</span>() <span class="co"># our theme is applied</span>
+)
+}</code></pre></div>
+<p>Below are presented the two Excels. The vertices table corresponds to the first row of the data provided. As we can see, the Excel circle-packing contains the structure of the circles, how they are nested. The Excel circle-packing-vertices contains the size of each circle for the first row and its shortname, which will be plot in the final result. Here, the shortname is the same than the name but it can be different.</p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-16">Table 4.2: </span>Excel circle-packing
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+from
+</th>
+<th style="text-align:left;">
+to
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Origin
+</td>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Origin
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-17">Table 4.3: </span>Circle-packing-vertices for the first row
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+V1
+</th>
+<th style="text-align:left;">
+size
+</th>
+<th style="text-align:left;">
+shortName
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+<td style="text-align:left;">
+595846
+</td>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+478935
+</td>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+<td style="text-align:left;">
+401555
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+<td style="text-align:left;">
+284644
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+<td style="text-align:left;">
+116911
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+85464
+</td>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+<td style="text-align:left;">
+70449
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+323022
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Origin
+</td>
+<td style="text-align:left;">
+997401
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="second-row" class="section level2">
+<h2><span class="header-section-number">4.2</span> Second row</h2>
+<p>Moreover, we can create another image because there are 12 possible results from the processing, one for each row of the dataset for the Venn Diagrams. In order to compare the differences between to row of the initial dataset, at least another image is needed. What will be compare? The size of their circles. In fact, the size of each circle will change according to the row we processed. So, the result for the second line is imported here:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pic &lt;-<span class="st"> </span><span class="kw">traceVennDiagramm</span>(sizes, <span class="dv">2</span>) <span class="co"># create circle-packing</span>
+
+pic</code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-18"></span>
+<img src="html_files/figure-html/unnamed-chunk-18-1.png" alt="Second line processed" width="672" />
+<p class="caption">
+Figure 4.2: Second line processed
+</p>
+</div>
+<p>The position of the purple circles are different than for the first circle-packing. There is many solutions possible in order to represent the circle. Each time, the script calculate the new center depending of the size of the circle. But, it chooses randomly one of the solution possible. This is why the purple circles have a different position. It will change each time the script is run. There is a way to avoid this fact. It is to save a picture when the circles are in the same position than the latter image saved. It can be necessary to run many times the code in order to get it. Once it is gotten, the user the save the image. He can print the images that he wants to compare and check that the sizes of the circles had changed. In chapter 5, there is an example of an imported image that used the first row of the dataset for the Venn Diagram.</p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-19">Table 4.4: </span>Circle-packing-vertices for the second row
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+V1
+</th>
+<th style="text-align:left;">
+size
+</th>
+<th style="text-align:left;">
+shortName
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+<td style="text-align:left;">
+641569
+</td>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+507323
+</td>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+<td style="text-align:left;">
+496487
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+<td style="text-align:left;">
+362241
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+<td style="text-align:left;">
+134246
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+70138
+</td>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+<td style="text-align:left;">
+63008
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+374177
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Origin
+</td>
+<td style="text-align:left;">
+1138056
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+<p>As we can see, the sizes are differents between the two circle-packing-vertices. It is also the case between the two images generated. These two results represents only 17% of the ensemble of results. So, in order to have a better representation, others results need to be present in this report.</p>
+</div>
+<div id="third-row" class="section level2">
+<h2><span class="header-section-number">4.3</span> Third row</h2>
+<p>In order to represent at least 25% and having a representative sample of the possible results, it was necessary to show another result. So the result of the third line is drawn right in the next page. Of course, the vertices table is needed in order to verify the size of the circles. So it is plot after the circle-packing.</p>
+<div class="figure"><span id="fig:unnamed-chunk-20"></span>
+<img src="html_files/figure-html/unnamed-chunk-20-1.png" alt="Third line processed" width="672" />
+<p class="caption">
+Figure 4.3: Third line processed
+</p>
+</div>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-21">Table 4.5: </span>Circle-packing-vertices for the third row
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+V1
+</th>
+<th style="text-align:left;">
+size
+</th>
+<th style="text-align:left;">
+shortName
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+<td style="text-align:left;">
+623262
+</td>
+<td style="text-align:left;">
+Uživatelé detekovaní
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+<td style="text-align:left;">
+520775
+</td>
+<td style="text-align:left;">
+Uživatelé bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+<td style="text-align:left;">
+409075
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+<td style="text-align:left;">
+306588
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+<td style="text-align:left;">
+102487
+</td>
+<td style="text-align:left;">
+Uživatelé dojíždějící nebydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+92328
+</td>
+<td style="text-align:left;">
+Uživatelé nevyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+<td style="text-align:left;">
+77181
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící spojitě
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+<td style="text-align:left;">
+351266
+</td>
+<td style="text-align:left;">
+Uživatelé vyjíždějící bydlící
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Origin
+</td>
+<td style="text-align:left;">
+1032337
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+<p>The fact of knitting an image as some disadvantages. In our case, the most important one is that the position of each circle is unastable. It exists some way to avoid it. One of these is to import an image already knitted. This is explained in the next chapter.</p>
+</div>
+</div>
+<div align="center">
+<p><a href="../../index.html">return to the main page</a></p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="table.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="image-imported.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["html.pdf", "html.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
