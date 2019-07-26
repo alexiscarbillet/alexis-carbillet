@@ -777,7 +777,37 @@ section#map :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+section#doc {
+  background-color: #808080;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+section#doc ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#doc :-moz-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#doc ::-moz-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#doc :-ms-input-placeholder {
+  font-weight: 700;
+  color: #5e4da5;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 
 
