@@ -489,6 +489,10 @@ header.masthead .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
+.cover img {
+  margin-bottom: 30px;
+}
+
 .tabset-dropdown > .nav-tabs {
   display: inline-table;
   max-height: 500px;
