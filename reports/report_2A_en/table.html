@@ -160,6 +160,7 @@ dt &lt;-<span class="st"> </span>readr<span class="op">::</span><span class="kw"
 <span class="kw">library</span>(knitr) <span class="co"># import library</span>
 <span class="co"># create table</span>
 tab &lt;-<span class="st"> </span><span class="kw">kable</span>(dt, <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, <span class="dt">caption =</span> <span class="st">&#39;Initial table cov before processing&#39;</span>)</code></pre></div>
+<div class="tableau">
 <table>
 <caption><span id="tab:unnamed-chunk-10">Table 3.1: </span>Initial table cov before processing</caption>
 <thead>
@@ -642,6 +643,7 @@ tab &lt;-<span class="st"> </span><span class="kw">kable</span>(dt, <span class=
 </tr>
 </tbody>
 </table>
+</div>
 <p>And it is processed :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nom=<span class="kw">colnames</span>(dt) <span class="co"># names of the dataset&#39;s columns</span>
 <span class="co"># traduction of the columns&#39; names</span>
@@ -667,6 +669,7 @@ tab &lt;-<span class="st"> </span><span class="kw">convert_table</span>(dt, <spa
 <h4>
 Území státu_Metoda obydlenost_2018-07-04_2018-11-07_desraw_Externí politika na základě projektu_Produkční verze výstupu_Přímé úložiště prostředí environment_Platforma VŠB-TUO AWS_Území státu_TE01020155 RODOS_terpre_Uživatelé bydlící_des_Variační koeficient_raw
 </h4>
+<div class="tableau">
 <table>
 <caption>
 <span id="tab:unnamed-chunk-11">Table 3.2: </span>Table cov after processing
@@ -1666,6 +1669,7 @@ Zahraniční
 </tr>
 </tbody>
 </table>
+</div>
 <p>You can find here the script used by the convert_table function :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">convert_table =<span class="st"> </span><span class="cf">function</span>(tt, col.use, name){ <span class="co"># col.use = liste des colonnes constantes, tt = dataframe</span>
 tt.v.list =<span class="st"> </span><span class="kw">list</span>()
