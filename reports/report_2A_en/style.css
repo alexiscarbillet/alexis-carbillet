@@ -12,3 +12,8 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.tableau{
+  font-size: 10px;
+  overflow:scroll;
+}
