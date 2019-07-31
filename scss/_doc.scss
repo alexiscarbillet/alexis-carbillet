@@ -1,0 +1,32 @@
+section#doc {
+  background-color: #808080;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  ::-webkit-input-placeholder {
+	font-weight: 700;
+	color: #5e4da5;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  :-moz-placeholder {
+	font-weight: 700;
+	color: #5e4da5;
+	/* Firefox 18- */
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  ::-moz-placeholder {
+	font-weight: 700;
+	color: #5e4da5;
+	/* Firefox 19+ */
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  :-ms-input-placeholder {
+	font-weight: 700;
+	color: #5e4da5;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
