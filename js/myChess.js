@@ -94,5 +94,14 @@ var config = {
   onSnapEnd: onSnapEnd
 }
 board = ChessBoard('board', config)
+
+var fixed = document.getElementById('board');
+
+fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
+
 }; // end init()
 $(document).ready(init);
