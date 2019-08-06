@@ -27,7 +27,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/structure.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/chessboard.css"/>
 
 
   </head>
@@ -248,7 +248,12 @@
 		<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">CV</h2>
             <h3 class="section-subheading text-white">Si vous souhaitez me recruter, vous pouvez trouver mon CV sur ce site. Comme vous l'avez vu, j'ai déjà eu quelques expériences à l'étranger. De plus, j'en ai aussi en France. Vous pouvez trouver toutes ces informations en cliquant <a href="doc/cv.pdf">ici</a>.</h3>      
-          </div>
+			<div class="row">
+				<h3 class="section-subheading text-white">Comme vous l'avez remarqué, si vous avez lu mon CV, j'aime jouer aux jeu d'échecs. Vous pouvez jouer une partie ci-dessous si vous le souhaitez.</h3>
+				<div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"></div>
+				<div id="board" class="col-xs-4 col-md-4 col-sm-4 col-lg-4" ></div>
+			</div>
+		  </div>
 		 </div>
       </div>
     </section>
@@ -326,6 +331,11 @@
 
 	<!-- Leaflet part -->
 	<script src="js/leaflet.js"></script>
+	
+	<!-- Chess part -->
+	<script src="js/chess.js"></script>
+	<script src="js/chessboard.js"></script>
+	<script src="js/myChess.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>
