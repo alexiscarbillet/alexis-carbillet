@@ -926,11 +926,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #5e4da5;
 }
 
-#blocantiscroll {
-    height: 100%;
-    overflow: hidden;
-}
-
 </style>
 
 /* ------------------------------------------------------------------------------------------------------------------- */
