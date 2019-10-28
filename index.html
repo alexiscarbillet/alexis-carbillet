@@ -12,7 +12,7 @@
     <!-- Control appearance when share by social media -->
     <meta property="og:title" content="Alexis Carbillet" />
     <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://alexis-carbillet.com" />
+    <meta property='og:url' content="https://alexis-carbillet.eu" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -60,6 +60,9 @@
               <a class="nav-link js-scroll-trigger" href="#map">Map</a>
             </li>
 			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
+            </li>
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#references">References</a>
             </li>
 			<li class="nav-item">
@@ -102,6 +105,34 @@
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" align="center">
 			<div id="htmlwidget" style="width:80%;height:480px;" class="leaflet html-widget"></div>
 			<script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["August 2014: Cleaner for the city council of Crolles (4 weeks)","2015 : “Bac Scientifique” (equivalent A-level science) with honors","2015-2017: Two-years pre-graduate engineering studies at “Lycée Naval” (Brest, France)","2017-2020 : Engineering School of Mines Ales, artificial intelligence area","February-March 2018: First ranked at the Creativity Challenge for the bank “Caisse d’Épargne” in digital area (6 weeks)","10 and 11 march 2018 : Week-end of acceleration “TechTheFutur”","May-June 2018: Internship “creation of new product” in the start-up IWANT (5 weeks)","July-August 2018: Internship in the Adaptive Optics group of the Arcetri Astrophysical Observatory with the use of Python (5 weeks)","August 2018 : Teacher of Mathematics at Jean-Baptiste Dumas High School (10 students, 1 week)","November-December 2018 : Internship “council in organization” in CNP PARTNERS in informatic area with the use of BPMn, ADONIS NP and JIRA (5 weeks)","January-May 2019 : Internship “research and development” for Systeme U in multi-agents system and psychology areas with the use of GAma Modeling Language and AutoCAD (16 weeks)","May-August 2019 : Internship “assistant engineer” in Telecommunication laboratory of Czech technical university in data visualization area with the use of R and HTML (13 weeks)","September 2019 – January 2020 : Semester at ITMO, computer technology area (5 months)"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-4.525412,30.308288]}},"evals":[],"jsHooks":[]}</script>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PROJECTS SECTION ============================ -->
+
+	<section id="project">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Projects</h2>
+			<h3 class="section-subheading text-muted">Below there are examples of projects that I worked on: </h3>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
+            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/labs-works/">
+              <div class="catalogue-hover">
+                <div class="catalogue-hover-content">
+                  <p>Sentiment Analysis</p>
+                  <hr>
+                  <p class="explanation_catalogue">Tweet processing & machine learning<br></p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/projects/sentiment.png" alt="" width="250">
+            </a>			  
+          </div>
 		  </div>
 		</div>
       </div>
@@ -331,6 +362,7 @@
 	
     <!-- Custom scripts for this template -->
     <script src="js/structure.js"></script>
+	<script src="js/catalogue.js"></script>
 
 	<!-- Leaflet part -->
 	<script src="js/leaflet.js"></script>
@@ -339,6 +371,7 @@
 	<script src="js/chess.js"></script>
 	<script src="js/chessboard.js"></script>
 	<script src="js/myChess.js"></script>
+	
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>
