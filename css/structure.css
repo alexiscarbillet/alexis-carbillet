@@ -497,7 +497,65 @@ font-weight: bold;
 color: #d14;
 }
 
+.explanation_catalogue{
+  font-size: 14px;
+  margin: 20px;
+}
 
+section#project {
+  background-color: #D3D3D3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#project .catalogue-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#project .catalogue-item .catalogue-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 2%;
+}
+
+#project .catalogue-item .catalogue-link .catalogue-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  transition: all ease 1s;
+  opacity: 0;
+  background: rgba(88, 170, 151, 0.7);
+  border-radius: 2%;
+  background-color: #5e4da5 !important;
+}
+
+#project .catalogue-item .catalogue-link .catalogue-hover:hover {
+  opacity: 0.8;
+}
+
+#project .catalogue-item .catalogue-link .catalogue-hover .catalogue-hover-content {
+  font-size: 22px;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#project .catalogue-item .catalogue-link .catalogue-hover .catalogue-hover-content i {
+  margin-top: -12px;
+}
+
+#project .catalogue-item .catalogue-link .catalogue-hover .catalogue-hover-content h3,
+#project .catalogue-item .catalogue-link .catalogue-hover .catalogue-hover-content h4 {
+  margin: 0;
+}
 
 section#resume {
   background-color: #696969;
