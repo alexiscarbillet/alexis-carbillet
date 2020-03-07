@@ -4,6 +4,17 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+canvas{
+	background: white;
+	width: 100%;
+	height: 10%;
+	margin-bottom: -20%;
+	margin-top: -5%;
+}
+input{
+	display:none;
+}
+
 p {
   line-height: 1.75;
 }
@@ -156,7 +167,6 @@ img::-moz-selection {
 
 
 header.masthead .intro-text {
-  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -168,10 +178,18 @@ header.masthead .intro-text .intro-lead-in {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header.masthead .intro-download {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  padding-top: 150px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: grey;
+}
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
   header.masthead .intro-text .intro-lead-in {
@@ -192,7 +210,6 @@ header.masthead .intro-text .intro-lead-in {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
-
 
 .team-member {
   margin-bottom: 50px;
@@ -673,7 +690,6 @@ section#contact :-ms-input-placeholder {
 }
 
 section#footer {
-  padding: 15px 0;
   text-align: center;
 }
 
