@@ -82,8 +82,9 @@
     <!-- Header -->
     <header class="masthead">
      <div class="container">
+	 <canvas id="scene"></canvas>
+	 <input id="copy" type="text" value="¡Bienvenido!" />
         <div class="intro-text">
-		<br/>
           <div class="intro-lead-in">¡Hola! ¡Bienvenido en mi sitio web! Soy Alexis Carbillet, un estudiante francés en Inteligencia Artificial y hago sitios web en mi tiempo libre. Puedes encontrar en este sitio recomendaciones que me dio mis tutores y cómo contactarme. Mi currículum también está disponible si está necesario así como algunos informes de mis prácticas.</div>
         </div>
       </div>
@@ -102,7 +103,7 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" align="center">
 			<div id="htmlwidget" style="width:80%;height:480px;" class="leaflet html-widget"></div>
-			<script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223,45.503245],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288,-73.572228],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["Augusto 2014: personal de limpieza en el ayuntamiento de Crolles (4 semanas)","2015 : Bachillerato Científico","2015-2017: Pregrado dos años en estudios de ingeniería en el “Lycée Naval”","2017-2020 : Escuela de minas de Alès, área de inteligencia artificial","Febrero-Marzo 2018: Primero en el desafió de creatividad por la Caisse d’Épargne sobre el digital (6 semanas)","10 and 11 marzo 2017 : Fin de semana de aceleración TechTheFutur","Mayo-Junio 2018: Misión \"creación de nuevo producto\" en IWANT (5 semanas)","\n Julio-Agosto de 2018: Pasantía en el grupo de Óptica Adaptativa del Observatorio Astrofísico Arcetri con el uso de Python (5 semanas)","Agosto 2018: Profesor de matemáticas en la escuela secundaria (10 estudiantes, 1 semana)","Noviembre-Diciembre 2018: Pasantía “consejo en organización” en CNP PARTNERS en  informática con el uso de BPMn, ADONIS NP y JIRA ( 5 semanas)","Enero-Mayo 2019: pasantía de \"Investigación y Desarrollo\" para el Sistema U en psicoterapia y  sistemas multi-agente con el uso de GAML y AutoCAD (16 semanas)","Mayo-agosto 2019: pasantía \"ingeniero asistente\" en la Universidad Técnica Checa en visualización  de datos con el uso de lenguajes R y HTML (13 semanas)","Septiembre 2019 – Enero 2020 : Semestre en ITMO, área de informática (5 meses)","Abril – Septiembre 2020: científico de datos en OVHcloud (6 meses)"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-73.572228,30.308288]}},"evals":[],"jsHooks":[]}</script>
+			<script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223,45.266591,45.503245],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288,5.890806,-73.572228],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["Augusto 2014: personal de limpieza en el ayuntamiento de Crolles (4 semanas)","2015 : Bachillerato Científico","2015-2017: Pregrado dos años en estudios de ingeniería en el “Lycée Naval”","2017-2020 : Escuela de minas de Alès, área de inteligencia artificial","Febrero-Marzo 2018: Primero en el desafió de creatividad por la Caisse d’épargne sobre el digital (6 semanas)","10 and 11 marzo 2017 : Fin de semana de aceleración TechTheFutur","Mayo-Junio 2018: Misión \"creación de nuevo producto\" en IWANT (5 semanas)","Julio-Agosto de 2018: Pasantía en el grupo de Óptica Adaptativa del Observatorio Astrofísico Arcetri  con el uso de Python (5 semanas)","Agosto 2018: Profesor de matemáticas en la escuela secundaria (10 estudiantes, 1 semana)","Noviembre-Diciembre 2018: Pasantía “consejo en organización” en CNP PARTNERS en  informática con el uso de BPMn, ADONIS NP y JIRA ( 5 semanas)","Enero-Mayo 2019: pasantía de \"Investigación y Desarrollo\" para el Sistema U en psicoterapia y  sistemas multi-agente con el uso de GAML y AutoCAD (16 semanas)","Mayo-Agosto 2019: pasantía \"ingeniero asistente\" en la Universidad Técnica Checa en visualización  de datos con el uso de lenguajes R y HTML (13 semanas)","Septiembre 2019 – Enero 2020 : Semestre en ITMO, área de informática (5 meses)","Febrero-Marzo 2020: Interino “asistante” por VOGO para reestructurar el servidor (5 semanas)","Abril–Septiembre 2020: científico de datos en OVHcloud (6 meses)"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-73.572228,30.308288]}},"evals":[],"jsHooks":[]}</script>
 		  </div>
 		 </div>
       </div>
@@ -499,6 +500,7 @@
           </div>
         </div>
       </div>
+	<div id="particles-js" style="height:50px;"></div>
     </section>
 
 <!-- ======================================================================= -->
@@ -509,8 +511,12 @@
         <div class="row">
 		<div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
             <span class="copyright">Copyright &copy; 2019 - 2020</span>
-          </div>
-		  </div>
+        </div>
+		<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6"></div>
+		<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+		    <a href="downloads.html"><span class="copyright">Documentos</span></a>
+		</div>
+		</div>
       </div>
     </footer>
 
@@ -538,6 +544,11 @@
 	<script src="js/chessboard.js"></script>
 	<script src="js/myChess.js"></script>	
 
+	<!-- Particles part -->
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/app2.js"></script>
+	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>
     $(function () {
