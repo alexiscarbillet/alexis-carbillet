@@ -10,4 +10,4 @@ The second one shows my references and the third one is about my reports done du
 
 The last two ones are about my resume and about how to contact me. The language of the resume is the same the one selected of the website.
 
-The fifth html file is for the poker game. It is not include in the others for aesthetic reason. A chess game is also available.
+The fifth html file contains all the documents that can be downloaded from my website. A chess game is also available.
