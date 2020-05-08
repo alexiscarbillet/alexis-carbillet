@@ -536,7 +536,11 @@ section#resume :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
+section#certifs {
+  background-color: #908080;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 section#map {
   background-color: #708090;
