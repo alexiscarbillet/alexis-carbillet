@@ -210,7 +210,13 @@ header.masthead .intro-download {
 .team-member img {
   width: 225px;
   height: 225px;
-  border: 7px solid #5e4da5;;
+  border: 7px solid #5e4da5;
+}
+
+header.masthead img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid #5e4da5;
 }
 
 .team-member h4 {
