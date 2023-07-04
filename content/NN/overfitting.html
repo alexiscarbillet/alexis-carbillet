@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Overfitting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, overfitting">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Overfitting</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Overfitting is a phenomenon that occurs when a neural network is excessively trained on a particular dataset to the extent that it starts to perform poorly on new, unseen data. In other words, the network becomes too specialized and fails to generalize well beyond the training examples.</p>
+		  <p>During the training process, a neural network aims to learn patterns, relationships, and representations in the training data that allow it to make accurate predictions or classifications. However, if the network becomes too complex or is trained for too long, it can begin to memorize the training examples instead of learning the underlying patterns and concepts.</p>
+		  <p>Overfitting typically happens when the network has too many parameters relative to the amount of training data available, or when the training process continues for an excessive number of iterations. As a result, the network becomes overly sensitive to noise or random fluctuations in the training data, making it less capable of making accurate predictions on new, unseen data.</p>
+		  <p>Signs of overfitting can include:</p>
+		  <p>1. High training accuracy but low validation accuracy: The network performs very well on the training data but fails to generalize to new data.</p>
+		  <p>2. Large differences between training and validation performance: The network shows a significant gap in performance between the training and validation datasets, indicating that it is not generalizing well.</p>
+		  <p>To mitigate overfitting, various techniques can be employed:</p>
+		  <p>1. <B>Regularization</B>: This involves adding a regularization term to the loss function during training, such as L1 or L2 regularization, which encourages the network to have smaller weights and prevents it from becoming too complex.</p>
+		  <p>2. <B>Early stopping</B>: Training can be halted when the performance on the validation set starts to degrade, rather than continuing until the network achieves perfect training accuracy.</p>
+		  <p>3. <B>Data augmentation</B>: Increasing the size and diversity of the training data through techniques like rotation, translation, scaling, or adding noise can help the network learn more robust and generalizable representations.</p>
+		  <p>4. <B>Dropout</B>: Randomly disabling a fraction of the network's neurons during each training iteration can prevent co-adaptation of neurons and improve generalization.</p>
+		  <p>5. <B>Cross-validation</B>: Splitting the available data into multiple subsets and performing multiple train-validation splits helps to assess the model's performance more robustly and identify potential overfitting.</p>
+		  <p>By applying these techniques, it is possible to strike a balance between fitting the training data well and ensuring good generalization to unseen data, thereby reducing the risk of overfitting in neural networks.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>Let's illustrate overfitting using a simple example of a neural network in Python. We'll use the popular machine learning library, TensorFlow, to build and train the network. For this example, we'll work with a synthetic dataset with two features and two classes.</p>
+			<p>First, let's import the necessary libraries and generate the synthetic dataset:</p>
+			<pre><p>
+			import numpy as np
+			import matplotlib.pyplot as plt
+			from sklearn.datasets import make_moons
+
+			# Generate synthetic dataset
+			np.random.seed(0)
+			X, y = make_moons(n_samples=200, noise=0.2)
+			</p></pre>
+			<p>Now, let's split the dataset into training and testing sets:</p>
+			<pre><p>
+			from sklearn.model_selection import train_test_split
+
+			# Split the dataset into training and testing sets
+			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+			</p></pre>
+			<p>Next, we'll define and train two neural networks with different complexities: a simple network and a more complex network.</p>
+			<pre><p>
+			import tensorflow as tf
+
+			# Define a simple neural network with one hidden layer
+			model_simple = tf.keras.models.Sequential([
+				tf.keras.layers.Dense(16, input_dim=2, activation='relu'),
+				tf.keras.layers.Dense(1, activation='sigmoid')
+			])
+
+			# Define a more complex neural network with multiple hidden layers
+			model_complex = tf.keras.models.Sequential([
+				tf.keras.layers.Dense(64, input_dim=2, activation='relu'),
+				tf.keras.layers.Dense(64, activation='relu'),
+				tf.keras.layers.Dense(1, activation='sigmoid')
+			])
+
+			# Compile both models
+			model_simple.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+			model_complex.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+			# Train the simple network
+			history_simple = model_simple.fit(X_train, y_train, epochs=50, verbose=0)
+
+			# Train the complex network
+			history_complex = model_complex.fit(X_train, y_train, epochs=50, verbose=0)
+			</p></pre>
+			<p>Finally, let's visualize the training and validation accuracies for both networks:</p>
+			<pre><p>
+			# Evaluate the models on the testing set
+			loss_simple, accuracy_simple = model_simple.evaluate(X_test, y_test)
+			loss_complex, accuracy_complex = model_complex.evaluate(X_test, y_test)
+
+			# Plot the training and validation accuracies
+			plt.plot(history_simple.history['accuracy'], label='Simple Network')
+			plt.plot(history_complex.history['accuracy'], label='Complex Network')
+			plt.title('Training and Validation Accuracies')
+			plt.xlabel('Epochs')
+			plt.ylabel('Accuracy')
+			plt.legend()
+			plt.show()
+
+			print("Testing Accuracy - Simple Network: {:.2f}%".format(accuracy_simple * 100))
+			print("Testing Accuracy - Complex Network: {:.2f}%".format(accuracy_complex * 100))
+			</p></pre>
+			<p>If the more complex network overfits the data, you will observe that it achieves higher training accuracy compared to the simpler network. However, when evaluating both networks on the testing set, the simpler network may have better generalization performance and a higher accuracy.</p>
+			<p>By visualizing the training and validation accuracies, you can see the behavior of the networks during training. The complex network might achieve near-perfect accuracy on the training set, but its performance on the validation set might start to degrade after a certain point, indicating overfitting.</p>
+			<p>Remember, the specific results may vary based on the random initialization and the dataset used, but this example demonstrates the concept of overfitting in neural networks.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Multi-Layer Perceptrons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Multi-Layer Perceptrons">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Multi-Layer Perceptrons</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>A Multi-Layer Perceptrons (MLP) is a type of artificial neural network that is inspired by the human brain. It consists of three or more layers of artificial neurons, also known as perceptrons, organized in a specific way.</p>
+		  <p>Imagine you have a task where you need to recognize handwritten digits. Each digit can be represented by a set of features, such as the intensity of pixels in an image. The goal of an MLP is to learn patterns in these features and classify the digits correctly.</p>
+		  <p>The MLP is organized into layers: an input layer, one or more hidden layers, and an output layer. Each layer is made up of multiple perceptrons. In the context of an MLP, a perceptron takes in a set of inputs, performs a calculation on those inputs, and produces an output.</p>
+		  <p>In the MLP, the input layer receives the features of the digit you want to classify. Each input feature is connected to every perceptron in the first hidden layer. Each connection has a weight associated with it, which determines the importance of that input feature for the perceptron's calculation. The perceptron calculates a weighted sum of its inputs and applies an activation function to produce an output.</p>
+		  <p>The output of the first hidden layer becomes the input for the next hidden layer, and so on until we reach the output layer. The output layer consists of perceptrons that represent the possible classes or categories of the problem. In our example, each perceptron in the output layer might represent a different digit.</p>
+		  <p>During training, the MLP adjusts the weights of the connections between perceptrons to minimize the difference between the predicted output and the correct output. This process is called backpropagation, and it uses a technique called gradient descent to iteratively update the weights.</p>
+		  <p>Once the MLP has been trained, you can feed it new digit features, and it will use the learned weights to make predictions about the digit's class. The perceptrons in the output layer with the highest activations indicate the predicted class.</p>
+		  <p>In summary, an MLP is a type of neural network with multiple layers of perceptrons. It learns to recognize patterns in input data by adjusting the weights between perceptrons during training. MLPs are powerful models that can be used for various tasks, such as image recognition, natural language processing, and more.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			from sklearn.neural_network import MLPClassifier
+			from sklearn.datasets import load_digits
+			from sklearn.model_selection import train_test_split
+			from sklearn.metrics import accuracy_score
+
+			# Load the dataset
+			digits = load_digits()
+			X = digits.data
+			y = digits.target
+
+			# Split the data into training and testing sets
+			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+			# Create an MLP classifier with two hidden layers of 100 neurons each
+			mlp = MLPClassifier(hidden_layer_sizes=(100, 100), max_iter=500)
+
+			# Train the MLP classifier
+			mlp.fit(X_train, y_train)
+
+			# Make predictions on the testing set
+			y_pred = mlp.predict(X_test)
+
+			# Calculate the accuracy of the MLP classifier
+			accuracy = accuracy_score(y_test, y_pred)
+			print("Accuracy:", accuracy)
+			</p></code></pre>
+			<br>
+			<p>In this example, we use the scikit-learn library to load the digits dataset, which consists of images of handwritten digits. We split the dataset into training and testing sets using the train_test_split function. Then, we create an MLP classifier with two hidden layers, each containing 100 neurons, by initializing an MLPClassifier object. We set max_iter to 500 to limit the number of iterations during training.</p>
+			<p>Next, we train the MLP classifier by calling the fit method with the training data. After training, we use the trained MLP classifier to make predictions on the testing set by calling the predict method. Finally, we calculate the accuracy of the classifier by comparing the predicted labels with the true labels using the accuracy_score function and print the result.</p>
+			<p>Please note that this is a simple example to help you understand how to use MLPs in Python. In practice, you may need to preprocess your data, tune hyperparameters, and handle more complex scenarios based on your specific problem.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

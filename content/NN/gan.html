@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Generative Adversarial Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Generative Adversarial Network">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Generative Adversarial Networks</h2>
+			</div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Generative Adversarial Networks (GANs) are a type of machine learning model composed of two main components: a generator and a discriminator. The purpose of GANs is to generate new, realistic data that resembles a given dataset.</p>
+			<p>Here's how it works:</p>
+			<p>1. Generator: The generator is like an artist who creates new examples of data. It takes in random noise as input and tries to generate synthetic data samples that resemble the real data it was trained on. For example, if the GAN is trained on images of cats, the generator's job is to create new images of cats.</p>
+			<p>2. Discriminator: The discriminator, on the other hand, acts as a detective. It takes in both the real data from the training set and the generated data from the generator. Its task is to distinguish between real and fake samples. In our example, the discriminator would try to identify whether an image is a real cat image or a generated cat image.</p>
+			<p>3. Training: The generator and discriminator play a game against each other. They are trained together in a two-player adversarial manner. The generator tries to fool the discriminator by generating more realistic samples, while the discriminator aims to become better at distinguishing real and fake data. This competition pushes both models to improve over time.</p>
+			<p>4. Feedback loop: The models continuously provide feedback to each other. The discriminator's feedback helps the generator learn how to produce more convincing samples, while the discriminator becomes better at recognizing fakes. Through this iterative process, the generator gradually becomes skilled at generating highly realistic data.</p>
+			<p>The ultimate goal of GANs is for the generator to create data that is indistinguishable from real data to the discriminator. Once trained, GANs can be used to generate new data samples, such as images, music, or text, that closely resemble the original training data.</p>
+			<p>In a nutshell, GANs are a pair of competing models, where one generates synthetic data and the other evaluates its authenticity. By playing this adversarial game, GANs learn to create increasingly realistic and high-quality data.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import tensorflow as tf
+			from tensorflow.keras import layers
+
+			# Generator model
+			def make_generator_model():
+				model = tf.keras.Sequential()
+				model.add(layers.Dense(256, input_shape=(100,), use_bias=False))
+				model.add(layers.LeakyReLU())
+				model.add(layers.Dense(512))
+				model.add(layers.LeakyReLU())
+				model.add(layers.Dense(784, activation='tanh'))
+				return model
+
+			# Discriminator model
+			def make_discriminator_model():
+				model = tf.keras.Sequential()
+				model.add(layers.Dense(512, input_shape=(784,)))
+				model.add(layers.LeakyReLU())
+				model.add(layers.Dense(256))
+				model.add(layers.LeakyReLU())
+				model.add(layers.Dense(1, activation='sigmoid'))
+				return model
+
+			# Define the loss functions for the generator and discriminator
+			cross_entropy = tf.keras.losses.BinaryCrossentropy()
+
+			# Generator loss
+			def generator_loss(fake_output):
+				return cross_entropy(tf.ones_like(fake_output), fake_output)
+
+			# Discriminator loss
+			def discriminator_loss(real_output, fake_output):
+				real_loss = cross_entropy(tf.ones_like(real_output), real_output)
+				fake_loss = cross_entropy(tf.zeros_like(fake_output), fake_output)
+				total_loss = real_loss + fake_loss
+				return total_loss
+
+			# Define the optimizers for the generator and discriminator
+			generator_optimizer = tf.keras.optimizers.Adam(1e-4)
+			discriminator_optimizer = tf.keras.optimizers.Adam(1e-4)
+
+			# Create the generator and discriminator models
+			generator = make_generator_model()
+			discriminator = make_discriminator_model()
+
+			# Training loop
+			@tf.function
+			def train_step(images):
+				noise = tf.random.normal([batch_size, 100])
+
+				with tf.GradientTape() as gen_tape, tf.GradientTape() as disc_tape:
+					generated_images = generator(noise, training=True)
+
+					real_output = discriminator(images, training=True)
+					fake_output = discriminator(generated_images, training=True)
+
+					gen_loss = generator_loss(fake_output)
+					disc_loss = discriminator_loss(real_output, fake_output)
+
+				gradients_of_generator = gen_tape.gradient(gen_loss, generator.trainable_variables)
+				gradients_of_discriminator = disc_tape.gradient(disc_loss, discriminator.trainable_variables)
+
+				generator_optimizer.apply_gradients(zip(gradients_of_generator, generator.trainable_variables))
+				discriminator_optimizer.apply_gradients(zip(gradients_of_discriminator, discriminator.trainable_variables))
+
+			# Training example
+			batch_size = 128
+			epochs = 100
+
+			# Load and preprocess your dataset here
+			# ...
+
+			# Start training
+			for epoch in range(epochs):
+				for batch in range(len(dataset) // batch_size):
+					images = dataset[batch * batch_size: (batch + 1) * batch_size]
+
+					train_step(images)
+
+				# Generate some example images every few epochs
+				if epoch % 10 == 0:
+					noise = tf.random.normal([16, 100])
+					generated_images = generator(noise, training=False)
+					# Display or save the generated images
+					# ...
+			</p></code></pre>
+			<br>
+			<p>In this example, the generator model is a simple neural network that takes random noise as input and generates synthetic images. The discriminator model is another neural network that takes both real and generated images as input and predicts their authenticity.</p>
+			<p>The train_step function defines a single training step for the GAN. It calculates the loss for both the generator and discriminator models, computes the gradients, and applies the optimizer updates.</p>
+			<p>The training loop iterates over the dataset, feeding batches of real images to the GAN and updating the models based on their performance. Every few epochs, the generator is used to generate some example images for visualization or further analysis.</p>
+			<p>Please note that this is a simplified example, and in practice, GANs may require additional techniques such as data preprocessing, advanced network architectures, and regularization methods to achieve better results.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

@@ -6,7 +6,7 @@
     <title>Alexis Carbillet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, sql, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
@@ -19,7 +19,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="img/logo/logo.png" />
+	<link rel="shortcut icon" href="img/logo/logo.png"/>
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +30,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/structure.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/chessboard.css"/>
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -48,30 +47,22 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
 		<img src="img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
-		<FORM NAME="Choix">
-		<SELECT NAME="Liste" onChange="Lien()">
-		<OPTION VALUE="index.html" selected="selected"><font face="Montserrat" color="black" size="3"> English </font>
-		<OPTION VALUE="spanish_version.html"><font face="Montserrat" color="black" size="3"> Español </font>
-		<OPTION VALUE="french_version.html"><font face="Montserrat" color="black" size="3"> Français </font>
-		<OPTION VALUE="russian_version.html"><font face="Montserrat" color="black" size="3"> Pусский </font>
-		</SELECT>
-		</FORM>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#map">Map</a>
+		    <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#prom">Prometheus</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#sql">SQL</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#references">References</a>
+              <a class="nav-link js-scroll-trigger" href="#ai">AI</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+              <a class="nav-link js-scroll-trigger" href="#vis">Visualization</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -86,326 +77,318 @@
     <!-- Header -->
     <header class="masthead">
 	  <div class="container">		
-		  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US"><img id="me" class="mx-auto rounded-circle" src="img/creator/alexis_carbillet.png" alt="" style="width:12%;height:12%;margin-top:100px;"></a>
 		  <div class="intro-text">
-          <div class="intro-lead-in">
-		  Hello! Welcome on my website! I am Alexis Carbillet, a former French student in Artificial Intelligence at <a href="https://www.mines-ales.fr/">IMT Mines Alès</a>. You can find in this website some <a href="#references">recommendations</a> that my former tutors gave me and how to <a href="#contact">contact</a> me. It contains examples of <a href="#project">projects</a> that I worked on. My <a href="#resume">resume</a> is also available in case you need it. I am currently working at <a href="https://www.ovhcloud.com/en/"> OVHcloud </a> as a SRE Openstack.
+          <div class="intro-lead-in text-left" style="padding-top: 5%">
+		  What is machine learning? How does it work? Is it easy to implement? <br>	  
+		  How can I prepare my data? <br>	
+		  How to show your data efficiently? How to represent the reality to its closest? <br>	
+		  Find out here. <br>	
 		  </div>
 	  </div>
     </header>
 
+<!-- ======================== PROM BLOG SECTION ============================ -->
 
-<!-- ======================== MAP SECTION ============================ -->
+<section class="bg-dark" id="prom">
+<div class="parallaxstory">
+  <div class="container">
+	<div class="row">
+	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+		<h2 class="section-heading text-uppercase" style="color:white">Prometheus Blog</h2>
+		<h3 class="section-subheading text-muted">Empower your data with Prometheus, the key to unlocking the secrets of your systems and harnessing the power of monitoring and observability.</h3>
+		<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Basics</button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
 
-	<section class="bg-light" id="map">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Map</h2>
-			<h3 class="section-subheading text-muted">Below there is a map containing the locations in which I worked/studied. </h3>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" align="center">
-			<div id="htmlwidget" style="width:80%;height:480px;" class="leaflet html-widget"></div>
-			<script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223,45.266591,45.756505,52.431793,45.502734],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288,5.890806,4.861041,13.538462,-73.572098],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["August 2014: Cleaner for the city council of Crolles","2015 : “Bac Scientifique” (equivalent A-level science) with honors","2015-2017: Two-years pre-graduate engineering studies at “Lycée Naval”","2017-2020 : Engineering School of Mines Ales, artificial intelligence area","February-March 2018: First ranked at the Creativity Challenge for the bank “Caisse d’Épargne” in digital area","10 and 11 march 2018 : Week-end of acceleration “TechTheFutur”","May-June 2018: Internship “creation of new product” in the start-up IWANT","July-August 2018: Internship in the Adaptive Optics group of the Arcetri Astrophysical Observatory with the use of Python","August 2018 : Teacher of Mathematics at Jean-Baptiste Dumas High School","November-December 2018 : Internship “council in organization” in CNP PARTNERS in informatic area with the use of BPMn, ADONIS NP and JIRA","January-May 2019 : Internship “research and development” for Systeme U in multi-agents system and psychology areas with the use of GAma Modeling Language and AutoCAD","May-August 2019 : Internship “assistant engineer” in Telecommunication laboratory of Czech technical university in data visualization area with the use of R and HTML (13 weeks)","September 2019 – January 2020 : Semester at ITMO, computer technology area","February-March 2020: Temp worker “Assistant” at VOGO with server structuring","May–August 2020 :  Data scientist at OVHcloud in outlier detection and time series forecast areas","October 2020 - June 2021: AI Data scientist at Ice Gateway GmbH in speech recognition area using pocketsphinx and python. Creation of an android application, management of 2 french students","July 2020 - Today: SRE openstack in the Public Cloud of OVHcloud"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-73.572098,30.308288]}},"evals":[],"jsHooks":[]}</script>
-          </div>
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Operators</button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Functions</button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">HTTP API</button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
+		<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%; padding-top: 5%">Examples</h3>
 		</div>
-      </div>
-    </section>
+	</div>
+  </div>
+</div>
+
+</section>
 
 <!-- ======================================================================= -->
 
-<!-- ======================== PROJECTS SECTION ============================ -->
+<!-- ======================== SQL BLOG SECTION ============================ -->
 
-	<section id="project">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Projects</h2>
-			<h3 class="section-subheading text-muted">Below there are examples of projects that I worked on: </h3>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://www.ovhcloud.com/en/public-cloud/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>OVHcloud Public Cloud</p>
-                  <hr>
-                  <p class="explanation_catalogue"><br>Openstack</p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/publiccloud.PNG" alt="" style="width:250px;height:187px;">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://www.ice-gateway.com/index.php/en/loesungen/mobility/iceassist-en">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>iceASSIST</p>
-                  <hr>
-                  <p class="explanation_catalogue"><br>Speech recognition & Android development</p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/iceAssist.PNG" alt="" style="width:250px;height:187px;">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/deep_dream/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>InceptionV3 with Tensorflow</p>
-                  <hr>
-                  <p class="explanation_catalogue">Deep dream & neural network<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/dream.PNG" alt="" style="width:250px;height:187px;">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/style_transfer/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>VGG19 with Keras</p>
-                  <hr>
-                  <p class="explanation_catalogue">Style transfer & neural network<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/style_transfert.png" alt="" style="width:250px;height:187px;">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/dashboard/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>dashboard of european gold reserves</p>
-                  <hr>
-                  <p class="explanation_catalogue">Data Visualization<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/dashboard.PNG" alt="" style="width:250px;height:187px;">
-            </a>	
-          </div>		  
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/retinanet/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Retinanet with Keras</p>
-                  <hr>
-                  <p class="explanation_catalogue">Object detection & neural network<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/obj.PNG" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/SegNet/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>SegNet with Keras</p>
-                  <hr>
-                  <p class="explanation_catalogue">Image segmentation & neural network<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/seg.PNG" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/CNN/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>CNN with Keras</p>
-                  <hr>
-                  <p class="explanation_catalogue">Image processing & neural network<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/car.PNG" alt="" width="250">
-            </a>	
-          </div>	
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/movie-recommender/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Movie Recommender</p>
-                  <hr>
-                  <p class="explanation_catalogue">Recommendation system<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/movie.PNG" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/labs-works-3/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Demography Prediction</p>
-                  <hr>
-                  <p class="explanation_catalogue">Data processing & machine learning<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/fusion.png" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/machine-learning-images/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Machine learning with images</p>
-                  <hr>
-                  <p class="explanation_catalogue">Image processing & machine learning<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/car.PNG" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/travelling-salesman/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Travelling Salesman Problem</p>
-                  <hr>
-                  <p class="explanation_catalogue">Evolutionary Computing<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/salesman.png" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/AiSight-Challenge/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>AiSight Challenge</p>
-                  <hr>
-                  <p class="explanation_catalogue">Data processing & machine learning<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/AiSight.png" alt="" width="250">
-            </a>	
-          </div>
-		  <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-			<a class="catalogue-link"  href="https://alexiscarbillet.github.io/labs-works/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Sentiment Analysis</p>
-                  <hr>
-                  <p class="explanation_catalogue">Tweet processing & machine learning<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/sentiment.png" alt="" width="250">
-            </a>
-		   </div>
-		   <div class="col-xs-12 col-md-12 col-sm-6 col-lg-3 catalogue-item show text-center" align="center">
-            <a class="catalogue-link"  href="https://alexiscarbillet.github.io/Visualization-Project/">
-              <div class="catalogue-hover">
-                <div class="catalogue-hover-content">
-                  <p>Gold Reserves (website in French)</p>
-                  <hr>
-                  <p class="explanation_catalogue">Data Visualization<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/projects/Golden.PNG" alt="" width="250">
-            </a>	
-          </div>
+<section class="bg-light" id="sql">
+<div class="parallaxstory">
+  <div class="container">
+	<div class="row">
+	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+		<h2 class="section-heading text-uppercase">SQL Blog</h2>
+		<h3 class="section-subheading text-muted">"The language that unlocks the power of data, transforming chaos into clarity, and paving the way for informed decisions.</h3>
+		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"></button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="btn-group">
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"></button>
+				<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/DP/audio.html"></a>
+				</div>
+			</div>
+			</div>
+		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%; padding-top: 5%">Examples</h3>
+		</div>
+	</div>
+  </div>
+</div>
+
+</section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== AI BLOG SECTION ============================ -->
+
+
+<section class="bg-dark" id="ai">
+<div class="parallaxstory">
+  <div class="container">
+	<div class="row">
+	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+		<h2 class="section-heading text-uppercase" style="color:white">Artificial Intelligence Blog</h2>
+		<h3 class="section-subheading text-muted">Harness the power of AI to Automate Tasks, Make Smarter Decisions, Personalize Experiences, Optimize Efficiency & Enhance Innovation.</h3>
+		<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Data processing</button>
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="content/DP/audio.html">Audio</a>
+			  <a class="dropdown-item" href="content/DP/csv.html">CSV</a>
+			  <a class="dropdown-item" href="content/DP/image.html">Image</a>
+			  <a class="dropdown-item" href="content/DP/time.html">Time series</a>
+			  <a class="dropdown-item" href="content/DP/text.html">Text</a>
+			  <a class="dropdown-item" href="content/DP/video.html">Video</a>
+			</div>
 		  </div>
 		</div>
-      </div>
-    </section>
 
-<!-- ======================================================================= -->
-
-<!-- ======================== REFERENCES SECTION ============================ -->
-
-    <section class="bg-secondary" id="references">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">References</h2>
-            <h3 class="section-subheading text-white">You can find here some recommendations by my former tutors.</h3>  			
-            <br>
-          </div>
-        </div>
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="text-align: center">
-                    <img src="img/tutors/armando.jpg" style="border-radius: 50%" width="170px">
-                  </div>
-                  <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center text-md-left">
-                    <br>
-                    <p style="color: white; font-size: 8"><i>"Alexis is a smart and serious guy. He is autonomous and he is efficient. It was a pleasure working with him."</i></p>
-                    <p><a href="https://www.linkedin.com/in/armando-riccardi/" style="color: #69b3a2;">A. Riccardi</a> - <span style="font-size: 12px; display: inline;"><i>Researcher at the <a href="https://www.arcetri.inaf.it/en/" style="color: #69b3a2;">Arcetri Astrophysical Observatory</a></i></span></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item active carousel-item-left">
-                <div class="row">
-                  <div class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="text-align: center">
-                    <img src="img/tutors/gérard.jpg" style="border-radius: 50%" width="170px">
-                  </div>
-                  <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center text-md-left">
-                    <br>
-                    <p style="color: white; font-size: 8"><i>"I supervised Alexis as part of IMT Mines Alès' research and development mission. He showed great autonomy and put his skills at the service of the collective to achieve the objectives of the project."</i></p>
-                    <p><a href="https://www.linkedin.com/in/g%C3%A9rard-dray-730b4550/" style="color: #69b3a2;">G. Dray</a> - <span style="font-size: 12px; display: inline;"><i>Researcher at the <a href="https://www.mines-ales.fr/" style="color: #69b3a2;">IMT Mines d'Alès</a></i></span></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item carousel-item-next carousel-item-left">
-                <div class="row">
-                  <div class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="text-align: center">
-                    <img src="img/tutors/jiri.jpg" style="border-radius: 50%" width="170px">
-                  </div>
-                  <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center text-md-left">
-                    <br>
-                    <p style="color: white; font-size: 8"><i>"The student's work and behaviour met our expectation at full. We are ready to give our recommendation for his involvement in future projects. It was a pleasure working with him."</i></p>
-                    <p><a href="https://www.linkedin.com/in/jiri-hylmar/" style="color: #69b3a2;">J. Hylmar</a> - <span style="font-size: 12px; display: inline;"><i>Researcher at the <a href="https://www.cvut.cz/en" style="color: #69b3a2;">Czech Technical University</a></i></span></p>
-                  </div>
-                </div>
-              </div>
-			  
-			  <div class="carousel-item">
-                <div class="row">
-                  <div class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="text-align: center">
-                    <img src="img/tutors/xavier.jpg" style="border-radius: 50%" width="170px">
-                  </div>
-                  <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center text-md-left">
-                    <br>
-                    <p style="color: white; font-size: 8"><i>"Alexis fulfilled the mission perfectly within OVHcloud. We would have liked to be able to make him a job offer, but the economic situation linked to the COVID-19 pandemic did not, unfortunately, allow us to succeed. We want to be able to work with Alexis as soon as it is possible again."</i></p>
-                    <p><a href="https://www.linkedin.com/in/xaviernicolle/" style="color: #69b3a2;">X. Nicolle</a> - <span style="font-size: 12px; display: inline;"><i>CTO Public Cloud à<a href="https://www.ovhcloud.com/fr/" style="color: #69b3a2;"> OVHcloud</a></i></span></p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-          </div>
-
-      </div>
-    </section>
-	
-<!-- ======================================================================= -->
-
-<!-- ======================== RESUME SECTION ============================ -->
-
-    <section id="resume">
-      <div class="container">
-        <div class="row">
-		<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Resume</h2>
-            <h3 class="section-subheading text-white" style="margin-bottom:10px;">If you want to recruit me, you can find my resume in this website. As you have seen, I have already some experiences abroad. Moreover, I have some in France too. You can find all information about it by clicking <a href="doc/resume.pdf" style="color: #69b3a2;">here</a>.</h3>      
-			<a href="doc/resume.pdf"><img src="img/cv/resume.PNG" style="width:40%;height:80%;" alt=""></a>
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network</button>
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="content/NN/introduction.html">Neural Network Introduction</a>
+			  <a class="dropdown-item" href="content/NN/activation.html">Activation</a>
+			  <a class="dropdown-item" href="content/NN/attention.html">Attention</a>
+			  <a class="dropdown-item" href="content/NN/loss.html">Loss</a>
+			  <a class="dropdown-item" href="content/NN/metrics.html">Metrics</a>
+			  <a class="dropdown-item" href="content/NN/optimizers.html">Optimizers</a>
+			  <a class="dropdown-item" href="content/NN/overfitting.html">Overfitting</a>
+			  <a class="dropdown-item" href="content/NN/regularization.html">Regularization</a>
+			  <a class="dropdown-item" href="content/NN/update.html">Updating Neural Network</a>
+			  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network Algorithms</button>
+			  <div class="dropdown-menu">
+			  <a class="dropdown-item" href="content/NN/autoencoder.html">Autoencoder</a>
+			  <a class="dropdown-item" href="content/NN/cnn.html">Convolutional Neural Network</a>
+			  <a class="dropdown-item" href="content/NN/gan.html">Generative Adversarial Network</a>
+			  <a class="dropdown-item" href="content/NN/lstm.html">Long Short-Term Memory</a>
+			  <a class="dropdown-item" href="content/NN/mlp.html">Multi-Layer Perceptrons</a>
+			  <a class="dropdown-item" href="content/NN/rnn.html">Recurrent Neural Network</a>
+			  </div>
+			</div>
+		  </div>
 		</div>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Semi-supervised ML</button>
+			<div class="dropdown-menu">
+				  <a class="dropdown-item" href="content/SSML/introduction.html">Semi-supervised ML Introduction</a>
+				  <a class="dropdown-item" href="content/SSML/co.html">Co-training</a>
+				  <a class="dropdown-item" href="content/SSML/exp.html">Expectation-Maximization</a>
+				  <a class="dropdown-item" href="content/SSML/lab.html">Label Propagation</a>
+				  <a class="dropdown-item" href="content/SSML/mean.html">Mean-Teacher</a>
+				  <a class="dropdown-item" href="content/SSML/self.html">Self-Training</a>
+				  <a class="dropdown-item" href="content/SSML/tri.html">Tri-Training</a>
+				  <a class="dropdown-item" href="content/SSML/vat.html">Virtual Adversarial Training</a>
+			</div>
+		  </div>
 		</div>
-      </div>
-    </section>
-	
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Supervised ML</button>
+			<div class="dropdown-menu">
+				  <a class="dropdown-item" href="content/SML/introduction.html">Supervised ML Introduction</a>
+				  <a class="dropdown-item" href="content/SML/cross-decomposition.html">Cross Decomposition</a>
+				  <a class="dropdown-item" href="content/SML/decision-tree.html">Decision Tree</a>
+				  <a class="dropdown-item" href="content/SML/ensemble-methods.html">Ensemble Methods</a>
+				  <a class="dropdown-item" href="content/SML/gaussian-process.html">Gaussian Process</a>
+				  <a class="dropdown-item" href="content/SML/linear.html">Linear regression</a>
+				  <a class="dropdown-item" href="content/SML/naive.html">Naive Bayes</a>
+				  <a class="dropdown-item" href="content/SML/perceptron.html">Perceptron</a>
+				  <a class="dropdown-item" href="content/SML/ridge.html">Ridge regression</a>
+				  <a class="dropdown-item" href="content/SML/sgd.html">Stochastic Gradient Descent</a>
+				  <a class="dropdown-item" href="content/SML/svm.html">Support Vector Machine</a>
+			</div>
+		  </div>
+		</div>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Unsupervised ML</button>
+			<div class="dropdown-menu">
+				  <a class="dropdown-item" href="content/UML/introduction.html">Unsupervised ML Introduction</a>
+				  <a class="dropdown-item" href="content/UML/biclustering.html">Biclustering</a>
+				  <a class="dropdown-item" href="content/UML/clustering.html">Clustering</a>
+				  <a class="dropdown-item" href="content/UML/gm.html">Gaussian Mixture</a>
+				  <a class="dropdown-item" href="content/UML/isolation.html">Isolation Forest</a>
+				  <a class="dropdown-item" href="content/UML/manifold.html">Manifold Learning</a>
+				  <a class="dropdown-item" href="content/UML/pca.html">Principal Component Analysis</a>
+			</div>
+		  </div>
+		</div>
+		<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%; padding-top: 5%">Examples</h3>
+	  </div>
+	</div>
+  </div>
+</div>
+
+</section>
+
 <!-- ======================================================================= -->
+
+<!-- ======================== DATA VISULALIZATION BLOG SECTION ============================ -->
+
+
+<section class="bg-light" id="vis">
+<div class="parallaxstory">
+  <div class="container">
+	<div class="row">
+	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+		<h2 class="section-heading text-uppercase">Data Visualization Blog</h2>
+		<h3 class="section-subheading text-muted">One wrong step and the data could be misinterpreted, leading to huge cost for the company when making important choices. Data visualization is not something you should take lightly.</h3>
+		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Hierarchical</button>
+			<div class="dropdown-menu">
+    		    <a class="dropdown-item" href="content/Hierarchical/sc.html">Sunburst charts</a>
+				<a class="dropdown-item" href="content/Hierarchical/tree.html">Tree diagram</a>
+    		    <a class="dropdown-item" href="content/Hierarchical/treemaps.html">Treemaps</a>
+    		    <a class="dropdown-item" href="content/Hierarchical/oc.html">Organizational charts</a>
+    		    <a class="dropdown-item" href="content/Hierarchical/cd.html">Cluster dendrograms</a>
+			</div>
+		  </div>
+		</div>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Temporal</button>
+			<div class="dropdown-menu">
+			    <a class="dropdown-item" href="content/Temporal/line.html">Line graphs</a>
+    		    <a class="dropdown-item" href="content/Temporal/area.html">Area charts</a>
+    		    <a class="dropdown-item" href="content/Temporal/candle.html">Candlestick charts</a>
+    		    <a class="dropdown-item" href="content/Temporal/gantt.html">Gantt charts</a>
+    		    <a class="dropdown-item" href="content/Temporal/heat.html">Heatmaps (time series)</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Distribution</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/Distribution/violin.html">Violin</a>
+				<a class="dropdown-item" href="content/Distribution/density.html">Density</a>
+				<a class="dropdown-item" href="content/Distribution/histogram.html">Histogram</a>
+				<a class="dropdown-item" href="content/Distribution/boxplot.html">Boxplot</a>
+				<a class="dropdown-item" href="content/Distribution/ridgeline.html">Ridgeline</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Ranking</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="content/Ranking/bar.html">Bar charts</a>
+				<a class="dropdown-item" href="content/Ranking/lollipop.html">Lollipop</a>
+				<a class="dropdown-item" href="content/Ranking/wordcloud.html">Wordcloud</a>
+				<a class="dropdown-item" href="content/Ranking/radar.html">Radar</a>
+			  </div>
+			</div>
+		  </div>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Spatial</button>
+			<div class="dropdown-menu">
+			   	<a class="dropdown-item" href="content/Spatial/choropleth.html">Choropleth maps</a>
+    		    <a class="dropdown-item" href="content/Spatial/bubble.html">Bubble maps</a>
+    		    <a class="dropdown-item" href="content/Spatial/heatmap.html">Heatmaps (geographical)</a>
+    		    <a class="dropdown-item" href="content/Spatial/carto.html">Cartograms</a>
+    		    <a class="dropdown-item" href="content/Spatial/flow.html">Flow maps</a>
+    		    <a class="dropdown-item" href="content/Spatial/satellite.html">Satellite imagery overlays</a>
+			</div>
+		  </div>
+		</div>
+
+		<div class="btn-group">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Correlation</button>
+			<div class="dropdown-menu">
+			    <a class="dropdown-item" href="content/Correlation/sp.html">Scatter plots</a>
+    		    <a class="dropdown-item" href="content/Correlation/matrice.html">Correlation matrices</a>
+    		    <a class="dropdown-item" href="content/Correlation/para.html">Parallel coordinate plots</a>
+    		    <a class="dropdown-item" href="content/Correlation/sankey.html">Sankey diagrams</a>
+    		    <a class="dropdown-item" href="content/Correlation/fd.html">Force-directed graphs</a>
+			</div>
+		  </div>
+		</div>
+		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%; padding-top: 5%">Examples</h3>
+		
+	  </div>
+	</div>
+  </div>
+</div>
+
+</section>
+
+<!-- ======================================================================= -->
+
 
 <!-- ========================== CONTACT SECTION ============================== -->
 
@@ -420,9 +403,9 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <div class="team-member">
-             <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US"><img class="mx-auto rounded-circle" src="img/creator/alexis_carbillet.png" alt=""></a>
-              <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US"><h4>Alexis Carbillet</h4></a>
-              <p class="text-muted">SRE Openstack</p>
+             <a href="me.html"><img class="mx-auto rounded-circle" src="img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:alexis.carbillet@mines-ales.org">
@@ -456,13 +439,10 @@
             <span class="copyright" >Copyright &copy; 2019 - 2023</span>
 			</div>
 			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
-			<a href="spanish_version.html"><span class="copyright" style="margin-left: 2%;">Español</span></a>
-			<a href="french_version.html"><span class="copyright" style="margin-left: 2%;">Français</span></a>
-			<a href="russian_version.html"><span class="copyright" style="margin-left: 2%;">Pусский</span></a>
 			</div>
 			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
 			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
-			<a href="downloads.html"><span class="copyright" style="margin-right: 2%;">Documents</span></a>
+			<a href="index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
 			</div>
 		</div>
 		<div id="particles-js" style="height:50px;"></div>
@@ -484,7 +464,6 @@
 	
     <!-- Custom scripts for this template -->
     <script src="js/structure.js"></script>
-	<script src="js/catalogue.js"></script>
 
 	<!-- Leaflet part -->
 	<script src="js/leaflet.js"></script>

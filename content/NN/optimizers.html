@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Neural Network Optimizers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, optimizers">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Neural Network Optimizers</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>In the context of neural networks, optimizers are algorithms that help improve the performance of the network by adjusting its internal parameters.</p>
+		  <p>Think of a neural network as a complex mathematical model with many adjustable knobs and switches. These knobs and switches, called parameters, determine how the network behaves and make predictions. The goal of the optimizer is to find the best values for these parameters, so that the network can accurately predict the desired outputs.</p>
+		  <p>To understand how optimizers work, let's imagine a scenario where you're trying to find the lowest point in a hilly landscape. You're blindfolded and can only take small steps. An optimizer is like your guide that tells you which direction to step in order to reach the lowest point.</p>
+		  <p>Similarly, in a neural network, an optimizer helps the network adjust its parameters in a way that reduces the difference between the predicted outputs and the actual outputs. It does this by calculating the gradients, which represent the direction and magnitude of the steepest descent in the prediction error. The optimizer then updates the parameters based on these gradients, nudging them closer to the values that minimize the error.</p>
+		  <p>There are different types of optimizers, each with its own strategy for adjusting the parameters. Some optimizers take larger steps when the gradients are steep, while others take smaller steps to be more cautious. The choice of optimizer depends on the specific problem and the characteristics of the data.</p>
+		  <p>In simple terms, optimizers are like helpful guides that assist neural networks in finding the best values for their parameters, allowing them to make more accurate predictions.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Activations Comparison</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>Let's compare some commonly used optimizers functions in neural networks:</p>
+			<pre><p>
+			Stochastic Gradient Descent (SGD):
+				Simple and widely used optimizer.
+				Updates the parameters in the direction of the negative gradient of the loss function.
+				Can be slow and may get stuck in shallow local minima.
+
+			Momentum:
+				Accelerates SGD by accumulating a momentum term.
+				Helps overcome small gradients and speed up convergence.
+				Can overshoot the minima due to accumulated momentum.
+
+			AdaGrad (Adaptive Gradient):
+				Adjusts the learning rate adaptively for each parameter based on its historical gradients.
+				Suitable for sparse data and helps converge faster for parameters with infrequent updates.
+				Learning rate can become too small over time, slowing down convergence.
+
+			RMSprop (Root Mean Square Propagation):
+				Resolves the learning rate issue of AdaGrad by using a moving average of squared gradients.
+				Adapts the learning rate on a per-parameter basis.
+				Helps converge faster and handle non-stationary objectives.
+
+			Adam (Adaptive Moment Estimation):
+				Combines the advantages of momentum and RMSprop.
+				Maintains per-parameter learning rates and per-parameter momentum.
+				Performs well on a wide range of problems and is one of the most popular optimizers.
+
+			AdaDelta:
+				An extension of RMSprop that addresses the diminishing learning rate problem.
+				Adapts learning rates based on a moving average of the gradient updates.
+				Reduces the need for manual tuning of learning rate hyperparameters.
+
+			Adamax:
+				A variant of Adam that incorporates the infinity norm.
+				Useful for models with very sparse gradients.
+				Less frequently used compared to Adam.
+
+			</p></pre>
+			<p>It's important to note that the performance of optimizers can vary depending on the specific problem and the dataset. Experimentation is often necessary to find the optimizer that works best for your particular neural network architecture and training data.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

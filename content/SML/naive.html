@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Naive Bayes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, Naive Bayes">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Naive Bayes</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The Naive Bayes algorithm is a simple yet powerful machine learning algorithm used for classification tasks. It's called "naive" because it makes a strong assumption that the features (or attributes) of the data are independent of each other, even though that may not be true in reality.</p>
+		  <p>To understand how Naive Bayes works, let's consider a simple example of classifying emails as either spam or not spam. The algorithm uses a set of features from an email, such as the presence of certain words or the length of the email, to make predictions.</p>
+		  <p>Here's a step-by-step explanation of how Naive Bayes works:</p>
+		  <p>1. Training Phase: During this phase, the algorithm learns from a labeled dataset, which consists of emails labeled as either spam or not spam. It calculates the probabilities of different features occurring in spam and non-spam emails.</p>
+		  <p>2. Feature Independence Assumption: Naive Bayes assumes that the occurrence of each feature is independent of the other features in determining the class label. This simplifies the calculation but may not hold true in real-world scenarios.</p>
+		  <p>3. Calculating Class Probabilities: Given a new, unlabeled email, the algorithm calculates the probability of it belonging to each class (spam or not spam). It does this by multiplying the probabilities of each feature occurring in that class.</p>
+		  <p>4. Applying Bayes' Theorem: The algorithm then applies Bayes' theorem to calculate the final probability of the email belonging to each class. Bayes' theorem incorporates the prior probability of each class (which can be based on the distribution of classes in the training data) and the likelihood of the features occurring in that class.</p>
+		  <p>5. Prediction: Finally, the algorithm assigns the class label with the highest probability as the predicted class for the new email. If the highest probability corresponds to the spam class, the email is classified as spam; otherwise, it's classified as not spam.</p>
+		  <p>That's the basic idea behind the Naive Bayes algorithm. It's relatively simple and computationally efficient, making it popular for text classification tasks like spam filtering, sentiment analysis, and document categorization. However, its assumption of feature independence can limit its accuracy in some cases.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			from sklearn.feature_extraction.text import CountVectorizer
+			from sklearn.naive_bayes import MultinomialNB
+
+			# Sample training data
+			emails = [
+				("Hey, I hope you're doing well.", "not spam"),
+				("Win a free trip to Hawaii!", "spam"),
+				("Check out this cool offer.", "spam"),
+				("Let's meet for lunch tomorrow.", "not spam")
+			]
+
+			# Separate the emails and their labels
+			X_train = [email[0] for email in emails]
+			y_train = [email[1] for email in emails]
+
+			# Convert text data into numerical feature vectors
+			vectorizer = CountVectorizer()
+			X_train_vectorized = vectorizer.fit_transform(X_train)
+
+			# Train the Naive Bayes classifier
+			classifier = MultinomialNB()
+			classifier.fit(X_train_vectorized, y_train)
+
+			# Sample test email
+			test_email = "Get a discount on your next purchase!"
+
+			# Convert the test email into a feature vector
+			test_email_vectorized = vectorizer.transform([test_email])
+
+			# Predict the class of the test email
+			predicted_class = classifier.predict(test_email_vectorized)
+
+			# Print the predicted class
+			print("Predicted class:", predicted_class[0])
+			</p></code></pre>
+			<p>In this example, we have a small dataset of labeled emails. We first separate the emails and their corresponding labels. Then, using the CountVectorizer from scikit-learn, we convert the text data into numerical feature vectors.</p>
+			<p>Next, we create an instance of the MultinomialNB class, which represents the Naive Bayes classifier for multinomially distributed data. We fit the classifier using the training data and their corresponding labels.</p>
+			<p>To classify a new email, we convert it into a feature vector using the same vectorizer and pass it to the classifier's predict method. The predicted class is then printed.</p>
+			<p>Note that this is a simplified example, and in real-world scenarios, you would typically have a much larger dataset and perform preprocessing steps such as removing stop words, handling text normalization, and exploring different feature extraction techniques.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

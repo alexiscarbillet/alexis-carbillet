@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Recurrent Neural Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Recurrent Neural Network">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Recurrent Neural Network</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>A Recurrent Neural Network (RNN) is a type of artificial neural network that is specifically designed to process sequential data, such as time series or text. What sets RNNs apart from other neural networks is their ability to maintain and utilize a form of memory called "hidden state" or "context".</p>
+		  <p>Imagine you're reading a sentence word by word. As you encounter each word, you not only consider its individual meaning but also take into account the previous words to understand the complete sentence. Similarly, an RNN processes sequential data by incorporating information from the previous steps or time points, which allows it to capture dependencies and patterns within the sequence.</p>
+		  <p>In an RNN, each step of the sequence is represented by a "cell." This cell takes an input, combines it with the information from the previous step (hidden state), and produces an output and a new hidden state. The output can be used for predictions or further processing, and the updated hidden state is passed to the next step in the sequence. This iterative process allows the RNN to remember information from earlier steps and use it to influence future predictions or outputs.</p>
+		  <p>The beauty of RNNs lies in their ability to handle input sequences of varying lengths and capture long-term dependencies. By incorporating memory and context, RNNs excel in tasks like language modeling, speech recognition, machine translation, sentiment analysis, and more.</p>
+		  <p>It's important to note that while RNNs are powerful, they do have certain limitations, such as difficulties in capturing very long-term dependencies and the vanishing or exploding gradient problem. These limitations have led to the development of more advanced variants of RNNs, such as Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), which address these issues to some extent.</p>
+		  <p>Overall, RNNs are a valuable tool for processing and understanding sequential data, enabling machines to learn from the past and make predictions based on context.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import numpy as np
+			from keras.models import Sequential
+			from keras.layers import SimpleRNN, Dense
+
+			# Generate some sequential data for training
+			data = np.random.randn(1000, 10)  # 1000 sequences, each with 10 timesteps
+			targets = np.random.randint(0, 2, (1000, 1))  # Binary targets (0 or 1) for each sequence
+
+			# Create the RNN model
+			model = Sequential()
+			model.add(SimpleRNN(units=32, input_shape=(10, 1)))  # 32 hidden units, input shape (timesteps, features)
+			model.add(Dense(units=1, activation='sigmoid'))  # Output layer with sigmoid activation for binary classification
+
+			# Compile the model
+			model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+			# Train the RNN model
+			model.fit(data, targets, epochs=10, batch_size=32)
+
+			# Generate some new data for testing
+			test_data = np.random.randn(10, 10)  # 10 test sequences, each with 10 timesteps
+
+			# Make predictions on the test data
+			predictions = model.predict(test_data)
+
+			print(predictions)
+			</p></code></pre>
+			<br>
+			<p>In this example, we first generate some random sequential data with corresponding binary targets for training. We then define a Sequential model and add a SimpleRNN layer with 32 hidden units. The input shape is defined as (10, 1) since we have 10 timesteps and 1 feature per timestep. We follow it up with a Dense layer with a single unit and sigmoid activation for binary classification.</p>
+			<p>Next, we compile the model by specifying the optimizer, loss function, and any desired metrics. We then train the model on the training data using the fit method.</p>
+			<p>Finally, we generate some new test data and make predictions on it using the trained model. The predictions will be printed to the console.</p>
+			<p>Note that this is a basic example to illustrate the concept of an RNN in Python using Keras. In practice, you may need to preprocess your data, fine-tune the model architecture, and adjust hyperparameters to achieve better results for your specific task.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

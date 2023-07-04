@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Convolutional Neural Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, convolutional neural network">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Convolutional Neural Network</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Convolutional Neural Networks (CNNs) are a type of artificial intelligence algorithm that is designed to process and analyze visual data, such as images or videos. They are widely used in tasks like image classification, object detection, and image segmentation.</p>
+		  <p>CNNs are inspired by the structure and functioning of the human visual system. Just like our brains, CNNs consist of multiple layers of interconnected processing units called neurons. Each neuron receives inputs, performs a mathematical operation on them, and produces an output.</p>
+		  <p>The key idea behind CNNs is the use of convolutional layers. These layers apply filters, also known as kernels, to the input data. The filters are small matrices that slide over the input data, performing a mathematical operation called convolution. This operation helps extract important features from the data, such as edges, textures, or patterns. The result is a set of feature maps that highlight different aspects of the input.</p>
+		  <p>After the convolutional layers, CNNs typically have pooling layers. These layers reduce the dimensionality of the feature maps, making the subsequent computations more efficient. Pooling can be done by taking the maximum value within a certain region (max pooling) or by averaging the values (average pooling).</p>
+		  <p>Finally, CNNs usually have fully connected layers, which are traditional neural network layers where each neuron is connected to every neuron in the previous layer. These layers perform the classification or regression task based on the extracted features.</p>
+		  <p>During the training process, CNNs learn to automatically adjust the values of the filters and the weights of the neurons to minimize the difference between their predictions and the expected outputs. This learning process is typically done using a technique called backpropagation.</p>
+		  <p>In summary, CNNs are specialized neural networks that are particularly effective in processing and analyzing visual data. They use convolutional layers to extract features from the input, pooling layers to reduce dimensionality, and fully connected layers for classification or regression. By learning from large amounts of data, CNNs can recognize and understand visual patterns, enabling them to perform tasks like image recognition and object detection.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import tensorflow as tf
+			from tensorflow.keras import layers
+
+			# Create a CNN model
+			model = tf.keras.Sequential()
+
+			# Add a convolutional layer with 32 filters, each of size 3x3
+			model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)))
+
+			# Add a max pooling layer
+			model.add(layers.MaxPooling2D((2, 2)))
+
+			# Add another convolutional layer with 64 filters, each of size 3x3
+			model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+
+			# Add another max pooling layer
+			model.add(layers.MaxPooling2D((2, 2)))
+
+			# Flatten the output from the previous layer
+			model.add(layers.Flatten())
+
+			# Add a fully connected layer with 64 neurons
+			model.add(layers.Dense(64, activation='relu'))
+
+			# Add an output layer with the number of classes
+			model.add(layers.Dense(num_classes, activation='softmax'))
+
+			# Compile the model
+			model.compile(optimizer='adam',
+						  loss='categorical_crossentropy',
+						  metrics=['accuracy'])
+
+			# Train the model
+			model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
+
+			# Evaluate the model
+			test_loss, test_acc = model.evaluate(test_images, test_labels)
+			print('Test accuracy:', test_acc)
+
+			</p></code></pre>
+			<br>
+			<p>In this example, we create a CNN model with two convolutional layers followed by max pooling layers. The convolutional layers help extract features from the input images, while the max pooling layers reduce the spatial dimensions. The flattened output is then passed through a fully connected layer and an output layer.</p>
+			<p>We compile the model with an optimizer, loss function, and metrics. Then, we train the model using a training dataset (train_images and train_labels) and validate it using a test dataset (test_images and test_labels).</p>
+			<p>Finally, we evaluate the trained model on the test dataset and print the accuracy.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

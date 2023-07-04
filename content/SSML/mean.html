@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Mean Teacher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, Mean Teacher">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Mean Teacher</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The Mean Teacher algorithm is a technique used in machine learning, specifically in the field of semi-supervised learning, where we have a limited amount of labeled data and a larger amount of unlabeled data.</p>
+		  <p>In simple terms, the Mean Teacher algorithm works by training a model, called the "student", using both the labeled data and the unlabeled data. However, it also introduces a second model, called the "teacher", which is a copy of the student. The teacher model is used to provide additional guidance to the student during training.</p>
+		  <p>Here's how the Mean Teacher algorithm works step by step:</p>
+		  <p>1. Initially, we have a dataset with a small portion of labeled data and a larger portion of unlabeled data.</p>
+		  <p>2. We start by training the student model using the labeled data. The goal is to make the student model learn from the provided labels and make accurate predictions.</p>
+		  <p>3. Once the student model has learned from the labeled data, we use it to make predictions on the unlabeled data. These predictions are not perfect because the student model is still learning.</p>
+		  <p>4. Now, we introduce the teacher model, which is initially an exact copy of the student model. The teacher model is used to provide "soft targets" to the student model during training.</p>
+		  <p>5. Soft targets are essentially the predictions made by the teacher model on the same unlabeled data points that the student model made predictions on.</p>
+		  <p>6. The student model is trained again, but this time, it not only tries to match the true labels of the labeled data but also attempts to match the soft targets provided by the teacher model on the unlabeled data. The goal is to make the student model learn from both labeled and unlabeled data, as well as the teacher's guidance.</p>
+		  <p>7. The process of training the student model and generating soft targets with the teacher model is repeated for multiple iterations. At each iteration, the teacher model is updated by slowly adapting its parameters towards the student model's parameters.</p>
+		  <p>8. Finally, after training for several iterations, the student model is used as the final model for making predictions on new, unseen data.</p>
+		  <p>By leveraging the teacher model's soft targets, the Mean Teacher algorithm helps the student model to generalize better and make more accurate predictions on both labeled and unlabeled data. It effectively makes use of the additional information provided by the unlabeled data to improve the model's performance.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import tensorflow as tf
+
+			# Define the student and teacher models (can be any model architecture)
+			student_model = create_student_model()
+			teacher_model = create_teacher_model()
+
+			# Define the loss function
+			loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()
+
+			# Define the optimizer
+			optimizer = tf.keras.optimizers.Adam()
+
+			# Training loop
+			for epoch in range(num_epochs):
+				for step, (x_batch_train, y_batch_train) in enumerate(train_dataset):
+					with tf.GradientTape() as tape:
+						# Forward pass through student model
+						student_logits = student_model(x_batch_train, training=True)
+						
+						# Compute the loss based on true labels
+						loss = loss_fn(y_batch_train, student_logits)
+						
+						# Forward pass through teacher model
+						teacher_logits = teacher_model(x_batch_train, training=False)
+						
+						# Compute the loss based on teacher's soft targets
+						loss += loss_fn(teacher_logits, student_logits)
+					
+					# Compute the gradients and update student model
+					gradients = tape.gradient(loss, student_model.trainable_variables)
+					optimizer.apply_gradients(zip(gradients, student_model.trainable_variables))
+					
+					# Update teacher model by slowly adapting its parameters towards student model's parameters
+					for teacher_variable, student_variable in zip(teacher_model.trainable_variables, student_model.trainable_variables):
+						teacher_variable.assign(teacher_variable * alpha + student_variable * (1 - alpha))
+				
+				# Evaluate the student model on the validation set
+				validation_accuracy = compute_accuracy(validation_dataset, student_model)
+				print("Epoch: {}, Validation Accuracy: {:.4f}".format(epoch+1, validation_accuracy))
+			</p></code></pre>
+			<p>In this example, we assume that you have already defined the student model and teacher model using appropriate architectures. The training loop consists of iterating over the training data batches and performing the forward pass, computing the loss, and updating the student model's parameters using gradient descent.</p>
+			<p>The key aspect of the Mean Teacher algorithm is the additional loss term that computes the loss based on the teacher's soft targets. This is done by forwarding the input data through the teacher model and comparing the logits (outputs before applying softmax) of the student and teacher models using the loss function. The loss from the true labels and the loss from the soft targets are combined and used to update the student model.</p>
+			<p>After each training step, the teacher model's parameters are updated by slowly adapting them towards the student model's parameters. This is done by linearly interpolating the parameters of the teacher and student models using a parameter called alpha. A common value for alpha is 0.99, which ensures a gradual update of the teacher model.</p>
+			<p>Finally, the student model can be used for making predictions on new, unseen data.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Attention</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, python, attention">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Attention</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>In the context of neural networks, attention refers to a mechanism that allows the network to focus on specific parts of the input data that are deemed more relevant or informative for the task at hand. It enables the network to selectively process or give more weight to certain elements while disregarding others.</p>
+		  <p>The concept of attention was inspired by human cognitive processes, particularly how humans selectively concentrate on specific aspects of a visual scene or a piece of information. Attention mechanisms aim to emulate this behavior in neural networks, enhancing their ability to process complex data and improving performance on various tasks such as natural language processing, computer vision, and machine translation.</p>
+		  <p>In a neural network, attention is typically implemented using an additional set of learnable parameters. It operates in conjunction with the main network architecture and can be integrated at different levels, depending on the specific task and the network's architecture.</p>
+		  <p>The key idea behind attention is to compute a set of attention weights that represent the importance or relevance of each element in the input data. These weights are usually computed by comparing each element with a context vector, which is derived from the current state or representation of the network. The context vector serves as a query that determines which elements to attend to.</p>
+		  <p>Once the attention weights are computed, they are applied to the input data, multiplying each element by its corresponding weight. This multiplication operation effectively assigns more importance to elements with higher weights while downplaying the significance of elements with lower weights. The resulting weighted inputs are then aggregated or combined to form a weighted representation that captures the attended information.</p>
+		  <p>The use of attention in neural networks has several advantages. It allows the network to focus on relevant parts of the input, improving the model's interpretability and reducing computational complexity by reducing the amount of irrelevant information processed. Attention mechanisms also facilitate capturing long-range dependencies and contextual information, making the network more robust and capable of handling complex tasks.</p>
+		  <p>Overall, attention mechanisms have become an integral part of many state-of-the-art neural network architectures, significantly advancing the field of deep learning and contributing to improved performance in various domains.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		    <p>I can provide you with an example of implementing an attention mechanism using TensorFlow in Python. In this example, we'll create a simple neural network model with an attention layer for sequence classification. Please note that this is a basic example to demonstrate the concept, and more complex attention mechanisms can be implemented depending on the specific task and network architecture. Here's the code:</p>
+			<pre><code><p>
+			import tensorflow as tf
+			from tensorflow.keras.layers import Dense, LSTM, Embedding, Attention
+
+			# Define the model
+			class AttentionModel(tf.keras.Model):
+				def __init__(self, vocab_size, embedding_dim, hidden_units):
+					super(AttentionModel, self).__init__()
+					self.embedding = Embedding(vocab_size, embedding_dim, input_length=max_seq_length)
+					self.lstm = LSTM(hidden_units, return_sequences=True)
+					self.attention = Attention()
+					self.dense = Dense(1, activation='sigmoid')
+
+				def call(self, inputs):
+					embedded_seq = self.embedding(inputs)
+					lstm_output = self.lstm(embedded_seq)
+					attention_output = self.attention([lstm_output, lstm_output])
+					context_vector = tf.reduce_sum(attention_output, axis=1)
+					logits = self.dense(context_vector)
+					return logits
+
+			# Set hyperparameters
+			vocab_size = 10000
+			embedding_dim = 128
+			hidden_units = 64
+			max_seq_length = 100
+
+			# Create the model instance
+			model = AttentionModel(vocab_size, embedding_dim, hidden_units)
+
+			# Compile the model
+			model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+			# Train the model (assuming you have your training data X_train and corresponding labels y_train)
+			model.fit(X_train, y_train, epochs=10, batch_size=64)
+
+			# Evaluate the model
+			loss, accuracy = model.evaluate(X_test, y_test)
+
+			# Make predictions
+			predictions = model.predict(X_test)
+			</p></code></pre>
+			<p>In this example, we define the <B>AttentionModel</B> class, which inherits from <B>tf.keras.Model</B>. The model consists of an embedding layer, an LSTM layer, an attention layer, and a dense layer for classification. The <B>Attention</B> layer is responsible for computing the attention weights and aggregating the attended information.</p>
+			<p>During the <B>call</B> method, the input sequences are first embedded using an embedding layer. The embedded sequences are then fed into an LSTM layer, which returns the LSTM output sequences. The attention layer takes these output sequences as inputs and computes the attention weights using the self-attention mechanism. The resulting attention weights are used to calculate a context vector by summing the weighted LSTM output sequences. Finally, the context vector is passed through a dense layer to obtain the classification logits.</p>
+			<p>After defining the model, we compile it with an optimizer and a loss function. Then, we can train the model on our training data using the <B>fit</B> function. Once trained, we can evaluate the model's performance on the test data using the <b>evaluate</B> function, and make predictions using the <B>predict</B> function.</p>
+			<p>Remember to preprocess your input data appropriately (e.g., tokenize, pad sequences) before using it with the model.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

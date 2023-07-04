@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Data Processing Time series</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, data processing, time series">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Data Processing Time Series</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Time series data refers to a sequence of observations recorded at regular intervals over time. The main features or characteristics of time series are as follows:</p>
+		  <p>1. Time Dependence: Time series data exhibits a temporal ordering, where the observations are recorded in chronological order. The value of a data point at a given time can be influenced by previous observations.</p>
+		  <p>2. Trend: Trend refers to the long-term movement or pattern in the data. It represents the overall direction in which the data tends to move over time. Trends can be upward (increasing), downward (decreasing), or stationary (no clear trend).</p>
+		  <p>3. Seasonality: Seasonality refers to repetitive and predictable patterns that occur at regular intervals within the data. These patterns can be daily, weekly, monthly, or even yearly. Seasonality can be influenced by various factors like holidays, weather conditions, or cultural events.</p>
+		  <p>4. Cyclical Patterns: Cyclical patterns are similar to seasonality but occur over a longer time frame. These patterns represent fluctuations or oscillations in the data that do not have a fixed period and may not repeat in a predictable manner. Cyclical patterns are often associated with economic or business cycles.</p>
+		  <p>5. Irregularity or Noise: Time series data may contain random or irregular fluctuations that are not explained by the trend, seasonality, or cyclical patterns. This noise component represents the unpredictable and random variations in the data, which can be caused by various factors like measurement errors or unexpected events.</p>
+		  <p>6. Autocorrelation: Autocorrelation refers to the correlation between observations at different time points within the same time series. It measures the degree of similarity or relationship between a data point and its past values. Autocorrelation can help identify dependencies and patterns in the data.</p>
+		  <p>7. Stationarity: Stationarity is an important concept in time series analysis. A stationary time series has constant statistical properties over time, such as a constant mean and variance. Stationarity simplifies the analysis and modeling of time series data, as it allows for the application of various statistical techniques.</p>
+		  <p>Understanding these features is crucial for analyzing and modeling time series data, as it helps in identifying patterns, making predictions, and making informed decisions based on historical behavior.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>To preprocess time series data in Python for training a machine learning algorithm, you can follow these general steps:</p>
+			<p>1. Import Libraries: Begin by importing the necessary libraries such as NumPy, Pandas, and scikit-learn.</p>
+			<pre><code><p>
+			import numpy as np
+			import pandas as pd
+			from sklearn.preprocessing import (StandardScaler, MinMaxScaler)
+			</p></code></pre>
+			<p>2. Load the Data: Load the time series data into a Pandas DataFrame or a NumPy array.</p>
+			<pre><code><p>
+			data = pd.read_csv('your_data.csv')
+			</p></code></pre>
+			<p>3. Handle Missing Values: Check for and handle any missing values in the dataset. You can choose to drop the rows with missing values or fill them using techniques like interpolation or mean imputation.</p>
+			<pre><code><p>
+			data = data.dropna()  # Drop rows with missing values
+			</p></code></pre>
+			<p>4. Normalize or Scale the Data: Depending on the requirements of your machine learning algorithm, you might need to normalize or scale the data. Common scaling techniques include Standardization (mean = 0, standard deviation = 1) or Min-Max Scaling (values between 0 and 1).</p>
+			<pre><code><p>
+			scaler = StandardScaler()  # or MinMaxScaler()
+			scaled_data = scaler.fit_transform(data)
+			</p></code></pre>
+			<p>5. Splitting into Input and Target Variables: Separate the dataset into input (features) and target variables. The input variables should consist of the historical observations, and the target variable should be the value to be predicted.</p>
+			<pre><code><p>
+			X = scaled_data[:, :-1]  # Input variables (all columns except the last one)
+			y = scaled_data[:, -1]   # Target variable (last column)
+			</p></code></pre>
+			<p>6. Splitting into Training and Testing Sets: Split the data into training and testing sets to evaluate the performance of your model. Typically, around 70-80% of the data is used for training, and the remaining portion is used for testing.</p>
+			<pre><code><p>
+			from sklearn.model_selection import train_test_split
+
+			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+			</p></code></pre>
+			<p>7. Reshape the Data (if required): Some machine learning algorithms expect a specific input shape. If your algorithm requires a different shape, you can reshape the data accordingly.</p>
+			<pre><code><p>
+			X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))  # Reshape for LSTM model
+			</p></code></pre>
+			<p>These steps provide a basic framework for preprocessing time series data for machine learning. However, the specific requirements and preprocessing steps might vary depending on the characteristics of your dataset and the machine learning algorithm you plan to use.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

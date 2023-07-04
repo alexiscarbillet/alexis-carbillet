@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Gantt chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, Gantt chart">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#vis">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Gantt chart</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>A Gantt chart is a type of horizontal bar chart that is commonly used in project management to illustrate the scheduling and progress of tasks over time. It provides a visual representation of a project's timeline, showing the start and end dates of individual tasks, their durations, and how they relate to each other.</p>
+		  <p>Here are the key components and features of a Gantt chart:</p>
+		  <p>1. <B>Task bars</B>: Each task is represented by a horizontal bar on the chart. The length of the bar corresponds to the duration of the task, and its position along the timeline indicates the start and end dates.</p>
+		  <p>2. <B>Timeline</B>: The chart typically has a horizontal timeline that represents the project's duration. It is divided into increments such as days, weeks, or months, depending on the scale of the project.</p>
+		  <p>3. <B>Dependencies</B>: Gantt charts can show dependencies between tasks, indicating which tasks need to be completed before others can start. These dependencies are often shown as arrows connecting the related task bars.</p>
+		  <p>4. <B>Milestones</B>: Milestones represent significant events or achievements within the project. They are usually depicted as vertical markers or special symbols on the chart, indicating important dates or key deliverables.</p>
+		  <p>5. <B>Resource allocation</B>: Some Gantt charts also include information about the resources assigned to each task. This helps project managers visualize the workload and ensure that resources are appropriately allocated.</p>
+		  <p>Gantt charts are particularly useful for planning, tracking, and communicating project schedules. They provide a clear overview of tasks, their durations, and their interdependencies, allowing project teams to identify critical paths, monitor progress, and make adjustments as needed. With the visual nature of Gantt charts, stakeholders can easily understand project timelines and the sequence of activities involved.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import matplotlib.pyplot as plt
+			import pandas as pd
+
+			# Create a sample dataset
+			data = {
+				'Task': ['Task 1', 'Task 2', 'Task 3', 'Task 4'],
+				'Start Date': ['2023-06-01', '2023-06-05', '2023-06-08', '2023-06-12'],
+				'End Date': ['2023-06-10', '2023-06-15', '2023-06-13', '2023-06-20']
+			}
+
+			df = pd.DataFrame(data)
+
+			# Convert date columns to datetime format
+			df['Start Date'] = pd.to_datetime(df['Start Date'])
+			df['End Date'] = pd.to_datetime(df['End Date'])
+
+			# Sort the dataframe by Start Date
+			df = df.sort_values('Start Date')
+
+			# Set up the plot
+			fig, ax = plt.subplots(figsize=(10, 5))
+
+			# Plot the horizontal bars
+			ax.barh(df['Task'], df['End Date'] - df['Start Date'], left=df['Start Date'])
+
+			# Customize the appearance
+			ax.set_xlabel('Date')
+			ax.set_ylabel('Task')
+			ax.set_title('Gantt Chart')
+			ax.xaxis_date()  # Display dates on the x-axis
+
+			# Adjust the date format on the x-axis
+			date_format = '%Y-%m-%d'  # Format: Year-Month-Day
+			ax.xaxis.set_major_formatter(plt.DateFormatter(date_format))
+
+			# Display the chart
+			plt.tight_layout()
+			plt.show()
+			</p></code></pre>
+			<p>In this example, we first create a sample dataset with task names, start dates, and end dates. We then convert the date columns to the datetime format using pd.to_datetime() from the pandas library.</p>
+			<p>Next, we sort the dataframe by the start dates to ensure the tasks are plotted in chronological order. We set up the plot using plt.subplots() and create a horizontal bar chart using ax.barh(). The duration of each task is calculated by subtracting the start date from the end date.</p>
+			<p>We customize the appearance of the chart by setting labels, titles, and formatting the x-axis to display dates using ax.set_xlabel(), ax.set_ylabel(), ax.set_title(), and ax.xaxis.set_major_formatter().</p>
+			<p>Finally, we display the Gantt chart using plt.tight_layout() to adjust the layout and plt.show() to show the plot.</p>
+			<img src="../../img/vis/gantt.png" class="center" alt="gantt result"></img>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

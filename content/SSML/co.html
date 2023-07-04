@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Co-training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, Co-training">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Co-training</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Co-training is an algorithm used to train machine learning models using multiple sources of information. It's like having multiple teachers who specialize in different subjects and work together to teach you.</p>
+		  <p>Imagine you want to learn about animals, but you have two textbooks, each covering different aspects. One book focuses on mammals, while the other focuses on birds. Co-training would involve using both books to gain a more comprehensive understanding of animals.</p>
+		  <p>Here's how the co-training algorithm works:</p>
+		  <p>1. Initially, you have two models (or classifiers) that are trained separately using different sets of features or inputs. Each model has learned from a different source of information.</p>
+		  <p>2. In the animal example, one model may have learned from the mammal book and can identify mammals accurately, but it may struggle with birds. The other model may have learned from the bird book and can recognize birds well but may struggle with mammals.</p>
+		  <p>3. Now, we have a pool of unlabeled data, which means we have examples that are not classified as either mammals or birds. These are like additional pages in both books that haven't been labeled yet.</p>
+		  <p>4. Each model makes predictions on the unlabeled data, even for the topics it is not specialized in. So, the mammal model would make predictions about birds, and the bird model would make predictions about mammals.</p>
+		  <p>5. The predictions from each model are compared, and instances where both models agree on the classification are labeled and added to the training set.</p>
+		  <p>6. The newly labeled examples are used to update the models. Now, each model has more information about the topics it struggled with initially.</p>
+		  <p>7. Steps 4 to 6 are repeated iteratively. With each iteration, the models make predictions on the unlabeled data, find instances of agreement, and use them to update themselves. This process continues until a certain stopping criterion is met or until the models converge.</p>
+		  <p>By co-training with multiple sources of information, the models can learn from each other's strengths and improve their overall performance. In the end, both models become better at recognizing both mammals and birds, even though they started with limited knowledge in those areas.</p>
+		  <p>Co-training can be applied in various domains, not just with textbooks and animals. It's a technique that can enhance the learning process by leveraging multiple sources of information and allowing models to learn from each other's expertise.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			from sklearn.base import BaseEstimator, ClassifierMixin
+			from sklearn.utils import resample
+			from sklearn.metrics import accuracy_score
+			from sklearn.tree import DecisionTreeClassifier
+			from sklearn.linear_model import LogisticRegression
+
+			class CoTrainingClassifier(BaseEstimator, ClassifierMixin):
+				def __init__(self, base_classifier_1, base_classifier_2, num_iterations=10):
+					self.base_classifier_1 = base_classifier_1
+					self.base_classifier_2 = base_classifier_2
+					self.num_iterations = num_iterations
+				
+				def fit(self, X1, X2, y):
+					self.X1 = X1
+					self.X2 = X2
+					self.y = y
+					self.classifier_1 = self.base_classifier_1.fit(X1, y)
+					self.classifier_2 = self.base_classifier_2.fit(X2, y)
+					
+					for _ in range(self.num_iterations):
+						# Generate pseudo-labeled data using the classifiers
+						y1_pred = self.classifier_1.predict(X2)
+						y2_pred = self.classifier_2.predict(X1)
+						
+						X1_pseudo, y1_pseudo = X1, y1_pred
+						X2_pseudo, y2_pseudo = X2, y2_pred
+						
+						# Combine the pseudo-labeled data with the original labeled data
+						X1_combined = np.vstack((X1, X1_pseudo))
+						y1_combined = np.hstack((y, y1_pseudo))
+						X2_combined = np.vstack((X2, X2_pseudo))
+						y2_combined = np.hstack((y, y2_pseudo))
+						
+						# Train the classifiers on the combined data
+						self.classifier_1.fit(X1_combined, y1_combined)
+						self.classifier_2.fit(X2_combined, y2_combined)
+					
+				def predict(self, X):
+					y1_pred = self.classifier_1.predict(X)
+					y2_pred = self.classifier_2.predict(X)
+					
+					# Voting mechanism: predict the class label based on both classifiers' predictions
+					y_pred = np.array([y1_pred[i] if y1_pred[i] == y2_pred[i] else None for i in range(len(y1_pred))])
+					return y_pred
+
+			# Example usage
+			X1 = [[1, 2], [3, 4], [5, 6], [7, 8]]
+			X2 = [[2, 1], [4, 3], [6, 5], [8, 7]]
+			y = [0, 1, 0, 1]
+
+			classifier_1 = DecisionTreeClassifier()
+			classifier_2 = LogisticRegression()
+
+			co_classifier = CoTrainingClassifier(classifier_1, classifier_2)
+			co_classifier.fit(X1, X2, y)
+
+			X_test = [[1, 1], [3, 3], [5, 5], [7, 7]]
+			y_pred = co_classifier.predict(X_test)
+			print("Predicted labels:", y_pred)
+			</p></code></pre>
+			<p>In this example, we create a custom CoTrainingClassifier class that implements the co-training algorithm. We use a decision tree classifier (DecisionTreeClassifier) and a logistic regression classifier (LogisticRegression) as the base classifiers.</p>
+			<p>The fit method trains the base classifiers on the initial labeled data, and then iteratively performs co-training. It generates pseudo-labeled data using the classifiers' predictions on the unlabeled data, combines this pseudo-labeled data with the original labeled data, and retrains the classifiers.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

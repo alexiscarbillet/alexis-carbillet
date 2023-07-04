@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Candlestick charts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, Candlestick charts">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#vis">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Candlestick charts</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Candlestick charts are a type of financial chart used to represent the price movement of an asset, typically stocks, over a specific time period. They provide a visual depiction of price fluctuations and are widely used in technical analysis to analyze market trends and make informed trading decisions.</p>
+		  <p>A candlestick consists of four main components: the open, high, low, and close prices for a given time interval, such as a day or an hour. Each candlestick on the chart represents this price data for that specific interval.</p>
+		  <p>The body of the candlestick is a rectangular shape that represents the price range between the open and close prices. If the closing price is higher than the opening price, the body is usually filled or colored, often green or white. This indicates a bullish (positive) sentiment and suggests that the price increased during that time interval. Conversely, if the closing price is lower than the opening price, the body is usually unfilled or colored, often red or black, indicating a bearish (negative) sentiment and a price decrease.</p>
+		  <p>The upper and lower lines, known as "wicks" or "shadows," extend vertically from the top and bottom of the body, representing the high and low prices reached during the time interval. They provide additional information about the price range and volatility.</p>
+		  <p>By examining the patterns and formations of candlesticks over multiple time periods, traders can identify trends, reversals, and potential price patterns. This analysis helps them make predictions about future price movements and inform their trading strategies.</p>
+		  <p>Candlestick charts provide a comprehensive visual representation of price data, making it easier to interpret and analyze market dynamics compared to other types of charts.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code><p>
+			import matplotlib.pyplot as plt
+			from mplfinance.original_flavor import candlestick_ohlc
+			import pandas as pd
+			import matplotlib.dates as mdates
+
+			# Sample data
+			data = [
+				['2023-06-18', 145.5, 148.2, 142.6, 146.8],
+				['2023-06-19', 146.9, 150.3, 144.2, 148.7],
+				['2023-06-20', 149.0, 152.8, 148.2, 151.4],
+				['2023-06-21', 152.0, 154.7, 150.3, 153.2],
+				['2023-06-22', 153.8, 155.5, 151.9, 154.2]
+			]
+
+			# Convert data to a DataFrame
+			df = pd.DataFrame(data, columns=['Date', 'Open', 'High', 'Low', 'Close'])
+
+			# Convert 'Date' column to datetime
+			df['Date'] = pd.to_datetime(df['Date'])
+
+			# Set the 'Date' column as the index
+			df.set_index('Date', inplace=True)
+
+			# Create a new column with numerical index for plotting
+			df['Index'] = range(len(df))
+
+			# Convert the DataFrame to the required format for candlestick_ohlc
+			ohlc_data = df[['Index', 'Open', 'High', 'Low', 'Close']].values
+
+			# Create the figure and axis objects
+			fig, ax = plt.subplots()
+
+			# Plot the candlestick chart
+			candlestick_ohlc(ax, ohlc_data, width=0.5, colorup='g', colordown='r')
+
+			# Format the x-axis to display dates
+			ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+			ax.xaxis.set_major_locator(mdates.DayLocator())
+
+			# Rotate x-axis labels for better readability
+			plt.xticks(rotation=45)
+
+			# Set axis labels and title
+			plt.xlabel('Date')
+			plt.ylabel('Price')
+			plt.title('Candlestick Chart')
+
+			# Display the chart
+			plt.show()
+			</p></code></pre>
+			<p>In this example, we create a DataFrame with sample data representing the open, high, low, and close prices for a few days. We convert the 'Date' column to a datetime type and set it as the index. Then, we convert the DataFrame to the required format for the candlestick_ohlc function from the mplfinance library. Finally, we plot the candlestick chart using candlestick_ohlc, format the x-axis to display dates, and add labels and a title to the chart. Running this code will generate a candlestick chart displaying the price movements over the specified time period.</p>
+			<img src="../../img/vis/candle.png" class="center" alt="cluster dendrogram result"></img>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

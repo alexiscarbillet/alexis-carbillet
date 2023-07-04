@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Data Processing CSV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, artificial intelligence, data processing, csv">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Data Processing CSV</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>A CSV (Comma-Separated Values) file is a plain text file format that is commonly used to store tabular data. Here are the main features of a CSV file:</p>
+		  <p>1. Structure: CSV files consist of rows and columns. Each row represents a record or data entry, and each column represents a specific field or attribute of the data.</p>
+		  <p>2. Delimiter: CSV files use a delimiter, typically a comma, to separate the values in each field within a row. However, other delimiters like semicolons or tabs can also be used.</p>
+		  <p>3. Text Qualification: Fields in a CSV file can be enclosed in quotes ("") or other special characters to indicate that they contain text data. This is useful when a field value itself contains the delimiter character, line breaks, or special characters.</p>
+		  <p>4. Header Row: CSV files often include a header row at the beginning that defines the names of the columns. The header row helps identify the content of each column and provides context to the data.</p>
+		  <p>5. No Data Types: CSV files are typically plain text files, so they don't inherently store information about data types such as numbers, dates, or booleans. It is up to the user or application interpreting the CSV data to handle the appropriate data type conversions.</p>
+		  <p>6. No Relationships or Constraints: CSV files are simple data storage formats and do not support complex relationships or constraints between tables. Each CSV file represents an independent data set, and any relationships or dependencies must be established outside the file itself.</p>
+		  <p>7. Platform Independence: CSV files are platform-independent and can be easily read and written by various software applications and programming languages. They are widely supported and can be opened with spreadsheet software, database applications, and text editors.</p>
+		  <p>CSV files provide a lightweight and flexible way to exchange and share tabular data across different systems, making them popular for data import/export and data exchange between different software applications.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>To preprocess data from a CSV file in Python for training a machine learning algorithm, you can follow these general steps:</p>
+			<p>1. Import Libraries: Start by importing the necessary libraries, such as <B>pandas</B> and <B>numpy</B>, which are commonly used for data manipulation and preprocessing tasks.</p>
+			<pre><code><p>
+			import pandas as pd
+			import numpy as np
+			</p></code></pre>
+			<p>2. Load the CSV File: Use the <B>pandas</B> library to load the CSV file into a DataFrame, which provides a convenient way to work with tabular data.</p>
+			<pre><code><p>
+			data = pd.read_csv('your_file.csv')
+			</p></code></pre>
+			<p>3. Explore the Data: Get familiar with the data by examining its structure, summary statistics, and missing values. This step helps you understand the data better and make informed preprocessing decisions.</p>
+			<pre><code><p>
+			print(data.head())  # View the first few rows of the DataFrame
+			print(data.describe())  # Summary statistics of the data
+			print(data.isnull().sum())  # Check for missing values
+			</p></code></pre>
+			<p>4. Handle Missing Values: If the dataset contains missing values, you can choose to either remove the rows or columns with missing values or fill them with appropriate values. This decision depends on the specific dataset and the context of your problem.</p>
+			<pre><code><p>
+			# Remove rows with missing values
+			data = data.dropna()
+
+			# Fill missing values with mean or other appropriate values
+			data['column_name'].fillna(data['column_name'].mean(), inplace=True)
+			</p></code></pre>
+			<p>5. Encode Categorical Variables: If your dataset contains categorical variables, you may need to encode them into numerical form for the machine learning algorithm to process them. Common techniques include one-hot encoding or label encoding.</p>
+			<pre><code><p>
+			# One-hot encoding
+			data_encoded = pd.get_dummies(data, columns=['categorical_column'])
+
+			# Label encoding
+			from sklearn.preprocessing import LabelEncoder
+			label_encoder = LabelEncoder()
+			data['categorical_column'] = label_encoder.fit_transform(data['categorical_column'])
+			</p></code></pre>
+			<p>6. Split the Data: Split the dataset into training and testing sets to evaluate the performance of the trained machine learning model. The training set is used to train the model, while the testing set is used to assess its generalization ability.</p>
+			<pre><code><p>
+			from sklearn.model_selection import train_test_split
+
+			X = data.drop('target_column', axis=1)  # Features
+			y = data['target_column']  # Target variable
+
+			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+			</p></code></pre>
+			<p>7. Feature Scaling: Depending on the specific machine learning algorithm, it may be necessary to scale or normalize the feature values to a similar range. This step helps improve the algorithm's performance and convergence.</p>
+			<pre><code><p>
+			from sklearn.preprocessing import StandardScaler
+
+			scaler = StandardScaler()
+			X_train_scaled = scaler.fit_transform(X_train)
+			X_test_scaled = scaler.transform(X_test)
+			</p></code></pre>
+			<p>8. Additional Preprocessing Steps: Depending on the specific requirements of your dataset and the machine learning algorithm, you may need to perform additional preprocessing steps such as feature selection, dimensionality reduction, or handling outliers. These steps are often problem-specific and may vary.</p>
+			<p>After completing these preprocessing steps, you can proceed to train your machine learning algorithm using the preprocessed data (`X_train_scaled` and `y_train`). Remember to apply the same preprocessing steps to any new unseen data you want to make predictions on.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
