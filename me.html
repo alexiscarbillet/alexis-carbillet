@@ -6,12 +6,12 @@
     <title>Alexis Carbillet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, prom, prometheus, sql, python">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
     <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property="og:description" content="Who is the author of alexis-carbillet.eu? Do you have questions for him? You can find information about him as well as how to contact him" />
     <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
     <meta property="og:type" content="website" />
 
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+              <a class="nav-link js-scroll-trigger" href="#aboutme">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -76,7 +76,7 @@
 	  <div class="container">		
 		  <div class="intro-text">
           <div class="intro-lead-in" style="margin-top:100px;">
-		  Hello! I am Alexis Carbillet, a graduate from the Artificial Intelligence program at <a href="https://www.mines-ales.fr/">IMT Mines Alès</a>. My <a href="#resume">resume</a> is available here in case you need it. I am currently working at <a href="https://www.ovhcloud.com/en/"> OVHcloud </a> and on different side projects such as my blogs.
+		  Hello! I am Alexis Carbillet, a graduate from the Artificial Intelligence program at <a href="https://www.mines-ales.fr/">IMT Mines Alès</a> who is passionate about data. I am currently working at <a href="https://www.ovhcloud.com/en/"> OVHcloud </a> and on different side projects such as my blogs.
 		  </div>
 	  </div>
     </header>
@@ -103,13 +103,14 @@
 
 <!-- ======================== BLOGS SECTION ============================ -->
 
-	<section id="blogs" style="background:rgb(49, 44, 44);">
+	<section id="blogs" style="background:rgb(20, 19, 19);">
       <div class="container">
         <div class="row">
 		<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
 			<h2 class="section-heading text-uppercase text-white">Blogs</h2>
 			<h3 class="section-subheading text-muted">I wrote different blogs about different topics of my interest. Sharing knowledge is important for me and it leaded me to create them.</h3>
 			 <ul>
+        <li class="section-subheading text-muted"><a href="index.html#prom">Prometheus</a>: I discovered this technology while working at OVHcloud. I found out that there was not that many blogs about it while it is very useful to collect metrics from servers. So I decided to write about it.</li>
 			  <li class="section-subheading text-muted"><a href="index.html#ai">Artificial intelligence</a>: This blog is about what I discovered during my master degree and used later in different professional projects. It is one of the new hot topics and I thought that curious persons would enjoy reading some articles about it. </li>
 			  <li class="section-subheading text-muted"><a href="index.html#vis">Data Visualization</a>: This topic is complementary of the previous one. How to show your data efficiently? How to represent the reality to its closest? One wrong step and the data could be misinterpreted, leading to huge cost for the company when making important choices.</li>
 			</ul> 
@@ -122,23 +123,23 @@
 
 <!-- ======================== RESUME SECTION ============================ -->
 
-    <section id="resume">
+    <section id="aboutme" class="bg-light">
       <div class="container">
         <div class="row">
 		<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Resume</h2>
-			<h3 class="section-subheading text-white" style="margin-bottom:10px;">Here is a summary of my experiences after graduating:</h3>
+            <h2 class="section-heading text-uppercase">About me</h2>
+			<h3 class="section-subheading" style="margin-bottom:10px;">Here is a summary of my experiences after graduating:</h3>
 			<div class="row hide-if-small-screen" style="padding-top: 5%">
 			  <div class="col-lg-12 text-center">
 				<svg width="1000" height="100">
 				  <line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5" />
 
-				  <circle cx="250" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#5e4da5" />
+				  <circle cx="250" cy="50" r="10" stroke="black" stroke-width="6" fill="#5e4da5" />
 				  <text text-anchor="middle" x="250" y="85" fill="black">2020</text>
 				  <text font-size="13" text-anchor="center" x="70" y="30" fill="black">Master Degree: AI & Data</text>
 				  <text style="font-style: italic" font-size="13" text-anchor="center" x="70" y="80" fill="#808080">IMT Mines Ales</text>
 
-				  <circle cx="550" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#5e4da5" />
+				  <circle cx="550" cy="50" r="10" stroke="black" stroke-width="6" fill="#5e4da5" />
 				  <text text-anchor="middle" x="550" y="85" fill="black">2021</text>
 				  <text font-size="13" text-anchor="middle" x="400" y="30" fill="black">Data Scientist</text>
 				  <text style="font-style: italic" font-size="13" text-anchor="middle" x="400" y="80" fill="#808080">Ice Gateway GmbH</text>
@@ -148,16 +149,15 @@
 
 				</svg>
 				<ul>
-          <h3 class="section-subheading text-white" style="margin-bottom:10px;margin-top:10px;">What have I done during those?</h3>
-				  <li class="section-subheading text-white">OVHcloud: I was on-call duty for the public cloud infrastructure (over 23k baremetal servers). I participated to the development of its observability's tools such as Prometheus, Thanos, Grafana, Graylog & Pyrra.</li>
-				  <li class="section-subheading text-white">ICE Gateway GmbH: I developped an android application that helps visual impaired people to take the public transit in Berlin. It used words recognition to guide users. I also managed several interns helping on this interesting project.</li>			  
+          <h3 class="section-subheading text-black" style="margin-bottom:10px;margin-top:5%;">What have I done during those?</h3>
+				  <li class="section-subheading text-black" style="margin-bottom:10px;margin-top:10px;"><a href="https://www.ovhcloud.com/en-ie/">OVHcloud</a>: I was on-call duty for the public cloud infrastructure (over 23k baremetal servers). I participated to the development of its observability's tools using different technologies such as Prometheus, Thanos, Grafana, Graylog & Pyrra.</li>
+				  <li class="section-subheading text-black"><a href="https://smart-city-factory.com/en/">ICE Gateway GmbH (bought by smartcity)</a>: I developped an android application that helps visual impaired people to take the public transit in Berlin. It used words recognition to guide users. I also managed several interns helping on this interesting project.</li>			  
 				</ul>
 			  </div>
 			  
 			</div> 
-			<h3 class="section-subheading text-white" style="margin-bottom:10px;">In case you need more information, you can find my full resume by clicking <a href="doc/resume.pdf" style="color: #5e4da5;">here</a>.</h3>
-		</div>
-		</div>
+		  </div>
+		  </div>
       </div>
     </section>
 	
@@ -170,7 +170,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <h2 class="section-heading text-uppercase">Contact</h2>
-            <h3 class="section-subheading text-muted">This website was created in order to show my references. You can contact me if you face a problem or if you want to hire me.</h3>
+            <h3 class="section-subheading text-white">I hope this website was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
           </div>
 		</div>
         <div class="row">

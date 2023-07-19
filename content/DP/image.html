@@ -88,14 +88,14 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>The main features of an image can vary depending on the context and purpose of the analysis. However, in general, the following are some common features used in image processing and computer vision:</p>
-		  <p>1. Pixels: Images are made up of pixels, which are the smallest elements of an image. Each pixel represents a discrete point in the image and contains color or grayscale information.</p>
-		  <p>2. Intensity or Color: The intensity or color of a pixel determines its appearance. In grayscale images, intensity represents the brightness level of a pixel, typically ranging from 0 (black) to 255 (white). In color images, each pixel is typically represented by three color channels (Red, Green, and Blue) with intensities ranging from 0 to 255, allowing for the representation of various colors.</p>
-		  <p>3. Shape: Shape features describe the geometric characteristics of objects within an image, such as their size, location, orientation, and overall structure. These features are commonly used for object recognition, segmentation, and tracking.</p>
-		  <p>4. Texture: Texture features capture the spatial arrangement of pixel intensities or colors within an image region. They describe the patterns, roughness, or smoothness of the surface represented in the image. Texture features are often used for image classification, segmentation, and analysis.</p>
-		  <p>5. Edges and Lines: Edges are abrupt changes in pixel intensities and are fundamental for extracting shape information. Lines and contours can be detected by identifying sequences of connected edges. These features are useful for image segmentation, object detection, and image recognition tasks.</p>
-		  <p>6. Histogram: A histogram is a graphical representation of the distribution of pixel intensities in an image. It provides information about the image's overall brightness or color distribution. Histograms are often used for image enhancement, thresholding, and analysis.</p>
-		  <p>7. Spatial Frequency: Spatial frequency refers to the rate of change of pixel intensities or colors across an image. It represents the different scales of patterns present in an image. High-frequency components correspond to fine details, while low-frequency components represent global or smooth regions. Spatial frequency analysis is commonly used in tasks like image compression, filtering, and feature extraction.</p>
-		  <p>8. Scale and Resolution: Scale refers to the size of objects or structures within an image. Resolution refers to the number of pixels per unit of length in the image. Scale and resolution are crucial factors when analyzing or processing images, as they affect the level of detail and the ability to detect or measure objects accurately.</p>
+		  <p>1. <B>Pixels</B>: Images are made up of pixels, which are the smallest elements of an image. Each pixel represents a discrete point in the image and contains color or grayscale information.</p>
+		  <p>2. <B>Intensity or Color</B>: The intensity or color of a pixel determines its appearance. In grayscale images, intensity represents the brightness level of a pixel, typically ranging from 0 (black) to 255 (white). In color images, each pixel is typically represented by three color channels (Red, Green, and Blue) with intensities ranging from 0 to 255, allowing for the representation of various colors.</p>
+		  <p>3. <B>Shape</B>: Shape features describe the geometric characteristics of objects within an image, such as their size, location, orientation, and overall structure. These features are commonly used for object recognition, segmentation, and tracking.</p>
+		  <p>4. <B>Texture</B>: Texture features capture the spatial arrangement of pixel intensities or colors within an image region. They describe the patterns, roughness, or smoothness of the surface represented in the image. Texture features are often used for image classification, segmentation, and analysis.</p>
+		  <p>5. <B>Edges and Lines</B>: Edges are abrupt changes in pixel intensities and are fundamental for extracting shape information. Lines and contours can be detected by identifying sequences of connected edges. These features are useful for image segmentation, object detection, and image recognition tasks.</p>
+		  <p>6. <B>Histogram</B>: A histogram is a graphical representation of the distribution of pixel intensities in an image. It provides information about the image's overall brightness or color distribution. Histograms are often used for image enhancement, thresholding, and analysis.</p>
+		  <p>7. <B>Spatial Frequency</B>: Spatial frequency refers to the rate of change of pixel intensities or colors across an image. It represents the different scales of patterns present in an image. High-frequency components correspond to fine details, while low-frequency components represent global or smooth regions. Spatial frequency analysis is commonly used in tasks like image compression, filtering, and feature extraction.</p>
+		  <p>8. <B>Scale and Resolution</B>: Scale refers to the size of objects or structures within an image. Resolution refers to the number of pixels per unit of length in the image. Scale and resolution are crucial factors when analyzing or processing images, as they affect the level of detail and the ability to detect or measure objects accurately.</p>
 		  <p>These are just some of the main features used in image analysis and computer vision. Depending on the specific application, additional features and techniques may be employed to extract meaningful information from images.</p>
 		  </div>
 		</div>
@@ -112,41 +112,41 @@
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">*
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>Preprocessing data from an image before training a machine learning algorithm is crucial to enhance the quality of the input data and improve the performance of the model. Here's a step-by-step guide on how to preprocess image data using Python:</p>
-			<p>1. Load the image: Use a suitable library like OpenCV or PIL (Python Imaging Library) to load the image into memory.</p>
+			<p>1. <B>Load the image</B>: Use a suitable library like OpenCV or PIL (Python Imaging Library) to load the image into memory.</p>
 			<pre><code><p>
 			import cv2
 			image = cv2.imread('image.jpg')
 			</p></code></pre>
-			<p>2. Resize the image: It's often helpful to resize the image to a standardized size that suits the requirements of your model. This step ensures consistency in input dimensions.</p>
+			<p>2. <B>Resize the image</B>: It's often helpful to resize the image to a standardized size that suits the requirements of your model. This step ensures consistency in input dimensions.</p>
 			<pre><code><p>
 			# Resize to a specific width and height
 			resized_image = cv2.resize(image, (width, height))
 			</p></code></pre>
-			<p>3. Convert to grayscale: If your model doesn't require color information or if you want to reduce computational complexity, convert the image to grayscale.</p>
+			<p>3. <B>Convert to grayscale</B>: If your model doesn't require color information or if you want to reduce computational complexity, convert the image to grayscale.</p>
 			<pre><code><p>
 			gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 			</p></code></pre>
-			<p>4. Normalize pixel values: Normalize the pixel values to a specific range, typically between 0 and 1 or -1 and 1. This step improves the stability and convergence of the model during training.</p>
+			<p>4. <B>Normalize pixel values</B>: Normalize the pixel values to a specific range, typically between 0 and 1 or -1 and 1. This step improves the stability and convergence of the model during training.</p>
 			<pre><code><p>
 			normalized_image = gray_image / 255.0  # Normalize to range [0, 1]
 			</p></code></pre>
-			<p>5. Apply image enhancements (optional): Depending on your application, you might consider applying various image enhancement techniques such as contrast adjustment, histogram equalization, or noise reduction to improve the quality of the image.</p>
+			<p>5. <B>Apply image enhancements (optional)</B>: Depending on your application, you might consider applying various image enhancement techniques such as contrast adjustment, histogram equalization, or noise reduction to improve the quality of the image.</p>
 			<pre><code><p>
 			# Example: Contrast adjustment
 			enhanced_image = cv2.equalizeHist(normalized_image)
 			</p></code></pre>
-			<p>6. Extract features: If you need to extract specific features from the image, such as edges, textures, or keypoints, you can use appropriate algorithms or libraries like OpenCV.</p>
+			<p>6. <B>Extract features</B>: If you need to extract specific features from the image, such as edges, textures, or keypoints, you can use appropriate algorithms or libraries like OpenCV.</p>
 			<pre><code><p>
 			# Example: Edge detection using the Canny algorithm
 			edges = cv2.Canny(normalized_image, threshold1, threshold2)
 			</p></code></pre>
-			<p>7. Flatten or reshape the data: Depending on the model's requirements, you might need to flatten or reshape the image data. For example, if you're using a fully connected neural network, you'll need to flatten the image into a 1D vector.</p>
+			<p>7. <B>Flatten or reshape the data</B>: Depending on the model's requirements, you might need to flatten or reshape the image data. For example, if you're using a fully connected neural network, you'll need to flatten the image into a 1D vector.</p>
 			<pre><code><p>
 			flattened_image = normalized_image.flatten()
 			</p></code></pre>
-			<p>8. Save or use the preprocessed data: After preprocessing, you can save the processed image or use it directly for training your machine learning algorithm.</p>
+			<p>8. <B>Save or use the preprocessed data</B>: After preprocessing, you can save the processed image or use it directly for training your machine learning algorithm.</p>
 			<p>Remember that these steps are not exhaustive and can vary based on the specific requirements of your model and the nature of the image data. It's essential to understand the characteristics of your dataset and choose appropriate preprocessing techniques accordingly.</p>
 		  </div>
 		</div>

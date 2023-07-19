@@ -88,13 +88,13 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>A CSV (Comma-Separated Values) file is a plain text file format that is commonly used to store tabular data. Here are the main features of a CSV file:</p>
-		  <p>1. Structure: CSV files consist of rows and columns. Each row represents a record or data entry, and each column represents a specific field or attribute of the data.</p>
-		  <p>2. Delimiter: CSV files use a delimiter, typically a comma, to separate the values in each field within a row. However, other delimiters like semicolons or tabs can also be used.</p>
-		  <p>3. Text Qualification: Fields in a CSV file can be enclosed in quotes ("") or other special characters to indicate that they contain text data. This is useful when a field value itself contains the delimiter character, line breaks, or special characters.</p>
-		  <p>4. Header Row: CSV files often include a header row at the beginning that defines the names of the columns. The header row helps identify the content of each column and provides context to the data.</p>
-		  <p>5. No Data Types: CSV files are typically plain text files, so they don't inherently store information about data types such as numbers, dates, or booleans. It is up to the user or application interpreting the CSV data to handle the appropriate data type conversions.</p>
-		  <p>6. No Relationships or Constraints: CSV files are simple data storage formats and do not support complex relationships or constraints between tables. Each CSV file represents an independent data set, and any relationships or dependencies must be established outside the file itself.</p>
-		  <p>7. Platform Independence: CSV files are platform-independent and can be easily read and written by various software applications and programming languages. They are widely supported and can be opened with spreadsheet software, database applications, and text editors.</p>
+		  <p>1. <B>Structure</B>: CSV files consist of rows and columns. Each row represents a record or data entry, and each column represents a specific field or attribute of the data.</p>
+		  <p>2. <B>Delimiter</B>: CSV files use a delimiter, typically a comma, to separate the values in each field within a row. However, other delimiters like semicolons or tabs can also be used.</p>
+		  <p>3. <B>Text Qualification</B>: Fields in a CSV file can be enclosed in quotes ("") or other special characters to indicate that they contain text data. This is useful when a field value itself contains the delimiter character, line breaks, or special characters.</p>
+		  <p>4. <B>>Header Row</B>: CSV files often include a header row at the beginning that defines the names of the columns. The header row helps identify the content of each column and provides context to the data.</p>
+		  <p>5. <B>No Data Types</B>: CSV files are typically plain text files, so they don't inherently store information about data types such as numbers, dates, or booleans. It is up to the user or application interpreting the CSV data to handle the appropriate data type conversions.</p>
+		  <p>6. <B>No Relationships or Constraints</B>: CSV files are simple data storage formats and do not support complex relationships or constraints between tables. Each CSV file represents an independent data set, and any relationships or dependencies must be established outside the file itself.</p>
+		  <p>7. <B>Platform Independence</B>: CSV files are platform-independent and can be easily read and written by various software applications and programming languages. They are widely supported and can be opened with spreadsheet software, database applications, and text editors.</p>
 		  <p>CSV files provide a lightweight and flexible way to exchange and share tabular data across different systems, making them popular for data import/export and data exchange between different software applications.</p>
 		  </div>
 		</div>
@@ -113,22 +113,22 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>To preprocess data from a CSV file in Python for training a machine learning algorithm, you can follow these general steps:</p>
-			<p>1. Import Libraries: Start by importing the necessary libraries, such as <B>pandas</B> and <B>numpy</B>, which are commonly used for data manipulation and preprocessing tasks.</p>
+			<p>1. <B>Import Libraries</B>: Start by importing the necessary libraries, such as <B>pandas</B> and <B>numpy</B>, which are commonly used for data manipulation and preprocessing tasks.</p>
 			<pre><code><p>
 			import pandas as pd
 			import numpy as np
 			</p></code></pre>
-			<p>2. Load the CSV File: Use the <B>pandas</B> library to load the CSV file into a DataFrame, which provides a convenient way to work with tabular data.</p>
+			<p>2. <B>Load the CSV File</B>: Use the <B>pandas</B> library to load the CSV file into a DataFrame, which provides a convenient way to work with tabular data.</p>
 			<pre><code><p>
 			data = pd.read_csv('your_file.csv')
 			</p></code></pre>
-			<p>3. Explore the Data: Get familiar with the data by examining its structure, summary statistics, and missing values. This step helps you understand the data better and make informed preprocessing decisions.</p>
+			<p>3. <B>Explore the Data</B>: Get familiar with the data by examining its structure, summary statistics, and missing values. This step helps you understand the data better and make informed preprocessing decisions.</p>
 			<pre><code><p>
 			print(data.head())  # View the first few rows of the DataFrame
 			print(data.describe())  # Summary statistics of the data
 			print(data.isnull().sum())  # Check for missing values
 			</p></code></pre>
-			<p>4. Handle Missing Values: If the dataset contains missing values, you can choose to either remove the rows or columns with missing values or fill them with appropriate values. This decision depends on the specific dataset and the context of your problem.</p>
+			<p>4. <B>Handle Missing Values</B>: If the dataset contains missing values, you can choose to either remove the rows or columns with missing values or fill them with appropriate values. This decision depends on the specific dataset and the context of your problem.</p>
 			<pre><code><p>
 			# Remove rows with missing values
 			data = data.dropna()
@@ -136,7 +136,7 @@
 			# Fill missing values with mean or other appropriate values
 			data['column_name'].fillna(data['column_name'].mean(), inplace=True)
 			</p></code></pre>
-			<p>5. Encode Categorical Variables: If your dataset contains categorical variables, you may need to encode them into numerical form for the machine learning algorithm to process them. Common techniques include one-hot encoding or label encoding.</p>
+			<p>5. <B>Encode Categorical Variables</B>: If your dataset contains categorical variables, you may need to encode them into numerical form for the machine learning algorithm to process them. Common techniques include one-hot encoding or label encoding.</p>
 			<pre><code><p>
 			# One-hot encoding
 			data_encoded = pd.get_dummies(data, columns=['categorical_column'])
@@ -146,7 +146,7 @@
 			label_encoder = LabelEncoder()
 			data['categorical_column'] = label_encoder.fit_transform(data['categorical_column'])
 			</p></code></pre>
-			<p>6. Split the Data: Split the dataset into training and testing sets to evaluate the performance of the trained machine learning model. The training set is used to train the model, while the testing set is used to assess its generalization ability.</p>
+			<p>6. <B>Split the Data</B>: Split the dataset into training and testing sets to evaluate the performance of the trained machine learning model. The training set is used to train the model, while the testing set is used to assess its generalization ability.</p>
 			<pre><code><p>
 			from sklearn.model_selection import train_test_split
 
@@ -155,7 +155,7 @@
 
 			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 			</p></code></pre>
-			<p>7. Feature Scaling: Depending on the specific machine learning algorithm, it may be necessary to scale or normalize the feature values to a similar range. This step helps improve the algorithm's performance and convergence.</p>
+			<p>7. <B>Feature Scaling</B>: Depending on the specific machine learning algorithm, it may be necessary to scale or normalize the feature values to a similar range. This step helps improve the algorithm's performance and convergence.</p>
 			<pre><code><p>
 			from sklearn.preprocessing import StandardScaler
 
@@ -163,8 +163,8 @@
 			X_train_scaled = scaler.fit_transform(X_train)
 			X_test_scaled = scaler.transform(X_test)
 			</p></code></pre>
-			<p>8. Additional Preprocessing Steps: Depending on the specific requirements of your dataset and the machine learning algorithm, you may need to perform additional preprocessing steps such as feature selection, dimensionality reduction, or handling outliers. These steps are often problem-specific and may vary.</p>
-			<p>After completing these preprocessing steps, you can proceed to train your machine learning algorithm using the preprocessed data (`X_train_scaled` and `y_train`). Remember to apply the same preprocessing steps to any new unseen data you want to make predictions on.</p>
+			<p>8. <B>Additional Preprocessing Steps</B>: Depending on the specific requirements of your dataset and the machine learning algorithm, you may need to perform additional preprocessing steps such as feature selection, dimensionality reduction, or handling outliers. These steps are often problem-specific and may vary.</p>
+			<p>After completing these preprocessing steps, you can proceed to train your machine learning algorithm using the preprocessed data (X_train_scaled and y_train). Remember to apply the same preprocessing steps to any new unseen data you want to make predictions on.</p>
 		  </div>
 		</div>
       </div>

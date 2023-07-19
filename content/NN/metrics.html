@@ -88,10 +88,10 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>Metrics used for evaluating neural networks are simply measurements or numbers that help us understand how well a neural network is performing. These metrics give us insights into different aspects of the network's performance, such as accuracy, precision, recall, and so on. Let me explain some common metrics in simple terms:</p>
-		  <p>1. Accuracy: This metric tells us the overall correctness of the neural network's predictions. It's the ratio of the number of correct predictions to the total number of predictions. For example, if a network correctly predicts 90 out of 100 examples, the accuracy is 90%.</p>
-		  <p>2. Precision: Precision focuses on the quality of the positive predictions made by the network. It's the ratio of true positive predictions to the sum of true positive and false positive predictions. Precision helps us understand how often the network correctly identifies positive cases. For instance, if the network correctly identifies 80 positive cases out of 100 positive predictions, the precision is 80%.</p>
-		  <p>3. Recall: Recall focuses on the network's ability to find all the positive cases in the dataset. It's the ratio of true positive predictions to the sum of true positive and false negative predictions. Recall helps us understand how well the network can detect positive cases. For example, if the network finds 80 positive cases out of 100 actual positive cases, the recall is 80%.</p>
-		  <p>4. F1 Score: The F1 score combines both precision and recall into a single metric. It's a way to balance between these two metrics. The F1 score is the harmonic mean of precision and recall. It provides a more comprehensive evaluation of the network's performance by considering both the quality of positive predictions and the network's ability to find positive cases.</p>
+		  <p>1. <B>Accuracy</B>: This metric tells us the overall correctness of the neural network's predictions. It's the ratio of the number of correct predictions to the total number of predictions. For example, if a network correctly predicts 90 out of 100 examples, the accuracy is 90%.</p>
+		  <p>2. <B>Precision</B>: Precision focuses on the quality of the positive predictions made by the network. It's the ratio of true positive predictions to the sum of true positive and false positive predictions. Precision helps us understand how often the network correctly identifies positive cases. For instance, if the network correctly identifies 80 positive cases out of 100 positive predictions, the precision is 80%.</p>
+		  <p>3. <B>Recall</B>: Recall focuses on the network's ability to find all the positive cases in the dataset. It's the ratio of true positive predictions to the sum of true positive and false negative predictions. Recall helps us understand how well the network can detect positive cases. For example, if the network finds 80 positive cases out of 100 actual positive cases, the recall is 80%.</p>
+		  <p>4. <B>F1 Score</B>: The F1 score combines both precision and recall into a single metric. It's a way to balance between these two metrics. The F1 score is the harmonic mean of precision and recall. It provides a more comprehensive evaluation of the network's performance by considering both the quality of positive predictions and the network's ability to find positive cases.</p>
 		  <p>These are just a few examples of metrics used for evaluating neural networks. There are many other metrics depending on the specific task and requirements. These metrics help us assess the network's performance and make informed decisions about improving or comparing different neural network models.</p>
 		  </div>
 		</div>
@@ -110,9 +110,9 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>To compare metrics in Python, you can use various libraries and functions depending on the specific metrics you want to evaluate. Here's a general approach using some common libraries:</p>
-			<p>1. Accuracy: If you have the true labels and predicted labels, you can use the `accuracy_score` function from the scikit-learn library. Here's an example:</p>
+			<p>1. <B>Accuracy</B>: If you have the true labels and predicted labels, you can use the `accuracy_score` function from the scikit-learn library. Here's an example:</p>
 			<pre><code><p>
-			from sklearn.metrics import accuracy_score
+			  from sklearn.metrics import accuracy_score
 
 		    true_labels = [0, 1, 1, 0, 1]
 		    predicted_labels = [0, 1, 0, 0, 1]
@@ -121,7 +121,7 @@
 		    print("Accuracy:", accuracy)
 			</p></code></pre>
 			<br>
-			<p>2. Precision, Recall, and F1 Score: If you have the true labels and predicted labels, you can use the `classification_report` function from scikit-learn to calculate precision, recall, and F1 score.</p>
+			<p>2. <B>Precision, Recall, and F1 Score</B>: If you have the true labels and predicted labels, you can use the `classification_report` function from scikit-learn to calculate precision, recall, and F1 score.</p>
 			<pre><code><p>
 			from sklearn.metrics import classification_report
 

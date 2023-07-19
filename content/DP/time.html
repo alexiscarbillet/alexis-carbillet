@@ -88,13 +88,13 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>Time series data refers to a sequence of observations recorded at regular intervals over time. The main features or characteristics of time series are as follows:</p>
-		  <p>1. Time Dependence: Time series data exhibits a temporal ordering, where the observations are recorded in chronological order. The value of a data point at a given time can be influenced by previous observations.</p>
-		  <p>2. Trend: Trend refers to the long-term movement or pattern in the data. It represents the overall direction in which the data tends to move over time. Trends can be upward (increasing), downward (decreasing), or stationary (no clear trend).</p>
-		  <p>3. Seasonality: Seasonality refers to repetitive and predictable patterns that occur at regular intervals within the data. These patterns can be daily, weekly, monthly, or even yearly. Seasonality can be influenced by various factors like holidays, weather conditions, or cultural events.</p>
-		  <p>4. Cyclical Patterns: Cyclical patterns are similar to seasonality but occur over a longer time frame. These patterns represent fluctuations or oscillations in the data that do not have a fixed period and may not repeat in a predictable manner. Cyclical patterns are often associated with economic or business cycles.</p>
-		  <p>5. Irregularity or Noise: Time series data may contain random or irregular fluctuations that are not explained by the trend, seasonality, or cyclical patterns. This noise component represents the unpredictable and random variations in the data, which can be caused by various factors like measurement errors or unexpected events.</p>
-		  <p>6. Autocorrelation: Autocorrelation refers to the correlation between observations at different time points within the same time series. It measures the degree of similarity or relationship between a data point and its past values. Autocorrelation can help identify dependencies and patterns in the data.</p>
-		  <p>7. Stationarity: Stationarity is an important concept in time series analysis. A stationary time series has constant statistical properties over time, such as a constant mean and variance. Stationarity simplifies the analysis and modeling of time series data, as it allows for the application of various statistical techniques.</p>
+		  <p>1. <B>Time Dependence</B>: Time series data exhibits a temporal ordering, where the observations are recorded in chronological order. The value of a data point at a given time can be influenced by previous observations.</p>
+		  <p>2. <B>Trend</B>: Trend refers to the long-term movement or pattern in the data. It represents the overall direction in which the data tends to move over time. Trends can be upward (increasing), downward (decreasing), or stationary (no clear trend).</p>
+		  <p>3. <B>Seasonality</B>: Seasonality refers to repetitive and predictable patterns that occur at regular intervals within the data. These patterns can be daily, weekly, monthly, or even yearly. Seasonality can be influenced by various factors like holidays, weather conditions, or cultural events.</p>
+		  <p>4. <B>Cyclical Patterns</B>: Cyclical patterns are similar to seasonality but occur over a longer time frame. These patterns represent fluctuations or oscillations in the data that do not have a fixed period and may not repeat in a predictable manner. Cyclical patterns are often associated with economic or business cycles.</p>
+		  <p>5. <B>Irregularity or Noise</B>: Time series data may contain random or irregular fluctuations that are not explained by the trend, seasonality, or cyclical patterns. This noise component represents the unpredictable and random variations in the data, which can be caused by various factors like measurement errors or unexpected events.</p>
+		  <p>6. <B>Autocorrelation</B>: Autocorrelation refers to the correlation between observations at different time points within the same time series. It measures the degree of similarity or relationship between a data point and its past values. Autocorrelation can help identify dependencies and patterns in the data.</p>
+		  <p>7. <B>Stationarity</B>: Stationarity is an important concept in time series analysis. A stationary time series has constant statistical properties over time, such as a constant mean and variance. Stationarity simplifies the analysis and modeling of time series data, as it allows for the application of various statistical techniques.</p>
 		  <p>Understanding these features is crucial for analyzing and modeling time series data, as it helps in identifying patterns, making predictions, and making informed decisions based on historical behavior.</p>
 		  </div>
 		</div>
@@ -113,37 +113,37 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>To preprocess time series data in Python for training a machine learning algorithm, you can follow these general steps:</p>
-			<p>1. Import Libraries: Begin by importing the necessary libraries such as NumPy, Pandas, and scikit-learn.</p>
+			<p>1. <B>Import Libraries</B>: Begin by importing the necessary libraries such as NumPy, Pandas, and scikit-learn.</p>
 			<pre><code><p>
 			import numpy as np
 			import pandas as pd
 			from sklearn.preprocessing import (StandardScaler, MinMaxScaler)
 			</p></code></pre>
-			<p>2. Load the Data: Load the time series data into a Pandas DataFrame or a NumPy array.</p>
+			<p>2. <B>Load the Data</B>: Load the time series data into a Pandas DataFrame or a NumPy array.</p>
 			<pre><code><p>
 			data = pd.read_csv('your_data.csv')
 			</p></code></pre>
-			<p>3. Handle Missing Values: Check for and handle any missing values in the dataset. You can choose to drop the rows with missing values or fill them using techniques like interpolation or mean imputation.</p>
+			<p>3. <B>Handle Missing Values</B>: Check for and handle any missing values in the dataset. You can choose to drop the rows with missing values or fill them using techniques like interpolation or mean imputation.</p>
 			<pre><code><p>
 			data = data.dropna()  # Drop rows with missing values
 			</p></code></pre>
-			<p>4. Normalize or Scale the Data: Depending on the requirements of your machine learning algorithm, you might need to normalize or scale the data. Common scaling techniques include Standardization (mean = 0, standard deviation = 1) or Min-Max Scaling (values between 0 and 1).</p>
+			<p>4. <B>Normalize or Scale the Data</B>: Depending on the requirements of your machine learning algorithm, you might need to normalize or scale the data. Common scaling techniques include Standardization (mean = 0, standard deviation = 1) or Min-Max Scaling (values between 0 and 1).</p>
 			<pre><code><p>
 			scaler = StandardScaler()  # or MinMaxScaler()
 			scaled_data = scaler.fit_transform(data)
 			</p></code></pre>
-			<p>5. Splitting into Input and Target Variables: Separate the dataset into input (features) and target variables. The input variables should consist of the historical observations, and the target variable should be the value to be predicted.</p>
+			<p>5. <B>Splitting into Input and Target Variables</B>: Separate the dataset into input (features) and target variables. The input variables should consist of the historical observations, and the target variable should be the value to be predicted.</p>
 			<pre><code><p>
 			X = scaled_data[:, :-1]  # Input variables (all columns except the last one)
 			y = scaled_data[:, -1]   # Target variable (last column)
 			</p></code></pre>
-			<p>6. Splitting into Training and Testing Sets: Split the data into training and testing sets to evaluate the performance of your model. Typically, around 70-80% of the data is used for training, and the remaining portion is used for testing.</p>
+			<p>6. <B>Splitting into Training and Testing Sets</B>: Split the data into training and testing sets to evaluate the performance of your model. Typically, around 70-80% of the data is used for training, and the remaining portion is used for testing.</p>
 			<pre><code><p>
 			from sklearn.model_selection import train_test_split
 
 			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 			</p></code></pre>
-			<p>7. Reshape the Data (if required): Some machine learning algorithms expect a specific input shape. If your algorithm requires a different shape, you can reshape the data accordingly.</p>
+			<p>7. <B>Reshape the Data (if required)</B>: Some machine learning algorithms expect a specific input shape. If your algorithm requires a different shape, you can reshape the data accordingly.</p>
 			<pre><code><p>
 			X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))  # Reshape for LSTM model
 			</p></code></pre>

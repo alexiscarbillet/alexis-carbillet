@@ -3,10 +3,10 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Autoencoder</title>
+    <title>Prometheus alert functions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, autoencoder">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, Prometheus alert functions">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
 	<link rel="shortcut icon" href="../../img/logo/logo.png" />
@@ -29,7 +29,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../../css/structure.css" rel="stylesheet">
+    <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -46,7 +46,7 @@
     <!-- Navigation --> 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -56,13 +56,13 @@
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#prom">Main</a>
             </li>
           </ul>
         </div>
@@ -84,17 +84,18 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Autoencoder</h2>
+			<h2 class="section-heading text-uppercase">Prometheus alert functions</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>An autoencoder is a type of artificial neural network that is designed to learn efficient representations of input data without the need for explicit labels. It is called an "autoencoder" because it learns to encode and then decode the input data, reconstructing it as accurately as possible.</p>
-		  <p>Here's how it works:</p>
-		  <p>1. <B>Encoding</B>: The autoencoder takes an input data, let's say an image, and passes it through a series of hidden layers. These hidden layers gradually reduce the dimensionality of the input data, creating a compressed representation called the "latent space" or "encoding." This encoding is a condensed version of the input data, capturing its most important features.</p>
-		  <p>2. <B>Decoding</B>: The compressed encoding from the previous step is then passed through another set of hidden layers, which gradually reconstruct the original input data. The output of the decoding process should ideally be as close to the original input as possible.</p>
-		  <p>3. <B>Training</B>: During the training phase, the autoencoder is fed with input data and it learns to minimize the difference between the original input and the reconstructed output. This is done by adjusting the weights and biases of the network using a process called "backpropagation."</p>
-		  <p>The goal of the autoencoder is to learn a compressed representation of the input data that captures its essential features. By doing so, it can effectively learn to denoise data, remove redundant information, or even generate new data similar to the training examples.</p>
-		  <p>Autoencoders have various applications, such as data compression, anomaly detection, dimensionality reduction, and image generation. They can also be used as a pre-training step for other machine learning models by learning useful features from unlabeled data, which can then be used for supervised learning tasks.</p>
-		  <p>In summary, an autoencoder is a neural network that learns to compress input data into a lower-dimensional representation and then reconstructs it, aiming to capture the most important features of the data.</p>
+		  <p>In Prometheus, alert functions are used to define conditions and rules for generating alerts based on the monitored metrics. When the conditions specified by these functions are met, Prometheus triggers an alert that can be used to notify system administrators or take automated actions. Here are some commonly used alert functions in Prometheus:</p>
+		  <p>1. <B>ALERT()</B>: This function is used to define an alert rule. It takes two arguments: the name of the alert and the expression that evaluates to a boolean value. When the expression evaluates to true, the alert is fired.</p>
+		  <p>2. <B>label_join()</B>: This function is used to concatenate label values together into a new label. It takes two arguments: the destination label name and a delimiter. This function is often used to create a new label that provides additional context for an alert.</p>
+		  <p>3. <B>absent()</B>: This function checks whether a specific time series is absent or missing. It takes one argument: the expression that represents the time series. If the time series does not exist or has no samples within the specified time range, the function evaluates to true and triggers the alert.</p>
+		  <p>4. <B>changes()</B>: This function counts the number of times a time series changes its value within a specified time range. It takes one argument: the expression that represents the time series. The function triggers the alert if the number of changes exceeds a specified threshold.</p>
+		  <p>5. <B>increase()</B>: This function calculates the rate of increase of a time series over a specified time range. It takes two arguments: the expression that represents the time series and the duration over which the increase is calculated. The function triggers the alert if the increase exceeds a specified threshold.</p>
+		  <p>6. <B>rate()</B>: This function calculates the average rate of change of a time series over a specified time range. It takes one argument: the expression that represents the time series. The function triggers the alert if the rate exceeds a specified threshold.</p>
+		  <p>7. <B>up()</B>: This function checks the availability of a target by querying the `up` metric, which indicates whether a scrape target is up or down. It takes no arguments and evaluates to 1 if the target is up and 0 if it's down. This function is often used to create alerts for target availability.</p>
+		  <p>These are just a few examples of the alert functions available in Prometheus. The alerting functionality in Prometheus is highly customizable, allowing you to define complex conditions and actions based on your specific monitoring requirements.</p>
 		  </div>
 		</div>
       </div>
@@ -108,76 +109,45 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Python Example</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from keras.layers import Input, Dense
-			from keras.models import Model
-
-			# Create a simple autoencoder
-			input_dim = 784  # Input dimension (e.g., for 28x28 images)
-			encoding_dim = 32  # Dimension of the encoded representation
-
-			# Encoder layers
-			input_img = Input(shape=(input_dim,))
-			encoded = Dense(encoding_dim, activation='relu')(input_img)
-
-			# Decoder layers
-			decoded = Dense(input_dim, activation='sigmoid')(encoded)
-
-			# Create the autoencoder model
-			autoencoder = Model(input_img, decoded)
-
-			# Compile the model
-			autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
-
-			# Load MNIST dataset
-			from keras.datasets import mnist
-			(x_train, _), (x_test, _) = mnist.load_data()
-
-			# Preprocess and normalize the data
-			x_train = x_train.astype('float32') / 255.
-			x_test = x_test.astype('float32') / 255.
-			x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))
-			x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))
-
-			# Train the autoencoder
-			autoencoder.fit(x_train, x_train,
-							epochs=50,
-							batch_size=256,
-							shuffle=True,
-							validation_data=(x_test, x_test))
-
-			# Encode and decode some images
-			encoded_imgs = autoencoder.predict(x_test)
-			decoded_imgs = autoencoder.predict(encoded_imgs)
-
-			# Visualize the original and reconstructed images
-			import matplotlib.pyplot as plt
-
-			n = 10  # Number of images to display
-			plt.figure(figsize=(20, 4))
-			for i in range(n):
-				# Display original images
-				ax = plt.subplot(2, n, i + 1)
-				plt.imshow(x_test[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-
-				# Display reconstructed images
-				ax = plt.subplot(2, n, i + 1 + n)
-				plt.imshow(decoded_imgs[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-			plt.show()
-			</p></code></pre>
-			<br>
-			<p>In this example, we use the MNIST dataset, which consists of handwritten digit images. The autoencoder is trained to encode these images into a compressed representation (encoding) and then decode it back to reconstruct the original image (decoding). After training, the autoencoder is used to encode and decode some test images, and the original and reconstructed images are visualized using Matplotlib.</p>
-			<p>Please note that you will need to have Keras and Matplotlib installed in your Python environment to run this example.</p>
+      <p>Here are examples for each of the alert functions in Prometheus:</p>
+      <p>1. <B>ALERT()</B>: Define an alert rule named "HighCPUUsage" that triggers when the CPU usage exceeds 80% for more than 5 minutes:</p>
+			<pre><code>
+        ALERT HighCPUUsage
+        IF avg(cpu_usage) > 0.8
+        FOR 5m
+      </code></pre>
+			<p>2. <B>label_join()</B>: Create a new label named "alert_info" by joining the "instance" and "severity" labels with a hyphen ("-") delimiter:</p>
+      <pre><code>label_join(alert_info, "-", instance, severity)</code></pre>
+      <p>3. <B>absent()</B>: Trigger an alert if the metric "http_requests_total" is absent for the past 5 minutes:</p>
+			<pre><code>
+        ALERT MissingHttpRequests
+        IF absent(http_requests_total) FOR 5m
+      </code></pre>
+			<p>4. <B>changes()</B>: Generate an alert if the value of the metric "errors_total" changes more than 10 times within the last 10 minutes:</p>
+      <pre><code>
+        ALERT HighErrorFluctuations
+        IF changes(errors_total) > 10
+        FOR 10m
+      </code></pre>
+      <p>5. <B>increase()</B>: Raise an alert if the rate of increase of the metric "request_latency_seconds" is above 0.05 over the last 1 hour:</p>
+			<pre><code>
+        ALERT HighLatencyIncrease
+        IF increase(request_latency_seconds[1h]) > 0.05
+      </code></pre>
+			<p>6. <B>rate()</B>: Trigger an alert if the average rate of change of the metric "http_requests_total" exceeds 100 requests per second over the last 5 minutes:</p>
+      <pre><code>
+        ALERT HighRequestRate
+        IF rate(http_requests_total[5m]) > 100
+      </code></pre>
+      <p>7. <B>up()</B>: Create an alert if a target is down by checking the availability of the "up" metric:</p>
+			<pre><code>
+        ALERT TargetDown
+        IF up() == 0
+      </code></pre>
+			<p>These examples demonstrate how the alert functions can be used to define specific conditions and generate alerts based on the monitored metrics in Prometheus. Remember to adapt these examples to your own metric names and threshold values according to your monitoring setup.</p>
 		  </div>
 		</div>
       </div>
@@ -198,8 +168,8 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <div class="team-member">
-             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
-              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
               <p class="text-muted">Data scientist</p>
 			  <!-- Add icon library -->
 			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -240,7 +210,7 @@
 			</div>
 			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
 			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
-			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
 			</div>
 		</div>
 		<div id="particles-js" style="height:50px;"></div>
@@ -254,18 +224,18 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 	
     <!-- Custom scripts for this template -->
-    <script src="../../js/structure.js"></script>
+    <script src="../../../js/structure.js"></script>
 	
 	<!-- Particles part -->
-	<script src="../../js/particles.js"></script>
-	<script src="../../js/app.js"></script>
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>

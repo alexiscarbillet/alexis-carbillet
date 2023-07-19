@@ -88,14 +88,14 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>A video file typically contains several key features that define its characteristics and properties. The main features of a video file include:</p>
-		  <p>1. Video Codec: It is the algorithm or method used to compress and encode the video data. Codecs such as H.264, H.265 (HEVC), VP9, and AV1 are commonly used for video compression.</p>
-		  <p>2. Resolution: It refers to the number of pixels in each dimension of the video frame. Common resolutions include 720p (1280x720 pixels), 1080p (1920x1080 pixels), and 4K (3840x2160 pixels).</p>
-		  <p>3. Frame Rate: It represents the number of video frames displayed per second. Standard frame rates include 24, 30, and 60 frames per second (fps), although higher frame rates are also used for specific purposes like gaming or slow-motion videos.</p>
-		  <p>4. Bitrate: It denotes the amount of data processed per unit of time, usually measured in bits per second (bps) or kilobits per second (kbps). Higher bitrates generally result in better video quality but also result in larger file sizes.</p>
-		  <p>5. Container Format: It is the file format that encapsulates the video data, audio data, subtitles, and metadata. Common container formats include MP4, AVI, MKV, and MOV. The container format determines the compatibility and playback capabilities of the video file.</p>
-		  <p>6. Audio Codec: It refers to the algorithm used for compressing and encoding the audio data accompanying the video. Popular audio codecs include AAC, MP3, and Dolby Digital (AC-3).</p>
-		  <p>7. Audio Channels: It specifies the number of independent audio channels in the video file. Common configurations include mono (1 channel), stereo (2 channels), and surround sound (5.1 or 7.1 channels).</p>
-		  <p>8. Duration: It indicates the length of the video file in terms of time, usually measured in minutes and seconds.</p>
+		  <p>1. <B>Video Codec</B>: It is the algorithm or method used to compress and encode the video data. Codecs such as H.264, H.265 (HEVC), VP9, and AV1 are commonly used for video compression.</p>
+		  <p>2. <B>Resolution</B>: It refers to the number of pixels in each dimension of the video frame. Common resolutions include 720p (1280x720 pixels), 1080p (1920x1080 pixels), and 4K (3840x2160 pixels).</p>
+		  <p>3. <B>Frame Rate</B>: It represents the number of video frames displayed per second. Standard frame rates include 24, 30, and 60 frames per second (fps), although higher frame rates are also used for specific purposes like gaming or slow-motion videos.</p>
+		  <p>4. <B>Bitrate</B>: It denotes the amount of data processed per unit of time, usually measured in bits per second (bps) or kilobits per second (kbps). Higher bitrates generally result in better video quality but also result in larger file sizes.</p>
+		  <p>5. <B>Container Format</B>: It is the file format that encapsulates the video data, audio data, subtitles, and metadata. Common container formats include MP4, AVI, MKV, and MOV. The container format determines the compatibility and playback capabilities of the video file.</p>
+		  <p>6. <B>Audio Codec</B>: It refers to the algorithm used for compressing and encoding the audio data accompanying the video. Popular audio codecs include AAC, MP3, and Dolby Digital (AC-3).</p>
+		  <p>7. <B>Audio Channels</B>: It specifies the number of independent audio channels in the video file. Common configurations include mono (1 channel), stereo (2 channels), and surround sound (5.1 or 7.1 channels).</p>
+		  <p>8. <B>Duration</B>: It indicates the length of the video file in terms of time, usually measured in minutes and seconds.</p>
 		  <p>These features collectively determine the quality, compatibility, and characteristics of a video file, allowing it to be properly encoded, stored, and played back on various devices and platforms.</p>
 		  </div>
 		</div>
@@ -114,14 +114,14 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		    <p>To preprocess data from a video for training a machine learning algorithm in Python, you can follow these general steps:</p>
-			<p>1. Video Extraction: Use a video processing library like OpenCV to extract frames from the video. You can specify the desired frame rate to control the number of frames extracted per second.</p>
-			<p>2. Frame Preprocessing: Perform preprocessing operations on each frame to enhance the quality and facilitate subsequent analysis. Some common preprocessing techniques include resizing the frames to a consistent resolution, converting to grayscale, and applying filters or image enhancements.</p>
-			<p>3. Feature Extraction: Extract meaningful features from each frame to represent the visual content of the video. This step can involve techniques such as edge detection, optical flow, or deep learning-based feature extraction using pre-trained convolutional neural networks (CNNs) like VGG or ResNet.</p>
-			<p>4. Temporal Aggregation: If the temporal dimension of the video is relevant for your task, you may need to aggregate the extracted features across multiple frames or establish temporal relationships between frames. Techniques like frame differencing, frame stacking, or recurrent neural networks (RNNs) can be applied for this purpose.</p>
-			<p>5. Data Normalization: Normalize the extracted features to ensure they have similar scales. Common normalization techniques include mean normalization (subtracting the mean and dividing by the standard deviation) or scaling the features to a specific range (e.g., [0, 1]).</p>
-			<p>6. Data Augmentation (Optional): Generate additional training examples by applying data augmentation techniques such as random cropping, flipping, rotation, or adding noise. This can help improve the model's generalization and robustness.</p>
-			<p>7. Dataset Split: Split the preprocessed data into training, validation, and testing sets. The training set is used to train the machine learning algorithm, the validation set is used for hyperparameter tuning, and the testing set is used to evaluate the final model's performance.</p>
-			<p>8. Saving Preprocessed Data: Save the preprocessed data in a suitable format for training. Common formats include NumPy arrays, CSV files, or specialized formats like HDF5.</p>
+			<p>1. <B>Video Extraction</B>: Use a video processing library like OpenCV to extract frames from the video. You can specify the desired frame rate to control the number of frames extracted per second.</p>
+			<p>2. <B>Frame Preprocessing</B>: Perform preprocessing operations on each frame to enhance the quality and facilitate subsequent analysis. Some common preprocessing techniques include resizing the frames to a consistent resolution, converting to grayscale, and applying filters or image enhancements.</p>
+			<p>3. <B>Feature Extraction</B>: Extract meaningful features from each frame to represent the visual content of the video. This step can involve techniques such as edge detection, optical flow, or deep learning-based feature extraction using pre-trained convolutional neural networks (CNNs) like VGG or ResNet.</p>
+			<p>4. <B>Temporal Aggregation</B>: If the temporal dimension of the video is relevant for your task, you may need to aggregate the extracted features across multiple frames or establish temporal relationships between frames. Techniques like frame differencing, frame stacking, or recurrent neural networks (RNNs) can be applied for this purpose.</p>
+			<p>5. <B>Data Normalization</B>: Normalize the extracted features to ensure they have similar scales. Common normalization techniques include mean normalization (subtracting the mean and dividing by the standard deviation) or scaling the features to a specific range (e.g., [0, 1]).</p>
+			<p>6. <B>Data Augmentation (Optional)</B>: Generate additional training examples by applying data augmentation techniques such as random cropping, flipping, rotation, or adding noise. This can help improve the model's generalization and robustness.</p>
+			<p>7. <B>Dataset Split</B>: Split the preprocessed data into training, validation, and testing sets. The training set is used to train the machine learning algorithm, the validation set is used for hyperparameter tuning, and the testing set is used to evaluate the final model's performance.</p>
+			<p>8. <B>Saving Preprocessed Data</B>: Save the preprocessed data in a suitable format for training. Common formats include NumPy arrays, CSV files, or specialized formats like HDF5.</p>
 			<p>By following these steps, you can preprocess video data in Python and extract relevant features that can be fed into a machine learning algorithm for training. The specific preprocessing steps and techniques may vary depending on the nature of your video data and the requirements of your machine learning task.</p>
 			<pre><code><p>
 			import cv2

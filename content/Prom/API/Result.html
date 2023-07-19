@@ -3,10 +3,10 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Autoencoder</title>
+    <title>Prometheus API Results</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, autoencoder">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, Prometheus API Results">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
 	<link rel="shortcut icon" href="../../img/logo/logo.png" />
@@ -29,7 +29,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../../css/structure.css" rel="stylesheet">
+    <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -46,7 +46,7 @@
     <!-- Navigation --> 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -56,13 +56,13 @@
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#prom">Main</a>
             </li>
           </ul>
         </div>
@@ -84,17 +84,18 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Autoencoder</h2>
+			<h2 class="section-heading text-uppercase">Prometheus API Results</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>An autoencoder is a type of artificial neural network that is designed to learn efficient representations of input data without the need for explicit labels. It is called an "autoencoder" because it learns to encode and then decode the input data, reconstructing it as accurately as possible.</p>
-		  <p>Here's how it works:</p>
-		  <p>1. <B>Encoding</B>: The autoencoder takes an input data, let's say an image, and passes it through a series of hidden layers. These hidden layers gradually reduce the dimensionality of the input data, creating a compressed representation called the "latent space" or "encoding." This encoding is a condensed version of the input data, capturing its most important features.</p>
-		  <p>2. <B>Decoding</B>: The compressed encoding from the previous step is then passed through another set of hidden layers, which gradually reconstruct the original input data. The output of the decoding process should ideally be as close to the original input as possible.</p>
-		  <p>3. <B>Training</B>: During the training phase, the autoencoder is fed with input data and it learns to minimize the difference between the original input and the reconstructed output. This is done by adjusting the weights and biases of the network using a process called "backpropagation."</p>
-		  <p>The goal of the autoencoder is to learn a compressed representation of the input data that captures its essential features. By doing so, it can effectively learn to denoise data, remove redundant information, or even generate new data similar to the training examples.</p>
-		  <p>Autoencoders have various applications, such as data compression, anomaly detection, dimensionality reduction, and image generation. They can also be used as a pre-training step for other machine learning models by learning useful features from unlabeled data, which can then be used for supervised learning tasks.</p>
-		  <p>In summary, an autoencoder is a neural network that learns to compress input data into a lower-dimensional representation and then reconstructs it, aiming to capture the most important features of the data.</p>
+		  <p>The Prometheus API provides various features and functionalities to interact with the Prometheus server. Here are some key features of the Prometheus API:</p>
+		  <p>1. <B>Querying Metrics</B>: The Prometheus API allows you to query metrics data stored in the Prometheus time-series database. You can specify metric names, labels, time ranges, and other parameters to retrieve specific metrics or aggregate data.</p>
+		  <p>2. <B>Retrieving Metrics Metadata</B>: You can retrieve metadata information about metrics, such as their names, labels, and descriptions. This feature is helpful for discovering available metrics and understanding their meanings.</p>
+		  <p>3. <B>Data Range Queries</B>: Prometheus API enables you to query metrics data within a specific time range. You can specify start and end timestamps or use relative time expressions to retrieve metrics data for a specific period.</p>
+		  <p>4. <B>Aggregation and Filtering</B>: The API supports various functions for aggregating and filtering metric data. You can apply functions like sum, average, minimum, maximum, and others to calculate aggregated values or filter data based on specific conditions.</p>
+		  <p>5. <B>Alerting Rules</B>: Prometheus has a built-in alerting system that can generate alerts based on predefined rules. The API allows you to manage alerting rules, retrieve their status, and manage silences (temporary suppression of alerts).</p>
+		  <p>6. <B>Service Discovery</B>: Prometheus supports service discovery mechanisms to dynamically discover and monitor targets (such as servers or containers) in an automated manner. The API provides endpoints to manage service discovery configurations.</p>
+		  <p>7. <B>Runtime Configuration</B>: You can dynamically configure Prometheus through the API. This includes modifying scrape intervals, retention periods, storage configurations, and other runtime settings.</p>
+		  <p>8. <B>Exporting and Importing Data</B>: Prometheus API supports data export and import in various formats, including Prometheus' own text-based exposition format. This allows you to transfer metrics data between different Prometheus instances or integrate with other monitoring systems.</p>
 		  </div>
 		</div>
       </div>
@@ -108,76 +109,39 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Python Example</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from keras.layers import Input, Dense
-			from keras.models import Model
-
-			# Create a simple autoencoder
-			input_dim = 784  # Input dimension (e.g., for 28x28 images)
-			encoding_dim = 32  # Dimension of the encoded representation
-
-			# Encoder layers
-			input_img = Input(shape=(input_dim,))
-			encoded = Dense(encoding_dim, activation='relu')(input_img)
-
-			# Decoder layers
-			decoded = Dense(input_dim, activation='sigmoid')(encoded)
-
-			# Create the autoencoder model
-			autoencoder = Model(input_img, decoded)
-
-			# Compile the model
-			autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
-
-			# Load MNIST dataset
-			from keras.datasets import mnist
-			(x_train, _), (x_test, _) = mnist.load_data()
-
-			# Preprocess and normalize the data
-			x_train = x_train.astype('float32') / 255.
-			x_test = x_test.astype('float32') / 255.
-			x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))
-			x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))
-
-			# Train the autoencoder
-			autoencoder.fit(x_train, x_train,
-							epochs=50,
-							batch_size=256,
-							shuffle=True,
-							validation_data=(x_test, x_test))
-
-			# Encode and decode some images
-			encoded_imgs = autoencoder.predict(x_test)
-			decoded_imgs = autoencoder.predict(encoded_imgs)
-
-			# Visualize the original and reconstructed images
-			import matplotlib.pyplot as plt
-
-			n = 10  # Number of images to display
-			plt.figure(figsize=(20, 4))
-			for i in range(n):
-				# Display original images
-				ax = plt.subplot(2, n, i + 1)
-				plt.imshow(x_test[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-
-				# Display reconstructed images
-				ax = plt.subplot(2, n, i + 1 + n)
-				plt.imshow(decoded_imgs[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-			plt.show()
-			</p></code></pre>
-			<br>
-			<p>In this example, we use the MNIST dataset, which consists of handwritten digit images. The autoencoder is trained to encode these images into a compressed representation (encoding) and then decode it back to reconstruct the original image (decoding). After training, the autoencoder is used to encode and decode some test images, and the original and reconstructed images are visualized using Matplotlib.</p>
-			<p>Please note that you will need to have Keras and Matplotlib installed in your Python environment to run this example.</p>
+      <p>Here are examples of the results you might obtain when using the Prometheus API for different features:</p>
+      <p>1. Querying Metrics:</p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/query?query=up</code></pre>
+      <p>- Result: Returns a list of instances that are currently up or running.</p>
+      <p>2. <B>Retrieving Metrics Metadata</B>:</p>
+			<p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/metadata</code></pre>
+      <p>- Result: Returns metadata information about available metrics, such as their names, labels, and descriptions.</p>
+      <p>3. <B>Data Range Queries</B>:</p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/query_range?query=cpu_usage&start=1625086800&end=1625090400&step=60</code></pre>
+      <p>- Result: Returns CPU usage data for a specific time range (from 1625086800 to 1625090400) with a step of 60 seconds.</p>
+      <p>4. <B>4. Aggregation and Filtering:</B></p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/alerts</code></pre>
+      <p>- Result: Returns the current status of all active alerts generated by Prometheus based on predefined rules.</p>
+      <p>6. <B>Service Discovery</B>:</p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/service-discovery/targets</code></pre>
+      <p>- Result: Returns a list of discovered targets (e.g., servers or containers) that Prometheus is monitoring.</p>
+      <p>7. <B>Runtime Configuration</B>:</p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/admin/runtime-config</code></pre>
+      <p>- Result: Returns the current runtime configuration settings of the Prometheus server, such as scrape intervals and retention periods.</p>
+      <p>8. <B>Exporting and Importing Data</B>:</p>
+      <p>- Example query:</p>
+			<pre><code>http://prometheus-server/api/v1/export</code></pre>
+      <p>- Result: Returns the metrics data in Prometheus' text-based exposition format, which can be exported and used for data transfer or integration purposes.</p>
+      <p>Please note that the examples provided are based on a hypothetical Prometheus server and may not represent the actual API endpoints or query parameters. It's important to consult the Prometheus documentation or your specific Prometheus setup for accurate endpoint details and query syntax.</p>
 		  </div>
 		</div>
       </div>
@@ -198,8 +162,8 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <div class="team-member">
-             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt=""></a>
-              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
               <p class="text-muted">Data scientist</p>
 			  <!-- Add icon library -->
 			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -240,7 +204,7 @@
 			</div>
 			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
 			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
-			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
 			</div>
 		</div>
 		<div id="particles-js" style="height:50px;"></div>
@@ -254,18 +218,18 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 	
     <!-- Custom scripts for this template -->
-    <script src="../../js/structure.js"></script>
+    <script src="../../../js/structure.js"></script>
 	
 	<!-- Particles part -->
-	<script src="../../js/particles.js"></script>
-	<script src="../../js/app.js"></script>
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>

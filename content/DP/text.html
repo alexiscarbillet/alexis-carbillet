@@ -91,14 +91,14 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>A text file is a simple file format used for storing plain text data. It contains only unformatted, human-readable text without any specific styling or formatting. Here are the main features of a text file:</p>
-		  <p>1. Content: Text files primarily store textual data. They can contain alphabets, numbers, special characters, and symbols, forming words, sentences, paragraphs, or any other form of written communication.</p>
-		  <p>2. Encoding: Text files use various character encodings to represent the characters in the file. Common encodings include ASCII (American Standard Code for Information Interchange) and UTF-8 (Unicode Transformation Format 8-bit).</p>
-		  <p>3. Structure: Text files have a linear structure, usually organized as a sequence of lines. Each line is terminated by a line break character, such as a newline or carriage return, which signifies the end of a line.</p>
-		  <p>4. File Size: Text files are generally lightweight and occupy relatively less storage space compared to other file formats. The file size is directly proportional to the number of characters and lines in the file.</p>
-		  <p>5. Platform Independence: Text files are platform-independent, meaning they can be created, edited, and read on various operating systems (e.g., Windows, macOS, Linux) using a basic text editor.</p>
-		  <p>6. Compatibility: Text files are widely supported by a wide range of software applications and programming languages. They can be opened and processed using text editors, word processors, programming IDEs, command-line tools, and scripting languages.</p>
-		  <p>7. Lack of Formatting: Unlike rich text formats (e.g., Microsoft Word documents), text files do not support formatting features such as font styles, colors, tables, images, or other complex layout elements. The content is typically plain and devoid of any visual embellishments.</p>
-		  <p>8. Portability: Due to their simplicity, text files are highly portable and can be easily shared, transferred, or uploaded to different platforms, systems, or devices via email, file transfer protocols (FTP), cloud storage, or other means of file exchange.</p>
+		  <p>1. <B>Content</B>: Text files primarily store textual data. They can contain alphabets, numbers, special characters, and symbols, forming words, sentences, paragraphs, or any other form of written communication.</p>
+		  <p>2. <B>Encoding</B>: Text files use various character encodings to represent the characters in the file. Common encodings include ASCII (American Standard Code for Information Interchange) and UTF-8 (Unicode Transformation Format 8-bit).</p>
+		  <p>3. <B>Structure</B>: Text files have a linear structure, usually organized as a sequence of lines. Each line is terminated by a line break character, such as a newline or carriage return, which signifies the end of a line.</p>
+		  <p>4. <B>File Size</B>: Text files are generally lightweight and occupy relatively less storage space compared to other file formats. The file size is directly proportional to the number of characters and lines in the file.</p>
+		  <p>5. <B>Platform Independence</B>: Text files are platform-independent, meaning they can be created, edited, and read on various operating systems (e.g., Windows, macOS, Linux) using a basic text editor.</p>
+		  <p>6. <B>Compatibility</B>: Text files are widely supported by a wide range of software applications and programming languages. They can be opened and processed using text editors, word processors, programming IDEs, command-line tools, and scripting languages.</p>
+		  <p>7. <B>Lack of Formatting</B>: Unlike rich text formats (e.g., Microsoft Word documents), text files do not support formatting features such as font styles, colors, tables, images, or other complex layout elements. The content is typically plain and devoid of any visual embellishments.</p>
+		  <p>8. <B>Portability</B>: Due to their simplicity, text files are highly portable and can be easily shared, transferred, or uploaded to different platforms, systems, or devices via email, file transfer protocols (FTP), cloud storage, or other means of file exchange.</p>
 		  <p>Overall, text files serve as a fundamental means of storing and exchanging textual information in a versatile and universally supported format.</p>
 		  </div>
 		</div>
@@ -117,18 +117,18 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>Preprocessing text data is an essential step before training a machine learning algorithm. Python provides several libraries and techniques for text preprocessing. Here's an outline of the common steps involved:</p>
-			<p>1. Import the necessary libraries:</p>
+			<p>1. <B>Import the necessary libraries</B>:</p>
 			<pre><code><p>
 			import re
 			import nltk
 			from nltk.corpus import stopwords
 			from nltk.stem import WordNetLemmatizer
 			</p></code></pre>
-			<p>2. Load the text data:</p>
+			<p>2. <B>Load the text data</B>:</p>
 			<pre><code><p>
 			text = "Your text data goes here."
 			</p></code></pre>
-			<p>3. Clean the text:</p>
+			<p>3. <B>Clean the text</B>:</p>
 			<p>- Remove special characters, numbers, and punctuation using regular expressions:</p>
 			<pre><code><p>
 			text = re.sub(r"[^a-zA-Z]", " ", text)
@@ -137,36 +137,36 @@
 			<pre><code><p>
 			text = text.lower()
 			</p></code></pre>
-			<p>4. Tokenize the text:</p>
+			<p>4. <B>Tokenize the text</B>:</p>
 			<p>- Split the text into individual words or tokens:</p>
 			<pre><code><p>
 			tokens = nltk.word_tokenize(text)
 			</p></code></pre>
-			<p>5. Remove stop words:</p>
+			<p>5. <B>Remove stop words</B>:</p>
 			<p> - Stop words are commonly occurring words (e.g., "the", "is", "and") that don't carry much information. It's often beneficial to remove them:</p>
 			<pre><code><p>
 			stop_words = set(stopwords.words("english"))
 			tokens = [word for word in tokens if word not in stop_words]
 			</p></code></pre>
-			<p>6. Perform stemming or lemmatization:</p>
+			<p>6. <B>Perform stemming or lemmatization</B>:</p>
 			<p>- Stemming reduces words to their base or root form (e.g., "running" becomes "run"), while lemmatization converts words to their dictionary form (e.g., "running" becomes "run"):</p>
 			<pre><code><p>
 			lemmatizer = WordNetLemmatizer()
 			tokens = [lemmatizer.lemmatize(word) for word in tokens]
 			</p></code></pre>
-			<p>7. Join the tokens back into a processed text:</p>
+			<p>7. <B>Join the tokens back into a processed text</B>:</p>
 			<pre><code><p>
 			processed_text = " ".join(tokens)
 			</p></code></pre>
-			<p>8. Vectorize the text:</p>
+			<p>8. <B>Vectorize the text</B>:</p>
 			<p>- Convert the processed text into numerical features that can be understood by machine learning algorithms. Common techniques include:</p>
 			<p>-> Bag-of-Words (BoW): Represents the text as a frequency count of words.</p>
 			<p>-> TF-IDF (Term Frequency-Inverse Document Frequency): Reflects the importance of words in a document relative to a corpus.</p>
 			<p>-> Word Embeddings (e.g., Word2Vec, GloVe): Captures the semantic meaning of words.</p>
 			<p>- The choice of vectorization technique depends on the specific requirements of your machine learning algorithm.</p>
-			<p>9. Split the data into training and testing sets:</p>
+			<p>9. <B>Split the data into training and testing sets</B>:</p>
 			<p>- If you have labeled data, divide it into training and testing sets to evaluate the model's performance. Use the `train_test_split` function from libraries like scikit-learn to accomplish this.</p>
-			<p>10. Feed the preprocessed data into your machine learning algorithm for training.</p>
+			<p>10. <B>Feed the preprocessed data into your machine learning algorithm for training</B>.</p>
 			<p>These steps provide a general framework for text preprocessing, but the specific techniques and libraries used may vary depending on the nature of your text data and the requirements of your machine learning task.</p>
 		  </div>
 		</div>
