@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project 1: load_iris study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to visualize the load_iris dataset?">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, load_iris">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="How to represent the load_iris dataset?" />
+    <meta property="og:description" content="How to visualize the load_iris dataset?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Viz/Project1/Project1.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#vis">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">load_iris study</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The load_iris dataset is a popular toy dataset available in scikit-learn, a widely used machine learning library in Python. It is often used for practicing and testing various classification algorithms. The dataset contains measurements of iris flowers, which belong to three different species: setosa, versicolor, and virginica. Each sample in the dataset represents a different iris flower, and the dataset provides various features (also known as attributes or characteristics) that describe each flower.</p>
+		  <p>The load_iris dataset is a dictionary-like object with the following components:</p>
+		  <p>1. <B>data</B>: This is a 2D NumPy array containing the feature values for each iris sample. Each row represents a different iris flower, and each column corresponds to a specific feature. In the case of the load_iris dataset, there are four features for each flower: sepal length (in centimeters), sepal width (in centimeters), petal length (in centimeters), and petal width (in centimeters).</p>
+		  <p>2. <B>target</B>: This is a 1D NumPy array that contains the target values, or in other words, the class labels for each iris sample. The class labels are encoded as integers, where 0 corresponds to the setosa species, 1 to the versicolor species, and 2 to the virginica species.</p>
+		  <p>3. <B>target_names</B>: This is an array of strings that provides the names of the different classes (species) in the dataset. In this case, it contains the names "setosa", "versicolor", and "virginica".</p>
+		  <p>4. <B>DESCR</B>: This is a string containing a brief description of the dataset. It provides information about the origin of the data, the number of samples and features, as well as the class distribution.</p>
+		  <p>5. <B>feature_names</B>: This is an array of strings that provides the names of the different features in the dataset. In this case, it contains the names "sepal length (cm)", "sepal width (cm)", "petal length (cm)" and "petal width (cm)."</p>
+		  <p>The load_iris dataset is a classic example used in many introductory machine learning tutorials and courses due to its simplicity and well-defined classes. It serves as a good starting point for learning and practicing data analysis, data visualization, and classification algorithms in machine learning.</p>
+      <p>For the load_iris dataset from scikit-learn, which contains measurements of iris flowers, I would recommend using a scatter plot with color-coding for different classes. A scatter plot is a simple yet powerful visualization that can effectively display relationships and patterns between multiple variables, making it suitable for this dataset with four features.</p>
+      <p>Here's why a scatter plot is a good choice:</p>
+      <p>1. <B>Feature Comparison</B>: The load_iris dataset contains four features: sepal length, sepal width, petal length, and petal width. A scatter plot allows you to visualize the relationships between any two of these features simultaneously, helping to identify potential correlations or separations between classes.</p>
+      <p>2. <B>Easy to Interpret</B>: Scatter plots are easy to understand even for non-experts. Each data point represents an observation, and the position on the plot is determined by the values of two features. By using color to represent different classes of iris flowers, it becomes straightforward to see how the classes are distributed across the feature space.</p>
+      <p>3. <B>Handling Multiclass Data</B>: The load_iris dataset has three classes of iris flowers (setosa, versicolor, and virginica). Using different colors for each class allows you to distinguish them easily on the scatter plot. You can either use standard colors like red, green, and blue or choose a colormap that offers better contrast and differentiation.</p>
+      <p>4. <B>Potential Outliers</B>: Scatter plots help you identify any potential outliers in the dataset. Outliers are data points that significantly deviate from the overall pattern, and they can be critical in certain analyses or machine learning tasks.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Results</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+      <p>To create the scatter plot, you can use Python's popular data visualization libraries, such as Matplotlib or Seaborn. Here's an example using Matplotlib:</p>
+			<pre><code><p>
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+
+# Load the iris dataset
+iris = load_iris()
+data = iris.data
+target = iris.target
+
+# Create a scatter plot with color-coded classes
+plt.figure(figsize=(8, 6))
+plt.scatter(data[:, 0], data[:, 1], c=target, cmap='viridis', edgecolors='k')
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Sepal Width (cm)')
+plt.title('Scatter Plot of Iris Dataset')
+plt.colorbar(label='Class', ticks=[0, 1, 2], format=plt.FuncFormatter(lambda val, _: iris.target_names[val]))
+plt.show()
+			</p></code></pre>
+			<p>Result:</p>
+      <img src="img/result.png" alt="scatter plot load_iris">
+			<p>In this example, we used the first two features (sepal length and sepal width) for the scatter plot. You can modify the code to visualize other combinations of features or use different plots for more advanced analyses, but the scatter plot serves as a good starting point to understand the dataset's structure and relationships.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

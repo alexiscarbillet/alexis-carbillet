@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Stochastic Gradient Descent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is stochastic gradient descent? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, machine learning, supervised machine learning, artificial intelligence, python, Stochastic Gradient Descent">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is stochastic gradient descent?" />
+    <meta property="og:description" content="What is stochastic gradient descent? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/sgd.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -111,43 +111,43 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
+			<pre><code>import numpy as np
 
-			# Generate some random training data
-			X = 2 * np.random.rand(100, 1)  # Input features
-			y = 4 + 3 * X + np.random.randn(100, 1)  # Target labels with noise
+# Generate some random training data
+X = 2 * np.random.rand(100, 1)  # Input features
+y = 4 + 3 * X + np.random.randn(100, 1)  # Target labels with noise
 
-			# Add bias term to input features
-			X_b = np.c_[np.ones((100, 1)), X]
+# Add bias term to input features
+X_b = np.c_[np.ones((100, 1)), X]
 
-			# Set random seed for reproducibility
-			np.random.seed(42)
+# Set random seed for reproducibility
+np.random.seed(42)
 
-			# Initialize random weights
-			theta = np.random.randn(2, 1)
+# Initialize random weights
+theta = np.random.randn(2, 1)
 
-			# Set hyperparameters
-			learning_rate = 0.1
-			n_epochs = 100
-			m = len(X)
+# Set hyperparameters
+learning_rate = 0.1
+n_epochs = 100
+m = len(X)
 
-			# Stochastic Gradient Descent
-			for epoch in range(n_epochs):
-				for i in range(m):
-					random_index = np.random.randint(m)  # Randomly select an example
-					
-					xi = X_b[random_index:random_index+1]
-					yi = y[random_index:random_index+1]
-					
-					gradients = 2 * xi.T.dot(xi.dot(theta) - yi)  # Compute gradient
-					theta = theta - learning_rate * gradients  # Update weights
+# Stochastic Gradient Descent
+for epoch in range(n_epochs):
+  for i in range(m):
+    random_index = np.random.randint(m)  # Randomly select an example
+    
+    xi = X_b[random_index:random_index+1]
+    yi = y[random_index:random_index+1]
+    
+    gradients = 2 * xi.T.dot(xi.dot(theta) - yi)  # Compute gradient
+    theta = theta - learning_rate * gradients  # Update weights
 
-			# Print the learned parameters
-			print("Intercept:", theta[0][0])
-			print("Slope:", theta[1][0])
-			</p></code></pre>
-			<br>
+# Print the learned parameters
+print("Intercept:", theta[0][0])
+print("Slope:", theta[1][0])</code></pre>
+			<p>Results:</p>
+      <pre><code>Intercept: 4.223113526238277
+Slope: 2.734026492950525</code></pre>
 			<p>In this example, we generate some random training data with a linear relationship between the input features (X) and the target labels (y). We add a bias term to the input features and initialize random weights.</p>
 			<p>The Stochastic Gradient Descent loop iterates over a fixed number of epochs. For each epoch, it randomly selects a single example from the dataset. It computes the gradient of the loss function with respect to the weights using this example and updates the weights accordingly.</p>
 			<p>At the end of the loop, the learned parameters (intercept and slope) are printed. These parameters represent the best-fit line that the Stochastic Gradient Descent algorithm has found to approximate the data.</p>

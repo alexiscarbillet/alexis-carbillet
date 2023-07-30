@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Label propagation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is label propagation? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, label propagation">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is label propagation?" />
+    <meta property="og:description" content="What is label propagation? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SSML/lab.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -112,29 +112,29 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.datasets import make_circles
-			from sklearn.semi_supervised import LabelPropagation
-			import matplotlib.pyplot as plt
+			<pre><code>from sklearn.datasets import make_circles
+from sklearn.semi_supervised import LabelPropagation
+import matplotlib.pyplot as plt
 
-			# Generate a synthetic dataset with two circles
-			X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
-			y[40:60] = -1  # Set some labels as unknown (-1)
+# Generate a synthetic dataset with two circles
+X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
+y[40:60] = -1  # Set some labels as unknown (-1)
 
-			# Create an instance of the label propagation algorithm
-			label_propagation = LabelPropagation(kernel='knn', n_neighbors=5)
+# Create an instance of the label propagation algorithm
+label_propagation = LabelPropagation(kernel='knn', n_neighbors=5)
 
-			# Fit the model with the labeled and unlabeled data
-			label_propagation.fit(X, y)
+# Fit the model with the labeled and unlabeled data
+label_propagation.fit(X, y)
 
-			# Predict labels for all data points
-			predicted_labels = label_propagation.predict(X)
+# Predict labels for all data points
+predicted_labels = label_propagation.predict(X)
 
-			# Plot the results
-			plt.scatter(X[:, 0], X[:, 1], c=predicted_labels)
-			plt.title("Label Propagation")
-			plt.show()
-			</p></code></pre>
+# Plot the results
+plt.scatter(X[:, 0], X[:, 1], c=predicted_labels)
+plt.title("Label Propagation")
+plt.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/ai/lab.png">
 			<p>In this example, we first generate a synthetic dataset with two concentric circles using the make_circles function from scikit-learn. We assign some labels as unknown by setting them to -1.</p>
 			<p>Then, we create an instance of the LabelPropagation algorithm, specifying the kernel type ('knn') and the number of nearest neighbors to consider (n_neighbors=5).</p>
 			<p>Next, we fit the model with the labeled and unlabeled data using the fit method.</p>

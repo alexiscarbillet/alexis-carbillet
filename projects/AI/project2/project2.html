@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project 2: Comparison unsupervised models</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Compare the performance of various algorithms on the load_wine dataset">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, unsupervised machine learning">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Compare the performance of various algorithms on the load_wine dataset" />
+    <meta property="og:description" content="Compare the performance of various algorithms on the load_wine dataset" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/AI/project2/project2.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Comparison unsupervised models</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The "load_wine" dataset is a built-in dataset in scikit-learn that contains information about wines. It is often used for classification tasks, where the goal is to predict the class of a wine based on its attributes. However, the dataset can be adapted for clustering and other unsupervised learning tasks as well.</p>
+		  <p>To compare the different algorithms (clustering, biclustering, Gaussian Mixture Model, Isolation Forest, manifold learning, and Principal Component Analysis) on this dataset, we first need to modify the dataset to suit each task accordingly. Keep in mind that the suitability of each algorithm can depend on the specific characteristics of the dataset and the nature of the problem at hand.</p>
+		  <p>Let's go through each algorithm and its potential application to this dataset:</p>
+		  <p>1. <B>Clustering Algorithms</B> (e.g., K-means, Hierarchical Clustering):</p>
+		  <p>Clustering algorithms group data points into clusters based on similarity. This can be useful if we want to discover inherent patterns or subgroups within the wine data. However, it's worth noting that for clustering, we usually do not have labeled data, so we will be using unsupervised techniques.</p>
+		  <p>2. <B>Biclustering Algorithms</B> (e.g., Spectral Co-clustering, Biclustering):</p>
+		  <p>Biclustering algorithms simultaneously cluster both rows and columns of a dataset. If there are specific patterns where some wines have similar attributes across specific features, biclustering might be useful to identify these patterns.</p>
+		  <p>3. <B>Gaussian Mixture Model</B> (GMM):</p>
+		  <p>GMM is a probabilistic model that can assign probabilities of data points belonging to different clusters. It assumes that the data is generated from a mixture of several Gaussian distributions. GMM can be useful if we have overlapping clusters in the wine dataset and want to assign probabilities of data points belonging to different wine types.</p>
+      <p>4. <B>Isolation Forest</B>:</p>
+		  <p>Isolation Forest is an anomaly detection algorithm that identifies outliers or anomalies in the data. If there are some wines in the dataset that are very different from the majority, Isolation Forest can help identify them.</p>
+		  <p>5. <B>Manifold Learning</B> (e.g., t-SNE, UMAP):</p>
+		  <p>Manifold learning algorithms aim to reduce the dimensionality of the data while preserving the underlying structure. If the wine dataset has a high number of features and we want to visualize or analyze it in a lower-dimensional space, manifold learning can be useful.</p>
+		  <p>6. <B>Principal Component Analysis</B> (PCA):</p>
+		  <p>PCA is another dimensionality reduction technique that transforms data into a new coordinate system representing the principal components of the data. It can be useful to reduce the number of features and extract the most important ones for the wine dataset.</p>
+      <p>Now, to determine which algorithm is most appropriate for this dataset, we need to consider the characteristics of the data and the specific goals of the analysis:</p>
+		  <p>- If we want to explore inherent patterns and subgroups within the wine data, clustering algorithms could be a good fit.</p>
+		  <p>- If there are specific patterns where some wines have similar attributes across certain features, biclustering might be helpful.</p>
+		  <p>- If there is a possibility of overlapping clusters, Gaussian Mixture Model could be appropriate.</p>
+		  <p>- For anomaly detection and identifying outlying wines, Isolation Forest can be useful.</p>
+		  <p>- If we want to visualize the data in a lower-dimensional space, manifold learning algorithms like t-SNE or UMAP can be helpful.</p>
+      <p>- To extract important features and reduce dimensionality, PCA is a classic choice.</p>
+		  <p>Ultimately, the most appropriate algorithm depends on the specific insights or goals you want to achieve with the wine dataset. It is recommended to try out multiple algorithms and evaluate their results using appropriate metrics (e.g., silhouette score for clustering, reconstruction error for dimensionality reduction) to make an informed decision. Also, preprocessing the data, handling missing values, and scaling the features could impact the performance of the algorithms, so those steps should not be overlooked.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Results</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+      <p>Below is a brief example of how you can start comparing some of these algorithms using scikit-learn in Python:</p>
+			<pre><code><p>
+import numpy as np
+from sklearn.datasets import load_wine
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.mixture import GaussianMixture
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+from sklearn.ensemble import IsolationForest
+from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+
+# Load the wine dataset
+data = load_wine()
+X, y = data.data, data.target
+
+# Standardize the features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Apply different algorithms
+# Clustering - K-means
+kmeans = KMeans(n_clusters=3, random_state=42)
+kmeans_labels = kmeans.fit_predict(X_scaled)
+kmeans_silhouette = silhouette_score(X_scaled, kmeans_labels)
+
+# Gaussian Mixture Model
+gmm = GaussianMixture(n_components=3, random_state=42)
+gmm_labels = gmm.fit_predict(X_scaled)
+gmm_silhouette = silhouette_score(X_scaled, gmm_labels)
+
+# Principal Component Analysis (PCA)
+pca = PCA(n_components=2, random_state=42)
+X_pca = pca.fit_transform(X_scaled)
+
+# t-SNE for visualization
+tsne = TSNE(n_components=2, random_state=42)
+X_tsne = tsne.fit_transform(X_scaled)
+
+# Isolation Forest for anomaly detection
+iso_forest = IsolationForest(random_state=42)
+is_outlier = iso_forest.fit_predict(X_scaled)
+num_outliers = np.sum(is_outlier == -1)
+
+# Plot clustering results
+plt.figure(figsize=(12, 6))
+plt.subplot(1, 5, 1)
+plt.scatter(X_scaled[:, 0], X_scaled[:, 1], c=kmeans_labels, cmap='viridis')
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=200, c='red', marker='X', label='Cluster Centers')
+plt.title('K-means Clustering')
+plt.legend()
+
+plt.subplot(1, 5, 2)
+plt.scatter(X_scaled[:, 0], X_scaled[:, 1], c=gmm_labels, cmap='viridis')
+plt.title('GMM Clustering')
+
+plt.subplot(1, 5, 3)
+plt.scatter(X_scaled[:, 0], X_scaled[:, 1], c=is_outlier, cmap='coolwarm') # (Outliers in Blue)
+plt.title('Isolation Forest')
+
+plt.subplot(1, 5, 4)
+plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap='viridis')
+plt.title('PCA Visualization')
+
+plt.subplot(1, 5, 5)
+plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=y, cmap='viridis')
+plt.title('t-SNE Visualization')
+plt.show()
+
+# Print evaluation metrics
+print(f"K-means Silhouette Score: {kmeans_silhouette:.4f}")
+print(f"GMM Silhouette Score: {gmm_silhouette:.4f}")
+print(f"Number of Outliers (Isolation Forest): {num_outliers}")        
+			</p></code></pre>
+			<img src="img/result.png" alt="result comparison">
+			<pre><code>K-means Silhouette Score: 0.2849
+GMM Silhouette Score: 0.2844
+Number of Outliers (Isolation Forest): 15</code></pre>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

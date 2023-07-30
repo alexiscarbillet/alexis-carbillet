@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Principal Component Analysis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the principal component analysis algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, Principal Component Analysis">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the principal component analysis algorithm?" />
+    <meta property="og:description" content="What is the principal component analysis algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/pca.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,28 +108,34 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.decomposition import PCA
+			<pre><code>import numpy as np
+from sklearn.decomposition import PCA
 
-			# Create a sample dataset
-			X = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
+# Create a sample dataset
+X = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
 
-			# Initialize the PCA model with the number of components you want
-			pca = PCA(n_components=2)
+# Initialize the PCA model with the number of components you want
+pca = PCA(n_components=2)
 
-			# Fit the model to the data
-			pca.fit(X)
+# Fit the model to the data
+pca.fit(X)
 
-			# Transform the data to its principal components
-			X_transformed = pca.transform(X)
+# Transform the data to its principal components
+X_transformed = pca.transform(X)
 
-			# The transformed data will have fewer columns (principal components)
-			print("Original data shape:", X.shape)
-			print("Transformed data shape:", X_transformed.shape)
-			print("Transformed data:")
-			print(X_transformed)
-			</p></code></pre>
+# The transformed data will have fewer columns (principal components)
+print("Original data shape:", X.shape)
+print("Transformed data shape:", X_transformed.shape)
+print("Transformed data:")
+print(X_transformed)</code></pre>
+      <p>Results:</p>
+      <pre><code>Original data shape: (4, 3)
+Transformed data shape: (4, 2)
+Transformed data:
+[[ 7.79422863e+00 -1.77635684e-15]
+ [ 2.59807621e+00 -4.44089210e-16]
+ [-2.59807621e+00  4.44089210e-16]
+ [-7.79422863e+00  1.77635684e-15]]</code></pre>
 			<p>In this example, we have a sample dataset X with four data points, each having three features. We initialize a PCA model with n_components=2, indicating that we want to reduce the dimensionality to two principal components.</p>
 			<p>We then fit the PCA model to the data using the fit() method, which calculates the principal components and learns how to transform the data.</p>
 			<p>Finally, we transform the original data to its principal components using the transform() method and store the result in X_transformed. The transformed data will have only two columns (the specified number of components).</p>

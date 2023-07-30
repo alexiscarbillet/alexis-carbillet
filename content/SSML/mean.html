@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Mean Teacher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the mean teacher algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, Mean Teacher">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the mean teacher algorithm?" />
+    <meta property="og:description" content="What is the mean teacher algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SSML/mean.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -115,47 +115,45 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import tensorflow as tf
+			<pre><code>import tensorflow as tf
 
-			# Define the student and teacher models (can be any model architecture)
-			student_model = create_student_model()
-			teacher_model = create_teacher_model()
+# Define the student and teacher models (can be any model architecture)
+student_model = create_student_model()
+teacher_model = create_teacher_model()
 
-			# Define the loss function
-			loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()
+# Define the loss function
+loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()
 
-			# Define the optimizer
-			optimizer = tf.keras.optimizers.Adam()
+# Define the optimizer
+optimizer = tf.keras.optimizers.Adam()
 
-			# Training loop
-			for epoch in range(num_epochs):
-				for step, (x_batch_train, y_batch_train) in enumerate(train_dataset):
-					with tf.GradientTape() as tape:
-						# Forward pass through student model
-						student_logits = student_model(x_batch_train, training=True)
-						
-						# Compute the loss based on true labels
-						loss = loss_fn(y_batch_train, student_logits)
-						
-						# Forward pass through teacher model
-						teacher_logits = teacher_model(x_batch_train, training=False)
-						
-						# Compute the loss based on teacher's soft targets
-						loss += loss_fn(teacher_logits, student_logits)
-					
-					# Compute the gradients and update student model
-					gradients = tape.gradient(loss, student_model.trainable_variables)
-					optimizer.apply_gradients(zip(gradients, student_model.trainable_variables))
-					
-					# Update teacher model by slowly adapting its parameters towards student model's parameters
-					for teacher_variable, student_variable in zip(teacher_model.trainable_variables, student_model.trainable_variables):
-						teacher_variable.assign(teacher_variable * alpha + student_variable * (1 - alpha))
-				
-				# Evaluate the student model on the validation set
-				validation_accuracy = compute_accuracy(validation_dataset, student_model)
-				print("Epoch: {}, Validation Accuracy: {:.4f}".format(epoch+1, validation_accuracy))
-			</p></code></pre>
+# Training loop
+for epoch in range(num_epochs):
+  for step, (x_batch_train, y_batch_train) in enumerate(train_dataset):
+    with tf.GradientTape() as tape:
+      # Forward pass through student model
+      student_logits = student_model(x_batch_train, training=True)
+      
+      # Compute the loss based on true labels
+      loss = loss_fn(y_batch_train, student_logits)
+      
+      # Forward pass through teacher model
+      teacher_logits = teacher_model(x_batch_train, training=False)
+      
+      # Compute the loss based on teacher's soft targets
+      loss += loss_fn(teacher_logits, student_logits)
+    
+    # Compute the gradients and update student model
+    gradients = tape.gradient(loss, student_model.trainable_variables)
+    optimizer.apply_gradients(zip(gradients, student_model.trainable_variables))
+    
+    # Update teacher model by slowly adapting its parameters towards student model's parameters
+    for teacher_variable, student_variable in zip(teacher_model.trainable_variables, student_model.trainable_variables):
+      teacher_variable.assign(teacher_variable * alpha + student_variable * (1 - alpha))
+  
+  # Evaluate the student model on the validation set
+  validation_accuracy = compute_accuracy(validation_dataset, student_model)
+  print("Epoch: {}, Validation Accuracy: {:.4f}".format(epoch+1, validation_accuracy))</code></pre>
 			<p>In this example, we assume that you have already defined the student model and teacher model using appropriate architectures. The training loop consists of iterating over the training data batches and performing the forward pass, computing the loss, and updating the student model's parameters using gradient descent.</p>
 			<p>The key aspect of the Mean Teacher algorithm is the additional loss term that computes the loss based on the teacher's soft targets. This is done by forwarding the input data through the teacher model and comparing the logits (outputs before applying softmax) of the student and teacher models using the loss function. The loss from the true labels and the loss from the soft targets are combined and used to update the student model.</p>
 			<p>After each training step, the teacher model's parameters are updated by slowly adapting them towards the student model's parameters. This is done by linearly interpolating the parameters of the teacher and student models using a parameter called alpha. A common value for alpha is 0.99, which ensures a gradual update of the teacher model.</p>

@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Autoencoder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is an autoencoder? How to code it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, autoencoder">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is an autoencoder?" />
+    <meta property="og:description" content="What is an autoencoder? How to code it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/autoencoder.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -112,70 +112,71 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<pre><code><p>
-			import numpy as np
-			from keras.layers import Input, Dense
-			from keras.models import Model
+import numpy as np
+from keras.layers import Input, Dense
+from keras.models import Model
+import matplotlib.pyplot as plt
+from keras.datasets import mnist
 
-			# Create a simple autoencoder
-			input_dim = 784  # Input dimension (e.g., for 28x28 images)
-			encoding_dim = 32  # Dimension of the encoded representation
+# Create a simple autoencoder
+input_dim = 784  # Input dimension (e.g., for 28x28 images)
+encoding_dim = 32  # Dimension of the encoded representation
 
-			# Encoder layers
-			input_img = Input(shape=(input_dim,))
-			encoded = Dense(encoding_dim, activation='relu')(input_img)
+# Encoder layers
+input_img = Input(shape=(input_dim,))
+encoded = Dense(encoding_dim, activation='relu')(input_img)
 
-			# Decoder layers
-			decoded = Dense(input_dim, activation='sigmoid')(encoded)
+# Decoder layers
+decoded = Dense(input_dim, activation='sigmoid')(encoded)
 
-			# Create the autoencoder model
-			autoencoder = Model(input_img, decoded)
+# Create the autoencoder model
+autoencoder = Model(input_img, decoded)
 
-			# Compile the model
-			autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
+# Compile the model
+autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
 
-			# Load MNIST dataset
-			from keras.datasets import mnist
-			(x_train, _), (x_test, _) = mnist.load_data()
+# Load MNIST dataset
+(x_train, _), (x_test, _) = mnist.load_data()
 
-			# Preprocess and normalize the data
-			x_train = x_train.astype('float32') / 255.
-			x_test = x_test.astype('float32') / 255.
-			x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))
-			x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))
+# Preprocess and normalize the data
+x_train = x_train.astype('float32') / 255.
+x_test = x_test.astype('float32') / 255.
+x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))
+x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))
 
-			# Train the autoencoder
-			autoencoder.fit(x_train, x_train,
-							epochs=50,
-							batch_size=256,
-							shuffle=True,
-							validation_data=(x_test, x_test))
+# Train the autoencoder
+autoencoder.fit(x_train, x_train,
+                epochs=50,
+                batch_size=256,
+                shuffle=True,
+                validation_data=(x_test, x_test))
 
-			# Encode and decode some images
-			encoded_imgs = autoencoder.predict(x_test)
-			decoded_imgs = autoencoder.predict(encoded_imgs)
+# Encode and decode some images
+encoded_imgs = autoencoder.predict(x_test)
+decoded_imgs = autoencoder.predict(encoded_imgs)
 
-			# Visualize the original and reconstructed images
-			import matplotlib.pyplot as plt
+# Visualize the original and reconstructed images
+n = 10  # Number of images to display
+plt.figure(figsize=(20, 4))
+for i in range(n):
+    # Display original images
+    ax = plt.subplot(2, n, i + 1)
+    plt.imshow(x_test[i].reshape(28, 28))
+    plt.gray()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
 
-			n = 10  # Number of images to display
-			plt.figure(figsize=(20, 4))
-			for i in range(n):
-				# Display original images
-				ax = plt.subplot(2, n, i + 1)
-				plt.imshow(x_test[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-
-				# Display reconstructed images
-				ax = plt.subplot(2, n, i + 1 + n)
-				plt.imshow(decoded_imgs[i].reshape(28, 28))
-				plt.gray()
-				ax.get_xaxis().set_visible(False)
-				ax.get_yaxis().set_visible(False)
-			plt.show()
+    # Display reconstructed images
+    ax = plt.subplot(2, n, i + 1 + n)
+    plt.imshow(decoded_imgs[i].reshape(28, 28))
+    plt.gray()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+plt.show()
 			</p></code></pre>
 			<br>
+      <p>Results:</p>
+      <img src="../../img/ai/autoencoder.png">
 			<p>In this example, we use the MNIST dataset, which consists of handwritten digit images. The autoencoder is trained to encode these images into a compressed representation (encoding) and then decode it back to reconstruct the original image (decoding). After training, the autoencoder is used to encode and decode some test images, and the original and reconstructed images are visualized using Matplotlib.</p>
 			<p>Please note that you will need to have Keras and Matplotlib installed in your Python environment to run this example.</p>
 		  </div>

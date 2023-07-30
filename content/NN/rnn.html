@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Recurrent Neural Network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a recurrent neural network? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Recurrent Neural Network">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a recurrent neural network?" />
+    <meta property="og:description" content="What is a recurrent neural network? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/rnn.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -109,35 +109,32 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from keras.models import Sequential
-			from keras.layers import SimpleRNN, Dense
+			<pre><code>import numpy as np
+from keras.models import Sequential
+from keras.layers import SimpleRNN, Dense
 
-			# Generate some sequential data for training
-			data = np.random.randn(1000, 10)  # 1000 sequences, each with 10 timesteps
-			targets = np.random.randint(0, 2, (1000, 1))  # Binary targets (0 or 1) for each sequence
+# Generate some sequential data for training
+data = np.random.randn(1000, 10)  # 1000 sequences, each with 10 timesteps
+targets = np.random.randint(0, 2, (1000, 1))  # Binary targets (0 or 1) for each sequence
 
-			# Create the RNN model
-			model = Sequential()
-			model.add(SimpleRNN(units=32, input_shape=(10, 1)))  # 32 hidden units, input shape (timesteps, features)
-			model.add(Dense(units=1, activation='sigmoid'))  # Output layer with sigmoid activation for binary classification
+# Create the RNN model
+model = Sequential()
+model.add(SimpleRNN(units=32, input_shape=(10, 1)))  # 32 hidden units, input shape (timesteps, features)
+model.add(Dense(units=1, activation='sigmoid'))  # Output layer with sigmoid activation for binary classification
 
-			# Compile the model
-			model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+# Compile the model
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-			# Train the RNN model
-			model.fit(data, targets, epochs=10, batch_size=32)
+# Train the RNN model
+model.fit(data, targets, epochs=10, batch_size=32)
 
-			# Generate some new data for testing
-			test_data = np.random.randn(10, 10)  # 10 test sequences, each with 10 timesteps
+# Generate some new data for testing
+test_data = np.random.randn(10, 10)  # 10 test sequences, each with 10 timesteps
 
-			# Make predictions on the test data
-			predictions = model.predict(test_data)
+# Make predictions on the test data
+predictions = model.predict(test_data)
 
-			print(predictions)
-			</p></code></pre>
-			<br>
+print(predictions)</code></pre>
 			<p>In this example, we first generate some random sequential data with corresponding binary targets for training. We then define a Sequential model and add a SimpleRNN layer with 32 hidden units. The input shape is defined as (10, 1) since we have 10 timesteps and 1 feature per timestep. We follow it up with a Dense layer with a single unit and sigmoid activation for binary classification.</p>
 			<p>Next, we compile the model by specifying the optimizer, loss function, and any desired metrics. We then train the model on the training data using the fit method.</p>
 			<p>Finally, we generate some new test data and make predictions on it using the trained model. The predictions will be printed to the console.</p>

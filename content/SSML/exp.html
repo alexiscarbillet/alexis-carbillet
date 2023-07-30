@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Expectation-Maximization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is expectation-maximization? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, Expectation-Maximization">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is expectation-maximization?" />
+    <meta property="og:description" content="What is expectation-maximization? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SSML/exp.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -116,30 +116,33 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.mixture import GaussianMixture
+			<pre><code>import numpy as np
+from sklearn.mixture import GaussianMixture
 
-			# Generate some random data from two Gaussian distributions
-			np.random.seed(42)
-			X = np.concatenate([np.random.normal(0, 1, 500), np.random.normal(5, 1, 500)]).reshape(-1, 1)
+# Generate some random data from two Gaussian distributions
+np.random.seed(42)
+X = np.concatenate([np.random.normal(0, 1, 500), np.random.normal(5, 1, 500)]).reshape(-1, 1)
 
-			# Initialize the GMM with two components
-			gmm = GaussianMixture(n_components=2, random_state=42)
+# Initialize the GMM with two components
+gmm = GaussianMixture(n_components=2, random_state=42)
 
-			# Fit the GMM using the EM algorithm
-			gmm.fit(X)
+# Fit the GMM using the EM algorithm
+gmm.fit(X)
 
-			# Get the estimated means and variances of the Gaussian components
-			estimated_means = gmm.means_
-			estimated_variances = gmm.covariances_
+# Get the estimated means and variances of the Gaussian components
+estimated_means = gmm.means_
+estimated_variances = gmm.covariances_
 
-			# Print the estimated parameters
-			print("Estimated means:", estimated_means)
-			print("Estimated variances:", estimated_variances)
-			</p></code></pre>
+# Print the estimated parameters
+print("Estimated means:", estimated_means)
+print("Estimated variances:", estimated_variances)</code></pre>
 			<p>In this example, we generate synthetic data from two Gaussian distributions with means 0 and 5 and standard deviations of 1. We then use the scikit-learn library's GaussianMixture class to fit a GMM to the data using the EM algorithm. After fitting the model, we can access the estimated means and variances of the Gaussian components using the means_ and covariances_ attributes, respectively.</p>
 			<p>Keep in mind that the EM algorithm can be applied to various models, not just Gaussian mixtures. The implementation details may vary depending on the specific problem and the libraries or tools you choose to use.</p>
+      <p>Results:</p>
+      <pre><code>Estimated means: [[-4.06425046e-03]
+[ 5.02442983e+00]]
+Estimated variances: [[[0.92810475]]
+[[0.96978724]]]</code></pre>
 		  </div>
 		</div>
       </div>

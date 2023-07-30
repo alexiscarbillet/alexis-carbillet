@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Neural Network Metrics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="Which metrics can use to monitor my neural network? How to do it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, metrics">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="Which metrics can use to monitor my neural network?" />
+    <meta property="og:description" content="Which metrics can use to monitor my neural network? How to do it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/metrics.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -111,26 +111,34 @@
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>To compare metrics in Python, you can use various libraries and functions depending on the specific metrics you want to evaluate. Here's a general approach using some common libraries:</p>
 			<p>1. <B>Accuracy</B>: If you have the true labels and predicted labels, you can use the `accuracy_score` function from the scikit-learn library. Here's an example:</p>
-			<pre><code><p>
-			  from sklearn.metrics import accuracy_score
+			<pre><code>from sklearn.metrics import accuracy_score
 
-		    true_labels = [0, 1, 1, 0, 1]
-		    predicted_labels = [0, 1, 0, 0, 1]
+true_labels = [0, 1, 1, 0, 1]
+predicted_labels = [0, 1, 0, 0, 1]
 
-		    accuracy = accuracy_score(true_labels, predicted_labels)
-		    print("Accuracy:", accuracy)
-			</p></code></pre>
-			<br>
+accuracy = accuracy_score(true_labels, predicted_labels)
+print("Accuracy:", accuracy)</code></pre>
+			<p>Results:</p>
+      <pre><code>Accuracy: 0.8</code></pre>
 			<p>2. <B>Precision, Recall, and F1 Score</B>: If you have the true labels and predicted labels, you can use the `classification_report` function from scikit-learn to calculate precision, recall, and F1 score.</p>
-			<pre><code><p>
-			from sklearn.metrics import classification_report
+			<pre><code>from sklearn.metrics import classification_report
 
-			true_labels = [0, 1, 1, 0, 1]
-			predicted_labels = [0, 1, 0, 0, 1]
+true_labels = [0, 1, 1, 0, 1]
+predicted_labels = [0, 1, 0, 0, 1]
 
-			report = classification_report(true_labels, predicted_labels)
-			print("Classification Report:\n", report)
-			</p></code></pre>
+report = classification_report(true_labels, predicted_labels)
+print("Classification Report:\n", report)</code></pre>
+      <p>Results:</p>
+      <pre><code>
+              precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80         2
+           1       1.00      0.67      0.80         3
+
+    accuracy                           0.80         5
+   macro avg       0.83      0.83      0.80         5
+weighted avg       0.87      0.80      0.80         5
+      </code></pre>
 			<p>The classification_report function will provide precision, recall, and F1 score for each class in a tabular format.</p>
 			<p>These examples demonstrate how to compare metrics using scikit-learn, which is a popular machine learning library in Python. However, depending on the specific metrics or requirements, there might be other libraries or functions more suitable for your needs.</p>
 		  </div>

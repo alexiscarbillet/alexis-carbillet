@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Neural Network Introduction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a neural network?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a neural network?" />
+    <meta property="og:description" content="What is a neural network?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/introduction.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -112,31 +112,29 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import tensorflow as tf
-			from tensorflow.keras import layers
+			<pre><code>import tensorflow as tf
+from tensorflow.keras import layers
 
-			# Create a simple neural network with one hidden layer
-			model = tf.keras.Sequential([
-				layers.Dense(64, activation='relu', input_shape=(784,)),  # Input layer
-				layers.Dense(64, activation='relu'),  # Hidden layer
-				layers.Dense(10, activation='softmax')  # Output layer
-			])
+# Create a simple neural network with one hidden layer
+model = tf.keras.Sequential([
+  layers.Dense(64, activation='relu', input_shape=(784,)),  # Input layer
+  layers.Dense(64, activation='relu'),  # Hidden layer
+  layers.Dense(10, activation='softmax')  # Output layer
+])
 
-			# Compile the model
-			model.compile(optimizer='adam',
-						  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-						  metrics=['accuracy'])
+# Compile the model
+model.compile(optimizer='adam',
+        loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+        metrics=['accuracy'])
 
-			# Load and preprocess the training data
-			(x_train, y_train), _ = tf.keras.datasets.mnist.load_data()
-			x_train = x_train.reshape(-1, 784) / 255.0
+# Load and preprocess the training data
+(x_train, y_train), _ = tf.keras.datasets.mnist.load_data()
+x_train = x_train.reshape(-1, 784) / 255.0
 
-			# Train the model
-			model.fit(x_train, y_train, epochs=5, batch_size=32)
+# Train the model
+model.fit(x_train, y_train, epochs=5, batch_size=32)
 
-			# Now the model is trained and ready to make predictions
-			</p></code></pre>
+# Now the model is trained and ready to make predictions</code></pre>
 			<br>
 			<p>In this example, we create a simple neural network with one hidden layer. The network takes images from the MNIST dataset, which contains handwritten digits, and tries to predict the correct digit.</p>
 			<p>The neural network has three layers: an input layer with 784 neurons (corresponding to the 28x28 pixel image size), a hidden layer with 64 neurons, and an output layer with 10 neurons (one for each possible digit).</p>

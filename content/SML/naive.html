@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Naive Bayes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is naive bayes algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, Naive Bayes">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is naive bayes algorithm?" />
+    <meta property="og:description" content="What is naive bayes algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/naive.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -112,42 +112,42 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.feature_extraction.text import CountVectorizer
-			from sklearn.naive_bayes import MultinomialNB
+			<pre><code>from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
 
-			# Sample training data
-			emails = [
-				("Hey, I hope you're doing well.", "not spam"),
-				("Win a free trip to Hawaii!", "spam"),
-				("Check out this cool offer.", "spam"),
-				("Let's meet for lunch tomorrow.", "not spam")
-			]
+# Sample training data
+emails = [
+  ("Hey, I hope you're doing well.", "not spam"),
+  ("Win a free trip to Hawaii!", "spam"),
+  ("Check out this cool offer.", "spam"),
+  ("Let's meet for lunch tomorrow.", "not spam")
+]
 
-			# Separate the emails and their labels
-			X_train = [email[0] for email in emails]
-			y_train = [email[1] for email in emails]
+# Separate the emails and their labels
+X_train = [email[0] for email in emails]
+y_train = [email[1] for email in emails]
 
-			# Convert text data into numerical feature vectors
-			vectorizer = CountVectorizer()
-			X_train_vectorized = vectorizer.fit_transform(X_train)
+# Convert text data into numerical feature vectors
+vectorizer = CountVectorizer()
+X_train_vectorized = vectorizer.fit_transform(X_train)
 
-			# Train the Naive Bayes classifier
-			classifier = MultinomialNB()
-			classifier.fit(X_train_vectorized, y_train)
+# Train the Naive Bayes classifier
+classifier = MultinomialNB()
+classifier.fit(X_train_vectorized, y_train)
 
-			# Sample test email
-			test_email = "Get a discount on your next purchase!"
+# Sample test email
+test_email = "Get a discount on your next purchase!"
 
-			# Convert the test email into a feature vector
-			test_email_vectorized = vectorizer.transform([test_email])
+# Convert the test email into a feature vector
+test_email_vectorized = vectorizer.transform([test_email])
 
-			# Predict the class of the test email
-			predicted_class = classifier.predict(test_email_vectorized)
+# Predict the class of the test email
+predicted_class = classifier.predict(test_email_vectorized)
 
-			# Print the predicted class
-			print("Predicted class:", predicted_class[0])
-			</p></code></pre>
+# Print the predicted class
+print("Predicted class:", predicted_class[0])</code></pre>
+      <p>Results:</p>
+      <pre><code>Predicted class: not spam</code></pre>
 			<p>In this example, we have a small dataset of labeled emails. We first separate the emails and their corresponding labels. Then, using the CountVectorizer from scikit-learn, we convert the text data into numerical feature vectors.</p>
 			<p>Next, we create an instance of the MultinomialNB class, which represents the Naive Bayes classifier for multinomially distributed data. We fit the classifier using the training data and their corresponding labels.</p>
 			<p>To classify a new email, we convert it into a feature vector using the same vectorizer and pass it to the classifier's predict method. The predicted class is then printed.</p>

@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Multi-Layer Perceptrons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What are Multi-Layer Perceptrons? How to implement them in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Multi-Layer Perceptrons">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What are Multi-Layer Perceptrons?" />
+    <meta property="og:description" content="What are Multi-Layer Perceptrons? How to implement them in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/mlp.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -111,34 +111,33 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.neural_network import MLPClassifier
-			from sklearn.datasets import load_digits
-			from sklearn.model_selection import train_test_split
-			from sklearn.metrics import accuracy_score
+			<pre><code>from sklearn.neural_network import MLPClassifier
+from sklearn.datasets import load_digits
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
-			# Load the dataset
-			digits = load_digits()
-			X = digits.data
-			y = digits.target
+# Load the dataset
+digits = load_digits()
+X = digits.data
+y = digits.target
 
-			# Split the data into training and testing sets
-			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-			# Create an MLP classifier with two hidden layers of 100 neurons each
-			mlp = MLPClassifier(hidden_layer_sizes=(100, 100), max_iter=500)
+# Create an MLP classifier with two hidden layers of 100 neurons each
+mlp = MLPClassifier(hidden_layer_sizes=(100, 100), max_iter=500)
 
-			# Train the MLP classifier
-			mlp.fit(X_train, y_train)
+# Train the MLP classifier
+mlp.fit(X_train, y_train)
 
-			# Make predictions on the testing set
-			y_pred = mlp.predict(X_test)
+# Make predictions on the testing set
+y_pred = mlp.predict(X_test)
 
-			# Calculate the accuracy of the MLP classifier
-			accuracy = accuracy_score(y_test, y_pred)
-			print("Accuracy:", accuracy)
-			</p></code></pre>
-			<br>
+# Calculate the accuracy of the MLP classifier
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)</code></pre>
+			<p>Results:</p>
+      <pre><code>Accuracy: 0.9805555555555555</code></pre>
 			<p>In this example, we use the scikit-learn library to load the digits dataset, which consists of images of handwritten digits. We split the dataset into training and testing sets using the train_test_split function. Then, we create an MLP classifier with two hidden layers, each containing 100 neurons, by initializing an MLPClassifier object. We set max_iter to 500 to limit the number of iterations during training.</p>
 			<p>Next, we train the MLP classifier by calling the fit method with the training data. After training, we use the trained MLP classifier to make predictions on the testing set by calling the predict method. Finally, we calculate the accuracy of the classifier by comparing the predicted labels with the true labels using the accuracy_score function and print the result.</p>
 			</div>

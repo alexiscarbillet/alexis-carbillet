@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Overfitting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is overfitting?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, overfitting">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is overfitting?" />
+    <meta property="og:description" content="What is overfitting?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/overfitting.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -118,67 +118,64 @@
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>Let's illustrate overfitting using a simple example of a neural network in Python. We'll use the popular machine learning library, TensorFlow, to build and train the network. For this example, we'll work with a synthetic dataset with two features and two classes.</p>
 			<p>First, let's import the necessary libraries and generate the synthetic dataset:</p>
-			<pre><p>
-			import numpy as np
-			import matplotlib.pyplot as plt
-			from sklearn.datasets import make_moons
+			<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import make_moons
 
-			# Generate synthetic dataset
-			np.random.seed(0)
-			X, y = make_moons(n_samples=200, noise=0.2)
-			</p></pre>
+# Generate synthetic dataset
+np.random.seed(0)
+X, y = make_moons(n_samples=200, noise=0.2)</code></pre>
 			<p>Now, let's split the dataset into training and testing sets:</p>
-			<pre><p>
-			from sklearn.model_selection import train_test_split
+			<pre><code>from sklearn.model_selection import train_test_split
 
-			# Split the dataset into training and testing sets
-			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-			</p></pre>
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)</code></pre>
 			<p>Next, we'll define and train two neural networks with different complexities: a simple network and a more complex network.</p>
-			<pre><p>
-			import tensorflow as tf
+			<pre><code>import tensorflow as tf
 
-			# Define a simple neural network with one hidden layer
-			model_simple = tf.keras.models.Sequential([
-				tf.keras.layers.Dense(16, input_dim=2, activation='relu'),
-				tf.keras.layers.Dense(1, activation='sigmoid')
-			])
+# Define a simple neural network with one hidden layer
+model_simple = tf.keras.models.Sequential([
+	tf.keras.layers.Dense(16, input_dim=2, activation='relu'),
+	tf.keras.layers.Dense(1, activation='sigmoid')
+])
 
-			# Define a more complex neural network with multiple hidden layers
-			model_complex = tf.keras.models.Sequential([
-				tf.keras.layers.Dense(64, input_dim=2, activation='relu'),
-				tf.keras.layers.Dense(64, activation='relu'),
-				tf.keras.layers.Dense(1, activation='sigmoid')
-			])
+# Define a more complex neural network with multiple hidden layers
+model_complex = tf.keras.models.Sequential([
+	tf.keras.layers.Dense(64, input_dim=2, activation='relu'),
+	tf.keras.layers.Dense(64, activation='relu'),
+	tf.keras.layers.Dense(1, activation='sigmoid')
+])
 
-			# Compile both models
-			model_simple.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-			model_complex.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+# Compile both models
+model_simple.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model_complex.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-			# Train the simple network
-			history_simple = model_simple.fit(X_train, y_train, epochs=50, verbose=0)
+# Train the simple network
+history_simple = model_simple.fit(X_train, y_train, epochs=50, verbose=0)
 
-			# Train the complex network
-			history_complex = model_complex.fit(X_train, y_train, epochs=50, verbose=0)
-			</p></pre>
+# Train the complex network
+history_complex = model_complex.fit(X_train, y_train, epochs=50, verbose=0)
+			</code></pre>
 			<p>Finally, let's visualize the training and validation accuracies for both networks:</p>
-			<pre><p>
-			# Evaluate the models on the testing set
-			loss_simple, accuracy_simple = model_simple.evaluate(X_test, y_test)
-			loss_complex, accuracy_complex = model_complex.evaluate(X_test, y_test)
+			<pre><code># Evaluate the models on the testing set
+loss_simple, accuracy_simple = model_simple.evaluate(X_test, y_test)
+loss_complex, accuracy_complex = model_complex.evaluate(X_test, y_test)
 
-			# Plot the training and validation accuracies
-			plt.plot(history_simple.history['accuracy'], label='Simple Network')
-			plt.plot(history_complex.history['accuracy'], label='Complex Network')
-			plt.title('Training and Validation Accuracies')
-			plt.xlabel('Epochs')
-			plt.ylabel('Accuracy')
-			plt.legend()
-			plt.show()
+# Plot the training and validation accuracies
+plt.plot(history_simple.history['accuracy'], label='Simple Network')
+plt.plot(history_complex.history['accuracy'], label='Complex Network')
+plt.title('Training and Validation Accuracies')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
 
-			print("Testing Accuracy - Simple Network: {:.2f}%".format(accuracy_simple * 100))
-			print("Testing Accuracy - Complex Network: {:.2f}%".format(accuracy_complex * 100))
-			</p></pre>
+print("Testing Accuracy - Simple Network: {:.2f}%".format(accuracy_simple * 100))
+print("Testing Accuracy - Complex Network: {:.2f}%".format(accuracy_complex * 100))</code></pre>
+			<p>Results:</p>		
+			<img src="../../img/ai/overfitting.png">		
+			<pre><code>Testing Accuracy - Simple Network: 77.50%
+Testing Accuracy - Complex Network: 87.50%</code></pre>
 			<p>If the more complex network overfits the data, you will observe that it achieves higher training accuracy compared to the simpler network. However, when evaluating both networks on the testing set, the simpler network may have better generalization performance and a higher accuracy.</p>
 			<p>By visualizing the training and validation accuracies, you can see the behavior of the networks during training. The complex network might achieve near-perfect accuracy on the training set, but its performance on the validation set might start to degrade after a certain point, indicating overfitting.</p>
 			<p>Remember, the specific results may vary based on the random initialization and the dataset used, but this example demonstrates the concept of overfitting in neural networks.</p>

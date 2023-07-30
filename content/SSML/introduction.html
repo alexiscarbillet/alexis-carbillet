@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Semi-supervised ML Introduction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is semi-supervised machine learning?">
     <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is semi-supervised machine learning?" />
+    <meta property="og:description" content="What is semi-supervised machine learning?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SSML/introduction.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,32 +108,31 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.semi_supervised import LabelPropagation
-			from sklearn.datasets import make_classification
+			<pre><code>from sklearn.semi_supervised import LabelPropagation
+from sklearn.datasets import make_classification
 
-			# Generate a synthetic dataset with 500 labeled samples and 5000 unlabeled samples
-			X, y = make_classification(n_samples=5500, n_features=10, n_informative=5, n_classes=2,
-									   n_clusters_per_class=1, weights=[0.1, 0.9], random_state=42)
+# Generate a synthetic dataset with 500 labeled samples and 5000 unlabeled samples
+X, y = make_classification(n_samples=5500, n_features=10, n_informative=5, n_classes=2,
+                n_clusters_per_class=1, weights=[0.1, 0.9], random_state=42)
 
-			# Split the data into labeled and unlabeled sets
-			X_labeled, X_unlabeled = X[:500], X[500:]
-			y_labeled = y[:500]
+# Split the data into labeled and unlabeled sets
+X_labeled, X_unlabeled = X[:500], X[500:]
+y_labeled = y[:500]
 
-			# Create a semi-supervised learning model
-			model = LabelPropagation()
+# Create a semi-supervised learning model
+model = LabelPropagation()
 
-			# Fit the model with the labeled and unlabeled data
-			model.fit(X, y)
+# Fit the model with the labeled and unlabeled data
+model.fit(X, y)
 
-			# Make predictions on the unlabeled data
-			y_pred = model.predict(X_unlabeled)
+# Make predictions on the unlabeled data
+y_pred = model.predict(X_unlabeled)
 
-			# Evaluate the accuracy of the predictions (assuming you have the ground truth labels for the unlabeled data)
-			accuracy = (y_pred == y[500:]).mean()
-			print("Accuracy:", accuracy)
-			</p></code></pre>
-			<br>
+# Evaluate the accuracy of the predictions (assuming you have the ground truth labels for the unlabeled data)
+accuracy = (y_pred == y[500:]).mean()
+print("Accuracy:", accuracy)</code></pre>
+			<p>Results:</p>
+      <pre><code>Accuracy: 1.0</code></pre>
 			<p>In this example, we use the make_classification function from the sklearn.datasets module to generate a synthetic dataset with 500 labeled samples and 5000 unlabeled samples. We split the data into X_labeled and X_unlabeled for features and y_labeled for labels.</p>
 			<p>Next, we create a LabelPropagation model from the sklearn.semi_supervised module. We fit the model with the labeled and unlabeled data using the fit method.</p>
 			<p>After fitting the model, we make predictions on the unlabeled data using the predict method. Finally, we evaluate the accuracy of the predictions by comparing them with the ground truth labels for the unlabeled data.</p>

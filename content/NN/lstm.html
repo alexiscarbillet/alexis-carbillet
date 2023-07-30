@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Long Short-Term Memory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is Long Short-Term Memory? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Long Short-Term Memory">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is Long Short-Term Memory?" />
+    <meta property="og:description" content="What is Long Short-Term Memory? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/lstm.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -113,34 +113,36 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from keras.models import Sequential
-			from keras.layers import LSTM, Dense
+			<pre><code>import numpy as np
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
 
-			# Define your training data
-			X_train = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-			y_train = np.array([0, 1, 1, 0])
+# Define your training data
+X_train = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+y_train = np.array([0, 1, 1, 0])
 
-			# Define the LSTM model
-			model = Sequential()
-			model.add(LSTM(4, input_shape=(2, 1)))  # 2 is the number of features, 1 is the time step
-			model.add(Dense(1, activation='sigmoid'))
+# Define the LSTM model
+model = Sequential()
+model.add(LSTM(4, input_shape=(2, 1)))  # 2 is the number of features, 1 is the time step
+model.add(Dense(1, activation='sigmoid'))
 
-			# Compile the model
-			model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+# Compile the model
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-			# Train the model
-			model.fit(np.expand_dims(X_train, axis=2), y_train, epochs=1000, batch_size=1)
+# Train the model
+model.fit(np.expand_dims(X_train, axis=2), y_train, epochs=1000, batch_size=1)
 
-			# Test the model
-			X_test = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-			predictions = model.predict(np.expand_dims(X_test, axis=2))
+# Test the model
+X_test = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+predictions = model.predict(np.expand_dims(X_test, axis=2))
 
-			# Print the predictions
-			print(predictions)
-			</p></code></pre>
-			<br>
+# Print the predictions
+print(predictions)</code></pre>
+			<p>Predictions:</p>
+      <pre><code>[[0.5152121 ]
+[0.7969701 ]
+[0.9556883 ]
+[0.03418577]]</code></pre>
 			<p>In this example, we are training an LSTM model to learn the XOR logic gate. The X_train consists of the input pairs (0, 0), (0, 1), (1, 0), and (1, 1), and the y_train represents their respective XOR outputs (0, 1, 1, 0).</p>
 			<p>The model is defined using the Sequential API from Keras. We add an LSTM layer with 4 units and specify the input shape as (2, 1), indicating that we have 2 features (the two inputs) and a time step of 1. Then, we add a Dense layer with 1 unit and a sigmoid activation function to produce the final output.</p>
 			<p>The model is compiled with the binary cross-entropy loss function, the Adam optimizer, and we also track the accuracy metric.</p>

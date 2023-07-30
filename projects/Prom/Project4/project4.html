@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Creating a personalized alert in Prometheus">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, alert">
+    <meta name="author" content="Alexis Carbillet">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Creating a personalized alert in Prometheus" />
+    <meta property="og:description" content="Creating a personalized alert in Prometheus" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Project4/project4.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Project</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Creating a personalized alert in Prometheus involves a few steps, including defining alerting rules and setting up alerting configurations. Prometheus is a monitoring and alerting toolkit often used with Grafana for visualization. Here's a general guide on how to create a personalized alert in Prometheus:</p>
+		  <p>1. <B>Define Alerting Rules</B>:</p>
+		  <p>Alerting rules are used to define the conditions under which an alert should be triggered. These rules are written in PromQL (Prometheus Query Language). You need to specify the metric, the condition, and the threshold that should trigger the alert. For example, let's say you want to create an alert for high CPU usage on a server. The PromQL rule might look like this:</p>
+      <pre><code># Alert rule to trigger when CPU usage crosses 80%
+alert: HighCPUUsage
+  expr: 100 * (1 - (avg by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m]))))
+          > 80
+  for: 5m
+  labels:
+    severity: warning
+  annotations:
+    summary: "High CPU Usage on {{ $labels.instance }}"
+    description: "CPU usage is {{ humanize $value }}% on {{ $labels.instance }}"</code></pre>
+		  <p>2. <B>Save Alerting Rules</B>:</p>
+		  <p>Save the alerting rules in a file with a .rules extension, for example, "alerts.rules". You can have multiple alert rules defined in a single file.</p>
+		  <p>3. <B>Configure Prometheus</B>:</p>
+		  <p>Open the Prometheus configuration file ("prometheus.yml") and add a "rule_files" section to specify the path to your alerting rules file. The configuration should look something like this:</p>
+      <pre><code>rule_files:
+  - "alerts.rules"</code></pre>
+		  <p>4. <B>Reload or Restart Prometheus</B>:</p>
+		  <p>After updating the Prometheus configuration file, you need to reload or restart Prometheus to apply the changes. Prometheus will now start evaluating the alerting rules and trigger alerts accordingly.</p>
+      <p>5. <B>Configure Alertmanager</B>:</p>
+		  <p>Prometheus relies on an external component called Alertmanager to handle alerts. You need to set up Alertmanager and configure it to send alert notifications. In the Alertmanager configuration file, you can define notification receivers like email, Slack, or other integrations. For example:</p>
+      <pre><code>receivers:
+- name: 'email-alert'
+  email_configs:
+  - to: 'your-email@example.com'
+    send_resolved: true</code></pre>
+		  <p>6. <B>Connect Prometheus to Alertmanager</B>:</p>
+		  <p>In the Prometheus configuration file ("prometheus.yml"), add the following section to specify the Alertmanager endpoint:</p>
+      <pre><code>alerting:
+  alertmanagers:
+  - static_configs:
+    - targets: ['localhost:9093']  # The address where Alertmanager is running</code></pre>
+      <p>7. <B>Reload or Restart Prometheus and Alertmanager</B>:</p>
+		  <p>After making changes to the Alertmanager configuration, you need to reload or restart both Prometheus and Alertmanager to apply the configurations.</p>
+		  <p>Now, when Prometheus evaluates the alerting rules and detects an alert condition, it will send the alert to Alertmanager. Alertmanager will then handle the alerts based on the configured receivers, such as sending an email or a notification to Slack.</p>
+		  <p>Remember that the exact steps may vary depending on your setup and the versions of Prometheus and Alertmanager you are using. Always refer to the official documentation of Prometheus and Alertmanager for the most up-to-date and detailed instructions.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

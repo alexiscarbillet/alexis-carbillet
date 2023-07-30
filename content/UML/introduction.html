@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Unsupervised ML Introduction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is unsupervised machine learning?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is unsupervised machine learning?" />
+    <meta property="og:description" content="What is unsupervised machine learning?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/introduction.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,30 +108,31 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.cluster import KMeans
+			<pre><code>import numpy as np
+from sklearn.cluster import KMeans
 
-			# Create some example data points
-			data = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
+# Create some example data points
+data = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
 
-			# Create a K-means clustering model with 2 clusters
-			kmeans = KMeans(n_clusters=2)
+# Create a K-means clustering model with 2 clusters
+kmeans = KMeans(n_clusters=2)
 
-			# Fit the model to the data
-			kmeans.fit(data)
+# Fit the model to the data
+kmeans.fit(data)
 
-			# Get the cluster labels assigned to each data point
-			labels = kmeans.labels_
+# Get the cluster labels assigned to each data point
+labels = kmeans.labels_
 
-			# Get the centroids of the clusters
-			centroids = kmeans.cluster_centers_
+# Get the centroids of the clusters
+centroids = kmeans.cluster_centers_
 
-			# Print the cluster labels and centroids
-			print("Cluster Labels:", labels)
-			print("Cluster Centroids:", centroids)
-			</p></code></pre>
-			<br>
+# Print the cluster labels and centroids
+print("Cluster Labels:", labels)
+print("Cluster Centroids:", centroids)</code></pre>
+			<p>Results:</p>
+      <pre><code>Cluster Labels: [1 1 0 0 1 0]
+Cluster Centroids: [[7.33333333 9.        ]
+                   [1.16666667 1.46666667]]</code></pre>
 			<p>In this example, we have a set of 2-dimensional data points stored in the data array. We create a KMeans object with n_clusters=2, indicating that we want to identify two clusters. Then, we fit the model to the data using kmeans.fit(data). After fitting, we can access the cluster labels assigned to each data point using kmeans.labels_, and the centroids of the clusters using kmeans.cluster_centers_.</p>
 			<p>When you run this code, you'll see the cluster labels assigned to each data point and the coordinates of the cluster centroids printed to the console.</p>
 			<p>Note that this is a simple example, and unsupervised learning can be used for more complex tasks such as anomaly detection, feature extraction, or recommendation systems, among others.</p>

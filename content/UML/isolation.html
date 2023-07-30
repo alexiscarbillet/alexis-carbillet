@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Isolation Forest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the isolation forest algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, isolation forest">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the isolation forest algorithm?" />
+    <meta property="og:description" content="What is the isolation forest algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/isolation.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -112,26 +112,31 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.ensemble import IsolationForest
+			<pre><code>import numpy as np
+from sklearn.ensemble import IsolationForest
 
-			# Create a sample dataset
-			X = np.array([[1.0], [1.5], [2.0], [10.0], [10.5], [11.0]])
+# Create a sample dataset
+X = np.array([[1.0], [1.5], [2.0], [10.0], [10.5], [11.0]])
 
-			# Create an Isolation Forest model
-			model = IsolationForest(contamination=0.2)  # Contamination represents the expected proportion of anomalies
+# Create an Isolation Forest model
+model = IsolationForest(contamination=0.2)  # Contamination represents the expected proportion of anomalies
 
-			# Fit the model to the data
-			model.fit(X)
+# Fit the model to the data
+model.fit(X)
 
-			# Predict the anomalies (outliers)
-			predictions = model.predict(X)
+# Predict the anomalies (outliers)
+predictions = model.predict(X)
 
-			# Print the predictions (-1 indicates an anomaly/outlier, 1 indicates normal data point)
-			for point, pred in zip(X, predictions):
-				print(f"Data point: {point}, Prediction: {pred}")
-			</p></code></pre>
+# Print the predictions (-1 indicates an anomaly/outlier, 1 indicates normal data point)
+for point, pred in zip(X, predictions):
+  print(f"Data point: {point}, Prediction: {pred}")</code></pre>
+      <p>Results:</p>
+      <pre><code>Data point: [1.], Prediction: -1
+Data point: [1.5], Prediction: 1
+Data point: [2.], Prediction: 1
+Data point: [10.], Prediction: 1
+Data point: [10.5], Prediction: 1
+Data point: [11.], Prediction: 1</code></pre>
 			<p>In this example, we create a simple dataset X consisting of one-dimensional values. We then create an IsolationForest model with a contamination value of 0.2, indicating that we expect 20% of the data points to be anomalies.</p>
 			<p>Next, we fit the model to the data using the fit method. Once the model is trained, we use the predict method to obtain the predictions for each data point. An output of -1 indicates that the point is considered an anomaly, while a value of 1 indicates that it is a normal data point.</p>
 			<p>Finally, we print the data points along with their corresponding predictions to see which points are classified as anomalies.</p>

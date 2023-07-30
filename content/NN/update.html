@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Neural Network Update</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="How to update a trained neural network? Is it useful to do it?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, python, update, retraining">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="How to update a trained neural network? Is it useful to do it?" />
+    <meta property="og:description" content="How to update a trained neural network? Is it useful to do it?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/update.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -115,28 +115,26 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import tensorflow as tf
-			from tensorflow import keras
+			<pre><code>import tensorflow as tf
+from tensorflow import keras
 
-			# Load the initial pre-trained model
-			model = keras.models.load_model('pretrained_model.h5')
+# Load the initial pre-trained model
+model = keras.models.load_model('pretrained_model.h5')
 
-			# Prepare new data for updating the network
-			new_data = ...  # Load or generate new data
+# Prepare new data for updating the network
+new_data = ...  # Load or generate new data
 
-			# Prepare labels for the new data (if applicable)
-			new_labels = ...  # Load or generate labels for the new data
+# Prepare labels for the new data (if applicable)
+new_labels = ...  # Load or generate labels for the new data
 
-			# Compile the model
-			model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+# Compile the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-			# Update the model with new data
-			model.fit(new_data, new_labels, epochs=10, batch_size=32)
+# Update the model with new data
+model.fit(new_data, new_labels, epochs=10, batch_size=32)
 
-			# Save the updated model
-			model.save('updated_model.h5')
-			</p></code></pre>
+# Save the updated model
+model.save('updated_model.h5')</code></pre>
 			<p>In this example, we assume that you have an initial pre-trained model saved as <B>pretrained_model.h5</B>. You can load this model using the keras.models.load_model() function.</p>
 			<p>Next, you need to prepare new data (new_data) and corresponding labels (new_labels) if applicable. This data should represent the updated information you want to train the network on. Ensure that the shape and format of the new data match the input requirements of the pre-trained model.</p>
 			<p>After that, you compile the model using the desired optimizer, loss function, and metrics. In this example, we use the Adam optimizer and categorical cross-entropy loss.</p>

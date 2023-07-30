@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #69b3a2;
+  color: #5e4da5;
 }
 
 .text-primary {
@@ -210,7 +210,7 @@ header.masthead .intro-download {
   header.masthead .intro-text .intro-lead-in {
     font-size: 16px;
     font-style: italic;
-    color: grey;
+    color: black;
     line-height: 40px;
     margin-bottom: 25px;
     margin-right: 20%;
@@ -653,6 +653,23 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #5e4da5;
+}
+
+.centered-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for the list */
+.centered-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for list items */
+.centered-list-item {
+  text-align: left; /* Change to "right" for right-aligned items or "center" for center-aligned items */
+  margin-bottom: 5px; /* Adjust spacing between items as needed */
 }
 
 </style>

@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Virtual Adversarial Training</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is virtual adversarial training? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, semi-supervised machine learning, artificial intelligence, python, Virtual Adversarial Training">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is virtual adversarial training?" />
+    <meta property="og:description" content="What is virtual adversarial training? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SSML/vat.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -114,67 +114,65 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import tensorflow as tf
-			import numpy as np
+			<pre><code>import tensorflow as tf
+import numpy as np
 
-			def generate_virtual_adversarial_perturbation(model, x, epsilon=0.1, num_iterations=1):
-				# Generate a random perturbation within the epsilon bound
-				d = tf.random.uniform(shape=tf.shape(x), minval=-epsilon, maxval=epsilon)
-				d = tf.Variable(d)
+def generate_virtual_adversarial_perturbation(model, x, epsilon=0.1, num_iterations=1):
+  # Generate a random perturbation within the epsilon bound
+  d = tf.random.uniform(shape=tf.shape(x), minval=-epsilon, maxval=epsilon)
+  d = tf.Variable(d)
 
-				# Compute the forward pass on the perturbed input
-				logits_perturbed = model(x + d, training=False)
+  # Compute the forward pass on the perturbed input
+  logits_perturbed = model(x + d, training=False)
 
-				for _ in range(num_iterations):
-					# Compute the forward pass on the clean input
-					logits_clean = model(x, training=False)
+  for _ in range(num_iterations):
+    # Compute the forward pass on the clean input
+    logits_clean = model(x, training=False)
 
-					# Compute the Kullback-Leibler (KL) divergence
-					kl_divergence = tf.keras.losses.KLDivergence()(logits_clean, logits_perturbed)
+    # Compute the Kullback-Leibler (KL) divergence
+    kl_divergence = tf.keras.losses.KLDivergence()(logits_clean, logits_perturbed)
 
-					# Compute the gradient of the KL divergence w.r.t. the perturbation
-					with tf.GradientTape() as tape:
-						tape.watch(d)
-						loss = kl_divergence
+    # Compute the gradient of the KL divergence w.r.t. the perturbation
+    with tf.GradientTape() as tape:
+      tape.watch(d)
+      loss = kl_divergence
 
-					gradient = tape.gradient(loss, d)
-					normalized_gradient = tf.nn.l2_normalize(gradient)
+    gradient = tape.gradient(loss, d)
+    normalized_gradient = tf.nn.l2_normalize(gradient)
 
-					# Update the perturbation using the normalized gradient
-					d = tf.Variable(d + normalized_gradient * epsilon)
+    # Update the perturbation using the normalized gradient
+    d = tf.Variable(d + normalized_gradient * epsilon)
 
-					# Compute the forward pass on the updated perturbed input
-					logits_perturbed = model(x + d, training=False)
+    # Compute the forward pass on the updated perturbed input
+    logits_perturbed = model(x + d, training=False)
 
-				return d
+  return d
 
-			def virtual_adversarial_training(model, x, y, epsilon=0.1, num_iterations=1):
-				# Generate the virtual adversarial perturbation
-				d = generate_virtual_adversarial_perturbation(model, x, epsilon, num_iterations)
+def virtual_adversarial_training(model, x, y, epsilon=0.1, num_iterations=1):
+  # Generate the virtual adversarial perturbation
+  d = generate_virtual_adversarial_perturbation(model, x, epsilon, num_iterations)
 
-				# Compute the forward pass on the perturbed input
-				logits_perturbed = model(x + d, training=True)
+  # Compute the forward pass on the perturbed input
+  logits_perturbed = model(x + d, training=True)
 
-				# Compute the cross-entropy loss between the true labels and perturbed predictions
-				loss = tf.keras.losses.CategoricalCrossentropy()(y, logits_perturbed)
+  # Compute the cross-entropy loss between the true labels and perturbed predictions
+  loss = tf.keras.losses.CategoricalCrossentropy()(y, logits_perturbed)
 
-				return loss
+  return loss
 
-			# Example usage
-			# Assume you have a pre-trained model called `model` and a dataset `x` and `y`
+# Example usage
+# Assume you have a pre-trained model called `model` and a dataset `x` and `y`
 
-			# Virtual Adversarial Training parameters
-			epsilon = 0.1
-			num_iterations = 1
+# Virtual Adversarial Training parameters
+epsilon = 0.1
+num_iterations = 1
 
-			# Compute the loss using Virtual Adversarial Training
-			loss = virtual_adversarial_training(model, x, y, epsilon, num_iterations)
+# Compute the loss using Virtual Adversarial Training
+loss = virtual_adversarial_training(model, x, y, epsilon, num_iterations)
 
-			# Perform gradient descent or other optimization methods to update the model weights based on the loss
+# Perform gradient descent or other optimization methods to update the model weights based on the loss
 
-			# Repeat the process for multiple iterations to improve robustness
-			</p></code></pre>
+# Repeat the process for multiple iterations to improve robustness</code></pre>
 			<p>In this example, model represents your pre-trained neural network model. x and y are the input data and corresponding labels, respectively. The epsilon parameter determines the magnitude of the perturbation, and num_iterations specifies the number of iterations for refining the perturbation.</p>
 			<p>The generate_virtual_adversarial_perturbation function generates a random perturbation within the specified epsilon bound. It then iteratively updates the perturbation using the KL divergence and its gradient w.r.t. the perturbation.</p>
 			<p>The virtual_adversarial_training function generates the virtual adversarial perturbation and computes the cross-entropy loss between the true labels and the predictions on the perturbed input. This loss can be used for updating the model weights using gradient descent or other optimization methods.</p>

@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Linear Regression</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a linear regression? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, machine learning, supervised machine learning, python, artificial intelligence, linear regression">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a linear regression? How to implement it in python?" />
+    <meta property="og:description" content="What is a linear regression? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/linear.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,27 +108,29 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.linear_model import LinearRegression
+			<pre><code>import numpy as np
+from sklearn.linear_model import LinearRegression
 
-			# Create sample input data
-			X = np.array([[1], [2], [3], [4], [5]])  # Independent variable
-			Y = np.array([2, 4, 6, 8, 10])  # Dependent variable
+# Create sample input data
+X = np.array([[1], [2], [3], [4], [5]])  # Independent variable
+Y = np.array([2, 4, 6, 8, 10])  # Dependent variable
 
-			# Create and fit the linear regression model
-			model = LinearRegression()
-			model.fit(X, Y)
+# Create and fit the linear regression model
+model = LinearRegression()
+model.fit(X, Y)
 
-			# Make predictions
-			X_new = np.array([[6], [7]])  # New values of X for prediction
-			predictions = model.predict(X_new)
+# Make predictions
+X_new = np.array([[6], [7]])  # New values of X for prediction
+predictions = model.predict(X_new)
 
-			# Print the predicted values
-			for x, y_pred in zip(X_new, predictions):
-				print(f"Input: {x}, Predicted Output: {y_pred}")
-			</p></code></pre>
-			<br>
+# Print the predicted values
+for x, y_pred in zip(X_new, predictions):
+  print(f"Input: {x}, Predicted Output: {y_pred}")</code></pre>
+			<p>Results:</p>
+      <pre><code>
+Input: [6], Predicted Output: 12.0
+Input: [7], Predicted Output: 14.0
+      </code></pre>
 			<p>In this example, we have a simple dataset with X values representing independent variables and Y values representing dependent variables. We create an instance of the LinearRegression class from scikit-learn, fit the model using the fit method, and then use the predict method to make predictions on new X values (X_new).</p>
 			<p>The output will be the predicted values of the dependent variable (Y) based on the given independent variable (X).</p>
 		  </div>

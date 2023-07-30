@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Clustering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the clustering algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, clustering">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the clustering algorithm?" />
+    <meta property="og:description" content="What is the clustering algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/clustering.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -110,31 +110,31 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			from sklearn.cluster import KMeans
-			import matplotlib.pyplot as plt
+			<pre><code>import numpy as np
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
-			# Generating some sample data
-			data = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
+# Generating some sample data
+data = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
 
-			# Creating the KMeans clustering model
-			kmeans = KMeans(n_clusters=2)
+# Creating the KMeans clustering model
+kmeans = KMeans(n_clusters=2)
 
-			# Fitting the model to the data
-			kmeans.fit(data)
+# Fitting the model to the data
+kmeans.fit(data)
 
-			# Getting the cluster labels assigned to each data point
-			labels = kmeans.labels_
+# Getting the cluster labels assigned to each data point
+labels = kmeans.labels_
 
-			# Getting the coordinates of the cluster centers
-			centers = kmeans.cluster_centers_
+# Getting the coordinates of the cluster centers
+centers = kmeans.cluster_centers_
 
-			# Plotting the data points and cluster centers
-			plt.scatter(data[:, 0], data[:, 1], c=labels)
-			plt.scatter(centers[:, 0], centers[:, 1], marker='x', color='red')
-			plt.show()
-			</p></code></pre>
+# Plotting the data points and cluster centers
+plt.scatter(data[:, 0], data[:, 1], c=labels)
+plt.scatter(centers[:, 0], centers[:, 1], marker='x', color='red')
+plt.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/ai/clustering.png">
 			<p>In this example, we have six data points represented by their 2D coordinates. We create an instance of the <B>KMeans</B> class from scikit-learn and specify that we want two clusters (<B>n_clusters=2</B>). Then, we fit the model to our data using the <B>fit()</B> method.</p>
 			<p>After fitting the model, we can obtain the cluster labels assigned to each data point using <B>kmeans.labels_</B>, and the coordinates of the cluster centers using <B>kmeans.cluster_centers_</B>.</p>
 			<p>Finally, we visualize the data points using different colors based on their cluster labels and plot the cluster centers as red crosses</p>

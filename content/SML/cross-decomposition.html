@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Cross decomposition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is cross decomposition? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, Cross decomposition">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is cross decomposition?" />
+    <meta property="og:description" content="What is cross decomposition? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/cross-decomposition.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -114,24 +114,26 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.cross_decomposition import PLSRegression
+			<pre><code>from sklearn.cross_decomposition import PLSRegression
 
-			# Let's say we have three sets of data: A, B, and C
-			A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # Features in set A
-			B = [[0.1, 0.2], [0.3, 0.4], [0.5, 0.6]]  # Features in set B
-			C = [10, 20, 30]  # Target variable in set C
+# Let's say we have three sets of data: A, B, and C
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # Features in set A
+B = [[0.1, 0.2], [0.3, 0.4], [0.5, 0.6]]  # Features in set B
+C = [10, 20, 30]  # Target variable in set C
 
-			# Create a PLSR model and fit it to the data
-			model = PLSRegression(n_components=1)
-			model.fit(A, C)
+# Create a PLSR model and fit it to the data
+model = PLSRegression(n_components=1)
+model.fit(A, C)
 
-			# Predict the target variable C based on the features in set A
-			predicted_C = model.predict(A)
+# Predict the target variable C based on the features in set A
+predicted_C = model.predict(A)
 
-			# Print the predicted values
-			print("Predicted C values:", predicted_C)
-			</p></code></pre>
+# Print the predicted values
+print("Predicted C values:", predicted_C)</code></pre>
+      <p>Results:</p>        
+      <pre><code>Predicted C values: [[10.]
+[20.]
+[30.]]</code></pre>
 			<p>We use the PLSRegression class from the sklearn.cross_decomposition module in scikit-learn to create a PLSR model. We set the number of components to 1, indicating that we want to find a one-dimensional relationship between the sets.</p>
 			<p>Next, we fit the model using the features in set A and the target variable in set C. The algorithm analyzes the relationship between these sets and creates a model that captures this relationship.</p>
 			<p>Once the model is trained, we can use it to predict the target variable C based on the features in set A. We call the predict method on the model and pass in the features in set A. The algorithm uses the learned relationship to make predictions.</p>

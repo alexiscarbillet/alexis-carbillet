@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Perceptron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the perception algortihm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, machine learning, supervised machine learning, artificial intelligence, python, perceptron">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the perception algortihm?" />
+    <meta property="og:description" content="What is the perception algortihm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/perceptron.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -113,42 +113,42 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
+			<pre><code>import numpy as np
 
-			class Perceptron:
-				def __init__(self, num_features, learning_rate=0.01):
-					self.weights = np.zeros(num_features)
-					self.bias = 0.0
-					self.learning_rate = learning_rate
+class Perceptron:
+  def __init__(self, num_features, learning_rate=0.01):
+    self.weights = np.zeros(num_features)
+    self.bias = 0.0
+    self.learning_rate = learning_rate
 
-				def predict(self, features):
-					activation = np.dot(self.weights, features) + self.bias
-					return 1 if activation >= 0 else 0
+  def predict(self, features):
+    activation = np.dot(self.weights, features) + self.bias
+    return 1 if activation >= 0 else 0
 
-				def train(self, training_data, labels, num_epochs):
-					for _ in range(num_epochs):
-						for features, label in zip(training_data, labels):
-							prediction = self.predict(features)
-							error = label - prediction
-							self.weights += self.learning_rate * error * features
-							self.bias += self.learning_rate * error
+  def train(self, training_data, labels, num_epochs):
+    for _ in range(num_epochs):
+      for features, label in zip(training_data, labels):
+        prediction = self.predict(features)
+        error = label - prediction
+        self.weights += self.learning_rate * error * features
+        self.bias += self.learning_rate * error
 
-			# Example usage
-			training_data = np.array([[3, 1], [2, 5], [1, 3], [6, 1]])
-			labels = np.array([1, 0, 1, 0])  # 1 for red, 0 for blue
+# Example usage
+training_data = np.array([[3, 1], [2, 5], [1, 3], [6, 1]])
+labels = np.array([1, 0, 1, 0])  # 1 for red, 0 for blue
 
-			perceptron = Perceptron(num_features=2)
-			perceptron.train(training_data, labels, num_epochs=10)
+perceptron = Perceptron(num_features=2)
+perceptron.train(training_data, labels, num_epochs=10)
 
-			# Predict new balls
-			new_balls = np.array([[4, 2], [2, 3]])
-			for ball in new_balls:
-				prediction = perceptron.predict(ball)
-				color = "red" if prediction == 1 else "blue"
-				print(f"The ball with size {ball[0]} and weight {ball[1]} is predicted to be {color}.")
-			</p></code></pre>
-			<br>
+# Predict new balls
+new_balls = np.array([[4, 2], [2, 3]])
+for ball in new_balls:
+  prediction = perceptron.predict(ball)
+  color = "red" if prediction == 1 else "blue"
+  print(f"The ball with size {ball[0]} and weight {ball[1]} is predicted to be {color}.")</code></pre>
+			<p>Results:</p>
+      <pre><code>The ball with size 4 and weight 2 is predicted to be red.
+The ball with size 2 and weight 3 is predicted to be red.</code></pre>
 			<p>In this example, we define a Perceptron class with methods for initialization, prediction, and training. The train method updates the weights and bias based on the prediction error, and the predict method uses these weights and bias to make predictions.</p>
 			<p>We create a training_data array containing the features (size and weight) of the training balls and a labels array specifying the corresponding color labels. We then create an instance of the Perceptron class and train it using the training data.</p>
 			<p>Finally, we use the trained perceptron to make predictions for new balls (new_balls). The predicted color is printed based on the perceptron's prediction.</p>

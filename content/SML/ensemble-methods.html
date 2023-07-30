@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Ensemble Methods</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What are Ensemble Methods? How to implement them in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, Ensemble Methods">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What are Ensemble Methods?" />
+    <meta property="og:description" content="What are Ensemble Methods? How to implement them in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/ensemble-methods.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -109,28 +109,26 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.ensemble import RandomForestClassifier
-			from sklearn.model_selection import train_test_split
-			from sklearn.metrics import accuracy_score
+			<pre><code>from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
-			# Assuming X is the feature matrix and y is the label vector
-			# Splitting the data into training and testing sets
-			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Assuming X is the feature matrix and y is the label vector
+# Splitting the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-			# Creating a Random Forest classifier with 100 decision trees
-			rf = RandomForestClassifier(n_estimators=100)
+# Creating a Random Forest classifier with 100 decision trees
+rf = RandomForestClassifier(n_estimators=100)
 
-			# Training the classifier on the training data
-			rf.fit(X_train, y_train)
+# Training the classifier on the training data
+rf.fit(X_train, y_train)
 
-			# Making predictions on the testing data
-			predictions = rf.predict(X_test)
+# Making predictions on the testing data
+predictions = rf.predict(X_test)
 
-			# Evaluating the accuracy of the classifier
-			accuracy = accuracy_score(y_test, predictions)
-			print("Accuracy:", accuracy)
-			</p></code></pre>
+# Evaluating the accuracy of the classifier
+accuracy = accuracy_score(y_test, predictions)
+print("Accuracy:", accuracy)</code></pre>
 			<p>In this example, we use Random Forest to create a classifier with 100 decision trees (n_estimators=100). We then fit the model to the training data (rf.fit(X_train, y_train)) and make predictions on the testing data (predictions = rf.predict(X_test)). Finally, we evaluate the accuracy of the classifier by comparing the predicted labels to the true labels (accuracy = accuracy_score(y_test, predictions)).</p>
 			<p>Random Forest is just one example of an ensemble method, and scikit-learn provides implementations for various other ensemble methods like AdaBoost, Gradient Boosting, and Voting classifiers. The general idea remains the same: combining the predictions of multiple models to improve accuracy.</p>
 		  </div>

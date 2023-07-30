@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Choropleth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What are choropleths? How to implement them in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, Choropleth">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What are choropleths?" />
+    <meta property="og:description" content="What are choropleths? How to implement them in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Spatial/choropleth.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -107,35 +107,28 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import geopandas as gpd
-			import matplotlib.pyplot as plt
+			<pre><code>from urllib.request import urlopen
+import json
+with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
+    counties = json.load(response)
 
-			# Load shapefile data (geographic boundaries)
-			shapefile_path = "path_to_shapefile.shp"
-			map_data = gpd.read_file(shapefile_path)
+import pandas as pd
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
+                    dtype={"fips": str})
 
-			# Load data for choropleth (e.g., population density by region)
-			data_path = "path_to_data.csv"
-			data = gpd.read_file(data_path)
+import plotly.express as px
 
-			# Merge shapefile data with choropleth data based on a common column
-			merged_data = map_data.merge(data, left_on='region_id', right_on='region_id', how='left')
-
-			# Plot the choropleth map
-			fig, ax = plt.subplots(figsize=(10, 6))
-			merged_data.plot(column='population_density', cmap='YlOrRd', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
-
-			# Customize the plot
-			ax.set_title('Population Density Choropleth Map')
-			ax.set_axis_off()
-
-			# Show the plot
-			plt.show()
-			</p></code></pre>
-			<p>In this example, you would need to replace "path_to_shapefile.shp" with the file path to your shapefile, which contains the geographic boundaries of the regions you want to visualize. Similarly, "path_to_data.csv" should be replaced with the path to your data file, which includes the relevant data (e.g., population density) for each region.</p>
-			<p>The geopandas library is used to read and manipulate the shapefile and data, while matplotlib is used to create the plot and customize its appearance. The merged_data.plot() function is used to generate the choropleth map, specifying the column in the data that determines the color of each region ('population_density' in this example). Finally, the plt.show() function displays the map.</p>
-		  </div>
+fig = px.choropleth(df, geojson=counties, locations='fips', color='unemp',
+                            color_continuous_scale="Viridis",
+                            range_color=(0, 12),
+                            scope="usa",
+                            labels={'unemp':'unemployment rate'}
+                          )
+fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+fig.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/vis/choropleth.png">
+			</div>
 		</div>
       </div>
     </section>

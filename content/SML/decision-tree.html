@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Decision tree</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a decison tree? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, decision tree">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a decison tree?" />
+    <meta property="og:description" content="What is a decison tree? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/decision-tree.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,33 +108,33 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn import datasets
-			from sklearn.model_selection import train_test_split
-			from sklearn.tree import DecisionTreeClassifier
-			from sklearn import metrics
+			<pre><code>from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn import metrics
 
-			# Load the iris dataset from scikit-learn
-			iris = datasets.load_iris()
-			X = iris.data  # Features
-			y = iris.target  # Target variable
+# Load the iris dataset from scikit-learn
+iris = datasets.load_iris()
+X = iris.data  # Features
+y = iris.target  # Target variable
 
-			# Split the dataset into training and testing sets
-			X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-			# Create a decision tree classifier
-			clf = DecisionTreeClassifier()
+# Create a decision tree classifier
+clf = DecisionTreeClassifier()
 
-			# Train the classifier on the training data
-			clf.fit(X_train, y_train)
+# Train the classifier on the training data
+clf.fit(X_train, y_train)
 
-			# Make predictions on the test data
-			y_pred = clf.predict(X_test)
+# Make predictions on the test data
+y_pred = clf.predict(X_test)
 
-			# Compare the predicted labels with the actual labels
-			accuracy = metrics.accuracy_score(y_test, y_pred)
-			print("Accuracy:", accuracy)
-			</p></code></pre>
+# Compare the predicted labels with the actual labels
+accuracy = metrics.accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)</code></pre>
+      <p>Results:</p>
+      <pre><code>Accuracy: 1.0</code></pre>
 			<p>In this example, we're using the famous iris dataset, which contains measurements of iris flowers and their corresponding species. We split the dataset into training and testing sets using the train_test_split function. Then, we create a decision tree classifier using the DecisionTreeClassifier class and train it on the training data using the fit method.</p>
 			<p>After training, we use the trained classifier to make predictions on the test data with the predict method. Finally, we compare the predicted labels (y_pred) with the actual labels (y_test) and calculate the accuracy using the accuracy_score function from the metrics module.</p>
 			<p>This example demonstrates how to use the decision tree algorithm to classify iris flowers into different species based on their measurements. You can modify the code and dataset according to your specific use case.</p>

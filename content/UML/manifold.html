@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Manifold Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is manifold learning? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, manifold learning">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is manifold learning?" />
+    <meta property="og:description" content="What is manifold learning? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/manifold.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -109,28 +109,28 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 			<p>Let's consider an example using the popular manifold learning algorithm called t-SNE (t-Distributed Stochastic Neighbor Embedding) in Python. We'll use the scikit-learn library, which provides various machine learning algorithms, including manifold learning techniques.</p>
-			<pre><code><p>
-			import numpy as np
-			import matplotlib.pyplot as plt
-			from sklearn.manifold import TSNE
+			<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
 
-			# Generate some random high-dimensional data
-			np.random.seed(42)
-			n_samples = 100
-			n_features = 50
-			X = np.random.rand(n_samples, n_features)
+# Generate some random high-dimensional data
+np.random.seed(42)
+n_samples = 100
+n_features = 50
+X = np.random.rand(n_samples, n_features)
 
-			# Perform t-SNE to obtain the lower-dimensional representation
-			tsne = TSNE(n_components=2)
-			X_tsne = tsne.fit_transform(X)
+# Perform t-SNE to obtain the lower-dimensional representation
+tsne = TSNE(n_components=2)
+X_tsne = tsne.fit_transform(X)
 
-			# Plot the results
-			plt.scatter(X_tsne[:, 0], X_tsne[:, 1])
-			plt.title("t-SNE Visualization")
-			plt.xlabel("Component 1")
-			plt.ylabel("Component 2")
-			plt.show()
-			</p></code></pre>
+# Plot the results
+plt.scatter(X_tsne[:, 0], X_tsne[:, 1])
+plt.title("t-SNE Visualization")
+plt.xlabel("Component 1")
+plt.ylabel("Component 2")
+plt.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/ai/manifold.png">
 			<p>In this example, we generate random high-dimensional data using NumPy. Then, we use the <B>TSNE</B> class from scikit-learn to create a t-SNE object. We specify <B>n_components=2</B> to obtain a 2-dimensional representation.</p>
 			<p>Next, we call the <B>fit_transform()</B> method on the t-SNE object, passing in our high-dimensional data <B>X</B>. This step performs the t-SNE algorithm and returns the lower-dimensional representation <B>X_tsne</B>.</p>
 			<p>Finally, we plot the resulting 2-dimensional representation using Matplotlib. Each point in the plot corresponds to a data point in the original high-dimensional space. The plot allows us to visualize the data in a simplified form, where the relative positions of the points reflect their relationships in the high-dimensional space.</p>

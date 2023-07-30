@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Nearest Neighbors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the nearest neighbors algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python,  nearest neighbors">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the nearest neighbors algorithm?" />
+    <meta property="og:description" content="What is the nearest neighbors algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/nearest.html />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -111,28 +111,29 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.neighbors import KNeighborsClassifier
+			<pre><code>from sklearn.neighbors import KNeighborsClassifier
 
-			# Creating the dataset
-			X = [[2.0, 4.0], [4.0, 6.0], [1.5, 3.5], [3.5, 5.5]]  # Features (fruit attributes)
-			y = ['apple', 'apple', 'orange', 'orange']  # Labels (fruit types)
+# Creating the dataset
+X = [[2.0, 4.0], [4.0, 6.0], [1.5, 3.5], [3.5, 5.5]]  # Features (fruit attributes)
+y = ['apple', 'apple', 'orange', 'orange']  # Labels (fruit types)
 
-			# Creating the nearest neighbors classifier
-			k = 3  # Number of neighbors to consider
-			knn = KNeighborsClassifier(n_neighbors=k)
+# Creating the nearest neighbors classifier
+k = 3  # Number of neighbors to consider
+knn = KNeighborsClassifier(n_neighbors=k)
 
-			# Training the classifier
-			knn.fit(X, y)
+# Training the classifier
+knn.fit(X, y)
 
-			# Making predictions for new fruits
-			new_fruits = [[3.0, 5.0], [2.5, 4.5]]  # New fruits' features
-			predictions = knn.predict(new_fruits)
+# Making predictions for new fruits
+new_fruits = [[3.0, 5.0], [2.5, 4.5]]  # New fruits' features
+predictions = knn.predict(new_fruits)
 
-			# Printing the predictions
-			for i, fruit in enumerate(predictions):
-				print("New fruit", i+1, "is predicted to be:", fruit)
-			</p></code></pre>
+# Printing the predictions
+for i, fruit in enumerate(predictions):
+  print("New fruit", i+1, "is predicted to be:", fruit)</code></pre>
+      <p>Results:</p>
+      <pre><code>New fruit 1 is predicted to be: apple
+New fruit 2 is predicted to be: orange</code></pre>
 			<p>In this example, we have a dataset with four fruits, each with two features: X-coordinate and Y-coordinate. The fruits are labeled as either 'apple' or 'orange'. We want to classify two new fruits based on their coordinates.</p>
 			<p>We create an instance of the KNeighborsClassifier class, set the number of neighbors (k) to 3, and then train the classifier using the fit method with our features X and labels y.</p>
 			<p>Next, we define the features of two new fruits in the new_fruits list. We use the predict method of the classifier to make predictions for these new fruits, and store the results in the predictions variable.</p>

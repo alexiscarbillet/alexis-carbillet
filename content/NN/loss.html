@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Neural Network Loss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is loss in deep learning?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, loss">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is loss in deep learning?" />
+    <meta property="og:description" content="What is loss in deep learning?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/loss.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -107,23 +107,23 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import matplotlib.pyplot as plt
+			<pre><code>import matplotlib.pyplot as plt
 
-			# Assuming you have a list or array of loss values over each epoch
-			loss_values = [0.5, 0.3, 0.2, 0.1, 0.05, 0.01, 0.005]
+# Assuming you have a list or array of loss values over each epoch
+loss_values = [0.5, 0.3, 0.2, 0.1, 0.05, 0.01, 0.005]
 
-			# Create a list of epoch numbers for the x-axis
-			epochs = range(1, len(loss_values) + 1)
+# Create a list of epoch numbers for the x-axis
+epochs = range(1, len(loss_values) + 1)
 
-			# Plot the loss values
-			plt.plot(epochs, loss_values, 'b', label='Loss')
-			plt.title('Training Loss')
-			plt.xlabel('Epochs')
-			plt.ylabel('Loss')
-			plt.legend()
-			plt.show()
-			</p></code></pre>
+# Plot the loss values
+plt.plot(epochs, loss_values, 'b', label='Loss')
+plt.title('Training Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()</code></pre>
+      <p>Result:</p>
+      <img src="../../img/ai/loss.png">
 			<br>
 			<p>In this example, loss_values represents the loss values obtained during each epoch of training. The epochs list is created as a range from 1 to the number of epochs. Then, the plt.plot() function is used to plot the loss values against the epoch numbers. The other plt functions are used to add a title, labels, and a legend to the plot.</p>
 			<p>Running this code will generate a simple line plot that displays the trend of the loss values over the training epochs. It can help you visualize how the loss decreases (ideally) over time, indicating the network's improvement during training.</p>

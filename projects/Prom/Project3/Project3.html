@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Cartogram</title>
+    <title>Project 3: Complex requests with node-exporter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, cartogram">
+    <meta name="description" content="Examples of requests with node-exporter">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, node-exporter">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="Examples of requests with node-exporter" />
+    <meta property="og:description" content="Examples of requests with node-exporter" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Prom/Project3/Project3.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../../css/structure.css" rel="stylesheet">
+    <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -46,23 +46,20 @@
     <!-- Navigation --> 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../index.html#vis">Main</a>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#prom">Main</a>
             </li>
           </ul>
         </div>
@@ -84,56 +81,34 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Cartogram</h2>
+			<h2 class="section-heading text-uppercase">Complex requests with node-exporter</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>A cartogram is a type of map-based data visualization technique that distorts the geographic regions or shapes of a map to represent a specific variable or data point. Unlike traditional maps where regions are proportional to their actual size or shape, cartograms resize and reshape the regions based on the data being represented.</p>
-		  <p>The purpose of a cartogram is to highlight the spatial distribution or relationship of a particular data set across different regions or locations. By distorting the geographic representation, cartograms emphasize the data values associated with each region rather than their physical boundaries.</p>
-		  <p>There are two main types of cartograms:</p>
-		  <p>1. <B>Area Cartograms</B>: In an area cartogram, the size of each region is scaled based on the data being visualized. For example, if the data represents population density, the regions with higher population densities will be expanded, while those with lower densities will be compressed. The resulting cartogram represents the data in a way that visually emphasizes the variable being mapped.</p>
-		  <p>2. <B>Distance Cartograms</B>: In a distance cartogram, the shapes and distances between regions are distorted based on the data being visualized. Instead of resizing the regions, the distances between them are adjusted. This type of cartogram is often used to represent connectivity, travel times, or other network-related data.</p>
-		  <p>Cartograms can be used to represent various types of data, such as population, economic indicators, voting patterns, or any other spatially related information. They provide a unique perspective that allows viewers to quickly grasp the distribution or patterns within the data set. However, it's important to note that cartograms can introduce significant distortions, and careful interpretation is necessary to avoid misrepresenting the underlying data.</p>
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Python Example</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import geopandas as gpd
-			import matplotlib.pyplot as plt
-
-			# Load shapefile data
-			shapefile_path = "path_to_shapefile.shp"  # Replace with the path to your shapefile
-			data = gpd.read_file(shapefile_path)
-
-			# Normalize the data for visualization
-			data['normalized_data'] = (data['data_column'] - data['data_column'].min()) / (data['data_column'].max() - data['data_column'].min())
-
-			# Create the area cartogram
-			fig, ax = plt.subplots(figsize=(10, 10))
-			data.plot(column='normalized_data', cmap='Blues', linewidth=0.8, ax=ax, edgecolor='0.8', legend=True)
-
-			# Set plot title and axis labels
-			plt.title("Area Cartogram")
-			plt.xlabel("Longitude")
-			plt.ylabel("Latitude")
-
-			# Show the plot
-			plt.show()
-			</p></code></pre>
-			<p>In this example, you need to replace "path_to_shapefile.shp" with the actual path to your shapefile. Make sure you have the geopandas library installed in your Python environment. The data_column represents the variable you want to visualize as an area cartogram.</p>
-			<p>This code snippet will load the shapefile data, normalize the data values for visualization purposes, create an area cartogram using the plot() function, and display the resulting plot with a title and axis labels.</p>
+		  <p>Node-exporter is a popular tool used to collect various system-level metrics from a Linux/Unix server and expose them via HTTP for monitoring and analysis. Below are five complex requests you can make on node-exporter metrics:</p>
+		  <p>1. Calculate average CPU utilization over the last hour for a specific node:</p>
+		  <p><pre><code>avg_over_time(node_cpu_seconds_total{job="node-exporter", mode="idle"}[1h])</code></pre></p>
+		  <p>2. Monitor and alert on unusual disk I/O patterns:</p>
+		  <p><pre><code>absent(rate(node_disk_read_bytes_total{job="node-exporter", device="sda"}[5m])) 
+OR absent(rate(node_disk_written_bytes_total{job="node-exporter", device="sda"}[5m]))</code></pre></p>
+		  <p>This query checks if there's no disk I/O activity (reads or writes) on the sda disk for the last 5 minutes. If no data is available, it might indicate an issue, and an alert can be triggered.</p>
+		  <p>3. Identify the top memory-consuming processes on a node:</p>
+		  <p><pre><code>topk(5, 100 - (node_memory_MemFree_bytes{job="node-exporter"} / node_memory_MemTotal_bytes{job="node-exporter"}) * 100)</code></pre></p>
+		  <p>This query calculates the memory usage percentage for each process by dividing used memory ("MemTotal - MemFree") by total memory ("MemTotal"). Then, it selects the top 5 processes with the highest memory usage.</p>
+      <p>4. Calculate network bandwidth utilization over a specific period for a network interface:</p>
+		  <p><pre><code>irate(node_network_receive_bytes_total{job="node-exporter", device="eth0"}[1h])</code></pre></p>
+		  <p>This query calculates the incoming network bandwidth rate (bytes per second) for the "eth0" interface over the last hour using the "irate" function.</p>
+		  <p><pre><code>irate(node_network_transmit_bytes_total{job="node-exporter", device="eth0"}[1h])</code></pre></p>
+		  <p>This query calculates the outgoing network bandwidth rate (bytes per second) for the "eth0" interface over the last hour using the "irate" function.</p>
+		  <p>5. Monitor and visualize system load and resource utilization trends:</p>
+      <p><pre><code>node_load1{job="node-exporter"}</code></pre></p>
+		  <p>This query retrieves the 1-minute load average for the node, which represents the average number of processes in the run queue or waiting for CPU time over the last minute.</p>
+		  <p><pre><code>100 - (avg by (instance) (irate(node_cpu_seconds_total{job="node-exporter", mode="idle"}[5m])) * 100)</code></pre></p>
+      <p>This query calculates the CPU utilization percentage for each node by subtracting the average idle CPU time from 100%.</p>
+		  <p><pre><code>node_memory_MemTotal_bytes{job="node-exporter"} 
+- node_memory_MemFree_bytes{job="node-exporter"} 
+- node_memory_Buffers_bytes{job="node-exporter"} 
+- node_memory_Cached_bytes{job="node-exporter"}</code></pre></p>
+		  <p>This query calculates the used memory by subtracting free memory, buffers, and cached memory from the total memory.</p>
 		  </div>
 		</div>
       </div>
@@ -154,8 +129,8 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <div class="team-member">
-             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
-              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
               <p class="text-muted">Data scientist</p>
 			  <!-- Add icon library -->
 			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -196,7 +171,7 @@
 			</div>
 			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
 			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
-			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
 			</div>
 		</div>
 		<div id="particles-js" style="height:50px;"></div>
@@ -210,18 +185,18 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 	
     <!-- Custom scripts for this template -->
-    <script src="../../js/structure.js"></script>
+    <script src="../../../js/structure.js"></script>
 	
 	<!-- Particles part -->
-	<script src="../../js/particles.js"></script>
-	<script src="../../js/app.js"></script>
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>

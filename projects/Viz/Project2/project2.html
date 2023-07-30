@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project 2: load_diabetes study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to visualize the load_diabetes dataset?">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, load_diabetes">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="How to visualize the load_diabetes dataset?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Viz/Project2/project2.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#vis">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">load_diabetes study</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The load_diabetes dataset is one of the built-in datasets provided by scikit-learn, a popular machine learning library in Python. It contains ten baseline variables and a quantitative measure of disease progression one year after baseline for 442 diabetes patients. This dataset is often used for regression analysis and is particularly suitable for evaluating and benchmarking regression algorithms.</p>
+		  <p>Here are the details of the load_diabetes dataset:</p>
+		  <p>1. <B>Data Source</B>: The data was collected by Bradley Efron, Trevor Hastie, Iain Johnstone, and Robert Tibshirani for their research paper "Least Angle Regression" published in The Annals of Statistics in 2004.</p>
+		  <p>2. <B>Features (Baseline Variables)</B>: The dataset consists of ten numeric baseline variables, which serve as input features for the regression analysis. These features are:</p>
+		  <p>- Age: Age in years.</p>
+		  <p>- Sex: Gender (0 for female, 1 for male).</p>
+		  <p>- Body Mass Index (BMI): A measure of body fat based on height and weight.</p>
+		  <p>- Average Blood Pressure: Mean arterial blood pressure.</p>
+		  <p>- S1, S2, S3, S4, S5, S6: Six blood serum measurements.</p>
+      <p>3. <B>Target Variable (Disease Progression)</B>: The target variable, also known as the response or dependent variable, is a quantitative measure of disease progression one year after the baseline. This variable is used for regression, where the goal is to predict the progression of the disease based on the input features.</p>
+		  <p>4. <B>Number of Instances</B>: The dataset contains a total of 442 instances (patients).</p>
+		  <p>5. <B>Data Format</B>: The data is provided as a NumPy array, where each row represents an instance (patient), and each column corresponds to a different feature or the target variable.</p>
+		  <p>6. <B>Task</B>: The typical task associated with this dataset is regression. The objective is to build a regression model that can predict the disease progression value for new patients given their baseline measurements.</p>
+      <p>7. <B>Usage</B>: The load_diabetes dataset is often used for educational and research purposes in regression-related studies. It is also commonly used as a benchmark dataset to evaluate the performance of regression algorithms and machine learning models.</p>
+		  <p>Let's look at a code example of how to load and examine the load_diabetes dataset using scikit-learn:</p>
+			<pre><code><p>
+from sklearn.datasets import load_diabetes
+
+# Load the diabetes dataset
+diabetes = load_diabetes()
+
+# Accessing the features and target variables
+data = diabetes.data
+target = diabetes.target
+
+# Print the shape of the data and target arrays
+print("Data Shape:", data.shape)
+print("Target Shape:", target.shape)
+			</p></code></pre>
+      <p>When you run this code, you will see that the "data" array has dimensions (442, 10), representing 442 instances with 10 baseline features each, and the "target" array has dimensions (442,), representing the disease progression values for each patient.</p>
+      <p>I recommend using a scatter plot matrix (also known as a pair plot) for visualization.</p>
+      <p>A scatter plot matrix is a grid of scatter plots where each variable is plotted against every other variable, displaying the relationship between pairs of variables. Each point in the scatter plot represents a data point, and the position of the point in each plot corresponds to the value of that data point for the two variables being compared.</p>
+      <p>Here's why a scatter plot matrix is a suitable choice for the load_diabetes dataset:</p>
+      <p>1. <B>Multiple Relationships</B>: The dataset has ten features, and a scatter plot matrix allows you to visualize the relationships between each pair of features simultaneously. This enables you to identify potential patterns or correlations between variables more efficiently.</p>
+      <p>2. <B>Continuous Data</B>: Since the load_diabetes dataset contains continuous variables (age, BMI, blood pressure, etc.), scatter plots are well-suited for showing the distribution and correlation between continuous data points.</p>
+      <p>3. <B>Identifying Trends and Outliers</B>: Scatter plots are excellent for identifying trends, clusters, or any potential outliers in the data. Outliers in the scatter plots can indicate data points that deviate significantly from the overall pattern and may require further investigation.</p>
+      <p>4. <B>Correlation Analysis</B>: Scatter plots allow you to visually assess the strength and direction of the relationship between pairs of variables. A positive correlation would show a general upward trend, while a negative correlation would show a downward trend.</p>
+      <p>5. <B>Easy Interpretation</B>: Scatter plots are intuitive and easy to understand, making them useful for communicating insights to a broader audience.</p>
+      </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Results</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>To create a scatter plot matrix, you can use the pairplot function from the Seaborn library, which provides an easy way to create the matrix and handles the visualization details for you.</p>
+			<p>Here's an example code snippet to create a scatter plot matrix for the load_diabetes dataset:</p>
+      <pre><code>
+import seaborn as sns
+import pandas as pd
+from sklearn.datasets import load_diabetes
+import matplotlib.pyplot as plt
+
+# Load the dataset
+data = load_diabetes()
+df = pd.DataFrame(data.data, columns=data.feature_names)
+
+# Add the target column to the DataFrame
+df['target'] = data.target
+
+# Create a scatter plot matrix
+sns.pairplot(df, diag_kind='kde')
+plt.show()  # This will display the plot in the notebook
+      </code></pre>
+      <img src="img/result.png" alt="scatter plot matrix load_diabetes" width="90%">
+			<p>In this code, we load the dataset, convert it to a pandas DataFrame, and then use Seaborn's pairplot function to create the scatter plot matrix. The "diag_kind='kde'" argument adds kernel density estimation plots on the diagonal, which gives us smooth representations of the univariate distributions for each variable.</p>
+			<p>By analyzing the scatter plot matrix, you can gain valuable insights into the relationships between the features and how they may impact the target variable, which, in this case, is the progression of diabetes disease.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

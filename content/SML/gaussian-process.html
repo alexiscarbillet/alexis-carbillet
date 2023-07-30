@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Gaussian Process</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a gaussian process? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, gaussian process">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a gaussian process?" />
+    <meta property="og:description" content="What is a gaussian process? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/SML/gaussian-process.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -109,44 +109,46 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			import matplotlib.pyplot as plt
-			from sklearn.gaussian_process import GaussianProcessRegressor
-			from sklearn.gaussian_process.kernels import RBF
+			<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.gaussian_process.kernels import RBF, WhiteKernel
 
-			# Generate synthetic data
-			np.random.seed(0)
-			X = np.random.rand(20, 1) * 10
-			y = np.sin(X) + 0.1 * np.random.randn(20, 1)
+# Generate synthetic data
+np.random.seed(0)
+X = np.random.rand(20, 1) * 10
+y = np.sin(X) + 0.1 * np.random.randn(20, 1)
 
-			# Define the kernel for the Gaussian process
-			kernel = RBF(length_scale=1.0)
+# Define the kernel for the Gaussian process
+kernel = 1.0 * RBF(length_scale=1e1, length_scale_bounds=(1e-2, 1e3)) + WhiteKernel(
+    noise_level=1, noise_level_bounds=(1e-5, 1e1)
+)
 
-			# Create a Gaussian process regressor
-			gp = GaussianProcessRegressor(kernel=kernel)
+# Create a Gaussian process regressor
+gp = GaussianProcessRegressor(kernel=kernel)
 
-			# Fit the Gaussian process model to the data
-			gp.fit(X, y)
+# Fit the Gaussian process model to the data
+gp.fit(X, y)
 
-			# Generate test data
-			X_test = np.linspace(0, 10, 100).reshape(-1, 1)
+# Generate test data
+X_test = np.linspace(0, 10, 100).reshape(-1, 1)
 
-			# Make predictions with the Gaussian process model
-			y_pred, y_std = gp.predict(X_test, return_std=True)
+# Make predictions with the Gaussian process model
+y_pred, y_std = gp.predict(X_test, return_std=True)
 
-			# Plot the results
-			plt.figure(figsize=(10, 6))
-			plt.scatter(X, y, color='blue', label='Observations')
-			plt.plot(X_test, y_pred, color='red', label='Predicted Values')
-			plt.fill_between(X_test.squeeze(), (y_pred - 2 * y_std).squeeze(), (y_pred + 2 * y_std).squeeze(),
-							 color='gray', alpha=0.3, label='Uncertainty')
-			plt.xlabel('X')
-			plt.ylabel('y')
-			plt.title('Gaussian Process Regression')
-			plt.legend()
-			plt.show()
-			</p></code></pre>
+# Plot the results
+plt.figure(figsize=(10, 6))
+plt.scatter(X, y, color='blue', label='Observations')
+plt.plot(X_test, y_pred, color='red', label='Predicted Values')
+plt.fill_between(X_test.squeeze(), (y_pred - 2 * y_std).squeeze(), (y_pred + 2 * y_std).squeeze(),
+          color='gray', alpha=0.3, label='Uncertainty')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.title('Gaussian Process Regression')
+plt.legend()
+plt.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/ai/gp.png">
 			<p>In this example, we first generate some synthetic data points X and corresponding target values y. We assume a sine function with some random noise.</p>
 			<p>Next, we define the kernel for the Gaussian process. In this case, we use the Radial Basis Function (RBF) kernel, which is commonly used for smooth functions.</p>
 			<p>Then, we create an instance of GaussianProcessRegressor and fit the model to our data.</p>

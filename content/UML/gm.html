@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Gaussian Mixture</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is gaussian mixture? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, gaussian mixture">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is gaussian mixture?" />
+    <meta property="og:description" content="What is gaussian mixture? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/gm.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,33 +108,33 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import numpy as np
-			import matplotlib.pyplot as plt
-			from sklearn.mixture import GaussianMixture
+			<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.mixture import GaussianMixture
 
-			# Generating synthetic data
-			np.random.seed(42)
-			# Data points from the first group (mean: 2, standard deviation: 1)
-			data1 = np.random.normal(loc=2, scale=1, size=100)
-			# Data points from the second group (mean: 7, standard deviation: 2)
-			data2 = np.random.normal(loc=7, scale=2, size=150)
-			# Combining the two groups
-			data = np.concatenate([data1, data2])
+# Generating synthetic data
+np.random.seed(42)
+# Data points from the first group (mean: 2, standard deviation: 1)
+data1 = np.random.normal(loc=2, scale=1, size=100)
+# Data points from the second group (mean: 7, standard deviation: 2)
+data2 = np.random.normal(loc=7, scale=2, size=150)
+# Combining the two groups
+data = np.concatenate([data1, data2])
 
-			# Fitting the Gaussian Mixture Model
-			gmm = GaussianMixture(n_components=2)  # We assume there are two groups
-			gmm.fit(data.reshape(-1, 1))
+# Fitting the Gaussian Mixture Model
+gmm = GaussianMixture(n_components=2)  # We assume there are two groups
+gmm.fit(data.reshape(-1, 1))
 
-			# Predicting the group labels for each data point
-			labels = gmm.predict(data.reshape(-1, 1))
+# Predicting the group labels for each data point
+labels = gmm.predict(data.reshape(-1, 1))
 
-			# Plotting the data points and their assigned labels
-			plt.scatter(data, np.zeros_like(data), c=labels, cmap='viridis')
-			plt.title('Gaussian Mixture Model')
-			plt.xlabel('Data Points')
-			plt.show()
-			</p></code></pre>
+# Plotting the data points and their assigned labels
+plt.scatter(data, np.zeros_like(data), c=labels, cmap='viridis')
+plt.title('Gaussian Mixture Model')
+plt.xlabel('Data Points')
+plt.show()</code></pre>
+      <p>Results:</p>
+      <img src="../../img/ai/gm.png">
 			<p>In this example, we generate synthetic data with two underlying groups. We use the numpy library to generate random data points from two normal distributions. Then, we concatenate the two groups to create our dataset.</p>
 			<p>Next, we use the GaussianMixture class from scikit-learn to fit the GMM to our data. We set n_components=2 to indicate that we expect two underlying groups.</p>
 			<p>After fitting the GMM, we predict the group labels for each data point using the predict method. Finally, we visualize the data points and their assigned labels using a scatter plot.</p>

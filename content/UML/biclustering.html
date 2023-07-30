@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Biclustering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is the bisclustering algorithm? How to implement it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, unsupervised machine learning, artificial intelligence, python, biclustering">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is the bisclustering algorithm?" />
+    <meta property="og:description" content="What is the bisclustering algorithm? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/UML/biclustering.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -108,25 +108,33 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			from sklearn.datasets import load_iris
-			from sklearn.cluster import SpectralCoclustering
+			<pre><code>from sklearn.datasets import load_iris
+from sklearn.cluster import SpectralCoclustering
 
-			# Load the Iris dataset
-			data = load_iris()
-			X = data.data
+# Load the Iris dataset
+data = load_iris()
+X = data.data
 
-			# Perform biclustering using SpectralCoclustering algorithm
-			model = SpectralCoclustering(n_clusters=3, random_state=0)
-			model.fit(X)
+# Perform biclustering using SpectralCoclustering algorithm
+model = SpectralCoclustering(n_clusters=3, random_state=0)
+model.fit(X)
 
-			# Retrieve the bicluster labels
-			bicluster_labels = model.row_labels_
+# Retrieve the bicluster labels
+bicluster_labels = model.row_labels_
 
-			# Print the bicluster labels
-			for i in range(len(bicluster_labels)):
-				print(f"Sample {i} belongs to bicluster {bicluster_labels[i]}")
-			</p></code></pre>
+# Print the bicluster labels
+for i in range(len(bicluster_labels)):
+  print(f"Sample {i} belongs to bicluster {bicluster_labels[i]}")</code></pre>
+      <p>Results:</p>
+      <pre><code>Sample 0 belongs to bicluster 0
+Sample 1 belongs to bicluster 0
+Sample 2 belongs to bicluster 0
+Sample 3 belongs to bicluster 0
+Sample 4 belongs to bicluster 0
+...
+Sample 147 belongs to bicluster 2
+Sample 148 belongs to bicluster 2
+Sample 149 belongs to bicluster 2</code></pre>
 			<p>In this example, we load the Iris dataset using the load_iris() function from scikit-learn. We then extract the data matrix X from the loaded dataset.</p>
 			<p>Next, we create an instance of the SpectralCoclustering class, which is a popular biclustering algorithm implemented in scikit-learn. We specify the number of desired biclusters as n_clusters=3.</p>
 			<p>We fit the model to the data using the fit() method, which performs the biclustering.</p>

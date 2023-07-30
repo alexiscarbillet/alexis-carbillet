@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Convolutional Neural Network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="description" content="What is a convolutional neural network? How to code it in python?">
     <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, convolutional neural network">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/" />
+    <meta property="og:title" content="What is a convolutional neural network?" />
+    <meta property="og:description" content="What is a convolutional neural network? How to code it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/NN/cnn.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -110,47 +110,44 @@
 			<h2 class="section-heading text-uppercase">Python Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			import tensorflow as tf
-			from tensorflow.keras import layers
+			<pre><code>import tensorflow as tf
+from tensorflow.keras import layers
 
-			# Create a CNN model
-			model = tf.keras.Sequential()
+# Create a CNN model
+model = tf.keras.Sequential()
 
-			# Add a convolutional layer with 32 filters, each of size 3x3
-			model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)))
+# Add a convolutional layer with 32 filters, each of size 3x3
+model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)))
 
-			# Add a max pooling layer
-			model.add(layers.MaxPooling2D((2, 2)))
+# Add a max pooling layer
+model.add(layers.MaxPooling2D((2, 2)))
 
-			# Add another convolutional layer with 64 filters, each of size 3x3
-			model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+# Add another convolutional layer with 64 filters, each of size 3x3
+model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 
-			# Add another max pooling layer
-			model.add(layers.MaxPooling2D((2, 2)))
+# Add another max pooling layer
+model.add(layers.MaxPooling2D((2, 2)))
 
-			# Flatten the output from the previous layer
-			model.add(layers.Flatten())
+# Flatten the output from the previous layer
+model.add(layers.Flatten())
 
-			# Add a fully connected layer with 64 neurons
-			model.add(layers.Dense(64, activation='relu'))
+# Add a fully connected layer with 64 neurons
+model.add(layers.Dense(64, activation='relu'))
 
-			# Add an output layer with the number of classes
-			model.add(layers.Dense(num_classes, activation='softmax'))
+# Add an output layer with the number of classes
+model.add(layers.Dense(num_classes, activation='softmax'))
 
-			# Compile the model
-			model.compile(optimizer='adam',
-						  loss='categorical_crossentropy',
-						  metrics=['accuracy'])
+# Compile the model
+model.compile(optimizer='adam',
+        loss='categorical_crossentropy',
+        metrics=['accuracy'])
 
-			# Train the model
-			model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
+# Train the model
+model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
 
-			# Evaluate the model
-			test_loss, test_acc = model.evaluate(test_images, test_labels)
-			print('Test accuracy:', test_acc)
-
-			</p></code></pre>
+# Evaluate the model
+test_loss, test_acc = model.evaluate(test_images, test_labels)
+print('Test accuracy:', test_acc)</code></pre>
 			<br>
 			<p>In this example, we create a CNN model with two convolutional layers followed by max pooling layers. The convolutional layers help extract features from the input images, while the max pooling layers reduce the spatial dimensions. The flattened output is then passed through a fully connected layer and an output layer.</p>
 			<p>We compile the model with an optimizer, loss function, and metrics. Then, we train the model using a training dataset (train_images and train_labels) and validate it using a test dataset (test_images and test_labels).</p>
