@@ -34,6 +34,7 @@
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
 
+  <script src="https://d3js.org/d3.v6.min.js"></script>
 
   </head>
 
@@ -52,17 +53,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#map">Map</a>
             </li>
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
             </li>
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#aboutme">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Main</a>
             </li>
           </ul>
         </div>
@@ -93,7 +97,7 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" align="center">
 			<div id="htmlwidget" style="width:80%;height:480px;" class="leaflet html-widget"></div>
-			<script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[45.285031,45.251062,48.369821,44.132154,43.625034,43.606788,44.132935,43.749572,44.12899,40.416714,44.137155,50.102555,59.957223,45.266591,45.756505,52.431793,45.502734],[5.8831,5.898748,-4.525412,4.089432,3.838579,3.921663,4.089229,11.253519,4.075751,-3.698506,4.0969,14.392786,30.308288,5.890806,4.861041,13.538462,-73.572098],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["August 2014: Cleaner for the city council of Crolles","2015 : “Bac Scientifique” (equivalent A-level science) with honors","2015-2017: Two-years pre-graduate engineering studies at “Lycée Naval”","2017-2020 : Engineering School of Mines Ales, artificial intelligence area","February-March 2018: First ranked at the Creativity Challenge for the bank “Caisse d’Épargne” in digital area","10 and 11 march 2018 : Week-end of acceleration “TechTheFutur”","May-June 2018: Internship “creation of new product” in the start-up IWANT","July-August 2018: Internship in the Adaptive Optics group of the Arcetri Astrophysical Observatory with the use of Python","August 2018 : Teacher of Mathematics at Jean-Baptiste Dumas High School","November-December 2018 : Internship “council in organization” in CNP PARTNERS in informatic area with the use of BPMn, ADONIS NP and JIRA","January-May 2019 : Internship “research and development” for Systeme U in multi-agents system and psychology areas with the use of GAma Modeling Language and AutoCAD","May-August 2019 : Internship “assistant engineer” in Telecommunication laboratory of Czech technical university in data visualization area with the use of R and HTML (13 weeks)","September 2019 – January 2020 : Semester at ITMO, computer technology area","February-March 2020: Temp worker “Assistant” at VOGO with server structuring","May–August 2020 :  Data scientist at OVHcloud in outlier detection and time series forecast areas","October 2020 - June 2021: AI Data scientist at Ice Gateway GmbH in speech recognition area using pocketsphinx and python. Creation of an android application, management of 2 french students","July 2020 - Today: SRE openstack in the Public Cloud of OVHcloud"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-73.572098,30.308288]}},"evals":[],"jsHooks":[]}</script>
+      <script type="application/json" data-for="htmlwidget">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[44.132154,43.749572,40.416714,50.102555,59.957223,45.756505,52.431793,45.502734],[4.089432,11.253519,-3.698506,14.392786,30.308288,4.861041,13.538462,-73.572098],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["2015-2020 : Engineering School of Mines Ales, artificial intelligence area","July-August 2018: Internship in the Adaptive Optics group of the Arcetri Astrophysical Observatory in image processing","November-December 2018 : Internship in CNP PARTNERS to create change &amp; incident processes in IT","May – August 2019: Internship in Telecommunication laboratory of Czech technical university in data visualization area","September 2019 – January 2020 : Semester at ITMO, computer technology area","March – August 2020 :  Data scientist at OVHcloud in outlier detection and time series forecast areas","September 2020 - June 2021:  Data scientist at Ice Gateway GmbH","July 2021 – Present: Data scientist in the Public Cloud team of OVHcloud"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.416714,59.957223],"lng":[-73.572098,30.308288]}},"evals":[],"jsHooks":[]}</script>
       </div>
 		</div>
       </div>
@@ -153,6 +157,8 @@
 				  <li class="section-subheading text-black" style="margin-bottom:10px;margin-top:10px;"><a href="https://www.ovhcloud.com/en-ie/">OVHcloud</a>: I was on-call duty for the public cloud infrastructure (over 23k baremetal servers). I participated to the development of its observability's tools using different technologies such as Prometheus, Thanos, Grafana, Graylog & Pyrra.</li>
 				  <li class="section-subheading text-black"><a href="https://smart-city-factory.com/en/">ICE Gateway GmbH (bought by smartcity)</a>: I developped an android application that helps visual impaired people to take the public transit in Berlin. It used words recognition to guide users. I also managed several interns helping on this interesting project.</li>			  
 				</ul>
+        <h3 class="section-subheading text-black">I also speak several languages:</h3>
+        <div id="lollipop-graph"></div>
 			  </div>
 			  
 			</div> 
@@ -228,22 +234,24 @@
 
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 	
-    <!-- Custom scripts for this template -->
-    <script src="js/structure.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/structure.js"></script>
 
 	<!-- Leaflet part -->
 	<script src="js/leaflet.js"></script>
 	
 	<!-- Particles part -->
 	<script src="js/particles.js"></script>
+
 	<script src="js/app.js"></script>
+  <script src="js/lollipop.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>

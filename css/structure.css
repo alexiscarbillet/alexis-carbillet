@@ -672,6 +672,27 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 5px; /* Adjust spacing between items as needed */
 }
 
+.lollipop-graph {
+  position: relative;
+  width: 400px; /* Adjust the width as per your needs */
+  height: 400px; /* Adjust the height as per your needs */
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.lollipop {
+  position: absolute;
+  width: 2px; /* Width of the lollipop stick */
+  background-color: #5e4da5; /* Color of the lollipop stick */
+  z-index: 1;
+}
+
+.label {
+  position: absolute;
+  top: -15px; /* Adjust the distance of the label above the lollipop */
+  left: -25px; /* Adjust the horizontal position of the label */
+}
+
 </style>
 
 /* ------------------------------------------------------------------------------------------------------------------- */
