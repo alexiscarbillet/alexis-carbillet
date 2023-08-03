@@ -135,6 +135,19 @@ test_data = np.random.randn(10, 10)  # 10 test sequences, each with 10 timesteps
 predictions = model.predict(test_data)
 
 print(predictions)</code></pre>
+      <p>Results:</p>
+      <pre><code>
+[[0.42699274]
+ [0.56386304]
+ [0.44741943]
+ [0.4749465 ]
+ [0.5054404 ]
+ [0.3228801 ]
+ [0.5916313 ]
+ [0.44028172]
+ [0.44229105]
+ [0.43148467]]
+      </code></pre>
 			<p>In this example, we first generate some random sequential data with corresponding binary targets for training. We then define a Sequential model and add a SimpleRNN layer with 32 hidden units. The input shape is defined as (10, 1) since we have 10 timesteps and 1 feature per timestep. We follow it up with a Dense layer with a single unit and sigmoid activation for binary classification.</p>
 			<p>Next, we compile the model by specifying the optimizer, loss function, and any desired metrics. We then train the model on the training data using the fit method.</p>
 			<p>Finally, we generate some new test data and make predictions on it using the trained model. The predictions will be printed to the console.</p>
