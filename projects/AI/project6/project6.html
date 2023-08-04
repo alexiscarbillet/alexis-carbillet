@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Create a personalized alert</title>
+    <title>AI best practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Creating a personalized alert in Prometheus">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, alert">
-    <meta name="author" content="Alexis Carbillet">
+    <meta name="description" content="What are the best practices in artificial intelligence?">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, best practices">
+    <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Creating a personalized alert in Prometheus" />
-    <meta property="og:description" content="Creating a personalized alert in Prometheus" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Project4/project4.html" />
+    <meta property="og:title" content="What are the best practices in artificial intelligence?" />
+    <meta property="og:description" content="What are the best practices in artificial intelligence?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project6/project6.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
             </li>
           </ul>
         </div>
@@ -81,53 +81,30 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project</h2>
+			<h2 class="section-heading text-uppercase">Project 6: Best practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Creating a personalized alert in Prometheus involves a few steps, including defining alerting rules and setting up alerting configurations. Prometheus is a monitoring and alerting toolkit often used with Grafana for visualization. Here's a general guide on how to create a personalized alert in Prometheus:</p>
-		  <p>1. <B>Define Alerting Rules</B>:</p>
-		  <p>Alerting rules are used to define the conditions under which an alert should be triggered. These rules are written in PromQL (Prometheus Query Language). You need to specify the metric, the condition, and the threshold that should trigger the alert. For example, let's say you want to create an alert for high CPU usage on a server. The PromQL rule might look like this:</p>
-      <pre><code># Alert rule to trigger when CPU usage crosses 80%
-alert: HighCPUUsage
-  expr: 100 * (1 - (avg by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m]))))
-          > 80
-  for: 5m
-  labels:
-    severity: warning
-  annotations:
-    summary: "High CPU Usage on {{ $labels.instance }}"
-    description: "CPU usage is {{ humanize $value }}% on {{ $labels.instance }}"</code></pre>
-		  <p>2. <B>Save Alerting Rules</B>:</p>
-		  <p>Save the alerting rules in a file with a .rules extension, for example, "alerts.rules". You can have multiple alert rules defined in a single file.</p>
-		  <p>3. <B>Configure Prometheus</B>:</p>
-		  <p>Open the Prometheus configuration file ("prometheus.yml") and add a "rule_files" section to specify the path to your alerting rules file. The configuration should look something like this:</p>
-      <pre><code>rule_files:
-  - "alerts.rules"</code></pre>
-		  <p>4. <B>Reload or Restart Prometheus</B>:</p>
-		  <p>After updating the Prometheus configuration file, you need to reload or restart Prometheus to apply the changes. Prometheus will now start evaluating the alerting rules and trigger alerts accordingly.</p>
-      <p>5. <B>Configure Alertmanager</B>:</p>
-		  <p>Prometheus relies on an external component called Alertmanager to handle alerts. You need to set up Alertmanager and configure it to send alert notifications. In the Alertmanager configuration file, you can define notification receivers like email, Slack, or other integrations. For example:</p>
-      <pre><code>receivers:
-- name: 'email-alert'
-  email_configs:
-  - to: 'your-email@example.com'
-    send_resolved: true</code></pre>
-		  <p>6. <B>Connect Prometheus to Alertmanager</B>:</p>
-		  <p>In the Prometheus configuration file ("prometheus.yml"), add the following section to specify the Alertmanager endpoint:</p>
-      <pre><code>alerting:
-  alertmanagers:
-  - static_configs:
-    - targets: ['localhost:9093']  # The address where Alertmanager is running</code></pre>
-      <p>7. <B>Reload or Restart Prometheus and Alertmanager</B>:</p>
-		  <p>After making changes to the Alertmanager configuration, you need to reload or restart both Prometheus and Alertmanager to apply the configurations.</p>
-		  <p>Now, when Prometheus evaluates the alerting rules and detects an alert condition, it will send the alert to Alertmanager. Alertmanager will then handle the alerts based on the configured receivers, such as sending an email or a notification to Slack.</p>
-		  <p>Remember that the exact steps may vary depending on your setup and the versions of Prometheus and Alertmanager you are using. Always refer to the official documentation of Prometheus and Alertmanager for the most up-to-date and detailed instructions.</p>
+		  <p>Good practices in artificial intelligence (AI) encompass a range of principles and guidelines that promote responsible, ethical, and effective use of AI technologies. Here are some key good practices in AI:</p>
+      <p>1. <B>Ethical considerations</B>: Develop AI systems with a strong focus on ethics and respect for human rights. Consider the potential impact on individuals, communities, and society as a whole. Avoid creating or deploying AI systems that may perpetuate bias, discrimination, or harm.</p>
+      <p>2. <B>Transparency and explainability</B>: Strive to build AI models that are transparent and understandable. Users should be able to comprehend how decisions are made by the AI system and what factors influence those decisions. Explainable AI is essential for gaining trust and facilitating accountability.</p>
+      <p>3. <B>Data privacy and security</B>: Handle data with utmost care and ensure compliance with data protection regulations. Minimize data collection to only what is necessary for the AI system's intended purpose. Implement robust security measures to safeguard data from unauthorized access.</p>
+      <p>4. <B>Bias mitigation</B>: Be conscious of potential biases in AI systems, particularly in the data used for training. Regularly audit AI models for bias and take measures to mitigate any identified biases. Diverse and representative data sets are crucial for reducing bias.</p>
+      <p>5. <B>Continuous learning and adaptation</B>: Allow AI systems to learn and adapt over time, but also implement mechanisms to control and supervise their learning to prevent harmful behavior or performance degradation.</p>
+      <p>6. <B>Human oversight and accountability</B>: Ensure that humans retain oversight and control over AI systems. Human judgment should be involved in critical decision-making processes, especially in applications with significant consequences.</p>
+      <p>7. <B>Fairness and inclusivity</B>: Design AI systems that are fair and inclusive. Consider the needs of all potential users and avoid systems that disproportionately benefit or harm specific groups.</p>
+      <p>8. <B>Testing and evaluation</B>: Rigorously test and evaluate AI systems in various scenarios to identify strengths, weaknesses, and potential risks. Regularly update and improve the AI system based on feedback and evaluation results.</p>
+      <p>9. <B>Compliance with laws and regulations</B>: Comply with all relevant laws, regulations, and industry standards applicable to AI technologies. Stay informed about evolving legal frameworks for AI.</p>
+      <p>10. <B>Responsible deployment</B>: Deploy AI technologies responsibly and avoid uses that may cause harm or undermine fundamental human rights.</p>
+      <p>11. <B>Collaboration and sharing</B>: Encourage collaboration and information sharing within the AI community to collectively address challenges, foster innovation, and promote best practices.</p>
+      <p>12. <B>Environmental impact</B>: Be mindful of the environmental impact of AI technologies, especially energy consumption, and work towards sustainable AI practices.</p>
+      <p>By adhering to these good practices, individuals and organizations can contribute to the responsible development and deployment of AI, creating AI systems that benefit society while minimizing potential risks.</p>
 		  </div>
 		</div>
       </div>
     </section>
 
 <!-- ======================================================================= -->
+
 
 <!-- ========================== CONTACT SECTION ============================== -->
 

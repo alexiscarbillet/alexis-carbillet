@@ -3,15 +3,15 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Create a personalized alert</title>
+    <title>Prometheus Good practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Creating a personalized alert in Prometheus">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, alert">
+    <meta name="description" content="What are the good practices with prometheus?">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, good practices">
     <meta name="author" content="Alexis Carbillet">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Creating a personalized alert in Prometheus" />
-    <meta property="og:description" content="Creating a personalized alert in Prometheus" />
+    <meta property="og:title" content="What are the good practices with prometheus?" />
+    <meta property="og:description" content="What are the good practices with prometheus?" />
     <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Project4/project4.html" />
     <meta property="og:type" content="website" />
 
@@ -84,44 +84,22 @@
 			<h2 class="section-heading text-uppercase">Project</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Creating a personalized alert in Prometheus involves a few steps, including defining alerting rules and setting up alerting configurations. Prometheus is a monitoring and alerting toolkit often used with Grafana for visualization. Here's a general guide on how to create a personalized alert in Prometheus:</p>
-		  <p>1. <B>Define Alerting Rules</B>:</p>
-		  <p>Alerting rules are used to define the conditions under which an alert should be triggered. These rules are written in PromQL (Prometheus Query Language). You need to specify the metric, the condition, and the threshold that should trigger the alert. For example, let's say you want to create an alert for high CPU usage on a server. The PromQL rule might look like this:</p>
-      <pre><code># Alert rule to trigger when CPU usage crosses 80%
-alert: HighCPUUsage
-  expr: 100 * (1 - (avg by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m]))))
-          > 80
-  for: 5m
-  labels:
-    severity: warning
-  annotations:
-    summary: "High CPU Usage on {{ $labels.instance }}"
-    description: "CPU usage is {{ humanize $value }}% on {{ $labels.instance }}"</code></pre>
-		  <p>2. <B>Save Alerting Rules</B>:</p>
-		  <p>Save the alerting rules in a file with a .rules extension, for example, "alerts.rules". You can have multiple alert rules defined in a single file.</p>
-		  <p>3. <B>Configure Prometheus</B>:</p>
-		  <p>Open the Prometheus configuration file ("prometheus.yml") and add a "rule_files" section to specify the path to your alerting rules file. The configuration should look something like this:</p>
-      <pre><code>rule_files:
-  - "alerts.rules"</code></pre>
-		  <p>4. <B>Reload or Restart Prometheus</B>:</p>
-		  <p>After updating the Prometheus configuration file, you need to reload or restart Prometheus to apply the changes. Prometheus will now start evaluating the alerting rules and trigger alerts accordingly.</p>
-      <p>5. <B>Configure Alertmanager</B>:</p>
-		  <p>Prometheus relies on an external component called Alertmanager to handle alerts. You need to set up Alertmanager and configure it to send alert notifications. In the Alertmanager configuration file, you can define notification receivers like email, Slack, or other integrations. For example:</p>
-      <pre><code>receivers:
-- name: 'email-alert'
-  email_configs:
-  - to: 'your-email@example.com'
-    send_resolved: true</code></pre>
-		  <p>6. <B>Connect Prometheus to Alertmanager</B>:</p>
-		  <p>In the Prometheus configuration file ("prometheus.yml"), add the following section to specify the Alertmanager endpoint:</p>
-      <pre><code>alerting:
-  alertmanagers:
-  - static_configs:
-    - targets: ['localhost:9093']  # The address where Alertmanager is running</code></pre>
-      <p>7. <B>Reload or Restart Prometheus and Alertmanager</B>:</p>
-		  <p>After making changes to the Alertmanager configuration, you need to reload or restart both Prometheus and Alertmanager to apply the configurations.</p>
-		  <p>Now, when Prometheus evaluates the alerting rules and detects an alert condition, it will send the alert to Alertmanager. Alertmanager will then handle the alerts based on the configured receivers, such as sending an email or a notification to Slack.</p>
-		  <p>Remember that the exact steps may vary depending on your setup and the versions of Prometheus and Alertmanager you are using. Always refer to the official documentation of Prometheus and Alertmanager for the most up-to-date and detailed instructions.</p>
+        <p>Prometheus is a powerful monitoring and alerting tool widely used in the IT industry. To make the most of Prometheus and ensure a robust and effective monitoring system, here are some good practices to follow:</p>
+        <p>1. <B>Define clear monitoring objectives</B>: Clearly define what you want to monitor and set specific goals for your monitoring system. This will help you focus on collecting relevant metrics and avoid unnecessary overhead.</p>
+        <p>2. <B>Instrument your code</B>: Instrument your applications and services with Prometheus client libraries to expose relevant metrics. This involves adding code snippets to your applications that expose metrics like HTTP request counts, latencies, error rates, etc.</p>
+        <p>3. <B>Choose appropriate metric types</B>: Prometheus supports various metric types, such as counters, gauges, histograms, and summaries. Understand the differences between them and choose the most appropriate type for each metric you expose.</p>
+        <p>4. <B>Use labels effectively</B>: Labels in Prometheus allow you to add dimensions to your metrics, enabling better slicing and dicing of data. Use labels wisely to capture additional information about your metrics, such as instance, job, environment, etc.</p>
+        <p>5. <B>Set up alerting rules</B>: Define alerting rules in Prometheus to notify you when certain conditions are met. This helps you proactively respond to potential issues before they become critical.</p>
+        <p>6. <B>Use Grafana for visualization</B>: Grafana is a popular companion tool for Prometheus that provides rich visualization capabilities. Use Grafana to create meaningful dashboards and gain insights from your monitoring data.</p>
+        <p>7. <B>Monitor Prometheus itself</B>: Set up monitoring for the Prometheus server and other components to ensure that your monitoring system is running smoothly. This includes monitoring resource usage, retention, and the overall health of the Prometheus server.</p>
+        <p>8. <B>Ensure data retention and storage</B>: Carefully configure data retention and storage options to strike a balance between keeping historical data and managing storage requirements.</p>
+        <p>9. <B>Use exporters for third-party integrations</B>: Prometheus exporters are specific tools that expose metrics from various systems and applications. Utilize existing exporters or create custom ones to monitor third-party components in your infrastructure.</p>
+        <p>10. <B>Scraping best practices</B>: When configuring scraping jobs, ensure you set appropriate scraping intervals based on the data's volatility and the server's resource capacity. Avoid scraping unnecessary endpoints and implement proper authentication mechanisms if required.</p>
+        <p>11. <B>Backup and restore</B>: Regularly back up your Prometheus data and configurations to prevent data loss in case of failures or accidents.</p>
+        <p>12. <B>Monitor for cardinality explosion</B>: Keep an eye on the number of unique label combinations (cardinality) in your metrics. High cardinality can lead to increased storage and query costs, so it's essential to manage it effectively.</p>
+        <p>13. <B>Upgrade Prometheus regularly</B>: Stay up-to-date with the latest releases of Prometheus to benefit from bug fixes, improvements, and new features.</p>
+        <p>14. <B>Document your monitoring setup</B>: Document your Prometheus configuration, alerting rules, and any custom exporters or integrations you have set up. This documentation will be valuable for onboarding new team members and troubleshooting.</p>
+        <p>By following these good practices, you can build a reliable and efficient monitoring system with Prometheus, enabling you to gain valuable insights into your infrastructure's performance and health.</p>
 		  </div>
 		</div>
       </div>

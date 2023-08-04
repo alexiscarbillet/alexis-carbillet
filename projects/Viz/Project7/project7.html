@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Create a personalized alert</title>
+    <title>Data Visualization Good practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Creating a personalized alert in Prometheus">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, alert">
-    <meta name="author" content="Alexis Carbillet">
+    <meta name="description" content="What are the good practices in data visualization?">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, good practices">
+    <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Creating a personalized alert in Prometheus" />
-    <meta property="og:description" content="Creating a personalized alert in Prometheus" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Project4/project4.html" />
+    <meta property="og:title" content="What are the good practices in data visualization?" />
+    <meta property="og:description" content="What are the good practices in data visualization?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project7/project7.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -32,7 +32,7 @@
     <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
-	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/projects/Viz/Project7/project7.html" />
 
 
   </head>
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#vis">Main</a>
             </li>
           </ul>
         </div>
@@ -81,48 +81,26 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project</h2>
+			<h2 class="section-heading text-uppercase">Good practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Creating a personalized alert in Prometheus involves a few steps, including defining alerting rules and setting up alerting configurations. Prometheus is a monitoring and alerting toolkit often used with Grafana for visualization. Here's a general guide on how to create a personalized alert in Prometheus:</p>
-		  <p>1. <B>Define Alerting Rules</B>:</p>
-		  <p>Alerting rules are used to define the conditions under which an alert should be triggered. These rules are written in PromQL (Prometheus Query Language). You need to specify the metric, the condition, and the threshold that should trigger the alert. For example, let's say you want to create an alert for high CPU usage on a server. The PromQL rule might look like this:</p>
-      <pre><code># Alert rule to trigger when CPU usage crosses 80%
-alert: HighCPUUsage
-  expr: 100 * (1 - (avg by(instance)(irate(node_cpu_seconds_total{mode="idle"}[5m]))))
-          > 80
-  for: 5m
-  labels:
-    severity: warning
-  annotations:
-    summary: "High CPU Usage on {{ $labels.instance }}"
-    description: "CPU usage is {{ humanize $value }}% on {{ $labels.instance }}"</code></pre>
-		  <p>2. <B>Save Alerting Rules</B>:</p>
-		  <p>Save the alerting rules in a file with a .rules extension, for example, "alerts.rules". You can have multiple alert rules defined in a single file.</p>
-		  <p>3. <B>Configure Prometheus</B>:</p>
-		  <p>Open the Prometheus configuration file ("prometheus.yml") and add a "rule_files" section to specify the path to your alerting rules file. The configuration should look something like this:</p>
-      <pre><code>rule_files:
-  - "alerts.rules"</code></pre>
-		  <p>4. <B>Reload or Restart Prometheus</B>:</p>
-		  <p>After updating the Prometheus configuration file, you need to reload or restart Prometheus to apply the changes. Prometheus will now start evaluating the alerting rules and trigger alerts accordingly.</p>
-      <p>5. <B>Configure Alertmanager</B>:</p>
-		  <p>Prometheus relies on an external component called Alertmanager to handle alerts. You need to set up Alertmanager and configure it to send alert notifications. In the Alertmanager configuration file, you can define notification receivers like email, Slack, or other integrations. For example:</p>
-      <pre><code>receivers:
-- name: 'email-alert'
-  email_configs:
-  - to: 'your-email@example.com'
-    send_resolved: true</code></pre>
-		  <p>6. <B>Connect Prometheus to Alertmanager</B>:</p>
-		  <p>In the Prometheus configuration file ("prometheus.yml"), add the following section to specify the Alertmanager endpoint:</p>
-      <pre><code>alerting:
-  alertmanagers:
-  - static_configs:
-    - targets: ['localhost:9093']  # The address where Alertmanager is running</code></pre>
-      <p>7. <B>Reload or Restart Prometheus and Alertmanager</B>:</p>
-		  <p>After making changes to the Alertmanager configuration, you need to reload or restart both Prometheus and Alertmanager to apply the configurations.</p>
-		  <p>Now, when Prometheus evaluates the alerting rules and detects an alert condition, it will send the alert to Alertmanager. Alertmanager will then handle the alerts based on the configured receivers, such as sending an email or a notification to Slack.</p>
-		  <p>Remember that the exact steps may vary depending on your setup and the versions of Prometheus and Alertmanager you are using. Always refer to the official documentation of Prometheus and Alertmanager for the most up-to-date and detailed instructions.</p>
-		  </div>
+        <p>Good practices in data visualization help ensure that your visual representations effectively communicate insights and information to your audience. Here are some key principles to keep in mind when creating data visualizations:</p>
+        <p>1. <B>Know your audience</B>: Understand who will be viewing your visualization and what they are looking to gain from it. Tailor the design and complexity to match the audience's knowledge and interests.</p>
+        <p>2. <B>Choose the right chart type</B>: Select a chart that best represents the relationships and patterns in your data. Common chart types include bar charts, line charts, scatter plots, pie charts, and heatmaps.</p>
+        <p>3. <B>Simplify and declutter</B>: Avoid unnecessary elements and minimize clutter in your visualizations. Each element should contribute to conveying the message clearly.</p>
+        <p>4. <B>Use appropriate colors</B>: Choose a color scheme that enhances understanding and doesn't distract from the data. Use colors consistently and purposefully to highlight important information.</p>
+        <p>5. <B>Provide context</B>: Include axis labels, titles, and legends to give context to your visualization and help users interpret the data correctly.</p>
+        <p>6. <B>Highlight key insights</B>: Use visual cues like annotations, callouts, and data labels to draw attention to important findings in your data.</p>
+        <p>7. <B>Maintain consistency</B>: Maintain a consistent style and format throughout your visualization to create a cohesive and professional look.</p>
+        <p>8. <B>Use meaningful scales</B>: Ensure that your axes and scales are appropriate and meaningful for the data being presented. Avoid misleading scaling that distorts the representation of data.</p>
+        <p>9. <B>Keep it accessible</B>: Ensure that your visualization is accessible to all users, including those with visual impairments. Provide alternative text for images and use patterns and textures in addition to colors to convey information.</p>
+        <p>10. <B>Test and iterate</B>: Review your visualization with colleagues or target users to gather feedback and make improvements. Iterative design helps create more effective visuals.</p>
+        <p>11. <B>Avoid 3D effects</B>: 3D effects can distort the perception of data and make it harder to interpret. Stick to 2D representations unless there's a compelling reason to use 3D.</p>
+        <p>12. <B>Use proper data labels and units</B>: Clearly label data points and use appropriate units for your measurements. Misleading labels can lead to confusion and misinterpretation.</p>
+        <p>13. <B>Provide interactivity when necessary</B>: Interactive elements can enhance user engagement and enable users to explore data further. However, ensure that interactivity adds value and doesn't overwhelm the visualization.</p>
+        <p>14. <B>Tell a story</B>: Organize your data visualization to tell a coherent and compelling story. Guide the viewer through the data to convey a clear message or insight.</p>
+        <p>Remember that good data visualization is not just about aesthetics; it's about effectively conveying information, insights, and patterns in the data in a way that is easy to understand and interpret.</p>
+      </div>
 		</div>
       </div>
     </section>
