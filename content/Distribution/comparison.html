@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Comparison Distribution Graphs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Comparison of data visualization for distribution data">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, comparison distribution graphs">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Comparison of data visualization for distribution data" />
+    <meta property="og:description" content="Comparison of data visualization for distribution data" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Distribution/comparison.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#vis">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Comparison Distribution Graphs</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>1. <B>Box plot</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Provides a clear representation of the distribution's median, quartiles, and outliers.</p>
+		  <p>- Easily identifies potential extreme values (outliers).</p>
+		  <p>- Compact and efficient in displaying multiple distributions side by side.</p>
+		  <p>- Works well with large datasets.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Less informative about the underlying data distribution compared to other plots like density plots.</p>
+		  <p>- Doesn't show the shape of the distribution in detail.</p>
+      <p>2. <B>Violin plot</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Combines features of box plots and kernel density plots to provide more detailed information about the data distribution.</p>
+		  <p>- Shows the probability density at different values, revealing multimodal distributions.</p>
+		  <p>- Can handle data with different sample sizes effectively.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Takes up more space than a box plot, which can be a concern in limited space visualizations.</p>
+		  <p>- Slightly more complex to interpret than a simple box plot.</p>
+		  <p>3. <B>Ridgeline plot</B>:</p>
+      <p><u>Pros</u>:</p>
+		  <p>- Ideal for visualizing the distribution of a variable across multiple categories.</p>
+		  <p>- Provides a smooth and aesthetically pleasing representation of density.</p>
+		  <p>- Can show changes in the distribution over time or other categorical variables.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Might be challenging to interpret for those unfamiliar with the plot type.</p>
+		  <p>- Not suitable for comparing detailed statistics like quantiles or specific data points.</p>
+		  <p>4. <B>Histogram</B>:</p>
+		  <p><u>Pros</u>:</p>
+      <p>- Shows the underlying distribution of a continuous variable, especially for large datasets.</p>
+		  <p>- Easy to understand and interpret.</p>
+		  <p>- Suitable for identifying gaps and clusters in the data.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- The shape of the histogram can be sensitive to the binning method used.</p>
+		  <p>- Binning bias can lead to slightly different interpretations.</p>
+		  <p>5. <B>Density plot</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Smooth representation of the underlying data distribution.</p>
+      <p>- Can better visualize the shape of the distribution compared to histograms.</p>
+		  <p>- Useful for identifying peaks and modes in the data.</p>
+      <p><u>Cons</u>:</p>
+		  <p>- Requires more computational resources for large datasets.</p>
+      <p>- Might not be as intuitive to interpret for some users.</p>
+		  <p>In summary, the choice of which plot to use depends on the specific data and the goal of the analysis. Box plots and violin plots are great for comparing distributions and identifying outliers. Histograms are simple and effective for visualizing the general shape of a distribution, while density plots offer a smoother representation. Ridgeline plots are useful for showing the distribution across multiple categories or time points. It's important to consider the data size, complexity, and the audience's familiarity with different plot types when selecting the appropriate visualization.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+<section  id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+        <h2 class="section-heading text-uppercase">Contact</h2>
+        <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+      </div>
+</div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+        <div class="team-member">
+         <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+          <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+          <p class="text-muted">Data scientist</p>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="mailto:alexis.carbillet@mines-ales.org">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/alexiscarbillet">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

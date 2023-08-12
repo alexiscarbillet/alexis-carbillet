@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 1: Install Prometheus in Linux environment</title>
+    <title>Comparison Correlation Graphs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to install Prometheus in linux environment?">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, install prometheus, linux">
+    <meta name="description" content="Comparison of data visualization for correlation in data">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, comparison correlation graphs">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to install Prometheus in linux environment?" />
-    <meta property="og:description" content="How to install Prometheus in linux environment?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Prom/Project1/Project1.html" />
+    <meta property="og:title" content="Comparison of data visualization for correlation in data" />
+    <meta property="og:description" content="Comparison of data visualization for correlation in data" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Correlation/comparison.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="../../../css/structure.css" rel="stylesheet">
+    <link href="../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -46,20 +46,20 @@
     <!-- Navigation --> 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#prom">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#vis">Main</a>
             </li>
           </ul>
         </div>
@@ -81,74 +81,57 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Install Prometheus in Linux environment</h2>
+			<h2 class="section-heading text-uppercase">Comparison Correlation Graphs</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>To install Prometheus in a Linux environment, you can follow these steps. I'll assume you are using Ubuntu, but the process should be similar for other Linux distributions:</p>
-		  <p>1. <B>Download Prometheus:</B></p>
-		  <p>Visit the Prometheus download page (<a href="https://prometheus.io/download"></a>https://prometheus.io/download) and get the latest version. You'll want the tarball with the Linux AMD64 architecture.</p>
-		  <p>2. <B>Extract the tarball</B>:</p>
-		  <p>Use the following command to extract the downloaded tarball (replace "prometheus-x.x.x.linux-amd64.tar.gz" with the actual filename):</p>
-		  <p><pre><code>tar xvfz prometheus-x.x.x.linux-amd64.tar.gz</code></pre></p>
-		  <p>3. <B>Move the files</B>:</p>
-		  <p>Change to the extracted directory and move the binaries to the appropriate location. We'll move the Prometheus binary to "/usr/local/bin":</p>
-		  <p><pre><code>cd prometheus-x.x.x.linux-amd64
-sudo mv prometheus /usr/local/bin/
-sudo mv promtool /usr/local/bin/</code></pre></p>
-      <p>4. <B>Create a user</B> (optional but recommended):</p>
-		  <p>It's a good practice to run Prometheus as a non-root user for security reasons. Create a new user, for example "prometheus", and assign appropriate permissions to its data directory:</p>
-		  <p><pre><code>sudo useradd -M -r -s /bin/false prometheus
-sudo mkdir /var/lib/prometheus
-sudo chown prometheus:prometheus /var/lib/prometheus</code></pre></p>
-		  <p>5. <B>Configuration</B>:</p>
-		  <p>Create a configuration file for Prometheus. You can use the example configuration file provided (prometheus.yml) or create your custom one.</p>
-		  <p><pre><code>sudo vim /etc/prometheus/prometheus.yml</code></pre></p>
-		  <p>Add your desired configuration to this file. Here's a simple example that scrapes the local machine every 15 seconds:</p>
-		  <p><pre><code>global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'prometheus'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['localhost:9090']</code></pre></p>
-		  <p>Save and close the file.</p>
-      <p>6. <B>Service setup</B>:</p>
-		  <p>To manage Prometheus as a service, create a systemd service file for it:</p>
-		  <p><pre><code>sudo vim /etc/systemd/system/prometheus.service</code></pre></p>
-		  <p>Add the following content to the file:</p>
-		  <p><pre><code>[Unit]
-Description=Prometheus Server
-Wants=network-online.target
-After=network-online.target
-
-[Service]
-User=prometheus
-Group=prometheus
-Type=simple
-ExecStart=/usr/local/bin/prometheus \
-    --config.file /etc/prometheus/prometheus.yml \
-    --storage.tsdb.path /var/lib/prometheus \
-    --web.console.templates=/usr/local/bin/consoles \
-    --web.console.libraries=/usr/local/bin/console_libraries
-
-[Install]
-WantedBy=multi-user.target</code></pre></p>
-		  <p>Save and close the file.</p>
-		  <p>7. <B>Enable and start the service</B>:</p>
-		  <p>Start the Prometheus service and enable it to start on system boot:</p>
-		  <p><pre><code>sudo systemctl daemon-reload
-sudo systemctl enable prometheus
-sudo systemctl start prometheus</code></pre></p>
-      <p>8. <B>Access Prometheus UI</B>:</p>
-		  <p>Prometheus should now be running, and you can access its web interface by navigating to "http://localhost:9090" in your web browser.</p>
-      <p>That's it! Prometheus should now be installed and running on your Linux system. Remember to configure appropriate firewall rules and security measures to protect your Prometheus instance in a production environment.</p>
+		  <p>1. <B>Scatter plots</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Visualizes the relationship between two continuous variables, helping identify patterns, trends, and correlations.</p>
+		  <p>- Useful for identifying outliers or clusters in data.</p>
+		  <p>- Easy to understand and interpret, suitable for presenting simple comparisons.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Limited to displaying two variables at a time, making it unsuitable for datasets with more dimensions.</p>
+		  <p>- Not ideal for categorical or ordinal data.</p>
+		  <p>2. <B>Correlation matrices</B>:</p>
+      <p><u>Pros</u>:</p>
+		  <p>- Provides an overview of the correlation between multiple variables in a single visual display.</p>
+		  <p>- Helps identify strong positive and negative correlations between variables.</p>
+		  <p>- Useful for identifying multicollinearity in regression analysis.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Limited to visualizing pairwise correlations and may become cluttered with a large number of variables.</p>
+		  <p>- Doesn't provide information on the direction of the relationship or causality.</p>
+		  <p>3. <B>Sankey diagrams</B>:</p>
+		  <p><u>Pros</u>:</p>
+      <p>- Ideal for displaying the flow of data or quantities between multiple categories or stages.</p>
+		  <p>- Makes it easy to track changes over time or across different groups.</p>
+		  <p>- Visually appealing and intuitive for showing proportions and comparisons.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- More suitable for qualitative data visualization and flow representation than numerical data.</p>
+		  <p>- May become complex and difficult to interpret when dealing with multiple categories or stages.</p>
+		  <p>4. <B>Parallel coordinate plots</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Allows the visualization of relationships among multiple variables simultaneously.</p>
+      <p>- Helpful in identifying patterns and clusters in high-dimensional data.</p>
+		  <p>- Useful for comparing different instances or groups within a dataset.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Can become cluttered and hard to interpret with a large number of variables.</p>
+		  <p>- Not suitable for categorical data or datasets with a small number of observations.</p>
+		  <p>5. <B>Force-directed graphs</B>:</p>
+		  <p><u>Pros</u>:</p>
+		  <p>- Useful for visualizing networks and relationships between interconnected entities.</p>
+		  <p>- Provides insights into the structure and connectivity of complex systems.</p>
+      <p>- Helps identify central nodes and communities within a network.</p>
+		  <p><u>Cons</u>:</p>
+		  <p>- Can become visually overwhelming and difficult to interpret for large and dense networks.</p>
+      <p>- May not be as effective for datasets with a limited number of connections.</p>
+		  <p>Ultimately, the choice of visualization technique depends on the specific data you are working with and the insights you want to communicate. A combination of different visualization methods might be necessary to gain a comprehensive understanding of your data.</p>
 		  </div>
 		</div>
       </div>
     </section>
 
 <!-- ======================================================================= -->
+
 
 <!-- ========================== CONTACT SECTION ============================== -->
 
@@ -163,8 +146,8 @@ sudo systemctl start prometheus</code></pre></p>
         <div class="row">
           <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
             <div class="team-member">
-             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
-              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
               <p class="text-muted">Data scientist</p>
 			  <!-- Add icon library -->
 			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -205,7 +188,7 @@ sudo systemctl start prometheus</code></pre></p>
 			</div>
 			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
 			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
-			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
 			</div>
 		</div>
 		<div id="particles-js" style="height:50px;"></div>
@@ -219,18 +202,18 @@ sudo systemctl start prometheus</code></pre></p>
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../../vendor/jquery/jquery.min.js"></script>
-	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 	
     <!-- Custom scripts for this template -->
-    <script src="../../../js/structure.js"></script>
+    <script src="../../js/structure.js"></script>
 	
 	<!-- Particles part -->
-	<script src="../../../js/particles.js"></script>
-	<script src="../../../js/app.js"></script>
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>

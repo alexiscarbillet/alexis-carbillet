@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 1: Install Prometheus in Linux environment</title>
+    <title>3D visualization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to install Prometheus in linux environment?">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, install prometheus, linux">
+    <meta name="description" content="How to do 3D visualization in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, 3D visualization, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to install Prometheus in linux environment?" />
-    <meta property="og:description" content="How to install Prometheus in linux environment?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Prom/Project1/Project1.html" />
+    <meta property="og:title" content="How to do 3D visualization in python?" />
+    <meta property="og:description" content="How to do 3D visualization in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project9/project9.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -32,7 +32,7 @@
     <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
-	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/projects/Viz/Project8/project8.html" />
 
 
   </head>
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#prom">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#vis">Main</a>
             </li>
           </ul>
         </div>
@@ -81,69 +81,49 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Install Prometheus in Linux environment</h2>
+			<h2 class="section-heading text-uppercase">3D visualization</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>To install Prometheus in a Linux environment, you can follow these steps. I'll assume you are using Ubuntu, but the process should be similar for other Linux distributions:</p>
-		  <p>1. <B>Download Prometheus:</B></p>
-		  <p>Visit the Prometheus download page (<a href="https://prometheus.io/download"></a>https://prometheus.io/download) and get the latest version. You'll want the tarball with the Linux AMD64 architecture.</p>
-		  <p>2. <B>Extract the tarball</B>:</p>
-		  <p>Use the following command to extract the downloaded tarball (replace "prometheus-x.x.x.linux-amd64.tar.gz" with the actual filename):</p>
-		  <p><pre><code>tar xvfz prometheus-x.x.x.linux-amd64.tar.gz</code></pre></p>
-		  <p>3. <B>Move the files</B>:</p>
-		  <p>Change to the extracted directory and move the binaries to the appropriate location. We'll move the Prometheus binary to "/usr/local/bin":</p>
-		  <p><pre><code>cd prometheus-x.x.x.linux-amd64
-sudo mv prometheus /usr/local/bin/
-sudo mv promtool /usr/local/bin/</code></pre></p>
-      <p>4. <B>Create a user</B> (optional but recommended):</p>
-		  <p>It's a good practice to run Prometheus as a non-root user for security reasons. Create a new user, for example "prometheus", and assign appropriate permissions to its data directory:</p>
-		  <p><pre><code>sudo useradd -M -r -s /bin/false prometheus
-sudo mkdir /var/lib/prometheus
-sudo chown prometheus:prometheus /var/lib/prometheus</code></pre></p>
-		  <p>5. <B>Configuration</B>:</p>
-		  <p>Create a configuration file for Prometheus. You can use the example configuration file provided (prometheus.yml) or create your custom one.</p>
-		  <p><pre><code>sudo vim /etc/prometheus/prometheus.yml</code></pre></p>
-		  <p>Add your desired configuration to this file. Here's a simple example that scrapes the local machine every 15 seconds:</p>
-		  <p><pre><code>global:
-  scrape_interval: 15s
+        <p>3D data visualization is a powerful technique used to represent data in three-dimensional space, providing a more immersive and intuitive experience for data exploration and analysis. Unlike traditional 2D visualizations, which are limited to a flat plane, 3D data visualization allows for the representation of complex data sets with additional depth and perspective, making it easier to identify patterns, trends, and relationships within the data.</p>
+        <p>Here are some key points and benefits of 3D data visualization:</p>
+        <p>1. <B>Enhanced understanding</B>: By adding the third dimension, 3D visualizations can provide a better understanding of the data, especially when dealing with multidimensional data sets. It allows users to perceive data from various angles and perspectives, leading to deeper insights.</p>
+        <p>2. <B>Improved spatial perception</B>: 3D visualizations are particularly useful when working with spatial data, such as geographical data, molecular structures, architectural designs, or simulations. The depth provided by the third dimension helps users grasp the spatial relationships more accurately.</p>
+        <p>3. <B>Interactivity and exploration</B>: 3D visualizations often come with interactive features, enabling users to manipulate the visualization, zoom, rotate, and pan to explore the data from different viewpoints. This interactivity enhances the user experience and facilitates better data analysis.</p>
+        <p>4. <B>Communication and presentation</B>: 3D data visualizations can be visually engaging and captivating, making them valuable tools for presenting complex information to non-technical audiences. They can effectively communicate insights, trends, and findings in a more compelling manner.</p>
+        <p>5. <B>Identification of outliers and anomalies</B>: The additional dimension in 3D visualization can make it easier to identify outliers or anomalies that might not be apparent in 2D representations. This can be particularly useful in fields like finance, engineering, and medical research.</p>
+        <p>6. <B>Integration with Virtual Reality (VR) and Augmented Reality (AR)</B>: As VR and AR technologies continue to advance, 3D data visualization can be seamlessly integrated into these platforms, providing even more immersive and interactive data exploration experiences.</p>
+        <p>However, it's essential to be cautious with the use of 3D data visualization. While it offers benefits in certain contexts, not all data sets are suitable for 3D representation. In some cases, a 2D visualization might be more effective and less prone to distortions or misinterpretations.</p>
+        <p>Overall, 3D data visualization is a valuable tool for understanding complex data sets, improving data exploration, and presenting information in a more engaging manner. Its potential continues to grow as technology advances and more sophisticated techniques for interactive 3D visualization are developed.</p>
+        <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
-scrape_configs:
-  - job_name: 'prometheus'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['localhost:9090']</code></pre></p>
-		  <p>Save and close the file.</p>
-      <p>6. <B>Service setup</B>:</p>
-		  <p>To manage Prometheus as a service, create a systemd service file for it:</p>
-		  <p><pre><code>sudo vim /etc/systemd/system/prometheus.service</code></pre></p>
-		  <p>Add the following content to the file:</p>
-		  <p><pre><code>[Unit]
-Description=Prometheus Server
-Wants=network-online.target
-After=network-online.target
+# Generate random 3D data points
+np.random.seed(42)
+num_points = 100
+x = np.random.rand(num_points)
+y = np.random.rand(num_points)
+z = np.random.rand(num_points)
 
-[Service]
-User=prometheus
-Group=prometheus
-Type=simple
-ExecStart=/usr/local/bin/prometheus \
-    --config.file /etc/prometheus/prometheus.yml \
-    --storage.tsdb.path /var/lib/prometheus \
-    --web.console.templates=/usr/local/bin/consoles \
-    --web.console.libraries=/usr/local/bin/console_libraries
+# Create a 3D scatter plot
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
 
-[Install]
-WantedBy=multi-user.target</code></pre></p>
-		  <p>Save and close the file.</p>
-		  <p>7. <B>Enable and start the service</B>:</p>
-		  <p>Start the Prometheus service and enable it to start on system boot:</p>
-		  <p><pre><code>sudo systemctl daemon-reload
-sudo systemctl enable prometheus
-sudo systemctl start prometheus</code></pre></p>
-      <p>8. <B>Access Prometheus UI</B>:</p>
-		  <p>Prometheus should now be running, and you can access its web interface by navigating to "http://localhost:9090" in your web browser.</p>
-      <p>That's it! Prometheus should now be installed and running on your Linux system. Remember to configure appropriate firewall rules and security measures to protect your Prometheus instance in a production environment.</p>
-		  </div>
+ax.scatter(x, y, z, c='b', marker='o', label='Data Points')
+
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_zlabel('Z-axis')
+ax.set_title('3D Scatter Plot')
+
+plt.legend()
+plt.show()</code></pre>
+        <p>Results:</p>  
+        <img src="3D.png">        
+        <p>In this example, we use NumPy to generate random data points for the x, y, and z coordinates. The scatter() function from Matplotlib's 3D plotting toolkit (mpl_toolkits.mplot3d) is used to create the 3D scatter plot. The data points are represented by blue spheres ('o' marker), and the labels for the axes and title are added to enhance the visualization.</p>
+        <p>When you run the code, a 3D scatter plot window will pop up, showing the random data points in 3D space. You can interact with the plot, rotate it, zoom in/out, and explore the data from different angles using the mouse.</p>
+        <p>Keep in mind that this is a simple example, and you can customize the plot further by adjusting colors, markers, sizes, or adding additional features based on your specific data and requirements.</p>
+      </div>
 		</div>
       </div>
     </section>
