@@ -88,30 +88,37 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>While PromQL does not have traditional binary operators, it supports a range of functions and operators for manipulating and aggregating data. Here are some key operators in PromQL:</p>
-		  <pre><code>Arithmetic Operators:
-  Addition: +
-  Subtraction: -
-  Multiplication: *
-  Division: /
-  Modulo: %
-
-Comparison Operators:
-  Equal to: ==
-  Not equal to: !=
-  Greater than: >
-  Less than: <
-  Greater than or equal to: >=
-  Less than or equal to: <=
-
-Logical Operators:
-  AND: and
-  OR: or
-  NOT: unless or not
-
-Set Operators:
-  Union: |
-  Intersection: &
-  Difference: \</code></pre>
+		  <ul>
+        <li>Arithmetic Operators:</li>
+        <ul>
+          <li>Addition: +</li>
+          <li>Subtraction: -</li>
+          <li>Multiplication: *</li>
+          <li>Division: /</li>
+          <li>Modulo: %</li>
+        </ul>
+        <li>Comparison Operators:</li>
+        <ul>
+          <li>Equal to: ==</li>
+          <li>Not equal to: !=</li>
+          <li>Greater than: ></li>
+          <li>Less than: <</li>
+          <li>Greater than or equal to: >=</li>
+          <li>Less than or equal to: <=</li>
+        </ul>
+        <li>Logical Operators:</li>
+        <ul>
+          <li>AND: and</li>
+          <li>OR: or</li>
+          <li>NOT: unless or not</li>
+        </ul>
+        <li>Set Operators:</li>
+        <ul>
+          <li>Union: |</li>
+          <li>Intersection: &</li>
+          <li>Difference: \</li>
+        </ul>
+      </ul>
       <p>These operators can be used to construct queries in PromQL to filter, aggregate, and perform calculations on the time-series data stored in Prometheus. It's worth noting that PromQL is specifically designed for working with time-series data, and its operators and functions are optimized for that purpose.</p>
 		  </div>
 		</div>
@@ -143,7 +150,7 @@ Set Operators:
       <p>2. <B>Comparison Operators</B>:</p>
       <p>- Equal to: "metric1 == metric2"</p>
       <p>Example: <pre><code>status_code == 200</code></pre></p>
-      <p>- "Not equal to: metric1 != metric2"</p>
+      <p>- Not equal to: "metric1 != metric2"</p>
       <p>Example: <pre><code>error_code != 0</code></pre></p>
       <p>- Greater than: "metric1 > metric2"</p>
       <p>Example: <pre><code>cpu_usage > 80</code></pre></p>
@@ -155,7 +162,7 @@ Set Operators:
       <p>Example: <pre><code>error_count <= 5</code></pre></p>
       <p>3. <B>Logical Operators</B>:</p>
       <p>- AND: "metric1 and metric2"</p>
-      <p>Example: "cpu_usage > 80 and memory_usage > 70"</p>
+      <p>Example: <pre><code>cpu_usage > 80 and memory_usage > 70</code></pre></p>
       <p>- OR: "metric1 or metric2"</p>
       <p>Example: <pre><code>status_code == 500 or status_code == 503</code></pre></p>
       <p>- NOT: "unless(metric)"</p>
@@ -164,7 +171,7 @@ Set Operators:
       <p>- Union: "metric1 | metric2"</p>
       <p>Example: <pre><code>http_requests_total{status="200"} | http_requests_total{status="500"}</code></pre></p>
       <p>- Intersection: "metric1 & metric2"</p>
-      <p>Example: <pre><code>http_requests_total{status="200"} & http_requests_total{method="GET"}></code></pre></p>
+      <p>Example: <pre><code>http_requests_total{status="200"} & http_requests_total{method="GET"}</code></pre></p>
       <p>- Difference: "metric1 \ metric2"</p>
       <p>Example: <pre><code>http_requests_total{status="200"} \ http_requests_total{method="POST"}</code></pre></p>
       <p>These examples demonstrate how the operators can be used in PromQL queries to perform arithmetic calculations, compare metrics, combine conditions, and manipulate sets of data.</p>

@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Prometheus Aggregation Operators</title>
+    <title>Management API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Some aggregation operators in prometheus">
-    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, Prometheus Aggregation Operators, aggregation">
+    <meta name="description" content="What is the prometheus management API?">
+    <meta name="keywords" content="alexis carbillet, carbillet, prom, prometheus, management API">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Some aggregation operators in prometheus" />
-    <meta property="og:description" content="Some aggregation operators in prometheus" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/content/Prom/Operators/Aggregation.html" />
+    <meta property="og:title" content="What is the prometheus management API?" />
+    <meta property="og:description" content="What is the prometheus management API?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Prom/API/Management.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -84,21 +84,53 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Prometheus Aggregation Operators</h2>
+			<h2 class="section-heading text-uppercase">Management API</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Prometheus provides several aggregation operators that allow you to perform calculations and aggregations on the collected metrics. Here are some commonly used aggregation operators in Prometheus:</p>
-		  <p>1. <B>sum</B>: Calculates the sum of the selected metric over a given time range.</p>
-		  <p>2. <B>avg</B>: Computes the average value of the selected metric over a specified time period.</p>
-		  <p>3. <B>min</B>: Returns the minimum value of the selected metric within a given time range.</p>
-		  <p>4. <B>max</B>: Returns the maximum value of the selected metric within a given time range.</p>
-		  <p>5. <B>count</B>: Counts the number of times the selected metric has been recorded within a given time frame.</p>
-		  <p>6. <B>quantile</B>: Computes the quantile value of the selected metric over a specified time period. For example, "quantile(0.95)"" will give you the 95th percentile value.</p>
-		  <p>7. <B>rate</B>: Calculates the per-second average rate of increase of the selected metric over a given time window.</p>
-		  <p>8. <B>irate</B>: Similar to "rate", but provides an instant rate of increase at each point in time.</p>
-      <p>9. <B>delta</B>: Computes the difference between the first and last value of the selected metric within a given time range.</p>
-		  <p>10. <B>stddev</B>: Calculates the standard deviation of the selected metric over a specified time period.</p>
-      <p>These operators can be used in Prometheus's query language, PromQL, to perform aggregations and calculations on your metrics data. By combining these operators with various functions and modifiers, you can derive meaningful insights and create custom monitoring and alerting rules based on your specific requirements.</p>
+		  <p>Prometheus provides a set of management APIs that allow you to interact with and manage various aspects of the Prometheus server and its components. These APIs are useful for tasks such as querying metrics, retrieving configuration information, and managing runtime behavior. Here are some key management APIs provided by Prometheus:</p>
+		  <p>1. <B>Query API</B> (/api/v1/query):</p>
+          <ul>
+            <li>This API allows you to execute instant queries to retrieve metric data.</li>
+            <li>You can specify the metric name, labels, and time range to retrieve specific data points.</li>
+            <li>It returns a JSON response containing the query results.</li>
+          </ul>
+		  <p>2. <B>Range Query API</B> (/api/v1/query_range):</p>
+          <ul>
+            <li>Similar to the Query API, but used for range queries over a time interval.</li>
+            <li>Useful for retrieving time series data for graphing or analysis.</li>
+            <li>Returns a JSON response with time series data points within the specified range.</li>
+          </ul>
+		  <p>3. <B>Label Values API</B> (/api/v1/label/your_label_name/values):</p>
+          <ul>
+            <li>Allows you to retrieve the distinct values for a given label name.</li>
+            <li>Useful for dynamic label-based selection when querying metrics.</li>
+          </ul>
+		  <p>4. <B>Targets API</B> (/api/v1/targets):</p>
+          <ul>
+            <li>Provides information about the targets that Prometheus is configured to scrape.</li>
+            <li>Includes details such as target's address, labels, last scrape timestamp, etc.</li>
+          </ul>
+		  <p>5. <B>Alertmanager API</B> (/api/v1/alerts):</p>
+          <ul>
+            <li>Retrieves a list of active alerts along with their labels and annotations.</li>
+            <li>Useful for monitoring the current state of your alerting rules.</li>
+          </ul>
+		  <p>6. <B>Configuration API</B> (/api/v1/status/config):</p>
+          <ul>
+            <li>Allows you to retrieve the effective runtime configuration of Prometheus.</li>
+            <li>Useful for validating or inspecting your Prometheus configuration.</li>
+          </ul>
+		  <p>7. <B>Runtime Configuration Reload</B> (/-/reload):</p>
+          <ul>
+            <li>This API endpoint triggers a reload of the Prometheus configuration.</li>
+            <li>Changes made to the configuration file take effect after invoking this endpoint.</li>
+          </ul>
+		  <p>8. <B>Metrics API</B> (/metrics):</p>
+          <ul>
+            <li>Prometheus itself exposes various internal metrics about its performance and behavior through this API.</li>
+            <li>These metrics can be scraped by another Prometheus instance or monitoring system to monitor the health of your Prometheus server.</li>
+          </ul>
+          <p>It's important to note that these APIs are typically accessed using HTTP GET requests to the specified endpoints. Responses are usually in JSON format, making them easily consumable by scripts and applications.</p>
 		  </div>
 		</div>
       </div>
@@ -115,29 +147,33 @@
 			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<p>Here are examples of each aggregation operator using PromQL syntax:</p>
-			<p>1. <B>sum</B>:</p>
-			<p><pre><code>sum(metric_name)</code></pre></p>
-			<p>2. <B>avg</B>:</p>
-			<p><pre><code>avg(metric_name)</code></pre></p>
-      <p>3. <B>min</B>:</p>
-			<p><pre><code>min(metric_name)</code></pre></p>
-      <p>4. <B>max</B>:</p>
-			<p><pre><code>max(metric_name)</code></pre></p>
-      <p>5. <B>count</B>:</p>
-			<p><pre><code>count(metric_name)</code></pre></p>
-      <p>6. <B>quantile</B>:</p>
-			<p><pre><code>quantile(0.95, metric_name)</code></pre></p>
-      <p>7. <B>rate</B>:</p>
-			<p><pre><code>rate(metric_name[5m])</code></pre></p>
-      <p>8. <B>irate</B>:</p>
-			<p><pre><code>irate(metric_name[1m])</code></pre></p>
-      <p>9. <B>delta</B>:</p>
-			<p><pre><code>delta(metric_name[1h])</code></pre></p>
-      <p>10. <B>stddev</B>:</p>
-			<p><pre><code>stddev(metric_name)</code></pre></p>
-			<p>Note that in these examples, "metric_name" should be replaced with the actual name of the metric you want to aggregate. The time ranges within square brackets [ ] specify the duration over which the aggregation is performed (e.g., 5m for 5 minutes, 1h for 1 hour).</p>
-			<p>Keep in mind that PromQL is a flexible query language, and you can combine these aggregation operators with other PromQL functions and modifiers to create more complex queries and calculations based on your specific needs.</p>
+			<p>Here are examples of HTTP requests for each of the Prometheus management APIs mentioned earlier. Keep in mind that you'll need to replace placeholders (such as label_name, target_id, etc.) with actual values relevant to your setup.</p>
+			<p>1. <B>Query API</B> (/api/v1/query):</p>
+			<p>Retrieve instant metric value for a specific metric and label combination.</p>
+            <pre><code>GET /api/v1/query?query=your_metric_name{your_label_name="your_label_value"}</code></pre>
+			<p>2. <B>Range Query API</B> (/api/v1/query_range):</p>
+			<p>Retrieve time series data for a specific metric and label combination within a time range.</p>
+            <pre><code>GET /api/v1/query_range?query=your_metric_name{your_label_name="your_label_value"}&start=your_start_timestamp&end=your_end_timestamp&step=your_sampling_interval</code></pre>
+            <p>3. <B>Label Values API</B> (/api/v1/label/your_label_name/values):</p>
+			<p>Retrieve distinct values for a specific label.</p>
+            <pre><code>GET /api/v1/label/your_label_name/values</code></pre>
+			<p>4. <B>Targets API</B> (/api/v1/targets):</p>
+			<p>Retrieve information about configured scrape targets.</p>
+            <pre><code>GET /api/v1/targets</code></pre>
+			<p>5. <B>Alertmanager API</B> (/api/v1/alerts):</p>
+			<p>Retrieve a list of active alerts.</p>
+            <pre><code>GET /api/v1/alerts</code></pre>
+            <p>6. <B>Configuration API</B> (/api/v1/status/config):</p>
+			<p>Retrieve the effective runtime configuration of Prometheus.</p>
+            <pre><code>GET /api/v1/status/config</code></pre>
+			<p>7. <B>Runtime Configuration Reload</B> (/-/reload):</p>
+			<p>Trigger a reload of the Prometheus configuration.</p>
+            <pre><code>POST /-/reload</code></pre>
+			<p>8. <B>Metrics API</B> (/metrics):</p>
+			<p>Retrieve internal metrics exposed by Prometheus itself.</p>
+            <pre><code>GET /metrics</code></pre>
+            <p>Please note that for many of these requests, you will need to replace placeholders like your_metric_name, your_label_name, your_label_value, your_start_timestamp, your_end_timestamp, your_sampling_interval, and so on with actual values.</p>
+			<p>Also, remember to access these APIs on the appropriate base URL where your Prometheus server is running. The examples shown here assume a generic base URL, so you will need to adjust them according to your Prometheus server's configuration and deployment.</p>
 		  </div>
 		</div>
       </div>

@@ -94,7 +94,7 @@
 		  <p>4. <B>changes()</B>: This function counts the number of times a time series changes its value within a specified time range. It takes one argument: the expression that represents the time series. The function triggers the alert if the number of changes exceeds a specified threshold.</p>
 		  <p>5. <B>increase()</B>: This function calculates the rate of increase of a time series over a specified time range. It takes two arguments: the expression that represents the time series and the duration over which the increase is calculated. The function triggers the alert if the increase exceeds a specified threshold.</p>
 		  <p>6. <B>rate()</B>: This function calculates the average rate of change of a time series over a specified time range. It takes one argument: the expression that represents the time series. The function triggers the alert if the rate exceeds a specified threshold.</p>
-		  <p>7. <B>up()</B>: This function checks the availability of a target by querying the `up` metric, which indicates whether a scrape target is up or down. It takes no arguments and evaluates to 1 if the target is up and 0 if it's down. This function is often used to create alerts for target availability.</p>
+		  <p>7. <B>up()</B>: This function checks the availability of a target by querying the "up" metric, which indicates whether a scrape target is up or down. It takes no arguments and evaluates to 1 if the target is up and 0 if it's down. This function is often used to create alerts for target availability.</p>
 		  <p>These are just a few examples of the alert functions available in Prometheus. The alerting functionality in Prometheus is highly customizable, allowing you to define complex conditions and actions based on your specific monitoring requirements.</p>
 		  </div>
 		</div>
@@ -114,39 +114,27 @@
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
       <p>Here are examples for each of the alert functions in Prometheus:</p>
       <p>1. <B>ALERT()</B>: Define an alert rule named "HighCPUUsage" that triggers when the CPU usage exceeds 80% for more than 5 minutes:</p>
-			<pre><code>
-        ALERT HighCPUUsage
-        IF avg(cpu_usage) > 0.8
-        FOR 5m
-      </code></pre>
+			<pre><code>ALERT HighCPUUsage
+IF avg(cpu_usage) > 0.8
+FOR 5m</code></pre>
 			<p>2. <B>label_join()</B>: Create a new label named "alert_info" by joining the "instance" and "severity" labels with a hyphen ("-") delimiter:</p>
       <pre><code>label_join(alert_info, "-", instance, severity)</code></pre>
       <p>3. <B>absent()</B>: Trigger an alert if the metric "http_requests_total" is absent for the past 5 minutes:</p>
-			<pre><code>
-        ALERT MissingHttpRequests
-        IF absent(http_requests_total) FOR 5m
-      </code></pre>
+			<pre><code>ALERT MissingHttpRequests
+IF absent(http_requests_total) FOR 5m</code></pre>
 			<p>4. <B>changes()</B>: Generate an alert if the value of the metric "errors_total" changes more than 10 times within the last 10 minutes:</p>
-      <pre><code>
-        ALERT HighErrorFluctuations
-        IF changes(errors_total) > 10
-        FOR 10m
-      </code></pre>
+      <pre><code>ALERT HighErrorFluctuations
+IF changes(errors_total) > 10
+FOR 10m</code></pre>
       <p>5. <B>increase()</B>: Raise an alert if the rate of increase of the metric "request_latency_seconds" is above 0.05 over the last 1 hour:</p>
-			<pre><code>
-        ALERT HighLatencyIncrease
-        IF increase(request_latency_seconds[1h]) > 0.05
-      </code></pre>
+			<pre><code>ALERT HighLatencyIncrease
+IF increase(request_latency_seconds[1h]) > 0.05</code></pre>
 			<p>6. <B>rate()</B>: Trigger an alert if the average rate of change of the metric "http_requests_total" exceeds 100 requests per second over the last 5 minutes:</p>
-      <pre><code>
-        ALERT HighRequestRate
-        IF rate(http_requests_total[5m]) > 100
-      </code></pre>
+      <pre><code>ALERT HighRequestRate
+IF rate(http_requests_total[5m]) > 100</code></pre>
       <p>7. <B>up()</B>: Create an alert if a target is down by checking the availability of the "up" metric:</p>
-			<pre><code>
-        ALERT TargetDown
-        IF up() == 0
-      </code></pre>
+			<pre><code>ALERT TargetDown
+IF up() == 0</code></pre>
 			<p>These examples demonstrate how the alert functions can be used to define specific conditions and generate alerts based on the monitored metrics in Prometheus. Remember to adapt these examples to your own metric names and threshold values according to your monitoring setup.</p>
 		  </div>
 		</div>

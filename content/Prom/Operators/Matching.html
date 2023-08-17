@@ -88,7 +88,7 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
 		  <p>Prometheus, an open-source monitoring and alerting system, provides several matching operators to filter and aggregate time series data. These operators are used in Prometheus's query language, PromQL (Prometheus Query Language), to define the selection criteria for metrics. Here are the commonly used matching operators in Prometheus:</p>
-		  <p>1. <B>Equality</B> (==): Matches time series with labels that have the exact specified value.</p>
+		  <p>1. <B>Equality</B> (=): Matches time series with labels that have the exact specified value.</p>
 		  <p>2. <B>Inequality</B> (!=): Matches time series with labels that do not have the specified value.</p>
 		  <p>3. <B>Regular expression</B> (=~): Matches time series with labels that match the specified regular expression.</p>
 		  <p>4. <B>Negated regular expression</B> (!~): Matches time series with labels that do not match the specified regular expression.</p>
@@ -113,7 +113,7 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
       <p>Here are examples for each of the matching operators in Prometheus:</p>
-      <p>1. <B>Equality</B> (==):</p>
+      <p>1. <B>Equality</B> (=):</p>
 			<p><pre><code>http_requests_total{method="GET"}</code></pre>It matches the time series with the label "method" having the value "GET". This example selects all the time series representing HTTP GET requests.</p>
 			<p>2. <B>Inequality</B> (!=):</p>
       <p><pre><code>http_requests_total{status!="200"}</code></pre>It matches the time series with the label "status" not equal to "200". This example selects all the time series representing HTTP requests with a status other than 200.</p>
@@ -122,7 +122,7 @@
 			<p>4. <B>Negated regular expression</B> (!~):</p>
       <p><pre><code>http_requests_total{path!~"/admin/.*"}</code></pre>It matches the time series with the label "path" not matching the regular expression "/admin/.*". This example selects all the time series representing HTTP requests excluding those with paths starting with "/admin/".</p>
 			<p>5. <B>Set membership</B> ({labelname}):</p>
-      <p><pre><code>{job="prometheus",instance="localhost:9090"}</code></pre>It matches the time series with the labels "job" and "instance" having the specified values. This example selects all the time series belonging to the Prometheus server running on `localhost:9090`.</p>
+      <p><pre><code>{job="prometheus",instance="localhost:9090"}</code></pre>It matches the time series with the labels "job" and "instance" having the specified values. This example selects all the time series belonging to the Prometheus server running on localhost:9090.</p>
 			<p>6. <B>Range matching</B> ({labelname="value1"-"value2"}):</p>
       <p><pre><code>http_requests_total{response_time="0.1-1.0"}</code></pre>It matches the time series with the label "response_time" falling within the range from 0.1 to 1.0. This example selects all the time series representing HTTP requests with response times between 0.1 and 1.0 seconds.</p>
 			<p>7. <B>Aggregation</B> (sum, avg, min, max, etc.):</p>
