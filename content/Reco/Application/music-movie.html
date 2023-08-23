@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Music & movies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="How are recommendaton systems used for music and movies?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="How are recommendaton systems used for music and movies?" />
+    <meta property="og:description" content="How are recommendaton systems used for music and movies?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Application/music-movie.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,38 +81,31 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Music & movies</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+		  <p>In the realm of entertainment, recommendation systems play a pivotal role in enhancing user engagement and satisfaction. Streaming platforms for movies, TV shows, and music have harnessed the power of recommendation algorithms to curate personalized content experiences for their audiences. Let's delve into how recommendation systems have transformed the way we discover and enjoy entertainment.</p>
+		  <p>Gone are the days of scrolling through an endless catalog of movies without a clue about what to watch next. Movie recommendation systems leverage user preferences, viewing history, and even contextual cues to suggest films tailored to individual tastes. Here's how they work:</p>
+      <ul>
+        <li><B>Collaborative Filtering</B>: By analyzing the viewing habits of users with similar tastes, collaborative filtering recommends movies that people with similar interests have enjoyed. This approach is particularly effective for discovering hidden gems and expanding one's cinematic horizons.</li>
+        <li><B>Content-Based Recommendations</B>: These systems focus on the attributes of movies themselves, such as genre, director, actors, and plot keywords. They suggest movies based on the characteristics of what a user has previously enjoyed.</li>
+        <li><B>Hybrid Approaches</B>: Streaming giants like Netflix often combine collaborative and content-based filtering to provide well-rounded recommendations. This allows them to capture both the essence of a user's preferences and the intrinsic features of movies.</li>
+      </ul>
+		  <p>Music recommendation systems have revolutionized the way we explore new artists, genres, and songs. Whether you're a casual listener or a dedicated music enthusiast, these systems cater to your musical journey:</p>
+      <ul>
+        <li><B>Playlist Generation</B>: Recommendation algorithms analyze your listening history and patterns to create custom playlists that match your mood, activity, or time of day. Spotify's "Discover Weekly" is a prime example of this, offering a fresh playlist every week based on your musical tastes.</li>
+        <li><B>Song Similarity</B>: By employing sophisticated techniques like audio analysis and feature extraction, recommendation systems can suggest songs that are musically similar to ones you already enjoy. This is particularly useful for discovering new tracks that align with your preferences.</li>
+        <li><B>Contextual Recommendations</B>: Music platforms take into account external factors like location, weather, and user activity to deliver context-aware recommendations. Imagine receiving a playlist perfectly suited for a rainy day or a high-energy workout session.</li>
+      </ul>
+		  <p>The implementation of recommendation systems has significantly shaped the entertainment industry:</p>
+      <ul>
+        <li><B>User Engagement</B>: Streaming platforms see higher user engagement and longer session durations as personalized recommendations keep users immersed in content they love.</li>
+        <li><B>Content Diversity</B>: Users are exposed to a wider range of movies and music, enabling them to explore beyond their comfort zones and discover new favorites.</li>
+        <li><B>Revenue Generation</B>: Effective recommendations can drive users to explore and consume more content, leading to increased subscriptions and revenue for streaming platforms.</li>
+      </ul>
+		  <p>While recommendation systems have brought remarkable advancements, challenges persist. The "filter bubble" effect, where users are exposed only to content similar to their existing preferences, remains a concern. Striking the right balance between personalization and serendipity is an ongoing challenge.</p>
+		  <p>Looking ahead, the integration of AI and machine learning is poised to further refine recommendation systems. Deep learning techniques, natural language processing, and sentiment analysis will contribute to even more accurate and nuanced recommendations.</p>
+		  <p>In conclusion, movie and music recommendation systems have reshaped how we discover, enjoy, and engage with entertainment. As technology continues to evolve, these systems will continue to evolve, providing us with ever-improving ways to explore the rich and diverse world of movies and music.</p>
 		  </div>
 		</div>
       </div>

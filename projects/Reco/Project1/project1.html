@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Movie recommender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="Example in python of a movie recommender">
+    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python, movie recommendation">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="Example in python of a movie recommender" />
+    <meta property="og:description" content="Example in python of a movie recommender" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Reco/Project1/project1.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -55,14 +55,11 @@
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
             </li>
           </ul>
         </div>
@@ -84,38 +81,36 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Movie recommender</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+      <p>This movie recommender system is based on this <a href="https://www.kaggle.com/rounakbanik/the-movies-dataset#ratings.csv">dataset</a>. This project works offline, you will need to have a Python IDE in order to run it. It contains also a script used in order to download the images of each movie. This one can be very long because of the large amount of data. You can find the code <a href="interface.py">here</a></p>
+		  <p>The recommender used depends on the input. There are 3 variables: the last movie watched, the user ID and the genres (20 different categories). According to the combination of those paramaters, a different recommender is used. You can find here which recommender is used according to the input:</p>
+      <table class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+        <tr><th>Variables</th><th>Recommender</th></tr>
+        <tr><th>Last movie watched</th><th>metadata recommender</th></tr>
+        <tr><th>User ID</th><th>SVD</th></tr> 
+        <tr><th>genres</th><th>metadata recommender</th></tr>
+        <tr><th>Last movie watched & genres</th><th>metadata recommender</th></tr>
+        <tr><th>Last movie watched & User ID</th><th>SVD</th></tr>
+        <tr><th>User ID & genres</th><th>None</th></tr>
+        <tr><th>Last movie watched & User ID & genres</th><th>SVD</th></tr>
+      </table>
+      <p style="padding-top: 5%;">Here is the interface before any research. As you can see, many checkboxes are present, one per genre. The movies recommended are displayed with their image, their title, their year, their rating, their genres and their description. Only the top 5 movies are displayed.</p>
+      <div style="text-align: center;"><img src="img/gui/empty.PNG" alt="" width="70%"></div>
+		  <p>Let's see now an example with only the last movie watched. In this example, it is the movie Iron Man:</p>
+      <div style="text-align: center;"><img src="img/gui/movie.PNG" alt="" width="70%"></div>
+		  <p>Let's see now an example with only the last movie watched and a genre. In this example, the movie Iron Man and the genre Comedy are selected:</p>
+      <div style="text-align: center;"><img src="img/gui/movie_cat.PNG" alt="" width="70%"></div>
+		  <p>As you can see, only one of the 5 top movies were a comedy. It was Deadpool. So now, this movie is first. The others are after. Now let's study if only a cateogry is selected:</p>
+      <div style="text-align: center;"><img src="img/gui/cat.PNG" alt="" width="70%"></div>
+		  <p>In our case, the genre Action was selected. The top 5 action movies have been selected. They have the best mean rating and also are among the most popular. What is user id? In the dataset used, the ratings have been realized by some users, which have an ID. So it is possible to recommand movies knowing what they watched and what they liked. This is why a SVD is used. For example, for the user 1:</p>
+      <div style="text-align: center;"><img src="img/gui/id.PNG" alt="" width="70%"></div>
+		  <p>Those recommendation can be combined with the last movie they watched. If user 1 watched Iron Man then the result is:</p>
+      <div style="text-align: center;"><img src="img/gui/movie_id.PNG" alt="" width="70%"></div>
+		  <p>If user 1 watched Iron Man and what to watch a comedy movie, here are the recommendations:</p>
+      <div style="text-align: center;"><img src="img/gui/movie_cat_id.PNG" alt="" width="70%"></div>
+		  <p>As you can see, 2 comedies have been recommended. Then the recommendations are completed with movies similar to Iron Man which the User 1 should like.</p>
 		  </div>
 		</div>
       </div>

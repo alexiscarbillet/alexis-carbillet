@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Alexis Carbillet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Contains different articles about Prometheus, Artificial Intelligence & Data Visualization">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, python">
+    <meta name="description" content="Contains different articles about Prometheus, Artificial Intelligence, Data Visualization & recommendation systems">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, python, recommendation system">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
@@ -55,17 +55,21 @@
 		    <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#prom">Prometheus</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#ai">AI</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#vis">Visualization</a>
-            </li>
+			<li class="nav-item dropdown"> <!-- Add the 'dropdown' class to create the dropdown -->
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Intelligent Systems
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 200px;"> <!-- Add the 'dropdown-menu' class to create the dropdown menu -->
+					<a class="dropdown-item" href="#ai" style="font-size: 80%;">Artificial Intelligence</a>
+					<a class="dropdown-item" href="#vis" style="font-size: 80%;">Data Visualization</a>
+					<a class="dropdown-item" href="#rs" style="font-size: 80%;">Recommendation Systems</a>
+				</div>
+			</li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="me.html">About me</a>
+				<a class="nav-link js-scroll-trigger" href="me.html">About</a>
 			</li>
           </ul>
         </div>
@@ -82,6 +86,7 @@
 		  How can I collect my metrics? What is Prometheus? <br>
 		  What is machine learning? How does it work? Is it easy to implement? <br>
 		  How to show your data efficiently? How to represent the reality to its closest? <br>
+		  How can I implement a recommendation system? <br>
 		  Find out here. <br>	
 		  </div>
 	  </div>
@@ -274,9 +279,10 @@
 				<li class="centered-list-item">Project 1: <a href="projects/AI/project1/project1.html" style="color: #69b3a2;">Comparison supervised models</a></li>
 				<li class="centered-list-item">Project 2: <a href="projects/AI/project2/project2.html" style="color: #69b3a2;">Comparison unsupervised models</a></li>
 				<li class="centered-list-item">Project 3: <a href="projects/AI/project3/project3.html" style="color: #69b3a2;">Comparison semi-supervised models</a></li>
-				<li class="centered-list-item">Project 4: <a href="projects/AI/project4/project4.html" style="color: #69b3a2;">Image recognition</a></li>
+				<li class="centered-list-item">Project 4: <a href="projects/AI/project4/project4.html" style="color: #69b3a2;">Object detection</a></li>
 				<li class="centered-list-item">Project 5: <a href="projects/AI/project5/project5.html" style="color: #69b3a2;">Image segmentation</a></li>
 				<li class="centered-list-item">Project 6: <a href="projects/AI/project6/project6.html" style="color: #69b3a2;">Good practices</a></li>
+				<li class="centered-list-item">Project 7: <a href="projects/AI/project7/project7.html" style="color: #69b3a2;">Tweet analysis</a></li>
 			 </ul>
 		</div>
 	  </div>
@@ -403,6 +409,97 @@
 </section>
 
 <!-- ======================================================================= -->
+
+
+<!-- ======================== RECOMMENDATION SYSTEM BLOG SECTION ============================ -->
+
+
+<section class="bg-dark" id="rs">
+	<div class="parallaxstory">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase" style="color:white">Recommendation systems Blog</h2>
+			<h3 class="section-subheading text-white">Guiding Your Journey, One Recommendation at a Time</h3>
+			<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
+			<div class="btn-group">
+			  <div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Introduction</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Intro/definition.html">Definition</a>
+					<a class="dropdown-item" href="content/Reco/Intro/importance.html">Importance</a>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="btn-group">
+			  <div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Key components</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Key/data.html">Data</a>
+					<a class="dropdown-item" href="content/Reco/Key/user-item.html">User / Item</a>
+					<a class="dropdown-item" href="content/Reco/Key/metric.html">Metrics</a>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="btn-group">
+			  <div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Algorithms</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Algos/collaborative.html">Collaborative Filtering</a>
+					<a class="dropdown-item" href="content/Reco/Algos/content_based.html">Content-based</a>
+					<a class="dropdown-item" href="content/Reco/Algos/hybrid.html">Hybrid</a>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="btn-group">
+			  <div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Advanced</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Advanced/matrix.html">Matrix factorization</a>
+					<a class="dropdown-item" href="content/Reco/Advanced/deep.html">Deep learning</a>
+					<a class="dropdown-item" href="content/Reco/Advanced/cold.html">Cold start problem</a>
+				</div>
+			  </div>
+			</div>
+	
+			<div class="btn-group">
+			  <div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Metrics</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Metrics/evaluation.html">Evaluation</a>
+					<a class="dropdown-item" href="content/Reco/Metrics/testing.html">Testing</a>
+				</div>
+			  </div>
+			</div>
+
+			<div class="btn-group">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Application</button>
+				  <div class="dropdown-menu">
+					<a class="dropdown-item" href="content/Reco/Application/e-commerce.html">E-commerce</a>
+					<a class="dropdown-item" href="content/Reco/Application/music-movie.html">Music & Movie</a>
+				  </div>
+				</div>
+			  </div>
+
+			<h4 class="section-heading text-uppercase text-white" style="padding-bottom: 2%; padding-top: 5%">Projects</h4>
+			<div class="centered-list-container">
+				<ul class="text-white centered-list">
+					<li class="centered-list-item">Project 1: <a href="projects/Reco/Project1/project1.html" style="color: #69b3a2;">Movie recommendation</a></li>
+					<li class="centered-list-item">Project 2: <a href="projects/Reco/Project2/project2.html" style="color: #69b3a2;">Good practices</a></li>
+				 </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	</section>
+	
+	<!-- ======================================================================= -->
 
 
 <!-- ========================== CONTACT SECTION ============================== -->

@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Testing your recommendation system</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="How to test your recommendation system in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, testing">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="How to test your recommendation system in python?" />
+    <meta property="og:description" content="How to test your recommendation system in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Metrics/testing.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +84,32 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Testing your recommendation system</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>In the realm of recommendation systems, building an algorithm that performs well in controlled environments is just the first step. To truly assess its impact and effectiveness, we turn to A/B testing and online evaluation. These techniques allow us to measure how well our recommendation algorithms perform in real-world scenarios, where user behavior is influenced by a multitude of factors.</p>
+		  <p>A/B testing is a widely used method in which two or more versions of a recommendation algorithm are compared to determine which one performs better. Here's how the process generally unfolds:</p>
+      <ul>
+        <li><B>Random Assignment</B>: Users are randomly divided into different groups, with each group receiving recommendations from a different algorithm (A and B, for instance).</li>
+        <li><B>Metrics Collection</B>: Relevant metrics, such as click-through rates, conversion rates, and engagement levels, are collected for each group.</li>
+        <li><B>Statistical Analysis</B>: Statistical analysis is performed to compare the performance of the algorithms. This analysis helps determine if the observed differences are statistically significant.</li>
+        <li><B>Insights and Decision</B>: Based on the analysis, you can decide which algorithm is performing better and make informed decisions about implementation.</li>
+      </ul>
+		  <p>A/B testing offers insights into how different algorithms impact user behavior and can guide iterative improvements.</p>
+		  <p>A/B testing for recommendation systems presents unique challenges due to their dynamic nature and personalized user experiences:</p>
+      <ul>
+        <li><B>User Heterogeneity</B>: Users have diverse preferences and behaviors, making it challenging to identify a one-size-fits-all solution.</li>
+        <li><B>Cold Start Problem</B>: New users and items may not have sufficient data for accurate recommendations, affecting the A/B test's reliability.</li>
+        <li><B>Long-Term Effects</B>: Recommendation algorithms might have long-term effects on user engagement and satisfaction, which might not be immediately apparent.</li>
+      </ul>
+		  <p>Online evaluation complements A/B testing by enabling continuous monitoring and adjustment of recommendation algorithms in real-time. This approach involves:</p>
+      <ul>
+        <li><B>Logging User Interactions</B>: Tracking user interactions, such as clicks, purchases, and time spent, to measure the effectiveness of recommendations.</li>
+        <li><B>Feedback Loop</B>: Using collected data to update and refine the recommendation model over time.</li>
+        <li><B>Exploration vs. Exploitation</B>: Balancing exploration (trying new recommendations) with exploitation (recommending known successful items) to avoid user fatigue.</li>
+      </ul>
+		  <p>Online evaluation allows recommendation systems to adapt to changing user preferences and respond to shifts in content availability.</p>
+		  <p>A/B testing and online evaluation are essential tools in the arsenal of recommendation system developers. They bridge the gap between controlled experimentation and real-world impact, providing insights into how algorithms perform in actual usage scenarios. By carefully designing experiments, analyzing data, and iteratively improving algorithms, businesses can create recommendation systems that not only shine in the lab but also deliver tangible benefits to users and stakeholders.</p>
 		  </div>
 		</div>
       </div>
@@ -107,15 +123,44 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+			<p>Here's a simplified example of how you might perform A/B testing for a recommendation algorithm using Python. In this example, we'll compare two different recommendation algorithms using simulated data.</p>
+      <pre><code>import numpy as np
+from scipy.stats import ttest_ind
+
+# Simulated data: user interactions with recommendations (0: no interaction, 1: interaction)
+algo_A_data = np.random.choice([0, 1], size=1000, p=[0.8, 0.2])
+algo_B_data = np.random.choice([0, 1], size=1000, p=[0.75, 0.25])
+
+# Calculate click-through rates (CTR) for each algorithm
+ctr_A = np.mean(algo_A_data)
+ctr_B = np.mean(algo_B_data)
+
+# Perform a two-sample t-test to determine if the difference in CTR is significant
+t_stat, p_value = ttest_ind(algo_A_data, algo_B_data)
+
+# Set a significance level
+alpha = 0.05
+
+# Compare p-value with significance level
+if p_value < alpha:
+    result = "significant"
+else:
+    result = "not significant"
+
+# Print the results
+print(f"CTR for Algorithm A: {ctr_A:.2f}")
+print(f"CTR for Algorithm B: {ctr_B:.2f}")
+print(f"T-Test: p-value = {p_value:.4f} (Result: {result})")</code></pre>
+			<p>Results:</p>
+      <pre><code>CTR for Algorithm A: 0.21
+CTR for Algorithm B: 0.27
+T-Test: p-value = 0.0008 (Result: significant)</code></pre>
+			<p>Remember, this example is simplified and uses randomly generated data. In a real-world scenario, you would replace the simulated data with actual user interaction data and implement more sophisticated statistical analysis, considering factors like user segmentation, confidence intervals, and potential biases.</p>
+			<p>For online evaluation, you would continuously monitor user interactions and update your recommendation algorithm based on the feedback you receive. This process involves tracking metrics over time and using techniques like multi-armed bandits or reinforcement learning to balance exploration and exploitation of recommendations.</p>
+			<p>Implementing A/B testing and online evaluation for recommendation systems requires careful consideration of ethical and privacy concerns, as well as a deep understanding of statistical analysis and experimentation methodologies.</p>
 		  </div>
 		</div>
       </div>

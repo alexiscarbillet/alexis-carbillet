@@ -4,7 +4,6 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
 p {
   line-height: 1.75;
 }
@@ -110,7 +109,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 10px;
   right: 0;
   padding: 13px;
   text-transform: uppercase;
@@ -125,7 +124,7 @@ img::-moz-selection {
 
 /* Color of the TEXT of the menu top right*/
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 80%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;

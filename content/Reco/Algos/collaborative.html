@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Collaborative Filtering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, collaborative filtering">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="What is collaborative filtering?" />
+    <meta property="og:description" content="What is collaborative filtering? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/reco/algos/collaborative.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Collaborative Filtering</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Collaborative Filtering is a cornerstone technique in recommendation systems that leverages user behavior and preferences to make personalized recommendations. This approach is based on the idea that users who have similar tastes and preferences in the past are likely to have similar tastes for future items. Collaborative filtering can be broadly categorized into two main types: user-based and item-based.</p>
+		  <p>In user-based collaborative filtering, recommendations are made by identifying users with similar behaviors and preferences to the target user. The algorithm finds users who have rated or interacted with similar items and suggests items that those similar users have liked but the target user hasn't encountered yet. This method is intuitive and effective for capturing user tastes, but it can suffer from scalability issues as the number of users and items grows.</p>
+		  <p>Item-based collaborative filtering takes a slightly different approach. Instead of focusing on users, this method identifies similarities between items based on user interactions. It recommends items similar to those the user has already expressed interest in. Item-based collaborative filtering often handles large item catalogs more efficiently than user-based methods. It also tends to provide more stable recommendations, as user preferences can change over time.</p>
+		  <p>Collaborative filtering has several strengths that contribute to its popularity:</p>
+      <ul>
+        <li><B>Serendipity</B>: It can uncover unexpected recommendations by identifying patterns that individual users might not have noticed.</li>
+        <li><B>No Explicit Features Required</B>: It doesn't rely on explicit item features; recommendations are based solely on user behavior.</li>
+        <li><B>Data Diversity</B>: It can work well with sparse data, as it relies on user-item interactions.</li>
+      </ul>
+		  <p>However, collaborative filtering also faces certain challenges:</p>
+      <ul>
+        <li><B>Cold Start</B>: It struggles when dealing with new users or items with limited interaction data (cold start problem).</li>
+        <li><B>Data Sparsity</B>: It may struggle to provide accurate recommendations for less active users or niche items due to sparse data.</li>
+        <li><B>Scalability</B>: Traditional collaborative filtering can become computationally expensive with large user and item datasets.</li>
+      </ul>
+		  <p>To address these challenges, researchers and practitioners have developed various techniques to enhance collaborative filtering:</p>
+      <ul>
+        <li><B>Matrix Factorization</B>: This technique decomposes the user-item interaction matrix into lower-dimensional latent factors, capturing underlying patterns in the data.</li>
+        <li><B>Regularization Techniques</B>: L1 and L2 regularization can help mitigate overfitting in collaborative filtering models.</li>
+        <li><B>Hybrid Models</B>: Combining collaborative filtering with other approaches, such as content-based filtering or deep learning, can lead to more accurate and robust recommendations.</li>
+      </ul>
+		  <p>Collaborative filtering remains a foundational method in recommendation systems, with its principles continuing to inspire new advancements in the field. As the technology evolves, collaborative filtering techniques are being integrated into more complex and sophisticated recommendation systems that cater to the diverse needs of modern users.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Examples</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p> Here's a simple example of user-based collaborative filtering using Python and the pandas library. In this example, we'll create a basic user-item interaction matrix and demonstrate how to make recommendations for a target user based on similar users' preferences.</p>
+      <pre><code>import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Sample user-item ratings matrix (rows: users, columns: items)
+ratings = np.array([
+    [5, 3, 0, 4, 0, 0],
+    [0, 4, 0, 0, 0, 0],
+    [4, 0, 0, 5, 0, 0],
+    [0, 0, 5, 0, 4, 0],
+    [0, 0, 4, 0, 0, 5]
+])
+
+# Function to compute cosine similarity between users
+def user_similarity(ratings):
+    similarity_matrix = cosine_similarity(ratings)
+    np.fill_diagonal(similarity_matrix, 0)  # Set diagonal to 0 to avoid self-similarity
+    return similarity_matrix
+
+# Function to make recommendations
+def user_based_recommendation(user_id, ratings, similarity_matrix, num_recommendations):
+    similar_users = np.argsort(similarity_matrix[user_id])[::-1]
+    user_ratings = ratings[user_id]
+    recommendations = []
+    
+    for i in range(len(similar_users)):
+        if user_ratings[i] == 0:
+            recommendations.append(similar_users[i])
+        if len(recommendations) == num_recommendations:
+            break
+    
+    return recommendations
+
+# Calculate user similarity matrix
+user_sim_matrix = user_similarity(ratings)
+
+# Make recommendations for user 1 (index 0)
+user_id = 0
+num_recommendations = 2
+recommended_items = user_based_recommendation(user_id, ratings, user_sim_matrix, num_recommendations)
+
+print(f"Recommendations for User {user_id}:")
+for item in recommended_items:
+    print(f"Item {item + 1}")</code></pre>
+			<p>Results:</p>
+      <pre><code>Recommendations for User 0:
+Item 5
+Item 1</code></pre>
+			<p>In this example, we start with a small user-item ratings matrix representing user interactions with items (where 0 indicates no interaction). We compute the cosine similarity between users to measure their similarity in terms of their rating patterns. Then, we make recommendations for a specific user (in this case, User 1) based on the ratings of similar users.</p>
+			<p>Please note that this example is quite basic and uses a small dataset for illustration purposes. In real-world scenarios, you'd work with larger and more complex datasets, and there are more sophisticated techniques to handle data preprocessing, dealing with sparsity, and enhancing recommendation quality.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

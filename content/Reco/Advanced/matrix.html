@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Matrix factorization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="What is matrix factorization? How to implement it in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, matrix factorization">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="What is matrix factorization? How to implement it in python?" />
+    <meta property="og:description" content="What is matrix factorization? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Advanced/matrix.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +84,36 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Matrix factorization</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>Matrix factorization is a powerful technique commonly employed in recommendation systems to uncover latent patterns and relationships within user-item interaction data. This approach aims to decompose the original user-item interaction matrix into lower-dimensional matrices, which represent latent factors. These latent factors capture hidden features and preferences that influence user-item interactions, making matrix factorization a valuable tool for personalized recommendations.</p>
+		  <p>How Matrix Factorization Works:</p>
+      <ul>
+        <li><B>The User-Item Matrix</B>: In a recommendation system, we often have a matrix where rows correspond to users and columns correspond to items. The entries of this matrix represent user interactions with items, such as ratings, clicks, or purchase history.</li>
+        <li><B>Decomposition</B>: Matrix factorization involves decomposing this user-item matrix into two (or more) lower-dimensional matrices. For instance, using Singular Value Decomposition (SVD), the user-item matrix can be decomposed into three matrices: a user matrix, a diagonal matrix of singular values, and an item matrix.</li>
+        <li><B>Latent Factors</B>: The key idea is that the resulting matrices capture latent factors that influence user-item interactions. These factors could represent concepts like genre preferences, product categories, or user traits that are not explicitly available in the raw data.</li>
+        <li><B>Predictions</B>: By multiplying the user and item matrices, we can predict missing or unknown interactions. These predictions can be used to generate personalized recommendations for users.</li>
+      </ul>
+		  <p>Advantages of Matrix Factorization:</p>
+      <ul>
+        <li><B>Capturing Complex Relationships</B>: Matrix factorization can capture intricate and non-linear relationships between users and items, allowing for more accurate recommendations.</li>
+        <li><B>Scalability</B>: It can handle large datasets and reduce computational complexity compared to other algorithms.</li>
+        <li><B>Cold Start Mitigation</B>: Matrix factorization can help alleviate the cold start problem by making educated guesses about user preferences, even when there is limited data for new users or items.</li>
+      </ul>
+		  <p>Challenges and Considerations:</p>
+      <ul>
+        <li><B>Data Sparsity</B>: Matrix factorization may struggle with extremely sparse data, where many user-item pairs have no interactions.</li>
+        <li><B>Overfitting</B>: Careful regularization is necessary to prevent overfitting, especially when dealing with noisy or incomplete data.</li>
+        <li><B>Hyperparameter Tuning</B>: Choosing the right number of latent factors and regularization parameters requires experimentation and tuning.</li>
+      </ul>
+		  <p>Variations and Extensions:</p>
+      <ul>
+        <li><B>Non-Negative Matrix Factorization</B> (NMF): Constrains the factor matrices to be non-negative, which is useful for applications where negative values don't make sense (e.g., topic modeling).</li>
+        <li><B>Probabilistic Matrix Factorization</B>: Incorporates probabilistic models to handle uncertainty in the data and provide more robust recommendations.</li>
+        <li><B>Temporal Matrix Factorization</B>: Extends the approach to capture temporal dynamics, accounting for how user preferences change over time.</li>
+      </ul>
+		  <p>Matrix factorization remains a cornerstone of recommendation system research and has been a catalyst for many innovative developments in the field. As the technology continues to evolve, matrix factorization techniques are being combined with other approaches, such as deep learning, to create even more accurate and sophisticated recommendation systems.</p>
 		  </div>
 		</div>
       </div>
@@ -107,15 +127,56 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+			<p>Here's a basic example of how you can implement matrix factorization for a recommendation system using Python and the NumPy library:</p>
+      <pre><code>import numpy as np
+
+# Generate a sample user-item interaction matrix (rows = users, columns = items)
+# In a real scenario, you would replace this with your actual data
+user_item_matrix = np.array([
+    [5, 3, 0, 0, 2],
+    [4, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 5, 4, 0],
+    [0, 0, 0, 0, 5],
+])
+
+# Set the number of latent factors
+num_latent_factors = 2
+
+# Perform Singular Value Decomposition (SVD) for matrix factorization
+U, S, Vt = np.linalg.svd(user_item_matrix)
+
+# Keep only the top 'num_latent_factors' singular values and corresponding vectors
+U = U[:, :num_latent_factors]
+S = np.diag(S[:num_latent_factors])
+Vt = Vt[:num_latent_factors, :]
+
+# Perform matrix factorization to obtain predicted user-item interactions
+predicted_matrix = np.dot(np.dot(U, S), Vt)
+
+print("Original User-Item Matrix:")
+print(user_item_matrix)
+
+print("\nPredicted User-Item Matrix:")
+print(predicted_matrix)</code></pre>
+			<p>Results:</p>
+      <pre><code>Original User-Item Matrix:
+[[5 3 0 0 2]
+ [4 0 0 0 0]
+ [1 1 0 0 0]
+ [0 0 5 4 0]
+ [0 0 0 0 5]]
+
+Predicted User-Item Matrix:
+[[5.06820483 2.19320554 0.         0.         2.55685261]
+ [2.7743652  1.20057364 0.         0.         1.39963619]
+ [0.99373471 0.43002691 0.         0.         0.50132804]
+ [0.         0.         5.         4.         0.        ]
+ [1.74954524 0.75709496 0.         0.         0.88262599]]</code></pre>
+			<p>In this example, we're generating a simple user-item interaction matrix and then performing Singular Value Decomposition (SVD) to factorize the matrix into user and item matrices. We're only keeping a specified number of latent factors (in this case, 2) to approximate the original matrix. The predicted user-item matrix is then calculated by multiplying the user and item matrices.</p>
 		  </div>
 		</div>
       </div>

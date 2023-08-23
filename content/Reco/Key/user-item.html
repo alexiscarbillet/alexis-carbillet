@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>User - Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="What is the influence of the user and items on a recommendation system?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, user, item">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="What is the influence of the user and items on a recommendation system?" />
+    <meta property="og:description" content="What is the influence of the user and items on a recommendation system?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Key/user-item.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Example</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +84,18 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">User - Item</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>In the intricate world of recommendation systems, the foundation lies in how users and items are represented. The effectiveness of a recommendation hinges on how well these entities are characterized and understood. Let's explore the essential aspects of user and item representation:</p>
+		  <p>Users are the driving force behind recommendation systems. Understanding their preferences, behaviors, and interactions is crucial for providing accurate suggestions. User profiles can encompass a variety of information, including demographic data, past interactions, search history, purchase history, and explicit preferences expressed through ratings or reviews. These profiles form the basis for tailoring recommendations to individual users.</p>
+		  <p>Items, on the other hand, can be anything from products, movies, songs, articles, or even friends in a social network. Capturing the essence of an item requires a thorough understanding of its characteristics. This is achieved through item features and descriptors, which could range from genre tags, content attributes, textual descriptions, release dates, and more. For instance, a movie could be characterized by its genre, director, lead actors, and user-generated tags.</p>
+		  <p>A powerful technique in recommendation systems is the use of embeddings. Embeddings are low-dimensional vector representations of users and items in a latent space. They capture the underlying relationships and patterns present in user-item interactions. Techniques like Word2Vec and matrix factorization are commonly used to generate these embeddings. By mapping users and items into this latent space, recommendation algorithms can effectively learn and leverage complex interactions.</p>
+		  <p>User and item information can be both categorical (e.g., genres, countries) and numerical (e.g., ratings, prices). Handling these different types of data requires preprocessing techniques. One-hot encoding, label encoding, and feature scaling are employed to transform and normalize the data, making it suitable for various recommendation algorithms.</p>
+		  <p>In many scenarios, recommendations can be enriched by considering contextual information. Contextual factors such as time of day, location, or even a user's mood can significantly influence their preferences. Incorporating contextual information into the representation of users and items can lead to more accurate and personalized recommendations.</p>
+		  <p>User preferences and item characteristics are not static; they evolve over time. Recommendation systems need to adapt to these changes. Techniques like matrix factorization with temporal dynamics or recurrent neural networks (RNNs) can capture the temporal aspects of user-item interactions, ensuring that recommendations stay relevant as users' tastes shift.</p>
+		  <p>In the realm of recommendation systems, user and item representation is the canvas upon which algorithms paint their suggestions. The art lies in capturing the essence of users and items in a way that enables accurate and personalized recommendations, enhancing user experiences and driving engagement.</p>
+		  <p>In the next section, we will delve into the various similarity and distance metrics that underpin the relationships between users and items, further enhancing our understanding of recommendation systems' inner workings.</p>
 		  </div>
 		</div>
       </div>
@@ -107,15 +109,69 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
+			<h2 class="section-heading text-uppercase">Example</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+			<pre><code>import gensim
+from gensim.models import Word2Vec
+import numpy as np
+
+# Sample user-item interactions
+interactions = [
+    ("user1", "item1"),
+    ("user1", "item2"),
+    ("user2", "item1"),
+    ("user3", "item2"),
+    ("user3", "item3"),
+    # ... more interactions
+]
+
+# Create Word2Vec model
+model = Word2Vec(interactions, vector_size=10, window=5, min_count=1, sg=1)
+
+# Sample users and items
+users = ["user1", "user2", "user3"]
+items = ["item1", "item2", "item3"]
+
+# Function to get user or item embeddings
+def get_embedding(entity):
+    try:
+        return model.wv[entity]
+    except KeyError:
+        return np.zeros(model.vector_size)  # Return zero vector for missing entities
+
+# Create user and item embeddings
+user_embeddings = {user: get_embedding(user) for user in users}
+item_embeddings = {item: get_embedding(item) for item in items}
+
+# Calculate similarity between a user and an item using cosine similarity
+def calculate_similarity(user_embedding, item_embedding):
+    return np.dot(user_embedding, item_embedding) / (np.linalg.norm(user_embedding) * np.linalg.norm(item_embedding))
+
+# Sample recommendation: Recommend items for a specific user
+target_user = "user1"
+recommended_items = []
+
+for item in items:
+    similarity = calculate_similarity(user_embeddings[target_user], item_embeddings[item])
+    recommended_items.append((item, similarity))
+
+# Sort recommended items based on similarity
+recommended_items = sorted(recommended_items, key=lambda x: x[1], reverse=True)
+
+# Print recommended items
+print(f"Recommended items for {target_user}:")
+for item, similarity in recommended_items:
+    print(f"{item} (Similarity: {similarity:.2f})")</code></pre>
+			<p>Results:</p>
+      <pre><code>item1 (Similarity: -0.11)
+item2 (Similarity: -0.21)
+item3 (Similarity: -0.37)</code></pre>
+			<p>In this example, we create embeddings for users and items using the Word2Vec model. We calculate the cosine similarity between the user and each item's embeddings to generate recommendations for a specific user.</p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
 		  </div>
 		</div>
       </div>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Data for recommendation systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to process data for recommendation systems?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, data">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="How to process data for recommendation systems?" />
+    <meta property="og:description" content="How to process data for recommendation systems?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Key/data.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Data for recommendation systems</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>In the realm of recommendation systems, data is the cornerstone upon which accurate and effective recommendations are built. Before delving into the intricacies of algorithms and models, it's crucial to understand the process of data collection and preprocessing – the foundation that empowers recommendation systems to understand user preferences and suggest relevant items.</p>
+		  <p>Recommendation systems thrive on the knowledge of user behavior. Collecting data about how users interact with items forms the bedrock of understanding their preferences and interests. In various domains, this data could encompass clicks, purchases, ratings, reviews, search queries, and even the amount of time spent engaging with content. Social interactions, such as likes, shares, and follows, are also valuable indicators that shed light on users' tastes.</p>
+		  <p>Types of Data Sources:</p>
+      <ul>
+        <li><B>Explicit Feedback</B>: This includes user-provided ratings, reviews, and numerical feedback.</li>
+        <li><B>Implicit Feedback</B>: Actions like clicks, views, and purchase history reveal implicit preferences.</li>
+        <li><B>Contextual Information</B>: Factors like location, device type, and time of day add depth to user profiles.</li>
+      </ul>
+		  <p>Raw data is often noisy, unstructured, and may contain missing values. Effective data preprocessing is essential to transform this raw data into a clean, organized format suitable for analysis. Several steps are involved in this crucial phase:</p>
+      <ul>
+        <li><B>Data Cleaning</B>: Identify and handle missing values, anomalies, and outliers. Data integrity is paramount for accurate recommendations.</li>
+        <li><B>Feature Extraction</B>: Extract relevant features from raw data. In text-based recommendations, this could involve extracting keywords or topics from textual content.</li>
+        <li><B>Normalization and Scaling</B>: Ensure that numerical data is on a consistent scale, preventing certain features from disproportionately influencing recommendations.</li>
+        <li><B>Encoding Categorical Data</B>: Convert categorical data (like genres, categories, or locations) into numerical values that algorithms can understand.</li>
+        <li><B>Dimensionality Reduction</B>: In high-dimensional spaces, reduce the complexity of data while retaining essential information. Techniques like Principal Component Analysis (PCA) can be beneficial.</li>
+      </ul>
+		  <p>Once the data is cleaned and transformed, recommendation systems create user profiles – a virtual representation of each user's preferences. These profiles capture the essence of a user's interactions, indicating the types of items they engage with most frequently. This profiling is pivotal for making personalized recommendations.</p>
+		  <p>Just as users are profiled, items are also represented in a structured manner. This involves encoding item attributes, such as genre, director, actors, or product features. The goal is to create a comprehensive representation that recommendation algorithms can leverage to understand item characteristics.</p>
+		  <p>In essence, the data collection and preprocessing phase is where recommendation systems lay the groundwork for understanding user behavior and item attributes. Accurate and insightful data processing forms the canvas upon which sophisticated algorithms paint their personalized recommendations, ultimately enhancing user experiences and driving engagement.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+        <p>Here's a simplified example in Python that demonstrates the data collection and preprocessing steps for a movie recommendation system using the MovieLens dataset. This dataset contains movie ratings and user interactions.</p>
+        <p>The MovieLens dataset is available for download on the official MovieLens website. The website provides various dataset options with different sizes and versions.</p>
+			<pre><code>import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+
+# Load MovieLens dataset (ratings and movie data)
+ratings = pd.read_csv('ratings.csv')
+movies = pd.read_csv('movies.csv')
+
+# Data Collection: User Interactions (Ratings)
+# Here, we have user IDs, movie IDs, and ratings as our raw data.
+# These interactions provide insight into user preferences.
+
+# Data Preprocessing: Cleaning and Transformation
+# Drop unnecessary columns and handle missing values
+ratings.drop(['timestamp'], axis=1, inplace=True)
+
+# Encode user and movie IDs
+user_encoder = LabelEncoder()
+movie_encoder = LabelEncoder()
+
+ratings['user_id'] = user_encoder.fit_transform(ratings['userId'])
+ratings['movie_id'] = movie_encoder.fit_transform(ratings['movieId'])
+
+# Normalize and Scale Numeric Data (Ratings)
+scaler = StandardScaler()
+ratings['rating_scaled'] = scaler.fit_transform(ratings[['rating']])
+
+# Data Preprocessing: User Profiling
+# Group by user ID and aggregate interactions
+user_profiles = ratings.groupby('user_id').agg({
+    'rating_scaled': 'mean',
+    'movie_id': 'count'
+}).reset_index()
+
+# Data Preprocessing: Item Representation
+# Merge movie data with user interactions
+movies_with_ratings = movies.merge(user_profiles, left_on='movieId', right_on='movie_id', how='left')
+
+# Drop missing values (movies with no interactions)
+movies_with_ratings.dropna(subset=['user_id'], inplace=True)
+
+# Normalize and Scale Numeric Data (User Profiles)
+scaler = StandardScaler()
+movies_with_ratings['rating_scaled'] = scaler.fit_transform(movies_with_ratings[['rating_scaled']])
+
+# Dimensionality Reduction: PCA for Item Representation
+pca = PCA(n_components=2)
+item_features = pca.fit_transform(movies_with_ratings[['rating_scaled', 'movie_id']])
+
+# Now you have user profiles and item representations ready for recommendation algorithms.
+# You can use user profiles and item features for collaborative filtering or content-based recommendations.
+
+# For demonstration purposes, let's assume you have a user and you want to recommend movies to them.
+# In a real system, you would use recommendation algorithms to generate suggestions.
+
+# Let's say your user ID is 500 (index of the user in user_profiles)
+user_id = 500
+
+# Get the user's profile
+user_profile = user_profiles[user_profiles['user_id'] == user_id]
+
+# Sample code for collaborative filtering recommendation
+# Find movies that similar users liked
+similar_users = user_profiles[user_profiles['user_id'] != user_id]
+similar_users['similarity'] = similar_users.apply(
+    lambda row: abs(row['rating_scaled'] - user_profile['rating_scaled']) +
+                abs(row['movie_id'] - user_profile['movie_id']),
+    axis=1
+)
+similar_users = similar_users.sort_values('similarity').head(10)
+
+# Get movie recommendations for the user
+recommended_movies = movies_with_ratings[movies_with_ratings['user_id'].isin(similar_users['user_id'])]
+
+# Print recommended movies
+print("Recommended Movies:")
+for index, row in recommended_movies.iterrows():
+  print(row['title'])</code></pre>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

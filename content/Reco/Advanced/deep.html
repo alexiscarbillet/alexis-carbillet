@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Deep learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="How to apply deep learning for recommendation systems?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, deep learning">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="How to apply deep learning for recommendation systems?" />
+    <meta property="og:description" content="How to apply deep learning for recommendation systems?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Advanced/deep.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +84,32 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Deep learning</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>In recent years, deep learning has emerged as a powerful approach in recommendation systems, revolutionizing the way we personalize content and make recommendations. Leveraging neural networks and complex architectures, deep learning methods have shown remarkable capabilities in capturing intricate patterns and representations from data. Let's explore how deep learning is applied in recommendation systems, along with its advantages and challenges.</p>
+		  <p>Neural Collaborative Filtering is a pioneering technique that combines the strengths of neural networks with collaborative filtering. Unlike traditional methods that rely on matrix factorization, NCF models directly learn the user-item interaction from data. This is achieved by designing neural network architectures that can capture both user and item embeddings simultaneously. The model is trained to predict user preferences or ratings, allowing it to provide accurate recommendations.</p>
+		  <p>Advantages of Deep Learning in Recommendation:</p>
+      <ul>
+        <li><B>Complex Patterns</B>: Deep learning models can learn intricate and nonlinear relationships between users and items, enabling them to capture subtle preferences and behaviors that might be missed by traditional approaches.</li>
+        <li><B>Feature Learning</B>: Deep learning allows automatic feature learning from raw data, reducing the need for manual feature engineering. This is particularly valuable when dealing with high-dimensional and unstructured data like text and images.</li>
+        <li><B>Cold Start Handling</B>: Deep learning models can help alleviate the cold start problem by learning meaningful representations even from limited data, enabling recommendations for new users and items.</li>
+        <li><B>Scalability</B>: Deep learning algorithms can be efficiently parallelized and scaled across distributed computing environments, making them suitable for handling large datasets and real-time recommendations.</li>
+      </ul>
+		  <p>Challenges and Considerations:</p>
+      <ul>
+        <li><B>Data Hunger</B>: Deep learning models often require large amounts of data to generalize effectively. Insufficient data can lead to overfitting and poor performance.</li>
+        <li><B>Complexity</B>: While deep learning models offer powerful capabilities, they are often more complex to design, train, and tune compared to traditional methods.</li>
+        <li><B>Interpretability</B>: Deep learning models can be less interpretable than simpler approaches, making it challenging to understand the rationale behind recommendations.</li>
+        <li><B>Resource Intensity</B>: Training deep learning models can be computationally intensive, requiring substantial processing power and memory.</li>
+      </ul>
+		  <p>Use Cases and Applications:</p>
+      <ul>
+        <li><B>Image and Video Recommendations</B>: Deep learning is well-suited for recommending visual content, such as movies, videos, and images, by analyzing visual features and patterns.</li>
+        <li><B>Textual Recommendations</B>: Natural language processing techniques combined with deep learning can be used to recommend articles, news, and textual content based on user interests.</li>
+        <li><B>Sequential Recommendations</B>: Recurrent neural networks (RNNs) and their variants are employed for sequential recommendations, such as predicting the next item a user is likely to interact with.</li>
+      </ul>
+		  <p>Deep learning has ushered in a new era of recommendation systems, allowing us to provide more accurate, personalized, and engaging recommendations to users. While it brings its own set of challenges, its potential to uncover hidden patterns and deliver superior user experiences is driving its adoption across various industries.</p>
 		  </div>
 		</div>
       </div>
@@ -107,15 +123,60 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+			<p>Here's a simplified example of how you might implement a Neural Collaborative Filtering (NCF) recommendation model using Python and the TensorFlow library:</p>
+      <pre><code>import numpy as np
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Embedding, Flatten, Concatenate, Dense
+from tensorflow.keras.models import Model
+from sklearn.model_selection import train_test_split
+
+# Generate synthetic data
+num_users = 1000
+num_items = 500
+embedding_size = 32
+data_size = 10000
+
+np.random.seed(42)
+user_ids = np.random.randint(0, num_users, data_size)
+item_ids = np.random.randint(0, num_items, data_size)
+ratings = np.random.randint(1, 6, data_size)
+
+# Split data into train and test sets
+train_user_ids, test_user_ids, train_item_ids, test_item_ids, train_ratings, test_ratings = train_test_split(
+    user_ids, item_ids, ratings, test_size=0.2, random_state=42
+)
+
+# Create user and item embeddings
+user_input = Input(shape=(1,))
+item_input = Input(shape=(1,))
+
+user_embedding = Embedding(num_users, embedding_size)(user_input)
+item_embedding = Embedding(num_items, embedding_size)(item_input)
+
+user_flatten = Flatten()(user_embedding)
+item_flatten = Flatten()(item_embedding)
+
+# Concatenate user and item embeddings
+concatenated = Concatenate()([user_flatten, item_flatten])
+
+# Neural Collaborative Filtering model
+hidden_layer = Dense(64, activation='relu')(concatenated)
+output_layer = Dense(1, activation='linear')(hidden_layer)
+
+model = Model(inputs=[user_input, item_input], outputs=output_layer)
+model.compile(loss='mean_squared_error', optimizer='adam')
+
+# Train the model
+model.fit([train_user_ids, train_item_ids], train_ratings, epochs=10, batch_size=64, verbose=2)
+
+# Evaluate the model
+test_loss = model.evaluate([test_user_ids, test_item_ids], test_ratings, verbose=0)
+print("Test Loss:", test_loss)</code></pre>
+			<p>Results:</p>
+      <pre><code>Test Loss: 2.330556869506836</code></pre>
 		  </div>
 		</div>
       </div>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Content-based</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="What is a content-based recommendation system? How to implement it in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, content-based">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="What is a content-based recommendation system? How to implement it in python?" />
+    <meta property="og:description" content="What is a content-based recommendation system? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Algos/content_based.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Content-based</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Content-Based Filtering is a popular recommendation approach that leverages the characteristics and features of both users and items to make personalized recommendations. Unlike collaborative filtering, which relies on the behavior and preferences of similar users, content-based filtering focuses on the inherent qualities of items and how well they match a user's preferences. Let's delve into the key concepts and workings of Content-Based Filtering:</p>
+		  <p>Content-based recommendation systems analyze the attributes and features of items to create user profiles and match them with suitable items. The process can be broken down into several steps:</p>
+      <ul>
+        <li><B>Feature Extraction</B>:</li>
+        <ul>
+          <li>Items are described using various attributes and features, which can include textual data (descriptions, titles, tags), numerical data (ratings, prices), and categorical data (genres, categories).</li>
+          <li>Textual data can be processed using natural language processing (NLP) techniques such as tokenization, stemming, and TF-IDF (Term Frequency-Inverse Document Frequency).</li>
+        </ul>
+        <li><B>Profile Creation</B>:</li>
+        <ul>
+          <li>Each user's historical interactions and preferences are combined with the attributes of items they've interacted with to build a user profile.</li>
+          <li>User profiles typically contain weighted feature vectors that represent the user's preferences.</li>
+        </ul>
+        <li><B>Matching and Recommendation</B>:</li>
+        <ul>
+          <li>To make recommendations, the system computes a similarity score between the user profile and the features of unexplored items.</li>
+          <li>Items with the highest similarity scores are recommended to the user.</li>
+        </ul>
+      </ul>
+		  <p>Content-Based Filtering offers several advantages:</p>*
+      <ul>
+        <li><B>Reduced Cold Start Problem</B>: Content-based approaches can provide recommendations to new users based on item attributes, mitigating the cold start problem.</li>
+        <li><B>Personalization</B>: Recommendations are tailored to the user's specific interests and preferences.</li>
+        <li><B>Transparency</B>: The recommendations are explainable, as they are based on the features of items and the user's interactions.</li>
+      </ul>
+		  <p>While Content-Based Filtering has its merits, there are certain challenges to be aware of:</p>
+      <ul>
+        <li><B>Limited Serendipity</B>: Since recommendations are based on existing preferences, users may miss out on discovering new and unexpected items.</li>
+        <li><B>Feature Engineering</B>: Designing effective item features and handling different types of data can be complex and resource-intensive.</li>
+        <li><B>Over-Specialization</B>: There's a risk of over-recommending items similar to those a user has already interacted with, leading to a lack of diversity.</li>
+      </ul>
+		  <p>Content-Based Filtering is widely employed in various industries:</p>
+      <ul>
+        <li><B>Music Streaming</B>: Platforms like Spotify use content-based approaches to recommend songs based on genre, artist, and user listening history.</li>
+        <li><B>Movie Recommendations</B>: Streaming services such as Netflix use content-based methods to suggest movies based on genre, director, actors, and plot keywords.</li>
+        <li><B>E-commerce</B>: Online retailers like Amazon use product attributes to recommend similar items to users based on their purchase history.</li>
+      </ul>
+		  <p>Content-Based Filtering is a powerful recommendation approach that takes advantage of item attributes to provide personalized recommendations to users. While it excels in certain scenarios, it's often combined with other methods, such as collaborative filtering, in hybrid recommendation systems to overcome its limitations and provide a well-rounded recommendation experience.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Examples</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>In this example, we'll create a basic content-based recommendation system for movies based on their genres.</p>
+      <pre><code>import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
+
+# Sample movie data with titles and genres
+movies = [
+    {'title': 'Movie A', 'genres': 'Action'},
+    {'title': 'Movie B', 'genres': 'Comedy'},
+    {'title': 'Movie C', 'genres': 'Action'},
+    {'title': 'Movie D', 'genres': 'Drama'},
+    {'title': 'Movie E', 'genres': 'Comedy'}
+]
+
+# Create a list of movie titles
+titles = [movie['title'] for movie in movies]
+
+# Create a TF-IDF vectorizer to transform genre data
+tfidf_vectorizer = TfidfVectorizer()
+
+# Fit and transform the genres using TF-IDF
+tfidf_matrix = tfidf_vectorizer.fit_transform([movie['genres'] for movie in movies])
+
+# Calculate the cosine similarity between movies
+cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
+
+# Function to get movie recommendations
+def get_recommendations(title, cosine_similarities, titles):
+    movie_index = titles.index(title)
+    similar_movies = list(enumerate(cosine_similarities[movie_index]))
+    similar_movies = sorted(similar_movies, key=lambda x: x[1], reverse=True)
+    similar_movies = similar_movies[1:]  # Exclude the selected movie itself
+    recommended_movies = [titles[index] for index, _ in similar_movies]
+    return recommended_movies
+
+# Example: Get recommendations for a movie
+selected_movie = 'Movie A'
+recommendations = get_recommendations(selected_movie, cosine_similarities, titles)
+
+print(f"Recommended movies for '{selected_movie}':")
+for i, movie in enumerate(recommendations, start=1):
+    print(f"{i}. {movie}")</code></pre>
+			<p>Results:</p>
+      <pre><code>Recommended movies for 'Movie A':
+1. Movie C
+2. Movie B
+3. Movie D
+4. Movie E</code></pre>
+			<p>In this example, we use the TF-IDF vectorizer to transform movie genres into numerical representations. Then, we calculate cosine similarities between movies based on their genre features. Finally, we define a function to get movie recommendations based on a selected movie.</p>
+			<p>Keep in mind that this is a very basic example. In a real-world scenario, you would use more complex features, consider multiple attributes, and possibly implement more advanced techniques for feature engineering and recommendation.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

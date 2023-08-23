@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>Recommendation system's mectrics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="Which metrics use for recommendation systems?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system, metric">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="Which metrics use for recommendation systems?" />
+    <meta property="og:description" content="Which metrics use for recommendation systems?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Key/metric.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +84,20 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">Gaussian Mixture</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>In the intricate world of recommendation systems, understanding the relationships between users and items lies at the heart of their effectiveness. This is where similarity and distance metrics come into play. These metrics provide the mathematical foundation for measuring the likeness or dissimilarity between different entities, enabling recommendation systems to make informed suggestions. Let's delve into the fascinating realm of similarity and distance metrics and see how they influence the magic of recommendations.</p>
+		  <p>Cosine similarity is a foundational metric used extensively in recommendation systems. Imagine representing users and items as vectors in a high-dimensional space, where each dimension corresponds to a certain characteristic or feature. Cosine similarity calculates the cosine of the angle between these vectors, indicating how closely aligned they are. A higher cosine similarity signifies greater similarity between two vectors.</p>
+		  <p>This metric is particularly suited for text-based recommendations and collaborative filtering. It excels in capturing semantic relationships, making it a popular choice when dealing with textual data or items with complex feature spaces.</p>
+		  <p>The Pearson correlation coefficient measures the linear relationship between two variables. In recommendation systems, it is often employed to determine how users' preferences correlate with each other. A positive correlation suggests similar tastes, while a negative correlation implies divergent preferences.</p>
+		  <p>While powerful, the Pearson correlation coefficient assumes that the data follows a linear pattern, which might not always be the case. Additionally, it doesn't handle scenarios where users rate items on different scales effectively.</p>
+		  <p>Euclidean distance, the straight-line distance between two points in a Euclidean space, is a fundamental metric for assessing similarity. In recommendation systems, it quantifies how "close" or "far" users and items are in the feature space. However, Euclidean distance is sensitive to the magnitude of the vectors, which can lead to inaccuracies when dealing with items that have varying scales.</p>
+		  <p>Jaccard similarity is a valuable tool for recommendation systems dealing with binary or categorical data. It calculates the size of the intersection divided by the size of the union of two sets. This metric is particularly useful when comparing user profiles or item attributes that can be represented as sets of characteristics.</p>
+		  <p>Manhattan distance, also known as the L1 distance, calculates the sum of absolute differences between corresponding dimensions of two vectors. It's a versatile metric used when features have different units of measurement or when the distribution of data is not well-suited to Euclidean distance.</p>
+		  <p>Recommendation systems often deal with sparse data, where users have interacted with only a fraction of the available items. In such cases, handling zero values and ensuring meaningful similarity calculations become crucial. Techniques like mean-centering and regularization help mitigate the impact of sparse data on similarity metrics.</p>
+      <p>Selecting the most appropriate similarity or distance metric depends on the nature of your data, the characteristics of your users and items, and the goals of your recommendation system. Experimentation and domain knowledge play a vital role in identifying the metric that resonates best with your specific scenario.</p>
+		  <p>In conclusion, similarity and distance metrics provide the mathematical foundation upon which recommendation systems build their insightful suggestions. By quantifying the relationships between users and items, these metrics empower recommendation algorithms to unveil hidden patterns and enhance user experiences.</p>
 		  </div>
 		</div>
       </div>
@@ -107,15 +111,36 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
+			<h2 class="section-heading text-uppercase">Examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
+			<p>Here's an example in Python that demonstrates how to calculate cosine similarity using the numpy library:</p>
+      <pre><code>import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Sample user-item matrix (rows represent users, columns represent items)
+user_item_matrix = np.array([
+    [5, 4, 0, 0, 1],
+    [0, 3, 4, 0, 2],
+    [2, 0, 1, 5, 0],
+    [0, 0, 5, 2, 3]
+])
+
+# Calculate cosine similarity using numpy and sklearn
+cosine_sim_matrix = cosine_similarity(user_item_matrix)
+
+# Display the cosine similarity matrix
+print("Cosine Similarity Matrix:")
+print(cosine_sim_matrix)</code></pre>
+      <p>Results:</p>
+      <pre><code>Cosine Similarity Matrix:
+[[1.         0.40114778 0.28171808 0.07509393]
+ [0.40114778 1.         0.1356127  0.7832178 ]
+ [0.28171808 0.1356127  1.         0.44426166]
+ [0.07509393 0.7832178  0.44426166 1.        ]]</code></pre>
+			<p>In this example, we start by importing the necessary libraries (numpy for numerical operations and cosine_similarity from sklearn for calculating cosine similarity). We create a sample user-item matrix where rows represent users and columns represent items, with each cell containing the user's rating for the corresponding item.</p>
+			<p>We then use cosine_similarity to calculate the cosine similarity between users based on their ratings for items. The resulting cosine_sim_matrix is a square matrix where each cell (i, j) represents the cosine similarity between user i and user j.</p>
+			<p>Remember that this example uses a simple user-item matrix for demonstration purposes. In real-world scenarios, you might be working with larger and more complex datasets, and you would likely preprocess the data and handle missing values appropriately before calculating similarity metrics.</p>
 		  </div>
 		</div>
       </div>

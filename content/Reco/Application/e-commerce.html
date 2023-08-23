@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: Object detection</title>
+    <title>E-commerce recommendation systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to use RetinaNet for image recognition?">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, RetinaNet, object detection">
+    <meta name="description" content="How are recommendation system used in e-commerce?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, recommendation system">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to use RetinaNet for image recognition?" />
-    <meta property="og:description" content="How to use RetinaNet for image recognition?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/AI/project4/project4.html" />
+    <meta property="og:title" content="How are recommendation system used in e-commerce?" />
+    <meta property="og:description" content="How are recommendation system used in e-commerce?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Reco/Application/e-commerce.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,17 +52,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			      <li class="nav-item">
+			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#ai">Main</a>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,16 +81,34 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project 4: Object detection</h2>
+			<h2 class="section-heading text-uppercase">E-commerce recommendation systems</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>What is object detection?</p>
-		  <p>Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.</p>
-		  <p>In this project, we will detect cells in images. Those were provided to me during a class at <a href="https://en.itmo.ru/">ITMO university</a>.</p>
-		  <p>The task was to use a Retinanet neural network in order to do onject detection. The objects were 10 classes of different kind of pollen.</p>
-		  <p>A <a href="bboxes.csv">csv</a> contains the path to the images while <a href="class_map.csv">another</a> had the class of the pollen class and its position. It was necessary to swap the columns of y and x axis in order to train correctly the neural network.</p>
-		  <p>The model used is named retinanet. RetinaNet is a one-stage object detection model that utilizes a focal loss function to address class imbalance during training. Focal loss applies a modulating term to the cross entropy loss in order to focus learning on hard negative examples. It was taken <a href="https://github.com/fizyr/keras-retinanet">there</a>.</p>
-      <p>This model has been trained on 2000 images with 40 epochs of 100 steps. The images can be download <a href="https://yadi.sk/d/_L1D4B_I3UyV2o/5-Lab">here</a>.</p>		  
+		  <p>In the world of online shopping, recommendation systems have revolutionized the way customers discover products and make purchasing decisions. E-commerce platforms leverage these systems to enhance user experience, increase sales, and build customer loyalty. Let's delve into how recommendation systems are applied in the realm of e-commerce and explore their impact on both businesses and consumers.</p>
+		  <p>E-commerce recommendation systems are designed to assist users in finding products that align with their preferences and needs. These systems operate by analyzing user behaviors, historical purchase data, and item attributes to generate personalized product suggestions. Here's how they work:</p>
+      <ul>
+        <li><B>User Profiling</B>: Recommendation systems create user profiles based on their browsing history, search queries, previous purchases, and interactions on the platform.</li>
+        <li><B>Item Attributes</B>: Product descriptions, categories, reviews, and other attributes are used to represent items in the system.</li>
+        <li><B>Collaborative Filtering</B>: By comparing user behaviors and preferences, collaborative filtering recommends products that similar users have shown interest in.</li>
+        <li><B>Content-Based Filtering</B>: This approach suggests products based on the characteristics and attributes of items that a user has previously interacted with or purchased.</li>
+        <li><B>Hybrid Approaches</B>: E-commerce platforms often combine collaborative and content-based techniques to provide more accurate and diverse recommendations.</li>
+      </ul>
+		  <p>E-commerce recommendation systems offer several advantages for both businesses and customers:</p>
+      <ul>
+        <li><B>Improved User Engagement</B>: Personalized product recommendations keep users engaged by helping them discover relevant items quickly.</li>
+        <li><B>Increased Conversion Rates</B>: Recommendations encourage users to explore and purchase additional products, boosting conversion rates and revenue.</li>
+        <li><B>Enhanced Customer Satisfaction</B>: Users feel understood and valued when they receive tailored suggestions, leading to higher customer satisfaction and loyalty.</li>
+        <li><B>Cross-Selling and Upselling</B>: Recommendation systems suggest complementary and higher-priced items, effectively promoting cross-selling and upselling.</li>
+        <li><B>Reduced Decision Fatigue</B>: With the vast array of products available, recommendation systems simplify the decision-making process for users.</li>
+      </ul>
+		  <p>Several e-commerce giants have successfully implemented recommendation systems to drive their businesses:</p>
+      <ul>
+        <li>Amazon: Amazon's recommendation engine analyzes user behavior and purchase history to generate personalized product suggestions, contributing to a significant portion of their sales.</li>
+        <li>Netflix: While primarily known for entertainment recommendations, Netflix's personalized content suggestions have become a crucial part of its user experience.</li>
+        <li>Alibaba: Alibaba's e-commerce platforms use recommendation systems to tailor product suggestions to individual users, leading to increased user engagement and sales.</li>
+      </ul>
+		  <p>Despite their successes, e-commerce recommendation systems face challenges such as the "filter bubble" effect (limiting exposure to diverse content) and data privacy concerns. Future developments might involve incorporating social signals, real-time user interactions, and advanced deep learning techniques for more accurate recommendations.</p>
+		  <p>In conclusion, e-commerce recommendation systems have reshaped the way we shop online, providing a win-win scenario for both businesses and consumers. These systems continue to evolve, offering exciting possibilities for the future of online shopping experiences.</p>
 		  </div>
 		</div>
       </div>
@@ -101,27 +116,6 @@
 
 <!-- ======================================================================= -->
 
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-        <p class="section-subheading">Here are presented some results from the object detection. On the right is the class detected and on the left the probability that this object is from this class. Below, are the result from the images 0 & 612:</p>
-        <img src="img/results/obj1.PNG" alt="" width="50%" style="padding-right: 10%;">
-        <img src="img/results/obj3.PNG" alt="" width="40%">
-        <p class="section-subheading">They are 3 different kind of pollen. The probability that is object is from this class is written at the top of the square containing the object detected.</p>
-			<p>You can find the code used for this project <a href="code.ipynb">here</a> as a python notebook.</p>
-      <p>To go further in the comprehension of the neural network used, you can read <a href="https://paperswithcode.com/method/retinanet">this</a>.</p>
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
 
 <!-- ========================== CONTACT SECTION ============================== -->
 
