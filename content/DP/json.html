@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to preprocess json for machine learning?">
+    <meta name="keywords" content="alexis carbillet, carbillet, supervised machine learning, artificial intelligence, python, json">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="JSON" />
+    <meta property="og:description" content="How to preprocess json for machine learning?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/DP/json.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">JSON</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#blog">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">JSON</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>A JSON (JavaScript Object Notation) file is a lightweight data interchange format used for storing and exchanging data between a server and a client, or between different parts of an application. JSON files are easy for humans to read and write and easy for machines to parse and generate. The main features of a JSON file include:</p>
+      <ul>
+        <li><B>Data Structure</B>: JSON files primarily consist of key-value pairs. Each key is a string enclosed in double quotation marks, followed by a colon, and then a corresponding value. The value can be a string, number, object, array, boolean, or null.</li>
+        <pre><code>{
+    "name": "John Doe",
+    "age": 30,
+    "isStudent": false,
+    "hobbies": ["reading", "painting"],
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "zipcode": "12345"
+    }
+}</code></pre>
+        <li><B>Nested Structures</B>: JSON allows nesting of objects and arrays within each other to create complex data structures. In the example above, the "address" field is an object containing its own key-value pairs.</li>
+        <li><B>Arrays</B>: JSON supports arrays, which are ordered lists of values enclosed in square brackets. Arrays can contain values of different data types, including other arrays and objects.</li>
+        <pre><code>"scores": [85, 92, 78, 95]</code></pre>
+        <li><B>Data Types</B>: JSON supports various data types, including:</li>
+        <ul>
+          <li>Strings: Enclosed in double quotation marks.</li>
+          <li>Numbers: Integer or floating-point values.</li>
+          <li>Booleans: "true" or "false".</li>
+          <li>Null: Represented by "null".</li>
+          <li>Objects: Enclosed in curly braces and consist of key-value pairs.</li>
+          <li>Arrays: Ordered lists of values enclosed in square brackets.</li>
+        </ul>
+        <li><B>Readability</B>: JSON is human-readable and easy to understand, making it useful for configuration files, data storage, and API responses.</li>
+        <li><B>Interoperability</B>: JSON is supported by a wide range of programming languages, making it a common choice for data exchange between different systems.</li>
+        <li><B>Lightweight</B>: JSON is a lightweight format that doesn't include excessive metadata, making it efficient for data transfer.</li>
+        <li><B>No Functions or Code</B>: JSON is a data format, not a programming language. It doesn't support functions, executable code, or comments (though some JSON parsers may allow comments as an extension).</li>
+        <li><B>Unicode Support</B>: JSON supports Unicode characters, allowing it to represent text in various languages and character sets.</li>
+        <li><B>No Circular References</B>: JSON does not support circular references in its data structures, which can be a limitation in some cases.</li>
+        <li><B>Easy to Parse</B>: JSON can be easily parsed and generated using standard libraries in most programming languages.</li>
+      </ul>
+		  <p>Overall, JSON is a versatile and widely used data format due to its simplicity, readability, and compatibility with a wide range of programming languages and applications. It is commonly used for configuration files, web APIs, and data storage.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>Preprocessing data from a JSON file for training a machine learning algorithm in Python typically involves several steps, depending on the nature of your data and the specific requirements of your machine learning task. Below are the general steps you can follow:</p>
+      <ul>
+        <li><B>Load Data</B>: Load the data from the JSON file into a Python data structure. You can use the `json` module in Python to parse the JSON file into a dictionary or list, depending on the structure of your data.</li>
+        <pre><code>import json
+
+with open('data.json', 'r') as json_file:
+    data = json.load(json_file)</code></pre>
+        <li><B>Data Cleaning</B> (if needed): Inspect the data for missing values, outliers, or any inconsistencies. Depending on your dataset, you may need to perform data cleaning operations like imputing missing values or removing outliers.</li>
+        <li><B>Feature Extraction</B>: Extract relevant features from the JSON data. Feature extraction depends on the type of data you have. If your JSON data represents structured information, you may need to flatten it into a tabular format or perform feature engineering to create meaningful input features for your machine learning model.</li>
+        <li><B>Data Transformation</B>: Convert categorical variables to numerical representations using techniques like one-hot encoding or label encoding. Normalize or standardize numerical features if needed.</li>
+        <li><B>Data Splitting</B>: Split your preprocessed data into training, validation, and test sets. The training set is used to train your machine learning model, the validation set is used for hyperparameter tuning and model selection, and the test set is used to evaluate the model's performance.</li>
+        <li><B>Feature Scaling</B>: Apply feature scaling if your algorithm is sensitive to the scale of the features. Common scaling methods include Min-Max scaling or Standardization (mean normalization).</li>
+        <li><B>Data Augmentation</B> (if applicable): For certain types of data, like images or text, you may perform data augmentation to increase the size of your training dataset and improve model generalization. Data augmentation techniques can include random cropping, rotation, or adding noise.</li>
+        <li><B>Save Preprocessed Data</B> (optional): If you plan to reuse the preprocessed data or want to share it with others, you can save it in a suitable format, such as NumPy arrays or CSV files.</li>
+        <li><B>Model Training</B>: Train your machine learning model using the preprocessed data.</li>
+        <li><B>Model Evaluation</B>: Evaluate the model's performance using the test set and appropriate evaluation metrics (e.g., accuracy, precision, recall, F1-score, etc.).</li>
+        <li><B>Hyperparameter Tuning</B> (optional): Fine-tune your model's hyperparameters using the validation set to optimize its performance.</li>
+        <li><B>Model Deployment</B> (if applicable): Once you have a trained and validated model, you can deploy it for inference on new data.</li>
+      </ul>
+      <p>The specific preprocessing steps and techniques will vary depending on your dataset and the type of machine learning algorithm you are using. It's important to tailor your preprocessing steps to the characteristics and requirements of your data and model.</p>
+      </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../me.html"><img class="mx-auto rounded-circle" src="../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
