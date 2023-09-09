@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Introduction to functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Introduction to functions in python">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, functions">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Introduction to functions in python" />
+    <meta property="og:description" content="Introduction to functions in python. How to use them?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Python/functions/intro.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#py">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Introduction to functions</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Functions are blocks of reusable code that perform a specific task. They are essential for breaking down complex programs into smaller, manageable components, improving code organization, reusability, and maintainability. Here's a detailed explanation of the concept of functions and their importance in code organization:</p>
+		  <p>A function in programming is like a mini-program within your main program. It encapsulates a set of statements that perform a particular task. Functions take input parameters (arguments), process them, and optionally return a result. Functions are defined with a name, a list of parameters, and a block of code to execute.</p>
+		  <p>Why are functions important for the code organization?</p>
+      <ul>
+        <li><B>Modularity</B>: Functions promote modularity by allowing you to divide your code into smaller, manageable units. Each function is responsible for a specific task, making the codebase easier to understand and work with.</li>
+        <li><B>Reusability</B>: Once you define a function, you can use it multiple times throughout your program without rewriting the same code. This reusability saves time and effort and reduces the likelihood of errors.</li>
+        <li><B>Abstraction</B>: Functions provide an abstraction layer, allowing you to use a function's functionality without needing to understand its internal implementation. This separation of concerns simplifies the overall program logic.</li>
+        <li><B>Readability</B>: Well-named functions with clear purposes make your code self-documenting. Reading code becomes easier when you encounter functions with meaningful names that convey their intent.</li>
+        <li><B>Testing and Debugging</B>: Smaller functions are easier to test and debug than larger, monolithic pieces of code. Isolating a specific function's behavior makes it simpler to identify and fix issues.</li>
+        <li><B>Collaboration</B>: Functions facilitate collaboration in team environments. Team members can work on separate functions without interfering with each other's work.</li>
+        <li><B>Code Maintenance</B>: Functions enhance code maintainability. If a change is needed, you can modify a single function instead of searching through a large block of code.</li>
+        <li><B>Encapsulation</B>: Functions allow you to encapsulate complex logic, reducing the need to understand the details when using the function.</li>
+      </ul>
+		  <p>Here's a simple example of defining and using a function in Python:</p>
+      <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+user_name = "Alice"
+greeting = greet(user_name)
+print(greeting)  # Output: "Hello, Alice!"</code></pre>
+		  <p>In this example:</p>
+      <ul>
+        <li>We define a function named greet that takes a single parameter name.</li>
+        <li>The function's docstring (enclosed in triple quotes) provides a brief description of what the function does.</li>
+        <li>Inside the function, we create a greeting message using string formatting.</li>
+        <li>The return statement is used to send the greeting message back to the caller.</li>
+        <li>We call the greet function with the argument "Alice" and store the returned value in the message variable.</li>
+        <li>Finally, we print the message.</li>
+      </ul>
+		  <p>In summary, functions are fundamental building blocks of well-organized, maintainable code. They enable you to encapsulate logic, reuse code, and create a structured, modular design that simplifies development and enhances collaboration.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

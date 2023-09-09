@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Tips</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Tips for writing a python script">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, tips">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Python tips" />
+    <meta property="og:description" content="Tips for writing a python script" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Python/practices/tips.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#py">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python tips</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Writing clean and readable code is crucial for maintaining and collaborating on projects. Here are some tips to help you achieve this:</p>
+      <ul>
+        <li><B>Use Descriptive Names</B>:</li>
+        <ul>
+          <li>Choose meaningful names for variables, functions, classes, and modules.</li>
+          <li>Avoid single-letter variable names except in specific cases (e.g., loop counters).</li>
+          <li>Use underscores to separate words in variable and function names (snake_case).</li>
+        </ul>
+        <li><B>Follow PEP 8 Guidelines</B>:</li>
+        <ul>
+          <li>PEP 8 is the official style guide for Python code. Adhering to its conventions makes your code more consistent and readable.</li>
+          <li>Use proper indentation (4 spaces per level).</li>
+          <li>Keep lines under 79 characters (or 72 for docstrings and comments).</li>
+        </ul>
+        <li><B>Write Modular Code</B>:</li>
+        <ul>
+          <li>Break down your code into small, reusable functions and classes.</li>
+          <li>Each function or class should have a single responsibility.</li>
+        </ul>
+        <li><B>Use Meaningful Comments</B>:</li>
+        <ul>
+          <li>Comment your code to explain complex logic, assumptions, or potential gotchas.</li>
+          <li>Avoid unnecessary comments that state the obvious.</li>
+        </ul>
+        <li><B>Keep Functions Short</B>:</li>
+        <ul>
+          <li>Aim for functions that fit on a single screen (around 10-20 lines).</li>
+          <li>If a function is too long, consider refactoring it into smaller functions.</li>
+        </ul>
+        <li><B>Distinguish Between Related Blocks</B>:</li>
+        <ul>
+          <li>Use blank lines to separate sections of code that perform different tasks.</li>
+          <li>Use comments to indicate the purpose of each section.</li>
+        </ul>
+        <li><B>Avoid Magic Numbers</B>:</li>
+        <ul>
+          <li>Instead of using constants directly in your code, assign them to variables with meaningful names.</li>
+        </ul>
+        <li><B>Consistent Formatting</B>:</li>
+        <ul>
+          <li>Be consistent with your formatting, spacing, and naming conventions throughout the codebase. </li>
+        </ul>
+        <li><B>Use Whitespace Wisely</B>:</li>
+        <ul>
+          <li>Add whitespace to improve code readability.</li>
+          <li>Use whitespace to separate logical blocks within functions.</li>
+        </ul>
+        <li><B>Don't Repeat Yourself</B> (DRY):</li>
+        <ul>
+          <li>Avoid duplicating code. Instead, refactor repetitive code into functions or classes.</li>
+        </ul>
+        <li><B>Limit the Use of Global Variables</B>:</li>
+        <ul>
+          <li>Minimize the use of global variables. Instead, pass variables as function arguments.</li>
+        </ul>
+        <li><B>Plan and Organize</B>:</li>
+        <ul>
+          <li>Plan your code structure before you start writing.</li>
+          <li>Use comments or docstrings to outline the structure of a module or class.</li>
+        </ul>
+        <li><B>Unit Tests</B>:</li>
+        <ul>
+          <li>Write unit tests to ensure the correctness of your code.</li>
+          <li>Unit tests also serve as documentation for how your code is expected to work.</li>
+        </ul>
+        <li><B>Refactor Regularly</B>:</li>
+        <ul>
+          <li>Refactor your code as you go to improve its structure and readability.</li>
+          <li>Regular refactoring helps prevent the accumulation of technical debt.</li>
+        </ul>
+        <li><B>Readability Over Cleverness</B>:</li>
+        <ul>
+          <li>Prioritize code readability over writing clever, complex code.</li>
+          <li>Simple and clear code is easier to maintain and understand.</li>
+        </ul>
+        <li><B>Version Control and Commits</B>:</li>
+        <ul>
+          <li>Use version control (e.g., Git) to keep track of changes and collaborate with others.</li>
+          <li>Write meaningful commit messages that explain the purpose of each change.</li>
+        </ul>
+      </ul>
+		  <p>Remember that writing clean and readable code is not just for others; it's for your future self as well. Clear code reduces the time spent debugging and maintaining, leading to a more enjoyable and productive coding experience.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

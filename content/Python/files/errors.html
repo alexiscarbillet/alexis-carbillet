@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Errors handling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to handle errors in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, errors">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Errors handling" />
+    <meta property="og:description" content="How to handle errors in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Python/files/errors.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#py">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Errors handling</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Exceptions are events that occur during the execution of a program that disrupt the normal flow of code. They typically arise due to errors in the code or external factors like invalid user input or system failures. Python provides a robust mechanism for handling exceptions using the "try", "except", and "finally" blocks.</p>
+      <ul>
+        <li>1. <B>"try", "except", and "finally" Blocks</B>:</li>
+        <p>The "try" block is used to enclose the code that might raise an exception. The "except" block is used to handle specific exceptions that might occur in the "try" block. The "finally" block is used to specify code that should be executed regardless of whether an exception occurred.</p>
+        <li>2. <B>Handling Exceptions with try and except</B>:</li>
+        <pre><code>try:
+    # Code that might raise an exception
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Division by zero error occurred.")</code></pre>
+        <p>In this example, the code within the "try" block attempts to perform a division by zero, which would raise a "ZeroDivisionError". The "except" block catches this exception and prints an error message.</p>
+        <li>3. <B>Handling Multiple Exceptions</B>:</li>
+        <p>You can use multiple except blocks to handle different types of exceptions.</p>
+        <pre><code>try:
+    # Code that might raise exceptions
+    value = int("not_an_integer")
+except ValueError:
+    print("ValueError occurred: Invalid conversion.")
+except ZeroDivisionError:
+    print("ZeroDivisionError occurred: Division by zero.")</code></pre>
+        <li>4. <B>Handling All Exceptions</B>:</li>
+        <p>You can use a generic except block without specifying the exception type to catch all exceptions. However, it's generally recommended to catch specific exceptions whenever possible to handle errors more precisely.</p>
+        <pre><code>try:
+    # Code that might raise an exception
+    result = 10 / 0
+except Exception as e:
+    print(f"An exception occurred: {e}")</code></pre>
+        <li>5. <B>Using "else" with "try" and "except"</B>:</li>
+        <p>You can use the "else" block after the "except" block to specify code that should run if no exceptions occur.</p>
+        <pre><code>try:
+    # Code that might raise an exception
+    result = 10 / 2
+except ZeroDivisionError:
+    print("Division by zero error occurred.")
+else:
+    print("No exceptions occurred.")</code></pre>
+        <li>6. <B>Using "finally" for Cleanup</B>:</li>
+        <p>The "finally" block is used to define code that should be executed regardless of whether an exception occurred.</p>
+        <pre><code>try:
+    # Code that might raise an exception
+    result = 10 / 2
+except ZeroDivisionError:
+    print("Division by zero error occurred.")
+finally:
+    print("Cleanup code: This will always be executed.")</code></pre>
+        <p>The "finally" block is often used for cleanup tasks like closing files or releasing resources.</p>
+        <li>7. <B>Raising Exceptions</B>:</li>
+        <p>You can manually raise exceptions using the "raise" statement. This can be useful when you want to handle specific conditions.</p>
+        <pre><code>try:
+    x = -1
+    if x < 0:
+        raise ValueError("Negative value not allowed.")
+except ValueError as e:
+    print(f"An exception occurred: {e}")</code></pre>
+      </ul>
+		  <p>Python's exception handling mechanism allows you to gracefully handle errors and exceptions, making your code more robust and user-friendly. By using "try", "except", and "finally" blocks, you can control the behavior of your program when exceptions occur and ensure that necessary cleanup operations are performed.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

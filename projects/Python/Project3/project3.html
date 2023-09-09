@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Web scrapping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to do web scrapping with python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, web scrapping">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Web scrapping" />
+    <meta property="og:description" content="How to do web scrapping with python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Python/Project3/project3.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Web scrapping</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Web scraping, also known as web harvesting or web data extraction, is the process of automatically extracting information from websites. This can involve collecting data from web pages, such as text, images, links, and other structured content, for various purposes such as data analysis, research, or creating a database. Here are some key aspects to consider when it comes to web scraping:</p>
+      <ul>
+        <li><B>HTTP Requests</B>*: Web scraping starts with sending HTTP requests to a website's server. You typically use libraries or tools like Python's requests or Scrapy to make these requests.</li>
+        <li><B>HTML Parsing</B>: Once you receive a response from the website, you need to parse the HTML content to extract the data you're interested in. Libraries like BeautifulSoup in Python can help with this.</li>
+        <li><B>Selectors</B>: Selectors are used to pinpoint specific elements in the HTML, such as headings, paragraphs, tables, or links, that you want to scrape. CSS selectors and XPath expressions are common tools for this purpose.</li>
+        <li><B>Data Extraction</B>: Extracting data involves locating and capturing the desired information. This may involve iterating through a list of items on a webpage, following links to other pages, or using regular expressions to match patterns within the HTML.</li>
+        <li><B>Robots.txt</B>: Websites may have a "robots.txt" file that specifies which parts of the site are off-limits to web crawlers. It's important to respect these rules to avoid legal issues.</li>
+        <li><B>Rate Limiting</B>: Web scraping can put a strain on a website's server. It's essential to implement rate limiting to avoid overloading the server and potentially getting blocked. Respect the website's terms of service.</li>
+        <li><B>User Agents</B>: When making requests, you can specify a user-agent header to mimic the behavior of a web browser. This can help you avoid being identified as a scraper.</li>
+        <li><B>Data Storage</B>: Decide how you want to store the scraped data. Common options include saving it to a database, writing it to a CSV or JSON file, or even pushing it to a cloud service.</li>
+        <li><B>Error Handling</B>: Web scraping can be fragile because websites often change their structure. Implement error handling to gracefully handle situations where the expected data is not found or the website's layout has changed.</li>
+        <li><B>Legal and Ethical Considerations</B>: Be aware of the legal and ethical aspects of web scraping. Some websites explicitly prohibit scraping in their terms of service. Always respect the website's terms and policies, and consider the ethical implications of scraping, especially if you plan to use the data commercially.</li>
+        <li><B>APIs</B>: Sometimes, websites provide APIs (Application Programming Interfaces) that offer structured access to their data. Using APIs is often a more reliable and ethical way to access web data when available.</li>
+        <li><B>Proxy Servers</B>: To avoid IP blocking, you can use proxy servers to make requests through different IP addresses.</li>
+      </ul>
+		  <p>Web scraping is a powerful tool but should be used responsibly and ethically. It's crucial to understand the legal and ethical boundaries and to ensure your scraping activities do not disrupt or harm the target website. Always check a website's terms of service and robots.txt file, and consider contacting the website owner if you plan to scrape large amounts of data or use it for commercial purposes.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>Here's a step-by-step example:</p>
+      <pre><code>import requests
+from bs4 import BeautifulSoup
+
+# URL of the BBC Technology section
+url = 'https://www.bbc.co.uk/news/technology'
+
+# Send an HTTP GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Parse the HTML content of the page
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    # Find all the articles on the page
+    articles = soup.find_all('div', class_='gs-c-promo')
+    
+    # Loop through the articles and extract the title and URL
+    for article in articles:
+        # Extract the title
+        title = article.find('h3').get_text()
+        
+        # Extract the URL
+        url = article.find('a', class_='gs-c-promo-heading')['href']
+        
+        # Print the title and URL
+        print(f'Title: {title}')
+        print(f'URL: https://www.bbc.co.uk{url}')
+        print()
+else:
+    print(f'Error: Unable to fetch the page. Status code: {response.status_code}')</code></pre>
+			<p>This script sends an HTTP GET request to the BBC Technology section page, scrapes the titles and URLs of the latest articles, and prints them to the console. Please note that web scraping might break if the website's structure changes, so this example may need adjustments in the future. Always be mindful of the website's terms of service and policies when scraping data.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>HTTP Requests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to do http requests with python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, http, request">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="HTTP Requests" />
+    <meta property="og:description" content="How to do http requests with python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Python/Project2/project2.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">HTTP requests</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>The Requests library is a popular Python library for making HTTP requests. It simplifies the process of sending HTTP requests and handling HTTP responses, making it easier for developers to interact with web services and APIs. Requests is widely used in the Python community and is known for its simplicity and ease of use.</p>
+		  <p>Here are some key features and concepts related to the Requests library:</p>
+      <ul>
+        <li>HTTP Methods: Requests supports various HTTP methods, including GET, POST, PUT, DELETE, and more. You can use these methods to interact with web resources based on your specific needs.</li>
+        <li>HTTP Headers: You can set custom headers in your HTTP requests, which is useful for passing information like authentication tokens, user agents, and content types.</li>
+        <li>URL Parameters: You can include URL parameters in your requests to send additional data to the server when making a GET request. The params parameter in the Requests library allows you to do this easily.</li>
+        <li>Request Data: When making POST or PUT requests, you can send data in the request body. Requests supports sending data as form data, JSON, or any other format you need.</li>
+        <li>Authentication: Requests supports various authentication methods, including Basic Authentication, OAuth, and API keys. You can set authentication credentials in your requests using built-in features.</li>
+        <li>Session Management: Requests allows you to create and manage sessions, which can be useful for persisting cookies and other session-related data across multiple requests to the same server.</li>
+        <li>Response Handling: You can easily access the response data, including the HTTP status code, headers, and content. Requests also provides convenient methods for parsing JSON and handling other common response formats.</li>
+        <li>Error Handling: Requests can raise exceptions for various HTTP errors, making it easy to handle errors gracefully in your code.</li>
+      </ul>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<p>Let's use the "JSONPlaceholder" API as an example. JSONPlaceholder is a free fake online REST API for testing and prototyping. It provides various endpoints for typical CRUD (Create, Read, Update, Delete) operations on resources like posts, users, and comments. You can access this API at <a href="https://jsonplaceholder.typicode.com">jsonplaceholder.typicode.com</a>.</p>
+			<p>In this example, we'll make a GET request to retrieve a list of posts and then a POST request to create a new post using the Requests library in Python:</p>
+      <pre><code>import requests
+
+# Define the base URL for the JSONPlaceholder API
+base_url = "https://jsonplaceholder.typicode.com"
+
+# Perform a GET request to retrieve a list of posts
+response = requests.get(f"{base_url}/posts")
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Parse the JSON response
+    posts = response.json()
+    print("List of posts:")
+    for post in posts:
+        print(f"Title: {post['title']}, ID: {post['id']}")
+else:
+    print("Failed to retrieve posts with status code:", response.status_code)
+
+# Define a new post to create
+new_post = {
+    "userId": 1,
+    "title": "New Post Title",
+    "body": "This is the body of the new post."
+}
+
+# Perform a POST request to create a new post
+post_response = requests.post(f"{base_url}/posts", json=new_post)
+
+# Check if the post request was successful (status code 201)
+if post_response.status_code == 201:
+    created_post = post_response.json()
+    print("\nNewly created post:")
+    print(f"Title: {created_post['title']}, ID: {created_post['id']}")
+else:
+    print("Failed to create a new post with status code:", post_response.status_code)</code></pre>
+			<p>In this example:</p>
+      <ul>
+        <li>We perform a GET request to retrieve a list of posts from the JSONPlaceholder API.</li>
+        <li>If the GET request is successful (status code 200), we parse the JSON response and print the titles and IDs of the retrieved posts.</li>
+        <li>Then, we define a new post as a Python dictionary.</li>
+        <li>We perform a POST request to create a new post on the API, passing the new_post dictionary as JSON data.</li>
+        <li>If the POST request is successful (status code 201), we parse the JSON response and print the title and ID of the newly created post.</li>
+      </ul>
+			<p>You can explore other API endpoints and perform various CRUD operations using the Requests library with the JSONPlaceholder API or any other API of your choice.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>

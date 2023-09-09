@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Sorting algorithms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to implement sorting algorithms in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python, sorting">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Sorting algorithms" />
+    <meta property="og:description" content="How to implement sorting algorithms in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Python/Project1/project1.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			      <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Sorting algorithm</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>There are several main sorting algorithms, each with its own characteristics and advantages. Here are some of the most commonly used sorting algorithms:</p>
+      <ul>
+        <li><B>Bubble Sort</B>: Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the entire list is sorted. It is simple but not very efficient, especially for large lists.</li>
+        <li><B>Selection Sort</B>: Selection Sort divides the list into two parts: the sorted and the unsorted. It repeatedly selects the smallest (or largest) element from the unsorted portion and moves it to the end of the sorted portion. Like Bubble Sort, it has poor performance for large lists.</li>
+        <li><B>Insertion Sort</B>: Insertion Sort builds the final sorted array one item at a time. It iterates through the list, removing one element at a time and finding the correct position to insert it into the sorted portion of the list. It performs well for small lists.</li>
+        <li><B>Merge Sort</B>: Merge Sort is a divide-and-conquer algorithm that divides the list into smaller sublists, sorts each sublist, and then merges them back together. It is efficient and stable but requires additional memory space for the merging step.</li>
+        <li><B>Quick Sort</B>: Quick Sort is another divide-and-conquer algorithm that selects a 'pivot' element and partitions the list into two sublists: elements less than the pivot and elements greater than the pivot. It then recursively sorts the sublists. Quick Sort is usually faster than Merge Sort and is often used for large datasets.</li>
+        <li><B>Heap Sort</B>: Heap Sort uses a binary heap data structure to build a sorted array. It repeatedly removes the maximum (or minimum) element from the heap and adds it to the sorted array. It has a time complexity of O(n log n) and is not very memory-intensive.</li>
+        <li><B>Radix Sort</B>: Radix Sort is a non-comparative sorting algorithm that works on integers or strings by processing individual digits (or characters) of the elements. It has linear time complexity and is particularly efficient for sorting large integers or strings.</li>
+        <li><B>Counting Sort</B>: Counting Sort is an integer sorting algorithm that works well when the range of input values is small. It counts the frequency of each value in the input and uses this information to construct the sorted output.</li>
+        <li><B>Bucket Sort</B>: Bucket Sort divides the input into a fixed number of buckets, distributes the elements into these buckets, sorts each bucket individually (using another sorting algorithm or recursively using Bucket Sort), and then concatenates the sorted buckets.</li>
+        <li><B>Tim Sort</B>: Tim Sort is a hybrid sorting algorithm derived from Merge Sort and Insertion Sort. It is designed to perform well on many kinds of real-world data and is the default sorting algorithm in many programming languages and libraries.</li>
+      </ul>
+		  <p>The choice of which sorting algorithm to use depends on the specific characteristics of your data and the requirements of your application. Here are some guidelines on when to use each sorting algorithm based on their strengths and weaknesses:</p>
+      <ul>
+        <li>Bubble Sort, Selection Sort, and Insertion Sort:</li>
+        <ul>
+          <li>Use these sorting algorithms for small datasets where simplicity of implementation is more important than efficiency.</li>
+          <li>They are not suitable for large datasets or when performance is a critical factor.</li>
+        </ul>
+        <li>Merge Sort:</li>
+        <ul>
+          <li>Use Merge Sort when you need a stable and efficient sorting algorithm.</li>
+          <li>It's suitable for both small and large datasets and performs consistently well.</li>
+        </ul>
+        <li>Quick Sort:</li>
+        <ul>
+          <li>Quick Sort is a good choice for general-purpose sorting, especially for larger datasets.</li>
+          <li>It can be faster than Merge Sort due to its smaller constant factors.</li>
+          <li>However, it may not perform well on nearly sorted data, which can lead to worst-case time complexity.</li>
+        </ul>
+        <li>Heap Sort:</li>
+        <ul>
+          <li>Heap Sort is efficient and can be a good choice for situations where additional memory space is limited.</li>
+          <li>It has a consistent O(n log n) time complexity but may have a larger constant factor compared to Quick Sort.</li>
+        </ul>
+        <li>Radix Sort:</li>
+        <ul>
+          <li>Use Radix Sort when you need to sort integers or strings with fixed-length representations.</li>
+          <li>It has a linear time complexity and can be very efficient for specific data types.</li>
+        </ul>
+        <li>Counting Sort and Bucket Sort:</li>
+        <ul>
+          <li>These sorting algorithms are suitable when the range of input values is small and known in advance.</li>
+          <li>Counting Sort is particularly efficient for integers, while Bucket Sort can work well for various data types.</li>
+        </ul>
+        <li>Tim Sort:</li>
+        <ul>
+          <li>Tim Sort is a robust choice for general-purpose sorting when you're unsure about the characteristics of your data.</li>
+          <li>It performs well on both small and large datasets, making it a popular default choice in many programming languages.</li>
+        </ul>
+      </ul>
+		  <p>In summary, the choice of a sorting algorithm should be based on your specific use case, considering factors such as the size of the dataset, the distribution of data, memory constraints, and any stability or performance requirements. It's often a good idea to analyze your data and benchmark different sorting algorithms to determine which one best meets your needs.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Examples</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+        <p>Here are implementations of each of the sorting algorithms mentioned:</p>
+        <ul>
+          <li>Bubble Sort:</li>
+          <pre><code>def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print("Bubble Sorted array is:", arr)</code></pre>
+          <li>Selection Sort:</li>
+          <pre><code>def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+selection_sort(arr)
+print("Selection Sorted array is:", arr)</code></pre>
+          <li>Insertion Sort:</li>
+        <pre><code>def insertion_sort(arr):
+  for i in range(1, len(arr)):
+      key = arr[i]
+      j = i - 1
+      while j >= 0 and key < arr[j]:
+          arr[j + 1] = arr[j]
+          j -= 1
+      arr[j + 1] = key
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+insertion_sort(arr)
+print("Insertion Sorted array is:", arr)</code></pre>
+        <li>Merge Sort:</li>
+        <pre><code>def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left_half = arr[:mid]
+        right_half = arr[mid:]
+
+        merge_sort(left_half)
+        merge_sort(right_half)
+
+        i = j = k = 0
+
+        while i < len(left_half) and j < len(right_half):
+            if left_half[i] < right_half[j]:
+                arr[k] = left_half[i]
+                i += 1
+            else:
+                arr[k] = right_half[j]
+                j += 1
+            k += 1
+
+        while i < len(left_half):
+            arr[k] = left_half[i]
+            i += 1
+            k += 1
+
+        while j < len(right_half):
+            arr[k] = right_half[j]
+            j += 1
+            k += 1
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+merge_sort(arr)
+print("Merge Sorted array is:", arr)</code></pre>
+          <li>Quick Sort:</li>
+          <pre><code>def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quick_sort(less_than_pivot) + [pivot] + quick_sort(greater_than_pivot)
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+arr = quick_sort(arr)
+print("Quick Sorted array is:", arr)</code></pre>
+          <li>Heap Sort:</li>
+          <pre><code>def heapify(arr, n, i):
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+
+    if left < n and arr[left] > arr[largest]:
+        largest = left
+
+    if right < n and arr[right] > arr[largest]:
+        largest = right
+
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+        heapify(arr, n, largest)
+
+def heap_sort(arr):
+    n = len(arr)
+
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+
+# Example usage:
+arr = [64, 34, 25, 12, 22, 11, 90]
+heap_sort(arr)
+print("Heap Sorted array is:", arr)</code></pre>
+          <li>Radix Sort:</li>
+          <pre><code>def counting_sort(arr, exp):
+    n = len(arr)
+    output = [0] * n
+    count = [0] * 10
+
+    for i in range(n):
+        index = arr[i] // exp
+        count[index % 10] += 1
+
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+
+    i = n - 1
+    while i >= 0:
+        index = arr[i] // exp
+        output[count[index % 10] - 1] = arr[i]
+        count[index % 10] -= 1
+        i -= 1
+
+    for i in range(n):
+        arr[i] = output[i]
+
+def radix_sort(arr):
+    max_value = max(arr)
+    exp = 1
+
+    while max_value // exp > 0:
+        counting_sort(arr, exp)
+        exp *= 10
+
+# Example usage:
+arr = [170, 45, 75, 90, 802, 24, 2, 66]
+radix_sort(arr)
+print("Radix Sorted array is:", arr)</code></pre>
+          <li>Counting Sort:</li>
+          <pre><code>def counting_sort(arr):
+    max_value = max(arr)
+    min_value = min(arr)
+    range_of_elements = max_value - min_value + 1
+    count = [0] * range_of_elements
+    output = [0] * len(arr)
+
+    for i in range(len(arr)):
+        count[arr[i] - min_value] += 1
+
+    for i in range(1, range_of_elements):
+        count[i] += count[i - 1]
+
+    for i in range(len(arr) - 1, -1, -1):
+        output[count[arr[i] - min_value] - 1] = arr[i]
+        count[arr[i] - min_value] -= 1
+
+    for i in range(len(arr)):
+        arr[i] = output[i]
+
+# Example usage:
+arr = [4, 2, 2, 8, 3, 3, 1]
+counting_sort(arr)
+print("Counting Sorted array is:", arr)</code></pre>
+          <li>Bucket Sort:</li>
+          <pre><code>def bucket_sort(arr):
+    max_value = max(arr)
+    min_value = min(arr)
+    range_of_elements = max_value - min_value + 1
+    bucket_count = [0] * range_of_elements
+    output = []
+
+    for num in arr:
+        bucket_count[num - min_value] += 1
+
+    for i in range(range_of_elements):
+        if bucket_count[i] > 0:
+            output.extend([i + min_value] * bucket_count[i])
+
+    for i in range(len(arr)):
+        arr[i] = output[i]
+
+# Example usage:
+arr = [4, 2, 2, 8, 3, 3, 1]
+bucket_sort(arr)
+print("Bucket Sorted array is:", arr)</code></pre>
+          <li>Tim Sort:</li>
+          <p>Tim Sort is a complex algorithm and is typically available as a built-in sorting method in most programming languages, including Python.</p>
+          <pre><code>arr = [64, 34, 25, 12, 22, 11, 90]
+arr = sorted(arr)
+print("Tim Sorted array is:", arr)</code></pre>
+        </ul>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+    <section  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted">I hope this article was useful to you. Do not hesitate to contact me if you have questions or suggestions.</h3>
+          </div>
+		</div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 mx-auto text-center">
+            <div class="team-member">
+             <a href="../../../me.html"><img class="mx-auto rounded-circle" src="../../../img/creator/alexis_carbillet.png" alt="alexis carbillet"></a>
+              <a href="../../../me.html"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">Data scientist</p>
+			  <!-- Add icon library -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:alexis.carbillet@mines-ales.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet/?locale=en_US">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+            <span class="copyright" >Copyright &copy; 2019 - 2023</span>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
