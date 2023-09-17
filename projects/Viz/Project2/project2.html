@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 2: load_diabetes study</title>
+    <title>Data Visualization Good practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to visualize the load_diabetes dataset?">
-    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, load_diabetes">
+    <meta name="description" content="What are the good practices in data visualization?">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, good practices">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="How to visualize the load_diabetes dataset?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project2/project2.html" />
+    <meta property="og:title" content="What are the good practices in data visualization?" />
+    <meta property="og:description" content="What are the good practices in data visualization?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project7/project7.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -32,7 +32,7 @@
     <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
-	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/projects/Viz/Project7/project7.html" />
 
 
   </head>
@@ -54,9 +54,6 @@
           <ul class="navbar-nav text-uppercase ml-auto">
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -84,86 +81,26 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">load_diabetes study</h2>
+			<h2 class="section-heading text-uppercase">Good practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>The load_diabetes dataset is one of the built-in datasets provided by scikit-learn, a popular machine learning library in Python. It contains ten baseline variables and a quantitative measure of disease progression one year after baseline for 442 diabetes patients. This dataset is often used for regression analysis and is particularly suitable for evaluating and benchmarking regression algorithms.</p>
-		  <p>Here are the details of the load_diabetes dataset:</p>
-		  <p>1. <B>Data Source</B>: The data was collected by Bradley Efron, Trevor Hastie, Iain Johnstone, and Robert Tibshirani for their research paper "Least Angle Regression" published in The Annals of Statistics in 2004.</p>
-		  <p>2. <B>Features (Baseline Variables)</B>: The dataset consists of ten numeric baseline variables, which serve as input features for the regression analysis. These features are:</p>
-		  <p>- Age: Age in years.</p>
-		  <p>- Sex: Gender (0 for female, 1 for male).</p>
-		  <p>- Body Mass Index (BMI): A measure of body fat based on height and weight.</p>
-		  <p>- Average Blood Pressure: Mean arterial blood pressure.</p>
-		  <p>- S1, S2, S3, S4, S5, S6: Six blood serum measurements.</p>
-      <p>3. <B>Target Variable (Disease Progression)</B>: The target variable, also known as the response or dependent variable, is a quantitative measure of disease progression one year after the baseline. This variable is used for regression, where the goal is to predict the progression of the disease based on the input features.</p>
-		  <p>4. <B>Number of Instances</B>: The dataset contains a total of 442 instances (patients).</p>
-		  <p>5. <B>Data Format</B>: The data is provided as a NumPy array, where each row represents an instance (patient), and each column corresponds to a different feature or the target variable.</p>
-		  <p>6. <B>Task</B>: The typical task associated with this dataset is regression. The objective is to build a regression model that can predict the disease progression value for new patients given their baseline measurements.</p>
-      <p>7. <B>Usage</B>: The load_diabetes dataset is often used for educational and research purposes in regression-related studies. It is also commonly used as a benchmark dataset to evaluate the performance of regression algorithms and machine learning models.</p>
-		  <p>Let's look at a code example of how to load and examine the load_diabetes dataset using scikit-learn:</p>
-			<pre><code><p>
-from sklearn.datasets import load_diabetes
-
-# Load the diabetes dataset
-diabetes = load_diabetes()
-
-# Accessing the features and target variables
-data = diabetes.data
-target = diabetes.target
-
-# Print the shape of the data and target arrays
-print("Data Shape:", data.shape)
-print("Target Shape:", target.shape)
-			</p></code></pre>
-      <p>When you run this code, you will see that the "data" array has dimensions (442, 10), representing 442 instances with 10 baseline features each, and the "target" array has dimensions (442,), representing the disease progression values for each patient.</p>
-      <p>I recommend using a scatter plot matrix (also known as a pair plot) for visualization.</p>
-      <p>A scatter plot matrix is a grid of scatter plots where each variable is plotted against every other variable, displaying the relationship between pairs of variables. Each point in the scatter plot represents a data point, and the position of the point in each plot corresponds to the value of that data point for the two variables being compared.</p>
-      <p>Here's why a scatter plot matrix is a suitable choice for the load_diabetes dataset:</p>
-      <p>1. <B>Multiple Relationships</B>: The dataset has ten features, and a scatter plot matrix allows you to visualize the relationships between each pair of features simultaneously. This enables you to identify potential patterns or correlations between variables more efficiently.</p>
-      <p>2. <B>Continuous Data</B>: Since the load_diabetes dataset contains continuous variables (age, BMI, blood pressure, etc.), scatter plots are well-suited for showing the distribution and correlation between continuous data points.</p>
-      <p>3. <B>Identifying Trends and Outliers</B>: Scatter plots are excellent for identifying trends, clusters, or any potential outliers in the data. Outliers in the scatter plots can indicate data points that deviate significantly from the overall pattern and may require further investigation.</p>
-      <p>4. <B>Correlation Analysis</B>: Scatter plots allow you to visually assess the strength and direction of the relationship between pairs of variables. A positive correlation would show a general upward trend, while a negative correlation would show a downward trend.</p>
-      <p>5. <B>Easy Interpretation</B>: Scatter plots are intuitive and easy to understand, making them useful for communicating insights to a broader audience.</p>
+        <p>Good practices in data visualization help ensure that your visual representations effectively communicate insights and information to your audience. Here are some key principles to keep in mind when creating data visualizations:</p>
+        <p>1. <B>Know your audience</B>: Understand who will be viewing your visualization and what they are looking to gain from it. Tailor the design and complexity to match the audience's knowledge and interests.</p>
+        <p>2. <B>Choose the right chart type</B>: Select a chart that best represents the relationships and patterns in your data. Common chart types include bar charts, line charts, scatter plots, pie charts, and heatmaps.</p>
+        <p>3. <B>Simplify and declutter</B>: Avoid unnecessary elements and minimize clutter in your visualizations. Each element should contribute to conveying the message clearly.</p>
+        <p>4. <B>Use appropriate colors</B>: Choose a color scheme that enhances understanding and doesn't distract from the data. Use colors consistently and purposefully to highlight important information.</p>
+        <p>5. <B>Provide context</B>: Include axis labels, titles, and legends to give context to your visualization and help users interpret the data correctly.</p>
+        <p>6. <B>Highlight key insights</B>: Use visual cues like annotations, callouts, and data labels to draw attention to important findings in your data.</p>
+        <p>7. <B>Maintain consistency</B>: Maintain a consistent style and format throughout your visualization to create a cohesive and professional look.</p>
+        <p>8. <B>Use meaningful scales</B>: Ensure that your axes and scales are appropriate and meaningful for the data being presented. Avoid misleading scaling that distorts the representation of data.</p>
+        <p>9. <B>Keep it accessible</B>: Ensure that your visualization is accessible to all users, including those with visual impairments. Provide alternative text for images and use patterns and textures in addition to colors to convey information.</p>
+        <p>10. <B>Test and iterate</B>: Review your visualization with colleagues or target users to gather feedback and make improvements. Iterative design helps create more effective visuals.</p>
+        <p>11. <B>Avoid 3D effects</B>: 3D effects can distort the perception of data and make it harder to interpret. Stick to 2D representations unless there's a compelling reason to use 3D.</p>
+        <p>12. <B>Use proper data labels and units</B>: Clearly label data points and use appropriate units for your measurements. Misleading labels can lead to confusion and misinterpretation.</p>
+        <p>13. <B>Provide interactivity when necessary</B>: Interactive elements can enhance user engagement and enable users to explore data further. However, ensure that interactivity adds value and doesn't overwhelm the visualization.</p>
+        <p>14. <B>Tell a story</B>: Organize your data visualization to tell a coherent and compelling story. Guide the viewer through the data to convey a clear message or insight.</p>
+        <p>Remember that good data visualization is not just about aesthetics; it's about effectively conveying information, insights, and patterns in the data in a way that is easy to understand and interpret.</p>
       </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<p>To create a scatter plot matrix, you can use the pairplot function from the Seaborn library, which provides an easy way to create the matrix and handles the visualization details for you.</p>
-			<p>Here's an example code snippet to create a scatter plot matrix for the load_diabetes dataset:</p>
-      <pre><code>
-import seaborn as sns
-import pandas as pd
-from sklearn.datasets import load_diabetes
-import matplotlib.pyplot as plt
-
-# Load the dataset
-data = load_diabetes()
-df = pd.DataFrame(data.data, columns=data.feature_names)
-
-# Add the target column to the DataFrame
-df['target'] = data.target
-
-# Create a scatter plot matrix
-sns.pairplot(df, diag_kind='kde')
-plt.show()  # This will display the plot in the notebook
-      </code></pre>
-      <img src="img/result.png" alt="scatter plot matrix load_diabetes" width="90%">
-			<p>In this code, we load the dataset, convert it to a pandas DataFrame, and then use Seaborn's pairplot function to create the scatter plot matrix. The "diag_kind='kde'" argument adds kernel density estimation plots on the diagonal, which gives us smooth representations of the univariate distributions for each variable.</p>
-			<p>By analyzing the scatter plot matrix, you can gain valuable insights into the relationships between the features and how they may impact the target variable, which, in this case, is the progression of diabetes disease.</p>
-		  </div>
 		</div>
       </div>
     </section>

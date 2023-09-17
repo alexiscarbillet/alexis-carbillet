@@ -118,8 +118,7 @@
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
       <p>To create the scatter plot, you can use Python's popular data visualization libraries, such as Matplotlib or Seaborn. Here's an example using Matplotlib:</p>
-			<pre><code><p>
-import matplotlib.pyplot as plt
+			<pre><code>import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 
 # Load the iris dataset
@@ -134,8 +133,7 @@ plt.xlabel('Sepal Length (cm)')
 plt.ylabel('Sepal Width (cm)')
 plt.title('Scatter Plot of Iris Dataset')
 plt.colorbar(label='Class', ticks=[0, 1, 2], format=plt.FuncFormatter(lambda val, _: iris.target_names[val]))
-plt.show()
-			</p></code></pre>
+plt.show()</code></pre>
 			<p>Result:</p>
       <img src="img/result.png" alt="scatter plot load_iris">
 			<p>In this example, we used the first two features (sepal length and sepal width) for the scatter plot. You can modify the code to visualize other combinations of features or use different plots for more advanced analyses, but the scatter plot serves as a good starting point to understand the dataset's structure and relationships.</p>

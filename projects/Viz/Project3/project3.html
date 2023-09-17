@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 3: load_digits study</title>
+    <title>Usage of colors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to visualize the load_digits dataset?">
-    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, load_digits">
+    <meta name="description" content="How to use efficently colors in data visualization?">
+    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, good practices">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to visualize the load_digits dataset?" />
-    <meta property="og:description" content="How to visualize the load_digits dataset?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project3/project3.html" />
+    <meta property="og:title" content="How to use efficently colors in data visualization?" />
+    <meta property="og:description" content="How to use efficently colors in data visualization?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project8/project8.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -32,7 +32,7 @@
     <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
-	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/projects/Viz/Project8/project8.html" />
 
 
   </head>
@@ -54,9 +54,6 @@
           <ul class="navbar-nav text-uppercase ml-auto">
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -84,100 +81,56 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">load_digits study</h2>
+			<h2 class="section-heading text-uppercase">Good practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>The load_digits dataset from scikit-learn contains a collection of images representing handwritten digits. It is often used as a classic dataset for testing and demonstrating various machine learning algorithms, particularly those in the field of image classification.</p>
-		  <p>Here are the details of the load_digits dataset:</p>
-		  <p>1. <B>Data</B>: The dataset contains a total of 1,797 samples (images) of handwritten digits from 0 to 9. Each sample is an 8x8 grayscale image, resulting in a total of 64 features (pixels) per image. Each pixel value represents the grayscale intensity of the corresponding pixel, ranging from 0 (black) to 16 (white). The data is stored as a 2D array where each row corresponds to an individual sample, and each column represents a specific pixel in the image.</p>
-		  <p>2. <B>Target</B>: For each image (sample) in the dataset, there is a corresponding target label indicating the actual digit it represents. The target values are integers ranging from 0 to 9, representing the digits 0 to 9, respectively.</p>
-		  <p>3. <B>Classes</B>: The load_digits dataset has ten distinct classes, each representing one of the ten digits (0 to 9). The classes are balanced, meaning that the dataset contains an equal number of samples for each digit.</p>
-		  <p>4. <B>Application</B>: The load_digits dataset is often used for various purposes, including:</p>
-		  <p>- <B>Image Classification</B>: The main use case is to build and test machine learning models that can accurately classify the handwritten digits in the images into their respective classes (0 to 9).</p>
-		  <p>- <B>Dimensionality Reduction</B>: Since the dataset has 64 features (pixels), it is also used to demonstrate dimensionality reduction techniques like PCA (Principal Component Analysis) to visualize and reduce the data to a lower-dimensional space.</p>
-		  <p>- <B>Clustering</B>: The dataset can also be used for clustering algorithms to group similar digits together without using the class labels.</p>
-      <p>5. <B>Sample Code</B>: Here's an example of how to load and explore the load_digits dataset using scikit-learn:</p>
-		  <pre><code>
-from sklearn.datasets import load_digits
-import matplotlib.pyplot as plt
-
-# Load the digits dataset
-digits = load_digits()
-
-# Data and target
-data = digits.data
-target = digits.target
-
-# Number of samples and features
-num_samples, num_features = data.shape
-
-# Classes
-classes = digits.target_names
-
-# Example: Display the first image and its label
-plt.figure(figsize=(4, 4))
-plt.imshow(data[0].reshape(8, 8), cmap='gray')
-plt.title(f"Label: {target[0]}")
-plt.axis('off')
-plt.show()
-      </code></pre>
-      <img src="img/explore.png">
-      <p>The above code loads the load_digits dataset, accesses the data, target labels, and other information, and displays the first image along with its corresponding label.</p>
-		  <p>In summary, the load_digits dataset is a collection of grayscale images of handwritten digits with corresponding labels, making it a valuable resource for experimenting with image classification and other machine learning tasks.</p>
-      <p>I would recommend using a scatter plot with dimensionality reduction techniques such as Principal Component Analysis (PCA) or t-SNE (t-Distributed Stochastic Neighbor Embedding).</p>
-		  <p>Here's why:</p>
-		  <p>1. <B>Scatter Plot</B>: A scatter plot is a versatile visualization that can effectively display relationships and patterns in multidimensional data. Each data point in the plot represents an image of a hand-written digit, and the plot's axes can be used to represent different features or dimensions of the dataset.</p>
-      <p>2. <B>Dimensionality Reduction</B>: The load_digits dataset has 64 dimensions (8x8 pixels per image), making it difficult to visualize directly. Dimensionality reduction techniques like PCA or t-SNE can compress the high-dimensional data into a lower-dimensional space while preserving important patterns and relationships. This allows us to visualize the data in a more manageable and meaningful way.</p>
-		  <p>- <B>PCA</B>: Principal Component Analysis is a linear dimensionality reduction technique that identifies the most important features or principal components in the data. It projects the data onto a lower-dimensional space, where each principal component captures a significant amount of the data's variance.</p>
-		  <p>- <B>t-SNE</B>: t-Distributed Stochastic Neighbor Embedding is a nonlinear dimensionality reduction technique that is particularly useful for visualizing complex, nonlinear patterns in the data. t-SNE focuses on preserving the local relationships between data points, making it effective for clustering and discovering hidden structures.</p>
-      <p>By applying either PCA or t-SNE to the load_digits dataset and then creating a scatter plot using the reduced dimensions, we can gain insights into the distribution and clustering of the hand-written digits. This visualization approach allows us to explore the dataset and observe patterns or groupings that may exist among the different digits.</p>
-		  </div>
-		</div>
+        <p>Colors play a crucial role in data visualization for several reasons:</p>
+        <p>1. <B>Data differentiation</B>: Colors help distinguish different data categories or groups, making it easier for viewers to understand the patterns and relationships within the data. When data points are represented using different colors, it allows the audience to quickly recognize and interpret the information.</p>
+        <p>2. <B>Highlighting patterns and trends</B>: By using colors effectively, you can draw attention to specific data points, trends, or outliers. Color-coded visualizations make it easy to spot highs and lows, clusters, or other significant patterns in the data.</p>
+        <p>3. <B>Enhancing comprehension</B>: Colors aid in conveying complex information in a visually appealing and easily understandable manner. They can make large datasets more accessible, enabling viewers to comprehend the data quicker and better.</p>
+        <p>4. <B>Facilitating comparison</B>: When comparing multiple datasets or elements, colors provide a visual cue that aids in the understanding of relationships and contrasts between data points. This makes it easier to make data-driven decisions.</p>
+        <p>5. <B>Emotional impact</B>: Colors have psychological associations and can evoke emotions or convey specific meanings. By strategically using colors, data visualizations can create an emotional impact on the audience, making the information more memorable and engaging.</p>
+        <p>6. <B>Accessibility and inclusivity</B>: While using colors in data visualization is essential, it is also crucial to consider accessibility for color-blind individuals. Designing visualizations with color palettes that are distinguishable for people with various types of color blindness ensures inclusivity and broader comprehension.</p>
+        <p>7. <B>Storytelling</B>: Colors can help enhance the narrative aspect of data visualizations. By using a consistent color scheme throughout the visualization, you can reinforce the story you are trying to tell and guide the audience's attention to the most critical aspects of the data.</p>
+        <p>8. <B>Brand identity</B>: In some cases, data visualizations are used in reports, presentations, or dashboards associated with a particular brand or organization. Using brand colors can reinforce the identity and create a cohesive look and feel for the data presentation.</p>
+        <p>In summary, colors in data visualization not only make visualizations aesthetically appealing but also serve as powerful tools for data exploration, communication, and storytelling. Proper use of colors can greatly enhance the effectiveness and impact of data visualizations on the audience.</p>
+        <p>The choice of colors in data visualization depends on the specific context, the type of data being represented, and the goals of the visualization. Here are some general guidelines on when to use each color:</p>
+        <p>1. <B>Categorical data</B>:</p>
+        <p>- Use a different color for each category to distinguish between groups or classes.</p>
+        <p>- Avoid using colors with similar hues for adjacent categories to prevent confusion.</p>
+        <p>- Use colors that are easily distinguishable, especially for color-blind individuals.</p>
+        <p>2. <B>Sequential data</B> (e.g., numerical data with a natural order, such as temperature):</p>
+        <p>- Use a sequential color scheme that transitions from one color to another to represent low to high values.</p>
+        <p>- Consider using a color scale with color intensity or saturation to indicate the magnitude of the data.</p>
+        <p>3. <B>Diverging data</B> (e.g., data with a midpoint or critical value, like positive and negative values):</p>
+        <p>- Use a diverging color scheme with a neutral color at the midpoint and different colors for positive and negative extremes.</p>
+        <p>- Ensure that the color choices effectively highlight the critical point and the divergence in the data.</p>
+        <p>4. <B>Highlighting data points</B>:</p>
+        <p>- Use contrasting colors to highlight specific data points, outliers, or important elements in the visualization.</p>
+        <p>- Colors like red or bright orange can draw attention to critical information.</p>
+        <p>5. <B>Avoid using too many colors</B>:</p>
+        <p>- Limit the number of colors used in a visualization to avoid overwhelming the audience.</p>
+        <p>- If dealing with a large number of categories or data points, consider grouping similar items and using a color palette with fewer distinct colors.</p>
+        <p>6. <B>Color and context</B>:</p>
+        <p>- Consider the context in which the visualization will be presented. For instance, a corporate report might require more conservative and brand-aligned colors, while an infographic could benefit from vibrant and attention-grabbing colors.</p>
+        <p>7. <B>Accessibility and inclusivity</B>:</p>
+        <p>- Ensure that the chosen colors are accessible to color-blind individuals.</p>
+        <p>- Test your color choices using color-blind simulation tools to ensure readability and distinction.</p>
+        <p>8. <B>Avoid using color alone for critical information:</B></p>
+        <p>- In some cases, color may not be visible (e.g., when printed in grayscale or viewed on monochromatic displays). Always ensure that important information is also conveyed through labels, annotations, or other means.</p>
+        <p>In all cases, the key is to use colors purposefully and with a clear understanding of the underlying data and the message you want to convey. Harmonious color choices enhance the visualization's effectiveness, making it easier for the audience to interpret and act upon the information presented.</p>
+        <p>In data visualization, certain colors are more commonly used due to their effectiveness in conveying information and ensuring accessibility. Here are some of the frequently used colors and the reasons behind their popularity:</p>
+        <p>1. <B>Blue</B>: Blue is one of the most widely used colors in data visualization. It is often associated with trust, stability, and calmness. Blue is considered a safe choice for visualizations as it tends to be well-received by most people and works well in various contexts. It is commonly used to represent neutral or baseline data, making it suitable for background elements or less critical information.</p>
+        <p>2. <B>Green</B>: Green is often used to represent positive or good data points, growth, or success. It is associated with nature and health, making it a popular choice for visualizations related to environmental or health-related data.</p>
+        <p>3. <B>Red</B>: Red is frequently used to represent negative or critical data points, warnings, or alerts. It can draw immediate attention and is often used for highlighting important information or outliers.</p>
+        <p>4. <B>Yellow</B>: Yellow is used to represent caution or warning. It can be effective in drawing attention to specific elements, but it should be used sparingly due to its potential to cause eye strain or readability issues.</p>
+        <p>5. <B>Orange</B>: Orange is a warm color that is associated with energy and enthusiasm. It is often used to represent moderate values or to add contrast to blue-dominated visualizations.</p>
+        <p>6. <B>Purple</B>: Purple is associated with luxury, creativity, and sophistication. It is sometimes used for highlighting specific data points or as a secondary color in more complex visualizations.</p>
+        <p>7. <B>Gray</B>: Gray is commonly used for background elements, grids, or less important information. It provides a neutral and subdued backdrop that allows other colors to stand out.</p>
+        <p>8. <B>White</B>: White is often used for backgrounds or to create negative space in visualizations. It provides a clean and minimalist look, allowing the data to take center stage.</p>
+        <p>9. <B>Black</B>: Black is used sparingly for text, annotations, or to represent negative aspects. Its strong contrast can make it suitable for adding emphasis to specific elements.</p>
+        <p>The reasons these colors are more commonly used include their psychological associations, accessibility for most users, and their effectiveness in representing different types of data and scenarios. However, it's essential to remember that the best color choices depend on the specific data, the intended message, and the target audience. Additionally, adhering to color theory principles and considering accessibility for color-blind users is crucial in creating effective and inclusive data visualizations.</p>
       </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code>import matplotlib.pyplot as plt
-from sklearn.datasets import load_digits
-from sklearn.decomposition import PCA
-
-# Load the digits dataset
-digits = load_digits()
-X, y = digits.data, digits.target
-
-# Apply PCA to reduce the dimensions to 2
-pca = PCA(n_components=2)
-X_pca = pca.fit_transform(X)
-
-# Create a scatter plot
-plt.figure(figsize=(10, 8))
-plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap='viridis', edgecolors='k')
-plt.colorbar(label='Digit Label', ticks=range(10))
-plt.xlabel('Principal Component 1')
-plt.ylabel('Principal Component 2')
-plt.title('PCA Scatter Plot of load_digits Dataset')
-plt.show()</code></pre>
-      <img src="img/result.png">
-			<p>Explanation of the code:</p>
-			<p>First, we import the necessary libraries: matplotlib for plotting, load_digits from sklearn.datasets to load the dataset, and PCA from sklearn.decomposition for dimensionality reduction.</p>
-			<p>We load the digits dataset using load_digits() and store the features in X and the labels in y.</p>
-			<p>Next, we create a PCA object with n_components=2 to reduce the dimensions of the data to 2. The 2D representation will allow us to visualize the data points in a scatter plot.</p>
-			<p>We apply the PCA transformation to the data using pca.fit_transform(X) and store the result in X_pca.</p>
-			<p>Now, we create the scatter plot using matplotlib. We use the first and second principal components (X_pca[:, 0] and X_pca[:, 1]) as the x and y coordinates, respectively. The c=y argument assigns a different color to each digit label, making it easier to differentiate between different digits. The cmap='viridis' argument sets the colormap, and edgecolors='k' adds black edges to the data points for better visibility.</p>
-      <p>The plt.colorbar() adds a colorbar on the side of the plot, showing the mapping of colors to digit labels.</p>
-			<p>Finally, we set labels for the axes and add a title to the plot. The plt.show() function displays the scatter plot.</p>
-			<p>Running this code will generate a scatter plot that visualizes the load_digits dataset in 2D after applying PCA for dimensionality reduction. Each point in the plot corresponds to an image of a hand-written digit, with different colors representing different digit labels. This visualization will help you observe the distribution and clustering of the digits in the dataset.</p>
-		  </div>
 		</div>
       </div>
     </section>

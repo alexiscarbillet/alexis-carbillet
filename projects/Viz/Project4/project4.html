@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project 4: load_linnerud study</title>
+    <title>3D visualization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to visualize the load_linnerud dataset?">
-    <meta name="keywords" content="alexis carbillet, carbillet, data visualization, python, load_linnerud">
+    <meta name="description" content="How to do 3D visualization in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, 3D visualization, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="How to visualize the load_linnerud dataset?" />
-    <meta property="og:description" content="How to visualize the load_linnerud dataset?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project4/project4.html" />
+    <meta property="og:title" content="How to do 3D visualization in python?" />
+    <meta property="og:description" content="How to do 3D visualization in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Viz/Project9/project9.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -32,7 +32,7 @@
     <link href="../../../css/structure.css" rel="stylesheet">
 
 	<!-- Choice of languages -->
-	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/projects/Viz/Project8/project8.html" />
 
 
   </head>
@@ -54,9 +54,6 @@
           <ul class="navbar-nav text-uppercase ml-auto">
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -84,81 +81,49 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">load_linnerud study</h2>
+			<h2 class="section-heading text-uppercase">3D visualization</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>The load_linnerud dataset in scikit-learn is a built-in dataset that contains physiological and exercise measurements for a group of 20 middle-aged men. The data was collected in the Linnerud et al. study, which investigated the effects of three exercise regimes on physiological and weight variables.</p>
-		  <p>The load_linnerud dataset consists of three main components:</p>
-		  <p>1. <B>Data (X)</B>: This component contains the physiological measurements of the participants during the study.</p>
-		  <p>It includes three features:</p>
-		  <p>- Weight: The body weight of the participants (in lbs).</p>
-		  <p>- Waist: The waist circumference of the participants (in inches).</p>
-		  <p>- Pulse: The pulse rate of the participants (beats per minute).</p>
-		  <p>Each feature corresponds to a specific exercise activity: weight-lifting, sit-ups, and jumping jacks.</p>
-		  <p>2. <B>Target (y)</B>: This component contains the exercise performance measurements for the participants. It includes three features:</p>
-      <p>- Chins: The number of chin-ups performed by the participants.</p>
-		  <p>- Situps: The number of sit-ups performed by the participants.</p>
-		  <p>- Jumps: The number of jumping jacks performed by the participants.</p>
-		  <p>These target variables represent the participants' performance in each of the three exercise activities.</p>
-		  <p>3. <B>Target Names</B>: This component provides the names of the exercise activities corresponding to the target variables. It includes:</p>
-		  <p>- Weight lifting: The activity of lifting weights.</p>
-		  <p>- Situps: The activity of performing sit-ups.</p>
-		  <p>- Jumping jacks: The activity of doing jumping jacks.</p>
-		  <p>The dataset is commonly used for regression tasks, where the goal is to predict the exercise performance (chins, situps, and jumps) based on physiological measurements (weight, waist, and pulse). It can also be used for exploratory data analysis and visualization to understand relationships between exercise activities and physiological factors.</p>
-      <p>To load the load_linnerud dataset in Python using scikit-learn, you can use the following code:</p>
-      <pre><code>
-from sklearn.datasets import load_linnerud
-
-# Load the linnerud dataset
-linnerud = load_linnerud()
-
-# Access the data, target, and target names
-data = linnerud.data
-target = linnerud.target
-target_names = linnerud.target_names
-      </code></pre>
-		  <p>With this information, you can perform various analyses, visualize the data, and build regression models to predict exercise performance based on physiological measurements.</p>
-		  <p>I would recommend using a scatter plot matrix (also known as a pair plot) to visualize the data. A scatter plot matrix allows us to visualize the relationships between multiple numerical variables simultaneously. Each variable is plotted against all other variables in a matrix form, where the diagonal contains histograms of individual variables.</p>
-		  <p>Here's why a scatter plot matrix is a suitable choice for the load_linnerud dataset:</p>
-		  <p>1. <B>Multiple Variable Visualization</B>: The load_linnerud dataset contains three sets of measurements: weight, waist, and pulse, with each set having three variables (data points). A scatter plot matrix enables us to visualize the interactions and correlations between these variables all in one plot, which is particularly useful when dealing with multi-dimensional data.</p>
-		  <p>2. <B>Correlation Detection</B>: Since scatter plots show the relationship between two variables, we can quickly identify any correlation or patterns between the different physiological and exercise measurements. This can help identify potential relationships between variables that may be useful for further analysis.</p>
-		  <p>3. <B>Identify Outliers</B>: Scatter plots can help identify any potential outliers in the data, which are data points that significantly deviate from the general pattern. These outliers may indicate errors in data collection or be of particular interest for further investigation.</p>
-		  <p>4. <B>Data Distribution</B>: The histograms on the diagonal of the scatter plot matrix show the distribution of individual variables. Understanding the data distribution is essential to assess its normality and identify any skewness or other characteristics.</p>
-		  <p>5. <B>Compact Representation</B>: A scatter plot matrix allows us to visualize a lot of information in one plot, making it easier to get an overview of the dataset's structure and relationships.</p>
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-      <p>Here's some sample code using Python's seaborn library to create a scatter plot matrix for the load_linnerud dataset:</p>
-			<pre><code>import seaborn as sns
+        <p>3D data visualization is a powerful technique used to represent data in three-dimensional space, providing a more immersive and intuitive experience for data exploration and analysis. Unlike traditional 2D visualizations, which are limited to a flat plane, 3D data visualization allows for the representation of complex data sets with additional depth and perspective, making it easier to identify patterns, trends, and relationships within the data.</p>
+        <p>Here are some key points and benefits of 3D data visualization:</p>
+        <p>1. <B>Enhanced understanding</B>: By adding the third dimension, 3D visualizations can provide a better understanding of the data, especially when dealing with multidimensional data sets. It allows users to perceive data from various angles and perspectives, leading to deeper insights.</p>
+        <p>2. <B>Improved spatial perception</B>: 3D visualizations are particularly useful when working with spatial data, such as geographical data, molecular structures, architectural designs, or simulations. The depth provided by the third dimension helps users grasp the spatial relationships more accurately.</p>
+        <p>3. <B>Interactivity and exploration</B>: 3D visualizations often come with interactive features, enabling users to manipulate the visualization, zoom, rotate, and pan to explore the data from different viewpoints. This interactivity enhances the user experience and facilitates better data analysis.</p>
+        <p>4. <B>Communication and presentation</B>: 3D data visualizations can be visually engaging and captivating, making them valuable tools for presenting complex information to non-technical audiences. They can effectively communicate insights, trends, and findings in a more compelling manner.</p>
+        <p>5. <B>Identification of outliers and anomalies</B>: The additional dimension in 3D visualization can make it easier to identify outliers or anomalies that might not be apparent in 2D representations. This can be particularly useful in fields like finance, engineering, and medical research.</p>
+        <p>6. <B>Integration with Virtual Reality (VR) and Augmented Reality (AR)</B>: As VR and AR technologies continue to advance, 3D data visualization can be seamlessly integrated into these platforms, providing even more immersive and interactive data exploration experiences.</p>
+        <p>However, it's essential to be cautious with the use of 3D data visualization. While it offers benefits in certain contexts, not all data sets are suitable for 3D representation. In some cases, a 2D visualization might be more effective and less prone to distortions or misinterpretations.</p>
+        <p>Overall, 3D data visualization is a valuable tool for understanding complex data sets, improving data exploration, and presenting information in a more engaging manner. Its potential continues to grow as technology advances and more sophisticated techniques for interactive 3D visualization are developed.</p>
+        <pre><code>import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.datasets import load_linnerud
+from mpl_toolkits.mplot3d import Axes3D
 
-# Load the dataset
-data = load_linnerud()
-X, y = data.data, data.target
+# Generate random 3D data points
+np.random.seed(42)
+num_points = 100
+x = np.random.rand(num_points)
+y = np.random.rand(num_points)
+z = np.random.rand(num_points)
 
-# Convert the data to a pandas DataFrame (optional but convenient for seaborn)
-import pandas as pd
-df = pd.DataFrame(data.data, columns=data.feature_names)
+# Create a 3D scatter plot
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
 
-# Create a scatter plot matrix using seaborn
-sns.pairplot(df)
+ax.scatter(x, y, z, c='b', marker='o', label='Data Points')
+
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_zlabel('Z-axis')
+ax.set_title('3D Scatter Plot')
+
+plt.legend()
 plt.show()</code></pre>
-      <img src="img/result.png">
-		  </div>
+        <p>Results:</p>  
+        <img src="3D.png">        
+        <p>In this example, we use NumPy to generate random data points for the x, y, and z coordinates. The scatter() function from Matplotlib's 3D plotting toolkit (mpl_toolkits.mplot3d) is used to create the 3D scatter plot. The data points are represented by blue spheres ('o' marker), and the labels for the axes and title are added to enhance the visualization.</p>
+        <p>When you run the code, a 3D scatter plot window will pop up, showing the random data points in 3D space. You can interact with the plot, rotate it, zoom in/out, and explore the data from different angles using the mouse.</p>
+        <p>Keep in mind that this is a simple example, and you can customize the plot further by adjusting colors, markers, sizes, or adding additional features based on your specific data and requirements.</p>
+      </div>
 		</div>
       </div>
     </section>
