@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Web scrapping</title>
+    <title>Book recommender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to do web scrapping with python?">
-    <meta name="keywords" content="alexis carbillet, carbillet, python, web scrapping">
+    <meta name="description" content="How to recommend books with python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Web scrapping" />
-    <meta property="og:description" content="How to do web scrapping with python?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Python/Project3/project3.html" />
+    <meta property="og:title" content="Book recommender" />
+    <meta property="og:description" content="How to recommend books with python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Reco/Project4/project4.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -55,14 +55,11 @@
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#py">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
             </li>
           </ul>
         </div>
@@ -84,74 +81,79 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Web scrapping</h2>
+			<h2 class="section-heading text-uppercase">Book recommender</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Web scraping, also known as web harvesting or web data extraction, is the process of automatically extracting information from websites. This can involve collecting data from web pages, such as text, images, links, and other structured content, for various purposes such as data analysis, research, or creating a database. Here are some key aspects to consider when it comes to web scraping:</p>
-      <ul>
-        <li><B>HTTP Requests</B>*: Web scraping starts with sending HTTP requests to a website's server. You typically use libraries or tools like Python's requests or Scrapy to make these requests.</li>
-        <li><B>HTML Parsing</B>: Once you receive a response from the website, you need to parse the HTML content to extract the data you're interested in. Libraries like BeautifulSoup in Python can help with this.</li>
-        <li><B>Selectors</B>: Selectors are used to pinpoint specific elements in the HTML, such as headings, paragraphs, tables, or links, that you want to scrape. CSS selectors and XPath expressions are common tools for this purpose.</li>
-        <li><B>Data Extraction</B>: Extracting data involves locating and capturing the desired information. This may involve iterating through a list of items on a webpage, following links to other pages, or using regular expressions to match patterns within the HTML.</li>
-        <li><B>Robots.txt</B>: Websites may have a "robots.txt" file that specifies which parts of the site are off-limits to web crawlers. It's important to respect these rules to avoid legal issues.</li>
-        <li><B>Rate Limiting</B>: Web scraping can put a strain on a website's server. It's essential to implement rate limiting to avoid overloading the server and potentially getting blocked. Respect the website's terms of service.</li>
-        <li><B>User Agents</B>: When making requests, you can specify a user-agent header to mimic the behavior of a web browser. This can help you avoid being identified as a scraper.</li>
-        <li><B>Data Storage</B>: Decide how you want to store the scraped data. Common options include saving it to a database, writing it to a CSV or JSON file, or even pushing it to a cloud service.</li>
-        <li><B>Error Handling</B>: Web scraping can be fragile because websites often change their structure. Implement error handling to gracefully handle situations where the expected data is not found or the website's layout has changed.</li>
-        <li><B>Legal and Ethical Considerations</B>: Be aware of the legal and ethical aspects of web scraping. Some websites explicitly prohibit scraping in their terms of service. Always respect the website's terms and policies, and consider the ethical implications of scraping, especially if you plan to use the data commercially.</li>
-        <li><B>APIs</B>: Sometimes, websites provide APIs (Application Programming Interfaces) that offer structured access to their data. Using APIs is often a more reliable and ethical way to access web data when available.</li>
-        <li><B>Proxy Servers</B>: To avoid IP blocking, you can use proxy servers to make requests through different IP addresses.</li>
+		  <p>In this example, I'll use a dataset from Kaggle that contains book ratings from the "Book-Crossings" dataset. This dataset includes user ratings for books.</p>
+		  <ul>
+        <li>Download the dataset: You can download the dataset from Kaggle. The dataset is available at this link: <a href="https://www.kaggle.com/arashnic/book-recommendation-dataset">Book-Crossings Dataset on Kaggle</a>. You'll need to create a Kaggle account and accept the dataset's terms and conditions to access it.</li>
+        <li>Run this code:</li>
+        <pre><code>import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('Ratings.csv', sep=',', error_bad_lines=False, encoding='latin-1')
+
+# Rename columns for clarity
+data.columns = ['user_id', 'book_id', 'rating']
+
+# Display the first few rows of the dataset
+print(data.head())
+
+# Keep only the first 1000 rows
+data = data.head(1000)
+
+user_item_matrix = data.pivot(index='user_id', columns='book_id', values='rating')
+user_item_matrix = user_item_matrix.fillna(0)
+
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Calculate user-user similarity matrix
+user_similarity = cosine_similarity(user_item_matrix)
+
+# Create a DataFrame from the similarity matrix
+user_similarity_df = pd.DataFrame(user_similarity, index=user_item_matrix.index, columns=user_item_matrix.index)
+
+# Function to get book recommendations for a given user
+def get_book_recommendations(user_id, num_recommendations=5):
+    # Get the user's similarity scores with other users
+    user_similarities = user_similarity_df[user_id]
+
+    # Get books that the user has not rated
+    user_rated_books = user_item_matrix.loc[user_id]
+    unrated_books = user_rated_books[user_rated_books == 0].index
+
+    # Calculate the weighted sum of ratings for unrated books
+    book_scores = user_item_matrix.T.dot(user_similarities)
+    book_scores = book_scores[unrated_books]
+
+    # Sort the books by score and get top recommendations
+    top_recommendations = book_scores.sort_values(ascending=False).head(num_recommendations)
+
+    return top_recommendations
+
+# Get book recommendations for a user (e.g., user_id=276726)
+user_id = 276726
+recommendations = get_book_recommendations(user_id)
+print("Top 5 Book Recommendations for User", user_id)
+print(recommendations)</code></pre>
       </ul>
-		  <p>Web scraping is a powerful tool but should be used responsibly and ethically. It's crucial to understand the legal and ethical boundaries and to ensure your scraping activities do not disrupt or harm the target website. Always check a website's terms of service and robots.txt file, and consider contacting the website owner if you plan to scrape large amounts of data or use it for commercial purposes.</p>
-		  </div>
-		</div>
-      </div>
-    </section>
+      <p>results:</p>
+      <pre><code>   user_id     book_id  rating
+0   276725  034545104X       0
+1   276726  0155061224       5
+2   276727  0446520802       0
+3   276729  052165615X       3
+4   276729  0521795028       6
 
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Python example</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<p>Here's a step-by-step example:</p>
-      <pre><code>import requests
-from bs4 import BeautifulSoup
-
-# URL of the BBC Technology section
-url = 'https://www.bbc.co.uk/news/technology'
-
-# Send an HTTP GET request to the URL
-response = requests.get(url)
-
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    # Parse the HTML content of the page
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # Find all the articles on the page
-    articles = soup.find_all('div', class_='gs-c-promo')
-    
-    # Loop through the articles and extract the title and URL
-    for article in articles:
-        # Extract the title
-        title = article.find('h3').get_text()
-        
-        # Extract the URL
-        url = article.find('a', class_='gs-c-promo-heading')['href']
-        
-        # Print the title and URL
-        print(f'Title: {title}')
-        print(f'URL: https://www.bbc.co.uk{url}')
-        print()
-else:
-    print(f'Error: Unable to fetch the page. Status code: {response.status_code}')</code></pre>
-			<p>This script sends an HTTP GET request to the BBC Technology section page, scrapes the titles and URLs of the latest articles, and prints them to the console. Please note that web scraping might break if the website's structure changes, so this example may need adjustments in the future. Always be mindful of the website's terms of service and policies when scraping data.</p>
+Top 5 Book Recommendations for User 276726
+book_id
+000225669X    0.0
+3426671298    0.0
+3426702266    0.0
+342677609X    0.0
+3440054594    0.0
+dtype: float64</code></pre>
+		  <p>In this example, we first load and preprocess the Book-Crossings dataset, create a user-item matrix, and then use cosine similarity to calculate user-user similarity scores. Finally, we provide book recommendations for a specific user based on their similarity to other users.</p>
 		  </div>
 		</div>
       </div>

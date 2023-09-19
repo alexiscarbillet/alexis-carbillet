@@ -1,0 +1,14 @@
+<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<h1>400 Bad Request</h1>
+<ul>
+<li>Code: IncorrectEndpoint</li>
+<li>Message: The specified bucket exists in another region. Please direct requests to the specified endpoint.</li>
+<li>Endpoint: static.echonest.com.s3-website-us-west-2.amazonaws.com</li>
+<li>RequestId: G1F4JAJH9DR7XP0E</li>
+<li>HostId: 3HFprEK/3TvnJInR834IyNtlbi+NVelJj2SMKcMm7hZVcLc7rt8OUvb/BXxqBT3zJL6aJIFsTlI=</li>
+</ul>
+<hr/>
+</body>
+</html>
