@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Good practices</title>
+    <title>HTML good practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="What are the good practices for creating recommendation system?">
-    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python, good practices">
+    <meta name="description" content="What are the good practices in HTML?">
+    <meta name="keywords" content="alexis carbillet, carbillet, website, html, good practices">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="What are the good practices for creating recommendation system?" />
-    <meta property="og:description" content="What are the good practices for creating recommendation system?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Reco/Project3/project3.html" />
+    <meta property="og:title" content="HTML good practices" />
+    <meta property="og:description" content="What are the good practices in HTML?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/HTML/Project1/project1.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#html">Main</a>
             </li>
           </ul>
         </div>
@@ -81,70 +81,31 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Good practices</h2>
+			<h2 class="section-heading text-uppercase">HTML good practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Good practices in the recommendation system field involve a combination of ethical considerations, technical approaches, and user-centric design principles. Here are some key practices to consider:</p>
+		  <p>HTML, or Hypertext Markup Language, is the standard language for creating web pages. When writing HTML, it's important to follow good practices to ensure your web pages are well-structured, accessible, and maintainable. Here are some HTML good practices:</p>
       <ul>
-        <li><B>Ethical Considerations</B>:</li>
-        <ul>
-          <li><B>Transparency</B>: Ensure that users understand how recommendations are generated and the data used for them.</li>
-          <li><B>Fairness</B>: Avoid biased recommendations that favor certain groups or demographics. Regularly audit and adjust algorithms to minimize biases.</li>
-          <li><B>Privacy</B>: Respect user privacy by implementing robust data anonymization and protection mechanisms.</li>
-          <li><B>User Consent</B>: Obtain explicit user consent for collecting and utilizing their data for recommendations.</li>
-        </ul>
-        <li><B>Data Collection and Processing</B>:</li>
-        <ul>
-          <li><B>Data Quality</B>: Ensure the data used for recommendations is accurate, up-to-date, and representative of user preferences.</li>
-          <li><B>Data Privacy</B>: Anonymize and protect user data to maintain privacy and security.</li>
-          <li><B>Diversity</B>: Include a diverse range of users, items, and interactions to provide balanced recommendations.</li>
-        </ul>
-        <li><B>Algorithm Development</B>:</li>
-        <ul>
-          <li><B>Personalization</B>: Create algorithms that provide relevant recommendations tailored to individual users' preferences and behaviors.</li>
-          <li><B>Diversity</B>: Strive for diverse recommendations that expose users to a variety of items, avoiding filter bubbles.</li>
-          <li><B>Hybrid Approaches</B>: Combine multiple recommendation techniques (collaborative, content-based, etc.) to improve accuracy and coverage.</li>
-          <li><B>Real-time Adaptation</B>: Implement algorithms that can adapt to changing user preferences and trends in real-time.</li>
-        </ul>
-        <li><B>Evaluation and Testing</B>:</li>
-        <ul>
-          <li><B>Offline Evaluation</B>: Use appropriate evaluation metrics to measure the performance of recommendation algorithms in simulated environments.</li>
-          <li><B>Online A/B Testing</B>: Conduct real-world A/B tests to assess the impact of new recommendation algorithms on user engagement and satisfaction.</li>
-          <li><B>Long-term Effects</B>: Monitor recommendation systems for long-term effects on user behavior and satisfaction.</li>
-        </ul>
-        <li><B>User Experience</B>:</li>
-        <ul>
-          <li><B>Explanations</B>: Provide explanations for why specific recommendations are being made to enhance user trust and understanding.</li>
-          <li><B>Control</B>: Allow users to customize and adjust their preferences to fine-tune recommendations.</li>
-          <li><B>Avoid Overwhelming</B>: Limit the number of recommendations to prevent overwhelming users with choices.</li>
-        </ul>
-        <li><B>Cold Start Problem</B>:</li>
-        <ul>
-          <li><B>Content-Based Recommendations</B>: Utilize content-based methods to make recommendations for new users or items lacking interaction history.</li>
-          <li><B>Active Learning</B>: Engage with new users to gather preferences and quickly improve recommendation quality.</li>
-        </ul>
-        <li><B>Continuous Learning and Improvement</B>:</li>
-        <ul>
-          <li><B>Feedback Loops</B>: Collect user feedback to improve recommendations and identify potential issues.</li>
-          <li><B>Algorithm Iteration</B>: Continuously iterate and refine recommendation algorithms based on user feedback and changing needs.</li>
-        </ul>
-        <li><B>Scalability and Performance</B>:</li>
-        <ul>
-          <li><B>Efficiency</B>: Design recommendation algorithms that can handle large datasets efficiently.</li>
-          <li><B>Real-time Recommendations</B>: Implement systems that can generate recommendations in real-time to enhance user experience.</li>
-        </ul>
-        <li><B>Collaboration with Domain Experts</B>:</li>
-        <ul>
-          <li><B>Domain Knowledge</B>: Collaborate with domain experts to incorporate their insights and enhance recommendation accuracy.</li>
-          <li><B>Feedback Loop</B>: Regularly communicate with experts to ensure recommendations align with domain-specific goals.</li>
-        </ul>
-        <li><B>Monitoring and Maintenance</B>:</li>
-        <ul>
-          <li><B>Performance Tracking</B>: Continuously monitor the performance of recommendation algorithms and identify any anomalies.</li>
-          <li><B>Regular Updates</B>: Keep recommendation algorithms up-to-date with the latest techniques and data.</li>
-        </ul>
+        <li><B>Use a Doctype Declaration</B>: Always include a "&lt;!DOCTYPE html&gt;" declaration at the beginning of your HTML document to specify the HTML version being used. For modern web development, use "&lt;!DOCTYPE html&gt;".</li>
+        <li><B>Use Semantic HTML Elements</B>: Utilize semantic elements (e.g., &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;) to structure your content properly. Semantic HTML makes your code more understandable and accessible.</li>
+        <li><B>Proper Nesting</B>: Ensure that HTML elements are correctly nested within each other. Elements should open and close in the correct order.</li>
+        <li><B>Indentation and Formatting</B>: Maintain consistent indentation and formatting for your HTML code. This makes your code more readable and easier to maintain.</li>
+        <li><B>Use Lowercase for Tags and Attributes</B>: Although HTML is case-insensitive, it's a good practice to use lowercase letters for HTML tags and attributes to improve code consistency.</li>
+        <li><B>Attribute Order</B>: When adding attributes to HTML elements, consider a consistent order. Common practice is to place essential attributes like "id", "class", "src", and "alt" first.</li>
+        <li><B>Use Double Quotes for Attributes</B>: While both single and double quotes are valid for attribute values, it's a best practice to use double quotes (") consistently for attribute values.</li>
+        <li><B>Provide Appropriate Alt Text</B>: Always include descriptive "alt" attributes for images and other non-text content to make your website more accessible to people with disabilities and improve SEO.</li>
+        <li><B>Avoid Deprecated Elements</B>: Avoid using deprecated HTML elements and attributes. Instead, use modern alternatives. For example, use CSS for styling instead of HTML attributes like "bgcolor" and "align".</li>
+        <li><B>Comment Your Code</B>: Use comments (&lt;!-- comment --&gt;) to explain complex sections of your code or to provide context for future developers working on the project.</li>
+        <li><B>Avoid Inline Styles</B>: Minimize the use of inline CSS styles and favor external stylesheets for better separation of content and presentation.</li>
+        <li><B>Separation of Concerns</B>: Follow the principle of separation of concerns. Keep your HTML (content), CSS (presentation), and JavaScript (behavior) in separate files or sections of your project.</li>
+        <li><B>Responsive Design</B>: Design your HTML with responsiveness in mind. Use media queries and flexible layouts to ensure your website looks good on various screen sizes and devices.</li>
+        <li><B>Validation</B>: Periodically validate your HTML code using tools like the W3C Markup Validation Service to catch and fix any errors.</li>
+        <li><B>Performance Optimization</B>: Optimize your HTML for performance by minimizing unnecessary white space and using efficient techniques like lazy loading for images.</li>
+        <li><B>Use Semantic IDs and Classes</B>: When applying IDs and classes to elements, choose names that reflect the content or purpose rather than appearance. This helps with maintainability and future changes.</li>
+        <li><B>Use ARIA Roles</B>: If your website includes interactive or dynamic content, use ARIA (Accessible Rich Internet Applications) roles and attributes to improve accessibility.</li>
+        <li><B>Test on Multiple Browsers</B>: Ensure that your HTML code renders correctly on various web browsers and devices by testing thoroughly.</li>
       </ul>
-		  <p>Remember that the recommendation system field is dynamic and constantly evolving. Staying updated with the latest research, ethical guidelines, and user expectations is essential for implementing successful and user-friendly recommendation systems.</p>
+		  <p>By following these HTML best practices, you can create well-structured, accessible, and maintainable web pages that provide a better experience for both users and developers.</p>
 		  </div>
 		</div>
       </div>

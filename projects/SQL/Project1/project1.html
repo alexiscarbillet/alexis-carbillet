@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Good practices</title>
+    <title>SQL good practices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="What are the good practices for creating recommendation system?">
-    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python, good practices">
+    <meta name="description" content="What are the good practices in SQL?">
+    <meta name="keywords" content="alexis carbillet, carbillet, database, sql">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="What are the good practices for creating recommendation system?" />
-    <meta property="og:description" content="What are the good practices for creating recommendation system?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/Reco/Project3/project3.html" />
+    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:description" content="What are the good practices in SQL?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/SQL/Project1/project1.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -59,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#rs">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#sql">Main</a>
             </li>
           </ul>
         </div>
@@ -81,70 +81,94 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Good practices</h2>
+			<h2 class="section-heading text-uppercase">Best Practices</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Good practices in the recommendation system field involve a combination of ethical considerations, technical approaches, and user-centric design principles. Here are some key practices to consider:</p>
-      <ul>
-        <li><B>Ethical Considerations</B>:</li>
+		  <p>SQL best practices are guidelines and recommendations that help ensure efficient, maintainable, and secure database operations. Following these practices can lead to improved performance, readability, and security of your SQL code. Here are some common SQL best practices:</p>
+		  <ul>
+        <li>Use Clear and Descriptive Naming Conventions:</li>
         <ul>
-          <li><B>Transparency</B>: Ensure that users understand how recommendations are generated and the data used for them.</li>
-          <li><B>Fairness</B>: Avoid biased recommendations that favor certain groups or demographics. Regularly audit and adjust algorithms to minimize biases.</li>
-          <li><B>Privacy</B>: Respect user privacy by implementing robust data anonymization and protection mechanisms.</li>
-          <li><B>User Consent</B>: Obtain explicit user consent for collecting and utilizing their data for recommendations.</li>
+          <li>Give meaningful names to tables, columns, and indexes.</li>
+          <li>Avoid using reserved words or special characters in names.</li>
+          <li>Use consistent naming conventions (e.g., snake_case or CamelCase) for consistency.</li>
         </ul>
-        <li><B>Data Collection and Processing</B>:</li>
+        <li>Use Proper Indentation and Formatting:</li>
         <ul>
-          <li><B>Data Quality</B>: Ensure the data used for recommendations is accurate, up-to-date, and representative of user preferences.</li>
-          <li><B>Data Privacy</B>: Anonymize and protect user data to maintain privacy and security.</li>
-          <li><B>Diversity</B>: Include a diverse range of users, items, and interactions to provide balanced recommendations.</li>
+          <li>Indent SQL statements for readability.</li>
+          <li>Use consistent formatting and whitespace to make your code more readable.</li>
         </ul>
-        <li><B>Algorithm Development</B>:</li>
+        <li>Comment Your Code:</li>
         <ul>
-          <li><B>Personalization</B>: Create algorithms that provide relevant recommendations tailored to individual users' preferences and behaviors.</li>
-          <li><B>Diversity</B>: Strive for diverse recommendations that expose users to a variety of items, avoiding filter bubbles.</li>
-          <li><B>Hybrid Approaches</B>: Combine multiple recommendation techniques (collaborative, content-based, etc.) to improve accuracy and coverage.</li>
-          <li><B>Real-time Adaptation</B>: Implement algorithms that can adapt to changing user preferences and trends in real-time.</li>
+          <li>Add comments to explain complex queries, purpose, and usage.</li>
+          <li>Include comments that document assumptions or decisions.</li>
         </ul>
-        <li><B>Evaluation and Testing</B>:</li>
+        <li>Avoid SELECT *:</li>
         <ul>
-          <li><B>Offline Evaluation</B>: Use appropriate evaluation metrics to measure the performance of recommendation algorithms in simulated environments.</li>
-          <li><B>Online A/B Testing</B>: Conduct real-world A/B tests to assess the impact of new recommendation algorithms on user engagement and satisfaction.</li>
-          <li><B>Long-term Effects</B>: Monitor recommendation systems for long-term effects on user behavior and satisfaction.</li>
+          <li>Specify only the columns you need in your SELECT statements rather than using SELECT *.</li>
+          <li>Reducing the number of columns retrieved can improve query performance.</li>
         </ul>
-        <li><B>User Experience</B>:</li>
+        <li>Use Joins Appropriately:</li>
         <ul>
-          <li><B>Explanations</B>: Provide explanations for why specific recommendations are being made to enhance user trust and understanding.</li>
-          <li><B>Control</B>: Allow users to customize and adjust their preferences to fine-tune recommendations.</li>
-          <li><B>Avoid Overwhelming</B>: Limit the number of recommendations to prevent overwhelming users with choices.</li>
+          <li>Choose the appropriate join type (INNER, LEFT, RIGHT, FULL) based on your data requirements.</li>
+          <li>Ensure that join conditions are accurate to avoid incorrect results.</li>
         </ul>
-        <li><B>Cold Start Problem</B>:</li>
+        <li>Use Indexes Wisely:</li>
         <ul>
-          <li><B>Content-Based Recommendations</B>: Utilize content-based methods to make recommendations for new users or items lacking interaction history.</li>
-          <li><B>Active Learning</B>: Engage with new users to gather preferences and quickly improve recommendation quality.</li>
+          <li>Create indexes on columns frequently used in WHERE clauses for performance optimization.</li>
+          <li>Be cautious about creating too many indexes, as they can impact insert and update performance.</li>
         </ul>
-        <li><B>Continuous Learning and Improvement</B>:</li>
+        <li>Avoid Using Cursors When Possible:</li>
         <ul>
-          <li><B>Feedback Loops</B>: Collect user feedback to improve recommendations and identify potential issues.</li>
-          <li><B>Algorithm Iteration</B>: Continuously iterate and refine recommendation algorithms based on user feedback and changing needs.</li>
+          <li>Cursors can be slow and resource-intensive; try to use set-based operations instead.</li>
         </ul>
-        <li><B>Scalability and Performance</B>:</li>
+        <li>Use Transactions:</li>
         <ul>
-          <li><B>Efficiency</B>: Design recommendation algorithms that can handle large datasets efficiently.</li>
-          <li><B>Real-time Recommendations</B>: Implement systems that can generate recommendations in real-time to enhance user experience.</li>
+          <li>Wrap multiple SQL statements in a transaction when necessary to ensure data consistency.</li>
+          <li>Be mindful of transaction isolation levels to balance concurrency and data integrity.</li>
         </ul>
-        <li><B>Collaboration with Domain Experts</B>:</li>
+        <li>Protect Against SQL Injection:</li>
         <ul>
-          <li><B>Domain Knowledge</B>: Collaborate with domain experts to incorporate their insights and enhance recommendation accuracy.</li>
-          <li><B>Feedback Loop</B>: Regularly communicate with experts to ensure recommendations align with domain-specific goals.</li>
+          <li>Use parameterized queries or prepared statements to prevent SQL injection attacks.</li>
+          <li>Avoid concatenating user input directly into SQL queries.</li>
         </ul>
-        <li><B>Monitoring and Maintenance</B>:</li>
+        <li>Test Queries Before Applying Them:</li>
         <ul>
-          <li><B>Performance Tracking</B>: Continuously monitor the performance of recommendation algorithms and identify any anomalies.</li>
-          <li><B>Regular Updates</B>: Keep recommendation algorithms up-to-date with the latest techniques and data.</li>
+          <li>Test complex or critical SQL statements in a safe environment before executing them in production.</li>
+          <li>Verify that the query returns the expected results and performs well.</li>
+        </ul>
+        <li>Monitor and Optimize Performance:</li>
+        <ul>
+          <li>Use database performance monitoring tools to identify and address slow-running queries.</li>
+          <li>Profile your queries and consider query optimization techniques like indexing and query rewriting.</li>
+        </ul>
+        <li>Backup and Disaster Recovery:</li>
+        <ul>
+          <li>Regularly back up your database to prevent data loss.</li>
+          <li>Implement a disaster recovery plan to ensure business continuity.</li>
+        </ul>
+        <li>Regularly Maintain the Database:</li>
+        <ul>
+          <li>Schedule routine database maintenance tasks such as index rebuilding, updating statistics, and cleaning up old data.</li>
+        </ul>
+        <li>Follow Database-Specific Best Practices:</li>
+        <ul>
+          <li>Familiarize yourself with the specific best practices recommended for the database system you are using (e.g., MySQL, PostgreSQL, SQL Server).</li>
+        </ul>
+        <li>Keep Security in Mind:</li>
+        <ul>
+          <li>Restrict access to the database to authorized users and applications.</li>
+          <li>Regularly update and patch your database management system to address security vulnerabilities.</li>
+        </ul>
+        <li>Document Schemas and Data Models:</li>
+        <ul>
+          <li>Maintain up-to-date documentation of your database schema and data models to aid in understanding and future development.</li>
+        </ul>
+        <li>Consider Scalability:</li>
+        <ul>
+          <li>Design your database schema and queries with scalability in mind to accommodate future growth.</li>
         </ul>
       </ul>
-		  <p>Remember that the recommendation system field is dynamic and constantly evolving. Staying updated with the latest research, ethical guidelines, and user expectations is essential for implementing successful and user-friendly recommendation systems.</p>
+      <p>Remember that SQL best practices can vary depending on the specific database system you are using and the requirements of your application. It's essential to stay up-to-date with the latest best practices and continuously improve your SQL skills to write efficient and secure database code.</p>
 		  </div>
 		</div>
       </div>
