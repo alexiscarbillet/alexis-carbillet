@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project </title>
+    <title>Online calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python">
+    <meta name="description" content="How to make an online calculator?">
+    <meta name="keywords" content="alexis carbillet, carbillet, website, html, calculator">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/" />
+    <meta property="og:title" content="Online calculator" />
+    <meta property="og:description" content="How to make an online calculator?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/HTML/Project4/project4.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -34,6 +34,28 @@
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
 
+  <style>
+    .calculator {
+        width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    input[type="button"] {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+</style>
 
   </head>
 
@@ -55,28 +77,17 @@
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#html">Main</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-
-
-    <!-- Header -->
-    <header class="masthead">
-	  <div class="container">		
-		  
-	  </div>
-    </header>
 	
 <!-- ======================== ARTICLE SECTION ============================ -->
 
@@ -84,43 +95,47 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project</h2>
+			<h2 class="section-heading text-uppercase">Online calculator</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  </div>
-		</div>
+        <div class="calculator">
+          <input type="text" id="display" readonly>
+          <input type="button" value="1" onclick="appendToDisplay('1')">
+          <input type="button" value="2" onclick="appendToDisplay('2')">
+          <input type="button" value="3" onclick="appendToDisplay('3')">
+          <input type="button" value="+" onclick="appendToDisplay('+')">
+          <input type="button" value="4" onclick="appendToDisplay('4')">
+          <input type="button" value="5" onclick="appendToDisplay('5')">
+          <input type="button" value="6" onclick="appendToDisplay('6')">
+          <input type="button" value="-" onclick="appendToDisplay('-')">
+          <input type="button" value="7" onclick="appendToDisplay('7')">
+          <input type="button" value="8" onclick="appendToDisplay('8')">
+          <input type="button" value="9" onclick="appendToDisplay('9')">
+          <input type="button" value="*" onclick="appendToDisplay('*')">
+          <input type="button" value="C" onclick="clearDisplay()">
+          <input type="button" value="0" onclick="appendToDisplay('0')">
+          <input type="button" value="=" onclick="calculate()">
+          <input type="button" value="/" onclick="appendToDisplay('/')">
       </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			
-			</p></code></pre>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+  
+      <script>
+          function appendToDisplay(value) {
+              document.getElementById("display").value += value;
+          }
+  
+          function clearDisplay() {
+              document.getElementById("display").value = "";
+          }
+  
+          function calculate() {
+              try {
+                  const result = eval(document.getElementById("display").value);
+                  document.getElementById("display").value = result;
+              } catch (error) {
+                  document.getElementById("display").value = "Error";
+              }
+          }
+      </script>
 		  </div>
 		</div>
       </div>

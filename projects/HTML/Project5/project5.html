@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Project </title>
+    <title>Chess game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website of Alexis Carbillet">
-    <meta name="keywords" content="alexis carbillet, carbillet, recommendation system, python">
+    <meta name="description" content="How to create an online chess game?">
+    <meta name="keywords" content="alexis carbillet, carbillet, website, html, chess game">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Alexis Carbillet" />
+    <meta property="og:title" content="Chess game" />
     <meta property="og:description" content="Website of Alexis Carbillet" />
-    <meta property='og:url' content="https://www.alexis-carbillet.com/" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/projects/HTML/Project5/project5.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -30,6 +30,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../../../css/structure.css" rel="stylesheet">
+    <link rel="stylesheet" href="chessboard.css"/>
 
 	<!-- Choice of languages -->
 	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
@@ -55,14 +56,11 @@
 			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
-			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#python">Results</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 			      <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../../index.html#blog">Main</a>
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#html">Main</a>
             </li>
           </ul>
         </div>
@@ -70,13 +68,6 @@
     </nav>
 
 
-
-    <!-- Header -->
-    <header class="masthead">
-	  <div class="container">		
-		  
-	  </div>
-    </header>
 	
 <!-- ======================== ARTICLE SECTION ============================ -->
 
@@ -84,43 +75,10 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Project</h2>
+			<h2 class="section-heading text-uppercase">Chess game</h2>
 		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		  </div>
-		</div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== PYTHON SECTION ============================ -->
-
-	<section class="bg-light" id="python">
-      <div class="container">
-        <div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Results</h2>
-		  </div>
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-			<pre><code><p>
-			
-			</p></code></pre>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" style="display: flex; justify-content: center;">
+			  <div id="board" style="width:40%;height:40%;"></div>
 		  </div>
 		</div>
       </div>
@@ -209,6 +167,11 @@
 	<!-- Particles part -->
 	<script src="../../../js/particles.js"></script>
 	<script src="../../../js/app.js"></script>
+
+  <!-- Chess part -->
+  <script src="chess.js"></script>
+  <script src="chessboard.js"></script>
+  <script src="myChess.js"></script>
 	
     <!-- Activate the bootstrap tooltip, must be after jQuery load -->
     <script>
