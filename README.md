@@ -4,15 +4,9 @@ This is my personal website.
 
 It contains different blogs:
 
-- python
-
-- prometheus
-
-- artificial intelligence
-
-- data visualization
-
-- recommendation systems
+- coding: python, html
+- databases: prometheus, sql, mongodb
+- advanced systems: articifial intelligence, data visualization, recommendation systems
 
 There are also books and apps incoming about those topics. More blogs may appear in the future too.
 
