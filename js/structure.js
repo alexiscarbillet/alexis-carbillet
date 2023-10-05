@@ -55,3 +55,32 @@ function Lien() {
 	url = document.Choix.Liste.options[i].value;
 	parent.location.href = url;
 }
+
+function showSection(sectionId) {
+  // Hide all sections
+  document.getElementById('section1').style.display = 'none';
+  document.getElementById('section2').style.display = 'none';
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+}
+
+function showSection2(sectionId) {
+  // Hide all sections
+  document.getElementById('section3').style.display = 'none';
+  document.getElementById('section4').style.display = 'none';
+  document.getElementById('section5').style.display = 'none';
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+}
+
+function showSection3(sectionId) {
+  // Hide all sections
+  document.getElementById('section6').style.display = 'none';
+  document.getElementById('section7').style.display = 'none';
+  document.getElementById('section8').style.display = 'none';
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+}

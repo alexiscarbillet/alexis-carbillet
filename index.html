@@ -52,37 +52,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item dropdown"> <!-- Add the 'dropdown' class to create the dropdown -->
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Coding
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 200px;"> <!-- Add the 'dropdown-menu' class to create the dropdown menu -->
-					<a class="dropdown-item" href="#py" style="font-size: 80%;">Python</a>
-					<a class="dropdown-item" href="#html" style="font-size: 80%;">HTML</a>
-				</div>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="#coding">Coding</a>
 			</li>
 			<li class="nav-item">
-				
-			  </li>
-			<li class="nav-item dropdown"> <!-- Add the 'dropdown' class to create the dropdown -->
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Databases
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 200px;"> <!-- Add the 'dropdown-menu' class to create the dropdown menu -->
-					<a class="dropdown-item" href="#prom" style="font-size: 80%;">Prometheus</a>
-					<a class="dropdown-item" href="#sql" style="font-size: 80%;">SQL</a>
-					<a class="dropdown-item" href="#mongo" style="font-size: 80%;">MongoDB</a>
-				</div>
+			  <a class="nav-link js-scroll-trigger" href="#db">Databases</a>
 			</li>
-			<li class="nav-item dropdown"> <!-- Add the 'dropdown' class to create the dropdown -->
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Advanced
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 200px;"> <!-- Add the 'dropdown-menu' class to create the dropdown menu -->
-					<a class="dropdown-item" href="#ai" style="font-size: 80%;">Artificial Intelligence</a>
-					<a class="dropdown-item" href="#vis" style="font-size: 80%;">Data Visualization</a>
-					<a class="dropdown-item" href="#rs" style="font-size: 80%;">Recommendation Systems</a>
-				</div>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="#advanced">Advanced</a>
 			</li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -116,106 +93,128 @@
 <!-- ======================== PYTHON BLOG SECTION ============================ -->
 
 
-<section class="bg-dark" id="py">
+<section class="bg-light" id="coding">
 	<div class="parallaxstory">
 	  <div class="container">
 		<div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase" style="color:white">Python</h2>
-			<h3 class="section-subheading text-white">Python is a versatile and powerful high-level programming language known for its simplicity and readability.</h3>
-			<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Basics</button>
-				<div class="dropdown-menu">
-				  <a class="dropdown-item" href="content/Python/basics/variables.html">Variables</a>
-				  <a class="dropdown-item" href="content/Python/basics/operation.html">Operations</a>
-				  <a class="dropdown-item" href="content/Python/basics/data-type.html">Data types</a>
-				  <a class="dropdown-item" href="content/Python/basics/list.html">Lists</a>
-				  <a class="dropdown-item" href="content/Python/basics/string.html">Strings</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Control Structures</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/control/conditions.html">Conditions</a>
-					<a class="dropdown-item" href="content/Python/control/loop.html">Loops</a>
-					<a class="dropdown-item" href="content/Python/control/indentation.html">Indentation</a>
-					<a class="dropdown-item" href="content/Python/control/blocks.html">Code block</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Functions</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/functions/intro.html">Intro</a>
-					<a class="dropdown-item" href="content/Python/functions/variable.html">Variables</a>
-					<a class="dropdown-item" href="content/Python/functions/lambda.html">Lambda</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Data Structures</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/structure/list_and_loop.html">List & loops</a>
-					<a class="dropdown-item" href="content/Python/structure/string_methods.html">String methods</a>
-					<a class="dropdown-item" href="content/Python/structure/fstring.html">f-strings</a>
-					<a class="dropdown-item" href="content/Python/structure/dico.html">Dictionaries</a>
-					<a class="dropdown-item" href="content/Python/structure/set.html">Sets</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Files & Exceptions</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/files/file.html">Files</a>
-					<a class="dropdown-item" href="content/Python/files/errors.html">Errors</a>
-					<a class="dropdown-item" href="content/Python/files/exceptions.html">Exceptions</a>
-				</div>
-			  </div>
-			</div>
+			<h1 class="section-heading text-uppercase" style="padding-bottom: 2%">CODING</h1>
+			<!-- Buttons to toggle between sections -->
+			<button class="btn btn-secondary active" onclick="showSection('section1')">Python</button>
+			<button class="btn btn-secondary" onclick="showSection('section2')">HTML</button>
+			<div id="commonSection">
+				<div id="section1" style="display: block;">
+					<h2 class="section-heading text-uppercase" style="padding-top: 2%">Python</h2>
+					<h3 class="section-subheading">Python is a versatile and powerful high-level programming language known for its simplicity and readability.</h3>
+					<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Basics</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/basics/variables.html">Variables</a>
+							<a class="dropdown-item" href="content/Python/basics/operation.html">Operations</a>
+							<a class="dropdown-item" href="content/Python/basics/data-type.html">Data types</a>
+							<a class="dropdown-item" href="content/Python/basics/list.html">Lists</a>
+							<a class="dropdown-item" href="content/Python/basics/string.html">Strings</a>
+						</div>
+						</div>
+					</div>
 
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Object-Oriented</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/oop/fundamentals.html">Fundamentals</a>
-					<a class="dropdown-item" href="content/Python/oop/class_and_object.html">Class & Objects</a>
-					<a class="dropdown-item" href="content/Python/oop/module_and_statement.html">Module & statements</a>
-					<a class="dropdown-item" href="content/Python/oop/libraries.html">Librairies</a>
-				</div>
-			  </div>
-			</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Control Structures</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/control/conditions.html">Conditions</a>
+							<a class="dropdown-item" href="content/Python/control/loop.html">Loops</a>
+							<a class="dropdown-item" href="content/Python/control/indentation.html">Indentation</a>
+							<a class="dropdown-item" href="content/Python/control/blocks.html">Code block</a>
+						</div>
+						</div>
+					</div>
 
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Best Practices</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Python/practices/tips.html">Python tips</a>
-					<a class="dropdown-item" href="content/Python/practices/pep8.html">Pep8</a>
-					<a class="dropdown-item" href="content/Python/practices/syntax_errors.html">Syntax errors</a>
-				</div>
-			  </div>
-			</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Functions</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/functions/intro.html">Intro</a>
+							<a class="dropdown-item" href="content/Python/functions/variable.html">Variables</a>
+							<a class="dropdown-item" href="content/Python/functions/lambda.html">Lambda</a>
+						</div>
+						</div>
+					</div>
 
-			<h4 class="section-heading text-uppercase text-white" style="padding-bottom: 2%; padding-top: 5%">Projects</h4>
-			<div class="centered-list-container">
-				<ul class="text-white centered-list">
-					<li class="centered-list-item">Project 1: <a href="projects/Python/Project1/project1.html" style="color: #69b3a2;">sorting algorithms</a></li>
-					<li class="centered-list-item">Project 2: <a href="projects/Python/Project2/project2.html" style="color: #69b3a2;">http requests</a></li>
-					<li class="centered-list-item">Project 3: <a href="projects/Python/Project3/project3.html" style="color: #69b3a2;">scrapping website</a></li>
-					<li class="centered-list-item">Project 4: <a href="projects/Python/Project4/project4.html" style="color: #69b3a2;">logging</a></li>
-					<li class="centered-list-item">Project 5: <a href="projects/Python/Project5/project5.html" style="color: #69b3a2;">creating an API</a></li>
-				 </ul>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Data Structures</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/structure/list_and_loop.html">List & loops</a>
+							<a class="dropdown-item" href="content/Python/structure/string_methods.html">String methods</a>
+							<a class="dropdown-item" href="content/Python/structure/fstring.html">f-strings</a>
+							<a class="dropdown-item" href="content/Python/structure/dico.html">Dictionaries</a>
+							<a class="dropdown-item" href="content/Python/structure/set.html">Sets</a>
+						</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Files & Exceptions</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/files/file.html">Files</a>
+							<a class="dropdown-item" href="content/Python/files/errors.html">Errors</a>
+							<a class="dropdown-item" href="content/Python/files/exceptions.html">Exceptions</a>
+						</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Object-Oriented</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/oop/fundamentals.html">Fundamentals</a>
+							<a class="dropdown-item" href="content/Python/oop/class_and_object.html">Class & Objects</a>
+							<a class="dropdown-item" href="content/Python/oop/module_and_statement.html">Module & statements</a>
+							<a class="dropdown-item" href="content/Python/oop/libraries.html">Librairies</a>
+						</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Best Practices</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Python/practices/tips.html">Python tips</a>
+							<a class="dropdown-item" href="content/Python/practices/pep8.html">Pep8</a>
+							<a class="dropdown-item" href="content/Python/practices/syntax_errors.html">Syntax errors</a>
+						</div>
+						</div>
+					</div>
+
+					<h4 class="section-heading text-uppercase" style="padding-bottom: 2%; padding-top: 5%">Projects</h4>
+					<div class="centered-list-container">
+						<ul class="centered-list">
+							<li class="centered-list-item">Project 1: <a href="projects/Python/Project1/project1.html">sorting algorithms</a></li>
+							<li class="centered-list-item">Project 2: <a href="projects/Python/Project2/project2.html">http requests</a></li>
+							<li class="centered-list-item">Project 3: <a href="projects/Python/Project3/project3.html">scrapping website</a></li>
+							<li class="centered-list-item">Project 4: <a href="projects/Python/Project4/project4.html">logging</a></li>
+							<li class="centered-list-item">Project 5: <a href="projects/Python/Project5/project5.html">creating an API</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="section2" style="display: none;">
+					<h2 class="section-heading text-uppercase" style="padding-top: 2%">HTML</h2>
+					<h3 class="section-subheading">The foundational language of the web, used to structure and format content so that it can be displayed in web browsers.</h3>
+					<h4 class="section-heading text-uppercase" style="padding-top: 2%">Projects</h4>
+					<div class="centered-list-container">
+						<ul class="centered-list">
+							<li class="centered-list-item">Project 1: <a href="projects/HTML/Project1/project1.html">Good practices</a></li>
+							<li class="centered-list-item">Project 2: <a href="projects/HTML/Project2/project2.html">New Year countdown</a></li>
+							<li class="centered-list-item">Project 3: <a href="projects/HTML/Project3/project3.html">Interactive timeline</a></li>
+							<li class="centered-list-item">Project 4: <a href="projects/HTML/Project4/project4.html">Online calculator</a></li>
+							<li class="centered-list-item">Project 5: <a href="projects/HTML/Project5/project5.html">Chess game</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		  </div>
 		</div>
@@ -226,114 +225,122 @@
 	
 	<!-- ======================================================================= -->
 
-	<!-- ======================== HTML BLOG SECTION ============================ -->
+<!-- ======================== DB SECTION ============================ -->
 
-<section class="bg-secondary" id="html">
-	<div class="parallaxstory">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">HTML Blog</h2>
-			<h3 class="section-subheading">The foundational language of the web, used to structure and format content so that it can be displayed in web browsers.</h3>
-			<h4 class="section-heading text-uppercase" style="padding-top: 2%">Projects</h4>
-			<div class="centered-list-container">
-				<ul class="centered-list">
-					<li class="centered-list-item">Project 1: <a href="projects/HTML/Project1/project1.html" style="color: #fff;">Good practices</a></li>
-					<li class="centered-list-item">Project 2: <a href="projects/HTML/Project2/project2.html" style="color: #fff;">New Year countdown</a></li>
-					<li class="centered-list-item">Project 3: <a href="projects/HTML/Project3/project3.html" style="color: #fff;">Interactive timeline</a></li>
-					<li class="centered-list-item">Project 4: <a href="projects/HTML/Project4/project4.html" style="color: #fff;">Online calculator</a></li>
-					<li class="centered-list-item">Project 5: <a href="projects/HTML/Project5/project5.html" style="color: #fff;">Chess game</a></li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	  </div>
-	</div>
-	
-	</section>
-	
-	<!-- ======================================================================= -->
-
-<!-- ======================== PROM BLOG SECTION ============================ -->
-
-<section class="bg-light" id="prom">
+<section class="bg-dark" id="db">
 <div class="parallaxstory">
   <div class="container">
 	<div class="row">
 	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-		<h2 class="section-heading text-uppercase">Prometheus Blog</h2>
-		<h3 class="section-subheading">Empower your data with Prometheus, the key to unlocking the secrets of your systems and harnessing the power of monitoring and observability.</h3>
-		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
-			<div class="btn-group">
-			<div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Basics</button>
-				<div class="dropdown-menu">
-				<a class="dropdown-item" href="content/Prom/Basics/Introduction.html">Introduction</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Data.html">Data</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Configuration.html">Configuration</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Literals.html">Literals</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Selectors.html">Selectors</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Promtool.html">Promtool</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Records.html">Records</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Storage.html">Storage</a>
-				<a class="dropdown-item" href="content/Prom/Basics/Gotchas.html">Gotchas</a>
-				</div>
-			</div>
-			</div>
+		<h1 class="section-heading text-uppercase text-white" style="padding-bottom: 2%">DATABASES</h1>
+		<!-- Buttons to toggle between sections -->
+		<button class="btn btn-secondary active" onclick="showSection2('section3')">Prometheus</button>
+		<button class="btn btn-secondary" onclick="showSection2('section4')">SQL</button>
+		<button class="btn btn-secondary" onclick="showSection2('section5')">MongoDB</button>
+		<div id="commonSection">
+			<div id="section3" style="display: block;">
+				<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">Prometheus</h2>
+				<h3 class="section-subheading text-white">Empower your data with Prometheus, the key to unlocking the secrets of your systems and harnessing the power of monitoring and observability.</h3>
+				<h4 class="section-heading text-uppercase text-white" style="padding-bottom: 2%">Articles</h3>
+					<div class="btn-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Basics</button>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Prom/Basics/Introduction.html">Introduction</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Data.html">Data</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Configuration.html">Configuration</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Literals.html">Literals</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Selectors.html">Selectors</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Promtool.html">Promtool</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Records.html">Records</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Storage.html">Storage</a>
+						<a class="dropdown-item" href="content/Prom/Basics/Gotchas.html">Gotchas</a>
+						</div>
+					</div>
+					</div>
 
-			<div class="btn-group">
-			<div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Operators</button>
-				<div class="dropdown-menu">
-				<a class="dropdown-item" href="content/Prom/Operators/Aggregation.html">Aggregation</a>
-				<a class="dropdown-item" href="content/Prom/Operators/Binary.html">Binary</a>
-				<a class="dropdown-item" href="content/Prom/Operators/Matching.html">Matching</a>
-				<a class="dropdown-item" href="content/Prom/Operators/Precedence.html">Precedence</a>
-				</div>
-			</div>
-			</div>
+					<div class="btn-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Operators</button>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Prom/Operators/Aggregation.html">Aggregation</a>
+						<a class="dropdown-item" href="content/Prom/Operators/Binary.html">Binary</a>
+						<a class="dropdown-item" href="content/Prom/Operators/Matching.html">Matching</a>
+						<a class="dropdown-item" href="content/Prom/Operators/Precedence.html">Precedence</a>
+						</div>
+					</div>
+					</div>
 
-			<div class="btn-group">
-			<div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Functions</button>
-				<div class="dropdown-menu">
-				<a class="dropdown-item" href="content/Prom/Functions/alert.html">Alert</a>
-				<a class="dropdown-item" href="content/Prom/Functions/histogram.html">Histogram</a>
-				<a class="dropdown-item" href="content/Prom/Functions/label.html">Label</a>
-				<a class="dropdown-item" href="content/Prom/Functions/range.html">Range</a>
-				<a class="dropdown-item" href="content/Prom/Functions/time.html">Time-shifting</a>
-				</div>
-			</div>
-			</div>
+					<div class="btn-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Functions</button>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Prom/Functions/alert.html">Alert</a>
+						<a class="dropdown-item" href="content/Prom/Functions/histogram.html">Histogram</a>
+						<a class="dropdown-item" href="content/Prom/Functions/label.html">Label</a>
+						<a class="dropdown-item" href="content/Prom/Functions/range.html">Range</a>
+						<a class="dropdown-item" href="content/Prom/Functions/time.html">Time-shifting</a>
+						</div>
+					</div>
+					</div>
 
-			<div class="btn-group">
-			<div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">HTTP API</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Prom/API/Querying.html">Querying</a>
-					<a class="dropdown-item" href="content/Prom/API/Result.html">Results</a>
-					<a class="dropdown-item" href="content/Prom/API/ServiceDiscovery.html">Service Discovery</a>
-					<a class="dropdown-item" href="content/Prom/API/Management.html">Management</a>
+					<div class="btn-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">HTTP API</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Prom/API/Querying.html">Querying</a>
+							<a class="dropdown-item" href="content/Prom/API/Result.html">Results</a>
+							<a class="dropdown-item" href="content/Prom/API/ServiceDiscovery.html">Service Discovery</a>
+							<a class="dropdown-item" href="content/Prom/API/Management.html">Management</a>
+						</div>
+					</div>
+					</div>
+				<h4 class="section-heading text-uppercase text-white" style="padding-top: 2%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="text-white centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/Prom/Project1/Project1.html" style="color: #69b3a2;">Install Prometheus in Linux environment</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/Prom/Project2/Project2.html" style="color: #69b3a2;">Create a personalized exporter</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/Prom/Project3/Project3.html" style="color: #69b3a2;">Complex requests with node-exporter</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/Prom/Project4/project4.html" style="color: #69b3a2;">Create a personalized alert</a></li>
+						<li class="centered-list-item">Project 5: <a href="projects/Prom/Project5/project5.html" style="color: #69b3a2;">Good practices</a></li>
+					</ul>
+				</div>
+				<h4 class="section-heading text-uppercase text-white" style="padding-top: 2%">Book</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item"><a href="books/prom/prom.pdf" style="color: #69b3a2;">All you need to know about Prometheus</a></li>
+					</ul>
 				</div>
 			</div>
+			<div id="section4" style="display: none;">
+				<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">SQL</h2>
+				<h3 class="section-subheading text-white">SQL's versatility and efficiency in handling data make it a cornerstone technology for businesses and organizations worldwide.</h3>
+				<h4 class="section-heading text-uppercase text-white" style="padding-top: 2%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="text-white centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/SQL/Project1/project1.html" style="color: #69b3a2;">Good practices</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/SQL/Project2/project2.html" style="color: #69b3a2;">Create database</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/SQL/Project3/project3.html" style="color: #69b3a2;">Python API</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/SQL/Project4/project4.html" style="color: #69b3a2;">Visualization</a></li>
+						<li class="centered-list-item">Project 5: <a href="projects/SQL/Project5/project5.html" style="color: #69b3a2;">Scrapping</a></li>
+					</ul>
+				</div>
 			</div>
-		<h4 class="section-heading text-uppercase" style="padding-top: 2%">Projects</h4>
-		<div class="centered-list-container">
-			<ul class="centered-list">
-				<li class="centered-list-item">Project 1: <a href="projects/Prom/Project1/Project1.html">Install Prometheus in Linux environment</a></li>
-				<li class="centered-list-item">Project 2: <a href="projects/Prom/Project2/Project2.html">Create a personalized exporter</a></li>
-				<li class="centered-list-item">Project 3: <a href="projects/Prom/Project3/Project3.html">Complex requests with node-exporter</a></li>
-				<li class="centered-list-item">Project 4: <a href="projects/Prom/Project4/project4.html">Create a personalized alert</a></li>
-				<li class="centered-list-item">Project 5: <a href="projects/Prom/Project5/project5.html">Good practices</a></li>
-			</ul>
+			<div id="section5" style="display: none;">
+				<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">MongoDB</h2>
+				<h3 class="section-subheading text-white">MongoDB is a popular and versatile NoSQL database system designed to handle large volumes of unstructured or semi-structured data.</h3>
+				<h4 class="section-heading text-uppercase text-white" style="padding-top: 2%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="text-white centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/Mongo/Project1/project1.html" style="color: #69b3a2;">Good practices</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/Mongo/Project2/project2.html" style="color: #69b3a2;">Python API</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/Mongo/Project3/project3.html" style="color: #69b3a2;">Visualization</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/Mongo/Project4/project4.html" style="color: #69b3a2;">Scrapping</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<h4 class="section-heading text-uppercase" style="padding-top: 2%">Book</h4>
-		<div class="centered-list-container">
-			<ul class="centered-list">
-				<li class="centered-list-item"><a href="books/prom/prom.pdf">All you need to know about Prometheus</a></li>
-			</ul>
-		</div>
-		</div>
+	</div>
 	</div>
   </div>
 </div>
@@ -342,398 +349,323 @@
 
 <!-- ======================================================================= -->
 
-<!-- ======================== SQL BLOG SECTION ============================ -->
-
-<section class="bg-secondary" id="sql">
-	<div class="parallaxstory">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">SQL Blog</h2>
-			<h3 class="section-subheading">SQL's versatility and efficiency in handling data make it a cornerstone technology for businesses and organizations worldwide.</h3>
-			<h4 class="section-heading text-uppercase" style="padding-top: 2%">Projects</h4>
-			<div class="centered-list-container">
-				<ul class="centered-list">
-					<li class="centered-list-item">Project 1: <a href="projects/SQL/Project1/project1.html" style="color: #fff;">Good practices</a></li>
-					<li class="centered-list-item">Project 2: <a href="projects/SQL/Project2/project2.html" style="color: #fff;">Create database</a></li>
-					<li class="centered-list-item">Project 3: <a href="projects/SQL/Project3/project3.html" style="color: #fff;">Python API</a></li>
-					<li class="centered-list-item">Project 4: <a href="projects/SQL/Project4/project4.html" style="color: #fff;">Visualization</a></li>
-					<li class="centered-list-item">Project 5: <a href="projects/SQL/Project5/project5.html" style="color: #fff;">Scrapping</a></li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	  </div>
-	</div>
-	
-	</section>
-	
-	<!-- ======================================================================= -->
-
-	<!-- ======================== MONGODB BLOG SECTION ============================ -->
-
-<section class="bg-light" id="mongo">
-	<div class="parallaxstory">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">MongoDB Blog</h2>
-			<h3 class="section-subheading">MongoDB is a popular and versatile NoSQL database system designed to handle large volumes of unstructured or semi-structured data.</h3>
-			<h4 class="section-heading text-uppercase" style="padding-top: 2%">Projects</h4>
-			<div class="centered-list-container">
-				<ul class="centered-list">
-					<li class="centered-list-item">Project 1: <a href="projects/Mongo/Project1/project1.html">Good practices</a></li>
-					<li class="centered-list-item">Project 2: <a href="projects/Mongo/Project2/project2.html">Python API</a></li>
-					<li class="centered-list-item">Project 3: <a href="projects/Mongo/Project3/project3.html">Visualization</a></li>
-					<li class="centered-list-item">Project 4: <a href="projects/Mongo/Project4/project4.html">Scrapping</a></li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	  </div>
-	</div>
-	
-	</section>
-	
-	<!-- ======================================================================= -->
-
-<!-- ======================== AI BLOG SECTION ============================ -->
+<!-- ======================== ADVANCED BLOG SECTION ============================ -->
 
 
-<section class="bg-dark" id="ai">
+<section class="bg-light" id="advanced">
 <div class="parallaxstory">
   <div class="container">
 	<div class="row">
 	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-		<h2 class="section-heading text-uppercase" style="color:white">Artificial Intelligence Blog</h2>
-		<h3 class="section-subheading text-white">Harness the power of AI to Automate Tasks, Make Smarter Decisions, Personalize Experiences, Optimize Efficiency & Enhance Innovation.</h3>
-		<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Data processing</button>
-			<div class="dropdown-menu">
-			  <a class="dropdown-item" href="content/DP/audio.html">Audio</a>
-			  <a class="dropdown-item" href="content/DP/csv.html">CSV</a>
-			  <a class="dropdown-item" href="content/DP/image.html">Image</a>
-			  <a class="dropdown-item" href="content/DP/json.html">JSON</a>
-			  <a class="dropdown-item" href="content/DP/time.html">Time series</a>
-			  <a class="dropdown-item" href="content/DP/text.html">Text</a>
-			  <a class="dropdown-item" href="content/DP/video.html">Video</a>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network</button>
-			<div class="dropdown-menu">
-			  <a class="dropdown-item" href="content/NN/introduction.html">Neural Network Introduction</a>
-			  <a class="dropdown-item" href="content/NN/activation.html">Activation</a>
-			  <a class="dropdown-item" href="content/NN/attention.html">Attention</a>
-			  <a class="dropdown-item" href="content/NN/loss.html">Loss</a>
-			  <a class="dropdown-item" href="content/NN/metrics.html">Metrics</a>
-			  <a class="dropdown-item" href="content/NN/optimizers.html">Optimizers</a>
-			  <a class="dropdown-item" href="content/NN/overfitting.html">Overfitting</a>
-			  <a class="dropdown-item" href="content/NN/regularization.html">Regularization</a>
-			  <a class="dropdown-item" href="content/NN/update.html">Updating Neural Network</a>
-			  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network Algorithms</button>
-			  <div class="dropdown-menu">
-			  <a class="dropdown-item" href="content/NN/autoencoder.html">Autoencoder</a>
-			  <a class="dropdown-item" href="content/NN/cnn.html">Convolutional Neural Network</a>
-			  <a class="dropdown-item" href="content/NN/gan.html">Generative Adversarial Network</a>
-			  <a class="dropdown-item" href="content/NN/lstm.html">Long Short-Term Memory</a>
-			  <a class="dropdown-item" href="content/NN/mlp.html">Multi-Layer Perceptrons</a>
-			  <a class="dropdown-item" href="content/NN/rnn.html">Recurrent Neural Network</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Semi-supervised ML</button>
-			<div class="dropdown-menu">
-				  <a class="dropdown-item" href="content/SSML/introduction.html">Semi-supervised ML Introduction</a>
-				  <a class="dropdown-item" href="content/SSML/co.html">Co-training</a>
-				  <a class="dropdown-item" href="content/SSML/exp.html">Expectation-Maximization</a>
-				  <a class="dropdown-item" href="content/SSML/lab.html">Label Propagation</a>
-				  <a class="dropdown-item" href="content/SSML/mean.html">Mean-Teacher</a>
-				  <a class="dropdown-item" href="content/SSML/self.html">Self-Training</a>
-				  <a class="dropdown-item" href="content/SSML/vat.html">Virtual Adversarial Training</a>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Supervised ML</button>
-			<div class="dropdown-menu">
-				  <a class="dropdown-item" href="content/SML/introduction.html">Supervised ML Introduction</a>
-				  <a class="dropdown-item" href="content/SML/cross-decomposition.html">Cross Decomposition</a>
-				  <a class="dropdown-item" href="content/SML/decision-tree.html">Decision Tree</a>
-				  <a class="dropdown-item" href="content/SML/ensemble-methods.html">Ensemble Methods</a>
-				  <a class="dropdown-item" href="content/SML/gaussian-process.html">Gaussian Process</a>
-				  <a class="dropdown-item" href="content/SML/linear.html">Linear regression</a>
-				  <a class="dropdown-item" href="content/SML/naive.html">Naive Bayes</a>
-				  <a class="dropdown-item" href="content/SML/perceptron.html">Perceptron</a>
-				  <a class="dropdown-item" href="content/SML/ridge.html">Ridge regression</a>
-				  <a class="dropdown-item" href="content/SML/sgd.html">Stochastic Gradient Descent</a>
-				  <a class="dropdown-item" href="content/SML/svm.html">Support Vector Machine</a>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Unsupervised ML</button>
-			<div class="dropdown-menu">
-				  <a class="dropdown-item" href="content/UML/introduction.html">Unsupervised ML Introduction</a>
-				  <a class="dropdown-item" href="content/UML/biclustering.html">Biclustering</a>
-				  <a class="dropdown-item" href="content/UML/clustering.html">Clustering</a>
-				  <a class="dropdown-item" href="content/UML/gm.html">Gaussian Mixture</a>
-				  <a class="dropdown-item" href="content/UML/isolation.html">Isolation Forest</a>
-				  <a class="dropdown-item" href="content/UML/manifold.html">Manifold Learning</a>
-				  <a class="dropdown-item" href="content/UML/pca.html">Principal Component Analysis</a>
-			</div>
-		  </div>
-		</div>
-		<h4 class="section-heading text-uppercase text-white" style="padding-top: 5%">Projects</h4>
-		<div class="centered-list-container">
-			<ul class="text-white centered-list">
-				<li class="centered-list-item">Project 1: <a href="projects/AI/project1/project1.html" style="color: #69b3a2;">Comparison supervised models</a></li>
-				<li class="centered-list-item">Project 2: <a href="projects/AI/project2/project2.html" style="color: #69b3a2;">Comparison unsupervised models</a></li>
-				<li class="centered-list-item">Project 3: <a href="projects/AI/project3/project3.html" style="color: #69b3a2;">Comparison semi-supervised models</a></li>
-				<li class="centered-list-item">Project 4: <a href="projects/AI/project4/project4.html" style="color: #69b3a2;">Object detection</a></li>
-				<li class="centered-list-item">Project 5: <a href="projects/AI/project5/project5.html" style="color: #69b3a2;">Image segmentation</a></li>
-				<li class="centered-list-item">Project 6: <a href="projects/AI/project6/project6.html" style="color: #69b3a2;">Good practices</a></li>
-				<li class="centered-list-item">Project 7: <a href="projects/AI/project7/project7.html" style="color: #69b3a2;">Tweet analysis</a></li>
-			 </ul>
-		</div>
-		<h4 class="section-heading text-uppercase text-white" style="padding-top: 2%">Book</h4>
-		<div class="centered-list-container">
-			<ul class="centered-list">
-				<li class="centered-list-item"><a href="books/ai/ai.pdf" style="color: #69b3a2;">All you need to know about Artificial Intelligence</a></li>
-			</ul>
-		</div>
-	  </div>
-	</div>
-  </div>
-</div>
-
-</section>
-
-<!-- ======================================================================= -->
-
-<!-- ======================== DATA VISULALIZATION BLOG SECTION ============================ -->
-
-
-<section class="bg-light" id="vis">
-<div class="parallaxstory">
-  <div class="container">
-	<div class="row">
-	  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-		<h2 class="section-heading text-uppercase">Data Visualization Blog</h2>
-		<h3 class="section-subheading">One wrong step and the data could be misinterpreted, leading to huge cost for the company. Data visualization is not something you should take lightly.</h3>
-		<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Hierarchical</button>
-			<div class="dropdown-menu">
-    		    <a class="dropdown-item" href="content/Hierarchical/sc.html">Sunburst charts</a>
-				<a class="dropdown-item" href="content/Hierarchical/tree.html">Tree diagram</a>
-    		    <a class="dropdown-item" href="content/Hierarchical/treemaps.html">Treemaps</a>
-    		    <a class="dropdown-item" href="content/Hierarchical/oc.html">Organizational charts</a>
-    		    <a class="dropdown-item" href="content/Hierarchical/cd.html">Cluster dendrograms</a>
-				<a class="dropdown-item" href="content/Hierarchical/comparison.html">Comparison</a>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Temporal</button>
-			<div class="dropdown-menu">
-			    <a class="dropdown-item" href="content/Temporal/line.html">Line graphs</a>
-    		    <a class="dropdown-item" href="content/Temporal/area.html">Area charts</a>
-    		    <a class="dropdown-item" href="content/Temporal/candle.html">Candlestick charts</a>
-    		    <a class="dropdown-item" href="content/Temporal/gantt.html">Gantt charts</a>
-    		    <a class="dropdown-item" href="content/Temporal/heat.html">Heatmaps (time series)</a>
-				<a class="dropdown-item" href="content/Temporal/comparison.html">Comparison</a>
-			  </div>
-			</div>
-		  </div>
-		  
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Distribution</button>
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="content/Distribution/violin.html">Violin</a>
-				<a class="dropdown-item" href="content/Distribution/density.html">Density</a>
-				<a class="dropdown-item" href="content/Distribution/histogram.html">Histogram</a>
-				<a class="dropdown-item" href="content/Distribution/boxplot.html">Boxplot</a>
-				<a class="dropdown-item" href="content/Distribution/ridgeline.html">Ridgeline</a>
-				<a class="dropdown-item" href="content/Distribution/comparison.html">Comparison</a>
-			  </div>
-			</div>
-		  </div>
-		  
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Ranking</button>
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="content/Ranking/bar.html">Bar charts</a>
-				<a class="dropdown-item" href="content/Ranking/lollipop.html">Lollipop</a>
-				<a class="dropdown-item" href="content/Ranking/wordcloud.html">Wordcloud</a>
-				<a class="dropdown-item" href="content/Ranking/radar.html">Radar</a>
-				<a class="dropdown-item" href="content/Ranking/comparison.html">Comparison</a>
-			  </div>
-			</div>
-		  </div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Spatial</button>
-			<div class="dropdown-menu">
-			   	<a class="dropdown-item" href="content/Spatial/choropleth.html">Choropleth maps</a>
-    		    <a class="dropdown-item" href="content/Spatial/bubble.html">Bubble maps</a>
-    		    <a class="dropdown-item" href="content/Spatial/heatmap.html">Heatmaps (geographical)</a>
-    		    <a class="dropdown-item" href="content/Spatial/flow.html">Flow maps</a>
-				<a class="dropdown-item" href="content/Spatial/comparison.html">Comparison</a>
-			</div>
-		  </div>
-		</div>
-
-		<div class="btn-group">
-		  <div class="btn-group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Correlation</button>
-			<div class="dropdown-menu">
-			    <a class="dropdown-item" href="content/Correlation/sp.html">Scatter plots</a>
-    		    <a class="dropdown-item" href="content/Correlation/matrice.html">Correlation matrices</a>
-    		    <a class="dropdown-item" href="content/Correlation/para.html">Parallel coordinate plots</a>
-    		    <a class="dropdown-item" href="content/Correlation/sankey.html">Sankey diagrams</a>
-    		    <a class="dropdown-item" href="content/Correlation/fd.html">Force-directed graphs</a>
-				<a class="dropdown-item" href="content/Correlation/comparison.html">Comparison</a>
-			</div>
-		  </div>
-		</div>
-		<h4 class="section-heading text-uppercase" style="padding-top: 5%">Projects</h4>
-		<div class="centered-list-container">
-			<ul class="centered-list">
-				<li class="centered-list-item">Project 1: <a href="projects/Viz/Project1/Project1.html">load_iris study</a></li>
-				<li class="centered-list-item">Project 2: <a href="projects/Viz/Project2/project2.html">Good practices</a></li>
-				<li class="centered-list-item">Project 3: <a href="projects/Viz/Project3/project3.html">Usage of colors</a></li>
-				<li class="centered-list-item">Project 4: <a href="projects/Viz/Project4/project4.html">3D visualization</a></li>
-				<li class="centered-list-item">Project 5: <a href="projects/Viz/Project5/project5.html">Dashboard</a></li>
-			 </ul>
-		</div>
-		<h4 class="section-heading text-uppercase" style="padding-top: 2%">Book</h4>
-		<div class="centered-list-container">
-			<ul class="centered-list">
-				<li class="centered-list-item"><a href="books/viz/viz.pdf">All you need to know about Data Visualization</a></li>
-			</ul>
-		</div>
-	  </div>
-	</div>
-  </div>
-</div>
-
-</section>
-
-<!-- ======================================================================= -->
-
-
-<!-- ======================== RECOMMENDATION SYSTEM BLOG SECTION ============================ -->
-
-
-<section class="bg-dark" id="rs">
-	<div class="parallaxstory">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase" style="color:white">Recommendation systems Blog</h2>
-			<h3 class="section-subheading text-white">Guiding Your Journey, One Recommendation at a Time</h3>
-			<h4 class="section-heading text-uppercase" style="color:white; padding-bottom: 2%">Articles</h3>
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Introduction</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Intro/definition.html">Definition</a>
-					<a class="dropdown-item" href="content/Reco/Intro/importance.html">Importance</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Key components</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Key/data.html">Data</a>
-					<a class="dropdown-item" href="content/Reco/Key/user-item.html">User / Item</a>
-					<a class="dropdown-item" href="content/Reco/Key/metric.html">Metrics</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Algorithms</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Algos/collaborative.html">Collaborative Filtering</a>
-					<a class="dropdown-item" href="content/Reco/Algos/content_based.html">Content-based</a>
-					<a class="dropdown-item" href="content/Reco/Algos/hybrid.html">Hybrid</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Advanced</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Advanced/matrix.html">Matrix factorization</a>
-					<a class="dropdown-item" href="content/Reco/Advanced/deep.html">Deep learning</a>
-					<a class="dropdown-item" href="content/Reco/Advanced/cold.html">Cold start problem</a>
-				</div>
-			  </div>
-			</div>
-	
-			<div class="btn-group">
-			  <div class="btn-group">
-				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Metrics</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Metrics/evaluation.html">Evaluation</a>
-					<a class="dropdown-item" href="content/Reco/Metrics/testing.html">Testing</a>
-				</div>
-			  </div>
-			</div>
-
-			<div class="btn-group">
+		<h1 class="section-heading text-uppercase" style="padding-bottom: 2%">ADVANCED</h1>
+		<!-- Buttons to toggle between sections -->
+		<button class="btn btn-secondary active" onclick="showSection3('section6')">Artificial Intelligence</button>
+		<button class="btn btn-secondary" onclick="showSection3('section7')">Data Visualization</button>
+		<button class="btn btn-secondary" onclick="showSection3('section8')">Recommendation Systems</button>
+		<div id="commonSection">
+			<div id="section6" style="display: block;">
+				<h2 class="section-heading text-uppercase" style="padding-top: 2%">Artificial Intelligence</h2>
+				<h3 class="section-subheading">Harness the power of AI to Automate Tasks, Make Smarter Decisions, Personalize Experiences, Optimize Efficiency & Enhance Innovation.</h3>
+				<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
 				<div class="btn-group">
-				  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Application</button>
-				  <div class="dropdown-menu">
-					<a class="dropdown-item" href="content/Reco/Application/e-commerce.html">E-commerce</a>
-					<a class="dropdown-item" href="content/Reco/Application/music-movie.html">Music & Movie</a>
-				  </div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Data processing</button>
+					<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/DP/audio.html">Audio</a>
+					<a class="dropdown-item" href="content/DP/csv.html">CSV</a>
+					<a class="dropdown-item" href="content/DP/image.html">Image</a>
+					<a class="dropdown-item" href="content/DP/json.html">JSON</a>
+					<a class="dropdown-item" href="content/DP/time.html">Time series</a>
+					<a class="dropdown-item" href="content/DP/text.html">Text</a>
+					<a class="dropdown-item" href="content/DP/video.html">Video</a>
+					</div>
 				</div>
-			  </div>
+				</div>
 
-			<h4 class="section-heading text-uppercase text-white" style="padding-bottom: 2%; padding-top: 5%">Projects</h4>
-			<div class="centered-list-container">
-				<ul class="text-white centered-list">
-					<li class="centered-list-item">Project 1: <a href="projects/Reco/Project1/project1.html" style="color: #69b3a2;">Movie recommendation</a></li>
-					<li class="centered-list-item">Project 2: <a href="projects/Reco/Project2/project2.html" style="color: #69b3a2;">Good practices</a></li>
-					<li class="centered-list-item">Project 3: <a href="projects/Reco/Project3/project3.html" style="color: #69b3a2;">Music recommendation</a></li>
-					<li class="centered-list-item">Project 4: <a href="projects/Reco/Project4/project4.html" style="color: #69b3a2;">Book recommendation</a></li>
-				 </ul>
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network</button>
+					<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/NN/introduction.html">Neural Network Introduction</a>
+					<a class="dropdown-item" href="content/NN/activation.html">Activation</a>
+					<a class="dropdown-item" href="content/NN/attention.html">Attention</a>
+					<a class="dropdown-item" href="content/NN/loss.html">Loss</a>
+					<a class="dropdown-item" href="content/NN/metrics.html">Metrics</a>
+					<a class="dropdown-item" href="content/NN/optimizers.html">Optimizers</a>
+					<a class="dropdown-item" href="content/NN/overfitting.html">Overfitting</a>
+					<a class="dropdown-item" href="content/NN/regularization.html">Regularization</a>
+					<a class="dropdown-item" href="content/NN/update.html">Updating Neural Network</a>
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Neural Network Algorithms</button>
+					<div class="dropdown-menu">
+					<a class="dropdown-item" href="content/NN/autoencoder.html">Autoencoder</a>
+					<a class="dropdown-item" href="content/NN/cnn.html">Convolutional Neural Network</a>
+					<a class="dropdown-item" href="content/NN/gan.html">Generative Adversarial Network</a>
+					<a class="dropdown-item" href="content/NN/lstm.html">Long Short-Term Memory</a>
+					<a class="dropdown-item" href="content/NN/mlp.html">Multi-Layer Perceptrons</a>
+					<a class="dropdown-item" href="content/NN/rnn.html">Recurrent Neural Network</a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Semi-supervised ML</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/SSML/introduction.html">Semi-supervised ML Introduction</a>
+						<a class="dropdown-item" href="content/SSML/co.html">Co-training</a>
+						<a class="dropdown-item" href="content/SSML/exp.html">Expectation-Maximization</a>
+						<a class="dropdown-item" href="content/SSML/lab.html">Label Propagation</a>
+						<a class="dropdown-item" href="content/SSML/mean.html">Mean-Teacher</a>
+						<a class="dropdown-item" href="content/SSML/self.html">Self-Training</a>
+						<a class="dropdown-item" href="content/SSML/vat.html">Virtual Adversarial Training</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Supervised ML</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/SML/introduction.html">Supervised ML Introduction</a>
+						<a class="dropdown-item" href="content/SML/cross-decomposition.html">Cross Decomposition</a>
+						<a class="dropdown-item" href="content/SML/decision-tree.html">Decision Tree</a>
+						<a class="dropdown-item" href="content/SML/ensemble-methods.html">Ensemble Methods</a>
+						<a class="dropdown-item" href="content/SML/gaussian-process.html">Gaussian Process</a>
+						<a class="dropdown-item" href="content/SML/linear.html">Linear regression</a>
+						<a class="dropdown-item" href="content/SML/naive.html">Naive Bayes</a>
+						<a class="dropdown-item" href="content/SML/perceptron.html">Perceptron</a>
+						<a class="dropdown-item" href="content/SML/ridge.html">Ridge regression</a>
+						<a class="dropdown-item" href="content/SML/sgd.html">Stochastic Gradient Descent</a>
+						<a class="dropdown-item" href="content/SML/svm.html">Support Vector Machine</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Unsupervised ML</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/UML/introduction.html">Unsupervised ML Introduction</a>
+						<a class="dropdown-item" href="content/UML/biclustering.html">Biclustering</a>
+						<a class="dropdown-item" href="content/UML/clustering.html">Clustering</a>
+						<a class="dropdown-item" href="content/UML/gm.html">Gaussian Mixture</a>
+						<a class="dropdown-item" href="content/UML/isolation.html">Isolation Forest</a>
+						<a class="dropdown-item" href="content/UML/manifold.html">Manifold Learning</a>
+						<a class="dropdown-item" href="content/UML/pca.html">Principal Component Analysis</a>
+					</div>
+				</div>
+				</div>
+				<h4 class="section-heading text-uppercase" style="padding-top: 5%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/AI/project1/project1.html">Comparison supervised models</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/AI/project2/project2.html">Comparison unsupervised models</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/AI/project3/project3.html">Comparison semi-supervised models</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/AI/project4/project4.html">Object detection</a></li>
+						<li class="centered-list-item">Project 5: <a href="projects/AI/project5/project5.html">Image segmentation</a></li>
+						<li class="centered-list-item">Project 6: <a href="projects/AI/project6/project6.html">Good practices</a></li>
+						<li class="centered-list-item">Project 7: <a href="projects/AI/project7/project7.html">Tweet analysis</a></li>
+					</ul>
+				</div>
+				<h4 class="section-heading text-uppercase" style="padding-top: 2%">Book</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item"><a href="books/ai/ai.pdf">All you need to know about Artificial Intelligence</a></li>
+					</ul>
+				</div>
 			</div>
-		  </div>
+			<div id="section7" style="display: none;">
+				<h2 class="section-heading text-uppercase" style="padding-top: 2%">Data Visualization</h2>
+				<h3 class="section-subheading">One wrong step and the data could be misinterpreted, leading to huge cost for the company. Data visualization is not something you should take lightly.</h3>
+				<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Hierarchical</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Hierarchical/sc.html">Sunburst charts</a>
+						<a class="dropdown-item" href="content/Hierarchical/tree.html">Tree diagram</a>
+						<a class="dropdown-item" href="content/Hierarchical/treemaps.html">Treemaps</a>
+						<a class="dropdown-item" href="content/Hierarchical/oc.html">Organizational charts</a>
+						<a class="dropdown-item" href="content/Hierarchical/cd.html">Cluster dendrograms</a>
+						<a class="dropdown-item" href="content/Hierarchical/comparison.html">Comparison</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Temporal</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Temporal/line.html">Line graphs</a>
+						<a class="dropdown-item" href="content/Temporal/area.html">Area charts</a>
+						<a class="dropdown-item" href="content/Temporal/candle.html">Candlestick charts</a>
+						<a class="dropdown-item" href="content/Temporal/gantt.html">Gantt charts</a>
+						<a class="dropdown-item" href="content/Temporal/heat.html">Heatmaps (time series)</a>
+						<a class="dropdown-item" href="content/Temporal/comparison.html">Comparison</a>
+					</div>
+					</div>
+				</div>
+				
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Distribution</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Distribution/violin.html">Violin</a>
+						<a class="dropdown-item" href="content/Distribution/density.html">Density</a>
+						<a class="dropdown-item" href="content/Distribution/histogram.html">Histogram</a>
+						<a class="dropdown-item" href="content/Distribution/boxplot.html">Boxplot</a>
+						<a class="dropdown-item" href="content/Distribution/ridgeline.html">Ridgeline</a>
+						<a class="dropdown-item" href="content/Distribution/comparison.html">Comparison</a>
+					</div>
+					</div>
+				</div>
+				
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Ranking</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Ranking/bar.html">Bar charts</a>
+						<a class="dropdown-item" href="content/Ranking/lollipop.html">Lollipop</a>
+						<a class="dropdown-item" href="content/Ranking/wordcloud.html">Wordcloud</a>
+						<a class="dropdown-item" href="content/Ranking/radar.html">Radar</a>
+						<a class="dropdown-item" href="content/Ranking/comparison.html">Comparison</a>
+					</div>
+					</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Spatial</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Spatial/choropleth.html">Choropleth maps</a>
+						<a class="dropdown-item" href="content/Spatial/bubble.html">Bubble maps</a>
+						<a class="dropdown-item" href="content/Spatial/heatmap.html">Heatmaps (geographical)</a>
+						<a class="dropdown-item" href="content/Spatial/flow.html">Flow maps</a>
+						<a class="dropdown-item" href="content/Spatial/comparison.html">Comparison</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Correlation</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Correlation/sp.html">Scatter plots</a>
+						<a class="dropdown-item" href="content/Correlation/matrice.html">Correlation matrices</a>
+						<a class="dropdown-item" href="content/Correlation/para.html">Parallel coordinate plots</a>
+						<a class="dropdown-item" href="content/Correlation/sankey.html">Sankey diagrams</a>
+						<a class="dropdown-item" href="content/Correlation/fd.html">Force-directed graphs</a>
+						<a class="dropdown-item" href="content/Correlation/comparison.html">Comparison</a>
+					</div>
+				</div>
+				</div>
+				<h4 class="section-heading text-uppercase" style="padding-top: 5%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/Viz/Project1/Project1.html">load_iris study</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/Viz/Project2/project2.html">Good practices</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/Viz/Project3/project3.html">Usage of colors</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/Viz/Project4/project4.html">3D visualization</a></li>
+						<li class="centered-list-item">Project 5: <a href="projects/Viz/Project5/project5.html">Dashboard</a></li>
+					</ul>
+				</div>
+				<h4 class="section-heading text-uppercase" style="padding-top: 2%">Book</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item"><a href="books/viz/viz.pdf">All you need to know about Data Visualization</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="section8" style="display: none;">
+				<h2 class="section-heading text-uppercase"style="padding-top: 2%">Recommendation systems</h2>
+				<h3 class="section-subheading">Guiding Your Journey, One Recommendation at a Time</h3>
+				<h4 class="section-heading text-uppercase" style="padding-bottom: 2%">Articles</h3>
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Introduction</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Intro/definition.html">Definition</a>
+						<a class="dropdown-item" href="content/Reco/Intro/importance.html">Importance</a>
+					</div>
+				</div>
+				</div>
+		
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Key components</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Key/data.html">Data</a>
+						<a class="dropdown-item" href="content/Reco/Key/user-item.html">User / Item</a>
+						<a class="dropdown-item" href="content/Reco/Key/metric.html">Metrics</a>
+					</div>
+				</div>
+				</div>
+		
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Algorithms</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Algos/collaborative.html">Collaborative Filtering</a>
+						<a class="dropdown-item" href="content/Reco/Algos/content_based.html">Content-based</a>
+						<a class="dropdown-item" href="content/Reco/Algos/hybrid.html">Hybrid</a>
+					</div>
+				</div>
+				</div>
+		
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Advanced</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Advanced/matrix.html">Matrix factorization</a>
+						<a class="dropdown-item" href="content/Reco/Advanced/deep.html">Deep learning</a>
+						<a class="dropdown-item" href="content/Reco/Advanced/cold.html">Cold start problem</a>
+					</div>
+				</div>
+				</div>
+		
+				<div class="btn-group">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Metrics</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Metrics/evaluation.html">Evaluation</a>
+						<a class="dropdown-item" href="content/Reco/Metrics/testing.html">Testing</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="btn-group">
+					<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Application</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="content/Reco/Application/e-commerce.html">E-commerce</a>
+						<a class="dropdown-item" href="content/Reco/Application/music-movie.html">Music & Movie</a>
+					</div>
+					</div>
+				</div>
+
+				<h4 class="section-heading text-uppercase" style="padding-bottom: 2%; padding-top: 5%">Projects</h4>
+				<div class="centered-list-container">
+					<ul class="centered-list">
+						<li class="centered-list-item">Project 1: <a href="projects/Reco/Project1/project1.html">Movie recommendation</a></li>
+						<li class="centered-list-item">Project 2: <a href="projects/Reco/Project2/project2.html">Good practices</a></li>
+						<li class="centered-list-item">Project 3: <a href="projects/Reco/Project3/project3.html">Music recommendation</a></li>
+						<li class="centered-list-item">Project 4: <a href="projects/Reco/Project4/project4.html">Book recommendation</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	  </div>
 	</div>
-	
-	</section>
-	
-	<!-- ======================================================================= -->
+  </div>
+</div>
+
+</section>
+
+<!-- ======================================================================= -->
+
+
 
 
 <!-- ========================== CONTACT SECTION ============================== -->
