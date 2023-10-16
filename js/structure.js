@@ -84,3 +84,11 @@ function showSection3(sectionId) {
   // Show the selected section
   document.getElementById(sectionId).style.display = 'block';
 }
+
+function showSection4(sectionId) {
+  // Hide all sections
+  document.getElementById('section9').style.display = 'none';
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+}

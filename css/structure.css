@@ -59,6 +59,18 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+section h3.section-subheading-android {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 40px;
+  margin-right: 20%;
+  margin-left: 20%;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 section li.section-subheading {
   font-size: 16px;
   font-weight: 400;
@@ -669,27 +681,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .centered-list-item {
   text-align: left; /* Change to "right" for right-aligned items or "center" for center-aligned items */
   margin-bottom: 5px; /* Adjust spacing between items as needed */
-}
-
-.lollipop-graph {
-  position: relative;
-  width: 400px; /* Adjust the width as per your needs */
-  height: 400px; /* Adjust the height as per your needs */
-  border: 1px solid #ccc;
-  margin: 20px;
-}
-
-.lollipop {
-  position: absolute;
-  width: 2px; /* Width of the lollipop stick */
-  background-color: #5e4da5; /* Color of the lollipop stick */
-  z-index: 1;
-}
-
-.label {
-  position: absolute;
-  top: -15px; /* Adjust the distance of the label above the lollipop */
-  left: -25px; /* Adjust the horizontal position of the label */
 }
 
 </style>
