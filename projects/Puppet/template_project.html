@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Deploy prometheus</title>
+    <title>Project </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to deploy prometheus on kubernetes?">
-    <meta name="keywords" content="alexis carbillet, carbillet, Kubernetes">
+    <meta name="description" content="Website of Alexis Carbillet">
+    <meta name="keywords" content="alexis carbillet, carbillet, Puppet">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
     <meta property="og:title" content="Alexis Carbillet" />
-    <meta property="og:description" content="How to deploy prometheus on kubernetes?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Kube/Project1/project1.html" />
+    <meta property="og:description" content="Website of Alexis Carbillet" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Puppet" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -74,91 +74,18 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Deploy prometheus</h2>
+			<h2 class="section-heading text-uppercase">Project</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>To install Prometheus on a Kubernetes cluster, you can create and apply Kubernetes manifests directly.</p>
-      <ul>
-        <li><B>Create Namespace (optional)</B>:</li>
-        <p>You can create a dedicated namespace for Prometheus to keep your resources organized. To create a namespace, use:</p>
-        <pre><code>kubectl create namespace prometheus</code></pre>
-        <li><B>Prometheus Configuration</B>:</li>
-        <p>Create a "prometheus.yaml" configuration file. This file defines the Prometheus server's configuration and service:</p>
-        <pre><code>apiVersion: v1
-kind: Service
-metadata:
-  name: prometheus
-  labels:
-    app: prometheus
-spec:
-  selector:
-    app: prometheus
-  ports:
-    - name: web
-      port: 9090
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: prometheus
-  labels:
-    app: prometheus
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: prometheus
-  template:
-    metadata:
-      labels:
-        app: prometheus
-    spec:
-      containers:
-        - name: prometheus
-          image: prom/prometheus:v2.28.1
-          args:
-            - "--config.file=/etc/prometheus/prometheus.yml"
-            - "--storage.tsdb.path=/prometheus/data"
-          ports:
-            - containerPort: 9090
-          volumeMounts:
-            - name: prometheus-config
-              mountPath: /etc/prometheus
-            - name: prometheus-data
-              mountPath: /prometheus/data
-      volumes:
-        - name: prometheus-config
-          configMap:
-            name: prometheus-config
-        - name: prometheus-data
-          emptyDir: {}</code></pre>
-          <li><B>Prometheus Configuration File</B>:</li>
-          <p>Create a "prometheus-config.yaml" configuration file to define the Prometheus server's configuration:</p>
-          <pre><code>apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: prometheus-config
-data:
-  prometheus.yml: |
-    global:
-      scrape_interval: 15s
-
-    scrape_configs:
-      - job_name: 'prometheus'
-        static_configs:
-          - targets: ['localhost:9090']
-
-      # Add more scrape configurations as needed for your services.</code></pre>
-        <p>You can customize the "prometheus.yml" file to include targets for your applications and services.</p>
-        <li><B>Apply the Configurations</B>:</li>
-        <pre><code>kubectl apply -f prometheus-config.yaml
-kubectl apply -f prometheus.yaml</code></pre>
-        <li><B>Access Prometheus</B>:</li>
-        <p>You can access Prometheus by port-forwarding or setting up a service depending on your use case. For example, to port-forward the Prometheus web interface:</p>
-        <pre><code>kubectl port-forward svc/prometheus 9090:9090</code></pre>
-        <p>Then, you can access Prometheus at "http://localhost:9090" in your web browser.</p>
-      </ul>
-		  <p>Remember to adjust these configurations to your specific needs. This guide provides a basic setup for Prometheus, and you can expand it to include additional scrape configurations and integrations as required for your environment.</p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <p></p>
 		  </div>
 		</div>
       </div>

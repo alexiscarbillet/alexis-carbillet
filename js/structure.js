@@ -88,6 +88,7 @@ function showSection3(sectionId) {
 function showSection4(sectionId) {
   // Hide all sections
   document.getElementById('section9').style.display = 'none';
+  document.getElementById('section10').style.display = 'none';
 
   // Show the selected section
   document.getElementById(sectionId).style.display = 'block';
