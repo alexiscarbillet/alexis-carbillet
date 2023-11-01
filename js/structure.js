@@ -80,6 +80,7 @@ function showSection3(sectionId) {
   document.getElementById('section6').style.display = 'none';
   document.getElementById('section7').style.display = 'none';
   document.getElementById('section8').style.display = 'none';
+  document.getElementById('section11').style.display = 'none';
 
   // Show the selected section
   document.getElementById(sectionId).style.display = 'block';
