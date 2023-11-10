@@ -643,6 +643,16 @@ footer span.copyright {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+section#footer .object {
+  display: inline; /* Set it to display inline */
+  margin: 0; /* Reset any margin */
+  padding: 0; /* Reset any padding */
+  border: none; /* Remove any border */
+  font-size: inherit; /* Inherit font size from the parent */
+  color: inherit; /* Inherit color from the parent */
+  /* Add other styling properties as needed */
+}
+
 ul.social-buttons {
   margin-bottom: 0;
 }
