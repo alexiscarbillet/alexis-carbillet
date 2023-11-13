@@ -1,15 +1,11 @@
 # alexis-carbillet
 
-This is my personal website.
+This is my personal website. It contains different side projects I did during my free time.
 
 It contains different blogs:
 
 - coding: python, html
 - databases: prometheus, sql, mongodb
 - advanced systems: articifial intelligence, data visualization, recommendation systems
-
-There are also books and apps incoming about those topics. More blogs may appear in the future too.
-
-How is it structured?
-
-Content is a folder that contains the content of the different blogs. Projects, Books and Apps folders are self explanatory.
+- sysdamin: kubernetes, puppet
+- android: different apps I made
