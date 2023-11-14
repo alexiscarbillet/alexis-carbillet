@@ -3,23 +3,23 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Python indentation</title>
+    <title>scrap & csv</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Why are indentations important in python?">
-    <meta name="keywords" content="alexis carbillet, carbillet, python, indentation">
+    <meta name="description" content="How to scrap and export results in csv with python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, python">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Python indentation" />
-    <meta property="og:description" content="Why are indentations important in python?" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Python/control/indentation.html" />
+    <meta property="og:title" content="scrap & csv" />
+    <meta property="og:description" content="How to scrap and export results in csv with python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/projects/Project6/project6.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
 	
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,13 +52,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#article">Article</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../../../index.html#py">Main</a>
             </li>
           </ul>
@@ -67,13 +67,6 @@
     </nav>
 
 
-
-    <!-- Header -->
-    <header class="masthead">
-	  <div class="container">		
-		  
-	  </div>
-    </header>
 	
 <!-- ======================== ARTICLE SECTION ============================ -->
 
@@ -81,28 +74,59 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Python indentation</h2>
+			<h2 class="section-heading text-uppercase">scrap & csv</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Proper indentation is a crucial aspect of Python programming due to its role in determining the structure and readability of your code. In Python, indentation is not just a matter of style; it is a syntactical requirement that affects how the interpreter understands and executes your code. Here are the key reasons why proper indentation is significant in Python:</p>
-      <ul>
-        <li><B>Code Readability</B>: Indentation provides a visual structure to your code, making it easier to read and understand. Consistent and well-organized indentation enhances code readability, especially when working on collaborative projects or reviewing code.</li>
-        <li><B>Block Delimitation</B>: In most programming languages, code blocks are defined using braces or keywords like "begin" and "end". In Python, code blocks are defined solely by indentation. Indentation helps you clearly define where a block of code starts and ends, aiding in code comprehension.</li>
-        <li><B>Syntax Validation</B>: The Python interpreter uses indentation to determine the grouping of statements within code blocks, such as loops, conditional statements, and function definitions. Incorrect indentation can lead to syntax errors and unexpected behavior in your program.</li>
-        <li><B>No Ambiguity</B>: Indentation eliminates ambiguity that arises from using opening and closing braces. In languages with braces, missing or misplaced braces can lead to subtle bugs that are harder to detect.</li>
-        <li><B>Consistency</B>: Consistent indentation ensures that your code maintains a clean and uniform appearance, making it easier to spot errors and inconsistencies.</li>
-        <li><B>Code Maintenance</B>: Well-indented code is more maintainable. When you revisit your code later or when someone else reviews it, they will have an easier time understanding and modifying the code if it's properly indented.</li>
-      </ul>
-		  <p>Here's an example to illustrate the significance of proper indentation:</p>
-      <pre><code># Incorrect indentation
-if x > 5:
-print("x is greater than 5")  # IndentationError: expected an indented block
+      <p>How to scrap and export results in csv with python?</p>
+		  <p>You can achieve this by using Python and some libraries like BeautifulSoup for web scraping and Pandas for data manipulation and saving to a CSV file. Here's a step-by-step guide on how to do it:</p>
+      <pre><code>import requests
+from bs4 import BeautifulSoup
+import pandas as pd
 
-# Correct indentation
-if x > 5:
-    print("x is greater than 5")  # No error, the block is indented correctly</code></pre>
-		  <p>In the incorrect indentation example, the absence of proper indentation results in a syntax error. The correct indentation ensures that the code is correctly interpreted by the Python interpreter.</p>
-		  <p>In summary, proper indentation is more than just a visual preference in Python; it's a critical part of the language's syntax and greatly impacts code readability, maintainability, and correctness.</p>
+# Send an HTTP GET request to the webpage
+url = "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number"
+response = requests.get(url)
+
+# Parse the HTML content of the page using BeautifulSoup
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Find the table containing the data
+table = soup.find('table', {'class': 'roundy'})
+
+# Initialize lists to store the data
+ndex_list = []
+pokemon_list = []
+type_list = []
+
+# Iterate through the rows of the table
+for row in table.find_all('tr')[2:]:  # Skip the first two header rows
+    columns = row.find_all('td')
+    
+    # Check if there are enough columns to extract data
+    if len(columns) >= 5:
+        ndex = columns[0].text.strip()
+        name = columns[3].text.strip()
+        types = [t.text.strip() for t in columns[4].find_all('a')]
+        
+        ndex_list.append(ndex)
+        pokemon_list.append(name)
+        type_list.append('/'.join(types))
+
+# Create a DataFrame from the lists
+data = {
+    'National Dex Number': ndex_list,
+    'Pokemon': pokemon_list,
+    'Type': type_list
+}
+
+df = pd.DataFrame(data)
+
+# Save the data to a CSV file
+df.to_csv('pokemon_data.csv', index=False)
+
+print("Data has been scraped and saved to pokemon_data.csv")</code></pre>
+		  <p>This script will scrape the National Dex number, Pokemon names, and types from the given URL and save the data to a CSV file named "pokemon_data.csv" in the same directory as your script.</p>
+      <p>You can find the result <a href="pokemon_data.csv">here</a>.</p>
 		  </div>
 		</div>
       </div>
