@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ssidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID: "
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/bssidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BSSID: "
+        android:layout_below="@id/ssidTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/ipAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP Address: "
+        android:layout_below="@id/bssidTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/linkSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Speed: "
+        android:layout_below="@id/ipAddressTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/cpuUsageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU Usage: "
+        android:layout_below="@id/linkSpeedTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/memoryUsageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory Usage: "
+        android:layout_below="@id/cpuUsageTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: "
+        android:layout_below="@id/memoryUsageTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+</RelativeLayout>
