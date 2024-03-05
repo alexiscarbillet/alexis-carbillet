@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Locally Linear Embedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="What is Locally Linear Embedding? How to implement it in python?">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, python, neural network, Locally Linear Embedding">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="What is Locally Linear Embedding?" />
+    <meta property="og:description" content="What is a Locally Linear Embedding? How to implement it in python?" />
+    <meta property='og:url' content="https://www.alexis-carbillet.com/content/NN/lle.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#python">Python example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../index.html#ai">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Locally Linear Embedding</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+        <p>The LLM algorithm stands for "Locally Linear Mapping" algorithm. It's a method used in machine learning to simplify and understand complex data by finding simpler patterns within it.</p>
+        <p>Here's a simple breakdown of how it works:</p>
+        <ul>
+          <li><b>Data Representation</b>: First, the algorithm takes your data, which could be anything from images to text to numerical data, and represents it in a high-dimensional space. This means each data point is represented by a bunch of numbers (features) that describe it.</li>
+          <li><b>Local Linearity</b>: LLM looks at each data point and tries to find its nearest neighbors. It then assumes that the data in that neighborhood can be represented as a linear combination of those neighbors. This is based on the idea that things close together in the original space should behave similarly.</li>
+          <li><b>Mapping</b>: Once it has these local linear relationships, LLM tries to map the data to a lower-dimensional space while preserving these local relationships as much as possible. In other words, it tries to find a simpler way to represent the data without losing too much important information.</li>
+          <li><b>Dimensionality Reduction</b>: The end result is a lower-dimensional representation of the data that captures its essential structure. This can be useful for tasks like visualization, where it's easier to understand data in two or three dimensions rather than the original high-dimensional space.</li>
+        </ul>
+        <p>Overall, LLM helps simplify complex data by finding local linear relationships and mapping it to a lower-dimensional space while preserving those relationships.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== PYTHON SECTION ============================ -->
+
+	<section class="bg-light" id="python">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Python Example</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+			<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import make_swiss_roll
+from sklearn.manifold import LocallyLinearEmbedding
+
+# Generate some example data
+X, _ = make_swiss_roll(n_samples=1000, noise=0.2, random_state=42)
+
+# Define the Locally Linear Embedding (LLE) model
+lle = LocallyLinearEmbedding(n_neighbors=10, n_components=2, method='standard')
+
+# Fit the model to the data
+X_lle = lle.fit_transform(X)
+
+# Plot the original and embedded data
+plt.figure(figsize=(12, 6))
+plt.subplot(121)
+plt.scatter(X[:, 0], X[:, 1], c='b', cmap=plt.cm.Spectral)
+plt.title('Original Data')
+plt.subplot(122)
+plt.scatter(X_lle[:, 0], X_lle[:, 1], c='r', cmap=plt.cm.Spectral)
+plt.title('Locally Linear Embedding')
+plt.show()</code></pre>
+      <p><u>Results</u>:</p>
+      <img src="../../img/ai/lle.png" class="center" alt="lle result"></img>
+      <p>We generate some example data using the make_swiss_roll function from scikit-learn, which generates a 3D Swiss roll dataset.</p>
+      <p>We define the Locally Linear Embedding (LLE) model using LocallyLinearEmbedding from scikit-learn. We specify the number of neighbors to consider (n_neighbors) and the number of components for the lower-dimensional embedding (n_components).</p>
+      <p>We fit the LLE model to the data using the fit_transform method.</p>
+      <p>Finally, we plot the original data and the embedded data side by side to visualize the effect of the dimensionality reduction.</p>
+			</div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+<iframe id="contact" src="../../contact.html"  frameborder="0" scrolling="no" style="border: none; width: 100%; height: 140vh; max-height: 800px;"></iframe>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+        <iframe src="../../copyright.html" frameborder="0" style="padding: 0%; max-height: 25px;"></iframe>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../index.html"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../js/particles.js"></script>
+	<script src="../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
