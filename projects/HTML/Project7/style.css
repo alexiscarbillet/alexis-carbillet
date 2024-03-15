@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+canvas {
+border: 10px solid black; /* Modify this value to set the width of the border */
+}
