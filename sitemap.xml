@@ -9,1012 +9,1087 @@
 
 <url>
   <loc>https://alexis-carbillet.com/</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://alexis-carbillet.com/apps/website/app.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://alexis-carbillet.com/content/Python/basics/variables.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/basics/operation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/basics/data-type.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/basics/list.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/basics/string.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/control/conditions.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/control/loop.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/control/indentation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/control/blocks.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/functions/intro.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/functions/variable.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/functions/lambda.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/content/Python/functions/decorator.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/structure/list_and_loop.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/structure/string_methods.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/structure/fstring.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/structure/dico.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/structure/set.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/files/file.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/files/errors.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/files/exceptions.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/oop/fundamentals.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/oop/class_and_object.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/oop/module_and_statement.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/oop/libraries.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/practices/tips.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/practices/pep8.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Python/practices/syntax_errors.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Python/Project6/project6.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Python/Project7/project7.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Python/Project8/project8.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/HTML/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/HTML/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/HTML/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/HTML/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/HTML/Project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/HTML/Project7/project7.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Introduction.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Data.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Configuration.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Literals.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Selectors.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Promtool.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Records.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Storage.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Basics/Gotchas.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Operators/Aggregation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Operators/Binary.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Operators/Matching.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Operators/Precedence.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Functions/alert.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Functions/histogram.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Functions/label.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Functions/range.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/Functions/time.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/API/Querying.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/API/Result.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/API/ServiceDiscovery.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Prom/API/Management.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Prom/Project1/Project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Prom/Project2/Project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Prom/Project3/Project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Prom/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Prom/Project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/SQL/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/SQL/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/SQL/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/SQL/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/SQL/Project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Mongo/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Mongo/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Mongo/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Mongo/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/audio.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/csv.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/image.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/json.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/time.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/text.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/DP/video.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/introduction.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/activation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/attention.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/loss.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/metrics.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/optimizers.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/overfitting.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/regularization.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/update.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/autoencoder.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/content/NN/aae.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/cnn.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/gan.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/content/NN/lle.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/lstm.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/mlp.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/NN/rnn.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/introduction.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/co.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/exp.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/lab.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/mean.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/self.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SSML/vat.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/introduction.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/cross-decomposition.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/decision-tree.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/ensemble-methods.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/gaussian-process.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/linear.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/naive.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/perceptron.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/ridge.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/sgd.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/SML/svm.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/introduction.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/biclustering.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/clustering.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/gm.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/isolation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/manifold.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/UML/pca.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project6/project6.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/AI/project7/project7.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/sc.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/tree.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/treemaps.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/oc.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/cd.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Hierarchical/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/line.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/area.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/candle.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/gantt.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/heat.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Temporal/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/violin.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/density.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/histogram.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/boxplot.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/ridgeline.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Distribution/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Ranking/bar.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Ranking/lollipop.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Ranking/wordcloud.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Ranking/radar.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Ranking/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Spatial/choropleth.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Spatial/bubble.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Spatial/heatmap.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Spatial/flow.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Spatial/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/sp.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/matrice.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/para.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/sankey.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/fd.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Correlation/comparison.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project1/Project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project5/project5.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Viz/Project6/project6.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Viz/Project7/project7.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Viz/Project8/project8.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Intro/definition.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Intro/importance.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Key/data.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Key/user-item.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Key/metric.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Algos/collaborative.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Algos/content_based.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Algos/hybrid.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Advanced/matrix.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Advanced/deep.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Advanced/cold.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Metrics/evaluation.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Metrics/testing.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Application/e-commerce.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/content/Reco/Application/music-movie.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Reco/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Reco/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Reco/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Reco/Project4/project4.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Spark/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Spark/Project2/project2.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/projects/Spark/Project3/project3.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Kube/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Puppet/Project1/project1.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Puppet/Project2/project2.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/projects/Puppet/Project3/project3.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/website/app.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/apps/unit-converter/app.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/apps/calculator/app.html</loc>
-  <lastmod>2023-11-14T22:18:14+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/canadian-birds/app.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/phone-monitoring/app.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/tic-tac-toe/app.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/privacy.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/contact.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/copyright.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/index.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/apps/unit-converter/privacy.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://alexis-carbillet.com/apps/calculator/privacy.html</loc>
-  <lastmod>2023-11-14T22:18:15+00:00</lastmod>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/canadian-birds/privacy.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alexis-carbillet.com/apps/tic-tac-toe/privacy.html</loc>
+  <lastmod>2024-03-15T03:02:48+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
