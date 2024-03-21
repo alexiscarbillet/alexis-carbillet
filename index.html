@@ -6,7 +6,7 @@
     <title>Alexis Carbillet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Contains different articles about coding, databases, AI, Data Visualization, ...">
-    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, python, recommendation system, sql, html">
+    <meta name="keywords" content="alexis carbillet, carbillet, artificial intelligence, neural network, machine learning, data visualization, prom, prometheus, python, recommendation system, sql, mongodb, html, puppet, kube, kubernetes, docker">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
@@ -82,8 +82,8 @@
 	  <div class="container">		
 		  <div class="intro-text">
           <div class="intro-lead-in text-center" style="padding-top: 10%">
-		  Hello there! I am Alexis Carbillet, passionated about coding. I create this website from scratch and it contains different personnel projects I worked on. I also wrote short classes about different topics. <br>
-		  You will find 5 main sections: coding, databases, advanced (AI, visualization, ...), sysAdmin (Puppet, Kubernetes, ...) and android. <br>
+		  Hello there! I am Alexis Carbillet, passionated about coding. I create this website from scratch and it contains different personnel projects I worked on. I also wrote short articles about different topics. <br>
+		  You will find 5 main sections: <a href="index.html#coding">coding</a>,  <a href="index.html#db">databases</a>, <a href="index.html#advanced">advanced</a> (AI, visualization, ...), <a href="index.html#sys">sysAdmin</a> (Puppet, Kubernetes, ...) and <a href="index.html#android">android</a>. <br>
 		  Recently, I also did a website called <a href="https://ac-electricity.com">ac-electricity</a> about, as you surely guessed, electricity. Do not hesitate to check it out.
 		  </div>
 	  </div>
@@ -683,9 +683,83 @@
 			<h1 class="section-heading text-uppercase text-white">SYSADMIN</h1>
 			<h3 class="section-subheading text-white" style="margin-bottom: 0%; margin-top: 0%">Use the buttons below to change the content of this section.</h3>
 			<!-- Buttons to toggle between sections -->
+			<button class="btn btn-perso" onclick="showSection4('section12')">Docker</button>
 			<button class="btn btn-perso" onclick="showSection4('section9')">Kubernetes</button>
 			<button class="btn btn-perso" onclick="showSection4('section10')">Puppet</button>
 			<div id="commonSection">
+				<div id="section12" style="display: block;">
+					<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">Docker</h2>
+					<h3 class="section-subheading text-white"></h3>
+					<h4 class="section-heading text-uppercase text-white">Articles</h4>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Introduction</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Docker/introduction/containerization.html">Containerization</a>
+							<a class="dropdown-item" href="content/Docker/introduction/container_vs_vms.html">Containers vs vms</a>
+							<a class="dropdown-item" href="content/Docker/introduction/docker.html">Docker</a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Architecture</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Docker/architecture/docker_client.html">Docker client</a>
+							<a class="dropdown-item" href="content/Docker/architecture/docker_engine.html">Docker engine</a>
+							<a class="dropdown-item" href="content/Docker/architecture/overall.html">Overall</a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Images</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Containers</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Volumes</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Networking</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Docker Compose</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+					<div class="btn-group">
+						<div class="btn-group">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Advanced</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="content/Reco/Application/e-commerce.html"></a>
+						</div>
+						</div>
+					</div>
+				</div>
 				<div id="section9" style="display: none;">
 					<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">Kubernetes</h2>
 					<h3 class="section-subheading text-white">Kubernetes is a popular open-source container orchestration platform that simplifies the deployment, scaling, and management of containerized applications.</h3>
@@ -696,7 +770,7 @@
 						</ul>
 					</div>
 				</div>
-				<div id="section10" style="display: block;">
+				<div id="section10" style="display: none;">
 					<h2 class="section-heading text-uppercase text-white" style="padding-top: 2%">Puppet</h2>
 					<h3 class="section-subheading text-white">Puppet automates and streamlines the configuration and management of software across a network of servers, ensuring consistency and efficiency in large-scale IT environments.</h3>
 					<h4 class="section-heading text-uppercase text-white">Projects</h4>
@@ -726,7 +800,7 @@
 		<div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
 			<h1 class="section-heading text-uppercase">ANDROID</h1>
-			<h3 class="section-subheading-android">I coded several android applications. They are all available in play store. Here is the list:</h3>
+			<h3 class="section-subheading-android">I coded several android applications for fun. Among them, 3 are available in play store. Here is the list:</h3>
 			<div class="centered-list-container">
 				<ul class="centered-list">
 					<li class="centered-list-item">App 1: <a href="apps/website/app.html">alexis-carbillet.com</a></li>
