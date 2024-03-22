@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Docker security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A short introduction to docker security">
+    <meta name="keywords" content="alexis carbillet, carbillet, docker, docker security">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Docker security" />
+    <meta property="og:description" content="A short introduction to docker security" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Docker/advanced/security.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#sys">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+	  <div class="container">		
+		  
+	  </div>
+    </header>
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Docker security</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Docker security encompasses a range of best practices, tools, and techniques aimed at securing containerized environments, minimizing risks, and protecting against potential vulnerabilities and threats. Ensuring Docker security is crucial for safeguarding sensitive data, maintaining regulatory compliance, and preventing security breaches. Here's an overview covering key aspects of Docker security:</p>
+      <ul>
+        <li><b>Container Isolation</b>: Docker containers provide a level of isolation by running applications in separate environments, but it's essential to understand that they share the same kernel with the host system. Properly configuring and hardening container isolation settings is critical for preventing container breakouts and unauthorized access to host resources.</li>
+        <li><b>Image Security</b>:</li>
+        <ul>
+          <li>Scanning images for vulnerabilities using security scanning tools like Docker Security Scanning, Clair, or Trivy.</li>
+          <li>Regularly updating base images and dependencies to patch known vulnerabilities.</li>
+          <li>Implementing image signing and verification to ensure image integrity and authenticity.</li>
+        </ul>
+        <li><b>Docker Configuration</b>:</li>
+        <ul>
+          <li>Enabling and enforcing Docker Content Trust to ensure only signed images are used.</li>
+          <li>Restricting access to Docker daemon sockets and APIs using access control mechanisms such as TLS authentication and Unix socket permissions.</li>
+          <li>Configuring resource constraints (e.g., CPU, memory, I/O) to prevent container resource abuse and denial-of-service attacks.</li>
+        </ul>
+        <li><b>Network Security</b>:</li>
+        <ul>
+          <li>Use Docker's built-in networking features, such as bridge networks and overlay networks, to isolate container traffic and enforce network segmentation.</li>
+          <li>Implement network-level firewalls and security groups to control traffic flow between containers and external networks.</li>
+          <li>Monitor network traffic for anomalous behavior and potential security incidents using network monitoring tools.</li>
+        </ul>
+        <li><b>Secrets Management</b>:</li>
+        <ul>
+          <li>Storing secrets in Docker secrets, environment variables, or external secret management tools like HashiCorp Vault or AWS Secrets Manager.</li>
+          <li>Encrypting sensitive data at rest and in transit to protect against unauthorized access and data breaches.</li>
+          <li>Rotating secrets regularly and auditing access to sensitive information to ensure compliance with security policies and regulations.</li>
+        </ul>
+        <li><b>Runtime Security</b>:</li>
+        <ul>
+          <li>Implementing container runtime security solutions like Docker Security Tools, Aqua Security, or Sysdig Secure to detect and mitigate runtime threats.</li>
+          <li>Enforcing least privilege principles by running containers with non-root users and restricting container capabilities to minimize the attack surface.</li>
+          <li>Implementing runtime integrity checks and anomaly detection mechanisms to detect unauthorized changes to container filesystems and configurations.</li>
+        </ul>
+        <li><b>Host Security</b>:</li>
+        <ul>
+          <li>Regularly applying security patches and updates to the host operating system and Docker software.</li>
+          <li>Hardening host security settings, such as enabling mandatory access control (MAC), implementing file system integrity monitoring, and using kernel security modules like AppArmor or SELinux.</li>
+          <li>Leveraging host-based security solutions like intrusion detection/prevention systems (IDS/IPS), antivirus software, and host monitoring tools to detect and mitigate security threats at the host level.</li>
+        </ul>
+        <li><b>Container Lifecycle Management</b>:</li>
+        <ul>
+          <li>Implementing secure container deployment and orchestration practices using tools like Kubernetes, Docker Swarm, or Red Hat OpenShift.</li>
+          <li>Validating container configurations and orchestrator settings to ensure compliance with security policies and best practices.</li>
+          <li>Automating container lifecycle management tasks, including provisioning, scaling, patching, and decommissioning, to minimize human error and reduce security risks.</li>
+        </ul>
+      </ul>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+<iframe id="contact" src="../../../contact.html"  frameborder="0" scrolling="no" style="border: none; width: 100%; height: 140vh; max-height: 800px;"></iframe>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+        <iframe src="../../../copyright.html" frameborder="0" style="padding: 0%; max-height: 25px;"></iframe>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html#sys"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
