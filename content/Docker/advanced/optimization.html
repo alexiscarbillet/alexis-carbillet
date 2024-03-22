@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Docker optimization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Some tips to optimize your docker resources">
+    <meta name="keywords" content="alexis carbillet, carbillet, docker, optimization">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Docker optimization" />
+    <meta property="og:description" content="Some tips to optimize your docker resources" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Docker/advanced/optimization.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#sys">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Docker optimization</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Dockerfile optimization involves streamlining the Docker image build process to create smaller, more efficient, and faster-loading container images. Optimizing Dockerfiles can improve resource utilization, reduce image size, enhance build speed, and enhance overall container performance. Here are several strategies and best practices for Dockerfile optimization:</p>
+      <ul>
+        <li><b>Use Minimal Base Images</b>: Start your Dockerfile with a minimal base image that contains only the necessary components for your application. Examples include Alpine Linux, BusyBox, or Debian slim variants. These base images are smaller in size compared to full-fledged distributions like Ubuntu or CentOS, reducing the overall image footprint.</li>
+        <li><b>Leverage Multi-Stage Builds</b>: Use multi-stage builds to separate the build environment from the runtime environment. This allows you to compile/build your application in one stage and copy only the necessary artifacts to the final image in another stage. Multi-stage builds help reduce the size of the final image by eliminating build dependencies and unnecessary files.</li>
+        <li><b>Minimize Layers</b>: Reduce the number of layers in your Docker image by consolidating multiple commands into a single RUN instruction. Each instruction in a Dockerfile creates a new layer, so combining multiple commands into a single RUN instruction can help minimize the number of layers and reduce image size.</li>
+        <li><b>Optimize Dockerfile Instructions</b>:</li>
+        <ul>
+          <li>Use specific COPY or ADD instructions to copy only the required files into the image. Avoid copying unnecessary files or directories that are not needed for the application.</li>
+          <li>Use the --chown flag with COPY or ADD to set the ownership of copied files explicitly, reducing the risk of permission issues and improving security.</li>
+          <li>Combine RUN commands with && to execute multiple commands in a single layer and reduce the number of intermediate layers.</li>
+        </ul>
+        <li><b>Avoid Installing Unnecessary Dependencies</b>:</li>
+        <ul>
+          <li>Only install necessary dependencies and packages required for your application to function properly. Remove any build-time dependencies or development tools that are not needed in the final image.</li>
+          <li>Consider using package managers like APT or Yum with the --no-install-recommends or --no-install-suggests flags to skip installation of recommended or suggested packages.</li>
+        </ul>
+        <li><b>Use .dockerignore File</b>:</li>
+        <ul>
+          <li>Create a .dockerignore file in the same directory as your Dockerfile to exclude unnecessary files and directories from the build context. This helps reduce the size of the build context and speeds up the build process.</li>
+          <li>Include patterns in .dockerignore to exclude files such as temporary files, logs, and build artifacts that are not needed in the final image.</li>
+        </ul>
+        <li><b>Optimize Image Caching</b>:</li>
+        <ul>
+          <li>Order your Dockerfile instructions to maximize caching benefits. Place frequently changing instructions (e.g., copying application source code) at the end of the Dockerfile and static instructions (e.g., installing dependencies) at the beginning.</li>
+          <li>Leverage Docker BuildKit features like BuildKit caching and BuildKit inline caches to optimize the build cache and improve build performance.</li>
+        </ul>
+        <li><b>Monitor Image Size and Performance</b>:</li>
+        <ul>
+          <li>Regularly monitor and analyze the size and performance of your Docker images using tools like Docker Image Inspector, Dive, or Docker Image Size.</li>
+          <li>Continuously evaluate and refine your Dockerfile optimization strategies based on image size, build time, and container startup time metrics.</li>
+        </ul>
+      </ul>
+		  <p>By implementing these Dockerfile optimization techniques, you can create leaner, more efficient Docker images that consume fewer resources, load faster, and improve overall container performance in your Dockerized environments.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+<iframe id="contact" src="../../../contact.html"  frameborder="0" scrolling="no" style="border: none; width: 100%; height: 140vh; max-height: 800px;"></iframe>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+        <iframe src="../../../copyright.html" frameborder="0" style="padding: 0%; max-height: 25px;"></iframe>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html#sys"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
