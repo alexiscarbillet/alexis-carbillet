@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Docker compose examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Some examples about how to use docker compose">
+    <meta name="keywords" content="alexis carbillet, carbillet, docker">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="Docker compose examples" />
+    <meta property="og:description" content="Some examples about how to use docker compose" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Docker/compose/examples.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../../../img/logo/logo.png" />
+	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/structure.css" rel="stylesheet">
+
+	<!-- Choice of languages -->
+	<link rel="alternate" hreflang="x-default" href="https://www.alexis-carbillet.com/" />
+
+
+  </head>
+
+  <body id="page-top">
+
+
+
+
+
+    <!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+		<img src="../../../img/logo/logo.png" width="5%" style="margin-right: 2%;" alt="logo website">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#article">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../../index.html#sys">Main</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	
+<!-- ======================== ARTICLE SECTION ============================ -->
+
+	<section id="article">
+      <div class="container">
+        <div class="row">
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Docker compose examples</h2>
+		  </div>
+		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
+		  <p>Writing Docker Compose YAML files involves defining the services, networks, volumes, and other components of a multi-container application using a simple and declarative syntax. Docker Compose YAML files typically follow a specific structure and include various sections to specify the desired state of the application environment. Here's an explanation of how to write Docker Compose YAML files:</p>
+      <ul>
+        <li><b>Service Definitions</b>:</li>
+        <ul>
+          <li>The "services" section is where you define the individual services (containers) that make up your application.</li>
+          <li>Each service is identified by a unique name and includes configuration options such as image, ports, volumes, environment variables, and dependencies.</li>
+          <li>Example service definition:</li>
+          <pre><code>services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: my_database</code></pre>
+        </ul>
+        <li><b>Networks and Volumes</b>:</li>
+        <ul>
+          <li>The "networks" and "volumes" sections allow you to define custom networks and volumes for your application.</li>
+          <li>Networks provide communication channels between containers, while volumes provide persistent storage for container data.</li>
+          <li>Example network and volume definitions:</li>
+          <pre><code>networks:
+  my_network:
+volumes:
+  my_volume:</code></pre>
+        </ul>
+        <li><b>Environment Variables</b>:</li>
+        <ul>
+          <li>You can specify environment variables for your services using the "environment" or "env_file" options.</li>
+          <li>Environment variables can be defined globally for all services or individually for specific services.</li>
+          <li>Example environment variable definitions:</li>
+          <pre><code>environment:
+  MYSQL_ROOT_PASSWORD: secret
+  MYSQL_DATABASE: my_database</code></pre>
+        </ul>
+        <li><b>Configuration Overrides</b>:</li>
+        <ul>
+          <li>Docker Compose allows you to override configuration options for different environments (e.g., development, testing, production) using separate YAML files or command-line arguments.</li>
+          <li>Overrides can be applied at the service level or globally for all services.</li>
+          <li>Example configuration override:</li>
+          <pre><code>services:
+  web:
+    image: my_custom_image:latest</code></pre>
+        </ul>
+        <li><b>Scaling Services</b>:</li>
+        <ul>
+          <li>You can scale services horizontally by specifying the desired number of container replicas using the "scale" option.</li>
+          <li>Scaling is useful for distributing workload across multiple containers and improving application performance.</li>
+          <li>Example service scaling:</li>
+          <pre><code>services:
+  web:
+    image: nginx:latest
+  scale: 3</code></pre>
+        </ul>
+        <li><b>Dependencies and Links</b>:</li>
+        <ul>
+          <li>Docker Compose automatically manages dependencies between services based on the order of service definitions in the YAML file.</li>
+          <li>You can explicitly define service dependencies using the "depends_on" option or link services together using the "links" option.</li>
+          <li>Example dependency and link definitions:</li>
+          <pre><code>services:
+  web:
+    image: nginx:latest
+  db:
+    image: mysql:latest
+    depends_on:
+      - web</code></pre>
+        </ul>
+      </ul>
+		  <p>By following this structure and syntax, you can write Docker Compose YAML files to define the configuration and behavior of your multi-container applications.</p>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+<!-- ========================== CONTACT SECTION ============================== -->
+
+<iframe id="contact" src="../../../contact.html"  frameborder="0" scrolling="no" style="border: none; width: 100%; height: 140vh; max-height: 800px;"></iframe>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+			<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+        <iframe src="../../../copyright.html" frameborder="0" style="padding: 0%; max-height: 25px;"></iframe>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+			</div>
+			<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1"></div>
+			<div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+			<a href="../../../index.html#sys"><span class="copyright" style="margin-right: 2%;">Blog</span></a>
+			</div>
+		</div>
+		<div id="particles-js" style="height:50px;"></div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+    <!-- Custom scripts for this template -->
+    <script src="../../../js/structure.js"></script>
+	
+	<!-- Particles part -->
+	<script src="../../../js/particles.js"></script>
+	<script src="../../../js/app.js"></script>
+	
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+	
+
+<!-- ======================================================================= -->
+  </body>
+
+</html>
