@@ -3,16 +3,16 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Docker networks</title>
+    <title>Docker network examples</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Explanations about the 4 main kind of network used with docker">
-    <meta name="keywords" content="alexis carbillet, carbillet, docker, network">
+    <meta name="description" content="Some examples about managing docker network">
+    <meta name="keywords" content="alexis carbillet, carbillet, docker, docker network">
     <meta name="author" content="Alexis Carbillet ">
  
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Docker networks" />
-    <meta property="og:description" content="Explanations about the 4 main kind of network used with docker" />
-    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Docker/networking/kind_of_networks.html" />
+    <meta property="og:title" content="Docker network examples" />
+    <meta property="og:description" content="Some examples about managing docker network" />
+    <meta property='og:url' content="https://www.alexis-carbillet.eu/content/Docker/networking/examples.html" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -73,43 +73,24 @@
       <div class="container">
         <div class="row">
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Docker networks</h2>
+			<h2 class="section-heading text-uppercase">Docker network examples</h2>
 		  </div>
 		  <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-left">
-		  <p>Docker provides several types of networks, each designed to meet different use cases and networking requirements in containerized environments. Here's an explanation of the four main types of Docker networks:</p>
-      <ul>
-        <li><b>Bridge Network</b>:</li>
-        <ul>
-          <li>The bridge network is the default network created by Docker on installation.</li>
-          <li>It operates at the data link layer (Layer 2) of the OSI model, providing connectivity between containers running on the same Docker host.</li>
-          <li>Containers connected to the bridge network can communicate with each other using IP addresses assigned by Docker's built-in DNS resolver.</li>
-          <li>By default, containers on the bridge network are isolated from external networks and cannot be accessed from outside the host system.</li>
-          <li>Bridge networks are suitable for most containerized applications that require communication between containers on the same host.</li>
-        </ul>
-        <li><b>Host Network</b>:</li>
-        <ul>
-          <li>In host network mode, a container shares the network namespace of the host system, bypassing Docker's network isolation mechanisms.</li>
-          <li>Containers in host network mode have full access to the host system's network interfaces, including loopback interfaces and external network interfaces.</li>
-          <li>Host network mode offers better network performance compared to bridge networking, as there is no overhead from network address translation (NAT) or port mapping.</li>
-          <li>However, containers in host network mode may have port conflicts with other services running on the host system.</li>
-          <li>Host network mode is suitable for high-performance applications that require direct access to the host system's networking stack, such as network monitoring tools or load balancers.</li>
-        </ul>
-        <li><b>Overlay Network</b>:</li>
-        <ul>
-          <li>Overlay networks enable communication between containers across multiple Docker hosts or Swarm nodes.</li>
-          <li>They operate at the application layer (Layer 7) of the OSI model, using encapsulation techniques (e.g., VXLAN) to transport container traffic over the underlying network infrastructure.</li>
-          <li>Containers connected to overlay networks can communicate with each other regardless of their physical location, making overlay networks ideal for distributed applications deployed across a cluster of nodes.</li>
-          <li>Overlay networks are commonly used in container orchestration platforms such as Docker Swarm and Kubernetes to deploy and manage distributed services at scale.</li>
-        </ul>
-        <li><b>Macvlan Network</b>:</li>
-        <ul>
-          <li>Macvlan networks allow containers to have their own MAC addresses and appear as physical devices on the host's network.</li>
-          <li>They operate at the data link layer (Layer 2) of the OSI model, allowing containers to communicate directly with other devices on the same network segment.</li>
-          <li>Containers connected to Macvlan networks can access the physical network, making them visible to other devices on the same network segment without NAT or port mapping.</li>
-          <li>Macvlan networks are useful for scenarios where containers need direct access to physical network resources, such as when deploying network appliances, firewalls, or load balancers in containers.</li>
-        </ul>
-      </ul>
-		  <p>Each type of Docker network offers unique features and benefits, allowing users to choose the most suitable network configuration for their specific use case and networking requirements.</p>
+		  <p>You can create a Docker network using the "docker network create" command followed by the network name. For example:</p>
+      <pre><code>docker network create my_network</code></pre>
+		  <p>This command creates a custom bridge network named "my_network".</p>
+		  <p>You can list all Docker networks on your system using the "docker network ls" command.</p>
+		  <p>To inspect details about a specific Docker network, you can use the "docker network inspect" command followed by the network name or ID. For example:</p>
+      <pre><code>docker network inspect my_network</code></pre>
+		  <p>You can connect containers to a specific network using the "--network" option when running the container with "docker run". For example, to connect a container to the "my_network" network:</p>
+      <pre><code>docker run -d --name my_container --network my_network nginx</code></pre>
+		  <p>This command runs an NGINX container named "my_container" in detached mode ("-d") and connects it to the "my_network" network.</p>
+		  <p>To disconnect a container from a network, you can use the "docker network disconnect" command followed by the network name and container name or ID. For example:</p>
+      <pre><code>docker network disconnect my_network my_container</code></pre>
+		  <p>To remove a Docker network, you can use the "docker network rm" command followed by the network name. For example:</p>
+      <pre><code>docker network rm my_network</code></pre>
+      <p>Note that you cannot remove a network that is currently in use by one or more containers. You must first disconnect any containers from the network before deleting it.</p>
+      <p>You've now learned how to create, list, inspect, and manage Docker networks using the Docker CLI.</p>
 		  </div>
 		</div>
       </div>
