@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/alexiscarbillet/alexis-carbillet.git"
   },
   "dependencies": {
     "bulma": "^1.0.4",
