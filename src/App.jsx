@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import 'bulma/css/bulma.min.css';
 
 const experiences = [
-  { id: 1, title: "SRE at OVHcloud", date: "2021-01", description: "Oversaw the management and uptime of 40 public cloud and VPS regions and over 40 local zones, leveraging OpenStack, Kubernetes, Terraform, Puppet, and Ansible to ensure high availability." },
+  { id: 1, title: "SRE at OVHcloud", date: "2021-07", description: "Oversaw the management and uptime of 40 public cloud and VPS regions and over 40 local zones, leveraging OpenStack, Kubernetes, Terraform, Puppet, and Ansible to ensure high availability." },
   { id: 2, title: "Data Scientist at Ice Gateway GmbH", date: "2017-09", description: "Developed AI-driven solutions, such as ICEassist, a voice recognition application for disabled users in public transportation, improving accessibility for hundreds of users. Was available on iOS and Android." },
   { id: 3, title: "Web developer at Ice Gateway GmbH", date: "2015-10", description: "Led website management and optimized Search Engine Optimization (SEO) strategies to increase client traffic and online visibility." },
 ];
@@ -44,6 +44,7 @@ export default function ExperienceTimeline() {
               <h1 className="title is-3">Hi, I'm Alexis Carbillet</h1>
               <p>
                 I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.
+                For the curious ones, here is my <a href="https://github.com/alexiscarbillet">github</a>.
               </p>
             </div>
 
