@@ -401,6 +401,21 @@ export default function ExperienceTimeline() {
         </div>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem'}}>
+        <h3 className="title is-3">VScode extensions:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">coding-time-tracker-by-alexiscarbillet</p>
+                <button className="button is-primary is-outlined"><a href="https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.coding-time-tracker-by-alexiscarbillet" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem'}}>
         <h3 className="title is-3">Scripts:</h3>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
