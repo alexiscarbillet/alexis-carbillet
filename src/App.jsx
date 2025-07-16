@@ -413,6 +413,14 @@ export default function ExperienceTimeline() {
               </div>
             </div>
           </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">seo-audit-for-html</p>
+                <button className="button is-primary is-outlined"><a href="https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.seo-audit-for-html" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem'}}>
