@@ -125,12 +125,25 @@ export default function ExperienceTimeline() {
           <div className="column">
             <div className="card">
               <div className="card-content">
+                <p className="title">Meta Android Developer</p>
+                <p>Meta</p>
+                <button className="button is-primary is-outlined"><a href="https://www.coursera.org/professional-certificates/meta-android-developer" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
                 <p className="title">Meta Front-End Developer</p>
                 <p>Meta</p>
                 <button className="button is-primary is-outlined"><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
@@ -140,10 +153,6 @@ export default function ExperienceTimeline() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
@@ -162,6 +171,10 @@ export default function ExperienceTimeline() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
@@ -171,10 +184,6 @@ export default function ExperienceTimeline() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
