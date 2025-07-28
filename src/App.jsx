@@ -44,7 +44,8 @@ export default function ExperienceTimeline() {
               <h1 className="title is-3">Hi, I'm Alexis Carbillet</h1>
               <p>
                 I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.
-                For the curious ones, here is my <a href="https://github.com/alexiscarbillet">github</a>.
+                For the curious ones, here is my <a href="https://github.com/alexiscarbillet">github</a>. <br></br>
+                I also wrote different scenarios to train people for the CKA certification. Here is my <a href="https://killercoda.com/alexis-carbillet">killercoda</a> profile.
               </p>
             </div>
 
