@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import 'bulma/css/bulma.min.css';
 
 const experiences = [
-  { id: 1, title: "SRE at OVHcloud", date: "2021-07", description: "Oversaw the management and uptime of 40 public cloud and VPS regions and over 40 local zones, leveraging OpenStack, Kubernetes, Terraform, Puppet, and Ansible to ensure high availability." },
-  { id: 2, title: "Data Scientist at Ice Gateway GmbH", date: "2017-09", description: "Developed AI-driven solutions, such as ICEassist, a voice recognition application for disabled users in public transportation, improving accessibility for hundreds of users. Was available on iOS and Android." },
-  { id: 3, title: "Web developer at Ice Gateway GmbH", date: "2015-10", description: "Led website management and optimized Search Engine Optimization (SEO) strategies to increase client traffic and online visibility." },
+  { id: 1, title: "DevSecOps at ARTM", date: "2025-07", description: "Manage and synchronize RBAC between Azure and GCP infrastructures using python and github actions." },
+  { id: 2, title: "SRE at OVHcloud", date: "2021-07", description: "Oversaw the management and uptime of 40 public cloud and VPS regions and over 40 local zones, leveraging OpenStack, Kubernetes, Terraform, Puppet, and Ansible to ensure high availability.\n Facilitated multiple crisis meetings and directed team members to swiftly develop and implement effective solutions to incidents.\n Developed and maintained monitoring tools using Prometheus, Thanos, Sentry, Opensearch, Grafana and others to proactively detect and resolve server issues, resulting in a 35% reduction in downtime.\n Managed the creation of CI/CD workflows as well as self-healing to streamline deployment processes and improve operational efficiency.\n Developed several internal tools, APIs and databases using Python, Bash and Go.\n Led AI-based predictive projects for breakdown and server stock forecasting, improving capacity planning and resource allocation, LLM on internal documentation." },
+  { id: 3, title: "Data Scientist at Ice Gateway GmbH", date: "2017-09", description: "Developed AI-driven solutions, such as ICEassist, a voice recognition application for disabled users in public transportation, improving accessibility for hundreds of users. Was available on iOS and Android.\n Develop ICEsecure, a facial recognition system to detect who enter a given room based on different cameras.\n Manage and drive projects the team was in charge of, as well as communicate across the different parties involved.\nLed customer-facing meetings, presenting AI solutions and technical products to clients." },
+  { id: 4, title: "Web developer at Ice Gateway GmbH", date: "2015-10", description: "Led website management and optimized Search Engine Optimization (SEO) strategies to increase client traffic and online visibility.\n Developed and implemented custom dashboards for clients, leveraging IoT sensor data to deliver actionable insights and enhance decision-making.\n Spearheaded the creation and ongoing maintenance of the company websites, ensuring a seamless user experience and up-to-date content." },
 ];
 
 export default function ExperienceTimeline() {
@@ -102,11 +103,16 @@ export default function ExperienceTimeline() {
             >
               <h3 className="title is-5">{exp.title}</h3>
               <p className="subtitle is-6">{exp.date}</p>
-              <p>{exp.description}</p>
+
+              {/* This is the only change */}
+              {exp.description.split("\n").map((line, idx) => (
+                <p key={idx}>{line}</p>
+              ))}
             </div>
           ))}
         </div>
       </div>
+
       </section>
       <section>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
