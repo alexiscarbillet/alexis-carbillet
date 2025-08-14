@@ -347,6 +347,101 @@ export default function ExperienceTimeline() {
         </div>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <h3 className="title is-3">CKA training on Killercoda:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: ConfigMaps and Secrets</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/configmap-secrets" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Horizontal Pod Autoscaler (HPA)</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/HPA" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Network Policies</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/network-policies" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Node Maintenance</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/node-maintenance" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Persistent Volumes and PVC</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/pv-pvc" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Pod Debugging</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/pod-debugging" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: RBAC (Role-Based Access Control)</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/rbac" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Rolling Updates & Rollbacks</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/rolling-updates" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Troubleshooting a CrashLoopBackOff Pod</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/CrashLoopBackOff" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Service Not Routing Traffic</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/scenario/service" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <h3 className="title is-3">Containers on DockerHub:</h3>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
@@ -424,7 +519,7 @@ export default function ExperienceTimeline() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">coding-time-tracker-by-alexiscarbillet</p>
+                <p className="title" style={{ wordBreak: 'normal' }}>coding-time-tracker-by-alexiscarbillet</p>
                 <button className="button is-primary is-outlined"><a href="https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.coding-time-tracker-by-alexiscarbillet" target="_blank">Website</a></button>
               </div>
             </div>
@@ -432,7 +527,7 @@ export default function ExperienceTimeline() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">seo-audit-for-html</p>
+                <p className="title" style={{ wordBreak: 'normal' }}>seo-audit-for-html</p>
                 <button className="button is-primary is-outlined"><a href="https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.seo-audit-for-html" target="_blank">Website</a></button>
               </div>
             </div>
