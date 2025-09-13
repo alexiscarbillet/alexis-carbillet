@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'bulma/css/bulma.min.css';
 import Navbar from './components/Navbar';
+import Social from './components/Social';
 import { Link } from 'react-router-dom';
 
 const experiences = [
@@ -50,7 +51,9 @@ export default function ExperienceTimeline() {
                 I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.
                 For the curious ones, here is my <a href="https://github.com/alexiscarbillet">github</a>. <br></br>
                 I also wrote different scenarios to train people for the CKA certification. Here is my <a href="https://killercoda.com/alexis-carbillet">killercoda</a> profile.
+                Below are my different links, in the first rows are my others websites while the second has the platforms were my work is available.
               </p>
+              <Social />
             </div>
 
             {/* Image on the right */}
@@ -116,7 +119,103 @@ export default function ExperienceTimeline() {
         </div>
       </div>
       </section>
-      <section className="section" style={{ marginTop: '50px' }}>
+      <section className="section">
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <h3 className="title is-3">Diploma/certifications:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Master in AI & DATA SCIENCE</p>
+                <p>IMT Mines Alès</p>
+                <button className="button is-primary is-outlined"><a href="https://www.imt-mines-ales.fr/en" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Meta Android Developer</p>
+                <p>Meta</p>
+                <button className="button is-primary is-outlined"><a href="https://www.coursera.org/professional-certificates/meta-android-developer" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Meta Front-End Developer</p>
+                <p>Meta</p>
+                <button className="button is-primary is-outlined"><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Azure Fundamentals</p>
+                <p>Microsoft Azure</p>
+                <button className="button is-primary is-outlined"><a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Cloud Digital Leader</p>
+                <p>Google Cloud Platform</p>
+                <button className="button is-primary is-outlined"><a href="https://cloud.google.com/learn/certification/cloud-digital-leader?hl=fr" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">AWS Certified Cloud Practitioner</p>
+                <p>Amazon Web Services</p>
+                <button className="button is-primary is-outlined"><a href="https://aws.amazon.com/fr/certification/certified-cloud-practitioner/" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Google Cybersecurity Professional</p>
+                <p>Google</p>
+                <button className="button is-primary is-outlined"><a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Certified Kubernetes Administrator</p>
+                <p>Cloud Native Computing Foundation</p>
+                <button className="button is-primary is-outlined"><a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Cryptography</p>
+                <p>Stanford University</p>
+                <button className="button is-primary is-outlined"><a href="https://www.stanford.edu/" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <h3 className="title is-4">
           You can also find all my{' '}
