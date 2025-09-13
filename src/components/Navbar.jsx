@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar is-fixed-top is-primary">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
-          <strong>ServerHub</strong>
+          <strong>Home</strong>
         </Link>
       </div>
       <div className="navbar-menu">
