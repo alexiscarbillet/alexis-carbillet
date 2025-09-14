@@ -91,11 +91,21 @@ export default function Training() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
                 <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Service Not Routing Traffic</p>
                 <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/service" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: CronJob Troubleshooting</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/cronjobs" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
