@@ -92,6 +92,8 @@ export default function Training() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <div className="columns">
           <div className="column">
             <div className="card">
