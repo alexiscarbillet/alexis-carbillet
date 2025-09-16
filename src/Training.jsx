@@ -121,6 +121,21 @@ export default function Training() {
           </div>
         </div>
       </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <h3 className="title is-3">Linux training on Killercoda:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Systemd Service Debugging</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Systemd-Service-Debugging" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     </>
   );
