@@ -50,7 +50,7 @@ export default function ExperienceTimeline() {
               <p>
                 I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.
                 For the curious ones, here is my <a href="https://github.com/alexiscarbillet">github</a>. <br></br>
-                I also wrote different scenarios to train people for the CKA certification. Here is my <a href="https://killercoda.com/alexis-carbillet">killercoda</a> profile.
+                I also wrote different scenarios to train people for the CKA certification as well as learn how to use Linux. Here is my <a href="https://killercoda.com/alexis-carbillet">killercoda</a> profile.
                 Below are my different links, in the first rows are my others websites while the second has the platforms were my work is available.
               </p>
               <Social />
