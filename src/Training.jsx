@@ -142,6 +142,14 @@ export default function Training() {
               </div>
             </div>
           </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Disk Full & Log Management</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Log-Management" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
