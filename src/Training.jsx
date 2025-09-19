@@ -151,12 +151,22 @@ export default function Training() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
                 <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Process Management & Resource Limits</p>
                 <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Process-Management-Resource-Limits" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Cron Job Troubleshooting</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Cron-Job-Troubleshooting" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
