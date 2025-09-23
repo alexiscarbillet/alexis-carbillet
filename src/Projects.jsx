@@ -181,7 +181,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns"></div>
+        <div className="columns">
           <div className="column">
             <div className="card">
               <div className="card-content">
