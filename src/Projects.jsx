@@ -157,11 +157,31 @@ export default function Projects() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">For python developer</p>
+                <p className="title">For python developer (3.11)</p>
                 <button className="button is-primary is-outlined"><a href="https://hub.docker.com/r/alexiscarbillet/python-dev" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">For python developer (3.12)</p>
+                <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/python_3_12_dev" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">For python developer (3.13)</p>
+                <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/python_3_13_dev" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns"></div>
           <div className="column">
             <div className="card">
               <div className="card-content">
