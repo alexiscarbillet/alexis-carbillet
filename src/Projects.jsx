@@ -193,8 +193,16 @@ export default function Projects() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">For golang developer</p>
+                <p className="title">For golang developer (1.20)</p>
                 <button className="button is-primary is-outlined"><a href="https://hub.docker.com/r/alexiscarbillet/go_dev" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">For golang developer (1.25)</p>
+                <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/go_1_25_dev/general" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
