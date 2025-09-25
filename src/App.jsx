@@ -249,7 +249,7 @@ export default function ExperienceTimeline() {
               <td></td>
             </tr>
             <tr>
-              <td><b>Programming Languages</b></td>
+              <td><b>Technologies</b></td>
               <td></td>
             </tr>
             <tr>
@@ -257,11 +257,27 @@ export default function ExperienceTimeline() {
               <td>Advanced</td>
             </tr>
             <tr>
+              <td>Prometheus</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Grafana</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
               <td>SQL</td>
               <td>Proficient</td>
             </tr>
             <tr>
-              <td>Bash</td>
+              <td>Docker</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Kubernetes</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Terraform</td>
               <td>Proficient</td>
             </tr>
             <tr>
@@ -278,6 +294,10 @@ export default function ExperienceTimeline() {
             </tr>
             <tr>
               <td>Golang</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Android</td>
               <td>Intermediate</td>
             </tr>
           </tbody>
