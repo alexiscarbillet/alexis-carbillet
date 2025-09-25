@@ -289,10 +289,6 @@ export default function ExperienceTimeline() {
               <td>Proficient</td>
             </tr>
             <tr>
-              <td>JavaScript</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
               <td>Golang</td>
               <td>Intermediate</td>
             </tr>
@@ -302,6 +298,10 @@ export default function ExperienceTimeline() {
             </tr>
             <tr>
               <td>Android</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>React</td>
               <td>Intermediate</td>
             </tr>
           </tbody>
