@@ -297,6 +297,10 @@ export default function ExperienceTimeline() {
               <td>Intermediate</td>
             </tr>
             <tr>
+              <td>Bash</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
               <td>Android</td>
               <td>Intermediate</td>
             </tr>
