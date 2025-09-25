@@ -85,7 +85,7 @@ export default function ExperienceTimeline() {
               key={exp.id}
               style={{
                 position: 'absolute',
-                top: `${experiences.findIndex(e => e.id === exp.id) * 250 + 20}px`, // Adjust spacing
+                top: `${experiences.findIndex(e => e.id === exp.id) * 350 + 50}px`, // Adjust spacing
                 left: '20px',
                 width: '10px',
                 height: '10px',
@@ -215,6 +215,73 @@ export default function ExperienceTimeline() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <h3 className="title is-3">Skills:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <table class="table is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>Languages</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>French</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Fluent</td>
+            </tr>
+            <tr>
+              <td>Spanish</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Russian</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Programming Languages</b></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Bash</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Linux</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Golang</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <h3 className="title is-4">
