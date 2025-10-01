@@ -149,7 +149,7 @@ export default function Projects() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">For data science</p>
+                <p className="title">For data science (python 3.9)</p>
                 <button className="button is-primary is-outlined"><a href="https://hub.docker.com/r/alexiscarbillet/data-science-container" target="_blank">Website</a></button>
               </div>
             </div>
@@ -185,7 +185,7 @@ export default function Projects() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title">For web developer</p>
+                <p className="title">For web developer (node 16)</p>
                 <button className="button is-primary is-outlined"><a href="https://hub.docker.com/r/alexiscarbillet/web_dev" target="_blank">Website</a></button>
               </div>
             </div>
@@ -203,6 +203,26 @@ export default function Projects() {
               <div className="card-content">
                 <p className="title">For golang developer (1.25)</p>
                 <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/go_1_25_dev/general" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">For data science (python 3.13)</p>
+                <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/python_3_13_data_science" target="_blank">Website</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">For web developer (node 22)</p>
+                <button className="button is-primary is-outlined"><a href="https://hub.docker.com/repository/docker/alexiscarbillet/node_22_dev" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
