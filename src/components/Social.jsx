@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal
+  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faDocker, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 
@@ -38,7 +38,7 @@ export default function Social() {
           </div>
         </div>
 
-        <hr style={{ width: "230px", border: "1px solid gray", margin: "1rem 0" }} />
+        <hr style={{ width: "280px", border: "1px solid gray", margin: "1rem 0" }} />
 
         {/* Second row of icons - left aligned */}
         <div className="columns is-mobile is-flex">
@@ -65,6 +65,11 @@ export default function Social() {
           <div className="column is-narrow">
             <a href="https://killercoda.com/alexis-carbillet" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTerminal} size="lg" />
+            </a>
+          </div>
+          <div className="column is-narrow">
+            <a href="https://artifacthub.io/packages/search?user=alexiscarbillet&sort=relevance&page=1" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faShip} size="lg" />
             </a>
           </div>
         </div>

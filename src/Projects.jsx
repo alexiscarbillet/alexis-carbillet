@@ -337,6 +337,29 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem'}}>
+        <h3 className="title is-3">Helm charts:</h3>
+      </div>
+      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title" style={{ wordBreak: 'normal' }}>Monitoring stack</p>
+                <button className="button is-primary is-outlined"><a href="https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/monitoring-stack" target="_blank">Github</a></button>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">Logging stack</p>
+                <button className="button is-primary is-outlined"><a href="https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/logging-stack" target="_blank">Github</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
     </>
   );
