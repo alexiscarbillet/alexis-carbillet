@@ -310,9 +310,8 @@ export default function ExperienceTimeline() {
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <h3 className="title is-4">
           You can also find all my{' '}
-          <Link to="/projects">projects</Link>,{' '}
-          <Link to="/training">training</Link> and{' '}
-          <Link to="/fiverr">fiverr</Link> services on this website too.
+          <Link to="/projects">projects</Link> and{' '}
+          <Link to="/training">training</Link> on this website too.
         </h3>
       </div>
       </section>

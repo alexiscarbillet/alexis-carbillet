@@ -13,7 +13,6 @@ export default function Navbar() {
         <div className="navbar-start">
           <Link className="navbar-item" to="/Projects">Projects</Link>
           <Link className="navbar-item" to="/Training">Training</Link>
-          <Link className="navbar-item" to="/Fiverr">Fiverr</Link>
         </div>
       </div>
     </nav>
