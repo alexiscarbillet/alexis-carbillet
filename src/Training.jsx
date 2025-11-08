@@ -86,8 +86,8 @@ export default function Training() {
           <div className="column">
             <div className="card">
               <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Troubleshooting a CrashLoopBackOff Pod</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/CrashLoopBackOff" target="_blank">Website</a></button>
+                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Service Not Routing Traffic</p>
+                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/service" target="_blank">Website</a></button>
               </div>
             </div>
           </div>
@@ -95,14 +95,6 @@ export default function Training() {
       </div>
       <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
         <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Service Not Routing Traffic</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/service" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
           <div className="column">
             <div className="card">
               <div className="card-content">
