@@ -1,170 +1,68 @@
 import React from "react";
 import Navbar from './components/Navbar';
+import { useTranslation } from 'react-i18next';
 
 export default function Training() {
+  const { t } = useTranslation();
+
+  const ckaTraining = [
+    { titleKey: "training.cka.configmaps", url: "https://killercoda.com/alexis-carbillet/course/CKA/configmap-secrets" },
+    { titleKey: "training.cka.hpa", url: "https://killercoda.com/alexis-carbillet/course/CKA/HPA" },
+    { titleKey: "training.cka.networkPolicies", url: "https://killercoda.com/alexis-carbillet/course/CKA/network-policies" },
+    { titleKey: "training.cka.nodeMaintenance", url: "https://killercoda.com/alexis-carbillet/course/CKA/node-maintenance" },
+    { titleKey: "training.cka.pvc", url: "https://killercoda.com/alexis-carbillet/course/CKA/pv-pvc" },
+    { titleKey: "training.cka.podDebugging", url: "https://killercoda.com/alexis-carbillet/course/CKA/pod-debugging" },
+    { titleKey: "training.cka.rbac", url: "https://killercoda.com/alexis-carbillet/course/CKA/rbac" },
+    { titleKey: "training.cka.rollingUpdates", url: "https://killercoda.com/alexis-carbillet/course/CKA/rolling-updates" },
+    { titleKey: "training.cka.serviceNotRouting", url: "https://killercoda.com/alexis-carbillet/course/CKA/service" },
+    { titleKey: "training.cka.cronJob", url: "https://killercoda.com/alexis-carbillet/course/CKA/cronjobs" },
+    { titleKey: "training.cka.resourceQuotas", url: "https://killercoda.com/alexis-carbillet/course/CKA/resource_quotas" },
+  ];
+
+  const linuxTraining = [
+    { titleKey: "training.linux.systemdDebug", url: "https://killercoda.com/alexis-carbillet/course/Linux/Systemd-Service-Debugging" },
+    { titleKey: "training.linux.userGroupPermissions", url: "https://killercoda.com/alexis-carbillet/course/Linux/User-Group-Permissions-Troubleshooting" },
+    { titleKey: "training.linux.diskLogManagement", url: "https://killercoda.com/alexis-carbillet/course/Linux/Log-Management" },
+    { titleKey: "training.linux.processLimits", url: "https://killercoda.com/alexis-carbillet/course/Linux/Process-Management-Resource-Limits" },
+    { titleKey: "training.linux.cronJob", url: "https://killercoda.com/alexis-carbillet/course/Linux/Cron-Job-Troubleshooting" },
+  ];
+
+  const renderCardsInRows = (items) => {
+    const rows = [];
+    for (let i = 0; i < items.length; i += 4) {
+      const rowItems = items.slice(i, i + 4);
+      rows.push(
+        <div className="columns" key={i}>
+          {rowItems.map((item, idx) => (
+            <div className="column" key={idx}>
+              <div className="card">
+                <div className="card-content">
+                  <p className="title" style={{ wordBreak: 'normal' }}>{t(item.titleKey)}</p>
+                  <button className="button is-primary is-outlined">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">{t("training.websiteButton")}</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    return rows;
+  };
+
   return (
     <>
-    <Navbar />
-    <section className="section" style={{ marginTop: '50px' }}>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <h3 className="title is-3">CKA training on Killercoda:</h3>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: ConfigMaps and Secrets</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/configmap-secrets" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Horizontal Pod Autoscaler (HPA)</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/HPA" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Network Policies</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/network-policies" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
+      <Navbar />
+      <section className="section" style={{ marginTop: '50px' }}>
+        <div className="container" style={{ padding: '2rem' }}>
+          <h3 className="title is-3">{t("training.ckaHeader")}</h3>
+          {renderCardsInRows(ckaTraining)}
+
+          <h3 className="title is-3" style={{ marginTop: '2rem' }}>{t("training.linuxHeader")}</h3>
+          {renderCardsInRows(linuxTraining)}
         </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Node Maintenance</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/node-maintenance" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Persistent Volumes and PVC</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/pv-pvc" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Pod Debugging</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/pod-debugging" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: RBAC (Role-Based Access Control)</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/rbac" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Rolling Updates & Rollbacks</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/rolling-updates" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Service Not Routing Traffic</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/service" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: CronJob Troubleshooting</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/cronjobs" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>CKA Practice: Resource Quotas & LimitRanges</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/CKA/resource_quotas" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <h3 className="title is-3">Linux training on Killercoda:</h3>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Systemd Service Debugging</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Systemd-Service-Debugging" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: User, Group, and Permissions Troubleshooting</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/User-Group-Permissions-Troubleshooting" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Disk Full & Log Management</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Log-Management" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container" style={{ display: 'flex', position: 'relative', padding: '2rem' }}>
-        <div className="columns">
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Process Management & Resource Limits</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Process-Management-Resource-Limits" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <div className="card-content">
-                <p className="title" style={{ wordBreak: 'normal' }}>Linux Practice: Cron Job Troubleshooting</p>
-                <button className="button is-primary is-outlined"><a href="https://killercoda.com/alexis-carbillet/course/Linux/Cron-Job-Troubleshooting" target="_blank">Website</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }

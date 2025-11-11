@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "training": "Training"
+  },
+  "footer": {
+    "more": "You can also find all my",
+    "and": "and"
+  },
+  "projects": {
+    "websites": "Websites",
+    "androidApps": "Android applications",
+    "dockerContainers": "Containers on DockerHub",
+    "firefoxPlugins": "Mozilla Firefox Plugins",
+    "vscodeExtensions": "VSCode extensions",
+    "scripts": "Scripts",
+    "helmCharts": "Helm charts",
+    "websiteButton": "Website",
+    "githubButton": "Github"
+  },
+  "hero": {
+    "title": "Hi, I'm Alexis Carbillet",
+    "intro": "I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.",
+    "githubText": "For the curious ones, here is my",
+    "killercodaText": "I also wrote different scenarios to train people for the CKA certification as well as learn how to use Linux. Here is my",
+    "linksDescription": "Below are my different links, in the first rows are my other websites while the second has the platforms where my work is available."
+  },
+  "sections": {
+    "experiences": "Experiences:",
+    "certifications": "Diploma / Certifications:",
+    "projectsTraining": "You can also find all my projects and training on this website too."
+  },
+  "experiences": [
+    {
+      "title": "DevSecOps at ARTM",
+      "date": "2025-07",
+      "description": "Manage and synchronize RBAC between Azure and GCP infrastructures using Python and GitHub Actions.\nCreate Kubernetes cluster hosting the company observability stack (Grafana, Prometheus, …) as well as creating a Status dashboard showing the state of each product as well as its SLI/SLO/Error budget."
+    },
+    {
+      "title": "SRE at OVHcloud",
+      "date": "2021-07",
+      "description": "Oversaw the management and uptime of 40 public cloud and VPS regions and over 40 local zones, leveraging OpenStack, Kubernetes, Terraform, Puppet, and Ansible to ensure high availability.\nFacilitated multiple crisis meetings and directed team members to swiftly develop and implement effective solutions to incidents.\nDeveloped and maintained monitoring tools using Prometheus, Thanos, Sentry, Opensearch, Grafana and others to proactively detect and resolve server issues, resulting in a 35% reduction in downtime.\nManaged the creation of CI/CD workflows as well as self-healing to streamline deployment processes and improve operational efficiency.\nDeveloped several internal tools, APIs and databases using Python, Bash and Go.\nLed AI-based predictive projects for breakdown and server stock forecasting, improving capacity planning and resource allocation, including LLM on internal documentation."
+    },
+    {
+      "title": "Data Scientist at Ice Gateway GmbH",
+      "date": "2017-09",
+      "description": "Developed AI-driven solutions, such as ICEassist, a voice recognition application for disabled users in public transportation, improving accessibility for hundreds of users. Available on iOS and Android.\nDeveloped ICEsecure, a facial recognition system to detect who enters a given room based on different cameras.\nManaged and drove projects the team was in charge of, as well as communicated across different parties involved.\nLed customer-facing meetings, presenting AI solutions and technical products to clients."
+    },
+    {
+      "title": "Web developer at Ice Gateway GmbH",
+      "date": "2015-10",
+      "description": "Led website management and optimized Search Engine Optimization (SEO) strategies to increase client traffic and online visibility.\nDeveloped and implemented custom dashboards for clients, leveraging IoT sensor data to deliver actionable insights and enhance decision-making.\nSpearheaded the creation and ongoing maintenance of the company websites, ensuring a seamless user experience and up-to-date content."
+    }
+  ],
+  "training": {
+    "ckaHeader": "CKA training on Killercoda:",
+    "linuxHeader": "Linux training on Killercoda:",
+    "websiteButton": "Website",
+    "cka": {
+      "configmaps": "CKA Practice: ConfigMaps and Secrets",
+      "hpa": "CKA Practice: Horizontal Pod Autoscaler (HPA)",
+      "networkPolicies": "CKA Practice: Network Policies",
+      "nodeMaintenance": "CKA Practice: Node Maintenance",
+      "pvc": "CKA Practice: Persistent Volumes and PVC",
+      "podDebugging": "CKA Practice: Pod Debugging",
+      "rbac": "CKA Practice: RBAC (Role-Based Access Control)",
+      "rollingUpdates": "CKA Practice: Rolling Updates & Rollbacks",
+      "serviceNotRouting": "CKA Practice: Service Not Routing Traffic",
+      "cronJob": "CKA Practice: CronJob Troubleshooting",
+      "resourceQuotas": "CKA Practice: Resource Quotas & LimitRanges"
+    },
+    "linux": {
+      "systemdDebug": "Linux Practice: Systemd Service Debugging",
+      "userGroupPermissions": "Linux Practice: User, Group, and Permissions Troubleshooting",
+      "diskLogManagement": "Linux Practice: Disk Full & Log Management",
+      "processLimits": "Linux Practice: Process Management & Resource Limits",
+      "cronJob": "Linux Practice: Cron Job Troubleshooting"
+    }
+  },
+  "certifications": [
+    { "title": "Master in AI & Data Science", "issuer": "IMT Mines Alès", "url": "https://www.imt-mines-ales.fr/en" },
+    { "title": "Meta Android Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-android-developer" },
+    { "title": "Meta Front-End Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer" },
+    { "title": "Azure Fundamentals", "issuer": "Microsoft Azure", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" },
+    { "title": "Cloud Digital Leader", "issuer": "Google Cloud Platform", "url": "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=fr" },
+    { "title": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "url": "https://aws.amazon.com/fr/certification/certified-cloud-practitioner/" },
+    { "title": "Google Cybersecurity Professional", "issuer": "Google", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity" },
+    { "title": "Certified Kubernetes Administrator", "issuer": "Cloud Native Computing Foundation", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
+    { "title": "Cryptography", "issuer": "Stanford University", "url": "https://www.stanford.edu/" }
+  ]
+}
