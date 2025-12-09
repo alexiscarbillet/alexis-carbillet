@@ -35,7 +35,7 @@
     {
       "title": "DevSecOps at ARTM",
       "date": "2025-07",
-      "description": "Manage and synchronize RBAC between Azure and GCP infrastructures using Python and GitHub Actions.\nCreate Kubernetes cluster hosting the company observability stack (Grafana, Prometheus, …) as well as creating a Status dashboard showing the state of each product as well as its SLI/SLO/Error budget."
+      "description": "Manage and synchronize RBAC between Azure and GCP infrastructures using Terraform and Github Actions via Identity Governance and Microsoft Entra ID.\nCreate a Status dashboard showing the state of each product as well as its SLI/SLO/Error budget.\nCreate a SAST using different opensource technologies (sonarqube, trufflehog, …) and running on Gihub Actions."
     },
     {
       "title": "SRE at OVHcloud",
