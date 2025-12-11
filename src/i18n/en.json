@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
-    "training": "Training"
+    "training": "Training",
+    "podcasts": "Podcasts"
   },
   "footer": {
     "more": "You can also find all my",
@@ -76,6 +77,19 @@
       "diskLogManagement": "Linux Practice: Disk Full & Log Management",
       "processLimits": "Linux Practice: Process Management & Resource Limits",
       "cronJob": "Linux Practice: Cron Job Troubleshooting"
+    }
+  },
+  "podcast": {
+    "aiHeader": "AI for everyone:",
+    "ai": {
+      "podcast1": "Episode 1: What is Artificial Intelligence, Really?",
+      "podcast2": "Episode 2: A Short History of AI",
+      "podcast3": "Episode 3: How AI Learns",
+      "podcast4": "Episode 4: AI in Everyday Life",
+      "podcast5": "Episode 5: The Benefits and Risks of AI",
+      "podcast6": "Episode 6: Generative AI – The Creative Side",
+      "podcast7": "Episode 7: AI Around the World",
+      "podcast8": "Episode 8: The Future of AI: What’s Next?"
     }
   },
   "certifications": [

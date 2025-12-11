@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import Projects from './Projects.jsx';
 import Training from './Training.jsx';
+import Podcasts from './Podcasts.jsx';
 
 import './index.css';
 import 'bulma/css/bulma.min.css';
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/training" element={<Training />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/podcasts" element={<Podcasts />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

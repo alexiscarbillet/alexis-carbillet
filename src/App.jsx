@@ -140,8 +140,9 @@ export default function ExperienceTimeline() {
         <div className="container" style={{ padding: "2rem" }}>
           <h3 className="title is-4">
             {t("footer.more")}{" "}
-            <Link to="/projects">{t("nav.projects")}</Link> {t("footer.and")}{" "}
-            <Link to="/training">{t("nav.training")}</Link>.
+            <Link to="/projects">{t("nav.projects")}</Link>, {" "}
+            <Link to="/training">{t("nav.training")}</Link> {t("footer.and")}{" "}
+            <Link to="/podcasts">{t("nav.podcasts")}</Link>.
           </h3>
         </div>
       </section>

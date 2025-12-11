@@ -2,7 +2,8 @@
   "nav": {
     "home": "Accueil",
     "projects": "Projets",
-    "training": "Formations"
+    "training": "Formations",
+    "podcasts": "Podcasts"
   },
   "footer": {
     "more": "Vous pouvez également trouver tous mes",
@@ -76,6 +77,19 @@
       "diskLogManagement": "Exercice Linux : Gestion des disques et des logs",
       "processLimits": "Exercice Linux : Gestion des processus et limites de ressources",
       "cronJob": "Exercice Linux : Dépannage Cron Job"
+    }
+  },
+  "podcast": {
+    "aiHeader": "L’IA pour tous (les episodes sont en anglais) :",
+    "ai": {
+      "podcast1": "Épisode 1 : Qu’est-ce que l’intelligence artificielle, vraiment ?",
+      "podcast2": "Épisode 2 : Une courte histoire de l’IA",
+      "podcast3": "Épisode 3 : Comment l’IA apprend",
+      "podcast4": "Épisode 4 : L’IA dans la vie quotidienne",
+      "podcast5": "Épisode 5 : Les avantages et les risques de l’IA",
+      "podcast6": "Épisode 6 : L’IA générative – Le côté créatif",
+      "podcast7": "Épisode 7 : L’IA dans le monde",
+      "podcast8": "Épisode 8 : L’avenir de l’IA : et après ?"
     }
   },
   "certifications": [

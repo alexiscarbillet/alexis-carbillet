@@ -31,6 +31,9 @@ export default function Navbar() {
           <Link className="navbar-item" to="/Training">
             {t("nav.training")}
           </Link>
+          <Link className="navbar-item" to="/Podcasts">
+            {t("nav.podcasts")}
+          </Link>
         </div>
 
         {/* Language Switcher on the right */}
