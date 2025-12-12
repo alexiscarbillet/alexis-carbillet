@@ -77,7 +77,8 @@
       "diskLogManagement": "Linux Practice: Disk Full & Log Management",
       "processLimits": "Linux Practice: Process Management & Resource Limits",
       "cronJob": "Linux Practice: Cron Job Troubleshooting",
-      "disks": "Linux Practice: Disk Mounting"
+      "disks": "Linux Practice: Disk Mounting",
+      "sed": "Linux Practice: Text Transformation with sed"
     }
   },
   "podcast": {

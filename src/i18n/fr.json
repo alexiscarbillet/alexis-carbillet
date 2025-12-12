@@ -77,7 +77,8 @@
       "diskLogManagement": "Exercice Linux : Gestion des disques et des logs",
       "processLimits": "Exercice Linux : Gestion des processus et limites de ressources",
       "cronJob": "Exercice Linux : Dépannage Cron Job",
-      "disks": "Linux Practice: Montage des disques"
+      "disks": "Exercice Linux : Montage des disques",
+      "sed": "Exercice Linux : Transformation de texte avec sed"
     }
   },
   "podcast": {
