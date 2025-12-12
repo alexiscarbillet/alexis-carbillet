@@ -76,7 +76,8 @@
       "userGroupPermissions": "Linux Practice: User, Group, and Permissions Troubleshooting",
       "diskLogManagement": "Linux Practice: Disk Full & Log Management",
       "processLimits": "Linux Practice: Process Management & Resource Limits",
-      "cronJob": "Linux Practice: Cron Job Troubleshooting"
+      "cronJob": "Linux Practice: Cron Job Troubleshooting",
+      "disks": "Linux Practice: Disk Mounting"
     }
   },
   "podcast": {

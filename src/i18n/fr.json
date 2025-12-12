@@ -76,7 +76,8 @@
       "userGroupPermissions": "Exercice Linux : Utilisateurs, groupes et permissions",
       "diskLogManagement": "Exercice Linux : Gestion des disques et des logs",
       "processLimits": "Exercice Linux : Gestion des processus et limites de ressources",
-      "cronJob": "Exercice Linux : Dépannage Cron Job"
+      "cronJob": "Exercice Linux : Dépannage Cron Job",
+      "disks": "Linux Practice: Montage des disques"
     }
   },
   "podcast": {
