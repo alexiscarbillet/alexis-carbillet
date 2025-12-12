@@ -78,7 +78,8 @@
       "processLimits": "Exercice Linux : Gestion des processus et limites de ressources",
       "cronJob": "Exercice Linux : Dépannage Cron Job",
       "disks": "Exercice Linux : Montage des disques",
-      "sed": "Exercice Linux : Transformation de texte avec sed"
+      "sed": "Exercice Linux : Transformation de texte avec sed",
+      "network": "Exercice Linux : Dépannage des services réseau"
     }
   },
   "podcast": {

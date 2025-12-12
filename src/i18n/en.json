@@ -78,7 +78,8 @@
       "processLimits": "Linux Practice: Process Management & Resource Limits",
       "cronJob": "Linux Practice: Cron Job Troubleshooting",
       "disks": "Linux Practice: Disk Mounting",
-      "sed": "Linux Practice: Text Transformation with sed"
+      "sed": "Linux Practice: Text Transformation with sed",
+      "network": "Linux Practice: Network Service Troubleshooting"
     }
   },
   "podcast": {
