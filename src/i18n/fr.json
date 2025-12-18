@@ -79,7 +79,8 @@
       "cronJob": "Exercice Linux : Dépannage Cron Job",
       "disks": "Exercice Linux : Montage des disques",
       "sed": "Exercice Linux : Transformation de texte avec sed",
-      "network": "Exercice Linux : Dépannage des services réseau"
+      "network": "Exercice Linux : Dépannage des services réseau",
+      "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit"
     }
   },
   "podcast": {

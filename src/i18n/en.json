@@ -79,7 +79,8 @@
       "cronJob": "Linux Practice: Cron Job Troubleshooting",
       "disks": "Linux Practice: Disk Mounting",
       "sed": "Linux Practice: Text Transformation with sed",
-      "network": "Linux Practice: Network Service Troubleshooting"
+      "network": "Linux Practice: Network Service Troubleshooting",
+      "sshHardening": "Linux Practice: SSH Hardening & Security Audit"
     }
   },
   "podcast": {

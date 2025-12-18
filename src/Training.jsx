@@ -28,6 +28,7 @@ export default function Training() {
     { titleKey: "training.linux.disks", url: "https://killercoda.com/alexis-carbillet/course/Linux/Disk-Mounting" },
     { titleKey: "training.linux.sed", url: "https://killercoda.com/alexis-carbillet/course/Linux/sed-transform" },
     { titleKey: "training.linux.network", url: "https://killercoda.com/alexis-carbillet/course/Linux/Network-Service-Troubleshooting" },
+    { titleKey: "training.linux.sshHardening", url: "https://killercoda.com/alexis-carbillet/course/Linux/ssh-hardening" },
   ];
 
   const renderCardsInRows = (items) => {
