@@ -29,6 +29,7 @@ export default function Training() {
     { titleKey: "training.linux.sed", url: "https://killercoda.com/alexis-carbillet/course/Linux/sed-transform" },
     { titleKey: "training.linux.network", url: "https://killercoda.com/alexis-carbillet/course/Linux/Network-Service-Troubleshooting" },
     { titleKey: "training.linux.sshHardening", url: "https://killercoda.com/alexis-carbillet/course/Linux/ssh-hardening" },
+    { titleKey: "training.linux.logMining", url: "https://killercoda.com/alexis-carbillet/course/Linux/Log-mining" },
   ];
 
   const renderCardsInRows = (items) => {

@@ -80,7 +80,8 @@
       "disks": "Linux Practice: Disk Mounting",
       "sed": "Linux Practice: Text Transformation with sed",
       "network": "Linux Practice: Network Service Troubleshooting",
-      "sshHardening": "Linux Practice: SSH Hardening & Security Audit"
+      "sshHardening": "Linux Practice: SSH Hardening & Security Audit",
+      "logMining": "Linux Practice: Log Mining with Grep and Awk"
     }
   },
   "podcast": {

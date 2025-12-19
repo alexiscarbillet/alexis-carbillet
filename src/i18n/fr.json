@@ -80,7 +80,8 @@
       "disks": "Exercice Linux : Montage des disques",
       "sed": "Exercice Linux : Transformation de texte avec sed",
       "network": "Exercice Linux : Dépannage des services réseau",
-      "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit"
+      "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit",
+      "logMining": "Exercice Linux : Exploration des logs avec Grep et Awk"
     }
   },
   "podcast": {
