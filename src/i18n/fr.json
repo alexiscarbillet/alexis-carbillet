@@ -34,7 +34,7 @@
   },
   "experiences": [
     {
-      "title": "DevSecOps chez ARTM",
+      "title": "Développeur principal - DevSecOps/SRE chez ARTM",
       "date": "2025-07",
       "description": "Gérer et synchroniser le RBAC entre les infrastructures Azure et GCP à l'aide de Python et des actions Github via Identity Governance et Microsoft Entra ID.\nCréer un tableau de bord d'état affichant l'état de chaque produit ainsi que son SLI/SLO/budget d'erreurs.\nCréer un SAST utilisant différentes technologies open source (SonarQube, Trufflehog, etc.) et exécuté sur GitHub Actions."
     },
