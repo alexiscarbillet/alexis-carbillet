@@ -5,6 +5,9 @@
     "training": "Formations",
     "podcasts": "Podcasts"
   },
+  "buttons": {
+    "website": "Site web"
+  },
   "footer": {
     "more": "Vous pouvez également trouver tous mes",
     "and": "et"

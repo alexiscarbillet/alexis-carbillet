@@ -34,6 +34,26 @@ export default function Navbar() {
           <Link className="navbar-item" to="/Podcasts">
             {t("nav.podcasts")}
           </Link>
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">
+              Websites
+            </a>
+            <div className="navbar-dropdown">
+              <a className="navbar-item" href="https://ac-programming.com/" target="_blank" rel="noreferrer">
+                Coding
+              </a>
+              <a className="navbar-item" href="https://ac-electricity.com/" target="_blank" rel="noreferrer">
+                Electricity
+              </a>
+              <a className="navbar-item" href="https://ac-serverhub.com/" target="_blank" rel="noreferrer">
+                Hardware
+              </a>
+              <a className="navbar-item" href="https://all-about-cats.uk/" target="_blank" rel="noreferrer">
+                Cats
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Language Switcher on the right */}
