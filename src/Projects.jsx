@@ -6,23 +6,23 @@ export default function Projects() {
   const { t } = useTranslation();
 
   const websiteProjects = [
-    { title: "Coding", url: "https://ac-programming.com/", domain: "ac-programming.com" },
-    { title: "Electricity", url: "https://ac-electricity.com/", domain: "ac-electricity.com" },
-    { title: "Hardware", url: "https://ac-serverhub.com/", domain: "ac-serverhub.com" },
-    { title: "Cats", url: "https://all-about-cats.uk/", domain: "all-about-cats.uk" },
+    { title: "Coding", url: "https://coding.alexis-carbillet.com/", domain: "programming.alexis-carbillet.com" },
+    { title: "Electricity", url: "https://electricity.alexis-carbillet.com/", domain: "electricity.alexis-carbillet.com" },
+    { title: "Hardware", url: "https://hardware.alexis-carbillet.com/", domain: "hardware.alexis-carbillet.com" },
+    { title: "Cats", url: "https://cats.alexis-carbillet.com/", domain: "cats.alexis-carbillet.com" },
     { title: "Main", url: "https://alexis-carbillet.com/", domain: "alexis-carbillet.com" },
   ];
 
   const androidApps = [
-    { title: "Unit converter", url: "https://ac-programming.com/apps/unit-converter/app.html" },
-    { title: "Canadian animals", url: "https://ac-programming.com/apps/canadian-animals/app.html" },
-    { title: "Tic Tac Toe", url: "https://ac-programming.com/apps/tic-tac-toe/app.html" },
-    { title: "Span sheets", url: "https://ac-programming.com/apps/spansheets/app.html" },
-    { title: "HTML colors", url: "https://ac-programming.com/apps/html-colors/app.html" },
-    { title: "Fun with capitals", url: "https://ac-programming.com/apps/fun-with-capitals/app.html" },
-    { title: "Fun with flags", url: "https://ac-programming.com/apps/fun-with-flags/app.html" },
-    { title: "Training Canadian Citizenship", url: "https://ac-programming.com/apps/training-citizenship/app.html" },
-    { title: "Random words", url: "https://ac-programming.com/apps/random-words/app.html" },
+    { title: "Unit converter", url: "https://coding.alexis-carbillet.com/apps/unit-converter/app.html" },
+    { title: "Canadian animals", url: "https://coding.alexis-carbillet.com/apps/canadian-animals/app.html" },
+    { title: "Tic Tac Toe", url: "https://coding.alexis-carbillet.com/apps/tic-tac-toe/app.html" },
+    { title: "Span sheets", url: "https://coding.alexis-carbillet.com/apps/spansheets/app.html" },
+    { title: "HTML colors", url: "https://coding.alexis-carbillet.com/apps/html-colors/app.html" },
+    { title: "Fun with capitals", url: "https://coding.alexis-carbillet.com/apps/fun-with-capitals/app.html" },
+    { title: "Fun with flags", url: "https://coding.alexis-carbillet.com/apps/fun-with-flags/app.html" },
+    { title: "Training Canadian Citizenship", url: "https://coding.alexis-carbillet.com/apps/training-citizenship/app.html" },
+    { title: "Random words", url: "https://coding.alexis-carbillet.com/apps/random-words/app.html" },
   ];
 
   const dockerContainers = [

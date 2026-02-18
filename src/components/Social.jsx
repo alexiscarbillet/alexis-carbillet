@@ -12,12 +12,12 @@ export default function Social() {
         {/* First row of icons - left aligned with top margin */}
         <div className="columns is-mobile is-flex mt-5 mb-3">
           <div className="column is-narrow">
-            <a href="https://ac-programming.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://coding.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faCode} size="lg" />
             </a>
           </div>
           <div className="column is-narrow">
-            <a href="https://ac-electricity.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://electricity.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faBolt} size="lg" />
             </a>
           </div>
@@ -27,12 +27,12 @@ export default function Social() {
             </a>
           </div>
           <div className="column is-narrow">
-            <a href="https://all-about-cats.uk" target="_blank" rel="noopener noreferrer">
+            <a href="https://cats.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faPaw} size="lg" />
             </a>
           </div>
           <div className="column is-narrow">
-            <a href="https://ac-serverhub.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://hardware.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faServer} size="lg" />
             </a>
           </div>

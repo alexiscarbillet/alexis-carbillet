@@ -40,16 +40,16 @@ export default function Navbar() {
               Websites
             </a>
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="https://ac-programming.com/" target="_blank" rel="noreferrer">
+              <a className="navbar-item" href="https://coding.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Coding
               </a>
-              <a className="navbar-item" href="https://ac-electricity.com/" target="_blank" rel="noreferrer">
+              <a className="navbar-item" href="https://electricity.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Electricity
               </a>
-              <a className="navbar-item" href="https://ac-serverhub.com/" target="_blank" rel="noreferrer">
+              <a className="navbar-item" href="https://hardware.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Hardware
               </a>
-              <a className="navbar-item" href="https://all-about-cats.uk/" target="_blank" rel="noreferrer">
+              <a className="navbar-item" href="https://cats.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Cats
               </a>
             </div>
