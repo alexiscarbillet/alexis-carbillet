@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from './components/Navbar';
+import AdSense from './components/AdSense';
 import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
@@ -107,6 +108,7 @@ export default function Projects() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
+          <AdSense style={{ display: 'block', textAlign: 'center', margin: '1rem 0' }} />
           <h3 className="title is-3">{t("projects.websites")}:</h3>
           {renderCardsInRows(websiteProjects, true)}
 
