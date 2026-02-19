@@ -25,15 +25,6 @@ export default function Navbar() {
 
       <div className="navbar-menu">
         <div className="navbar-start">
-          <Link className="navbar-item" to="/Projects">
-            {t("nav.projects")}
-          </Link>
-          <Link className="navbar-item" to="/Training">
-            {t("nav.training")}
-          </Link>
-          <Link className="navbar-item" to="/Podcasts">
-            {t("nav.podcasts")}
-          </Link>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">
@@ -54,6 +45,28 @@ export default function Navbar() {
               </a>
             </div>
           </div>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">{t("nav.projects")}</a>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="/projects/android">Android Apps</Link>
+              <Link className="navbar-item" to="/projects/docker">Docker Containers</Link>
+              <Link className="navbar-item" to="/projects/firefox">Firefox Plugins</Link>
+              <Link className="navbar-item" to="/projects/vscode">VSCode Extensions</Link>
+              <Link className="navbar-item" to="/projects/scripts">Scripts</Link>
+              <Link className="navbar-item" to="/projects/helm">Helm Charts</Link>
+            </div>
+          </div>
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">{t("nav.training")}</a>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="/training/cka">CKA</Link>
+              <Link className="navbar-item" to="/training/linux">Linux</Link>
+            </div>
+          </div>
+          <Link className="navbar-item" to="/podcasts">
+            {t("nav.podcasts")}
+          </Link>
         </div>
 
         {/* Language Switcher on the right */}

@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App.jsx';
-import Projects from './Projects.jsx';
-import Training from './Training.jsx';
+import ProjectsAndroid from './ProjectsAndroid.jsx';
+import ProjectsDocker from './ProjectsDocker.jsx';
+import ProjectsFirefox from './ProjectsFirefox.jsx';
+import ProjectsVSCode from './ProjectsVSCode.jsx';
+import ProjectsScripts from './ProjectsScripts.jsx';
+import ProjectsHelm from './ProjectsHelm.jsx';
+import TrainingCKA from './TrainingCKA.jsx';
+import TrainingLinux from './TrainingLinux.jsx';
 import Podcasts from './Podcasts.jsx';
 
 import './index.css';
@@ -18,8 +24,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/training" element={<Training />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/training/cka" element={<TrainingCKA />} />
+        <Route path="/training/linux" element={<TrainingLinux />} />
+        <Route path="/projects/android" element={<ProjectsAndroid />} />
+        <Route path="/projects/docker" element={<ProjectsDocker />} />
+        <Route path="/projects/firefox" element={<ProjectsFirefox />} />
+        <Route path="/projects/vscode" element={<ProjectsVSCode />} />
+        <Route path="/projects/scripts" element={<ProjectsScripts />} />
+        <Route path="/projects/helm" element={<ProjectsHelm />} />
+
         <Route path="/podcasts" element={<Podcasts />} />
       </Routes>
     </BrowserRouter>

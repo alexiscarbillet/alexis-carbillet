@@ -22,6 +22,52 @@
     "helmCharts": "Helm charts",
     "websiteButton": "Website",
     "githubButton": "Github"
+    ,
+    "desc": {
+      "android": {
+        "unitConverter": "Convert between units quickly.",
+        "canadianAnimals": "Learn about Canadian animals.",
+        "ticTacToe": "Classic Tic Tac Toe game.",
+        "spanSheets": "Simple spreadsheet-style app.",
+        "htmlColors": "Browse HTML color names and codes.",
+        "funWithCapitals": "Quiz on country capitals.",
+        "funWithFlags": "Identify flags from around the world.",
+        "trainingCanadianCitizenship": "Practice for Canadian citizenship test.",
+        "randomWords": "Generate random words for practice."
+      },
+      "docker": {
+        "dataScience39": "Docker image preconfigured for data science (Python 3.9).",
+        "python311": "Development image with Python 3.11 and tools.",
+        "python312": "Python 3.12 dev image.",
+        "python313": "Python 3.13 dev image.",
+        "node16": "Node-based web development container.",
+        "go120": "Go development container (1.20).",
+        "go125": "Go development container (1.25).",
+        "dataScience313": "Data science container for Python 3.13.",
+        "node22": "Node 22 web dev image."
+      },
+      "firefox": {
+        "bookmarkUsageChecker": "Analyze bookmark usage and suggest cleanup.",
+        "top10Domains": "Show top visited domains from your history.",
+        "pinkTheme": "A light pink theme for Firefox."
+      },
+      "vscode": {
+        "codingTimeTracker": "Track coding time inside VSCode.",
+        "seoAudit": "Run quick SEO audits for HTML files."
+      },
+      "scripts": {
+        "python": "Python example scripts and snippets.",
+        "htmlCss": "HTML and CSS examples.",
+        "javascript": "JavaScript snippets and demos.",
+        "go": "Go language examples.",
+        "react": "React component examples.",
+        "bash": "Bash scripts and utilities."
+      },
+      "helm": {
+        "monitoringStack": "Helm chart bundling Prometheus/Grafana stack.",
+        "loggingStack": "Helm chart for ELK/EFK logging stack."
+      }
+    }
   },
   "hero": {
     "title": "Hi, I'm Alexis Carbillet",
@@ -85,6 +131,34 @@
       "network": "Linux Practice: Network Service Troubleshooting",
       "sshHardening": "Linux Practice: SSH Hardening & Security Audit",
       "logMining": "Linux Practice: Log Mining with Grep and Awk"
+    }
+    ,
+    "desc": {
+      "cka": {
+        "configmaps": "Debug and troubleshoot ConfigMaps and Secrets.",
+        "hpa": "Configure Horizontal Pod Autoscaling.",
+        "networkPolicies": "Implement network policies for pod traffic control.",
+        "nodeMaintenance": "Practice node drain and maintenance tasks.",
+        "pvc": "Work with persistent volumes and claims.",
+        "podDebugging": "Troubleshoot pod issues and logs.",
+        "rbac": "Practice role-based access control tasks.",
+        "rollingUpdates": "Perform rolling updates and rollbacks.",
+        "serviceNotRouting": "Debug services and connectivity issues.",
+        "cronJob": "Create and manage CronJobs.",
+        "resourceQuotas": "Apply resource quotas and limits."
+      },
+      "linux": {
+        "systemdDebug": "Troubleshoot and debug systemd services.",
+        "userGroupPermissions": "Fix user and group permission issues.",
+        "diskLogManagement": "Manage logs and disk usage.",
+        "processLimits": "Investigate process resource limits.",
+        "cronJob": "Debug Cron jobs and scheduling.",
+        "disks": "Work with disk mounting and filesystems.",
+        "sed": "Practice sed transforms for files.",
+        "network": "Troubleshoot network services and configs.",
+        "sshHardening": "Improve SSH configuration and security.",
+        "logMining": "Extract useful information from logs."
+      }
     }
   },
   "podcast": {

@@ -22,6 +22,52 @@
     "helmCharts": "Charts Helm",
     "websiteButton": "Site web",
     "githubButton": "Github"
+    ,
+    "desc": {
+      "android": {
+        "unitConverter": "Convertir rapidement entre les unités.",
+        "canadianAnimals": "Apprenez-en sur les animaux canadiens.",
+        "ticTacToe": "Jeu classique Tic Tac Toe.",
+        "spanSheets": "Application de type tableur simple.",
+        "htmlColors": "Parcourir les noms et codes de couleurs HTML.",
+        "funWithCapitals": "Quiz sur les capitales des pays.",
+        "funWithFlags": "Identifier les drapeaux du monde.",
+        "trainingCanadianCitizenship": "Entraînez-vous pour l'examen de citoyenneté canadienne.",
+        "randomWords": "Générez des mots aléatoires pour vous entraîner."
+      },
+      "docker": {
+        "dataScience39": "Image Docker préconfigurée pour la data science (Python 3.9).",
+        "python311": "Image de développement avec Python 3.11 et outils.",
+        "python312": "Image de développement Python 3.12.",
+        "python313": "Image de développement Python 3.13.",
+        "node16": "Conteneur de développement web basé sur Node.",
+        "go120": "Conteneur de développement Go (1.20).",
+        "go125": "Conteneur de développement Go (1.25).",
+        "dataScience313": "Conteneur data science pour Python 3.13.",
+        "node22": "Image de développement Node 22."
+      },
+      "firefox": {
+        "bookmarkUsageChecker": "Analyse l'utilisation des favoris et suggère un nettoyage.",
+        "top10Domains": "Affiche les domaines les plus visités de votre historique.",
+        "pinkTheme": "Un thème rose clair pour Firefox."
+      },
+      "vscode": {
+        "codingTimeTracker": "Suivez le temps de codage dans VSCode.",
+        "seoAudit": "Exécutez des audits SEO rapides pour les fichiers HTML."
+      },
+      "scripts": {
+        "python": "Exemples de scripts et snippets Python.",
+        "htmlCss": "Exemples HTML et CSS.",
+        "javascript": "Extraits et démonstrations JavaScript.",
+        "go": "Exemples en langage Go.",
+        "react": "Exemples de composants React.",
+        "bash": "Scripts et utilitaires Bash."
+      },
+      "helm": {
+        "monitoringStack": "Chart Helm regroupant Prometheus/Grafana.",
+        "loggingStack": "Chart Helm pour la stack de logging ELK/EFK."
+      }
+    }
   },
   "hero": {
     "title": "Bonjour, je suis Alexis Carbillet",
@@ -85,6 +131,34 @@
       "network": "Exercice Linux : Dépannage des services réseau",
       "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit",
       "logMining": "Exercice Linux : Exploration des logs avec Grep et Awk"
+    }
+    ,
+    "desc": {
+      "cka": {
+        "configmaps": "Déboguez et dépannez les ConfigMaps et Secrets.",
+        "hpa": "Configurer l'Horizontal Pod Autoscaler.",
+        "networkPolicies": "Implémentez des politiques réseau pour contrôler le trafic des pods.",
+        "nodeMaintenance": "Exercez-vous à drainer et maintenir les nœuds.",
+        "pvc": "Travaillez avec les volumes persistants et les claims.",
+        "podDebugging": "Dépannez les pods et examinez leurs logs.",
+        "rbac": "Exercez des tâches de contrôle d'accès basé sur les rôles.",
+        "rollingUpdates": "Effectuez des mises à jour progressives et des rollbacks.",
+        "serviceNotRouting": "Dépannez les services et les problèmes de connectivité.",
+        "cronJob": "Créez et gérez des CronJobs.",
+        "resourceQuotas": "Appliquez des quotas et limites de ressources."
+      },
+      "linux": {
+        "systemdDebug": "Dépannez et déboguez les services systemd.",
+        "userGroupPermissions": "Corrigez les problèmes d'utilisateurs, groupes et permissions.",
+        "diskLogManagement": "Gérez les logs et l'utilisation des disques.",
+        "processLimits": "Étudiez les limites de ressources des processus.",
+        "cronJob": "Dépannez les Cron jobs et l'ordonnancement.",
+        "disks": "Travaillez le montage des disques et les systèmes de fichiers.",
+        "sed": "Exercez-vous aux transformations `sed` sur des fichiers.",
+        "network": "Dépannez les services et configurations réseau.",
+        "sshHardening": "Améliorez la configuration SSH et la sécurité.",
+        "logMining": "Extraire des informations utiles des logs."
+      }
     }
   },
   "podcast": {
