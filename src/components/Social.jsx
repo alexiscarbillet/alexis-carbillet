@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip
+  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip, faNewspaper
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faDocker, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 
@@ -34,6 +34,11 @@ export default function Social() {
           <div className="column is-narrow">
             <a href="https://hardware.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faServer} size="lg" />
+            </a>
+          </div>
+          <div className="column is-narrow">
+            <a href="https://blog.alexis-carbillet.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faNewspaper} size="lg" />
             </a>
           </div>
         </div>
