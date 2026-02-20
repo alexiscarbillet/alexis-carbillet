@@ -78,8 +78,8 @@
   },
   "sections": {
     "experiences": "Expériences :",
-    "certifications": "Diplômes / Certifications :",
-    "projectsTraining": "Vous pouvez également retrouver tous mes projets et formations sur ce site."
+    "certifications": "Certifications :",
+    "diplomas": "Diplômes"
   },
   "experiences": [
     {
@@ -194,8 +194,10 @@
       "podcast8": "Épisode 8 : L’avenir de l’IA : et après ?"
     }
   },
+  "diplomas": [
+    { "title": "Master en IA & Data Science", "issuer": "IMT Mines Alès", "url": "https://www.imt-mines-ales.fr/en" }
+  ],
   "certifications": [
-    { "title": "Master en IA & Data Science", "issuer": "IMT Mines Alès", "url": "https://www.imt-mines-ales.fr/en" },
     { "title": "Meta Android Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-android-developer" },
     { "title": "Meta Front-End Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer" },
     { "title": "Azure Fundamentals", "issuer": "Microsoft Azure", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" },

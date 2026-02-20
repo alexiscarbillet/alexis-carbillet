@@ -12,6 +12,8 @@ import ProjectsHelm from './ProjectsHelm.jsx';
 import TrainingCKA from './TrainingCKA.jsx';
 import TrainingLinux from './TrainingLinux.jsx';
 import Podcasts from './Podcasts.jsx';
+import Certifications from './Certifications.jsx';
+import Diplomas from './Diplomas.jsx';
 
 import './index.css';
 import 'bulma/css/bulma.min.css';
@@ -32,8 +34,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects/vscode" element={<ProjectsVSCode />} />
         <Route path="/projects/scripts" element={<ProjectsScripts />} />
         <Route path="/projects/helm" element={<ProjectsHelm />} />
-
-        <Route path="/podcasts" element={<Podcasts />} />
+        <Route path="/diplomas" element={<Diplomas />} />
+        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/ai-podcasts" element={<Podcasts />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

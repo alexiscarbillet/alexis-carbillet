@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from './components/Navbar';
 import { useTranslation } from 'react-i18next';
 
-export default function Podcast() {
+export default function AIPodcast() {
   const { t } = useTranslation();
 
   const aiPodcast = [
