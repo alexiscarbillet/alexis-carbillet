@@ -31,6 +31,12 @@ export default function Navbar() {
               Websites
             </a>
             <div className="navbar-dropdown">
+              <a className="navbar-item" href="https://blog.alexis-carbillet.com/blog/category/tech/" target="_blank" rel="noreferrer">
+                Blog
+              </a>
+              <a className="navbar-item" href="https://cats.alexis-carbillet.com/" target="_blank" rel="noreferrer">
+                Cats
+              </a>
               <a className="navbar-item" href="https://coding.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Coding
               </a>
@@ -40,9 +46,6 @@ export default function Navbar() {
               <a className="navbar-item" href="https://hardware.alexis-carbillet.com/" target="_blank" rel="noreferrer">
                 Hardware
               </a>
-              <a className="navbar-item" href="https://cats.alexis-carbillet.com/" target="_blank" rel="noreferrer">
-                Cats
-              </a>
             </div>
           </div>
           <div className="navbar-item has-dropdown is-hoverable">
@@ -51,9 +54,9 @@ export default function Navbar() {
               <Link className="navbar-item" to="/projects/android">Android Apps</Link>
               <Link className="navbar-item" to="/projects/docker">Docker Containers</Link>
               <Link className="navbar-item" to="/projects/firefox">Firefox Plugins</Link>
-              <Link className="navbar-item" to="/projects/vscode">VSCode Extensions</Link>
-              <Link className="navbar-item" to="/projects/scripts">Scripts</Link>
               <Link className="navbar-item" to="/projects/helm">Helm Charts</Link>
+              <Link className="navbar-item" to="/projects/scripts">Scripts</Link>
+              <Link className="navbar-item" to="/projects/vscode">VSCode Extensions</Link>
             </div>
           </div>
 

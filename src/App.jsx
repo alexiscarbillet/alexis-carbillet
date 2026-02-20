@@ -8,10 +8,24 @@ import { useTranslation } from "react-i18next";
 export default function ExperienceTimeline() {
   const { t } = useTranslation();
   const [activeId, setActiveId] = useState(null);
+  const [selectedIssuers, setSelectedIssuers] = useState({});
   const refs = useRef([]);
 
   // Experiences are now translated dynamically
   const experiences = t("experiences", { returnObjects: true });
+  const certifications = t("certifications", { returnObjects: true });
+  
+  // Initialize selected issuers on first render
+  useEffect(() => {
+    if (Object.keys(selectedIssuers).length === 0 && certifications.length > 0) {
+      const uniqueIssuers = [...new Set(certifications.map(cert => cert.issuer))];
+      const issuersObj = {};
+      uniqueIssuers.forEach(issuer => {
+        issuersObj[issuer] = true;
+      });
+      setSelectedIssuers(issuersObj);
+    }
+  }, [certifications, selectedIssuers]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -105,7 +119,9 @@ export default function ExperienceTimeline() {
               >
                 <h3 className="title is-5">{exp.title}</h3>
                 <p className="subtitle is-6">{exp.date}</p>
-                {exp.description.split("\n").map((line, i) => <p key={i}>{line}</p>)}
+                <ul style={{ listStyleType: "disc", marginLeft: "1.5rem" }}>
+                  {exp.description.map((line, i) => <li key={i}>{line}</li>)}
+                </ul>
               </div>
             ))}
           </div>
@@ -120,15 +136,33 @@ export default function ExperienceTimeline() {
         </div>
 
         <div className="container" style={{ padding: "2rem" }}>
+          <div style={{ marginBottom: "2rem" }}>
+            <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>Filter by issuer:</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+              {[...new Set(certifications.map(cert => cert.issuer))].sort().map(issuer => (
+                <button
+                  key={issuer}
+                  className={`button ${selectedIssuers[issuer] ? "is-primary" : "is-light"}`}
+                  onClick={() => setSelectedIssuers(prev => ({
+                    ...prev,
+                    [issuer]: !prev[issuer]
+                  }))}
+                >
+                  {issuer}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="columns is-multiline">
-            {t("certifications", { returnObjects: true }).map((cert, i) => (
+            {certifications.filter(cert => selectedIssuers[cert.issuer]).map((cert, i) => (
               <div className="column is-one-third" key={i}>
                 <div className="card">
                   <div className="card-content">
                     <p className="title">{cert.title}</p>
-                    <p>{cert.org}</p>
+                    <p className="subtitle is-6">{cert.issuer}</p>
                     <button className="button is-primary is-outlined">
-                      <a href={cert.link} target="_blank" rel="noreferrer">{t("buttons.website")}</a>
+                      <a href={cert.url} target="_blank" rel="noreferrer">{t("buttons.website")}</a>
                     </button>
                   </div>
                 </div>

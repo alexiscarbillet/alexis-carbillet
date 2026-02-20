@@ -85,22 +85,42 @@
     {
       "title": "Développeur principal - DevSecOps/SRE chez ARTM",
       "date": "2025-07",
-      "description": "Gérer et synchroniser le RBAC entre les infrastructures Azure et GCP à l'aide de Python et des actions Github via Identity Governance et Microsoft Entra ID.\nCréer un tableau de bord d'état affichant l'état de chaque produit ainsi que son SLI/SLO/budget d'erreurs.\nCréer un SAST utilisant différentes technologies open source (SonarQube, Trufflehog, etc.) et exécuté sur GitHub Actions."
+      "description": [
+        "Gérer et synchroniser le RBAC entre les infrastructures Azure et GCP à l'aide de Python et des actions Github via Identity Governance et Microsoft Entra ID.",
+        "Créer un tableau de bord d'état affichant l'état de chaque produit ainsi que son SLI/SLO/budget d'erreurs.",
+        "Créer un SAST utilisant différentes technologies open source (SonarQube, Trufflehog, etc.) et exécuté sur GitHub Actions."
+      ]
     },
     {
       "title": "SRE chez OVHcloud",
       "date": "2021-07",
-      "description": "Gestion et maintien de la disponibilité de 40 régions cloud public et VPS ainsi que 40 local zones, en s’appuyant sur OpenStack, Kubernetes, Terraform, Puppet et Ansible.\nAnimation de réunions de crise et coordination des équipes pour implémenter des solutions rapides aux incidents.\nCréation et maintenance d’outils de monitoring avec Prometheus, Thanos, Sentry, Opensearch, Grafana, permettant de réduire le downtime de 35%.\nMise en place de pipelines CI/CD et mécanismes d’auto-remédiation pour optimiser les déploiements.\nDéveloppement d’outils internes, API et bases de données en Python, Bash et Go.\nConduite de projets prédictifs basés sur l’IA pour l’anticipation des pannes et la gestion des stocks serveurs, ainsi que l’intégration de LLM sur la documentation interne."
+      "description": [
+        "Gestion et maintien de la disponibilité de 40 régions cloud public et VPS ainsi que 40 local zones, en s'appuyant sur OpenStack, Kubernetes, Terraform, Puppet et Ansible.",
+        "Animation de réunions de crise et coordination des équipes pour implémenter des solutions rapides aux incidents.",
+        "Création et maintenance d'outils de monitoring avec Prometheus, Thanos, Sentry, Opensearch, Grafana, permettant de réduire le downtime de 35%.",
+        "Mise en place de pipelines CI/CD et mécanismes d'auto-remédiation pour optimiser les déploiements.",
+        "Développement d'outils internes, API et bases de données en Python, Bash et Go.",
+        "Conduite de projets prédictifs basés sur l'IA pour l'anticipation des pannes et la gestion des stocks serveurs, ainsi que l'intégration de LLM sur la documentation interne."
+      ]
     },
     {
       "title": "Data Scientist chez Ice Gateway GmbH",
       "date": "2017-09",
-      "description": "Développement de solutions IA, dont ICEassist, une application de reconnaissance vocale pour personnes en situation de handicap dans les transports publics, disponible sur iOS et Android.\nDéveloppement d’ICEsecure, un système de reconnaissance faciale identifiant les personnes entrant dans une pièce via plusieurs caméras.\nGestion de projets et coordination avec les différentes parties prenantes.\nAnimation de réunions clients pour présenter des solutions IA et produits techniques."
+      "description": [
+        "Développement de solutions IA, dont ICEassist, une application de reconnaissance vocale pour personnes en situation de handicap dans les transports publics, disponible sur iOS et Android.",
+        "Développement d'ICEsecure, un système de reconnaissance faciale identifiant les personnes entrant dans une pièce via plusieurs caméras.",
+        "Gestion de projets et coordination avec les différentes parties prenantes.",
+        "Animation de réunions clients pour présenter des solutions IA et produits techniques."
+      ]
     },
     {
       "title": "Développeur Web chez Ice Gateway GmbH",
       "date": "2015-10",
-      "description": "Gestion des sites web et optimisation du référencement (SEO) pour accroître le trafic et la visibilité.\nDéveloppement de dashboards personnalisés basés sur des données IoT pour améliorer la prise de décision.\nResponsable de la création et de la maintenance continue des sites de l’entreprise, en garantissant une expérience utilisateur optimale."
+      "description": [
+        "Gestion des sites web et optimisation du référencement (SEO) pour accroître le trafic et la visibilité.",
+        "Développement de dashboards personnalisés basés sur des données IoT pour améliorer la prise de décision.",
+        "Responsable de la création et de la maintenance continue des sites de l'entreprise, en garantissant une expérience utilisateur optimale."
+      ]
     }
   ],
   "training": {
