@@ -88,7 +88,9 @@
       "description": [
         "Gérer et synchroniser le RBAC entre les infrastructures Azure et GCP à l'aide de Python et des actions Github via Identity Governance et Microsoft Entra ID.",
         "Créer un tableau de bord d'état affichant l'état de chaque produit ainsi que son SLI/SLO/budget d'erreurs.",
-        "Créer un SAST utilisant différentes technologies open source (SonarQube, Trufflehog, etc.) et exécuté sur GitHub Actions."
+        "Créer un SAST utilisant différentes technologies open source (SonarQube, Trufflehog, etc.) et exécuté sur GitHub Actions.",
+        "Support des opérations de sécurité via ServiceNow.",
+        "Création d'outils pour faciliter la résolution des problèmes de support récurrents (Python, Terraform et Bash)."
       ]
     },
     {
