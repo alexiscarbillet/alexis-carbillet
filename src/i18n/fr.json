@@ -200,13 +200,13 @@
     { "title": "Master en IA & Data Science", "issuer": "IMT Mines Alès", "url": "https://www.imt-mines-ales.fr/en" }
   ],
   "certifications": [
-    { "title": "Meta Android Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-android-developer" },
-    { "title": "Meta Front-End Developer", "issuer": "Meta", "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer" },
+    { "title": "Meta Android Developer", "issuer": "Meta", "url": "https://www.coursera.org/account/accomplishments/professional-cert/2QRFZWI6SKK8" },
+    { "title": "Meta Front-End Developer", "issuer": "Meta", "url": "https://www.coursera.org/account/accomplishments/professional-cert/AKWNTQX58XTD" },
     { "title": "Azure Fundamentals", "issuer": "Microsoft Azure", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" },
     { "title": "Cloud Digital Leader", "issuer": "Google Cloud Platform", "url": "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=fr" },
-    { "title": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "url": "https://aws.amazon.com/fr/certification/certified-cloud-practitioner/" },
-    { "title": "Professionnel Google Cybersécurité", "issuer": "Google", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity" },
+    { "title": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "url": "https://cp.certmetrics.com/amazon/en/public/verify/credential/5ffbeedbd537410a9cd0f1e4ed1956bc" },
+    { "title": "Professionnel Google Cybersécurité", "issuer": "Google", "url": "https://www.coursera.org/account/accomplishments/professional-cert/4G8V8SJ8KL43" },
     { "title": "Certified Kubernetes Administrator", "issuer": "Cloud Native Computing Foundation", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
-    { "title": "Cryptographie", "issuer": "Stanford University", "url": "https://www.stanford.edu/" }
+    { "title": "Cryptographie", "issuer": "Stanford University", "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX" }
   ]
 }
