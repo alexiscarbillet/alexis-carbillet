@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip, faNewspaper
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faDocker, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faDocker, faMicrosoft, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Social() {
   return (
@@ -53,28 +53,13 @@ export default function Social() {
             </a>
           </div>
           <div className="column is-narrow">
-            <a href="https://addons.mozilla.org/fr/firefox/user/18481871/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faPuzzlePiece} size="lg" />
-            </a>
-          </div>
-          <div className="column is-narrow">
-            <a href="https://hub.docker.com/u/alexiscarbillet" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faDocker} size="lg" />
-            </a>
-          </div>
-          <div className="column is-narrow">
-            <a href="https://marketplace.visualstudio.com/publishers/AlexisCarbillet" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faMicrosoft} size="lg" />
+            <a href="https://www.linkedin.com/in/alexis-carbillet/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </div>
           <div className="column is-narrow">
             <a href="https://killercoda.com/alexis-carbillet" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTerminal} size="lg" />
-            </a>
-          </div>
-          <div className="column is-narrow">
-            <a href="https://artifacthub.io/packages/search?user=alexiscarbillet&sort=relevance&page=1" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faShip} size="lg" />
             </a>
           </div>
         </div>
