@@ -3,7 +3,9 @@
     "home": "Home",
     "projects": "Projects",
     "training": "Training",
-    "podcasts": "Podcasts"
+    "podcasts": "Podcasts",
+    "podcasts.ai": "Artificial Intelligence",
+    "digital-assets": "Digital Assets"
   },
   "buttons": {
     "website": "Website"
@@ -195,6 +197,12 @@
       "podcast6": "Episode 6: Generative AI – The Creative Side",
       "podcast7": "Episode 7: AI Around the World",
       "podcast8": "Episode 8: The Future of AI: What’s Next?"
+    }
+  },
+  "digital-assets": {
+    "toolkits": {
+      "toolkitsHeader": "Digital Toolkits:",
+      "freelance-it-consultant-onboarding-kit": "Freelance IT Consultant Onboarding Kit"
     }
   },
   "diplomas": [

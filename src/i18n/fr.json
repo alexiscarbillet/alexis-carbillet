@@ -3,7 +3,9 @@
     "home": "Accueil",
     "projects": "Projets",
     "training": "Formations",
-    "podcasts": "Podcasts"
+    "podcasts": "Podcasts",
+    "podcasts.ai": "Intelligence Artificielle",
+    "digital-assets": "Atouts digitaux"
   },
   "buttons": {
     "website": "Site web"
@@ -195,6 +197,12 @@
       "podcast6": "Épisode 6 : L’IA générative – Le côté créatif",
       "podcast7": "Épisode 7 : L’IA dans le monde",
       "podcast8": "Épisode 8 : L’avenir de l’IA : et après ?"
+    }
+  },
+  "digital-assets": {
+    "toolkits": {
+      "toolkitsHeader": "Atouts digitaux:",
+      "freelance-it-consultant-onboarding-kit": "Kit d'onboarding pour les consultants IT freelance"
     }
   },
   "diplomas": [

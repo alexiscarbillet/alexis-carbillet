@@ -67,7 +67,7 @@ export default function Navbar() {
             </a>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/ai-podcasts" onClick={closeMenu}>
-                Artificial Intelligence
+                {t("nav.podcasts.ai")}
               </Link>
             </div>
           </div>
@@ -81,6 +81,17 @@ export default function Navbar() {
               <Link className="navbar-item" to="/projects/helm" onClick={closeMenu}>Helm Charts</Link>
               <Link className="navbar-item" to="/projects/scripts" onClick={closeMenu}>Scripts</Link>
               <Link className="navbar-item" to="/projects/vscode" onClick={closeMenu}>VSCode Extensions</Link>
+            </div>
+          </div>
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">
+              {t("nav.digital-assets")}
+            </a>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="/digital-assets-toolkits" onClick={closeMenu}>
+                Toolkits
+              </Link>
             </div>
           </div>
 

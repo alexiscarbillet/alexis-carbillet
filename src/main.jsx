@@ -14,6 +14,7 @@ import TrainingLinux from './TrainingLinux.jsx';
 import Podcasts from './Podcasts.jsx';
 import Certifications from './Certifications.jsx';
 import Diplomas from './Diplomas.jsx';
+import Toolkits from './Toolkits.jsx';
 
 import './index.css';
 import 'bulma/css/bulma.min.css';
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/diplomas" element={<Diplomas />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/ai-podcasts" element={<Podcasts />} />
+        <Route path="/digital-assets-toolkits" element={<Toolkits />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
