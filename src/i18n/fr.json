@@ -77,6 +77,8 @@
     "githubText": "Pour les plus curieux, voici mon",
     "linkedinText": "et mon",
     "killercodaText": "J’ai également écrit des scénarios pour entraîner au passage de la certification CKA et apprendre l’utilisation de Linux. Voici mon",
+    "storeText": "Je vends également des actifs numériques tels que des toolkits, vous pouvez les consulter sur mon",
+    "storeText2": "magasin",
     "linksDescription": "Ci-dessous se trouvent mes différents liens, la première ligne regroupe mes autres sites, la seconde contient les plateformes où mon travail est disponible."
   },
   "sections": {
@@ -201,7 +203,7 @@
   },
   "digital-assets": {
     "toolkits": {
-      "toolkitsHeader": "Atouts digitaux:",
+      "toolkitsHeader": "Magasin:",
       "freelance-it-consultant-onboarding-kit": "Kit d'onboarding pour les consultants IT freelance"
     }
   },

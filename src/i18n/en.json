@@ -5,7 +5,7 @@
     "training": "Training",
     "podcasts": "Podcasts",
     "podcasts.ai": "Artificial Intelligence",
-    "digital-assets": "Digital Assets"
+    "digital-assets": "Store"
   },
   "buttons": {
     "website": "Website"
@@ -77,6 +77,8 @@
     "githubText": "For the curious ones, here is my",
     "linkedinText": "and my",
     "killercodaText": "I also wrote different scenarios to train people for the CKA certification as well as learn how to use Linux. Here is my",
+    "storeText": "I am also selling digital assets such as toolkits, you can check them out on my",
+    "storeText2": "store",
     "linksDescription": "Below are my different links, in the first rows are my other websites while the second has the platforms where my work is available."
   },
   "sections": {

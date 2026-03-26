@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip, faNewspaper
+  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip, faNewspaper,
+  faStore
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faDocker, faMicrosoft, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -60,6 +61,11 @@ export default function Social() {
           <div className="column is-narrow">
             <a href="https://killercoda.com/alexis-carbillet" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTerminal} size="lg" />
+            </a>
+          </div>
+          <div className="column is-narrow">
+            <a href="https://shop.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faStore} size="lg" />
             </a>
           </div>
         </div>

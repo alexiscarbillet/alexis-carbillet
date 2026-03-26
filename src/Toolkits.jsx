@@ -6,7 +6,7 @@ export default function Toolkits() {
   const { t } = useTranslation();
 
   const toolkits = [
-    { titleKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit", url: "https://carbster.gumroad.com/l/freelance-it-consultant-onboarding-kit" },
+    { titleKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit", url: "https://shop.alexis-carbillet.com/l/freelance-it-consultant-onboarding-kit" },
   ];
 
   const renderCardsInRows = (items) => {
