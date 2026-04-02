@@ -7,6 +7,7 @@ export default function Toolkits() {
 
   const toolkits = [
     { titleKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit", url: "https://shop.alexis-carbillet.com/l/freelance-it-consultant-onboarding-kit" },
+    { titleKey: "digital-assets.toolkits.friction-slayer", url: "https://shop.alexis-carbillet.com/l/Friction-Slayer" }
   ];
 
   const renderCardsInRows = (items) => {
