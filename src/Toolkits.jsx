@@ -11,6 +11,7 @@ export default function Toolkits() {
     { titleKey: "digital-assets.toolkits.legacy-system-migration-roadmap", url: "https://shop.alexis-carbillet.com/l/legacy-system-migration-roadmap", category: "IT Operations & Career" },
     { titleKey: "digital-assets.toolkits.minimum-viable-security", url: "https://shop.alexis-carbillet.com/l/minimum-viable-security", category: "Cybersecurity & Compliance" },
     { titleKey: "digital-assets.toolkits.vendor-risk-assessment", url: "https://shop.alexis-carbillet.com/l/vendor-risk-assessment", category: "Cybersecurity & Compliance" },
+    { titleKey: "digital-assets.toolkits.pre-audit-preparation", url: "https://shop.alexis-carbillet.com/l/pre-audit-preparation", category: "Cybersecurity & Compliance" }
   ];
 
   // Initialize filters: both categories active by default
