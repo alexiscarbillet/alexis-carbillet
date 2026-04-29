@@ -11,13 +11,15 @@ export default function Toolkits() {
     { titleKey: "digital-assets.toolkits.legacy-system-migration-roadmap", url: "https://shop.alexis-carbillet.com/l/legacy-system-migration-roadmap", category: "IT Operations & Career" },
     { titleKey: "digital-assets.toolkits.minimum-viable-security", url: "https://shop.alexis-carbillet.com/l/minimum-viable-security", category: "Cybersecurity & Compliance" },
     { titleKey: "digital-assets.toolkits.vendor-risk-assessment", url: "https://shop.alexis-carbillet.com/l/vendor-risk-assessment", category: "Cybersecurity & Compliance" },
-    { titleKey: "digital-assets.toolkits.pre-audit-preparation", url: "https://shop.alexis-carbillet.com/l/pre-audit-preparation", category: "Cybersecurity & Compliance" }
+    { titleKey: "digital-assets.toolkits.pre-audit-preparation", url: "https://shop.alexis-carbillet.com/l/pre-audit-preparation", category: "Cybersecurity & Compliance" },
+    { titleKey: "digital-assets.toolkits.ethical-ai-governance", url: "https://shop.alexis-carbillet.com/l/ethical-ai-governance", category: "AI & Data strategy" }
   ];
 
   // Initialize filters: both categories active by default
   const [selectedCategories, setSelectedCategories] = useState({
     "IT Operations & Career": true,
     "Cybersecurity & Compliance": true,
+    "AI & Data strategy": true,
   });
 
   const toggleCategory = (cat) => {
@@ -35,7 +37,8 @@ export default function Toolkits() {
           <div style={{ marginBottom: "2rem" }}>
             <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>Filter by category:</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-              {["IT Operations & Career", "Cybersecurity & Compliance"].map(cat => (
+              {/* Use Object.keys to automatically show every category in your state */}
+              {Object.keys(selectedCategories).map(cat => (
                 <button
                   key={cat}
                   className={`button ${selectedCategories[cat] ? "is-primary" : "is-light"}`}
