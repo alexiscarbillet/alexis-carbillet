@@ -8,7 +8,10 @@
     "digital-assets": "Store"
   },
   "buttons": {
-    "website": "Website"
+    "website": "Website",
+    "spotify": "Listen on Spotify",
+    "play": "Play episode",
+    "playing": "Playing"
   },
   "footer": {
     "more": "You can also find all my",
@@ -190,6 +193,8 @@
   },
   "podcast": {
     "aiHeader": "AI for everyone:",
+    "spotifyDescription": "Discover the full podcast series on Spotify: AI basics, history, applications, risks and future trends.",
+    "currentlyListening": "Currently listening to",
     "ai": {
       "podcast1": "Episode 1: What is Artificial Intelligence, Really?",
       "podcast2": "Episode 2: A Short History of AI",
@@ -232,5 +237,29 @@
     { "title": "Google Cybersecurity Professional", "issuer": "Google", "url": "https://www.coursera.org/account/accomplishments/professional-cert/4G8V8SJ8KL43" },
     { "title": "Certified Kubernetes Administrator", "issuer": "Cloud Native Computing Foundation", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
     { "title": "Cryptography", "issuer": "Stanford University", "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX" }
-  ]
+  ],
+  "websites": {
+    "header": "My Websites",
+    "description": "Explore my various websites covering different interests and expertise areas.",
+    "blog": {
+      "title": "Tech Blog",
+      "description": "A technical blog featuring articles on programming, AI, data engineering, 3D graphics, microservices, and more."
+    },
+    "cats": {
+      "title": "Cats Website",
+      "description": "Dedicated to cat lovers, with information on breeds, facts, articles, and a gallery of cat photos."
+    },
+    "coding": {
+      "title": "Coding Projects",
+      "description": "Showcase of personal coding projects in Python, JavaScript, Go, and more, covering AI, data, sysadmin, and Android apps."
+    },
+    "electricity": {
+      "title": "Electricity Guide",
+      "description": "Educational resource on electricity, circuits, and electrical engineering concepts."
+    },
+    "hardware": {
+      "title": "Hardware & Servers",
+      "description": "Information and guides on computer hardware, servers, and infrastructure management."
+    }
+  }
 }

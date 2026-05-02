@@ -8,7 +8,10 @@
     "digital-assets": "Atouts digitaux"
   },
   "buttons": {
-    "website": "Site web"
+    "website": "Site web",
+    "spotify": "Écouter sur Spotify",
+    "play": "Écouter cet épisode",
+    "playing": "En lecture"
   },
   "footer": {
     "more": "Vous pouvez également trouver tous mes",
@@ -190,6 +193,8 @@
   },
   "podcast": {
     "aiHeader": "L’IA pour tous (les episodes sont en anglais) :",
+    "spotifyDescription": "Découvrez toute la série de podcasts sur Spotify : bases de l'IA, historique, usages, risques et tendances futures.",
+    "currentlyListening": "Écoute en cours :",
     "ai": {
       "podcast1": "Épisode 1 : Qu’est-ce que l’intelligence artificielle, vraiment ?",
       "podcast2": "Épisode 2 : Une courte histoire de l’IA",
@@ -232,5 +237,29 @@
     { "title": "Professionnel Google Cybersécurité", "issuer": "Google", "url": "https://www.coursera.org/account/accomplishments/professional-cert/4G8V8SJ8KL43" },
     { "title": "Certified Kubernetes Administrator", "issuer": "Cloud Native Computing Foundation", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
     { "title": "Cryptographie", "issuer": "Stanford University", "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX" }
-  ]
+  ],
+  "websites": {
+    "header": "Mes Sites Web",
+    "description": "Explorez mes différents sites web couvrant divers intérêts et domaines d'expertise.",
+    "blog": {
+      "title": "Blog Tech",
+      "description": "Un blog technique avec des articles sur la programmation, l'IA, l'ingénierie de données, les graphismes 3D, les microservices, et plus."
+    },
+    "cats": {
+      "title": "Site sur les Chats",
+      "description": "Dédié aux amoureux des chats, avec des informations sur les races, des faits, des articles, et une galerie de photos de chats."
+    },
+    "coding": {
+      "title": "Projets de Programmation",
+      "description": "Vitrine de projets personnels de programmation en Python, JavaScript, Go, et plus, couvrant l'IA, les données, l'administration système, et les apps Android."
+    },
+    "electricity": {
+      "title": "Guide Électricité",
+      "description": "Ressource éducative sur l'électricité, les circuits, et les concepts d'ingénierie électrique."
+    },
+    "hardware": {
+      "title": "Matériel & Serveurs",
+      "description": "Informations et guides sur le matériel informatique, les serveurs, et la gestion d'infrastructure."
+    }
+  }
 }

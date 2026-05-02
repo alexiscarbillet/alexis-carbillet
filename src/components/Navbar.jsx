@@ -103,28 +103,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
-              Websites
-            </a>
-            <div className="navbar-dropdown">
-              <a className="navbar-item" href="https://blog.alexis-carbillet.com/blog/category/tech/" target="_blank" rel="noreferrer" onClick={closeMenu}>
-                Blog
-              </a>
-              <a className="navbar-item" href="https://cats.alexis-carbillet.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>
-                Cats
-              </a>
-              <a className="navbar-item" href="https://coding.alexis-carbillet.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>
-                Coding
-              </a>
-              <a className="navbar-item" href="https://electricity.alexis-carbillet.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>
-                Electricity
-              </a>
-              <a className="navbar-item" href="https://hardware.alexis-carbillet.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>
-                Hardware
-              </a>
-            </div>
-          </div>
+          <Link className="navbar-item" to="/websites" onClick={closeMenu}>
+            Websites
+          </Link>
         </div>
 
         {/* Language Switcher on the right */}
