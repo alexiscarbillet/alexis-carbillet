@@ -25,6 +25,7 @@
     "vscodeExtensions": "VSCode extensions",
     "scripts": "Scripts",
     "helmCharts": "Helm charts",
+    "aiNewsletter": "AI Newsletter",
     "websiteButton": "Website",
     "githubButton": "Github"
     ,
@@ -72,6 +73,24 @@
         "monitoringStack": "Helm chart bundling Prometheus/Grafana stack.",
         "loggingStack": "Helm chart for ELK/EFK logging stack."
       }
+    },
+    "aiNewsletter": {
+      "title": "AI Newsletter",
+      "subtitle": "Multi-topic AI-powered newsletter generation engine",
+      "description": "The AI Newsletter is a sophisticated platform that automatically generates multiple specialized newsletters across diverse domains: Cloud Infrastructure (AWS/GCP/Azure), CNCF projects, CVE security vulnerabilities, Electrical Engineering, Computer Hardware, and Pokemon trading card investments. Each newsletter is independently generated using AI to provide relevant, up-to-date insights without manual intervention.",
+      "featuresTitle": "Key features include:",
+      "features": [
+        "Automated Cloud platform analysis (AWS, GCP, Azure) with provider rotation",
+        "CNCF project tracking with 6-month deduplication logic",
+        "Real-time CVE/security vulnerability analysis from NIST API",
+        "Electrical engineering and electronics components education",
+        "Computer hardware trends and specifications analysis",
+        "Pokemon trading card market investment tracking and ROI analysis",
+        "Track NYSE and TSX stocks related to a personalized list and recommend new investements based on news and trends",
+        "AI-powered content generation with natural language processing",
+        "Automated history tracking to avoid duplicate topics"
+      ],
+      "conclusion": "This project demonstrates advanced applications of AI across multiple domains, combining real-time API integration, market analysis, and intelligent content creation to deliver specialized insights for professionals and enthusiasts in cloud infrastructure, security, electronics, hardware, and collectibles investment."
     }
   },
   "hero": {

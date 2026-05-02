@@ -81,6 +81,7 @@ export default function Navbar() {
               <Link className="navbar-item" to="/projects/helm" onClick={closeMenu}>Helm Charts</Link>
               <Link className="navbar-item" to="/projects/scripts" onClick={closeMenu}>Scripts</Link>
               <Link className="navbar-item" to="/projects/vscode" onClick={closeMenu}>VSCode Extensions</Link>
+              <Link className="navbar-item" to="/projects/ai-newsletter" onClick={closeMenu}>AI Newsletter</Link>
             </div>
           </div>
 

@@ -9,6 +9,7 @@ import ProjectsFirefox from './ProjectsFirefox.jsx';
 import ProjectsVSCode from './ProjectsVSCode.jsx';
 import ProjectsScripts from './ProjectsScripts.jsx';
 import ProjectsHelm from './ProjectsHelm.jsx';
+import ProjectsAINewsletter from './ProjectsAINewsletter.jsx';
 import TrainingCKA from './TrainingCKA.jsx';
 import TrainingLinux from './TrainingLinux.jsx';
 import Podcasts from './Podcasts.jsx';
@@ -36,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects/vscode" element={<ProjectsVSCode />} />
         <Route path="/projects/scripts" element={<ProjectsScripts />} />
         <Route path="/projects/helm" element={<ProjectsHelm />} />
+        <Route path="/projects/ai-newsletter" element={<ProjectsAINewsletter />} />
         <Route path="/diplomas" element={<Diplomas />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/ai-podcasts" element={<Podcasts />} />
