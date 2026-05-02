@@ -205,12 +205,19 @@
     "toolkits": {
       "toolkitsHeader": "Magasin:",
       "freelance-it-consultant-onboarding-kit": "Kit d'onboarding pour les consultants IT freelance",
+      "freelance-it-consultant-onboarding-kit-desc": "Checklist complète et modèles pour l'intégration de nouveaux clients en tant que consultant IT freelance.",
       "friction-slayer": "Friction-Slayer pour la gestion de projet IT",
+      "friction-slayer-desc": "Framework pour identifier et éliminer les goulots d'étranglement dans vos projets IT.",
       "legacy-system-migration-roadmap": "Feuille de route pour la migration de systèmes legacy",
+      "legacy-system-migration-roadmap-desc": "Guide étape par étape et outils pour planifier et exécuter les migrations de systèmes legacy.",
       "minimum-viable-security": "Minimum Viable Security pour les startups",
+      "minimum-viable-security-desc": "Contrôles de sécurité essentiels pour protéger les actifs de votre organisation.",
       "vendor-risk-assessment": "Assessment de risque fournisseur pour les entreprises",
+      "vendor-risk-assessment-desc": "Framework complet pour évaluer et gérer les risques des fournisseurs tiers.",
       "pre-audit-preparation": "Checklist de préparation pré-audit pour les entreprises",
-      "ethical-ai-governance": "Framework de gouvernance éthique de l'IA pour les entreprises"
+      "pre-audit-preparation-desc": "Checklist et modèles pour préparer votre organisation aux audits de conformité.",
+      "ethical-ai-governance": "Framework de gouvernance éthique de l'IA pour les entreprises",
+      "ethical-ai-governance-desc": "Framework pour mettre en œuvre des pratiques d'IA responsable et éthique dans votre organisation."
     }
   },
   "diplomas": [

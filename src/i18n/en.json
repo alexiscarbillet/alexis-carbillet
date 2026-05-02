@@ -205,12 +205,19 @@
     "toolkits": {
       "toolkitsHeader": "Digital Toolkits:",
       "freelance-it-consultant-onboarding-kit": "Freelance IT Consultant Onboarding Kit",
+      "freelance-it-consultant-onboarding-kit-desc": "Complete checklist and templates for onboarding new clients as a freelance IT consultant.",
       "friction-slayer": "IT Project Management 'Friction-Slayer'",
+      "friction-slayer-desc": "Framework to identify and eliminate bottlenecks in your IT projects.",
       "legacy-system-migration-roadmap": "Legacy System Migration Roadmap",
+      "legacy-system-migration-roadmap-desc": "Step-by-step guide and tools for planning and executing legacy system migrations.",
       "minimum-viable-security": "Minimum Viable Security",
+      "minimum-viable-security-desc": "Essential security controls to protect your organization's assets.",
       "vendor-risk-assessment": "Vendor risk assessment",
+      "vendor-risk-assessment-desc": "Comprehensive framework for evaluating and managing third-party vendor risks.",
       "pre-audit-preparation": "Pre-audit preparation checklist",
-      "ethical-ai-governance": "Ethical AI governance framework"
+      "pre-audit-preparation-desc": "Checklist and templates to prepare your organization for compliance audits.",
+      "ethical-ai-governance": "Ethical AI governance framework",
+      "ethical-ai-governance-desc": "Framework for implementing responsible and ethical AI practices in your organization."
     }
   },
   "diplomas": [

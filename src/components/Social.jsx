@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCode, faBolt, faHome, faServer, faPuzzlePiece, faPaw, faTerminal, faShip, faNewspaper,
+  faCode, faBolt, faHome, faServer, faPaw, faTerminal, faNewspaper,
   faStore
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faDocker, faMicrosoft, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Social() {
   return (

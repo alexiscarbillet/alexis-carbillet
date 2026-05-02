@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import SEO from "./components/SEO";
 import { useTranslation } from "react-i18next";
 
 export default function Diplomas() {
@@ -9,6 +10,11 @@ export default function Diplomas() {
 
   return (
     <>
+      <SEO 
+        title="Diplomas & Education"
+        description="Master's degree in AI & Data Science from IMT Mines Alès. Advanced education in artificial intelligence and data science technologies."
+        url="https://alexis-carbillet.com/diplomas"
+      />
       <Navbar />
       
       {/* DIPLOMAS SECTION */}

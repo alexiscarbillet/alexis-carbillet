@@ -4,7 +4,7 @@ export default function AdSense({ slot, style = { display: 'block' }, className 
   useEffect(() => {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
+    } catch {
       // ignore errors when Adsense isn't available
     }
   }, []);

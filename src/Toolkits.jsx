@@ -1,18 +1,69 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from './components/Navbar';
+import SEO from './components/SEO';
+import LazyImage from './components/LazyImage';
 import { useTranslation } from 'react-i18next';
 
 export default function Toolkits() {
   const { t } = useTranslation();
 
   const toolkits = [
-    { titleKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit", url: "https://shop.alexis-carbillet.com/l/freelance-it-consultant-onboarding-kit", category: "IT Operations & Career" },
-    { titleKey: "digital-assets.toolkits.friction-slayer", url: "https://shop.alexis-carbillet.com/l/Friction-Slayer", category: "IT Operations & Career" },
-    { titleKey: "digital-assets.toolkits.legacy-system-migration-roadmap", url: "https://shop.alexis-carbillet.com/l/legacy-system-migration-roadmap", category: "IT Operations & Career" },
-    { titleKey: "digital-assets.toolkits.minimum-viable-security", url: "https://shop.alexis-carbillet.com/l/minimum-viable-security", category: "Cybersecurity & Compliance" },
-    { titleKey: "digital-assets.toolkits.vendor-risk-assessment", url: "https://shop.alexis-carbillet.com/l/vendor-risk-assessment", category: "Cybersecurity & Compliance" },
-    { titleKey: "digital-assets.toolkits.pre-audit-preparation", url: "https://shop.alexis-carbillet.com/l/pre-audit-preparation", category: "Cybersecurity & Compliance" },
-    { titleKey: "digital-assets.toolkits.ethical-ai-governance", url: "https://shop.alexis-carbillet.com/l/ethical-ai-governance", category: "AI & Data strategy" }
+    { 
+      titleKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit", 
+      url: "https://shop.alexis-carbillet.com/l/freelance-it-consultant-onboarding-kit", 
+      category: "IT Operations & Career",
+      price: "CAD$15",
+      image: "/assets/toolkits/Gemini_Generated_Image_ymz9mkymz9mkymz9.png",
+      descriptionKey: "digital-assets.toolkits.freelance-it-consultant-onboarding-kit-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.friction-slayer", 
+      url: "https://shop.alexis-carbillet.com/l/Friction-Slayer", 
+      category: "IT Operations & Career",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image_htljxphtljxphtlj.png",
+      descriptionKey: "digital-assets.toolkits.friction-slayer-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.legacy-system-migration-roadmap", 
+      url: "https://shop.alexis-carbillet.com/l/legacy-system-migration-roadmap", 
+      category: "IT Operations & Career",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image_h8fwsah8fwsah8fw.png",
+      descriptionKey: "digital-assets.toolkits.legacy-system-migration-roadmap-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.minimum-viable-security", 
+      url: "https://shop.alexis-carbillet.com/l/minimum-viable-security", 
+      category: "Cybersecurity & Compliance",
+      price: "CAD$15",
+      image: "/assets/toolkits/Gemini_Generated_Image_94ohxt94ohxt94oh.png",
+      descriptionKey: "digital-assets.toolkits.minimum-viable-security-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.vendor-risk-assessment", 
+      url: "https://shop.alexis-carbillet.com/l/vendor-risk-assessment", 
+      category: "Cybersecurity & Compliance",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image.png",
+      descriptionKey: "digital-assets.toolkits.vendor-risk-assessment-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.pre-audit-preparation", 
+      url: "https://shop.alexis-carbillet.com/l/pre-audit-preparation", 
+      category: "Cybersecurity & Compliance",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image_24tjxg24tjxg24tj.png",
+      descriptionKey: "digital-assets.toolkits.pre-audit-preparation-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.ethical-ai-governance", 
+      url: "https://shop.alexis-carbillet.com/l/ethical-ai-governance", 
+      category: "AI & Data strategy",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image_jzwfnajzwfnajzwf.png",
+      descriptionKey: "digital-assets.toolkits.ethical-ai-governance-desc"
+    }
   ];
 
   // Initialize filters: both categories active by default
@@ -28,6 +79,11 @@ export default function Toolkits() {
 
   return (
     <>
+      <SEO 
+        title="Digital Toolkits & Products"
+        description="Explore digital toolkits for IT operations, cybersecurity compliance, and ethical AI governance. Professional templates and frameworks starting at CAD$10."
+        url="https://alexis-carbillet.com/digital-assets-toolkits"
+      />
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
@@ -55,15 +111,26 @@ export default function Toolkits() {
             {toolkits
               .filter(item => selectedCategories[item.category])
               .map((item, idx) => (
-                // Use 'is-one-quarter' like you wanted, but it won't squish because 
-                // it is set to 25% width, which is wider than your previous broken setup.
                 <div className="column is-one-quarter" key={idx}>
-                  <div className="card">
-                    <div className="card-content">
+                  <div className="card" style={{ height: "100%", display: "flex", flexDirection: "column" }}>
+                  <div className="card-image">
+                      <figure className="image is-4by3">
+                        <LazyImage 
+                          src={item.image} 
+                          alt={t(item.titleKey)}
+                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        />
+                      </figure>
+                    </div>
+                    <div className="card-content" style={{ flex: 1, display: "flex", flexDirection: "column" }}>
                       <p className="title is-5">{t(item.titleKey)}</p>
-                      <button className="button is-primary is-outlined">
-                        <a href={item.url} target="_blank" rel="noopener noreferrer">{t("Gumroad")}</a>
-                      </button>
+                      {item.descriptionKey && <p className="subtitle is-7" style={{ flex: 1 }}>{t(item.descriptionKey)}</p>}
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
+                        <p style={{ fontWeight: "bold", fontSize: "1.1em", color: "#3273dc" }}>{item.price}</p>
+                        <button className="button is-primary is-small">
+                          <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "none" }}>Buy</a>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

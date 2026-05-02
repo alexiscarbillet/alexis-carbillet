@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
+import SEO from "./components/SEO";
 import { useTranslation } from "react-i18next";
 
 export default function Certifications() {
@@ -18,10 +19,15 @@ export default function Certifications() {
       });
       setSelectedIssuers(issuersObj);
     }
-  }, [certifications]);
+  }, [certifications, selectedIssuers]);
 
   return (
     <>
+      <SEO 
+        title="Certifications"
+        description="Professional certifications in cloud platforms (AWS, Azure, GCP), Kubernetes (CKA), cybersecurity, and AI. Verify my credentials and expertise."
+        url="https://alexis-carbillet.com/certifications"
+      />
       <Navbar />
       
       {/* CERTIFICATIONS SECTION */}
