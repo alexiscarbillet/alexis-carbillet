@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from './components/Navbar';
+import SEO from './components/SEO';
 import { useTranslation } from 'react-i18next';
 
 export default function TrainingCKA() {
@@ -19,38 +20,33 @@ export default function TrainingCKA() {
     { titleKey: "training.cka.resourceQuotas", url: "https://killercoda.com/alexis-carbillet/course/CKA/resource_quotas", descriptionKey: "training.desc.cka.resourceQuotas" },
   ];
 
-  const renderCardsInRows = (items) => {
-    const rows = [];
-    for (let i = 0; i < items.length; i += 4) {
-      const rowItems = items.slice(i, i + 4);
-      rows.push(
-        <div className="columns" key={i}>
-          {rowItems.map((item, idx) => (
-            <div className="column" key={idx}>
-              <div className="card">
-                <div className="card-content">
-                  <p className="title" style={{ wordBreak: 'normal' }}>{t(item.titleKey)}</p>
-                  {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
-                  <button className="button is-primary is-outlined">
-                    <a href={item.url} target="_blank" rel="noopener noreferrer">{t("training.websiteButton")}</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      );
-    }
-    return rows;
-  };
-
   return (
     <>
+      <SEO
+        title="CKA Training Scenarios"
+        description="Practice Certified Kubernetes Administrator (CKA) scenarios on Killercoda with hands-on labs."
+        url="https://alexis-carbillet.com/training/cka"
+      />
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
           <h3 className="title is-3">{t("training.ckaHeader")}</h3>
-          {renderCardsInRows(ckaTraining)}
+          <p className="subtitle is-6">Hands-on Kubernetes training scenarios to prepare for the CKA certification.</p>
+          <div className="columns is-multiline">
+            {ckaTraining.map((item, idx) => (
+              <div className="column is-one-third-tablet is-half-mobile" key={idx}>
+                <div className="card">
+                  <div className="card-content">
+                    <p className="title" style={{ wordBreak: 'normal' }}>{t(item.titleKey)}</p>
+                    {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
+                    <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
+                      {t("training.websiteButton")}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
