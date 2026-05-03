@@ -63,6 +63,14 @@ export default function Toolkits() {
       price: "CAD$10",
       image: "/assets/toolkits/Gemini_Generated_Image_jzwfnajzwfnajzwf.png",
       descriptionKey: "digital-assets.toolkits.ethical-ai-governance-desc"
+    },
+    { 
+      titleKey: "digital-assets.toolkits.prompt-engineering-library", 
+      url: "https://shop.alexis-carbillet.com/l/Prompt-Engineering-Library-for-IT-Managers", 
+      category: "AI & Data strategy",
+      price: "CAD$15",
+      image: "/assets/toolkits/Code_Generated_Image.png",
+      descriptionKey: "digital-assets.toolkits.prompt-engineering-library-desc"
     }
   ];
 

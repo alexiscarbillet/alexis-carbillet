@@ -240,7 +240,9 @@
       "pre-audit-preparation": "Checklist de préparation pré-audit pour les entreprises",
       "pre-audit-preparation-desc": "Checklist et modèles pour préparer votre organisation aux audits de conformité.",
       "ethical-ai-governance": "Framework de gouvernance éthique de l'IA pour les entreprises",
-      "ethical-ai-governance-desc": "Framework pour mettre en œuvre des pratiques d'IA responsable et éthique dans votre organisation."
+      "ethical-ai-governance-desc": "Framework pour mettre en œuvre des pratiques d'IA responsable et éthique dans votre organisation.",
+      "prompt-engineering-library": "Bibliothèque de prompts pour les IT Managers",
+      "prompt-engineering-library-desc": "50+ prompts testés pour la génération de tickets Jira, les rétrospectives de sprint et la documentation d'architecture."
     }
   },
   "diplomas": [
