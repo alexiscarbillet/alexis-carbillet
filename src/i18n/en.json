@@ -243,7 +243,9 @@
       "ethical-ai-governance": "Ethical AI governance framework",
       "ethical-ai-governance-desc": "Framework for implementing responsible and ethical AI practices in your organization.",
       "prompt-engineering-library": "Prompt Engineering Library for IT Managers",
-      "prompt-engineering-library-desc": "50+ tested prompts for Jira ticket generation, Sprint retrospectives, and architecture documentation."
+      "prompt-engineering-library-desc": "50+ tested prompts for Jira ticket generation, Sprint retrospectives, and architecture documentation.",
+      "small-business-ai-readiness-scorecard": "Small Business AI Readiness Scorecard",
+      "small-business-ai-readiness-scorecard-desc": "Use-case prioritization matrix, data privacy red flag list, and ROI calculator for manual vs. AI tasks."
     }
   },
   "diplomas": [

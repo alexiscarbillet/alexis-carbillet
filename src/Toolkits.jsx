@@ -57,6 +57,14 @@ export default function Toolkits() {
       descriptionKey: "digital-assets.toolkits.pre-audit-preparation-desc"
     },
     { 
+      titleKey: "digital-assets.toolkits.small-business-ai-readiness-scorecard", 
+      url: "https://shop.alexis-carbillet.com/l/Small-Business-AI-Readiness-Scorecard", 
+      category: "AI & Data strategy",
+      price: "CAD$10",
+      image: "/assets/toolkits/Gemini_Generated_Image_small_business_ai.png",
+      descriptionKey: "digital-assets.toolkits.small-business-ai-readiness-scorecard-desc"
+    },
+    { 
       titleKey: "digital-assets.toolkits.ethical-ai-governance", 
       url: "https://shop.alexis-carbillet.com/l/ethical-ai-governance", 
       category: "AI & Data strategy",
