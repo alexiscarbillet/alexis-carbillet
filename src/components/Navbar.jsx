@@ -69,6 +69,9 @@ export default function Navbar() {
               <Link className="navbar-item" to="/ai-podcasts" onClick={closeMenu}>
                 {t("nav.podcasts.ai")}
               </Link>
+              <Link className="navbar-item" to="/cloud-podcasts" onClick={closeMenu}>
+                {t("nav.podcasts.cloud")}
+              </Link>
             </div>
           </div>
           

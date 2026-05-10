@@ -5,6 +5,7 @@
     "training": "Formations",
     "podcasts": "Podcasts",
     "podcasts.ai": "Intelligence Artificielle",
+    "podcasts.cloud": "Infonuagique",
     "digital-assets": "Atouts digitaux"
   },
   "buttons": {
@@ -222,6 +223,21 @@
       "podcast6": "Épisode 6 : L’IA générative – Le côté créatif",
       "podcast7": "Épisode 7 : L’IA dans le monde",
       "podcast8": "Épisode 8 : L’avenir de l’IA : et après ?"
+    },
+    "cloudHeader": "Hyperscaler Showdown:",
+    "spotifyDescriptionCloud": "Écoutez Hyperscaler Showdown sur Spotify : stratégie hyperscale, comparaison des fournisseurs cloud et débats sur l'infrastructure moderne.",
+    "currentlyListeningCloud": "Écoute en cours :",
+    "cloud": {
+      "podcast1": "Épisode 1 : Le moteur de calcul",
+      "podcast2": "Épisode 2 : Le lac de données moderne",
+      "podcast3": "Épisode 3 : IA & apprentissage automatique",
+      "podcast4": "Épisode 4 : L’épine dorsale de l’entreprise",
+      "podcast5": "Épisode 5 : Kubernetes managé",
+      "podcast6": "Épisode 6 : Réseau global & Edge",
+      "podcast7": "Épisode 7 : La crise d’identité",
+      "podcast8": "Épisode 8 : Le bouclier de sécurité",
+      "podcast9": "Épisode 9 : La course quantique",
+      "podcast10": "Épisode 10 : Clouds souverains & conformité"
     }
   },
   "digital-assets": {

@@ -5,6 +5,7 @@
     "training": "Training",
     "podcasts": "Podcasts",
     "podcasts.ai": "Artificial Intelligence",
+    "podcasts.cloud": "Cloud Computing",
     "digital-assets": "Store"
   },
   "buttons": {
@@ -223,6 +224,21 @@
       "podcast6": "Episode 6: Generative AI – The Creative Side",
       "podcast7": "Episode 7: AI Around the World",
       "podcast8": "Episode 8: The Future of AI: What’s Next?"
+    },
+    "cloudHeader": "Hyperscaler Showdown:",
+    "spotifyDescriptionCloud": "Listen to Hyperscaler Showdown on Spotify: hyperscaler strategy, cloud provider comparisons, and modern infrastructure debates.",
+    "currentlyListeningCloud": "Currently listening to",
+    "cloud": {
+      "podcast1": "Episode 1: The Compute Engine",
+      "podcast2": "Episode 2: The Modern Data Lake",
+      "podcast3": "Episode 3: AI & Machine Learning",
+      "podcast4": "Episode 4: The Enterprise Spine",
+      "podcast5": "Episode 5: Managed Kubernetes",
+      "podcast6": "Episode 6: Global Networking & Edge",
+      "podcast7": "Episode 7: The Identity Crisis",
+      "podcast8": "Episode 8: The Security Shield",
+      "podcast9": "Episode 9: The Quantum Race",
+      "podcast10": "Episode 10: Sovereign Clouds & Compliance"
     }
   },
   "digital-assets": {

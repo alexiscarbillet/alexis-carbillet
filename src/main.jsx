@@ -12,7 +12,8 @@ import ProjectsHelm from './ProjectsHelm.jsx';
 import ProjectsAINewsletter from './ProjectsAINewsletter.jsx';
 import TrainingCKA from './TrainingCKA.jsx';
 import TrainingLinux from './TrainingLinux.jsx';
-import Podcasts from './Podcasts.jsx';
+import PodcastsAI from './PodcastsAI.jsx';
+import PodcastsCloud from './Podcastscloud.jsx';
 import Certifications from './Certifications.jsx';
 import Diplomas from './Diplomas.jsx';
 import Toolkits from './Toolkits.jsx';
@@ -40,7 +41,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects/ai-newsletter" element={<ProjectsAINewsletter />} />
         <Route path="/diplomas" element={<Diplomas />} />
         <Route path="/certifications" element={<Certifications />} />
-        <Route path="/ai-podcasts" element={<Podcasts />} />
+        <Route path="/ai-podcasts" element={<PodcastsAI />} />
+        <Route path="/cloud-podcasts" element={<PodcastsCloud />} />
         <Route path="/digital-assets-toolkits" element={<Toolkits />} />
         <Route path="/websites" element={<Websites />} />
       </Routes>

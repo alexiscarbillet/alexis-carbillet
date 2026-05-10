@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import SEO from './components/SEO';
 import { useTranslation } from 'react-i18next';
 
-export default function AIPodcast() {
+export default function PodcastAI() {
   const { t } = useTranslation();
 
   const spotifyShowUrl = "https://open.spotify.com/show/20P3V99Sola1mSj0uxTwhO";
