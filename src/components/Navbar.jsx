@@ -48,9 +48,9 @@ export default function Navbar() {
         <div className="navbar-start">
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
+            <Link className="navbar-link" to="/education" onClick={closeMenu}>
               Education
-            </a>
+            </Link>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/certifications" onClick={closeMenu}>
                 {t("sections.certifications")}
@@ -62,9 +62,9 @@ export default function Navbar() {
           </div>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
+            <Link className="navbar-link" to="/podcasts" onClick={closeMenu}>
               {t("nav.podcasts")}
-            </a>
+            </Link>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/ai-podcasts" onClick={closeMenu}>
                 {t("nav.podcasts.ai")}
@@ -76,7 +76,7 @@ export default function Navbar() {
           </div>
           
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">{t("nav.projects")}</a>
+            <Link className="navbar-link" to="/projects" onClick={closeMenu}>{t("nav.projects")}</Link>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/projects/android" onClick={closeMenu}>Android Apps</Link>
               <Link className="navbar-item" to="/projects/docker" onClick={closeMenu}>Docker Containers</Link>
@@ -89,9 +89,9 @@ export default function Navbar() {
           </div>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
+            <Link className="navbar-link" to="/digital-assets" onClick={closeMenu}>
               {t("nav.digital-assets")}
-            </a>
+            </Link>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/digital-assets-toolkits" onClick={closeMenu}>
                 Toolkits
@@ -100,16 +100,25 @@ export default function Navbar() {
           </div>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">{t("nav.training")}</a>
+            <Link className="navbar-link" to="/training" onClick={closeMenu}>{t("nav.training")}</Link>
             <div className="navbar-dropdown">
               <Link className="navbar-item" to="/training/cka" onClick={closeMenu}>CKA</Link>
               <Link className="navbar-item" to="/training/linux" onClick={closeMenu}>Linux</Link>
             </div>
           </div>
 
-          <Link className="navbar-item" to="/websites" onClick={closeMenu}>
-            Websites
-          </Link>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <Link className="navbar-link" to="/websites" onClick={closeMenu}>
+              Websites
+            </Link>
+            <div className="navbar-dropdown">
+              <a className="navbar-item" href="https://blog.alexis-carbillet.com/blog/category/tech/" target="_blank" rel="noopener noreferrer">{t("websites.blog.title")}</a>
+              <a className="navbar-item" href="https://cats.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("websites.cats.title")}</a>
+              <a className="navbar-item" href="https://coding.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("websites.coding.title")}</a>
+              <a className="navbar-item" href="https://electricity.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("websites.electricity.title")}</a>
+              <a className="navbar-item" href="https://hardware.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("websites.hardware.title")}</a>
+            </div>
+          </div>
         </div>
 
         {/* Language Switcher on the right */}

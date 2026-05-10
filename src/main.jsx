@@ -18,6 +18,11 @@ import Certifications from './Certifications.jsx';
 import Diplomas from './Diplomas.jsx';
 import Toolkits from './Toolkits.jsx';
 import Websites from './Websites.jsx';
+import Podcasts from './Podcasts.jsx';
+import Education from './Education.jsx';
+import Projects from './Projects.jsx';
+import DigitalAssets from './DigitalAssets.jsx';
+import Training from './Training.jsx';
 
 import './index.css';
 import 'bulma/css/bulma.min.css';
@@ -45,6 +50,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/cloud-podcasts" element={<PodcastsCloud />} />
         <Route path="/digital-assets-toolkits" element={<Toolkits />} />
         <Route path="/websites" element={<Websites />} />
+        <Route path="/podcasts" element={<Podcasts />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/digital-assets" element={<DigitalAssets />} />
+        <Route path="/training" element={<Training />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
