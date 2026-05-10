@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function LangSwitcher() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const changeLanguage = (lng) => i18n.changeLanguage(lng);
+
   return (
-    <div className="navbar-item">
-      <button className="button is-small mr-2" onClick={() => i18n.changeLanguage("en")}>EN</button>
-      <button className="button is-small" onClick={() => i18n.changeLanguage("fr")}>FR</button>
+    <div className="navbar-item has-dropdown is-hoverable">
+      <a className="navbar-link" role="button">{t("nav.language")}</a>
+      <div className="navbar-dropdown is-right">
+        <a className="navbar-item" role="button" onClick={() => changeLanguage("en")}>EN</a>
+        <a className="navbar-item" role="button" onClick={() => changeLanguage("fr")}>FR</a>
+        <a className="navbar-item" role="button" onClick={() => changeLanguage("es")}>ES</a>
+      </div>
     </div>
   );
 }
