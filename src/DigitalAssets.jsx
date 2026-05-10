@@ -10,7 +10,7 @@ export default function DigitalAssets() {
     {
       key: 'toolkits',
       title: 'Toolkits',
-      description: 'Digital toolkits for IT consultants and managers.',
+      description: t('overviews.digitalAssets.toolkits'),
       url: '/digital-assets-toolkits'
     }
   ];
@@ -25,8 +25,8 @@ export default function DigitalAssets() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
-          <h3 className="title is-3">{t("nav.digital-assets")}</h3>
-          <p className="subtitle is-6">Digital assets and resources for professionals.</p>
+          <h3 className="title is-3">{t("overviews.digitalAssets.header")}</h3>
+          <p className="subtitle is-6">{t("overviews.digitalAssets.subtitle")}</p>
           <div className="columns is-multiline">
             {assets.map((asset) => (
               <div className="column is-one-half" key={asset.key}>

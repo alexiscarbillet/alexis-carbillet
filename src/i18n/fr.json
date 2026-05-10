@@ -299,5 +299,39 @@
       "title": "Matériel & Serveurs",
       "description": "Informations et guides sur le matériel informatique, les serveurs, et la gestion d'infrastructure."
     }
+  },
+  "overviews": {
+    "education": {
+      "header": "Éducation",
+      "subtitle": "Mon parcours éducatif et mes certifications.",
+      "certifications": "Mes certifications professionnelles en cloud et plus.",
+      "diplomas": "Mes diplômes académiques et degrés."
+    },
+    "podcasts": {
+      "header": "Podcasts",
+      "subtitle": "Écoutez mes podcasts sur divers sujets."
+    },
+    "projects": {
+      "header": "Projets",
+      "subtitle": "Une vitrine de mes projets et contributions.",
+      "android": "Collection d'applications Android que j'ai développées.",
+      "docker": "Images Docker pour le développement et la data science.",
+      "firefox": "Extensions et modules complémentaires Mozilla Firefox.",
+      "helm": "Charts Helm Kubernetes pour le déploiement.",
+      "scripts": "Scripts utiles dans divers langages.",
+      "vscode": "Extensions pour Visual Studio Code.",
+      "aiNewsletter": "Génération automatisée de newsletters alimentée par l'IA."
+    },
+    "digitalAssets": {
+      "header": "Atouts Digitaux",
+      "subtitle": "Atouts numériques et ressources pour les professionnels.",
+      "toolkits": "Toolkits numériques pour les consultants et gestionnaires IT."
+    },
+    "training": {
+      "header": "Formation",
+      "subtitle": "Scénarios de formation interactifs pour la préparation aux certifications.",
+      "cka": "Scénarios de formation Certified Kubernetes Administrator.",
+      "linux": "Scénarios de formation en administration système Linux."
+    }
   }
 }

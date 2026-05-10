@@ -9,44 +9,44 @@ export default function Projects() {
   const projects = [
     {
       key: 'android',
-      title: 'Android Apps',
-      description: 'Collection of Android applications I developed.',
+      title: t('projects.androidApps'),
+      description: t('overviews.projects.android'),
       url: '/projects/android'
     },
     {
       key: 'docker',
-      title: 'Docker Containers',
-      description: 'Docker images for development and data science.',
+      title: t('projects.dockerContainers'),
+      description: t('overviews.projects.docker'),
       url: '/projects/docker'
     },
     {
       key: 'firefox',
-      title: 'Firefox Plugins',
-      description: 'Mozilla Firefox extensions and add-ons.',
+      title: t('projects.firefoxPlugins'),
+      description: t('overviews.projects.firefox'),
       url: '/projects/firefox'
     },
     {
       key: 'helm',
-      title: 'Helm Charts',
-      description: 'Kubernetes Helm charts for deployment.',
+      title: t('projects.helmCharts'),
+      description: t('overviews.projects.helm'),
       url: '/projects/helm'
     },
     {
       key: 'scripts',
-      title: 'Scripts',
-      description: 'Useful scripts in various languages.',
+      title: t('projects.scripts'),
+      description: t('overviews.projects.scripts'),
       url: '/projects/scripts'
     },
     {
       key: 'vscode',
-      title: 'VSCode Extensions',
-      description: 'Extensions for Visual Studio Code.',
+      title: t('projects.vscodeExtensions'),
+      description: t('overviews.projects.vscode'),
       url: '/projects/vscode'
     },
     {
       key: 'ai-newsletter',
-      title: 'AI Newsletter',
-      description: 'Automated AI-powered newsletter generation.',
+      title: t('projects.aiNewsletter'),
+      description: t('overviews.projects.aiNewsletter'),
       url: '/projects/ai-newsletter'
     }
   ];
@@ -61,8 +61,8 @@ export default function Projects() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
-          <h3 className="title is-3">{t("nav.projects")}</h3>
-          <p className="subtitle is-6">A showcase of my projects and contributions.</p>
+          <h3 className="title is-3">{t("overviews.projects.header")}</h3>
+          <p className="subtitle is-6">{t("overviews.projects.subtitle")}</p>
           <div className="columns is-multiline">
             {projects.map((project) => (
               <div className="column is-one-third" key={project.key}>

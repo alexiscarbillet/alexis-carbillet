@@ -10,13 +10,13 @@ export default function Training() {
     {
       key: 'cka',
       title: 'CKA Training',
-      description: 'Certified Kubernetes Administrator training scenarios.',
+      description: t('overviews.training.cka'),
       url: '/training/cka'
     },
     {
       key: 'linux',
       title: 'Linux Training',
-      description: 'Linux system administration training scenarios.',
+      description: t('overviews.training.linux'),
       url: '/training/linux'
     }
   ];
@@ -31,8 +31,8 @@ export default function Training() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
-          <h3 className="title is-3">{t("nav.training")}</h3>
-          <p className="subtitle is-6">Interactive training scenarios for certification prep.</p>
+          <h3 className="title is-3">{t("overviews.training.header")}</h3>
+          <p className="subtitle is-6">{t("overviews.training.subtitle")}</p>
           <div className="columns is-multiline">
             {trainings.map((training) => (
               <div className="column is-one-half" key={training.key}>

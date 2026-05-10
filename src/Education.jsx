@@ -10,13 +10,13 @@ export default function Education() {
     {
       key: 'certifications',
       title: t('sections.certifications'),
-      description: 'My professional certifications in cloud, AI, and more.',
+      description: t('overviews.education.certifications'),
       url: '/certifications'
     },
     {
       key: 'diplomas',
       title: t('sections.diplomas'),
-      description: 'My academic diplomas and degrees.',
+      description: t('overviews.education.diplomas'),
       url: '/diplomas'
     }
   ];
@@ -31,8 +31,8 @@ export default function Education() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
-          <h3 className="title is-3">Education</h3>
-          <p className="subtitle is-6">My educational background and certifications.</p>
+          <h3 className="title is-3">{t("overviews.education.header")}</h3>
+          <p className="subtitle is-6">{t("overviews.education.subtitle")}</p>
           <div className="columns is-multiline">
             {education.map((item) => (
               <div className="column is-one-half" key={item.key}>

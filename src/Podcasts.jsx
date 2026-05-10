@@ -31,8 +31,8 @@ export default function Podcasts() {
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
-          <h3 className="title is-3">Podcasts</h3>
-          <p className="subtitle is-6">Listen to my podcasts on various topics.</p>
+          <h3 className="title is-3">{t("overviews.podcasts.header")}</h3>
+          <p className="subtitle is-6">{t("overviews.podcasts.subtitle")}</p>
           <div className="columns is-multiline">
             {podcasts.map((podcast) => (
               <div className="column is-one-half" key={podcast.key}>

@@ -300,5 +300,39 @@
       "title": "Hardware & Servers",
       "description": "Information and guides on computer hardware, servers, and infrastructure management."
     }
+  },
+  "overviews": {
+    "education": {
+      "header": "Education",
+      "subtitle": "My educational background and certifications.",
+      "certifications": "My professional certifications in cloud and more.",
+      "diplomas": "My academic diplomas and degrees."
+    },
+    "podcasts": {
+      "header": "Podcasts",
+      "subtitle": "Listen to my podcasts on various topics."
+    },
+    "projects": {
+      "header": "Projects",
+      "subtitle": "A showcase of my projects and contributions.",
+      "android": "Collection of Android applications I developed.",
+      "docker": "Docker images for development and data science.",
+      "firefox": "Mozilla Firefox extensions and add-ons.",
+      "helm": "Kubernetes Helm charts for deployment.",
+      "scripts": "Useful scripts in various languages.",
+      "vscode": "Extensions for Visual Studio Code.",
+      "aiNewsletter": "Automated AI-powered newsletter generation."
+    },
+    "digitalAssets": {
+      "header": "Digital Assets",
+      "subtitle": "Digital assets and resources for professionals.",
+      "toolkits": "Digital toolkits for IT consultants and managers."
+    },
+    "training": {
+      "header": "Training",
+      "subtitle": "Interactive training scenarios for certification prep.",
+      "cka": "Certified Kubernetes Administrator training scenarios.",
+      "linux": "Linux system administration training scenarios."
+    }
   }
 }
