@@ -166,7 +166,8 @@
       "rollingUpdates": "Práctica CKA: Actualizaciones continuas y rollbacks",
       "serviceNotRouting": "Práctica CKA: Servicio que no enruta tráfico",
       "cronJob": "Práctica CKA: Resolución de problemas de CronJob",
-      "resourceQuotas": "Práctica CKA: Cuotas de recursos y LimitRanges"
+      "resourceQuotas": "Práctica CKA: Cuotas de recursos y LimitRanges",
+      "storageClasses": "Práctica CKA: StorageClass y PVC"
     },
     "linux": {
       "systemdDebug": "Práctica Linux: Depuración de servicios systemd",
@@ -178,7 +179,8 @@
       "sed": "Práctica Linux: Transformación de texto con sed",
       "network": "Práctica Linux: Resolución de problemas de servicios de red",
       "sshHardening": "Práctica Linux: Fortalecimiento de SSH y auditoría de seguridad",
-      "logMining": "Práctica Linux: Extracción de registros con Grep y Awk"
+      "logMining": "Práctica Linux: Extracción de registros con Grep y Awk",
+      "firewallTroubleshooting": "Práctica Linux: Resolución de problemas de firewall"
     },
     "desc": {
       "cka": {
@@ -192,7 +194,8 @@
         "rollingUpdates": "Realiza actualizaciones continuas y rollbacks.",
         "serviceNotRouting": "Depura servicios y problemas de conectividad.",
         "cronJob": "Crea y administra CronJobs.",
-        "resourceQuotas": "Aplica cuotas de recursos y límites."
+        "resourceQuotas": "Aplica cuotas de recursos y límites.",
+        "storageClasses": "Diagnostica problemas de vinculación StorageClass/PVC con un PersistentVolume estático."
       },
       "linux": {
         "systemdDebug": "Resuelve y depura servicios systemd.",
@@ -204,7 +207,8 @@
         "sed": "Practica transformaciones de texto con sed.",
         "network": "Resuelve problemas de servicios y configuraciones de red.",
         "sshHardening": "Mejora la configuración y seguridad de SSH.",
-        "logMining": "Extrae información útil de los registros."
+        "logMining": "Extrae información útil de los registros.",
+        "firewallTroubleshooting": "Repara reglas de firewall que bloquean un servicio local."
       }
     }
   },

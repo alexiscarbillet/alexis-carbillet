@@ -18,6 +18,7 @@ export default function TrainingCKA() {
     { titleKey: "training.cka.serviceNotRouting", url: "https://killercoda.com/alexis-carbillet/course/CKA/service", descriptionKey: "training.desc.cka.serviceNotRouting" },
     { titleKey: "training.cka.cronJob", url: "https://killercoda.com/alexis-carbillet/course/CKA/cronjobs", descriptionKey: "training.desc.cka.cronJob" },
     { titleKey: "training.cka.resourceQuotas", url: "https://killercoda.com/alexis-carbillet/course/CKA/resource_quotas", descriptionKey: "training.desc.cka.resourceQuotas" },
+    { titleKey: "training.cka.storageClasses", url: "https://killercoda.com/alexis-carbillet/course/CKA/storage-classes", descriptionKey: "training.desc.cka.storageClasses" },
   ];
 
   return (

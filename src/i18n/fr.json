@@ -168,7 +168,8 @@
       "rollingUpdates": "Exercice CKA : Mises à jour et Rollbacks",
       "serviceNotRouting": "Exercice CKA : Service ne routant pas le trafic",
       "cronJob": "Exercice CKA : Dépannage CronJob",
-      "resourceQuotas": "Exercice CKA : Quotas de ressources et LimitRanges"
+      "resourceQuotas": "Exercice CKA : Quotas de ressources et LimitRanges",
+      "storageClasses": "Exercice CKA : StorageClass et PVC"
     },
     "linux": {
       "systemdDebug": "Exercice Linux : Débogage des services Systemd",
@@ -180,9 +181,9 @@
       "sed": "Exercice Linux : Transformation de texte avec sed",
       "network": "Exercice Linux : Dépannage des services réseau",
       "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit",
-      "logMining": "Exercice Linux : Exploration des logs avec Grep et Awk"
-    }
-    ,
+      "logMining": "Exercice Linux : Exploration des logs avec Grep et Awk",
+      "firewallTroubleshooting": "Exercice Linux : Dépannage du pare-feu"
+    },
     "desc": {
       "cka": {
         "configmaps": "Déboguez et dépannez les ConfigMaps et Secrets.",
@@ -195,7 +196,8 @@
         "rollingUpdates": "Effectuez des mises à jour progressives et des rollbacks.",
         "serviceNotRouting": "Dépannez les services et les problèmes de connectivité.",
         "cronJob": "Créez et gérez des CronJobs.",
-        "resourceQuotas": "Appliquez des quotas et limites de ressources."
+        "resourceQuotas": "Appliquez des quotas et limites de ressources.",
+        "storageClasses": "Diagnostiquez les problèmes de liaison StorageClass/PVC avec un PersistentVolume statique."
       },
       "linux": {
         "systemdDebug": "Dépannez et déboguez les services systemd.",
@@ -207,7 +209,8 @@
         "sed": "Exercez-vous aux transformations `sed` sur des fichiers.",
         "network": "Dépannez les services et configurations réseau.",
         "sshHardening": "Améliorez la configuration SSH et la sécurité.",
-        "logMining": "Extraire des informations utiles des logs."
+        "logMining": "Extraire des informations utiles des logs.",
+        "firewallTroubleshooting": "Réparez les règles de pare-feu qui bloquent un service local."
       }
     }
   },

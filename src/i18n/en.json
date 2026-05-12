@@ -169,7 +169,8 @@
       "rollingUpdates": "CKA Practice: Rolling Updates & Rollbacks",
       "serviceNotRouting": "CKA Practice: Service Not Routing Traffic",
       "cronJob": "CKA Practice: CronJob Troubleshooting",
-      "resourceQuotas": "CKA Practice: Resource Quotas & LimitRanges"
+      "resourceQuotas": "CKA Practice: Resource Quotas & LimitRanges",
+      "storageClasses": "CKA Practice: StorageClass and PVC Troubleshooting"
     },
     "linux": {
       "systemdDebug": "Linux Practice: Systemd Service Debugging",
@@ -181,9 +182,9 @@
       "sed": "Linux Practice: Text Transformation with sed",
       "network": "Linux Practice: Network Service Troubleshooting",
       "sshHardening": "Linux Practice: SSH Hardening & Security Audit",
-      "logMining": "Linux Practice: Log Mining with Grep and Awk"
-    }
-    ,
+      "logMining": "Linux Practice: Log Mining with Grep and Awk",
+      "firewallTroubleshooting": "Linux Practice: Firewall Troubleshooting"
+    },
     "desc": {
       "cka": {
         "configmaps": "Debug and troubleshoot ConfigMaps and Secrets.",
@@ -196,7 +197,8 @@
         "rollingUpdates": "Perform rolling updates and rollbacks.",
         "serviceNotRouting": "Debug services and connectivity issues.",
         "cronJob": "Create and manage CronJobs.",
-        "resourceQuotas": "Apply resource quotas and limits."
+        "resourceQuotas": "Apply resource quotas and limits.",
+        "storageClasses": "Diagnose StorageClass and PVC binding issues with a static PersistentVolume."
       },
       "linux": {
         "systemdDebug": "Troubleshoot and debug systemd services.",
@@ -208,7 +210,8 @@
         "sed": "Practice sed transforms for files.",
         "network": "Troubleshoot network services and configs.",
         "sshHardening": "Improve SSH configuration and security.",
-        "logMining": "Extract useful information from logs."
+        "logMining": "Extract useful information from logs.",
+        "firewallTroubleshooting": "Repair firewall rules blocking local services."
       }
     }
   },
