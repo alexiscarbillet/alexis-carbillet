@@ -261,7 +261,9 @@
       "prompt-engineering-library": "Bibliothèque de prompts pour les IT Managers",
       "prompt-engineering-library-desc": "50+ prompts testés pour la génération de tickets Jira, les rétrospectives de sprint et la documentation d'architecture.",
       "small-business-ai-readiness-scorecard": "Scorecard de préparation à l'IA pour les petites entreprises",
-      "small-business-ai-readiness-scorecard-desc": "Matrice de priorisation des cas d'usage, liste des drapeaux rouges de confidentialité des données, et calculateur ROI pour les tâches manuelles vs IA."
+      "small-business-ai-readiness-scorecard-desc": "Matrice de priorisation des cas d'usage, liste des drapeaux rouges de confidentialité des données, et calculateur ROI pour les tâches manuelles vs IA.",
+      "hybrid-cloud-disaster-recovery-planner": "Planificateur de récupération après sinistre pour cloud hybride",
+      "hybrid-cloud-disaster-recovery-planner-desc": "Kit complet pour planifier et répéter la récupération après sinistre dans les environnements cloud hybrides."
     }
   },
   "diplomas": [

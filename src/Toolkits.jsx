@@ -65,6 +65,14 @@ export default function Toolkits() {
       descriptionKey: "digital-assets.toolkits.small-business-ai-readiness-scorecard-desc"
     },
     { 
+      titleKey: "digital-assets.toolkits.hybrid-cloud-disaster-recovery-planner", 
+      url: "https://shop.alexis-carbillet.com/l/hybrid-cloud-disaster-recovery-planner", 
+      category: "Cloud & Infrastructure",
+      price: "CAD$15",
+      image: "/assets/toolkits/Gemini_Generated_Image_hybrid_cloud.png",
+      descriptionKey: "digital-assets.toolkits.hybrid-cloud-disaster-recovery-planner-desc"
+    },
+    { 
       titleKey: "digital-assets.toolkits.ethical-ai-governance", 
       url: "https://shop.alexis-carbillet.com/l/ethical-ai-governance", 
       category: "AI & Data strategy",
@@ -87,6 +95,7 @@ export default function Toolkits() {
     "IT Operations & Career": true,
     "Cybersecurity & Compliance": true,
     "AI & Data strategy": true,
+    "Cloud & Infrastructure": true,
   });
 
   const toggleCategory = (cat) => {
