@@ -23,6 +23,7 @@ import Education from './Education.jsx';
 import Projects from './Projects.jsx';
 import DigitalAssets from './DigitalAssets.jsx';
 import Training from './Training.jsx';
+import Footer from './components/Footer.jsx';
 
 import './index.css';
 import 'bulma/css/bulma.min.css';
@@ -56,6 +57,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/digital-assets" element={<DigitalAssets />} />
         <Route path="/training" element={<Training />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -17,7 +17,12 @@
   },
   "footer": {
     "more": "Vous pouvez également trouver tous mes",
-    "and": "et"
+    "and": "et",
+    "aboutTitle": "À propos de ce site",
+    "aboutText": "Un portfolio simple et un hub de ressources pour les formations, projets et podcasts.",
+    "copyright": "© {{year}} Alexis Carbillet. Tous droits réservés.",
+    "siteLinks": "Liens rapides",
+    "sitemapTitle": "Plan du site"
   },
   "projects": {
     "websites": "Sites web",
