@@ -172,7 +172,8 @@
       "serviceNotRouting": "Práctica CKA: Servicio que no enruta tráfico",
       "cronJob": "Práctica CKA: Resolución de problemas de CronJob",
       "resourceQuotas": "Práctica CKA: Cuotas de recursos y LimitRanges",
-      "storageClasses": "Práctica CKA: StorageClass y PVC"
+      "storageClasses": "Práctica CKA: StorageClass y PVC",
+      "ingress": "Práctica CKA: Resolución de problemas de Ingress"
     },
     "linux": {
       "systemdDebug": "Práctica Linux: Depuración de servicios systemd",
@@ -185,7 +186,8 @@
       "network": "Práctica Linux: Resolución de problemas de servicios de red",
       "sshHardening": "Práctica Linux: Fortalecimiento de SSH y auditoría de seguridad",
       "logMining": "Práctica Linux: Extracción de registros con Grep y Awk",
-      "firewallTroubleshooting": "Práctica Linux: Resolución de problemas de firewall"
+      "firewallTroubleshooting": "Práctica Linux: Resolución de problemas de firewall",
+      "backupRestore": "Práctica Linux: Respaldo y restauración"
     },
     "desc": {
       "cka": {
@@ -200,7 +202,8 @@
         "serviceNotRouting": "Depura servicios y problemas de conectividad.",
         "cronJob": "Crea y administra CronJobs.",
         "resourceQuotas": "Aplica cuotas de recursos y límites.",
-        "storageClasses": "Diagnostica problemas de vinculación StorageClass/PVC con un PersistentVolume estático."
+        "storageClasses": "Diagnostica problemas de vinculación StorageClass/PVC con un PersistentVolume estático.",
+        "ingress": "Resuelve problemas de enrutamiento de Ingress y controlador."
       },
       "linux": {
         "systemdDebug": "Resuelve y depura servicios systemd.",

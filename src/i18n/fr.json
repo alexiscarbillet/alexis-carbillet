@@ -174,7 +174,8 @@
       "serviceNotRouting": "Exercice CKA : Service ne routant pas le trafic",
       "cronJob": "Exercice CKA : Dépannage CronJob",
       "resourceQuotas": "Exercice CKA : Quotas de ressources et LimitRanges",
-      "storageClasses": "Exercice CKA : StorageClass et PVC"
+      "storageClasses": "Exercice CKA : StorageClass et PVC",
+      "ingress": "Exercice CKA : Dépannage Ingress"
     },
     "linux": {
       "systemdDebug": "Exercice Linux : Débogage des services Systemd",
@@ -187,7 +188,8 @@
       "network": "Exercice Linux : Dépannage des services réseau",
       "sshHardening": "Exercice Linux : Renforcement de la sécurité SSH et audit",
       "logMining": "Exercice Linux : Exploration des logs avec Grep et Awk",
-      "firewallTroubleshooting": "Exercice Linux : Dépannage du pare-feu"
+      "firewallTroubleshooting": "Exercice Linux : Dépannage du pare-feu",
+      "backupRestore": "Exercice Linux : Dépannage des sauvegardes et restaurations"
     },
     "desc": {
       "cka": {
@@ -202,7 +204,8 @@
         "serviceNotRouting": "Dépannez les services et les problèmes de connectivité.",
         "cronJob": "Créez et gérez des CronJobs.",
         "resourceQuotas": "Appliquez des quotas et limites de ressources.",
-        "storageClasses": "Diagnostiquez les problèmes de liaison StorageClass/PVC avec un PersistentVolume statique."
+        "storageClasses": "Diagnostiquez les problèmes de liaison StorageClass/PVC avec un PersistentVolume statique.",
+        "ingress": "Dépannez le routage Ingress et les problèmes de contrôleur."
       },
       "linux": {
         "systemdDebug": "Dépannez et déboguez les services systemd.",
@@ -215,7 +218,8 @@
         "network": "Dépannez les services et configurations réseau.",
         "sshHardening": "Améliorez la configuration SSH et la sécurité.",
         "logMining": "Extraire des informations utiles des logs.",
-        "firewallTroubleshooting": "Réparez les règles de pare-feu qui bloquent un service local."
+        "firewallTroubleshooting": "Réparez les règles de pare-feu qui bloquent un service local.",
+        "backupRestore": "Dépannez les scripts de sauvegarde et effectuez des restaurations de données."
       }
     }
   },

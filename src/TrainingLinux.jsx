@@ -18,6 +18,7 @@ export default function TrainingLinux() {
     { titleKey: "training.linux.sshHardening", url: "https://killercoda.com/alexis-carbillet/course/Linux/ssh-hardening", descriptionKey: "training.desc.linux.sshHardening" },
     { titleKey: "training.linux.firewallTroubleshooting", url: "https://killercoda.com/alexis-carbillet/course/Linux/firewall-troubleshooting", descriptionKey: "training.desc.linux.firewallTroubleshooting" },
     { titleKey: "training.linux.logMining", url: "https://killercoda.com/alexis-carbillet/course/Linux/Log-mining", descriptionKey: "training.desc.linux.logMining" },
+    { titleKey: "training.linux.backupRestore", url: "https://killercoda.com/alexis-carbillet/course/Linux/backup-restore", descriptionKey: "training.desc.linux.backupRestore" },
   ];
 
   return (
