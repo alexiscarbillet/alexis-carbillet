@@ -17,6 +17,7 @@ import PodcastsCloud from './Podcastscloud.jsx';
 import Certifications from './Certifications.jsx';
 import Diplomas from './Diplomas.jsx';
 import Toolkits from './Toolkits.jsx';
+import Ebooks from './Ebooks.jsx';
 import Websites from './Websites.jsx';
 import Podcasts from './Podcasts.jsx';
 import Education from './Education.jsx';
@@ -50,6 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/ai-podcasts" element={<PodcastsAI />} />
         <Route path="/cloud-podcasts" element={<PodcastsCloud />} />
         <Route path="/digital-assets-toolkits" element={<Toolkits />} />
+        <Route path="/digital-assets-ebooks" element={<Ebooks />} />
         <Route path="/websites" element={<Websites />} />
         <Route path="/podcasts" element={<Podcasts />} />
         <Route path="/education" element={<Education />} />

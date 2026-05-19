@@ -275,6 +275,11 @@
       "small-business-ai-readiness-scorecard-desc": "Use-case prioritization matrix, data privacy red flag list, and ROI calculator for manual vs. AI tasks.",
       "hybrid-cloud-disaster-recovery-planner": "Hybrid Cloud Disaster Recovery Planner",
       "hybrid-cloud-disaster-recovery-planner-desc": "Comprehensive toolkit for planning and rehearsing disaster recovery in hybrid cloud environments."
+    },
+    "ebooks": {
+      "ebooksHeader": "Ebooks:",
+      "gcp-ebook": "GCP E-book",
+      "gcp-ebook-desc": "Comprehensive guide to Google Cloud Platform services and best practices."
     }
   },
   "diplomas": [
@@ -339,7 +344,8 @@
     "digitalAssets": {
       "header": "Digital Assets",
       "subtitle": "Digital assets and resources for professionals.",
-      "toolkits": "Digital toolkits for IT consultants and managers."
+      "toolkits": "Digital toolkits for IT consultants and managers.",
+      "ebooks": "Ebooks covering cloud platforms and best practices."
     },
     "training": {
       "header": "Training",

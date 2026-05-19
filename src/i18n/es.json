@@ -273,6 +273,11 @@
       "small-business-ai-readiness-scorecard-desc": "Matriz de priorización de casos de uso, lista de señales de alerta de privacidad de datos y calculadora ROI para tareas manuales vs IA.",
       "hybrid-cloud-disaster-recovery-planner": "Planificador de Recuperación de Desastres en Nube Híbrida",
       "hybrid-cloud-disaster-recovery-planner-desc": "Kit integral para planificar y ensayar la recuperación de desastres en entornos de nube híbrida."
+    },
+    "ebooks": {
+      "ebooksHeader": "Ebooks:",
+      "gcp-ebook": "E-book de GCP",
+      "gcp-ebook-desc": "Guía completa de los servicios de Google Cloud Platform y las mejores prácticas."
     }
   },
   "diplomas": [
@@ -337,7 +342,8 @@
     "digitalAssets": {
       "header": "Activos digitales",
       "subtitle": "Activos digitales y recursos para profesionales.",
-      "toolkits": "Toolkits digitales para consultores y gerentes de TI."
+      "toolkits": "Toolkits digitales para consultores y gerentes de TI.",
+      "ebooks": "Ebooks que cubren plataformas cloud y mejores prácticas."
     },
     "training": {
       "header": "Formación",

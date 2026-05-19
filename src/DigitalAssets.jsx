@@ -12,6 +12,12 @@ export default function DigitalAssets() {
       title: 'Toolkits',
       description: t('overviews.digitalAssets.toolkits'),
       url: '/digital-assets-toolkits'
+    },
+    {
+      key: 'ebooks',
+      title: 'Ebooks',
+      description: t('overviews.digitalAssets.ebooks'),
+      url: '/digital-assets-ebooks'
     }
   ];
 

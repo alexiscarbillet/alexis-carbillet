@@ -102,6 +102,9 @@ export default function Navbar() {
               <Link className="navbar-item" to="/digital-assets-toolkits" onClick={closeMenu}>
                 Toolkits
               </Link>
+              <Link className="navbar-item" to="/digital-assets-ebooks" onClick={closeMenu}>
+                Ebooks
+              </Link>
             </div>
           </div>
 
