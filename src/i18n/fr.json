@@ -280,7 +280,9 @@
     "ebooks": {
       "ebooksHeader": "Ebooks:",
       "gcp-ebook": "E-book GCP",
-      "gcp-ebook-desc": "Guide complet des services Google Cloud Platform et des meilleures pratiques."
+      "gcp-ebook-desc": "Guide complet des services Google Cloud Platform et des meilleures pratiques.",
+      "azure-ebook": "E-book Azure",
+      "azure-ebook-desc": "Guide complet des services Microsoft Azure et des meilleures pratiques."
     }
   },
   "diplomas": [

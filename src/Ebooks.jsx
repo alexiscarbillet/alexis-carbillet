@@ -14,6 +14,13 @@ export default function Ebooks() {
       price: "CAD$10",
       image: "/assets/ebooks/gcp-ebook.png",
       descriptionKey: "digital-assets.ebooks.gcp-ebook-desc"
+    },
+    { 
+      titleKey: "digital-assets.ebooks.azure-ebook", 
+      url: "https://shop.alexis-carbillet.com/l/azure-ebook",
+      price: "CAD$10",
+      image: "/assets/ebooks/azure-ebook.png",
+      descriptionKey: "digital-assets.ebooks.azure-ebook-desc"
     }
   ];
 
