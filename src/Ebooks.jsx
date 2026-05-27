@@ -21,6 +21,13 @@ export default function Ebooks() {
       price: "CAD$10",
       image: "/assets/ebooks/azure-ebook.png",
       descriptionKey: "digital-assets.ebooks.azure-ebook-desc"
+    },
+    { 
+      titleKey: "digital-assets.ebooks.python-ebook", 
+      url: "https://shop.alexis-carbillet.com/l/python-ebook",
+      price: "CAD$10",
+      image: "/assets/ebooks/python-ebook.png",
+      descriptionKey: "digital-assets.ebooks.python-ebook-desc"
     }
   ];
 

@@ -279,7 +279,9 @@
       "gcp-ebook": "E-book de GCP",
       "gcp-ebook-desc": "Guía completa de los servicios de Google Cloud Platform y las mejores prácticas.",
       "azure-ebook": "E-book de Azure",
-      "azure-ebook-desc": "Guía completa de los servicios de Microsoft Azure y las mejores prácticas."
+      "azure-ebook-desc": "Guía completa de los servicios de Microsoft Azure y las mejores prácticas.",
+      "python-ebook": "E-book de Python",
+      "python-ebook-desc": "Guía completa de programación en Python, incluyendo aplicaciones de ciencia de datos e IA."
     }
   },
   "diplomas": [
