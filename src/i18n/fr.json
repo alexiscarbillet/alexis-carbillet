@@ -11,6 +11,7 @@
   },
   "buttons": {
     "website": "Site web",
+    "github": "Github",
     "spotify": "Écouter sur Spotify",
     "play": "Écouter cet épisode",
     "playing": "En lecture"
@@ -45,7 +46,8 @@
         "funWithCapitals": "Quiz sur les capitales des pays.",
         "funWithFlags": "Identifier les drapeaux du monde.",
         "trainingCanadianCitizenship": "Entraînez-vous pour l'examen de citoyenneté canadienne.",
-        "randomWords": "Générez des mots aléatoires pour vous entraîner."
+        "randomWords": "Générez des mots aléatoires pour vous entraîner.",
+        "scavengerHunt": "Application de chasse au trésor avec des indices basés sur la localisation. Le dépôt Github est privé. Réalisé avec Flutter."
       },
       "docker": {
         "dataScience39": "Image Docker préconfigurée pour la data science (Python 3.9).",

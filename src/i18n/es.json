@@ -11,6 +11,7 @@
   },
   "buttons": {
     "website": "Sitio web",
+    "github": "Github",
     "spotify": "Escuchar en Spotify",
     "play": "Reproducir episodio",
     "playing": "Reproduciendo"
@@ -44,7 +45,8 @@
         "funWithCapitals": "Cuestionario sobre capitales de países.",
         "funWithFlags": "Identificar banderas de todo el mundo.",
         "trainingCanadianCitizenship": "Practicar para el examen de ciudadanía canadiense.",
-        "randomWords": "Generar palabras aleatorias para practicar."
+        "randomWords": "Generar palabras aleatorias para practicar.",
+        "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter."
       },
       "docker": {
         "dataScience39": "Imagen Docker preconfigurada para ciencia de datos (Python 3.9).",

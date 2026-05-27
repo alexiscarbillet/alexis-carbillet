@@ -7,15 +7,16 @@ export default function ProjectsAndroid() {
   const { t } = useTranslation();
 
   const androidApps = [
-    { title: "Unit converter", url: "https://coding.alexis-carbillet.com/apps/unit-converter/app.html", descriptionKey: "projects.desc.android.unitConverter" },
-    { title: "Canadian animals", url: "https://coding.alexis-carbillet.com/apps/canadian-animals/app.html", descriptionKey: "projects.desc.android.canadianAnimals" },
-    { title: "Tic Tac Toe", url: "https://coding.alexis-carbillet.com/apps/tic-tac-toe/app.html", descriptionKey: "projects.desc.android.ticTacToe" },
-    { title: "Span sheets", url: "https://coding.alexis-carbillet.com/apps/spansheets/app.html", descriptionKey: "projects.desc.android.spanSheets" },
-    { title: "HTML colors", url: "https://coding.alexis-carbillet.com/apps/html-colors/app.html", descriptionKey: "projects.desc.android.htmlColors" },
-    { title: "Fun with capitals", url: "https://coding.alexis-carbillet.com/apps/fun-with-capitals/app.html", descriptionKey: "projects.desc.android.funWithCapitals" },
-    { title: "Fun with flags", url: "https://coding.alexis-carbillet.com/apps/fun-with-flags/app.html", descriptionKey: "projects.desc.android.funWithFlags" },
-    { title: "Training Canadian Citizenship", url: "https://coding.alexis-carbillet.com/apps/training-citizenship/app.html", descriptionKey: "projects.desc.android.trainingCanadianCitizenship" },
-    { title: "Random words", url: "https://coding.alexis-carbillet.com/apps/random-words/app.html", descriptionKey: "projects.desc.android.randomWords" },
+    { title: "Unit converter", url: "https://coding.alexis-carbillet.com/apps/unit-converter/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/unitconverter", descriptionKey: "projects.desc.android.unitConverter" },
+    { title: "Canadian animals", url: "https://coding.alexis-carbillet.com/apps/canadian-animals/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/canadiananimals", descriptionKey: "projects.desc.android.canadianAnimals" },
+    { title: "Tic Tac Toe", url: "https://coding.alexis-carbillet.com/apps/tic-tac-toe/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/tictactoe", descriptionKey: "projects.desc.android.ticTacToe" },
+    { title: "Span sheets", url: "https://coding.alexis-carbillet.com/apps/spansheets/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/SpanSheets",  descriptionKey: "projects.desc.android.spanSheets" },
+    { title: "HTML colors", url: "https://coding.alexis-carbillet.com/apps/html-colors/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/htmlcolors", descriptionKey: "projects.desc.android.htmlColors" },
+    { title: "Fun with capitals", url: "https://coding.alexis-carbillet.com/apps/fun-with-capitals/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/Funwithcapitals", descriptionKey: "projects.desc.android.funWithCapitals" },
+    { title: "Fun with flags", url: "https://coding.alexis-carbillet.com/apps/fun-with-flags/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/funwithflags", descriptionKey: "projects.desc.android.funWithFlags" },
+    { title: "Training Canadian Citizenship", url: "https://coding.alexis-carbillet.com/apps/training-citizenship/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/trainingcanadiancitizenship", descriptionKey: "projects.desc.android.trainingCanadianCitizenship" },
+    { title: "Random words", url: "https://coding.alexis-carbillet.com/apps/random-words/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/advancedwords",descriptionKey: "projects.desc.android.randomWords" },
+    { title: "Scavenger hunt", url: "https://coding.alexis-carbillet.com/apps/scavenger-hunt/app.html", url2: "https://github.com/alexiscarbillet/scavenger_app", descriptionKey: "projects.desc.android.scavengerHunt" },
   ];
 
   return (
@@ -38,8 +39,13 @@ export default function ProjectsAndroid() {
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
                     <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("projects.websiteButton")}
+                      {t("buttons.website")}
                     </a>
+                    {item.url2 && (
+                      <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
+                        {t("buttons.github")}
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

@@ -11,6 +11,7 @@
   },
   "buttons": {
     "website": "Website",
+    "github": "Github",
     "spotify": "Listen on Spotify",
     "play": "Play episode",
     "playing": "Playing"
@@ -44,7 +45,8 @@
         "funWithCapitals": "Quiz on country capitals.",
         "funWithFlags": "Identify flags from around the world.",
         "trainingCanadianCitizenship": "Practice for Canadian citizenship test.",
-        "randomWords": "Generate random words for practice."
+        "randomWords": "Generate random words for practice.",
+        "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter."
       },
       "docker": {
         "dataScience39": "Docker image preconfigured for data science (Python 3.9).",
