@@ -7,8 +7,8 @@ export default function ProjectsHelm() {
   const { t } = useTranslation();
 
   const helmCharts = [
-    { title: "Monitoring stack", url: "https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/monitoring-stack", descriptionKey: "projects.desc.helm.monitoringStack" },
-    { title: "Logging stack", url: "https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/logging-stack", descriptionKey: "projects.desc.helm.loggingStack" },
+    { title: "Monitoring stack", url: "https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/monitoring-stack", url2: "https://github.com/alexiscarbillet/helm-charts/tree/main/charts/monitoring-stack", descriptionKey: "projects.desc.helm.monitoringStack" },
+    { title: "Logging stack", url: "https://artifacthub.io/packages/helm/helm-charts-alexis-carbillet/logging-stack", url2: "https://github.com/alexiscarbillet/helm-charts/tree/main/charts/logging-stack", descriptionKey: "projects.desc.helm.loggingStack" },
   ];
 
   return (
@@ -30,9 +30,16 @@ export default function ProjectsHelm() {
                   <div className="card-content">
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
-                    <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("projects.websiteButton")}
-                    </a>
+                    
+                    {/* Wrap your links like this to make them bulletproof on mobile */}
+                    <div className="buttons" style={{ marginTop: '1rem' }}>
+                      <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
+                        {t("projects.websiteButton")}
+                      </a>
+                      <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer">
+                        {t("projects.githubButton")}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

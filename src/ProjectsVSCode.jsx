@@ -7,8 +7,8 @@ export default function ProjectsVSCode() {
   const { t } = useTranslation();
 
   const vscodeExtensions = [
-    { title: "coding-time-tracker-by-alexiscarbillet", url: "https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.coding-time-tracker-by-alexiscarbillet", descriptionKey: "projects.desc.vscode.codingTimeTracker" },
-    { title: "seo-audit-for-html", url: "https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.seo-audit-for-html", descriptionKey: "projects.desc.vscode.seoAudit" },
+    { title: "coding-time-tracker-by-alexiscarbillet", url: "https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.coding-time-tracker-by-alexiscarbillet", url2: "https://github.com/alexiscarbillet/vscode_extension/tree/main/coding-time-tracker", descriptionKey: "projects.desc.vscode.codingTimeTracker" },
+    { title: "seo-audit-for-html", url: "https://marketplace.visualstudio.com/items?itemName=AlexisCarbillet.seo-audit-for-html", url2: "https://github.com/alexiscarbillet/vscode_extension/tree/main/seo-audit-for-html", descriptionKey: "projects.desc.vscode.seoAudit" },
   ];
 
   return (
@@ -32,6 +32,9 @@ export default function ProjectsVSCode() {
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
                     <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
                       {t("projects.websiteButton")}
+                    </a>
+                    <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
+                      {t("projects.githubButton")}
                     </a>
                   </div>
                 </div>
