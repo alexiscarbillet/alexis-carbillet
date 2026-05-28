@@ -126,41 +126,40 @@
       "title": "Desarrollador principal - DevSecOps/SRE en ARTM",
       "date": "2025-07",
       "description": [
-        "Gestionar y sincronizar RBAC entre infraestructuras Azure y GCP usando Terraform y GitHub Actions a través de Identity Governance y Microsoft Entra ID.",
-        "Crear un panel de estado que muestre el estado de cada producto así como su SLI/SLO/presupuesto de errores.",
-        "Crear un SAST usando diferentes tecnologías de código abierto (SonarQube, Trufflehog, …) y ejecutándolo en GitHub Actions.",
-        "Soporte a operaciones de seguridad mediante ServiceNow.",
-        "Crear herramientas para ayudar a resolver problemas recurrentes de soporte (Python, Terraform y Bash)."
+        "Diseñé e implementé una arquitectura de IAM unificada en Azure y GCP utilizando Terraform y GitHub Actions, integrando Microsoft Entra ID, Workforce Identity Federation y Google Cloud IAM para garantizar una gobernanza de privilegios mínimos.",
+        "Diseñé y desplegué marcos de monitoreo y registro unificados que abarcan GitHub, Azure Sentinel y Google Cloud Security Command Center (SCC), acelerando significativamente la detección de amenazas empresariales.",
+        "Definí, diseñé e implementé la arquitectura central para una plataforma de Objetivos de Nivel de Servicio (SLO) empresarial multiinquilino, mejorando la visibilidad de la telemetría y el seguimiento proactivo de la salud del sistema.",
+        "Optimizé los flujos de trabajo de mitigación y respuesta a incidentes de Seguridad Operacional (SecOps), integrando ServiceNow para garantizar una resolución rápida y auditable de problemas.",
+        "Construí robustas utilidades y herramientas de automatización personalizadas utilizando Python, Bash y Terraform, eliminando cuellos de botella operativos recurrentes en la infraestructura."
       ]
     },
     {
       "title": "SRE en OVHcloud",
       "date": "2021-07",
       "description": [
-        "Supervisar la gestión y disponibilidad de 40 regiones cloud públicas y VPS y más de 40 zonas locales, aprovechando OpenStack, Kubernetes, Terraform, Puppet y Ansible para asegurar alta disponibilidad.",
-        "Facilitar reuniones de crisis y dirigir al equipo para desarrollar e implementar soluciones eficaces a los incidentes.",
-        "Desarrollar y mantener herramientas de supervisión con Prometheus, Thanos, Sentry, Opensearch, Grafana y otras para detectar y resolver problemas de servidores de forma proactiva, reduciendo el tiempo de inactividad en un 35%.",
-        "Gestionar la creación de flujos CI/CD así como la autocuración para optimizar procesos de despliegue y mejorar la eficiencia operativa.",
-        "Desarrollar varias herramientas internas, APIs y bases de datos usando Python, Bash y Go."
+        "Gestioné infraestructura de nube pública en más de 40 regiones distintas y 50 zonas locales, aprovechando OpenStack, Kubernetes y Terraform.",
+        "Comandé múltiples llamadas de crisis de producción de alta gravedad, alineando dinámicamente a equipos multifuncionales para aislar causas raíz y restaurar rápidamente la disponibilidad del servicio.",
+        "Construí y escalé ecosistemas de monitoreo distribuidos utilizando Prometheus, Thanos, Sentry, OpenSearch y Grafana, impulsando una reducción del 35% en el tiempo de inactividad de producción.",
+        "Escribí pipelines automatizados de CI/CD y desencadenantes proactivos de auto-sanación para mitigar fallas comunes del sistema y agilizar los despliegues globales.",
+        "Ingeniería de APIs internas personalizadas, herramientas del sistema y bases de datos backend mediante Python, Go y Bash. Formulación de modelos predictivos de IA para planificación de capacidad y pronóstico de fallas de equipos. Entrenamiento de LLM para documentación interna."
       ]
     },
     {
       "title": "Científico de datos en Ice Gateway GmbH",
       "date": "2017-09",
       "description": [
-        "Desarrollar soluciones impulsadas por IA, como ICEassist, una aplicación de reconocimiento de voz para usuarios con discapacidad en el transporte público, mejorando la accesibilidad para cientos de usuarios. Disponible en iOS y Android.",
-        "Desarrollar ICEsecure, un sistema de reconocimiento facial para detectar quién entra en una sala usando diferentes cámaras.",
-        "Gestionar y liderar proyectos del equipo, así como comunicar con las distintas partes interesadas.",
-        "Liderar reuniones con clientes para presentar soluciones IA y productos técnicos."
+        "Diseñé ICEsecure, un sistema de reconocimiento facial basado en el borde diseñado para la gestión segura y de baja latencia de amenazas y accesos en puntos de entrada.",
+        "Gestioné sprints de desarrollo multifuncionales, traduciendo objetivos comerciales en hitos técnicos e informando el progreso a los stakeholders ejecutivos.",
+        "Lideré integraciones de clientes de alto riesgo y demostraciones técnicas de ventas, presentando capacidades avanzadas de IA a líderes de clientes no técnicos.",
+        "Arquitecté ICEassist, un sistema de reconocimiento de voz impulsado por IA desplegado en infraestructura de transporte público para mejorar la accesibilidad para cientos de usuarios discapacitados; desplegado con éxito en tiendas de aplicaciones iOS y Android."
       ]
     },
     {
       "title": "Desarrollador web en Ice Gateway GmbH",
       "date": "2015-10",
       "description": [
-        "Dirigir la gestión del sitio web y optimizar estrategias de SEO para aumentar el tráfico y la visibilidad en línea.",
-        "Desarrollar e implementar paneles personalizados para clientes, aprovechando datos de sensores IoT para ofrecer información útil y mejorar la toma de decisiones.",
-        "Encabezar la creación y el mantenimiento continuo de los sitios web de la empresa, asegurando una experiencia de usuario fluida y contenidos actualizados."
+        "Construí paneles de visualización de datos de baja latencia orientados al cliente, ingiriendo flujos de sensores IoT en bruto para ofrecer telemetría empresarial en tiempo real y procesable.",
+        "Encabecé el rediseño completo y la ingeniería continua de las principales propiedades web empresariales, configurando marcos de optimización de búsqueda para generar un crecimiento medible del tráfico."
       ]
     }
   ],
