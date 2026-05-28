@@ -45,8 +45,8 @@ export default function Projects() {
     },
     {
       key: 'ai-newsletter',
-      title: t('projects.aiNewsletter'),
-      description: t('overviews.projects.aiNewsletter'),
+      title: t('projects.aiNewsletter.title'),
+      description: t('projects.aiNewsletter.description'),
       url: '/projects/ai-newsletter'
     }
   ];

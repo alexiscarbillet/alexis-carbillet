@@ -171,6 +171,7 @@
     "linuxHeader": "Formation Linux sur Killercoda :",
     "websiteButton": "Site Web",
     "cka": {
+      "description": "Escenarios prácticos de capacitación en Kubernetes para prepararse para la certificación CKA.",
       "configmaps": "Exercice CKA : ConfigMaps et Secrets",
       "hpa": "Exercice CKA : Horizontal Pod Autoscaler (HPA)",
       "networkPolicies": "Exercice CKA : Politiques réseau",
@@ -186,6 +187,7 @@
       "ingress": "Exercice CKA : Dépannage Ingress"
     },
     "linux": {
+      "description": "Exercices de dépannage et d'administration Linux pour améliorer vos compétences en gestion des systèmes.",
       "systemdDebug": "Exercice Linux : Débogage des services Systemd",
       "userGroupPermissions": "Exercice Linux : Utilisateurs, groupes et permissions",
       "diskLogManagement": "Exercice Linux : Gestion des disques et des logs",

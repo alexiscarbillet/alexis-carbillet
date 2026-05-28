@@ -170,6 +170,7 @@
     "linuxHeader": "Linux training on Killercoda:",
     "websiteButton": "Website",
     "cka": {
+      "description": "Hands-on Kubernetes training scenarios to prepare for the CKA certification.",
       "configmaps": "CKA Practice: ConfigMaps and Secrets",
       "hpa": "CKA Practice: Horizontal Pod Autoscaler (HPA)",
       "networkPolicies": "CKA Practice: Network Policies",
@@ -185,6 +186,7 @@
       "ingress": "CKA Practice: Ingress Troubleshooting"
     },
     "linux": {
+      "description": "Hands-on Linux troubleshooting and administration training scenarios.",
       "systemdDebug": "Linux Practice: Systemd Service Debugging",
       "userGroupPermissions": "Linux Practice: User, Group, and Permissions Troubleshooting",
       "diskLogManagement": "Linux Practice: Disk Full & Log Management",

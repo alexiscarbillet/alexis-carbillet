@@ -30,16 +30,14 @@ export default function ProjectsHelm() {
                   <div className="card-content">
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
-                    
-                    {/* Wrap your links like this to make them bulletproof on mobile */}
-                    <div className="buttons" style={{ marginTop: '1rem' }}>
-                      <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                        {t("projects.websiteButton")}
+                    <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
+                      {t("buttons.website")}
+                    </a>
+                    {item.url2 && (
+                      <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
+                        {t("buttons.github")}
                       </a>
-                      <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer">
-                        {t("projects.githubButton")}
-                      </a>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>

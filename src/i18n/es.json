@@ -169,6 +169,7 @@
     "linuxHeader": "Entrenamiento Linux en Killercoda:",
     "websiteButton": "Sitio Web",
     "cka": {
+      "description": "Escenarios prácticos de capacitación en Kubernetes para prepararse para la certificación CKA.",
       "configmaps": "Práctica CKA: ConfigMaps y Secrets",
       "hpa": "Práctica CKA: Horizontal Pod Autoscaler (HPA)",
       "networkPolicies": "Práctica CKA: Network Policies",
@@ -184,6 +185,7 @@
       "ingress": "Práctica CKA: Resolución de problemas de Ingress"
     },
     "linux": {
+      "description": "Prácticas de resolución de problemas y administración de Linux para mejorar tus habilidades en administración de sistemas.",
       "systemdDebug": "Práctica Linux: Depuración de servicios systemd",
       "userGroupPermissions": "Práctica Linux: Usuarios, grupos y permisos",
       "diskLogManagement": "Práctica Linux: Gestión de disco y registros",
