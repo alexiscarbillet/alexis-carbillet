@@ -38,6 +38,7 @@
     ,
     "desc": {
       "android": {
+        "description": "Applications Android amusantes que j'ai développées, disponibles sur mon site web de programmation.",
         "unitConverter": "Convertir rapidement entre les unités.",
         "canadianAnimals": "Apprenez-en sur les animaux canadiens.",
         "ticTacToe": "Jeu classique Tic Tac Toe.",
@@ -50,6 +51,7 @@
         "scavengerHunt": "Application de chasse au trésor avec des indices basés sur la localisation. Le dépôt Github est privé. Réalisé avec Flutter."
       },
       "docker": {
+        "description": "Images Docker pour le développement et la data science. Les codes sont dans un dépôt Github privé.",
         "dataScience39": "Image Docker préconfigurée pour la data science (Python 3.9).",
         "python311": "Image de développement avec Python 3.11 et outils.",
         "python312": "Image de développement Python 3.12.",
@@ -61,15 +63,18 @@
         "node22": "Image de développement Node 22."
       },
       "firefox": {
+        "description": "Extensions et modules Mozilla Firefox. Les codes sont dans un dépôt Github privé.",
         "bookmarkUsageChecker": "Analyse l'utilisation des favoris et suggère un nettoyage.",
         "top10Domains": "Affiche les domaines les plus visités de votre historique.",
         "pinkTheme": "Un thème rose clair pour Firefox."
       },
       "vscode": {
+        "description": "Extensions pour améliorer votre expérience de développement dans VSCode.",
         "codingTimeTracker": "Suivez le temps de codage dans VSCode.",
         "seoAudit": "Exécutez des audits SEO rapides pour les fichiers HTML."
       },
       "scripts": {
+        "description": "Exemples de code et scripts dans divers langages de programmation.",
         "python": "Exemples de scripts et snippets Python.",
         "htmlCss": "Exemples HTML et CSS.",
         "javascript": "Extraits et démonstrations JavaScript.",
@@ -78,6 +83,7 @@
         "bash": "Scripts et utilitaires Bash."
       },
       "helm": {
+        "description": "Charts Helm pour le déploiement sur Kubernetes.",
         "monitoringStack": "Chart Helm regroupant Prometheus/Grafana.",
         "loggingStack": "Chart Helm pour la stack de logging ELK/EFK."
       }

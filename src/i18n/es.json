@@ -37,6 +37,7 @@
     "githubButton": "Github",
     "desc": {
       "android": {
+        "description": "Aplicaciones Android divertidas que he desarrollado, disponibles en mi sitio web de programación.",
         "unitConverter": "Convertir rápidamente entre unidades.",
         "canadianAnimals": "Aprender sobre animales canadienses.",
         "ticTacToe": "Juego clásico Tic Tac Toe.",
@@ -49,6 +50,7 @@
         "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter."
       },
       "docker": {
+        "description": "Imágenes Docker para desarrollo y ciencia de datos. Los códigos están en un repositorio privado de Github.",
         "dataScience39": "Imagen Docker preconfigurada para ciencia de datos (Python 3.9).",
         "python311": "Imagen de desarrollo con Python 3.11 y herramientas.",
         "python312": "Imagen de desarrollo Python 3.12.",
@@ -60,15 +62,18 @@
         "node22": "Imagen de desarrollo Node 22."
       },
       "firefox": {
+        "description": "Extensiones y complementos de Mozilla Firefox. Los códigos están en un repositorio privado de Github.",
         "bookmarkUsageChecker": "Analizar el uso de marcadores y sugerir limpieza.",
         "top10Domains": "Mostrar los dominios más visitados de tu historial.",
         "pinkTheme": "Un tema rosa claro para Firefox."
       },
       "vscode": {
+        "description": "Extensiones para mejorar tu experiencia de desarrollo en VSCode.",
         "codingTimeTracker": "Rastrear el tiempo de codificación dentro de VSCode.",
         "seoAudit": "Realizar auditorías SEO rápidas para archivos HTML."
       },
       "scripts": {
+        "description": "Ejemplos de código y scripts en varios lenguajes de programación.",
         "python": "Ejemplos de scripts y fragmentos en Python.",
         "htmlCss": "Ejemplos de HTML y CSS.",
         "javascript": "Fragmentos y demostraciones de JavaScript.",
@@ -77,6 +82,7 @@
         "bash": "Scripts y utilidades Bash."
       },
       "helm": {
+        "description": "Charts Helm para despliegue en Kubernetes.",
         "monitoringStack": "Chart Helm que agrupa Prometheus/Grafana.",
         "loggingStack": "Chart Helm para la pila de registro ELK/EFK."
       }

@@ -37,6 +37,7 @@
     "githubButton": "Github",
     "desc": {
       "android": {
+        "description": "Fun Android applications I developed, available on my coding website.",
         "unitConverter": "Convert between units quickly.",
         "canadianAnimals": "Learn about Canadian animals.",
         "ticTacToe": "Classic Tic Tac Toe game.",
@@ -49,6 +50,7 @@
         "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter."
       },
       "docker": {
+        "description": "Docker images for development and data science. The codes are in a private github repository.",
         "dataScience39": "Docker image preconfigured for data science (Python 3.9).",
         "python311": "Development image with Python 3.11 and tools.",
         "python312": "Python 3.12 dev image.",
@@ -60,15 +62,18 @@
         "node22": "Node 22 web dev image."
       },
       "firefox": {
+        "description": "Mozilla Firefox extensions and add-ons. The codes are in a private github repository.",
         "bookmarkUsageChecker": "Analyze bookmark usage and suggest cleanup.",
         "top10Domains": "Show top visited domains from your history.",
         "pinkTheme": "A light pink theme for Firefox."
       },
       "vscode": {
+        "description": "Extensions to enhance your VSCode development experience.",
         "codingTimeTracker": "Track coding time inside VSCode.",
         "seoAudit": "Run quick SEO audits for HTML files."
       },
       "scripts": {
+        "description": "Code examples and scripts across various programming languages.",
         "python": "Python example scripts and snippets.",
         "htmlCss": "HTML and CSS examples.",
         "javascript": "JavaScript snippets and demos.",
@@ -77,6 +82,7 @@
         "bash": "Bash scripts and utilities."
       },
       "helm": {
+        "description": "Kubernetes Helm charts for deployment.",
         "monitoringStack": "Helm chart bundling Prometheus/Grafana stack.",
         "loggingStack": "Helm chart for ELK/EFK logging stack."
       }
@@ -340,8 +346,8 @@
       "header": "Projects",
       "subtitle": "A showcase of my projects and contributions.",
       "android": "Collection of Android applications I developed.",
-      "docker": "Docker images for development and data science.",
-      "firefox": "Mozilla Firefox extensions and add-ons.",
+      "docker": "Docker images for development and data science. The codes are in a private github repository.",
+      "firefox": "Mozilla Firefox extensions and add-ons. The codes are in a private github repository.",
       "helm": "Kubernetes Helm charts for deployment.",
       "scripts": "Useful scripts in various languages.",
       "vscode": "Extensions for Visual Studio Code.",

@@ -26,7 +26,7 @@ export default function ProjectsScripts() {
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
           <h3 className="title is-3">{t("projects.scripts")}</h3>
-          <p className="subtitle is-6">Code examples and scripts across various programming languages.</p>
+          <p className="subtitle is-6">{t("projects.desc.scripts.description")}</p>
           <div className="columns is-multiline">
             {scripts.map((item, idx) => (
               <div className="column is-one-third-tablet is-half-mobile" key={idx}>

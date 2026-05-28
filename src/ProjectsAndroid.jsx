@@ -16,7 +16,7 @@ export default function ProjectsAndroid() {
     { title: "Fun with flags", url: "https://coding.alexis-carbillet.com/apps/fun-with-flags/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/funwithflags", descriptionKey: "projects.desc.android.funWithFlags" },
     { title: "Training Canadian Citizenship", url: "https://coding.alexis-carbillet.com/apps/training-citizenship/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/trainingcanadiancitizenship", descriptionKey: "projects.desc.android.trainingCanadianCitizenship" },
     { title: "Random words", url: "https://coding.alexis-carbillet.com/apps/random-words/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/advancedwords",descriptionKey: "projects.desc.android.randomWords" },
-    { title: "Scavenger hunt", url: "https://coding.alexis-carbillet.com/apps/scavenger-hunt/app.html", url2: "https://github.com/alexiscarbillet/scavenger_app", descriptionKey: "projects.desc.android.scavengerHunt" },
+    { title: "Scavenger hunt", url: "https://coding.alexis-carbillet.com/apps/scavenger-hunt/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/scavenger-hunt", descriptionKey: "projects.desc.android.scavengerHunt" },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function ProjectsAndroid() {
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
           <h3 className="title is-3">{t("projects.androidApps")}</h3>
-          <p className="subtitle is-6">Fun Android applications I developed, available on my coding website.</p>
+          <p className="subtitle is-6">{t("projects.desc.android.description")}</p>
           <div className="columns is-multiline">
             {androidApps.map((item, idx) => (
               <div className="column is-one-third-tablet is-half-mobile" key={idx}>

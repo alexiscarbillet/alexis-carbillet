@@ -22,7 +22,7 @@ export default function ProjectsHelm() {
       <section className="section" style={{ marginTop: '50px' }}>
         <div className="container" style={{ padding: '2rem' }}>
           <h3 className="title is-3">{t("projects.helmCharts")}</h3>
-          <p className="subtitle is-6">Kubernetes Helm charts for infrastructure components.</p>
+          <p className="subtitle is-6">{t("projects.desc.helm.description")}</p>
           <div className="columns is-multiline">
             {helmCharts.map((item, idx) => (
               <div className="column is-one-third-tablet is-half-mobile" key={idx}>
