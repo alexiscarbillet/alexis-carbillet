@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// Changed BrowserRouter to HashRouter here
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App.jsx';
 import ProjectsAndroid from './ProjectsAndroid.jsx';
@@ -34,7 +35,8 @@ import './i18n';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* Swapped BrowserRouter wrapper to HashRouter */}
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/training/cka" element={<TrainingCKA />} />
@@ -60,6 +62,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/training" element={<Training />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
