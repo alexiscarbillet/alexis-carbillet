@@ -12,7 +12,7 @@ export default function Ebooks() {
       titleKey: "digital-assets.ebooks.gcp-ebook", 
       url: "https://shop.alexis-carbillet.com/l/gcp-ebook",
       price: "CAD$10",
-      category: "Cloud Computing",
+      category: "Cloud & Infrastructure",
       image: "/assets/ebooks/gcp-ebook.png",
       descriptionKey: "digital-assets.ebooks.gcp-ebook-desc"
     },
@@ -20,7 +20,7 @@ export default function Ebooks() {
       titleKey: "digital-assets.ebooks.azure-ebook", 
       url: "https://shop.alexis-carbillet.com/l/azure-ebook",
       price: "CAD$10",
-      category: "Cloud Computing",
+      category: "Cloud & Infrastructure",
       image: "/assets/ebooks/azure-ebook.png",
       descriptionKey: "digital-assets.ebooks.azure-ebook-desc"
     },
@@ -28,16 +28,24 @@ export default function Ebooks() {
       titleKey: "digital-assets.ebooks.python-ebook", 
       url: "https://shop.alexis-carbillet.com/l/python-ebook",
       price: "CAD$10",
-      category: "Programming",
+      category: "Development & AI",
       image: "/assets/ebooks/python-ebook.png",
       descriptionKey: "digital-assets.ebooks.python-ebook-desc"
+    },
+    { 
+      titleKey: "digital-assets.ebooks.ai-ebook", 
+      url: "https://shop.alexis-carbillet.com/l/ai-ebook",
+      price: "CAD$10",
+      category: "Development & AI",
+      image: "/assets/ebooks/ai-ebook.png",
+      descriptionKey: "digital-assets.ebooks.ai-ebook-desc"
     }
   ];
 
   // Initialize filters: Fixed casing for "Cloud Computing"
   const [selectedCategories, setSelectedCategories] = useState({
-    "Cloud Computing": true,
-    "Programming": true,
+    "Cloud & Infrastructure": true,
+    "Development & AI": true,
   });
 
   const toggleCategory = (cat) => {

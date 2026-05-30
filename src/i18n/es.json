@@ -290,7 +290,9 @@
       "azure-ebook": "E-book de Azure",
       "azure-ebook-desc": "Guía completa de los servicios de Microsoft Azure y las mejores prácticas.",
       "python-ebook": "E-book de Python",
-      "python-ebook-desc": "Guía completa de programación en Python, incluyendo aplicaciones de ciencia de datos e IA."
+      "python-ebook-desc": "Guía completa de programación en Python, incluyendo aplicaciones de ciencia de datos e IA.",
+      "ai-ebook": "E-book de IA",
+      "ai-ebook-desc": "Guía completa de conceptos, técnicas y aplicaciones de Inteligencia Artificial."
     }
   },
   "diplomas": [

@@ -291,7 +291,9 @@
       "azure-ebook": "Azure E-book",
       "azure-ebook-desc": "Comprehensive guide to Microsoft Azure services and best practices.",
       "python-ebook": "Python E-book",
-      "python-ebook-desc": "Comprehensive guide to Python programming, including data science and AI applications."
+      "python-ebook-desc": "Comprehensive guide to Python programming, including data science and AI applications.",
+      "ai-ebook": "AI E-book",
+      "ai-ebook-desc": "Comprehensive guide to Artificial Intelligence concepts, techniques, and applications."
     }
   },
   "diplomas": [
