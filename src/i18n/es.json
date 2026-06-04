@@ -33,8 +33,6 @@
     "vscodeExtensions": "Extensiones VSCode",
     "scripts": "Scripts",
     "helmCharts": "Charts Helm",
-    "websiteButton": "Sitio web",
-    "githubButton": "Github",
     "desc": {
       "android": {
         "description": "Aplicaciones Android divertidas que he desarrollado, disponibles en mi sitio web de programación.",
@@ -166,7 +164,6 @@
   "training": {
     "ckaHeader": "Entrenamiento CKA en Killercoda:",
     "linuxHeader": "Entrenamiento Linux en Killercoda:",
-    "websiteButton": "Sitio Web",
     "cka": {
       "description": "Escenarios prácticos de capacitación en Kubernetes para prepararse para la certificación CKA.",
       "configmaps": "Práctica CKA: ConfigMaps y Secrets",

@@ -41,7 +41,7 @@ export default function TrainingLinux() {
                     <p className="title" style={{ wordBreak: 'normal' }}>{t(item.titleKey)}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
                     <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("training.websiteButton")}
+                      {t("buttons.website")}
                     </a>
                     {item.url2 && (
                       <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>

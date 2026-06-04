@@ -31,10 +31,10 @@ export default function ProjectsVSCode() {
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
                     <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("projects.websiteButton")}
+                      {t("buttons.website")}
                     </a>
                     <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
-                      {t("projects.githubButton")}
+                      {t("buttons.github")}
                     </a>
                   </div>
                 </div>

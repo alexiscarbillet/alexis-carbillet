@@ -38,7 +38,7 @@ export default function ProjectsDocker() {
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
                     <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("projects.websiteButton")}
+                      {t("buttons.website")}
                     </a>
                   </div>
                 </div>
