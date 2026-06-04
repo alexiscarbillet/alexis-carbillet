@@ -128,6 +128,10 @@ export default function Navbar() {
               <a className="navbar-item" href="https://hardware.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("websites.hardware.title")}</a>
             </div>
           </div>
+
+          <a className="navbar-link is-arrowless" href="https://stats.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+            Stats
+          </a>
         </div>
 
         {/* Language Switcher on the right */}
