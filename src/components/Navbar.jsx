@@ -99,9 +99,6 @@ export default function Navbar() {
               {t("nav.digital-assets")}
             </Link>
             <div className="navbar-dropdown">
-              <Link className="navbar-item" to="/digital-assets-toolkits" onClick={closeMenu}>
-                Toolkits
-              </Link>
               <Link className="navbar-item" to="/digital-assets-ebooks" onClick={closeMenu}>
                 Ebooks
               </Link>

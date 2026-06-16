@@ -110,7 +110,7 @@
     "githubText": "Para los curiosos, aquí está mi",
     "linkedinText": "y mi",
     "killercodaText": "También escribí diferentes escenarios para entrenar a las personas para la certificación CKA y aprender a usar Linux. Aquí está mi",
-    "storeText": "También vendo activos digitales como toolkits, puedes verlos en mi",
+    "storeText": "También vendo activos digitales como ebooks, puedes verlos en mi",
     "storeText2": "tienda",
     "linksDescription": "A continuación están mis diferentes enlaces, en la primera fila están mis otros sitios mientras que la segunda tiene las plataformas donde está disponible mi trabajo."
   },
@@ -257,29 +257,6 @@
     }
   },
   "digital-assets": {
-    "toolkits": {
-      "toolkitsHeader": "Activos digitales:",
-      "freelance-it-consultant-onboarding-kit": "Kit de incorporación para consultores IT freelance",
-      "freelance-it-consultant-onboarding-kit-desc": "Lista de verificación completa y plantillas para integrar nuevos clientes como consultor IT freelance.",
-      "friction-slayer": "Friction-Slayer para gestión de proyectos IT",
-      "friction-slayer-desc": "Marco para identificar y eliminar cuellos de botella en tus proyectos IT.",
-      "legacy-system-migration-roadmap": "Hoja de ruta de migración de sistemas heredados",
-      "legacy-system-migration-roadmap-desc": "Guía paso a paso y herramientas para planificar y ejecutar migraciones de sistemas heredados.",
-      "minimum-viable-security": "Seguridad viable mínima",
-      "minimum-viable-security-desc": "Controles de seguridad esenciales para proteger los activos de tu organización.",
-      "vendor-risk-assessment": "Evaluación de riesgo de proveedores",
-      "vendor-risk-assessment-desc": "Marco integral para evaluar y gestionar riesgos de terceros.",
-      "pre-audit-preparation": "Lista de verificación de preparación pre-auditoría",
-      "pre-audit-preparation-desc": "Lista de verificación y plantillas para preparar tu organización para auditorías de cumplimiento.",
-      "ethical-ai-governance": "Marco de gobernanza ética de IA",
-      "ethical-ai-governance-desc": "Marco para implementar prácticas de IA responsable y ética en tu organización.",
-      "prompt-engineering-library": "Biblioteca de prompts para gerentes de TI",
-      "prompt-engineering-library-desc": "Más de 50 prompts probados para generación de tickets Jira, retrospectivas de Sprint y documentación de arquitectura.",
-      "small-business-ai-readiness-scorecard": "Scorecard de preparación de IA para pequeñas empresas",
-      "small-business-ai-readiness-scorecard-desc": "Matriz de priorización de casos de uso, lista de señales de alerta de privacidad de datos y calculadora ROI para tareas manuales vs IA.",
-      "hybrid-cloud-disaster-recovery-planner": "Planificador de Recuperación de Desastres en Nube Híbrida",
-      "hybrid-cloud-disaster-recovery-planner-desc": "Kit integral para planificar y ensayar la recuperación de desastres en entornos de nube híbrida."
-    },
     "ebooks": {
       "ebooksHeader": "Ebooks:",
       "gcp-ebook": "E-book de GCP",
@@ -354,7 +331,6 @@
     "digitalAssets": {
       "header": "Activos digitales",
       "subtitle": "Activos digitales y recursos para profesionales.",
-      "toolkits": "Toolkits digitales para consultores y gerentes de TI.",
       "ebooks": "Ebooks que cubren plataformas cloud y mejores prácticas."
     },
     "training": {

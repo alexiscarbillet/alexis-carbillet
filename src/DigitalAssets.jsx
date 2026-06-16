@@ -8,12 +8,6 @@ export default function DigitalAssets() {
 
   const assets = [
     {
-      key: 'toolkits',
-      title: 'Toolkits',
-      description: t('overviews.digitalAssets.toolkits'),
-      url: '/digital-assets-toolkits'
-    },
-    {
       key: 'ebooks',
       title: 'Ebooks',
       description: t('overviews.digitalAssets.ebooks'),
@@ -25,7 +19,7 @@ export default function DigitalAssets() {
     <>
       <SEO
         title="Digital Assets"
-        description="Explore my digital assets and toolkits."
+        description="Explore my digital assets and ebooks."
         url="https://alexis-carbillet.com/digital-assets"
       />
       <Navbar />
