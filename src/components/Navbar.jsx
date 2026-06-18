@@ -126,9 +126,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          <a className="navbar-link is-arrowless" href="https://stats.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-            Stats
-          </a>
         </div>
 
         {/* Language Switcher on the right */}
