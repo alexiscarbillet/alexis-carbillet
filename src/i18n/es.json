@@ -121,7 +121,7 @@
   },
   "experiences": [
     {
-      "title": "Desarrollador principal - DevSecOps/SRE en ARTM",
+      "title": "SRE principal en ARTM",
       "date": "2025-07",
       "description": [
         "Diseñé e implementé una arquitectura de IAM unificada en Azure y GCP utilizando Terraform y GitHub Actions, integrando Microsoft Entra ID, Workforce Identity Federation y Google Cloud IAM para garantizar una gobernanza de privilegios mínimos.",

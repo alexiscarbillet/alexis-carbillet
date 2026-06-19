@@ -121,7 +121,7 @@
   },
   "experiences": [
     {
-      "title": "Principal developer - DevSecOps/SRE at ARTM",
+      "title": "Principal SRE at ARTM",
       "date": "2025-07",
       "description": [
         "Engineered cross-environment IAM across Azure and GCP using Terraform and GitHub Actions. Implemented Microsoft Entra ID, Workforce Identity Federation, and Google Cloud IAM to strictly enforce least-privilege governance.",
