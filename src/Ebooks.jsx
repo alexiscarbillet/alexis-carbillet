@@ -25,6 +25,14 @@ export default function Ebooks() {
       descriptionKey: "digital-assets.ebooks.azure-ebook-desc"
     },
     { 
+      titleKey: "digital-assets.ebooks.kubernetes-ebook", 
+      url: "https://shop.alexis-carbillet.com/l/kubernetes-ebook",
+      price: "CAD$10",
+      category: "Cloud & Infrastructure",
+      image: "/assets/ebooks/kubernetes-ebook.png",
+      descriptionKey: "digital-assets.ebooks.kubernetes-ebook-desc"
+    },
+    { 
       titleKey: "digital-assets.ebooks.python-ebook", 
       url: "https://shop.alexis-carbillet.com/l/python-ebook",
       price: "CAD$10",
