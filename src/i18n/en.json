@@ -127,7 +127,7 @@
         "Engineered cross-environment IAM across Azure and GCP using Terraform and GitHub Actions. Implemented Microsoft Entra ID, Workforce Identity Federation, and Google Cloud IAM to strictly enforce least-privilege governance.",
         "Designed and deployed unified logging and monitoring frameworks spanning GitHub, Azure Sentinel, and Google Cloud Security Command Center (SCC) to significantly accelerate enterprise threat detection.",
         "Defined, designed, and implemented core architecture for a multi-tenant enterprise Service Level Objective (SLO) platform, enhancing telemetry visibility and proactive health tracking.",
-        "Optimized Security Operations (SecOps) incident mitigation and response workflows, integrating ServiceNow to ensure rapid, auditable issue resolution.",
+        "Desarrollé e implementé un orquestador AppSec agéntico diseñado para supervisar y optimizar el triaje y la resolución de vulnerabilidades de aplicaciones.",
         "Built robust custom automation utilities and tooling using Python, Bash, and Terraform, eliminating recurrent infrastructure operational bottlenecks."
       ]
     },

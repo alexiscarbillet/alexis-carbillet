@@ -127,7 +127,7 @@
         "Conception et mise en œuvre d'une architecture IAM unifiée sur Azure et GCP utilisant Terraform et GitHub Actions, intégrant Microsoft Entra ID, Workforce Identity Federation et Google Cloud IAM pour garantir une gouvernance de privilèges minimaux.",
         "Conception et déploiement de cadres de surveillance et de journalisation unifiés couvrant GitHub, Azure Sentinel et Google Cloud Security Command Center (SCC), accélérant significativement la détection des menaces d'entreprise.",
         "Définition, conception et mise en œuvre de l'architecture centrale pour une plateforme d'Objectifs de Niveau de Service (SLO) multi-tenant d'entreprise, améliorant la visibilité de la télémétrie et le suivi proactif de la santé du système.",
-        "Optimisation des flux de travail de mitigation et de réponse aux incidents de Sécurité Opérationnelle (SecOps), intégrant ServiceNow pour garantir une résolution rapide et auditable des problèmes.",
+        "Déployé et configuré un orchestrateur appsec agentique destiné a encadrer la prise en charge et la resolution des vulnérabilités applicatives.",
         "Construction d'utilitaires et d'outils d'automatisation personnalisés robustes utilisant Python, Bash et Terraform, éliminant les goulots d'étranglement opérationnels récurrents dans l'infrastructure."
       ]
     },
