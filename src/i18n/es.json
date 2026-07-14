@@ -45,7 +45,8 @@
         "funWithFlags": "Identificar banderas de todo el mundo.",
         "trainingCanadianCitizenship": "Practicar para el examen de ciudadanía canadiense.",
         "randomWords": "Generar palabras aleatorias para practicar.",
-        "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter."
+        "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter.",
+        "learnIT": "Es una plataforma para ayudar a las personas a aprender diferentes temas. Hecho usando Flutter."
       },
       "docker": {
         "description": "Imágenes Docker para desarrollo y ciencia de datos. Los códigos están en un repositorio privado de Github.",
@@ -270,17 +271,53 @@
     }
   },
   "diplomas": [
-    { "title": "Máster en IA y Ciencia de Datos", "issuer": "IMT Mines Alès", "url": "https://www.imt-mines-ales.fr/en" }
+    {
+      "title": "Máster en IA y Ciencia de Datos",
+      "issuer": "IMT Mines Alès",
+      "url": "https://www.imt-mines-ales.fr/en"
+    }
   ],
   "certifications": [
-    { "title": "Meta Android Developer", "issuer": "Meta", "url": "https://www.coursera.org/account/accomplishments/professional-cert/2QRFZWI6SKK8" },
-    { "title": "Meta Front-End Developer", "issuer": "Meta", "url": "https://www.coursera.org/account/accomplishments/professional-cert/AKWNTQX58XTD" },
-    { "title": "Azure Fundamentals", "issuer": "Microsoft Azure", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" },
-    { "title": "Cloud Digital Leader", "issuer": "Google Cloud Platform", "url": "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=fr" },
-    { "title": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "url": "https://cp.certmetrics.com/amazon/en/public/verify/credential/5ffbeedbd537410a9cd0f1e4ed1956bc" },
-    { "title": "Google Cybersecurity Professional", "issuer": "Google", "url": "https://www.coursera.org/account/accomplishments/professional-cert/4G8V8SJ8KL43" },
-    { "title": "Certified Kubernetes Administrator", "issuer": "Cloud Native Computing Foundation", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" },
-    { "title": "Cryptography", "issuer": "Stanford University", "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX" }
+    {
+      "title": "Meta Android Developer",
+      "issuer": "Meta",
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/2QRFZWI6SKK8"
+    },
+    {
+      "title": "Meta Front-End Developer",
+      "issuer": "Meta",
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/AKWNTQX58XTD"
+    },
+    {
+      "title": "Azure Fundamentals",
+      "issuer": "Microsoft Azure",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification"
+    },
+    {
+      "title": "Cloud Digital Leader",
+      "issuer": "Google Cloud Platform",
+      "url": "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=fr"
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "url": "https://cp.certmetrics.com/amazon/en/public/verify/credential/5ffbeedbd537410a9cd0f1e4ed1956bc"
+    },
+    {
+      "title": "Google Cybersecurity Professional",
+      "issuer": "Google",
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/4G8V8SJ8KL43"
+    },
+    {
+      "title": "Certified Kubernetes Administrator",
+      "issuer": "Cloud Native Computing Foundation",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+    },
+    {
+      "title": "Cryptography",
+      "issuer": "Stanford University",
+      "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX"
+    }
   ],
   "websites": {
     "header": "Mis sitios web",
