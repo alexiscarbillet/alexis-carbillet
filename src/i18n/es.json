@@ -102,7 +102,26 @@
         "Generación de contenido impulsada por IA con procesamiento de lenguaje natural",
         "Seguimiento automatizado de historial para evitar temas duplicados"
       ],
-      "conclusion": "Este proyecto demuestra aplicaciones avanzadas de IA en múltiples dominios, combinando integración de API en tiempo real, análisis de mercado y creación de contenido inteligente para ofrecer información especializada a profesionales y entusiastas en infraestructura en la nube, seguridad, electrónica, hardware e inversión en coleccionables."
+      "conclusion": "Este proyecto demuestra aplicaciones avanzadas de IA en múltiples dominios, combinando integración de API en tiempo real, análisis de mercado y creación de contenido inteligente para ofrecer información especializada a profesionales y entusiastas en infraestructura en la nube, seguridad, electrónica, hardware e inversión en coleccionables.",
+      "privateNote": "🔒 El código fuente es actualmente privado."
+    },
+    "agenticArchitect": {
+      "title": "AgenticArchitect",
+      "subtitle": "Estudio de Arquitectura e Infraestructura TI impulsado por IA",
+      "description": "AgenticArchitect es una aplicación web avanzada que aprovecha la API de Google Gemini para impulsar 12 agentes ingenieros especializados en TI: nube (AWS, GCP, Azure), Kubernetes, sistemas Linux, hardware bare-metal, electricidad/HVAC de centro de datos, redes, ciberseguridad, Python, Bash y arquitectura SQL.",
+      "featuresTitle": "Características y Arquitectura Clave:",
+      "features": [
+        "Roster de 12 especialistas (AWS, GCP, Azure, Kubernetes, Admin Linux, Ingeniero de Hardware, Electricidad y Data Center, Arquitecto de Redes, Líder de Ciberseguridad, Desarrollador Python, Experto en Bash, Arquitecto SQL)",
+        "Orquestador del Panel de Arquitecto Jefe: Síntesis multi-agente que delega objetivos complejos a los especialistas correspondientes en paralelo",
+        "Motor de Diagramas Mermaid.js en vivo para visualizar topologías de red y flujos de infraestructura",
+        "Scorecard de Arquitectura de 5 Ejes evaluando Confiabilidad, Escalabilidad, Seguridad, Eficiencia de Costos y Mantenibilidad",
+        "Matriz de Evaluación de Riesgos y Mitigación estructurada con impacto",
+        "Presets de Escenarios en 1 Clic para clusters de GPU de IA, migración híbrida multi-nube y redes Zero-Trust",
+        "Gestión segura de la clave API Gemini en el navegador con almacenamiento local y selección de modelos (Gemini 2.5 Flash, Gemini 2.5 Pro)",
+        "Exportación directa de blueprints arquitectónicos a Markdown (.md) o JSON (.json)"
+      ],
+      "conclusion": "Este proyecto demuestra la orquestación multi-agente y la ingeniería de prompts especializada para la arquitectura de sistemas complejos, permitiendo a líderes de TI y SRE diseñar y asegurar infraestructuras empresariales.",
+      "privateNote": "🔒 El código fuente es actualmente privado."
     }
   },
   "hero": {
@@ -363,7 +382,8 @@
       "helm": "Charts Helm de Kubernetes para despliegues.",
       "scripts": "Scripts útiles en varios lenguajes.",
       "vscode": "Extensiones para Visual Studio Code.",
-      "aiNewsletter": "Generación automatizada de newsletters impulsada por IA."
+      "aiNewsletter": "Generación automatizada de boletines informativos con IA.",
+      "agenticArchitect": "Estudio de arquitectura de TI impulsado por IA con 12 agentes especializados."
     },
     "digitalAssets": {
       "header": "Activos digitales",

@@ -48,6 +48,12 @@ export default function Projects() {
       title: t('projects.aiNewsletter.title'),
       description: t('projects.aiNewsletter.description'),
       url: '/projects/ai-newsletter'
+    },
+    {
+      key: 'agentic-architect',
+      title: t('projects.agenticArchitect.title'),
+      description: t('projects.agenticArchitect.description'),
+      url: '/projects/agentic-architect'
     }
   ];
 

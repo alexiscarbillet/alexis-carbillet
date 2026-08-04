@@ -11,6 +11,7 @@ import ProjectsVSCode from './ProjectsVSCode.jsx';
 import ProjectsScripts from './ProjectsScripts.jsx';
 import ProjectsHelm from './ProjectsHelm.jsx';
 import ProjectsAINewsletter from './ProjectsAINewsletter.jsx';
+import ProjectsAgenticArchitect from './ProjectsAgenticArchitect.jsx';
 import TrainingCKA from './TrainingCKA.jsx';
 import TrainingLinux from './TrainingLinux.jsx';
 import PodcastsAI from './PodcastsAI.jsx';
@@ -47,6 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects/scripts" element={<ProjectsScripts />} />
         <Route path="/projects/helm" element={<ProjectsHelm />} />
         <Route path="/projects/ai-newsletter" element={<ProjectsAINewsletter />} />
+        <Route path="/projects/agentic-architect" element={<ProjectsAgenticArchitect />} />
         <Route path="/diplomas" element={<Diplomas />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/ai-podcasts" element={<PodcastsAI />} />
