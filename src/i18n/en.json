@@ -338,6 +338,12 @@
       "issuer": "Stanford University",
       "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX"
     }
+    ,
+    {
+      "title": "Generative AI Leader",
+      "issuer": "Google Cloud Platform",
+      "url": "https://cloud.google.com/learn/certification/generative-ai-leader"
+    }
   ],
   "websites": {
     "header": "My Websites",
