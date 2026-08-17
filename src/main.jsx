@@ -11,19 +11,16 @@ import ProjectsVSCode from './ProjectsVSCode.jsx';
 import ProjectsScripts from './ProjectsScripts.jsx';
 import ProjectsHelm from './ProjectsHelm.jsx';
 import ProjectsAINewsletter from './ProjectsAINewsletter.jsx';
-import ProjectsAgenticArchitect from './ProjectsAgenticArchitect.jsx';
 import TrainingCKA from './TrainingCKA.jsx';
 import TrainingLinux from './TrainingLinux.jsx';
 import PodcastsAI from './PodcastsAI.jsx';
 import PodcastsCloud from './Podcastscloud.jsx';
 import Certifications from './Certifications.jsx';
 import Diplomas from './Diplomas.jsx';
-import Ebooks from './Ebooks.jsx';
 import Websites from './Websites.jsx';
 import Podcasts from './Podcasts.jsx';
 import Education from './Education.jsx';
 import Projects from './Projects.jsx';
-import DigitalAssets from './DigitalAssets.jsx';
 import Training from './Training.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -48,17 +45,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects/scripts" element={<ProjectsScripts />} />
         <Route path="/projects/helm" element={<ProjectsHelm />} />
         <Route path="/projects/ai-newsletter" element={<ProjectsAINewsletter />} />
-        <Route path="/projects/agentic-architect" element={<ProjectsAgenticArchitect />} />
         <Route path="/diplomas" element={<Diplomas />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/ai-podcasts" element={<PodcastsAI />} />
         <Route path="/cloud-podcasts" element={<PodcastsCloud />} />
-        <Route path="/digital-assets-ebooks" element={<Ebooks />} />
         <Route path="/websites" element={<Websites />} />
         <Route path="/podcasts" element={<Podcasts />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/digital-assets" element={<DigitalAssets />} />
         <Route path="/training" element={<Training />} />
       </Routes>
       <Footer />

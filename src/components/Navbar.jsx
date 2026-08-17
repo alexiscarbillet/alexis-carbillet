@@ -91,18 +91,6 @@ export default function Navbar() {
               <Link className="navbar-item" to="/projects/scripts" onClick={closeMenu}>Scripts</Link>
               <Link className="navbar-item" to="/projects/vscode" onClick={closeMenu}>VSCode Extensions</Link>
               <Link className="navbar-item" to="/projects/ai-newsletter" onClick={closeMenu}>AI Newsletter</Link>
-              <Link className="navbar-item" to="/projects/agentic-architect" onClick={closeMenu}>AgenticArchitect</Link>
-            </div>
-          </div>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <Link className="navbar-link" to="/digital-assets" onClick={closeMenu}>
-              {t("nav.digital-assets")}
-            </Link>
-            <div className="navbar-dropdown">
-              <Link className="navbar-item" to="/digital-assets-ebooks" onClick={closeMenu}>
-                Ebooks
-              </Link>
             </div>
           </div>
 

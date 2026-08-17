@@ -104,24 +104,6 @@
       ],
       "conclusion": "Ce projet démontre des applications avancées de l'IA dans plusieurs domaines, combinant l'intégration API en temps réel, l'analyse de marché, et la création de contenu intelligent pour fournir des insights spécialisés aux professionnels et passionnés dans l'infrastructure cloud, la sécurité, l'électronique, le matériel informatique, et l'investissement en objets de collection.",
       "privateNote": "🔒 Le code source est actuellement privé."
-    },
-    "agenticArchitect": {
-      "title": "AgenticArchitect",
-      "subtitle": "Studio d'Architecture & d'Infrastructure IT d'Entreprise Alimenté par l'IA",
-      "description": "AgenticArchitect est une application web avancée exploitant l'API Google Gemini pour piloter 12 agents ingénieurs spécialisés en IT : cloud (AWS, GCP, Azure), Kubernetes, systèmes Linux, matériel bare-metal, électricité/HVAC de datacenter, réseaux, cybersécurité, Python, Bash et architecture SQL.",
-      "featuresTitle": "Fonctionnalités & Architecture Clés :",
-      "features": [
-        "Roster de 12 spécialistes du domaine (AWS, GCP, Azure, Kubernetes, Admin Linux, Ingénieur Matériel, Électricité & Datacenter, Architecte Réseau, Responsable Cybersécurité, Développeur Python, Expert Bash, Architecte SQL)",
-        "Orchestrateur Panel d'Architecture Chef : Synthèse multi-agents déléguant les objectifs IT complexes aux spécialistes concernés en parallèle",
-        "Moteur de Schémas Mermaid.js intégrant des topologies réseau et des diagrammes d'infrastructure en temps réel",
-        "Scorecard d'Architecture sur 5 axes mesurant la Fiabilité, la Scalabilité, la Sécurité, l'Efficacité des Coûts et la Maintenabilité",
-        "Matrice de Risques & Atténuations structurée avec évaluation d'impact",
-        "Scénarios prédéfinis en 1 clic pour clusters GPU IA, migrations hybrides multi-cloud et réseaux Zero-Trust",
-        "Gestion sécurisée de la clé API Gemini côté client avec stockage local et sélection de modèles (Gemini 2.5 Flash, Gemini 2.5 Pro)",
-        "Exportation directe des blueprints architecturaux au format Markdown (.md) ou JSON (.json)"
-      ],
-      "conclusion": "Ce projet illustre l'orchestration multi-agents et le prompt engineering spécialisé pour l'architecture système complexe, permettant aux responsables IT et SRE de concevoir, réviser et sécuriser des infrastructures d'entreprise.",
-      "privateNote": "🔒 Le code source est actuellement privé."
     }
   },
   "hero": {
@@ -130,8 +112,7 @@
     "githubText": "Pour les plus curieux, voici mon",
     "linkedinText": "et mon",
     "killercodaText": "J’ai également écrit des scénarios pour entraîner au passage de la certification CKA et apprendre l’utilisation de Linux. Voici mon",
-    "storeText": "Je vends également des actifs numériques tels que des ebooks, vous pouvez les consulter sur mon",
-    "storeText2": "magasin",
+
     "linksDescription": "Ci-dessous se trouvent mes différents liens, la première ligne regroupe mes autres sites, la seconde contient les plateformes où mon travail est disponible."
   },
   "sections": {
@@ -389,8 +370,7 @@
       "helm": "Charts Helm Kubernetes pour le déploiement.",
       "scripts": "Scripts utiles dans divers langages.",
       "vscode": "Extensions pour Visual Studio Code.",
-      "aiNewsletter": "Génération automatisée de newsletters alimentée par l'IA.",
-      "agenticArchitect": "Studio d'architecture IT alimenté par l'IA avec 12 agents spécialisés."
+      "aiNewsletter": "Génération automatisée de newsletters alimentée par l'IA."
     },
     "digitalAssets": {
       "header": "Atouts Digitaux",

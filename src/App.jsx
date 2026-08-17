@@ -64,10 +64,6 @@ export default function ExperienceTimeline() {
                 {t("hero.killercodaText")} <a href="https://killercoda.com/alexis-carbillet" target="_blank">killercoda</a>.
               </p>
 
-              <p>
-                {t("hero.storeText")} <a href="https://shop.alexis-carbillet.com/" target="_blank" rel="noopener noreferrer">{t("hero.storeText2")}</a>.
-              </p>
-
               <p dangerouslySetInnerHTML={{ __html: t("hero.linksDescription") }}></p>
 
               <Social />

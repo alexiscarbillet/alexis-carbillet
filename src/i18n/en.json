@@ -104,24 +104,6 @@
       ],
       "conclusion": "This project demonstrates advanced applications of AI across multiple domains, combining real-time API integration, market analysis, and intelligent content creation to deliver specialized insights for professionals and enthusiasts in cloud infrastructure, security, electronics, hardware, and collectibles investment.",
       "privateNote": "🔒 The source code is currently private."
-    },
-    "agenticArchitect": {
-      "title": "AgenticArchitect",
-      "subtitle": "AI-Powered Enterprise IT Infrastructure & Architecture Studio",
-      "description": "AgenticArchitect is an advanced web application leveraging the Google Gemini API to power 12 specialized IT engineering agents across cloud (AWS, GCP, Azure), Kubernetes, Linux operating systems, hardware, datacenter power/HVAC, networking, cybersecurity, Python, Bash, and SQL architecture.",
-      "featuresTitle": "Key Capabilities & Architecture:",
-      "features": [
-        "Roster of 12 Domain Specialists (AWS, GCP, Azure, Kubernetes, Linux Admin, Hardware Engineer, Electricity & DC Power, Network Architect, Cybersecurity Lead, Python Developer, Bash Scripting Expert, SQL Architect)",
-        "Chief Architecture Panel Orchestrator: Multi-agent synthesis delegating complex IT goals to relevant domain specialists in parallel",
-        "Live Mermaid.js Diagram Engine rendering visual network topologies and infrastructure flowcharts",
-        "5-Axis Architecture Scorecard assessing Reliability, Scalability, Security, Cost Efficiency, and Maintainability",
-        "Structured Risk & Mitigation Matrix with impact evaluation",
-        "1-Click Scenario Presets for AI GPU clusters, hybrid multi-cloud migration, and zero-trust networks",
-        "Client-Side Gemini API Key Management with local browser storage and multi-model selection (Gemini 2.5 Flash, Gemini 2.5 Pro)",
-        "Export full architectural blueprints directly to Markdown (.md) or JSON (.json)"
-      ],
-      "conclusion": "This project demonstrates multi-agent orchestration and specialized prompt engineering for complex system architecture, enabling IT leaders and SREs to design, review, and harden enterprise infrastructure.",
-      "privateNote": "🔒 The source code is currently private."
     }
   },
   "hero": {
@@ -130,8 +112,6 @@
     "githubText": "For the curious ones, here is my",
     "linkedinText": "and my",
     "killercodaText": "I also wrote different scenarios to train people for the CKA certification as well as learn how to use Linux. Here is my",
-    "storeText": "I am also selling digital assets such as ebooks, you can check them out on my",
-    "storeText2": "store",
     "linksDescription": "Below are my different links, in the first rows are my other websites while the second has the platforms where my work is available."
   },
   "sections": {
@@ -389,8 +369,7 @@
       "helm": "Kubernetes Helm charts for deployment.",
       "scripts": "Useful scripts in various languages.",
       "vscode": "Extensions for Visual Studio Code.",
-      "aiNewsletter": "Automated AI-powered newsletter generation.",
-      "agenticArchitect": "AI-powered IT architecture studio with 12 specialized domain agents."
+      "aiNewsletter": "Automated AI-powered newsletter generation."
     },
     "digitalAssets": {
       "header": "Digital Assets",
