@@ -126,9 +126,8 @@
       "description": [
         "Diseñé e implementé una arquitectura de IAM unificada en Azure y GCP utilizando Terraform y GitHub Actions, integrando Microsoft Entra ID, Workforce Identity Federation y Google Cloud IAM para garantizar una gobernanza de privilegios mínimos.",
         "Diseñé y desplegué marcos de monitoreo y registro unificados que abarcan GitHub, Azure Sentinel y Google Cloud Security Command Center (SCC), acelerando significativamente la detección de amenazas empresariales.",
-        "Definí, diseñé e implementé la arquitectura central para una plataforma de Objetivos de Nivel de Servicio (SLO) empresarial multiinquilino, mejorando la visibilidad de la telemetría y el seguimiento proactivo de la salud del sistema.",
         "Desarrollé e implementé un orquestador AppSec agéntico diseñado para supervisar y optimizar el triaje y la resolución de vulnerabilidades de aplicaciones.",
-        "Construí robustas utilidades y herramientas de automatización personalizadas utilizando Python, Bash y Terraform, eliminando cuellos de botella operativos recurrentes en la infraestructura."
+        "Construí robustas utilidades y herramientas de automatización personalizadas utilizando Python, Bash y HTMX, eliminando cuellos de botella operativos recurrentes en la infraestructura."
       ]
     },
     {
@@ -137,9 +136,9 @@
       "description": [
         "Gestioné infraestructura de nube pública en más de 40 regiones distintas y 50 zonas locales, aprovechando OpenStack, Kubernetes y Terraform.",
         "Comandé múltiples llamadas de crisis de producción de alta gravedad, alineando dinámicamente a equipos multifuncionales para aislar causas raíz y restaurar rápidamente la disponibilidad del servicio.",
-        "Construí y escalé ecosistemas de monitoreo distribuidos utilizando Prometheus, Thanos, Sentry, OpenSearch y Grafana, impulsando una reducción del 35% en el tiempo de inactividad de producción.",
+        "Diseñé y construí una plataforma de observabilidad que abarca Prometheus, Thanos, Sentry, Percona Monitoring, OpenSearch, Sentry y Grafana.",
         "Escribí pipelines automatizados de CI/CD y desencadenantes proactivos de auto-sanación para mitigar fallas comunes del sistema y agilizar los despliegues globales.",
-        "Ingeniería de APIs internas personalizadas, herramientas del sistema y bases de datos backend mediante Python, Go y Bash. Formulación de modelos predictivos de IA para planificación de capacidad y pronóstico de fallas de equipos. Entrenamiento de LLM para documentación interna."
+        "Ingeniería de APIs internas personalizadas, herramientas del sistema y bases de datos backend mediante Python, Go, HTMX y Bash. Formulación de modelos predictivos de IA para planificación de capacidad y pronóstico de fallas de equipos. Entrenamiento de LLM para documentación interna."
       ]
     },
     {

@@ -124,11 +124,10 @@
       "title": "Principal SRE at ARTM",
       "date": "2025-07",
       "description": [
-        "Engineered cross-environment IAM across Azure and GCP using Terraform and GitHub Actions. Implemented Microsoft Entra ID, Workforce Identity Federation, and Google Cloud IAM to strictly enforce least-privilege governance.",
+        "Engineered cross-environment IAM plateform across Azure and GCP using Terraform and GitHub Actions. Implemented Microsoft Entra ID, Workforce Identity Federation, and Google Cloud IAM to strictly enforce least-privilege governance.",
         "Designed and deployed unified logging and monitoring frameworks spanning GitHub, Azure Sentinel, and Google Cloud Security Command Center (SCC) to significantly accelerate enterprise threat detection.",
-        "Defined, designed, and implemented core architecture for a multi-tenant enterprise Service Level Objective (SLO) platform, enhancing telemetry visibility and proactive health tracking.",
         "Built and deployed an agentic AppSec orchestrator designed to oversee and streamline the triaging and resolution of application vulnerabilities.",
-        "Built robust custom automation utilities and tooling using Python, Bash, and Terraform, eliminating recurrent infrastructure operational bottlenecks."
+        "Built robust custom automation utilities and tooling using Python, HTMX, and Bash, eliminating recurrent infrastructure operational bottlenecks."
       ]
     },
     {
@@ -137,9 +136,10 @@
       "description": [
         "Managed public cloud infrastructure over 40 distinct regions as well as 50 local zones, leveraging OpenStack, Kubernetes and Terraform.",
         "Commanded multiple high-severity production crisis calls, dynamically aligning cross-functional teams to isolate root causes and rapidly restore service availability.",
-        "Built and scaled distributed monitoring ecosystems using Prometheus, Thanos, Sentry, OpenSearch, and Grafana, driving a 35% reduction in production downtime.",
+        "Designed and built an observability platform covering Prometheus, Thanos, Sentry, Percona Monitoring, OpenSearch, Sentry and Grafana.",
         "Authored automated CI/CD pipelines and proactive self-healing infrastructure triggers to mitigate common system faults and streamline global deployments.",
-        "Engineered custom internal APIs, system tools, and backend databases via Python, Go, and Bash. Formulated predictive AI models for capacity planning and equipment failure forecasting. Trained LLM for internal documentation."
+        "Engineered custom internal APIs, system tools, and backend databases via Python, Go, HTMX and Bash.",
+        "Implemented predictive AI models for capacity planning and equipment failure forecasting. Trained LLM for internal documentation."
       ]
     },
     {

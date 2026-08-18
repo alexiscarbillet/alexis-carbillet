@@ -127,9 +127,8 @@
       "description": [
         "Conception et mise en œuvre d'une architecture IAM unifiée sur Azure et GCP utilisant Terraform et GitHub Actions, intégrant Microsoft Entra ID, Workforce Identity Federation et Google Cloud IAM pour garantir une gouvernance de privilèges minimaux.",
         "Conception et déploiement de cadres de surveillance et de journalisation unifiés couvrant GitHub, Azure Sentinel et Google Cloud Security Command Center (SCC), accélérant significativement la détection des menaces d'entreprise.",
-        "Définition, conception et mise en œuvre de l'architecture centrale pour une plateforme d'Objectifs de Niveau de Service (SLO) multi-tenant d'entreprise, améliorant la visibilité de la télémétrie et le suivi proactif de la santé du système.",
         "Déployé et configuré un orchestrateur appsec agentique destiné a encadrer la prise en charge et la resolution des vulnérabilités applicatives.",
-        "Construction d'utilitaires et d'outils d'automatisation personnalisés robustes utilisant Python, Bash et Terraform, éliminant les goulots d'étranglement opérationnels récurrents dans l'infrastructure."
+        "Construction d'utilitaires et d'outils d'automatisation personnalisés robustes utilisant Python, Bash et HTMX, éliminant les goulots d'étranglement opérationnels récurrents dans l'infrastructure."
       ]
     },
     {
@@ -138,9 +137,9 @@
       "description": [
         "Gestion de l'infrastructure cloud public sur plus de 40 régions distinctes et 50 zones locales, utilisant OpenStack, Kubernetes et Terraform.",
         "Direction de multiples appels de crise de production à haute gravité, alignant dynamiquement les équipes interfonctionnelles pour isoler les causes profondes et restaurer rapidement la disponibilité du service.",
-        "Construction et mise à l'échelle d'écosystèmes de surveillance distribués utilisant Prometheus, Thanos, Sentry, OpenSearch et Grafana, entraînant une réduction de 35% du temps d'arrêt en production.",
+        "Conception et construction d'une plateforme d'observabilité couvrant Prometheus, Thanos, Sentry, Percona Monitoring, OpenSearch, Sentry et Grafana.",
         "Rédaction de pipelines automatisés CI/CD et de déclencheurs proactifs d'auto-guérison pour atténuer les pannes système courantes et rationaliser les déploiements globaux.",
-        "Ingénierie d'APIs internes personnalisées, d'outils système et de bases de données backend via Python, Go et Bash. Formulation de modèles prédictifs d'IA pour la planification de capacité et la prévision des pannes d'équipement. Entraînement de LLM pour la documentation interne."
+        "Ingénierie d'APIs internes personnalisées, d'outils système et de bases de données backend via Python, Go, HTMX et Bash. Formulation de modèles prédictifs d'IA pour la planification de capacité et la prévision des pannes d'équipement. Entraînement de LLM pour la documentation interne."
       ]
     },
     {
