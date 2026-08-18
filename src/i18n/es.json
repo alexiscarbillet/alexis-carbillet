@@ -138,7 +138,8 @@
         "Comandé múltiples llamadas de crisis de producción de alta gravedad, alineando dinámicamente a equipos multifuncionales para aislar causas raíz y restaurar rápidamente la disponibilidad del servicio.",
         "Diseñé y construí una plataforma de observabilidad que abarca Prometheus, Thanos, Sentry, Percona Monitoring, OpenSearch, Sentry y Grafana.",
         "Escribí pipelines automatizados de CI/CD y desencadenantes proactivos de auto-sanación para mitigar fallas comunes del sistema y agilizar los despliegues globales.",
-        "Ingeniería de APIs internas personalizadas, herramientas del sistema y bases de datos backend mediante Python, Go, HTMX y Bash. Formulación de modelos predictivos de IA para planificación de capacidad y pronóstico de fallas de equipos. Entrenamiento de LLM para documentación interna."
+        "Ingeniería de APIs internas personalizadas, herramientas del sistema y bases de datos backend mediante Python, Go, HTMX y Bash.",
+        "Formulación de modelos predictivos de IA para planificación de capacidad y pronóstico de fallas de equipos. Entrenamiento de LLM para documentación interna."
       ]
     },
     {
