@@ -89,20 +89,22 @@
     "aiNewsletter": {
       "title": "Newsletter IA",
       "subtitle": "Moteur de génération de newsletters multi-domaines alimenté par l'IA",
-      "description": "La Newsletter IA est une plateforme sophistiquée qui génère automatiquement plusieurs newsletters spécialisées dans des domaines divers : Infrastructure Cloud (AWS/GCP/Azure), projets CNCF, vulnérabilités CVE, Ingénierie Électrique, Matériel Informatique, et investissements en cartes Pokémon. Chaque newsletter est générée indépendamment par l'IA pour fournir des informations pertinentes et à jour sans intervention manuelle.",
+      "description": "La Newsletter IA est une plateforme sophistiquée qui génère automatiquement plusieurs newsletters spécialisées dans des domaines divers : Infrastructure Cloud (AWS/GCP/Azure), projets CNCF, conseils SQL, administration Linux, scripts Bash, programmation Python, Ingénierie Électrique, Matériel Informatique, et investissements en cartes Pokémon. Chaque newsletter est générée indépendamment par l'IA pour fournir des informations pertinentes et à jour sans intervention manuelle.",
       "featuresTitle": "Les fonctionnalités clés incluent :",
       "features": [
         "Analyse automatisée des plateformes Cloud (AWS, GCP, Azure) avec rotation des fournisseurs",
         "Suivi des projets CNCF avec logique de déduplication sur 6 mois",
-        "Analyse en temps réel des vulnérabilités CVE/sécurité depuis l'API NIST",
+        "Conseils SQL hebdomadaires : requêtes, optimisation et bonnes pratiques de base de données",
+        "Conseils d'administration Linux : commandes, réglage système et dépannage",
+        "Techniques de scripts Bash : automatisation, one-liners et astuces shell",
+        "Conseils Python : patrons de code, bibliothèques et techniques de productivité",
         "Éducation en ingénierie électrique et analyse des composants électroniques",
         "Tendances matériel informatique et analyse des spécifications",
         "Suivi du marché des cartes Pokémon et analyse ROI d'investissement",
-        "Suivi des actions NYSE et TSX liées à une liste personnalisée et recommandations d'investissement basées sur les actualités et tendances",
         "Génération de contenu alimentée par l'IA avec traitement du langage naturel",
         "Suivi automatisé de l'historique pour éviter les sujets dupliqués"
       ],
-      "conclusion": "Ce projet démontre des applications avancées de l'IA dans plusieurs domaines, combinant l'intégration API en temps réel, l'analyse de marché, et la création de contenu intelligent pour fournir des insights spécialisés aux professionnels et passionnés dans l'infrastructure cloud, la sécurité, l'électronique, le matériel informatique, et l'investissement en objets de collection.",
+      "conclusion": "Ce projet démontre des applications avancées de l'IA dans plusieurs domaines, combinant l'intégration API en temps réel, l'analyse de marché, et la création de contenu intelligent pour fournir des insights spécialisés aux professionnels et passionnés dans l'infrastructure cloud, Linux, SQL, les scripts, l'électronique, le matériel informatique, et l'investissement en objets de collection.",
       "privateNote": "🔒 Le code source est actuellement privé."
     },
     "investTools": {

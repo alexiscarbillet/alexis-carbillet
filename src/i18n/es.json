@@ -89,20 +89,22 @@
     "aiNewsletter": {
       "title": "Newsletter de IA",
       "subtitle": "Motor de generación de newsletters multidominio impulsado por IA",
-      "description": "La Newsletter de IA es una plataforma sofisticada que genera automáticamente múltiples newsletters especializadas en diversos dominios: infraestructura en la nube (AWS/GCP/Azure), proyectos CNCF, vulnerabilidades CVE, ingeniería eléctrica, hardware informático e inversiones en cartas Pokémon. Cada newsletter se genera de forma independiente mediante IA para proporcionar información relevante y actualizada sin intervención manual.",
+      "description": "La Newsletter de IA es una plataforma sofisticada que genera automáticamente múltiples newsletters especializadas en diversos dominios: infraestructura en la nube (AWS/GCP/Azure), proyectos CNCF, consejos SQL, administración Linux, scripts Bash, programación Python, ingeniería eléctrica, hardware informático e inversiones en cartas Pokémon. Cada newsletter se genera de forma independiente mediante IA para proporcionar información relevante y actualizada sin intervención manual.",
       "featuresTitle": "Las características clave incluyen:",
       "features": [
         "Análisis automatizado de plataformas en la nube (AWS, GCP, Azure) con rotación de proveedores",
         "Seguimiento de proyectos CNCF con lógica de desduplicación de 6 meses",
-        "Análisis en tiempo real de vulnerabilidades CVE/seguridad desde la API de NIST",
+        "Consejos SQL semanales: consultas, optimización y buenas prácticas de bases de datos",
+        "Consejos de administración Linux: comandos, ajuste del sistema y solución de problemas",
+        "Técnicas de scripting Bash: automatización, one-liners y trucos de shell",
+        "Consejos de Python: patrones de código, librerías y técnicas de productividad",
         "Educación en ingeniería eléctrica y análisis de componentes electrónicos",
         "Tendencias de hardware informático y análisis de especificaciones",
         "Seguimiento del mercado de cartas Pokémon y análisis ROI de inversión",
-        "Rastreo de acciones NYSE y TSX relacionadas con una lista personalizada y recomendación de nuevas inversiones según noticias y tendencias",
         "Generación de contenido impulsada por IA con procesamiento de lenguaje natural",
         "Seguimiento automatizado de historial para evitar temas duplicados"
       ],
-      "conclusion": "Este proyecto demuestra aplicaciones avanzadas de IA en múltiples dominios, combinando integración de API en tiempo real, análisis de mercado y creación de contenido inteligente para ofrecer información especializada a profesionales y entusiastas en infraestructura en la nube, seguridad, electrónica, hardware e inversión en coleccionables.",
+      "conclusion": "Este proyecto demuestra aplicaciones avanzadas de IA en múltiples dominios, combinando integración de API en tiempo real, análisis de mercado y creación de contenido inteligente para ofrecer información especializada a profesionales y entusiastas en infraestructura en la nube, Linux, SQL, scripting, electrónica, hardware e inversión en coleccionables.",
       "privateNote": "🔒 El código fuente es actualmente privado."
     },
     "investTools": {
