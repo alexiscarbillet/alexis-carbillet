@@ -104,6 +104,34 @@
       ],
       "conclusion": "Ce projet démontre des applications avancées de l'IA dans plusieurs domaines, combinant l'intégration API en temps réel, l'analyse de marché, et la création de contenu intelligent pour fournir des insights spécialisés aux professionnels et passionnés dans l'infrastructure cloud, la sécurité, l'électronique, le matériel informatique, et l'investissement en objets de collection.",
       "privateNote": "🔒 Le code source est actuellement privé."
+    },
+    "investTools": {
+      "title": "Invest Tools",
+      "subtitle": "Briefing quotidien automatisé des marchés boursiers et matrice de conversion Forex, alimentés par Yahoo Finance et Google Gemini AI.",
+      "privateLabel": "Référentiel Privé",
+      "overviewTitle": "Présentation du Projet",
+      "overview": "<strong>Invest Tools</strong> est une plateforme personnelle d'intelligence financière sans serveur conçue pour la prise de décision d'investissement quotidienne. Chaque soir après la clôture des marchés (à <strong>19h00 EST</strong>), des <strong>GitHub Actions</strong> planifiées déclenchent un pipeline Python automatisé qui interroge des données de marché 100 % gratuites via Yahoo Finance, calcule des matrices de rendement multi-périodes sur une liste de surveillance personnalisée de 30+ actions, génère des recommandations IA via <strong>Google Gemini</strong>, et livre des briefings HTML réactifs directement par e-mail.",
+      "featuresTitle": "Fonctionnalités & Modules Clés",
+      "features": [
+        {
+          "title": "📊 Matrice d'Équité Multi-Périodes",
+          "description": "Suit 30+ actifs cibles sur les bourses américaines et canadiennes (TSX, TSX-V) sur 5 périodes (<strong>1 Jour</strong>, <strong>1 Semaine</strong>, <strong>1 Mois</strong>, <strong>3 Mois</strong>, <strong>YTD</strong>), en comparant l'Alpha avec le S&amp;P 500, le TSX Composite et le Nasdaq 100."
+        },
+        {
+          "title": "⚡ Conseiller IA Google Gemini",
+          "description": "Analyse les tableaux matriciels pour identifier les leaders de momentum, les rebonds potentiels en survente et les facteurs de risque, en formulant une liste de contrôle de trading actionnable pour le lendemain avec des mécanismes de repli multi-modèles et des reprises exponentielles."
+        },
+        {
+          "title": "💱 Matrice Forex Multi-Devises",
+          "description": "Calcule des matrices de taux de change croisés en temps réel entre <strong>EUR</strong>, <strong>CAD</strong> et <strong>USD</strong> avec les plages de trading sur 52 semaines, les conversions rapides standard et l'analyse macro des banques centrales."
+        },
+        {
+          "title": "🕒 Automatisation Planifiée Sans Frais",
+          "description": "Architecture entièrement sans serveur exploitant les cron jobs GitHub Actions, les données publiques Yahoo Finance et le niveau gratuit de Google AI Studio pour fonctionner quotidiennement sans frais d'hébergement ni d'API."
+        }
+      ],
+      "architectureTitle": "Architecture du Système",
+      "privateNote": "🔒 Référentiel Privé : Le code source de ce projet est conservé dans un référentiel privé pour protéger les configurations d'API personnelles, les points de livraison par e-mail et les stratégies de liste de surveillance personnalisées."
     }
   },
   "hero": {
@@ -370,7 +398,8 @@
       "helm": "Charts Helm Kubernetes pour le déploiement.",
       "scripts": "Scripts utiles dans divers langages.",
       "vscode": "Extensions pour Visual Studio Code.",
-      "aiNewsletter": "Génération automatisée de newsletters alimentée par l'IA."
+      "aiNewsletter": "Génération automatisée de newsletters alimentée par l'IA.",
+      "investTools": "Briefing quotidien automatisé des marchés boursiers et matrice Forex, alimentés par Yahoo Finance et Google Gemini AI."
     },
     "digitalAssets": {
       "header": "Atouts Digitaux",

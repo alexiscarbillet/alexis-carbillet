@@ -104,6 +104,34 @@
       ],
       "conclusion": "This project demonstrates advanced applications of AI across multiple domains, combining real-time API integration, market analysis, and intelligent content creation to deliver specialized insights for professionals and enthusiasts in cloud infrastructure, security, electronics, hardware, and collectibles investment.",
       "privateNote": "🔒 The source code is currently private."
+    },
+    "investTools": {
+      "title": "Invest Tools",
+      "subtitle": "Automated Daily Stock Market Briefing & Forex Conversion Matrix powered by Yahoo Finance and Google Gemini AI.",
+      "privateLabel": "Private Repository",
+      "overviewTitle": "Project Overview",
+      "overview": "<strong>Invest Tools</strong> is a serverless personal financial intelligence platform designed for daily investment decision-making. Every evening after market close (at <strong>7:00 PM EST</strong>), scheduled <strong>GitHub Actions</strong> trigger an automated Python pipeline that queries 100% free market data via Yahoo Finance, computes multi-period return matrices across a custom 30+ stock watchlist, generates AI recommendations via <strong>Google Gemini</strong>, and delivers responsive HTML briefings directly to email.",
+      "featuresTitle": "Key Features & Modules",
+      "features": [
+        {
+          "title": "📊 Multi-Timeframe Equity Matrix",
+          "description": "Tracks 30+ target assets across US and Canadian exchanges (TSX, TSX-V) across 5 timeframes (<strong>1-Day</strong>, <strong>1-Week</strong>, <strong>1-Month</strong>, <strong>3-Months</strong>, <strong>YTD</strong>), benchmarking Alpha against the S&amp;P 500, TSX Composite, and Nasdaq 100."
+        },
+        {
+          "title": "⚡ Google Gemini AI Advisor",
+          "description": "Analyzes matrix tables to identify standout momentum leaders, potential oversold bounces, and risk factors, formulating an actionable next-day trading checklist with built-in multi-model fallbacks and exponential retries."
+        },
+        {
+          "title": "💱 Cross-Currency Forex Matrix",
+          "description": "Computes complete real-time cross-rate conversion matrices between <strong>EUR</strong>, <strong>CAD</strong>, and <strong>USD</strong> with 52-week trading ranges, standard quick-conversions, and central bank macro analysis."
+        },
+        {
+          "title": "🕒 Zero-Cost Scheduled Automation",
+          "description": "Completely serverless architecture leveraging GitHub Actions cron jobs, public Yahoo Finance data, and Google AI Studio free tier to run daily with zero hosting or API fees."
+        }
+      ],
+      "architectureTitle": "System Architecture",
+      "privateNote": "🔒 Private Repository: The source code for this project is maintained in a private repository to protect personal API configurations, email delivery endpoints, and custom watchlist strategies."
     }
   },
   "hero": {
@@ -369,7 +397,8 @@
       "helm": "Kubernetes Helm charts for deployment.",
       "scripts": "Useful scripts in various languages.",
       "vscode": "Extensions for Visual Studio Code.",
-      "aiNewsletter": "Automated AI-powered newsletter generation."
+      "aiNewsletter": "Automated AI-powered newsletter generation.",
+      "investTools": "Automated daily stock market briefing and Forex conversion matrix powered by Yahoo Finance and Google Gemini AI."
     },
     "digitalAssets": {
       "header": "Digital Assets",

@@ -48,6 +48,12 @@ export default function Projects() {
       title: t('projects.aiNewsletter.title'),
       description: t('projects.aiNewsletter.description'),
       url: '/projects/ai-newsletter'
+    },
+    {
+      key: 'invest-tools',
+      title: t('projects.investTools.title'),
+      description: t('overviews.projects.investTools'),
+      url: '/projects/invest-tools'
     }
   ];
 
