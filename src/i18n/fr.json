@@ -142,7 +142,6 @@
     "githubText": "Pour les plus curieux, voici mon",
     "linkedinText": "et mon",
     "killercodaText": "J’ai également écrit des scénarios pour entraîner au passage de la certification CKA et apprendre l’utilisation de Linux. Voici mon",
-
     "linksDescription": "Ci-dessous se trouvent mes différents liens, la première ligne regroupe mes autres sites, la seconde contient les plateformes où mon travail est disponible."
   },
   "sections": {
@@ -155,10 +154,11 @@
       "title": "SRE principal chez ARTM",
       "date": "2025-07",
       "description": [
-        "Conception et mise en œuvre d'une architecture IAM unifiée sur Azure et GCP utilisant Terraform et GitHub Actions, intégrant Microsoft Entra ID, Workforce Identity Federation et Google Cloud IAM pour garantir une gouvernance de privilèges minimaux.",
-        "Conception et déploiement de cadres de surveillance et de journalisation unifiés couvrant GitHub, Azure Sentinel et Google Cloud Security Command Center (SCC), accélérant significativement la détection des menaces d'entreprise.",
-        "Déployé et configuré un orchestrateur appsec agentique destiné a encadrer la prise en charge et la resolution des vulnérabilités applicatives.",
-        "Construction d'utilitaires et d'outils d'automatisation personnalisés robustes utilisant Python, Bash et HTMX, éliminant les goulots d'étranglement opérationnels récurrents dans l'infrastructure."
+        "Ingénierie d'une architecture de plateforme IAM multi-environnement couvrant Azure et GCP à l'aide de Terraform et GitHub Actions. Intégration de Microsoft Entra ID, de la fédération d'identités de la main-d'œuvre et de Google Cloud IAM pour appliquer strictement une gouvernance de privilèges minimaux.",
+        "Conception et déploiement d'un outil de surveillance unifié couvrant GitHub, Azure Sentinel, BitLocker, Entra ID et le Security Command Center (SCC) de Google Cloud pour accélérer considérablement la détection des menaces d'entreprise.",
+        "Ingénierie d'une plateforme de sécurité multi-environnement couvrant Azure et GCP à l'aide de Terraform et GitHub Actions. Intégration de Sentinel, Defender et du Security Command Center.",
+        "Création et déploiement d'un orchestrateur d'AppSec agentique conçu pour superviser et rationaliser le triage et la résolution des vulnérabilités des applications.",
+        "Création d'utilitaires et d'outils d'automatisation personnalisés robustes utilisant Python, HTMX et Bash, éliminant les goulots d'étranglement opérationnels récurrents de l'infrastructure."
       ]
     },
     {
@@ -348,8 +348,7 @@
       "title": "Cryptographie",
       "issuer": "Stanford University",
       "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX"
-    }
-    ,
+    },
     {
       "title": "Generative AI Leader",
       "issuer": "Google Cloud Platform",

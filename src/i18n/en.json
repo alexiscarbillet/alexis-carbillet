@@ -155,7 +155,8 @@
       "date": "2025-07",
       "description": [
         "Engineered cross-environment IAM plateform across Azure and GCP using Terraform and GitHub Actions. Implemented Microsoft Entra ID, Workforce Identity Federation, and Google Cloud IAM to strictly enforce least-privilege governance.",
-        "Designed and deployed unified logging and monitoring frameworks spanning GitHub, Azure Sentinel, and Google Cloud Security Command Center (SCC) to significantly accelerate enterprise threat detection.",
+        "Designed and deployed unified monitoring tool spanning GitHub, Azure Sentinel, BitLocker, Entra ID and Google Cloud Security Command Center (SCC) to significantly accelerate enterprise threat detection.",
+        "Engineered cross-environment security plateform across Azure and GCP using Terraform and GitHub Actions. Implemented Sentinel, Defender and Security Center.",
         "Built and deployed an agentic AppSec orchestrator designed to oversee and streamline the triaging and resolution of application vulnerabilities.",
         "Built robust custom automation utilities and tooling using Python, HTMX, and Bash, eliminating recurrent infrastructure operational bottlenecks."
       ]
@@ -347,8 +348,7 @@
       "title": "Cryptography",
       "issuer": "Stanford University",
       "url": "https://www.coursera.org/account/accomplishments/verify/8WBQFLPL2ZAX"
-    }
-    ,
+    },
     {
       "title": "Generative AI Leader",
       "issuer": "Google Cloud Platform",
