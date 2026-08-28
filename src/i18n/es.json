@@ -6,7 +6,6 @@
     "podcasts": "Podcasts",
     "podcasts.ai": "Inteligencia Artificial",
     "podcasts.cloud": "Nube",
-    "digital-assets": "Tienda",
     "language": "Idioma"
   },
   "buttons": {
@@ -46,7 +45,8 @@
         "trainingCanadianCitizenship": "Practicar para el examen de ciudadanía canadiense.",
         "randomWords": "Generar palabras aleatorias para practicar.",
         "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter.",
-        "learnIT": "Es una plataforma para ayudar a las personas a aprender diferentes temas. Hecho usando Flutter."
+        "learnIT": "Es una plataforma para ayudar a las personas a aprender diferentes temas. Hecho usando Flutter.",
+        "learnFinance": "LearnFinance es una plataforma para ayudar a las personas a aprender finanzas. Hecho usando Flutter."
       },
       "docker": {
         "description": "Imágenes Docker para desarrollo y ciencia de datos. Los códigos están en un repositorio privado de Github.",
@@ -287,19 +287,6 @@
       "podcast10": "Episodio 10: Nubes soberanas y cumplimiento"
     }
   },
-  "digital-assets": {
-    "ebooks": {
-      "ebooksHeader": "Ebooks:",
-      "gcp-ebook": "E-book de GCP",
-      "gcp-ebook-desc": "Guía completa de los servicios de Google Cloud Platform y las mejores prácticas.",
-      "azure-ebook": "E-book de Azure",
-      "azure-ebook-desc": "Guía completa de los servicios de Microsoft Azure y las mejores prácticas.",
-      "python-ebook": "E-book de Python",
-      "python-ebook-desc": "Guía completa de programación en Python, incluyendo aplicaciones de ciencia de datos e IA.",
-      "ai-ebook": "E-book de IA",
-      "ai-ebook-desc": "Guía completa de conceptos, técnicas y aplicaciones de Inteligencia Artificial."
-    }
-  },
   "diplomas": [
     {
       "title": "Máster en IA y Ciencia de Datos",
@@ -400,11 +387,6 @@
       "vscode": "Extensiones para Visual Studio Code.",
       "aiNewsletter": "Generación automatizada de boletines informativos con IA.",
       "investTools": "Informe diario automatizado del mercado de valores y matriz Forex, impulsados por Yahoo Finance y Google Gemini AI."
-    },
-    "digitalAssets": {
-      "header": "Activos digitales",
-      "subtitle": "Activos digitales y recursos para profesionales.",
-      "ebooks": "Ebooks que cubren plataformas cloud y mejores prácticas."
     },
     "training": {
       "header": "Formación",

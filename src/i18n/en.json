@@ -6,7 +6,6 @@
     "podcasts": "Podcasts",
     "podcasts.ai": "Artificial Intelligence",
     "podcasts.cloud": "Cloud Computing",
-    "digital-assets": "Store",
     "language": "Language"
   },
   "buttons": {
@@ -46,7 +45,8 @@
         "trainingCanadianCitizenship": "Practice for Canadian citizenship test.",
         "randomWords": "Generate random words for practice.",
         "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter.",
-        "learnIT": "LearnIT is a platform to help people learn different topics. Made using Flutter."
+        "learnIT": "LearnIT is a platform to help people learn different topics. Made using Flutter.",
+        "learnFinance": "LearnFinance is a platform to help people learn finance. Made using Flutter."
       },
       "docker": {
         "description": "Docker images for development and data science. The codes are in a private github repository.",
@@ -288,19 +288,6 @@
       "podcast10": "Episode 10: Sovereign Clouds & Compliance"
     }
   },
-  "digital-assets": {
-    "ebooks": {
-      "ebooksHeader": "Ebooks:",
-      "gcp-ebook": "GCP E-book",
-      "gcp-ebook-desc": "Comprehensive guide to Google Cloud Platform services and best practices.",
-      "azure-ebook": "Azure E-book",
-      "azure-ebook-desc": "Comprehensive guide to Microsoft Azure services and best practices.",
-      "python-ebook": "Python E-book",
-      "python-ebook-desc": "Comprehensive guide to Python programming, including data science and AI applications.",
-      "ai-ebook": "AI E-book",
-      "ai-ebook-desc": "Comprehensive guide to Artificial Intelligence concepts, techniques, and applications."
-    }
-  },
   "diplomas": [
     {
       "title": "Master in AI & Data Science",
@@ -401,11 +388,6 @@
       "vscode": "Extensions for Visual Studio Code.",
       "aiNewsletter": "Automated AI-powered newsletter generation.",
       "investTools": "Automated daily stock market briefing and Forex conversion matrix powered by Yahoo Finance and Google Gemini AI."
-    },
-    "digitalAssets": {
-      "header": "Digital Assets",
-      "subtitle": "Digital assets and resources for professionals.",
-      "ebooks": "Ebooks covering cloud platforms and best practices."
     },
     "training": {
       "header": "Training",
