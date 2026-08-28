@@ -22,8 +22,6 @@ export default function Footer() {
             <Link to="/training" className="is-size-7">{t("nav.training")}</Link>
             <span className="is-size-7 has-text-grey">•</span>
             <Link to="/podcasts" className="is-size-7">{t("nav.podcasts")}</Link>
-            <span className="is-size-7 has-text-grey">•</span>
-            <Link to="/digital-assets" className="is-size-7">{t("nav.digital-assets")}</Link>
           </div>
         </div>
       </div>
