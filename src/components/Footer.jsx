@@ -17,6 +17,8 @@ export default function Footer() {
             <span className="is-size-7 has-text-grey">{t("footer.siteLinks")}:</span>
             <Link to="/" className="is-size-7">{t("nav.home")}</Link>
             <span className="is-size-7 has-text-grey">•</span>
+            <Link to="/consulting" className="is-size-7">{t("nav.consulting")}</Link>
+            <span className="is-size-7 has-text-grey">•</span>
             <Link to="/projects" className="is-size-7">{t("nav.projects")}</Link>
             <span className="is-size-7 has-text-grey">•</span>
             <Link to="/training" className="is-size-7">{t("nav.training")}</Link>

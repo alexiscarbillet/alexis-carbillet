@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "consulting": "Consulting",
     "projects": "Projects",
     "training": "Training",
     "podcasts": "Podcasts",
@@ -139,6 +140,8 @@
   "hero": {
     "title": "Hi, I'm Alexis Carbillet",
     "intro": "I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.",
+    "consultingText": "I also offer advisory and consulting services in cloud architecture, SRE, and AI engineering. Learn more about my",
+    "consultingLink": "consulting services",
     "githubText": "For the curious ones, here is my",
     "linkedinText": "and my",
     "killercodaText": "I also wrote different scenarios to train people for the CKA certification as well as learn how to use Linux. Here is my",
@@ -394,6 +397,137 @@
       "subtitle": "Interactive training scenarios for certification prep.",
       "cka": "Certified Kubernetes Administrator training scenarios.",
       "linux": "Linux system administration training scenarios."
+    }
+  },
+  "consulting": {
+    "metaTitle": "Consulting Services",
+    "metaDescription": "Principal SRE, Multi-Cloud Infrastructure & AI Engineering consulting services by Alexis Carbillet. Connect on LinkedIn.",
+    "badge": "Available for Select Consulting & Advisory Projects",
+    "heroTitle": "Cloud Infrastructure, SRE & AI Engineering Consulting",
+    "heroSubtitle": "Helping engineering teams and enterprises build resilient multi-cloud platforms, enterprise observability, robust cloud security, and agentic AI automation.",
+    "ctaLinkedIn": "Contact Me on LinkedIn",
+    "ctaGitHub": "Explore My GitHub",
+    "stats": {
+      "experience": "10+ Years",
+      "experienceLabel": "Systems & Software Experience",
+      "regions": "40+ Regions",
+      "regionsLabel": "Public Cloud Regions & 50 Local Zones Managed",
+      "certifications": "9 Certifications",
+      "certificationsLabel": "Cloud, Kubernetes (CKA), Security & AI Certified",
+      "education": "Master's Degree",
+      "educationLabel": "Master in AI & Data Science (IMT Mines Alès)"
+    },
+    "servicesTitle": "Consulting Services & Capabilities",
+    "servicesSubtitle": "Hands-on technical leadership and strategic engineering consulting tailored to your infrastructure and business objectives.",
+    "services": [
+      {
+        "id": "cloud-iac",
+        "title": "Multi-Cloud Architecture & Infrastructure as Code",
+        "tagline": "Scalable, repeatable, and cost-effective multi-cloud infrastructure.",
+        "description": "Architect, migrate, and modernize cloud infrastructure across Azure, GCP, AWS, and OVHcloud. Leveraging Terraform, Helm, and GitOps to build secure, declarative environments.",
+        "deliverables": [
+          "Multi-cloud landing zones & foundation architecture",
+          "Production-ready Terraform & OpenStack / Kubernetes modules",
+          "Migration strategies & zero-downtime cutovers",
+          "Infrastructure cost auditing & resource optimization"
+        ],
+        "tags": ["Terraform", "Kubernetes", "AWS", "Azure", "GCP", "OVHcloud", "OpenStack"]
+      },
+      {
+        "id": "sre-observability",
+        "title": "Site Reliability Engineering & Observability",
+        "tagline": "Enterprise telemetry, proactive self-healing, and high-availability operations.",
+        "description": "Design and deploy unified monitoring platforms covering distributed metrics, traces, and logs. Establish SLO/SLI governance, incident response crisis playbooks, and automated remediation.",
+        "deliverables": [
+          "Full-stack observability platforms (Prometheus, Thanos, Grafana, OpenSearch)",
+          "Error tracking & application profiling (Sentry, Pyrra, Percona)",
+          "Production crisis management & incident response playbooks",
+          "Self-healing infrastructure triggers & automated chaos testing"
+        ],
+        "tags": ["Prometheus", "Thanos", "Grafana", "OpenSearch", "Sentry", "Pyrra", "SLO / SLIs"]
+      },
+      {
+        "id": "security-iam",
+        "title": "Enterprise Cloud Security & IAM Governance",
+        "tagline": "Zero-trust architecture, identity federation, and automated threat detection.",
+        "description": "Implement cross-environment identity and access management with strict least-privilege enforcement, unified security monitoring, and automated vulnerability triage.",
+        "deliverables": [
+          "Cross-cloud IAM & Workforce Identity Federation (Entra ID + GCP IAM)",
+          "Unified SIEM & security monitoring (Azure Sentinel, SCC, Defender)",
+          "Agentic AppSec vulnerability triage and auto-remediation workflows",
+          "Zero-trust compliance, audit readiness & secret management"
+        ],
+        "tags": ["Entra ID", "GCP IAM", "Azure Sentinel", "Defender", "SCC", "AppSec", "Zero Trust"]
+      },
+      {
+        "id": "ai-automation",
+        "title": "Agentic AI & Machine Learning Engineering",
+        "tagline": "Generative AI solutions, LLM orchestration, and predictive intelligence.",
+        "description": "Harness modern AI/ML to solve real business bottlenecks: from intelligent agentic workflows and LLM document assistants to edge computer vision and predictive capacity forecasting.",
+        "deliverables": [
+          "Custom agentic orchestrators & LLM workflow automation (Gemini, Claude, GPT)",
+          "Predictive AI models for infrastructure capacity and anomaly forecasting",
+          "Edge AI systems (audio/speech processing, low-latency computer vision)",
+          "Data science pipelines, financial analytics & market intelligence tools"
+        ],
+        "tags": ["GenAI", "LLMs", "Gemini AI", "Predictive ML", "Edge AI", "Python", "Data Science"]
+      },
+      {
+        "id": "devops-cicd",
+        "title": "DevOps Automation & Custom Platform Tooling",
+        "tagline": "Eliminating operational toil with tailored utilities and serverless pipelines.",
+        "description": "Build custom internal developer platforms (IDP), automated CI/CD pipelines, and bespoke operational tooling using modern languages and serverless runtimes.",
+        "deliverables": [
+          "Enterprise GitHub Actions workflows & automated release pipelines",
+          "Custom internal APIs & developer tooling (Python, Go, HTMX, Bash)",
+          "Containerization (Docker multi-stage) & Helm packaging",
+          "Serverless event-driven automation & cron pipelines"
+        ],
+        "tags": ["GitHub Actions", "Python", "Go", "HTMX", "Bash", "Docker", "Helm"]
+      },
+      {
+        "id": "audits-advisory",
+        "title": "Technical Audits, Architecture Reviews & Mentorship",
+        "tagline": "Independent assessments and actionable roadmaps for engineering leadership.",
+        "description": "Deep-dive technical reviews of existing cloud architectures, reliability bottlenecks, security postures, and engineering workflows with clear executive and engineering roadmaps.",
+        "deliverables": [
+          "Comprehensive infrastructure resilience & scalability audits",
+          "Reliability gap analysis & disaster recovery readiness",
+          "Technical mentorship & SRE / Kubernetes hands-on upskilling",
+          "Fractional SRE / Technical Advisory for leadership"
+        ],
+        "tags": ["Architecture Review", "Reliability Audit", "Mentorship", "Disaster Recovery", "Tech Advisory"]
+      }
+    ],
+    "processTitle": "How We Work Together",
+    "processSubtitle": "A structured, transparent consulting approach designed to deliver rapid and measurable technical value.",
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Discovery & Scope",
+        "description": "Initial discussion on LinkedIn or video call to assess your technical challenges, architecture state, timeline, and strategic goals."
+      },
+      {
+        "step": "02",
+        "title": "Technical Strategy",
+        "description": "Formulating a tailored proposal, architectural roadmap, deliverables, and milestones with clear success criteria."
+      },
+      {
+        "step": "03",
+        "title": "Execution & Delivery",
+        "description": "Direct hands-on engineering, code delivery (Terraform, CI/CD, Python/Go), infrastructure rollout, and transparent status updates."
+      },
+      {
+        "step": "04",
+        "title": "Verification & Knowledge Transfer",
+        "description": "Validation against observability metrics, thorough documentation, and knowledge transfer sessions for your internal team."
+      }
+    ],
+    "contactBox": {
+      "title": "Ready to discuss your project?",
+      "description": "Whether you need a full infrastructure overhaul, an AI-powered automation solution, or a fractional SRE advisor, let's connect on LinkedIn to discuss how I can help.",
+      "linkedinButton": "Connect on LinkedIn",
+      "githubButton": "View GitHub Profile"
     }
   }
 }

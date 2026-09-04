@@ -23,6 +23,7 @@ import Podcasts from './Podcasts.jsx';
 import Education from './Education.jsx';
 import Projects from './Projects.jsx';
 import Training from './Training.jsx';
+import Consulting from './Consulting.jsx';
 import Footer from './components/Footer.jsx';
 
 import './index.css';
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/consulting" element={<Consulting />} />
         <Route path="/training/cka" element={<TrainingCKA />} />
         <Route path="/training/linux" element={<TrainingLinux />} />
         <Route path="/projects/android" element={<ProjectsAndroid />} />

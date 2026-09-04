@@ -62,9 +62,9 @@ export default function Certifications() {
                   <div className="card-content">
                     <p className="title">{cert.title}</p>
                     <p className="subtitle is-6">{cert.issuer}</p>
-                    <button className="button is-primary is-outlined">
-                      <a href={cert.url} target="_blank" rel="noreferrer">{t("buttons.website")}</a>
-                    </button>
+                    <a className="button is-primary" href={cert.url} target="_blank" rel="noreferrer">
+                      {t("buttons.website")}
+                    </a>
                   </div>
                 </div>
               </div>

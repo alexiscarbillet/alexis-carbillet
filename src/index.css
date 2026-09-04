@@ -1,9 +1,10 @@
-:root {
+:root,
+html[data-theme="dark"] {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -13,18 +14,256 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #61dafbaa;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-a.button {
-  color: white !important;
+html[data-theme="light"] {
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
 }
 
+html[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #213547;
+}
+
+html[data-theme="dark"] body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* =========================================
+   NAVBAR STYLING (Dark text on teal/blue background)
+   ========================================= */
+.navbar.is-primary {
+  background-color: #00d1b2 !important;
+}
+
+.navbar.is-primary .navbar-brand > a.navbar-item,
+.navbar.is-primary .navbar-brand .navbar-item strong,
+.navbar.is-primary .navbar-start > a.navbar-item,
+.navbar.is-primary .navbar-start > .navbar-item > .navbar-link,
+.navbar.is-primary .navbar-end > a.navbar-item,
+.navbar.is-primary .navbar-end > .navbar-item > .navbar-link,
+.navbar.is-primary .navbar-item,
+.navbar.is-primary .navbar-item strong {
+  color: #1a1a1a !important;
+  font-weight: 600;
+}
+
+.navbar.is-primary .navbar-start > a.navbar-item:hover,
+.navbar.is-primary .navbar-start > .navbar-item:hover > .navbar-link,
+.navbar.is-primary .navbar-end > a.navbar-item:hover,
+.navbar.is-primary .navbar-end > .navbar-item:hover > .navbar-link {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  color: #000000 !important;
+}
+
+.navbar.is-primary .navbar-link:not(.is-arrowless)::after {
+  border-color: #1a1a1a !important;
+}
+
+.navbar.is-primary .navbar-burger span {
+  background-color: #1a1a1a !important;
+}
+
+/* =========================================
+   NAVBAR DROPDOWNS
+   ========================================= */
+html[data-theme="dark"] .navbar-dropdown {
+  background-color: #1e1e1e !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-top: 2px solid #00d1b2 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+html[data-theme="dark"] .navbar-dropdown a.navbar-item {
+  color: #e2e8f0 !important;
+  background-color: transparent !important;
+}
+html[data-theme="dark"] .navbar-dropdown a.navbar-item:hover {
+  background-color: #2d3748 !important;
+  color: #00d1b2 !important;
+}
+
+html[data-theme="light"] .navbar-dropdown {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+html[data-theme="light"] .navbar-dropdown a.navbar-item {
+  color: #2d3748 !important;
+  background-color: transparent !important;
+}
+html[data-theme="light"] .navbar-dropdown a.navbar-item:hover {
+  background-color: #f7fafc !important;
+  color: #007563 !important;
+}
+
+/* =========================================
+   LINKS & HOVERS (Scoped to content)
+   ========================================= */
+a {
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+/* Dark mode content links */
+html[data-theme="dark"] a:not(.navbar-item):not(.navbar-link):not(.button):not(.dropdown-item) {
+  font-weight: 500;
+  color: #00d1b2;
+}
+html[data-theme="dark"] a:not(.navbar-item):not(.navbar-link):not(.button):not(.dropdown-item):hover {
+  color: #38e1ca;
+  text-decoration: underline;
+}
+
+/* Light mode content links */
+html[data-theme="light"] a:not(.navbar-item):not(.navbar-link):not(.button):not(.dropdown-item) {
+  font-weight: 600;
+  color: #007563;
+}
+html[data-theme="light"] a:not(.navbar-item):not(.navbar-link):not(.button):not(.dropdown-item):hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+/* =========================================
+   PRIMARY BUTTONS (Dark text on teal/blue)
+   ========================================= */
+a.button {
+  text-decoration: none !important;
+}
+
+a.button.is-primary,
+button.is-primary,
+.button.is-primary,
+.button.is-primary a,
+a.button.is-primary * {
+  color: #1a1a1a !important;
+  background-color: #00d1b2 !important;
+  border-color: transparent !important;
+  font-weight: 600 !important;
+}
+
+a.button.is-primary:hover,
+button.is-primary:hover,
+.button.is-primary:hover {
+  background-color: #00c4a7 !important;
+  color: #000000 !important;
+}
+
+a.button.is-primary svg,
+button.is-primary svg {
+  color: #1a1a1a !important;
+}
+
+/* Outlined buttons */
+html[data-theme="dark"] .button.is-primary.is-outlined {
+  background-color: transparent !important;
+  border-color: #00d1b2 !important;
+  color: #00d1b2 !important;
+}
+html[data-theme="dark"] .button.is-primary.is-outlined:hover {
+  background-color: #00d1b2 !important;
+  color: #1a1a1a !important;
+}
+html[data-theme="light"] .button.is-primary.is-outlined {
+  background-color: transparent !important;
+  border-color: #007563 !important;
+  color: #007563 !important;
+}
+html[data-theme="light"] .button.is-primary.is-outlined:hover {
+  background-color: #007563 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================
+   DARK THEME COMPONENTS
+   ========================================= */
+html[data-theme="dark"] .title {
+  color: #f5f5f5 !important;
+}
+html[data-theme="dark"] .subtitle {
+  color: #b5b5b5 !important;
+}
+html[data-theme="dark"] .card {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+html[data-theme="dark"] .box {
+  background-color: #262626 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+html[data-theme="dark"] .tag.is-light {
+  background-color: #333333 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+html[data-theme="dark"] .tag.is-primary.is-light {
+  background-color: rgba(0, 209, 178, 0.18) !important;
+  color: #00d1b2 !important;
+  border: 1px solid rgba(0, 209, 178, 0.35) !important;
+}
+html[data-theme="dark"] .button.is-light {
+  background-color: #333333 !important;
+  color: #e0e0e0 !important;
+  border-color: #444444 !important;
+}
+html[data-theme="dark"] .button.is-light:hover {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+html[data-theme="dark"] .has-text-grey,
+html[data-theme="dark"] .has-text-grey-light {
+  color: #a3a3a3 !important;
+}
+html[data-theme="dark"] .has-text-grey-dark {
+  color: #d1d5db !important;
+}
+
+/* =========================================
+   LIGHT THEME COMPONENTS
+   ========================================= */
+html[data-theme="light"] .title {
+  color: #1a202c !important;
+}
+html[data-theme="light"] .subtitle {
+  color: #4a5568 !important;
+}
+html[data-theme="light"] .card {
+  background-color: #ffffff !important;
+  color: #2d3748 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid #e2e8f0 !important;
+}
+html[data-theme="light"] .box {
+  background-color: #f7fafc !important;
+  color: #2d3748 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+html[data-theme="light"] .tag.is-light {
+  background-color: #edf2f7 !important;
+  color: #2d3748 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+html[data-theme="light"] .tag.is-primary.is-light {
+  background-color: rgba(0, 184, 156, 0.12) !important;
+  color: #007563 !important;
+  border: 1px solid rgba(0, 184, 156, 0.25) !important;
+}
+html[data-theme="light"] .button.is-light {
+  background-color: #edf2f7 !important;
+  color: #2d3748 !important;
+  border-color: #cbd5e0 !important;
+}
+html[data-theme="light"] .has-text-grey,
+html[data-theme="light"] .has-text-grey-light {
+  color: #718096 !important;
+}
+
+/* =========================================
+   BASE STYLES
+   ========================================= */
 body {
   margin: 0;
   display: flex;
@@ -45,27 +284,17 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #646cff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+html[data-theme="dark"] button:not(.button) {
+  background-color: #1a1a1a;
+  border-color: #333;
+  color: #fff;
+}
+html[data-theme="light"] button:not(.button) {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+  color: #213547;
 }

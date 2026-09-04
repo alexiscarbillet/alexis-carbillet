@@ -1,7 +1,49 @@
-// src/components/Navbar.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+
+function ThemeSwitcher() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
+  return (
+    <div className="navbar-item">
+      <button
+        type="button"
+        onClick={toggleTheme}
+        className="button is-small is-rounded"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.4rem",
+          cursor: "pointer",
+          fontWeight: 600,
+          backgroundColor: "rgba(0, 0, 0, 0.12)",
+          color: "#1a1a1a",
+          border: "1px solid rgba(0, 0, 0, 0.25)",
+          padding: "0.25rem 0.75rem"
+        }}
+        title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        aria-label="Toggle light/dark theme"
+      >
+        <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+        <span>{theme === "dark" ? "Light" : "Dark"}</span>
+      </button>
+    </div>
+  );
+}
 
 function LangSwitcher() {
   const { i18n, t } = useTranslation();
@@ -52,6 +94,10 @@ export default function Navbar() {
 
       <div className={`navbar-menu ${isMenuOpen ? "is-active" : ""}`}>
         <div className="navbar-start">
+
+          <Link className="navbar-item" to="/consulting" onClick={closeMenu}>
+            <strong>{t("nav.consulting")}</strong>
+          </Link>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <Link className="navbar-link" to="/education" onClick={closeMenu}>
@@ -118,8 +164,9 @@ export default function Navbar() {
 
         </div>
 
-        {/* Language Switcher on the right */}
-        <div className="navbar-end">
+        {/* Theme & Language Switcher on the right */}
+        <div className="navbar-end" style={{ alignItems: "center" }}>
+          <ThemeSwitcher />
           <LangSwitcher />
         </div>
       </div>

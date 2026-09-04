@@ -31,9 +31,9 @@ export default function Diplomas() {
                   <div className="card-content">
                     <p className="title">{diploma.title}</p>
                     <p className="subtitle is-6">{diploma.issuer}</p>
-                    <button className="button is-primary is-outlined">
-                      <a href={diploma.url} target="_blank" rel="noreferrer">{t("buttons.website")}</a>
-                    </button>
+                    <a className="button is-primary" href={diploma.url} target="_blank" rel="noreferrer">
+                      {t("buttons.website")}
+                    </a>
                   </div>
                 </div>
               </div>

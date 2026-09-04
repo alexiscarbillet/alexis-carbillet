@@ -57,6 +57,10 @@ export default function ExperienceTimeline() {
               <p dangerouslySetInnerHTML={{ __html: t("hero.intro") }}></p>
 
               <p>
+                {t("hero.consultingText")} <Link to="/consulting">{t("hero.consultingLink")}</Link>.
+              </p>
+
+              <p>
                 {t("hero.githubText")} <a href="https://github.com/alexiscarbillet" target="_blank" rel="noreferrer">github</a> {t("hero.linkedinText")} <a href="https://www.linkedin.com/in/alexis-carbillet/" target="_blank" rel="noreferrer">linkedin</a>. 
               </p>
 

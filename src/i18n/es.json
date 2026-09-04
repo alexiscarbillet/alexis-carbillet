@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
+    "consulting": "Consultoría",
     "projects": "Proyectos",
     "training": "Formación",
     "podcasts": "Podcasts",
@@ -139,6 +140,8 @@
   "hero": {
     "title": "Hola, soy Alexis Carbillet",
     "intro": "Soy ingeniero de cloud e IA con pasión por construir sistemas escalables y experiencias de usuario agradables.",
+    "consultingText": "También ofrezco servicios de consultoría y asesoría en arquitectura cloud, SRE e ingeniería de IA. Conozca mis",
+    "consultingLink": "servicios de consultoría",
     "githubText": "Para los curiosos, aquí está mi",
     "linkedinText": "y mi",
     "killercodaText": "También escribí diferentes escenarios para entrenar a las personas para la certificación CKA y aprender a usar Linux. Aquí está mi",
@@ -393,6 +396,137 @@
       "subtitle": "Escenarios de formación interactivos para preparación de certificaciones.",
       "cka": "Escenarios de formación para Certified Kubernetes Administrator.",
       "linux": "Escenarios de formación en administración de sistemas Linux."
+    }
+  },
+  "consulting": {
+    "metaTitle": "Servicios de Consultoría",
+    "metaDescription": "Servicios de consultoría en Principal SRE, infraestructura multi-cloud e ingeniería de IA por Alexis Carbillet. Contáctame en LinkedIn.",
+    "badge": "Disponible para proyectos selectos de consultoría y asesoría",
+    "heroTitle": "Consultoría en Infraestructura Cloud, SRE e Ingeniería de IA",
+    "heroSubtitle": "Ayudando a equipos de ingeniería y empresas a construir plataformas multi-cloud resilientes, observabilidad avanzada, seguridad robusta y automatización con IA agéntica.",
+    "ctaLinkedIn": "Contactar en LinkedIn",
+    "ctaGitHub": "Ver mi GitHub",
+    "stats": {
+      "experience": "10+ Años",
+      "experienceLabel": "Experiencia en Sistemas y Software",
+      "regions": "40+ Regiones",
+      "regionsLabel": "Regiones Cloud Públicas y 50 Zonas Locales Gestionadas",
+      "certifications": "9 Certificaciones",
+      "certificationsLabel": "Certificado en Cloud, Kubernetes (CKA), Seguridad e IA",
+      "education": "Máster Universitario",
+      "educationLabel": "Máster en IA y Ciencia de Datos (IMT Mines Alès)"
+    },
+    "servicesTitle": "Servicios de Consultoría y Capacidades",
+    "servicesSubtitle": "Liderazgo técnico práctico y consultoría de ingeniería estratégica adaptada a su infraestructura y objetivos de negocio.",
+    "services": [
+      {
+        "id": "cloud-iac",
+        "title": "Arquitectura Multi-Cloud e Infraestructura como Código",
+        "tagline": "Infraestructura multi-cloud escalable, reproducible y optimizada.",
+        "description": "Diseñar, migrar y modernizar infraestructuras en Azure, GCP, AWS y OVHcloud. Utilizando Terraform, Helm y GitOps para crear entornos declarativos y seguros.",
+        "deliverables": [
+          "Landing zones multi-cloud y arquitectura fundacional",
+          "Módulos listos para producción en Terraform, OpenStack y Kubernetes",
+          "Estrategias de migración y transiciones sin tiempo de inactividad",
+          "Auditoría de costes de infraestructura y optimización de recursos"
+        ],
+        "tags": ["Terraform", "Kubernetes", "AWS", "Azure", "GCP", "OVHcloud", "OpenStack"]
+      },
+      {
+        "id": "sre-observability",
+        "title": "Site Reliability Engineering (SRE) y Observabilidad",
+        "tagline": "Telemetría empresarial, auto-reparación proactiva y operaciones de alta disponibilidad.",
+        "description": "Diseñar y desplegar plataformas unificadas de monitorización que abarcan métricas distribuidas, trazas y logs. Gobernanza de SLO/SLI, playbooks de crisis de incidentes y remediación automatizada.",
+        "deliverables": [
+          "Plataformas completas de observabilidad (Prometheus, Thanos, Grafana, OpenSearch)",
+          "Seguimiento de errores y perfilado de aplicaciones (Sentry, Pyrra, Percona)",
+          "Gestión de crisis de producción y manuales de respuesta a incidentes",
+          "Disparadores de auto-reparación de infraestructura y pruebas de caos"
+        ],
+        "tags": ["Prometheus", "Thanos", "Grafana", "OpenSearch", "Sentry", "Pyrra", "SLO / SLIs"]
+      },
+      {
+        "id": "security-iam",
+        "title": "Seguridad Cloud Empresarial y Gobernanza IAM",
+        "tagline": "Arquitectura Zero-Trust, federación de identidades y detección automatizada de amenazas.",
+        "description": "Implementar gestión de identidades y accesos multi-entorno con estricto mínimo privilegio, monitorización de seguridad unificada y triaje automatizado de vulnerabilidades.",
+        "deliverables": [
+          "IAM multi-cloud y federación de identidades (Entra ID + Google Cloud IAM)",
+          "Monitorización de seguridad unificada (Azure Sentinel, SCC, Defender)",
+          "Orquestador AppSec agéntico y flujos de trabajo de remediación automática",
+          "Cumplimiento Zero-Trust, preparación para auditorías y gestión de secretos"
+        ],
+        "tags": ["Entra ID", "GCP IAM", "Azure Sentinel", "Defender", "SCC", "AppSec", "Zero Trust"]
+      },
+      {
+        "id": "ai-automation",
+        "title": "IA Agéntica e Ingeniería de Machine Learning",
+        "tagline": "Soluciones de IA generativa, orquestación de LLMs e inteligencia predictiva.",
+        "description": "Aprovechar la IA/ML moderna para resolver cuellos de botella empresariales: desde flujos de trabajo agénticos y asistentes de documentación con LLMs hasta visión artificial edge y predicción de capacidad.",
+        "deliverables": [
+          "Orquestadores agénticos a medida y automatización con LLMs (Gemini, Claude, GPT)",
+          "Modelos de IA predictiva para previsión de capacidad y anomalías",
+          "Sistemas de IA Edge (procesamiento de voz/audio y visión por computador de baja latencia)",
+          "Pipelines de ciencia de datos y herramientas de inteligencia financiera"
+        ],
+        "tags": ["GenAI", "LLMs", "Gemini AI", "ML Predictivo", "Edge AI", "Python", "Data Science"]
+      },
+      {
+        "id": "devops-cicd",
+        "title": "Automatización DevOps y Herramientas a Medida",
+        "tagline": "Eliminar la sobrecarga operativa con utilidades personalizadas y flujos serverless.",
+        "description": "Construir plataformas internas para desarrolladores (IDP), pipelines automatizados de CI/CD y herramientas operativas personalizadas con lenguajes modernos.",
+        "deliverables": [
+          "Flujos de trabajo GitHub Actions empresariales y pipelines de despliegue continuo",
+          "APIs internas y utilidades para desarrolladores (Python, Go, HTMX, Bash)",
+          "Contenedorización (Docker multi-etapa) y empaquetado con Helm",
+          "Automatización serverless basada en eventos y tareas programadas"
+        ],
+        "tags": ["GitHub Actions", "Python", "Go", "HTMX", "Bash", "Docker", "Helm"]
+      },
+      {
+        "id": "audits-advisory",
+        "title": "Auditorías Técnicas, Revisiones de Arquitectura y Mentoría",
+        "tagline": "Evaluaciones independientes y hojas de ruta prácticas para líderes de ingeniería.",
+        "description": "Revisiones técnicas exhaustivas de arquitecturas cloud existentes, cuellos de botella de fiabilidad y posturas de seguridad con planes de acción claros.",
+        "deliverables": [
+          "Auditorías completas de resiliencia y escalabilidad de infraestructura",
+          "Análisis de brechas de fiabilidad y preparación para recuperación ante desastres",
+          "Mentoría técnica y capacitación práctica en SRE y Kubernetes",
+          "SRE fraccional y asesoría técnica para directivos"
+        ],
+        "tags": ["Revisión de Arquitectura", "Auditoría de Fiabilidad", "Mentoría", "Recuperación Desastres", "Asesoría Técnica"]
+      }
+    ],
+    "processTitle": "Cómo Trabajamos Juntos",
+    "processSubtitle": "Un enfoque de consultoría estructurado y transparente diseñado para ofrecer un valor técnico rápido y medible.",
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Descubrimiento y Alcance",
+        "description": "Conversación inicial en LinkedIn o videollamada para evaluar sus desafíos técnicos, estado de arquitectura y objetivos."
+      },
+      {
+        "step": "02",
+        "title": "Estrategia Técnica",
+        "description": "Formulación de una propuesta personalizada, hoja de ruta de arquitectura y entregables con criterios de éxito claros."
+      },
+      {
+        "step": "03",
+        "title": "Ejecución y Entrega",
+        "description": "Ingeniería directa, entrega de código (Terraform, CI/CD, Python/Go), despliegue de infraestructura y seguimiento transparente."
+      },
+      {
+        "step": "04",
+        "title": "Validación y Transferencia de Conocimiento",
+        "description": "Validación mediante métricas de observabilidad, documentación exhaustiva y sesiones de formación para su equipo interno."
+      }
+    ],
+    "contactBox": {
+      "title": "¿Listo para hablar sobre su proyecto?",
+      "description": "Ya sea que necesite una modernización de infraestructura, una solución de automatisation con IA o un asesor SRE fraccional, conectemos en LinkedIn.",
+      "linkedinButton": "Conectar en LinkedIn",
+      "githubButton": "Ver Perfil de GitHub"
     }
   }
 }
