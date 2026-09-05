@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import SEO from './components/SEO';
 import { useTranslation } from 'react-i18next';
 
-export default function Training() {
+export default function Killercoda() {
   const { t } = useTranslation();
 
   const trainings = [
@@ -24,9 +24,9 @@ export default function Training() {
   return (
     <>
       <SEO
-        title="Training"
-        description="Explore my training scenarios for CKA and Linux."
-        url="https://alexis-carbillet.com/training"
+        title="Killercoda"
+        description="Explore my Killercoda training scenarios for CKA and Linux."
+        url="https://alexis-carbillet.com/killercoda"
       />
       <Navbar />
       <section className="section" style={{ marginTop: '50px' }}>

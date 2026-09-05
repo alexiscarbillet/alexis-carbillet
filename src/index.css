@@ -53,8 +53,8 @@ html[data-theme="dark"] body {
 .navbar.is-primary .navbar-start > .navbar-item:hover > .navbar-link,
 .navbar.is-primary .navbar-end > a.navbar-item:hover,
 .navbar.is-primary .navbar-end > .navbar-item:hover > .navbar-link {
-  background-color: rgba(0, 0, 0, 0.08) !important;
-  color: #000000 !important;
+  background-color: #00c4a7 !important;
+  color: #1a1a1a !important;
 }
 
 .navbar.is-primary .navbar-link:not(.is-arrowless)::after {
@@ -95,6 +95,65 @@ html[data-theme="light"] .navbar-dropdown a.navbar-item {
 html[data-theme="light"] .navbar-dropdown a.navbar-item:hover {
   background-color: #f7fafc !important;
   color: #007563 !important;
+}
+
+.navbar-dropdown .navbar-item.has-dropdown {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-dropdown .navbar-item.has-dropdown > .navbar-link {
+  width: 100%;
+}
+
+.navbar-dropdown .navbar-item.has-dropdown > .navbar-dropdown {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+}
+
+.navbar.is-primary .navbar-nested-dropdown {
+  background-color: #00d1b2 !important;
+  border-color: transparent !important;
+}
+
+.navbar.is-primary .navbar-dropdown .navbar-link,
+.navbar.is-primary .navbar-dropdown a.navbar-item {
+  color: #1a1a1a !important;
+  background-color: #00d1b2 !important;
+}
+
+.navbar.is-primary .navbar-nested-dropdown .navbar-link,
+.navbar.is-primary .navbar-nested-dropdown a.navbar-item {
+  color: #1a1a1a !important;
+}
+
+.navbar.is-primary .navbar-dropdown .navbar-link:hover,
+.navbar.is-primary .navbar-dropdown a.navbar-item:hover,
+.navbar.is-primary .navbar-nested-dropdown .navbar-link:hover,
+.navbar.is-primary .navbar-nested-dropdown a.navbar-item:hover {
+  background-color: #00c4a7 !important;
+  color: #1a1a1a !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-dropdown .navbar-nested-dropdown {
+    display: none !important;
+  }
+
+  .navbar-dropdown .navbar-item.has-dropdown:hover > .navbar-nested-dropdown,
+  .navbar-dropdown .navbar-item.has-dropdown:focus-within > .navbar-nested-dropdown {
+    display: block !important;
+  }
+}
+
+html[data-theme="dark"] .navbar-divider {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  margin: 0.25rem 0;
+}
+html[data-theme="light"] .navbar-divider {
+  background-color: #e2e8f0 !important;
+  margin: 0.25rem 0;
 }
 
 /* =========================================

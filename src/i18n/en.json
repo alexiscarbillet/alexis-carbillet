@@ -1,9 +1,11 @@
 {
   "nav": {
     "home": "Home",
+    "resume": "Resume",
     "consulting": "Consulting",
+    "teaching": "Teaching",
+    "killercoda": "Killercoda",
     "projects": "Projects",
-    "training": "Training",
     "podcasts": "Podcasts",
     "podcasts.ai": "Artificial Intelligence",
     "podcasts.cloud": "Cloud Computing",
@@ -140,6 +142,8 @@
   "hero": {
     "title": "Hi, I'm Alexis Carbillet",
     "intro": "I'm a cloud & AI engineer with a passion for building scalable systems and delightful user experiences.",
+    "resumeText": "My professional resume is available",
+    "resumeLink": "here",
     "consultingText": "I also offer advisory and consulting services in cloud architecture, SRE, and AI engineering. Learn more about my",
     "consultingLink": "consulting services",
     "githubText": "For the curious ones, here is my",
@@ -529,5 +533,22 @@
       "linkedinButton": "Connect on LinkedIn",
       "githubButton": "View GitHub Profile"
     }
+  },
+  "resume": {
+    "metaTitle": "Resume - Experiences, Education & Certifications",
+    "metaDescription": "Explore Alexis Carbillet's professional resume: Principal SRE & AI Engineer experience, Master in AI & Data Science, and verified cloud certifications.",
+    "header": "Resume",
+    "subtitle": "Professional Experience, Academic Background & Verified Certifications",
+    "sections": {
+      "summary": "Professional Summary",
+      "experience": "Professional Experience",
+      "education": "Education & Degrees",
+      "certifications": "Certifications & Credentials"
+    },
+    "filterByIssuer": "Filter certifications by issuer:",
+    "allIssuers": "All Issuers",
+    "contactCta": "Interested in working together? Check out my",
+    "contactCtaLink": "consulting services",
+    "orConnect": "or connect directly on"
   }
 }

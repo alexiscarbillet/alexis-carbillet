@@ -1,9 +1,11 @@
 {
   "nav": {
     "home": "Accueil",
+    "resume": "CV",
     "consulting": "Conseil",
+    "teaching": "Enseignement",
+    "killercoda": "Killercoda",
     "projects": "Projets",
-    "training": "Formations",
     "podcasts": "Podcasts",
     "podcasts.ai": "Intelligence Artificielle",
     "podcasts.cloud": "Infonuagique",
@@ -140,6 +142,8 @@
   "hero": {
     "title": "Bonjour, je suis Alexis Carbillet",
     "intro": "Je suis ingénieur Cloud & IA, passionné par la création de systèmes scalables et d'expériences utilisateur soignées.",
+    "resumeText": "Mon CV professionnel est disponible",
+    "resumeLink": "ici",
     "consultingText": "Je propose également des services de conseil et d'expertise en architecture cloud, SRE et ingénierie IA. Découvrez mes",
     "consultingLink": "services de conseil",
     "githubText": "Pour les plus curieux, voici mon",
@@ -529,5 +533,22 @@
       "linkedinButton": "Me contacter sur LinkedIn",
       "githubButton": "Voir mon profil GitHub"
     }
+  },
+  "resume": {
+    "metaTitle": "CV - Expériences, Diplômes & Certifications",
+    "metaDescription": "Découvrez le curriculum vitae professionnel d'Alexis Carbillet : expérience en SRE Principal & Ingénierie IA, Master en IA & Data Science, et certifications cloud vérifiées.",
+    "header": "Curriculum Vitae",
+    "subtitle": "Expérience Professionnelle, Formation Académique & Certifications Vérifiées",
+    "sections": {
+      "summary": "Profil Professionnel",
+      "experience": "Expérience Professionnelle",
+      "education": "Diplômes & Formation",
+      "certifications": "Certifications Professionnelles"
+    },
+    "filterByIssuer": "Filtrer les certifications par organisme :",
+    "allIssuers": "Tous les organismes",
+    "contactCta": "Vous souhaitez collaborer ? Découvrez mes",
+    "contactCtaLink": "services de conseil",
+    "orConnect": "ou contactez-moi sur"
   }
 }

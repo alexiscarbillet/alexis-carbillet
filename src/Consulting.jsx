@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import SEO from "./components/SEO";
 import { useTranslation } from "react-i18next";
@@ -20,6 +20,10 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Consulting() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const services = t("consulting.services", { returnObjects: true }) || [];
   const processSteps = t("consulting.processSteps", { returnObjects: true }) || [];

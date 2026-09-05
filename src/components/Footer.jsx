@@ -21,7 +21,7 @@ export default function Footer() {
             <span className="is-size-7 has-text-grey">•</span>
             <Link to="/projects" className="is-size-7">{t("nav.projects")}</Link>
             <span className="is-size-7 has-text-grey">•</span>
-            <Link to="/training" className="is-size-7">{t("nav.training")}</Link>
+            <Link to="/killercoda" className="is-size-7">{t("nav.killercoda")}</Link>
             <span className="is-size-7 has-text-grey">•</span>
             <Link to="/podcasts" className="is-size-7">{t("nav.podcasts")}</Link>
           </div>

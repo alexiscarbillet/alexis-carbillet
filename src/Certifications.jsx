@@ -44,10 +44,14 @@ export default function Certifications() {
                 <button
                   key={issuer}
                   className={`button ${selectedIssuers[issuer] ? "is-primary" : "is-light"}`}
-                  onClick={() => setSelectedIssuers(prev => ({
-                    ...prev,
-                    [issuer]: !prev[issuer]
-                  }))}
+                  onClick={() => setSelectedIssuers(
+                    Object.fromEntries(
+                      [...new Set(certifications.map(cert => cert.issuer))].map(currentIssuer => [
+                        currentIssuer,
+                        currentIssuer === issuer
+                      ])
+                    )
+                  )}
                 >
                   {issuer}
                 </button>
