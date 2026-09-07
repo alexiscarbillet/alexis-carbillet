@@ -21,6 +21,8 @@ export default function ProjectsAndroid() {
     { title: "Random words", url: "https://coding.alexis-carbillet.com/apps/random-words/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/android/advancedwords", descriptionKey: "projects.desc.android.randomWords", tech: "android" },
     { title: "Scavenger hunt", url: "https://coding.alexis-carbillet.com/apps/scavenger-hunt/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/scavenger-hunt", descriptionKey: "projects.desc.android.scavengerHunt", tech: "flutter" },
     { title: "LearnIT", url: "https://coding.alexis-carbillet.com/apps/learn-it/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_it", descriptionKey: "projects.desc.android.learnIT", tech: "flutter" },
+    { title: "LearnHardware", url: "https://coding.alexis-carbillet.com/apps/learn-hardware/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_hardware", descriptionKey: "projects.desc.android.learnHardware", tech: "flutter" },
+    { title: "LearnElectricity", url: "https://coding.alexis-carbillet.com/apps/learn-electricity/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_electricity", descriptionKey: "projects.desc.android.learnElectricity", tech: "flutter" },
     { title: "LearnFinance", url: "https://coding.alexis-carbillet.com/apps/learn-finance/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_finance", descriptionKey: "projects.desc.android.learnFinance", tech: "flutter" },
   ];
 

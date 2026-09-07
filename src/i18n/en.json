@@ -48,7 +48,9 @@
         "trainingCanadianCitizenship": "Practice for Canadian citizenship test.",
         "randomWords": "Generate random words for practice.",
         "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter.",
-        "learnIT": "LearnIT is a platform to help people learn different topics. Made using Flutter.",
+        "learnIT": "LearnIT is a general learning app focused on software, cloud, networking, AI, and practical technical topics. Made using Flutter.",
+        "learnHardware": "LearnHardware is a focused study app covering computer hardware foundations, CPUs, memory, storage, motherboards, and cooling. Made using Flutter.",
+        "learnElectricity": "LearnElectricity is a focused study app covering electrical theory, circuits, power systems, wiring, safety, and Canadian electrical regulations. Made using Flutter.",
         "learnFinance": "LearnFinance is a platform to help people learn finance. Made using Flutter."
       },
       "docker": {
