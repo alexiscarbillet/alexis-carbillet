@@ -47,6 +47,7 @@
         "funWithFlags": "Identify flags from around the world.",
         "trainingCanadianCitizenship": "Practice for Canadian citizenship test.",
         "randomWords": "Generate random words for practice.",
+        "languageFlashcards": "Practice vocabulary with a language flashcards app. Made using Flutter.",
         "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter.",
         "learnIT": "LearnIT is a general learning app focused on software, cloud, networking, AI, and practical technical topics. Made using Flutter.",
         "learnHardware": "LearnHardware is a focused study app covering computer hardware foundations, CPUs, memory, storage, motherboards, and cooling. Made using Flutter.",

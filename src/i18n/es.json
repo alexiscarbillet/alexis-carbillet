@@ -47,6 +47,7 @@
         "funWithFlags": "Identificar banderas de todo el mundo.",
         "trainingCanadianCitizenship": "Practicar para el examen de ciudadanía canadiense.",
         "randomWords": "Generar palabras aleatorias para practicar.",
+        "languageFlashcards": "Practica vocabulario con una aplicación de tarjetas didácticas. Hecha usando Flutter.",
         "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter.",
         "learnIT": "LearnIT es una aplicación general para aprender temas técnicos de software, cloud, redes, IA y habilidades prácticas. Hecho usando Flutter.",
         "learnHardware": "LearnHardware es una aplicación de estudio enfocada en fundamentos de hardware, CPUs, memoria, almacenamiento, placas base y enfriamiento. Hecho usando Flutter.",
