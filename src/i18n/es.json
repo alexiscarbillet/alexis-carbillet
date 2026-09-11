@@ -50,9 +50,7 @@
         "languageFlashcards": "Practica vocabulario con una aplicación de tarjetas didácticas. Hecha usando Flutter.",
         "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter.",
         "learnIT": "LearnIT es una aplicación general para aprender temas técnicos de software, cloud, redes, IA y habilidades prácticas. Hecho usando Flutter.",
-        "learnHardware": "LearnHardware es una aplicación de estudio enfocada en fundamentos de hardware, CPUs, memoria, almacenamiento, placas base y enfriamiento. Hecho usando Flutter.",
-        "learnElectricity": "LearnElectricity es una aplicación de estudio enfocada en teoría eléctrica, circuitos, sistemas de potencia, cableado, seguridad y regulación eléctrica canadiense. Hecho usando Flutter.",
-        "learnFinance": "LearnFinance es una plataforma para ayudar a las personas a aprender finanzas. Hecho usando Flutter."
+        "learnHardware": "LearnHardware es una aplicación de estudio enfocada en fundamentos de hardware, CPUs, memoria, almacenamiento, placas base y enfriamiento. Hecho usando Flutter."
       },
       "docker": {
         "description": "Imágenes Docker para desarrollo y ciencia de datos. Los códigos están en un repositorio privado de Github.",
