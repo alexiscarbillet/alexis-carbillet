@@ -177,56 +177,82 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="container" style={{ display: "flex", position: "relative", padding: isMobile ? "1rem" : "2rem", flexWrap: "wrap" }}>
-          {/* Timeline dots - hidden on mobile */}
+        <div className="container" style={{ position: "relative", padding: isMobile ? "1rem" : "2rem" }}>
+          {/* Timeline continuous vertical line - hidden on mobile */}
           {!isMobile && (
-            <div style={{ position: "relative", width: "50px", marginRight: "2rem" }}>
-              <div style={{ position: "absolute", left: "24px", top: 0, bottom: 0, width: "2px", backgroundColor: "rgba(128, 128, 128, 0.3)" }} />
-
-              {experiences.map((exp, idx) => (
-                <div
-                  key={exp.id || idx}
-                  style={{
-                    position: "absolute",
-                    top: `${idx * 340 + 40}px`,
-                    left: "20px",
-                    width: "10px",
-                    height: "10px",
-                    borderRadius: "50%",
-                    backgroundColor: activeId === (exp.id || idx + 1) ? "#00d1b2" : "#888",
-                    transition: "background-color 0.3s"
-                  }}
-                />
-              ))}
-            </div>
+            <div
+              style={{
+                position: "absolute",
+                left: "calc(2rem + 24px)",
+                top: "2rem",
+                bottom: "2rem",
+                width: "2px",
+                backgroundColor: "rgba(128, 128, 128, 0.3)"
+              }}
+            />
           )}
 
-          <div style={{ flex: 1 }}>
+          <div>
             {experiences.map((exp, index) => {
               const currentId = exp.id || index + 1;
               return (
                 <div
                   key={currentId}
-                  data-id={currentId}
-                  ref={el => refs.current[index] = el}
-                  className="card"
                   style={{
-                    marginBottom: "3rem",
-                    borderRadius: "12px",
-                    borderLeft: isMobile ? (activeId === currentId ? "4px solid #00d1b2" : "4px solid #555") : "1px solid rgba(255, 255, 255, 0.08)"
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: index === experiences.length - 1 ? 0 : "3rem",
+                    position: "relative"
                   }}
                 >
-                  <div className="card-content" style={{ padding: "1.75rem" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "0.5rem", marginBottom: "0.75rem" }}>
-                      <h3 className="title is-4" style={{ margin: 0 }}>{exp.title}</h3>
-                      <span className="tag is-primary is-light" style={{ fontWeight: 600 }}>{exp.date}</span>
+                  {!isMobile && (
+                    <div
+                      style={{
+                        width: "50px",
+                        marginRight: "2rem",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexShrink: 0
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "12px",
+                          height: "12px",
+                          borderRadius: "50%",
+                          backgroundColor: activeId === currentId ? "#00d1b2" : "#888",
+                          boxShadow: activeId === currentId ? "0 0 0 4px rgba(0, 209, 178, 0.25)" : "none",
+                          zIndex: 1,
+                          transition: "all 0.3s ease",
+                          transform: activeId === currentId ? "scale(1.2)" : "scale(1)"
+                        }}
+                      />
                     </div>
+                  )}
 
-                    <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginTop: "1rem" }}>
-                      {exp.description && exp.description.map((line, i) => (
-                        <li key={i} style={{ marginBottom: "0.5rem", lineHeight: 1.6 }}>{line}</li>
-                      ))}
-                    </ul>
+                  <div
+                    data-id={currentId}
+                    ref={el => refs.current[index] = el}
+                    className="card"
+                    style={{
+                      flex: 1,
+                      borderRadius: "12px",
+                      borderLeft: isMobile ? (activeId === currentId ? "4px solid #00d1b2" : "4px solid #555") : "1px solid rgba(255, 255, 255, 0.08)"
+                    }}
+                  >
+                    <div className="card-content" style={{ padding: "1.75rem" }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "0.5rem", marginBottom: "0.75rem" }}>
+                        <h3 className="title is-4" style={{ margin: 0 }}>{exp.title}</h3>
+                        <span className="tag is-primary is-light" style={{ fontWeight: 600 }}>{exp.date}</span>
+                      </div>
+
+                      <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginTop: "1rem" }}>
+                        {exp.description && exp.description.map((line, i) => (
+                          <li key={i} style={{ marginBottom: "0.5rem", lineHeight: 1.6 }}>{line}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               );
