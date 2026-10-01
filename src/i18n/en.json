@@ -50,7 +50,8 @@
         "languageFlashcards": "Practice vocabulary with a language flashcards app. Made using Flutter.",
         "scavengerHunt": "Scavenger hunt app with location-based clues. Github repo is private. Made using Flutter.",
         "learnIT": "LearnIT is a general learning app focused on software, cloud, networking, AI, and practical technical topics. Made using Flutter.",
-        "learnHardware": "LearnHardware is a focused study app covering computer hardware foundations, CPUs, memory, storage, motherboards, and cooling. Made using Flutter."
+        "learnHardware": "LearnHardware is a focused study app covering computer hardware foundations, CPUs, memory, storage, motherboards, and cooling. Made using Flutter.",
+        "chessPuzzles": "A personal Flutter app with 5,334 chess puzzles from the Polgar collection."
       },
       "docker": {
         "description": "Docker images for development and data science. The codes are in a private github repository.",

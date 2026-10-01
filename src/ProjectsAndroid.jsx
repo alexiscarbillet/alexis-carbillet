@@ -23,6 +23,7 @@ export default function ProjectsAndroid() {
     { title: "Scavenger hunt", url: "https://coding.alexis-carbillet.com/apps/scavenger-hunt/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/scavenger-hunt", descriptionKey: "projects.desc.android.scavengerHunt", tech: "flutter" },
     { title: "LearnIT", url: "https://coding.alexis-carbillet.com/apps/learn-it/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_it", descriptionKey: "projects.desc.android.learnIT", tech: "flutter" },
     { title: "LearnHardware", url: "https://coding.alexis-carbillet.com/apps/learn-hardware/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_hardware", descriptionKey: "projects.desc.android.learnHardware", tech: "flutter" },
+    { title: "Chess Puzzles", url: "https://coding.alexis-carbillet.com/apps/chess-puzzles/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/chess_puzzles", descriptionKey: "projects.desc.android.chessPuzzles", tech: "flutter" },
   ];
 
   // Filter the list based on state
@@ -70,9 +71,11 @@ export default function ProjectsAndroid() {
                   <div className="card-content">
                     <p className="title" style={{ wordBreak: 'normal' }}>{item.title}</p>
                     {item.descriptionKey && <p className="subtitle is-6">{t(item.descriptionKey)}</p>}
-                    <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
-                      {t("buttons.website")}
-                    </a>
+                    {item.url && (
+                      <a className="button is-primary is-outlined" href={item.url} target="_blank" rel="noopener noreferrer">
+                        {t("buttons.website")}
+                      </a>
+                    )}
                     {item.url2 && (
                       <a className="button is-info is-outlined" href={item.url2} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px' }}>
                         {t("buttons.github")}
