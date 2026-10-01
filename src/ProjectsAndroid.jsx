@@ -24,6 +24,7 @@ export default function ProjectsAndroid() {
     { title: "LearnIT", url: "https://coding.alexis-carbillet.com/apps/learn-it/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_it", descriptionKey: "projects.desc.android.learnIT", tech: "flutter" },
     { title: "LearnHardware", url: "https://coding.alexis-carbillet.com/apps/learn-hardware/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/learn_hardware", descriptionKey: "projects.desc.android.learnHardware", tech: "flutter" },
     { title: "Chess Puzzles", url: "https://coding.alexis-carbillet.com/apps/chess-puzzles/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/chess_puzzles", descriptionKey: "projects.desc.android.chessPuzzles", tech: "flutter" },
+    { title: "BrainCare", url: "https://coding.alexis-carbillet.com/apps/brain-care/app.html", url2: "https://github.com/alexiscarbillet/apps/tree/main/flutter/brain-care", descriptionKey: "projects.desc.android.brainCare", tech: "flutter" },
   ];
 
   // Filter the list based on state
