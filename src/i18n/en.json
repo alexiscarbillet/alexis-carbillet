@@ -184,19 +184,20 @@
       ]
     },
     {
-      "title": "Data Scientist at Ice Gateway GmbH",
+      "title": "ML engineer at Ice Gateway GmbH",
       "date": "2017-09",
       "description": [
-        "Engineered ICEsecure, an edge-based multi-camera facial recognition system designed for secure, low-latency entry point threat and access management.",
+        "Designed ICEsecure, a low-latency multi-camera facial recognition system built with TensorFlow and deployed at the edge via GCP for access management.",
         "Managed cross-functional development sprints, translating business objectives into technical milestones and reporting progress to executive stakeholders.",
         "Led high-stakes customer integrations and technical sales demonstrations, presenting advanced AI capabilities to non-technical client leadership.",
         "Architected ICEassist, an AI-powered voice recognition system deployed across public transit infrastructure to improve accessibility for hundreds of disabled users; successfully deployed to iOS and Android app stores."
       ]
     },
     {
-      "title": "Web developer at Ice Gateway GmbH",
+      "title": "Sysadmin at Ice Gateway GmbH",
       "date": "2015-10",
       "description": [
+        "Administered and maintained local server infrastructure, ensuring high availability and enterprise network security.",
         "Constructed low-latency client-facing data visualization dashboards, ingesting raw IoT sensor streams to deliver real-time, actionable business telemetry.",
         "Spearheaded complete redesign and ongoing engineering of primary enterprise web properties, configuring search optimization frameworks to yield measurable traffic growth."
       ]
