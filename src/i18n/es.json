@@ -18,6 +18,14 @@
     "play": "Reproducir episodio",
     "playing": "Reproduciendo"
   },
+  "badges": {
+    "archived": "Archivado"
+  },
+  "filters": {
+    "all": "Todo",
+    "androidNative": "Android (Nativo - Archivado)",
+    "flutter": "Flutter"
+  },
   "footer": {
     "more": "También puedes encontrar todos mis",
     "and": "y",
@@ -37,7 +45,7 @@
     "helmCharts": "Charts Helm",
     "desc": {
       "android": {
-        "description": "Aplicaciones Android divertidas que he desarrollado, disponibles en mi sitio web de programación.",
+        "description": "Una colección de aplicaciones móviles. Las aplicaciones Android nativas están ahora archivadas y conservadas como referencia de portfolio e histórica, mientras que las aplicaciones Flutter se mantienen activamente.",
         "unitConverter": "Convertir rápidamente entre unidades.",
         "canadianAnimals": "Aprender sobre animales canadienses.",
         "ticTacToe": "Juego clásico Tic Tac Toe.",
@@ -390,7 +398,7 @@
     "projects": {
       "header": "Proyectos",
       "subtitle": "Una muestra de mis proyectos y contribuciones.",
-      "android": "Colección de aplicaciones Android que desarrollé.",
+      "android": "Colección de aplicaciones móviles, incluyendo proyectos Android nativos archivados y aplicaciones Flutter activas.",
       "docker": "Imágenes Docker para desarrollo y ciencia de datos.",
       "firefox": "Extensiones y complementos de Mozilla Firefox.",
       "helm": "Charts Helm de Kubernetes para despliegues.",
