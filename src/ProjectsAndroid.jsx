@@ -7,7 +7,7 @@ export default function ProjectsAndroid() {
   const { t } = useTranslation();
 
   // State to manage the active filter: 'all', 'android', or 'flutter'
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('flutter');
 
   const androidApps = [
     { title: "Unit converter", url: "https://coding.alexis-carbillet.com/apps/unit-converter/app.html", url2: "https://github.com/alexiscarbillet/android-apps-archive/tree/main/unit%20converter", descriptionKey: "projects.desc.android.unitConverter", tech: "android", archived: true },
