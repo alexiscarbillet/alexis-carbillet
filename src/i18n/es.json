@@ -24,7 +24,7 @@
   "filters": {
     "all": "Todo",
     "androidNative": "Android (Nativo - Archivado)",
-    "flutter": "Flutter"
+    "flutter": "Flutter (Archivado)"
   },
   "footer": {
     "more": "También puedes encontrar todos mis",
@@ -45,7 +45,7 @@
     "helmCharts": "Charts Helm",
     "desc": {
       "android": {
-        "description": "Una colección de aplicaciones móviles. Las aplicaciones Android nativas están ahora archivadas y conservadas como referencia de portfolio e histórica, mientras que las aplicaciones Flutter se mantienen activamente.",
+        "description": "Una colección de aplicaciones móviles. Las aplicaciones Android nativas y las aplicaciones Flutter están ahora archivadas y conservadas como referencia de portfolio e histórica.",
         "unitConverter": "Convertir rápidamente entre unidades.",
         "canadianAnimals": "Aprender sobre animales canadienses.",
         "ticTacToe": "Juego clásico Tic Tac Toe.",
@@ -56,7 +56,7 @@
         "trainingCanadianCitizenship": "Practicar para el examen de ciudadanía canadiense.",
         "randomWords": "Generar palabras aleatorias para practicar.",
         "languageFlashcards": "Practica vocabulario con una aplicación de tarjetas didácticas. Hecha usando Flutter.",
-        "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. El repositorio de Github es privado. Hecho usando Flutter.",
+        "scavengerHunt": "Aplicación de búsqueda del tesoro con pistas basadas en ubicación. Hecho usando Flutter.",
         "learnIT": "LearnIT es una aplicación general para aprender temas técnicos de software, cloud, redes, IA y habilidades prácticas. Hecho usando Flutter.",
         "learnHardware": "LearnHardware es una aplicación de estudio enfocada en fundamentos de hardware, CPUs, memoria, almacenamiento, placas base y enfriamiento. Hecho usando Flutter.",
         "chessPuzzles": "Una aplicación Flutter personal con 5.334 problemas de ajedrez de la colección Polgar.",
@@ -398,7 +398,7 @@
     "projects": {
       "header": "Proyectos",
       "subtitle": "Una muestra de mis proyectos y contribuciones.",
-      "android": "Colección de aplicaciones móviles, incluyendo proyectos Android nativos archivados y aplicaciones Flutter activas.",
+      "android": "Colección de aplicaciones móviles, incluyendo proyectos archivados de Android nativo y Flutter.",
       "docker": "Imágenes Docker para desarrollo y ciencia de datos.",
       "firefox": "Extensiones y complementos de Mozilla Firefox.",
       "helm": "Charts Helm de Kubernetes para despliegues.",

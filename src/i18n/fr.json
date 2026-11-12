@@ -24,7 +24,7 @@
   "filters": {
     "all": "Tout",
     "androidNative": "Android (Natif - Archivé)",
-    "flutter": "Flutter"
+    "flutter": "Flutter (Archivé)"
   },
   "footer": {
     "more": "Vous pouvez également trouver tous mes",
@@ -45,7 +45,7 @@
     "helmCharts": "Charts Helm",
     "desc": {
       "android": {
-        "description": "Une collection d'applications mobiles. Les applications Android natives sont désormais archivées et conservées à titre de portfolio et de référence historique, tandis que les applications Flutter sont activement maintenues.",
+        "description": "Une collection d'applications mobiles. Les applications Android natives et les applications Flutter sont désormais archivées et conservées à titre de portfolio et de référence historique.",
         "unitConverter": "Convertir rapidement entre les unités.",
         "canadianAnimals": "Apprenez-en sur les animaux canadiens.",
         "ticTacToe": "Jeu classique Tic Tac Toe.",
@@ -56,7 +56,7 @@
         "trainingCanadianCitizenship": "Entraînez-vous pour l'examen de citoyenneté canadienne.",
         "randomWords": "Générez des mots aléatoires pour vous entraîner.",
         "languageFlashcards": "Pratiquez le vocabulaire avec une application de cartes mémoire. Réalisée avec Flutter.",
-        "scavengerHunt": "Application de chasse au trésor avec des indices basés sur la localisation. Le dépôt Github est privé. Réalisé avec Flutter.",
+        "scavengerHunt": "Application de chasse au trésor avec des indices basés sur la localisation. Réalisé avec Flutter.",
         "learnIT": "LearnIT est une application générale pour apprendre les sujets techniques liés au logiciel, au cloud, au réseau, à l'IA et aux compétences pratiques. Fait avec Flutter.",
         "learnHardware": "LearnHardware est une application d'étude spécialisée sur les fondements du matériel informatique, les processeurs, la mémoire, le stockage, les cartes mères et le refroidissement. Fait avec Flutter.",
         "chessPuzzles": "Une application Flutter personnelle avec 5 334 problèmes d'échecs de la collection Polgar.",
@@ -399,7 +399,7 @@
     "projects": {
       "header": "Projets",
       "subtitle": "Une vitrine de mes projets et contributions.",
-      "android": "Collection d'applications mobiles, incluant des projets Android natifs archivés et des applications Flutter actives.",
+      "android": "Collection d'applications mobiles, incluant les projets archivés Android natifs et Flutter.",
       "docker": "Images Docker pour le développement et la data science.",
       "firefox": "Extensions et modules complémentaires Mozilla Firefox.",
       "helm": "Charts Helm Kubernetes pour le déploiement.",
